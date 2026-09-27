@@ -1,0 +1,338 @@
+[
+  {
+    "file": "000-global.png",
+    "mask": "000-global-mask.png",
+    "case": {
+      "id": "final-00",
+      "dx": 0.00020581042613625894,
+      "dy": 0.030180479054682074,
+      "angle": -29.710368772407982,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 4653
+  },
+  {
+    "file": "000-local.png",
+    "mask": "000-local-mask.png",
+    "case": {
+      "id": "final-00",
+      "dx": 0.00020581042613625894,
+      "dy": 0.030180479054682074,
+      "angle": -29.710368772407982,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 15646
+  },
+  {
+    "file": "001-global.png",
+    "mask": "001-global-mask.png",
+    "case": {
+      "id": "final-01",
+      "dx": 0.027144217225603215,
+      "dy": -0.0053981589918666514,
+      "angle": -23.71181795552533,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 4744
+  },
+  {
+    "file": "001-local.png",
+    "mask": "001-local-mask.png",
+    "case": {
+      "id": "final-01",
+      "dx": 0.027144217225603215,
+      "dy": -0.0053981589918666514,
+      "angle": -23.71181795552533,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 19264
+  },
+  {
+    "file": "002-global.png",
+    "mask": "002-global-mask.png",
+    "case": {
+      "id": "final-02",
+      "dx": -0.005778206426196902,
+      "dy": 0.0015475191582484601,
+      "angle": 22.461115811519164,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 4723
+  },
+  {
+    "file": "002-local.png",
+    "mask": "002-local-mask.png",
+    "case": {
+      "id": "final-02",
+      "dx": -0.005778206426196902,
+      "dy": 0.0015475191582484601,
+      "angle": 22.461115811519164,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 16504
+  },
+  {
+    "file": "003-global.png",
+    "mask": "003-global-mask.png",
+    "case": {
+      "id": "final-03",
+      "dx": 0.029501887466634416,
+      "dy": -0.028789032398318554,
+      "angle": -37.53531261170944,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 4804
+  },
+  {
+    "file": "003-local.png",
+    "mask": "003-local-mask.png",
+    "case": {
+      "id": "final-03",
+      "dx": 0.029501887466634416,
+      "dy": -0.028789032398318554,
+      "angle": -37.53531261170944,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 22447
+  },
+  {
+    "file": "004-global.png",
+    "mask": "004-global-mask.png",
+    "case": {
+      "id": "final-04",
+      "dx": 0.029952138658281093,
+      "dy": -0.0316456250198313,
+      "angle": -15.542246249046634,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 4811
+  },
+  {
+    "file": "004-local.png",
+    "mask": "004-local-mask.png",
+    "case": {
+      "id": "final-04",
+      "dx": 0.029952138658281093,
+      "dy": -0.0316456250198313,
+      "angle": -15.542246249046634,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 22623
+  },
+  {
+    "file": "005-global.png",
+    "mask": "005-global-mask.png",
+    "case": {
+      "id": "final-05",
+      "dx": 0.018046931944434012,
+      "dy": 0.015893701712780935,
+      "angle": 24.238532016332044,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 4686
+  },
+  {
+    "file": "005-local.png",
+    "mask": "005-local-mask.png",
+    "case": {
+      "id": "final-05",
+      "dx": 0.018046931944434012,
+      "dy": 0.015893701712780935,
+      "angle": 24.238532016332044,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 17029
+  },
+  {
+    "file": "006-global.png",
+    "mask": "006-global-mask.png",
+    "case": {
+      "id": "final-06",
+      "dx": 0.005181149942914583,
+      "dy": -0.02889905847941098,
+      "angle": -13.268401827211086,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 4803
+  },
+  {
+    "file": "006-local.png",
+    "mask": "006-local-mask.png",
+    "case": {
+      "id": "final-06",
+      "dx": 0.005181149942914583,
+      "dy": -0.02889905847941098,
+      "angle": -13.268401827211086,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 21679
+  },
+  {
+    "file": "007-global.png",
+    "mask": "007-global-mask.png",
+    "case": {
+      "id": "final-07",
+      "dx": -0.018505893003667503,
+      "dy": 0.0027483985555258536,
+      "angle": -0.28190516610901994,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 4736
+  },
+  {
+    "file": "007-local.png",
+    "mask": "007-local-mask.png",
+    "case": {
+      "id": "final-07",
+      "dx": -0.018505893003667503,
+      "dy": 0.0027483985555258536,
+      "angle": -0.28190516610901994,
+      "split": "final_evaluation",
+      "condition": "pose",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 15135
+  },
+  {
+    "file": "008-global.png",
+    "mask": "008-global-mask.png",
+    "case": {
+      "id": "final-absent",
+      "dx": 0,
+      "dy": 0,
+      "angle": 0,
+      "split": "final_challenge",
+      "condition": "absent",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 0
+  },
+  {
+    "file": "008-local.png",
+    "mask": "008-local-mask.png",
+    "case": {
+      "id": "final-absent",
+      "dx": 0,
+      "dy": 0,
+      "angle": 0,
+      "split": "final_challenge",
+      "condition": "absent",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 0
+  },
+  {
+    "file": "009-global.png",
+    "mask": "009-global-mask.png",
+    "case": {
+      "id": "final-occluded",
+      "dx": 0,
+      "dy": 0,
+      "angle": 0,
+      "split": "final_challenge",
+      "condition": "occluded",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 3936
+  },
+  {
+    "file": "009-local.png",
+    "mask": "009-local-mask.png",
+    "case": {
+      "id": "final-occluded",
+      "dx": 0,
+      "dy": 0,
+      "angle": 0,
+      "split": "final_challenge",
+      "condition": "occluded",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 13820
+  },
+  {
+    "file": "010-global.png",
+    "mask": "010-global-mask.png",
+    "case": {
+      "id": "final-distractor",
+      "dx": 0,
+      "dy": 0,
+      "angle": 0,
+      "split": "final_challenge",
+      "condition": "distractor",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 4768
+  },
+  {
+    "file": "010-local.png",
+    "mask": "010-local-mask.png",
+    "case": {
+      "id": "final-distractor",
+      "dx": 0,
+      "dy": 0,
+      "angle": 0,
+      "split": "final_challenge",
+      "condition": "distractor",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 17651
+  },
+  {
+    "file": "011-global.png",
+    "mask": "011-global-mask.png",
+    "case": {
+      "id": "final-low_contrast",
+      "dx": 0,
+      "dy": 0,
+      "angle": 0,
+      "split": "final_challenge",
+      "condition": "low_contrast",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 4768
+  },
+  {
+    "file": "011-local.png",
+    "mask": "011-local-mask.png",
+    "case": {
+      "id": "final-low_contrast",
+      "dx": 0,
+      "dy": 0,
+      "angle": 0,
+      "split": "final_challenge",
+      "condition": "low_contrast",
+      "evaluation_seed": 92703
+    },
+    "visible_pixels": 17651
+  }
+]

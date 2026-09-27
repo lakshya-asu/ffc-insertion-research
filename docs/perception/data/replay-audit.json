@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "images": 24,
+  "same_predictions_and_masks": true,
+  "experiment": "offline/ was renamed out of the expected path during replay; it was never mounted into either worker",
+  "scope": "functional isolation for this worker, not an adversarial security certification",
+  "sensor_manifest_sha256": "4709f28fe2c3ca6ff7fe79db37775c55ebc8541261e3c32606c9c26a4c749c51"
+}

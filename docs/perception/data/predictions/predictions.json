@@ -1,0 +1,511 @@
+{
+  "algorithm": "quadratic RGB classifier + candidate rejection v3",
+  "input": "RGB8 only",
+  "clock_mode": "offline replay",
+  "robot_actions": 0,
+  "trained": true,
+  "model_sha256": "7855001787f24a0d215f3fbf46a22087f8615bced05d34f9cebf18f15a9d1fcd",
+  "predictions": [
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        473.0891927083333,
+        256.36414930555554
+      ],
+      "unordered_endpoints_uv": [
+        [
+          598.4496436887218,
+          326.977058112286
+        ],
+        [
+          351.6973447926853,
+          187.9866712436018
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 4608,
+      "elongation": 16.804680862985354,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 44.195565991685726,
+      "file": "000-global.png",
+      "mask": "000-global-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        321.37222795255286,
+        229.5516374419804
+      ],
+      "unordered_endpoints_uv": [
+        [
+          568.3591035609697,
+          344.0141157876774
+        ],
+        [
+          61.12402532521253,
+          108.94338979983982
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 15512,
+      "elongation": 19.695666282060586,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 40.734061010880396,
+      "file": "000-local.png",
+      "mask": "000-local-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        524.7803131991052,
+        326.28322147651005
+      ],
+      "unordered_endpoints_uv": [
+        [
+          652.3596130569143,
+          381.88006606941883
+        ],
+        [
+          397.2548771374456,
+          270.7098497910952
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 4470,
+      "elongation": 17.307145381328645,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 39.54151399375405,
+      "file": "001-global.png",
+      "mask": "001-global-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        425.827301316561,
+        347.0095410692394
+      ],
+      "unordered_endpoints_uv": [
+        [
+          714.0642345393435,
+          453.7234239597292
+        ],
+        [
+          123.0983400384589,
+          234.93027849804872
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 18761,
+      "elongation": 20.853675287974493,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 40.8557039918378,
+      "file": "001-local.png",
+      "mask": "001-local-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        457.76733204550334,
+        320.5653573728268
+      ],
+      "unordered_endpoints_uv": [
+        [
+          587.7304805298043,
+          267.2155483224256
+        ],
+        [
+          328.95093750017656,
+          373.444424490722
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 4659,
+      "elongation": 16.68211656716712,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 43.08351699728519,
+      "file": "002-global.png",
+      "mask": "002-global-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        272.0600282920229,
+        310.5219878221293
+      ],
+      "unordered_endpoints_uv": null,
+      "partial_view": true,
+      "pixel_area": 16259,
+      "elongation": 20.639358100079424,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 39.568549997056834,
+      "file": "002-local.png",
+      "mask": "002-local-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        531.528442784977,
+        371.29233472435754
+      ],
+      "unordered_endpoints_uv": [
+        [
+          642.570674861715,
+          456.1778982729028
+        ],
+        [
+          419.9466032619989,
+          285.9942715230908
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 4553,
+      "elongation": 17.221214706448976,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 45.82619199936744,
+      "file": "003-global.png",
+      "mask": "003-global-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        421.6145301264567,
+        435.3317133647409
+      ],
+      "unordered_endpoints_uv": [
+        [
+          658.8929831809718,
+          598.3448241005847
+        ],
+        [
+          166.2958418887309,
+          259.92474714912566
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 20165,
+      "elongation": 17.437485486744333,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 40.82560299139004,
+      "file": "003-local.png",
+      "mask": "003-local-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        530.1170235319058,
+        379.7051091795633
+      ],
+      "unordered_endpoints_uv": [
+        [
+          667.1354601188247,
+          417.7203637658806
+        ],
+        [
+          394.6863797827119,
+          342.13038179863526
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 4717,
+      "elongation": 16.701675694193124,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 40.49608200148214,
+      "file": "004-global.png",
+      "mask": "004-global-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        412.4111356067358,
+        438.25226323936397
+      ],
+      "unordered_endpoints_uv": [
+        [
+          751.8266729590916,
+          520.9228906181236
+        ],
+        [
+          92.33859033231357,
+          360.2929619918094
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 21319,
+      "elongation": 19.341987338110922,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 39.46187300607562,
+      "file": "004-local.png",
+      "mask": "004-local-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        505.0169376693767,
+        292.7120596205962
+      ],
+      "unordered_endpoints_uv": [
+        [
+          631.7226209381712,
+          236.13907296754763
+        ],
+        [
+          379.08086310972567,
+          348.9414226720256
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 4428,
+      "elongation": 17.267127873501046,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 39.21045799506828,
+      "file": "005-global.png",
+      "mask": "005-global-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        343.055886645585,
+        273.37940890294334
+      ],
+      "unordered_endpoints_uv": [
+        [
+          643.6422359716055,
+          168.38694760799996
+        ],
+        [
+          57.812881025362174,
+          373.01256022330523
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 16444,
+      "elongation": 23.08771745340619,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 39.55001301073935,
+      "file": "005-local.png",
+      "mask": "005-local-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        483.38688252386885,
+        375.21959319219593
+      ],
+      "unordered_endpoints_uv": [
+        [
+          635.3440342383528,
+          410.8013951846318
+        ],
+        [
+          344.03288765316427,
+          342.5889062097174
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 4818,
+      "elongation": 16.952117685122754,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 39.88257599121425,
+      "file": "006-global.png",
+      "mask": "006-global-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        321.6214565460649,
+        431.9441906005222
+      ],
+      "unordered_endpoints_uv": null,
+      "partial_view": true,
+      "pixel_area": 21448,
+      "elongation": 19.52897210065674,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 39.964073002920486,
+      "file": "006-local.png",
+      "mask": "006-local-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        432.5900246029971,
+        313.94833370610604
+      ],
+      "unordered_endpoints_uv": [
+        [
+          571.0390084854793,
+          314.68682030155367
+        ],
+        [
+          293.96154779718063,
+          313.2088896957743
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 4471,
+      "elongation": 17.2439500729473,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 39.15212101128418,
+      "file": "007-global.png",
+      "mask": "007-global-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        264.8596695687941,
+        309.67621855076436
+      ],
+      "unordered_endpoints_uv": null,
+      "partial_view": true,
+      "pixel_area": 14587,
+      "elongation": 18.96443268507979,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 40.01417900144588,
+      "file": "007-local.png",
+      "mask": "007-local-prediction.png"
+    },
+    {
+      "detected": false,
+      "reason": "not_a_supported_ribbon_shape",
+      "inference_ms": 38.05376900709234,
+      "file": "008-global.png",
+      "mask": "008-global-prediction.png"
+    },
+    {
+      "detected": false,
+      "reason": "not_a_supported_ribbon_shape",
+      "inference_ms": 38.769639999372885,
+      "file": "008-local.png",
+      "mask": "008-local-prediction.png"
+    },
+    {
+      "detected": false,
+      "reason": "not_a_supported_ribbon_shape",
+      "inference_ms": 41.34021399659105,
+      "file": "009-global.png",
+      "mask": "009-global-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        479.06910792951544,
+        318.89441079295153
+      ],
+      "unordered_endpoints_uv": [
+        [
+          608.0302558056131,
+          319.1992222263486
+        ],
+        [
+          347.0317138904963,
+          318.5823283712154
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 7264,
+      "elongation": 9.152869810133351,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 42.0908809901448,
+      "file": "009-local.png",
+      "mask": "009-local-prediction.png"
+    },
+    {
+      "detected": true,
+      "reason": "learned_color_shape_candidate",
+      "center_uv": [
+        475.06906196213424,
+        319.47525817555936
+      ],
+      "unordered_endpoints_uv": [
+        [
+          627.0031028420201,
+          319.40161625331996
+        ],
+        [
+          329.9968715613601,
+          319.5455741817863
+        ]
+      ],
+      "partial_view": false,
+      "pixel_area": 4648,
+      "elongation": 18.30210151224113,
+      "contact_face": "unknown",
+      "insertion_endpoint": "unknown",
+      "motion_permitted": false,
+      "inference_ms": 39.18409100151621,
+      "file": "010-global.png",
+      "mask": "010-global-prediction.png"
+    },
+    {
+      "detected": false,
+      "reason": "ambiguous_multiple_ribbons",
+      "inference_ms": 40.38435399706941,
+      "file": "010-local.png",
+      "mask": "010-local-prediction.png"
+    },
+    {
+      "detected": false,
+      "reason": "not_a_supported_ribbon_shape",
+      "inference_ms": 38.30120200291276,
+      "file": "011-global.png",
+      "mask": "011-global-prediction.png"
+    },
+    {
+      "detected": false,
+      "reason": "not_a_supported_ribbon_shape",
+      "inference_ms": 39.82416800863575,
+      "file": "011-local.png",
+      "mask": "011-local-prediction.png"
+    }
+  ]
+}

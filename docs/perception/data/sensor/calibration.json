@@ -1,0 +1,114 @@
+{
+  "global": {
+    "camera_id": "global",
+    "width": 960,
+    "height": 640,
+    "projection": "ideal_pinhole",
+    "distortion": "none; not hardware calibrated",
+    "focal_length_mm": 45.0,
+    "horizontal_aperture_mm": 36.0,
+    "vertical_aperture_mm": 24.0,
+    "K": [
+      [
+        1200.0,
+        0,
+        480.0
+      ],
+      [
+        0,
+        1200.0,
+        320.0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "world_from_camera_usd_row_matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.9932631390872431,
+        0.11588069956017838,
+        0.0
+      ],
+      [
+        0.0,
+        -0.11588069956017838,
+        0.9932631390872431,
+        0.0
+      ],
+      [
+        0.375,
+        -0.25,
+        0.6,
+        1.0
+      ]
+    ],
+    "camera_axes": "USD: +X right, +Y up, -Z forward",
+    "mount": "fixed in world; no target tracking",
+    "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad"
+  },
+  "local": {
+    "camera_id": "local",
+    "width": 960,
+    "height": 640,
+    "projection": "ideal_pinhole",
+    "distortion": "none; not hardware calibrated",
+    "focal_length_mm": 45.0,
+    "horizontal_aperture_mm": 36.0,
+    "vertical_aperture_mm": 24.0,
+    "K": [
+      [
+        1200.0,
+        0,
+        480.0
+      ],
+      [
+        0,
+        1200.0,
+        320.0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "world_from_camera_usd_row_matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.8209052017854871,
+        0.5710644881985998,
+        0.0
+      ],
+      [
+        0.0,
+        -0.5710644881985998,
+        0.8209052017854871,
+        0.0
+      ],
+      [
+        0.42000000000000004,
+        -0.34,
+        0.22999999999999995,
+        1.0
+      ]
+    ],
+    "camera_axes": "USD: +X right, +Y up, -Z forward",
+    "mount": "fixed in world; no target tracking",
+    "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872"
+  }
+}

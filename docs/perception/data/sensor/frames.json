@@ -1,0 +1,245 @@
+{
+  "timestamp_domain": "host monotonic elapsed at render completion; not exposure timestamp or physics time",
+  "frames": [
+    {
+      "file": "000-global.png",
+      "camera_id": "global",
+      "sequence": 0,
+      "timestamp_s": 0.8758593599923188,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "2f8dcb45656051718fbe33b8a951f5416d692f6bc022f3323c26f93f3560be15"
+    },
+    {
+      "file": "000-local.png",
+      "camera_id": "local",
+      "sequence": 0,
+      "timestamp_s": 0.8758593599923188,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "00ddfe0b01e8bb7e8338db61e23cdff173301a3c9384a866590dae6688c42d2d"
+    },
+    {
+      "file": "001-global.png",
+      "camera_id": "global",
+      "sequence": 1,
+      "timestamp_s": 1.497626112002763,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "7408a039ec3960804bfc9bfbb304bee22b0d39cca5480ba1dedb10e1448a0163"
+    },
+    {
+      "file": "001-local.png",
+      "camera_id": "local",
+      "sequence": 1,
+      "timestamp_s": 1.497626112002763,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "e8e8341d729851463dc746124af847966e6b358e91b739eaca59b7b60de22485"
+    },
+    {
+      "file": "002-global.png",
+      "camera_id": "global",
+      "sequence": 2,
+      "timestamp_s": 2.121741185997962,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "6857cf8ef90309f2c893d629e97dad4bc3d592df6ca7b227baa238d70e77d667"
+    },
+    {
+      "file": "002-local.png",
+      "camera_id": "local",
+      "sequence": 2,
+      "timestamp_s": 2.121741185997962,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "8d18753fc07fe4f33668f6badf3087b55d337b159addc613bffaa1402c319537"
+    },
+    {
+      "file": "003-global.png",
+      "camera_id": "global",
+      "sequence": 3,
+      "timestamp_s": 2.6987059800012503,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "51d3ecb3a9ff8f66ad60739cf4109714ca2fd30206eab22a1779b125944b5ffa"
+    },
+    {
+      "file": "003-local.png",
+      "camera_id": "local",
+      "sequence": 3,
+      "timestamp_s": 2.6987059800012503,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "bf1ca2279f05f5ed7413a384e620f4f71f436ea91bb9cbca8e22259da80dd366"
+    },
+    {
+      "file": "004-global.png",
+      "camera_id": "global",
+      "sequence": 4,
+      "timestamp_s": 3.26819295999303,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "088eb06e834fa8b3543774ac305a202cb4ebf65b4708b74821f3abfa3c0a8ab5"
+    },
+    {
+      "file": "004-local.png",
+      "camera_id": "local",
+      "sequence": 4,
+      "timestamp_s": 3.26819295999303,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "fdebe7b7ab6b5ed9836b708294f2fc108ee4e14d179a316191e59568897bc208"
+    },
+    {
+      "file": "005-global.png",
+      "camera_id": "global",
+      "sequence": 5,
+      "timestamp_s": 3.840280571996118,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "195f17a1f2c477a1ef930edd163a33fd0c4c821dcf9ab158509be03cd560b36a"
+    },
+    {
+      "file": "005-local.png",
+      "camera_id": "local",
+      "sequence": 5,
+      "timestamp_s": 3.840280571996118,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "1193e78bcae6ab61cdfac9fcc51c04a3df29195984568c19fb25a2799ea4167c"
+    },
+    {
+      "file": "006-global.png",
+      "camera_id": "global",
+      "sequence": 6,
+      "timestamp_s": 4.411931137001375,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "08c67506779b714ded9b17f7317f8d7292b2d37e327b9d78400290a5bb5a155c"
+    },
+    {
+      "file": "006-local.png",
+      "camera_id": "local",
+      "sequence": 6,
+      "timestamp_s": 4.411931137001375,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "385fb452fb5bf3e9a51b294ec945b67ff60b3045676ea96d6a9ba5a7384e99f1"
+    },
+    {
+      "file": "007-global.png",
+      "camera_id": "global",
+      "sequence": 7,
+      "timestamp_s": 4.911056657001609,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "df47f4c3255b4f6742b4029c0855ba3a063f0fa7fc86ad1a2da30be3f7476f27"
+    },
+    {
+      "file": "007-local.png",
+      "camera_id": "local",
+      "sequence": 7,
+      "timestamp_s": 4.911056657001609,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "fa9d4c703ad995508c2fb2b9a2198404e3b5980988177fb710009f4d3a753448"
+    },
+    {
+      "file": "008-global.png",
+      "camera_id": "global",
+      "sequence": 8,
+      "timestamp_s": 5.428425828999025,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "12f38c82c0e6079771f8b4f3b619a0f8e2e1d5f0185d48d9cddf25518837e36c"
+    },
+    {
+      "file": "008-local.png",
+      "camera_id": "local",
+      "sequence": 8,
+      "timestamp_s": 5.428425828999025,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "78e0aa068807acf8b07d6e03b27c450e48f8f609036bd8896bde67751420340c"
+    },
+    {
+      "file": "009-global.png",
+      "camera_id": "global",
+      "sequence": 9,
+      "timestamp_s": 5.964989872998558,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "517a816a36c326b27108beff4f2175cc8d798310c06e6c1e2da03be48bb50f0d"
+    },
+    {
+      "file": "009-local.png",
+      "camera_id": "local",
+      "sequence": 9,
+      "timestamp_s": 5.964989872998558,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "d26dd663c5c02f17339f1446d8a08491ba4c5c70ebff809b32a59cfb1aed74a4"
+    },
+    {
+      "file": "010-global.png",
+      "camera_id": "global",
+      "sequence": 10,
+      "timestamp_s": 6.588186591994599,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "4347d49ad0fd8fd0385963616d6c1edc10b7708627c9b3b20b162e6eed79d130"
+    },
+    {
+      "file": "010-local.png",
+      "camera_id": "local",
+      "sequence": 10,
+      "timestamp_s": 6.588186591994599,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "8d3a2f77e6eaafa55b5cf7133666c7a654318ea9764f29bf39daa3a64b41627f"
+    },
+    {
+      "file": "011-global.png",
+      "camera_id": "global",
+      "sequence": 11,
+      "timestamp_s": 7.177715839992743,
+      "calibration_id": "265ae6d9b9803b00375ec573bc9a80ce4433ec3723b5f1729a386eb1036b2fad",
+      "width": 960,
+      "height": 640,
+      "sha256": "c5102ea19ae63c91ed3b12774d46ff4b477dbfb0c280e74094ffe9d3222b56f6"
+    },
+    {
+      "file": "011-local.png",
+      "camera_id": "local",
+      "sequence": 11,
+      "timestamp_s": 7.177715839992743,
+      "calibration_id": "b48ff19179ad0fe6ec93cab77e11397fb57eaf77327ab9d9f61b05c898f50872",
+      "width": 960,
+      "height": 640,
+      "sha256": "78fd483a26f9745ac7a19d80e6c3630c8ba2831199ab5f3fff9f2d029bad101e"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "captured",
+  "images": 24,
+  "fixed_cameras": 2,
+  "robot_actions": 0,
+  "physics_steps": 0,
+  "scene_type": "authored static perturbations, not dynamic episodes",
+  "truth_location": "offline/ only; not mounted into detector",
+  "limitations": [
+    "ideal optics",
+    "uncalibrated appearances",
+    "no actual camera noise or exposure model",
+    "straight rigidly repositioned ribbon",
+    "no physical perception qualification"
+  ]
+}
