@@ -1,0 +1,24 @@
+services:
+  experiment:
+    image: ffc-isaac:6.1.0
+    build: .
+    gpus: all
+    shm_size: 4gb
+    environment:
+      ACCEPT_EULA: Y
+      OMNI_KIT_ACCEPT_EULA: YES
+      NVIDIA_DRIVER_CAPABILITIES: all
+      PRIVACY_CONSENT: N
+    volumes:
+      - .:/workspace
+      - isaac-cache:/root/.cache
+      - isaac-local:/root/.local/share/ov
+      - isaac-kit-cache:/isaac-sim/kit/cache
+      - isaac-driver-cache:/root/.nv
+    working_dir: /workspace
+    command: ["scripts/isaac_workcell.py", "--exercise-tool", "--output", "/workspace/outputs/e002"]
+volumes:
+  isaac-cache:
+  isaac-local:
+  isaac-kit-cache:
+  isaac-driver-cache:

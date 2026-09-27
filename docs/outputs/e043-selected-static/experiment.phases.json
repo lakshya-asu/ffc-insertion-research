@@ -1,0 +1,8 @@
+[
+  {
+    "phase": "cantilever_gravity_response",
+    "first_frame": 0,
+    "frames": 60,
+    "first_simulation_time_s": 0.000125
+  }
+]

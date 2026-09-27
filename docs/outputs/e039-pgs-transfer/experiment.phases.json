@@ -1,0 +1,50 @@
+[
+  {
+    "phase": "settle",
+    "first_frame": 0,
+    "frames": 42,
+    "first_simulation_time_s": 0.000125
+  },
+  {
+    "phase": "acquire_suction",
+    "first_frame": 42,
+    "frames": 27,
+    "first_simulation_time_s": 1.400125
+  },
+  {
+    "phase": "lift",
+    "first_frame": 69,
+    "frames": 103,
+    "first_simulation_time_s": 2.300125
+  },
+  {
+    "phase": "open_lower_jaw",
+    "first_frame": 172,
+    "frames": 42,
+    "first_simulation_time_s": 5.7335
+  },
+  {
+    "phase": "deploy_lower_jaw",
+    "first_frame": 214,
+    "frames": 42,
+    "first_simulation_time_s": 7.1335
+  },
+  {
+    "phase": "pinch",
+    "first_frame": 256,
+    "frames": 42,
+    "first_simulation_time_s": 8.5335
+  },
+  {
+    "phase": "release_after_pinch",
+    "first_frame": 298,
+    "frames": 42,
+    "first_simulation_time_s": 9.9335
+  },
+  {
+    "phase": "raise_after_pinch",
+    "first_frame": 340,
+    "frames": 102,
+    "first_simulation_time_s": 11.3335
+  }
+]

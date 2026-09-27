@@ -1,0 +1,44 @@
+{
+  "original_experiment_status": "PASS",
+  "tip_geometry": {
+    "success": true,
+    "depth_m": 0.003800990581512398,
+    "lateral_error_m": -2.3066997528742306e-07,
+    "height_error_m": 1.2632250785821197e-06,
+    "tip_face_inside_slot": true,
+    "all_tip_corners_seated": true,
+    "minimum_required_corner_depth_m": 0.0037,
+    "tip_corners_relative_to_mouth_m": [
+      [
+        0.003800990581512398,
+        -0.0040002306699752875,
+        -0.00014873677492141787
+      ],
+      [
+        0.003800990581512398,
+        -0.0040002306699752875,
+        0.0001512632250785821
+      ],
+      [
+        0.003800990581512398,
+        0.003999769330024713,
+        -0.00014873677492141787
+      ],
+      [
+        0.003800990581512398,
+        0.003999769330024713,
+        0.0001512632250785821
+      ]
+    ],
+    "electrical_continuity_verified": false,
+    "latch_closed": false
+  },
+  "unintended_tool_self_contacts": [],
+  "all_step_contact_peaks_available": true,
+  "independent_grip_stability_qualified": true,
+  "geometric_task_qualified": true,
+  "electrical_connection_verified": false,
+  "final_scene_sha256": "b4e2c85d85d513b59450ed828663559459e0bd9886dc7dc558d63ca7bdc5d3d3",
+  "audit_source_sha256": "9d95ef9e0ac4ce8918429ee651e107492d0cac02c14755957432acfd98d1fdd8",
+  "seating_math_sha256": "e1bc424c267b837b9b8497cebef4f7a4518b6bf8f10f2b0de48af2bc3e39489e"
+}

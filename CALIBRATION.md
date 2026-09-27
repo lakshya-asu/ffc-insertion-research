@@ -1,0 +1,19 @@
+# From this experiment to a measured physical model
+
+The current configuration is an engineering hypothesis. Numerical validation, geometric task success and hardware validation are three separate acceptance steps. No physical measurements were available for this build.
+
+| Quantity | Bench measurement | Model update and acceptance |
+|---|---|---|
+| Cable geometry and mass | Measure body and stiffener thickness, width, free length, stiffener length and total mass on the actual part. Photograph both contact faces. | Replace the nominal 150 × 8 × 0.3 mm, 0.7 g configuration. Check mass and joint spacing in generated USD. |
+| Bending and twist | Record gravity-loaded shapes at several free lengths and both face orientations; add known small tip loads and a torsion test. | Fit effective anisotropic stiffness against a converged independent model. Do not compensate for solver compliance by silently altering material stiffness. The current segmented D6 model cannot independently reproduce both swing axes; use an appropriate shell or beam formulation if the measured anisotropy matters. |
+| Dynamic response | Record release/settling trajectories at a known frame rate after a small displacement. | Identify damping after stiffness. The numerical benchmark's artificial body drag is solely a settling aid and is forbidden in handling runs. |
+| Tool friction and compliance | Pull the cable through representative pads at measured normal loads; record force, slip and visible/contact damage. Measure force versus jaw displacement. | Replace assumed Coulomb friction and drive preload. Add measured pad/contact compliance. Current impulse-derived force spikes are unsuitable for selecting a safe hardware grip force. |
+| Vacuum acquisition | Measure pressure, flow, lift force, peel moment and seal travel for representative curvature and desk conditions. Check pickup visually as well as through pressure. | Fit finite holding limits and compliance; measure valve delay and seal-loss behavior. The present two compliant joints do not model leakage or suction lip deformation. |
+| Connector and latch | Choose an exact cable/connector pairing. Obtain its drawing/CAD; measure slot clearances, insertion travel, force-displacement and latch torque. | Replace the assumed interior geometry and 0.5 N research stop with measured, approved operating limits. Latch closing needs a separate mechanism and verified cable support. |
+| Robot and actuator response | Identify joint/tool response under representative load, latency, backlash and force limits. Calibrate frames and tool center point. | Replace the assumed servo, ideal prismatic guides and gravity model. The simulated tool is not a manufacturable actuator design. |
+| Vision | Calibrate intrinsics/extrinsics and lighting; collect real images with occlusions, reflections and face ambiguity. | Replace privileged pose feedback with estimation and uncertainty-aware alignment. Rendered images currently serve as records, not controller observations. |
+| Final connection | Release the tool after securing the latch; inspect seating and damage, then test the intended electrical paths. | Full assembly success requires secured retention and electrical verification. The current geometric check cannot establish either. |
+
+For each fitted model, reserve measured trials that were not used for fitting. Record success per attempted desk-to-connection cycle, including acquisition failures and recovery time. Compare the direct and fixture strategies with matched cable/connector conditions and report uncertainty; a single deterministic simulation is not a reliability estimate.
+
+The existing `source/config.json`, frozen source hashes, trajectory, contact peaks and stage videos provide the record format for those comparisons. Keep baseline and calibrated configurations separate so numerical changes remain attributable.

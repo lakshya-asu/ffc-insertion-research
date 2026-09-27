@@ -1,0 +1,9 @@
+[
+  {
+    "step": 12637,
+    "collider0": "/World/Tool/LowerJaw/GuideRod/Shape",
+    "collider1": "/World/Tool/Body/UpperSupport/Shape",
+    "sum_contact_force_magnitudes_n": 0.0,
+    "minimum_separation_m": 3.994163125753403e-05
+  }
+]

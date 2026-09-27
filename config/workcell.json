@@ -1,0 +1,31 @@
+{
+  "seed": 260926,
+  "fixture_height_m": 0.12,
+  "connector_mouth_xy_m": [0.50, 0.16],
+  "pcb_thickness_m": 0.0016,
+  "connector_height_m": 0.002,
+  "connector_width_m": 0.0116,
+  "connector_depth_m": 0.0064,
+  "assumed_slot_center_above_pcb_m": 0.001,
+  "pickup_xy_m": [[0.35, -0.16], [0.30, -0.12], [0.40, -0.12], [0.30, -0.22], [0.40, -0.22]],
+  "cable_length_m": 0.15,
+  "cable_width_m": 0.008,
+  "cable_thickness_m": 0.0003,
+  "lift_height_m": 0.05,
+  "approach_distances_m": [0.02, 0.01, 0.003],
+  "tool_tip_from_attachment_m": 0.145,
+  "suction_extension_m": 0.06,
+  "position_tolerance_m": 0.0002,
+  "orientation_tolerance_rad": 0.008726646259971648,
+  "penetration_tolerance_m": 0.0001,
+  "ik_restarts": 12,
+  "ik_iterations": 350,
+  "provenance": {
+    "connector_envelope": "Hirose FH12-15S-0.5SH(55) external dimensions; reference candidate only",
+    "connector_source": "https://www.hirose.com/product/p/CL0586-0523-6-55",
+    "slot_center": "assumed, NOT drawing-derived; no insertion slot modeled",
+    "tool": "design envelope, NOT manufacturing CAD",
+    "cable": "assumed static strip; no identified mechanics",
+    "layout": "exploratory workcell dimensions, NOT measured hardware"
+  }
+}

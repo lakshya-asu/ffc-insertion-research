@@ -1,0 +1,230 @@
+{
+  "configuration": {
+    "schema_version": 1,
+    "seed": 260927,
+    "isaac_version": "6.1.0.0",
+    "physics_dt_s": 0.000125,
+    "robot_home_rad": [
+      0.0,
+      -0.55,
+      0.0,
+      -2.15,
+      0.0,
+      1.65,
+      0.7853981634
+    ],
+    "cable": {
+      "length_m": 0.15,
+      "width_m": 0.008,
+      "thickness_m": 0.0003,
+      "segments": 30,
+      "mass_kg": 0.0007,
+      "start_xyz_m": [
+        0.3,
+        -0.18,
+        0.2
+      ],
+      "bend_stiffness_nm_per_degree": 0.00018849555921538751,
+      "swing_stiffness_nm_per_degree": 0.00027925268031909263,
+      "damping_nm_s_per_degree": 2e-07,
+      "stiffener_segments": 0,
+      "contact_offset_m": 2e-05,
+      "stiffener_gain_multiplier": 3.0,
+      "solver_iterations": 255,
+      "benchmark_drag_per_s": 20
+    },
+    "connector": {
+      "mouth_xyz_m": [
+        0.75,
+        -0.18,
+        0.1226
+      ],
+      "width_m": 0.0116,
+      "depth_m": 0.0064,
+      "height_m": 0.002,
+      "slot_width_m": 0.0084,
+      "slot_height_m": 0.0005,
+      "insertion_depth_m": 0.004,
+      "latch_open_deg": 75.0
+    },
+    "fixture": {
+      "center_xyz_m": [
+        0.55,
+        -0.18,
+        0.065
+      ],
+      "shelf_length_m": 0.15,
+      "shelf_width_m": 0.024,
+      "shelf_thickness_m": 0.003
+    },
+    "provenance": {
+      "robot": "Franka Robotics franka_simulation v0.1.0 FR3 v2.1 USD; variant explicitly differs from earlier Menagerie model",
+      "connector": "External envelope reference FH12; slot, latch and insertion depth are design assumptions, not manufacturing CAD",
+      "cable": "Native homogeneous surface FEM or discrete compliant ribbon selected per run; all mechanics uncalibrated, not a validated laminate or electrical model",
+      "tool_fixture": "Parametric concept geometry; unmanufactured",
+      "suction": "No pressure/flow solver. Optional attachment surrogate must be explicitly requested; disabled by default",
+      "layout": "Linear front-side layout; connector at leading PCB edge for lower-jaw clearance.",
+      "benchmark_drag": "Body velocity damping for numerical settling only; zero force at static equilibrium"
+    },
+    "shell": {
+      "longitudinal_elements": 120,
+      "width_elements": 8,
+      "youngs_modulus_pa": 3000000000.0,
+      "poisson_ratio": 0.35,
+      "dynamic_friction": 0.4,
+      "elasticity_damping": 0.005,
+      "bend_damping": 0.005,
+      "provenance": "Uncalibrated effective homogeneous laminate. No resolved copper conductors or end stiffener in shell mode. Sweep required."
+    },
+    "robot_controller": {
+      "position_gain_scale": 5.0,
+      "integral_gain_per_s": 5.0,
+      "integral_limit_rad": 0.03,
+      "provenance": "Assumed simulation position servo with gravity and velocity feedforward; not an identified FR3 firmware model.",
+      "period_s": 0.001
+    },
+    "tool": {
+      "closed_clamp_target_m": -0.0068,
+      "clamp_stiffness_n_per_m": 600.0,
+      "maximum_clamp_force_n": 2.0,
+      "nominal_contact_preload_n": 0.36,
+      "provenance": "Finite-force pinch target; nominal preload estimated from drive deflection, not measured fingertip force."
+    },
+    "physics_solver": "PGS",
+    "solver_velocity_iterations": 4,
+    "external_forces_every_iteration": false,
+    "disable_stabilization": true,
+    "static_shape_relative_tolerance": 0.01,
+    "cable_model": "segments",
+    "handling_strategy": "fixture",
+    "grasp_benchmark": false,
+    "transfer_benchmark": false
+  },
+  "geometry_checks": {
+    "cable_segments": 30,
+    "cable_mass_kg": 0.0007000000186963007,
+    "maximum_initial_anchor_error_m": 1.1175871339474952e-10,
+    "slot_width_clearance_m": 0.0003999999999999993,
+    "slot_height_clearance_m": 0.00020000000000000004,
+    "arm_joints": 7,
+    "tool_prismatic_joints": 2,
+    "guide_rod_shoe_clearance_m": 0.0030000007916241855
+  },
+  "assembly_success_tested": false,
+  "transfer_benchmark_only": false,
+  "grasp_benchmark_only": false,
+  "pinch_benchmark_only": false,
+  "suction_attachment_enabled": false,
+  "controller": "hold / tool exercise",
+  "electrical_continuity_modeled": false,
+  "material_parameters_calibrated": false,
+  "gravity_compensation": "PhysX model-based generalized gravity feedforward; simulated mass model",
+  "runtime": {
+    "python": "3.12.13 (tags/v3.12.13-dirty:3bb231a, Apr 22 2026, 14:10:08) [GCC 11.4.0]",
+    "numpy": "2.3.1",
+    "usd_version": [
+      0,
+      25,
+      11
+    ],
+    "physx_extension": "omni.physx-110.3.2"
+  },
+  "physics_solver": "PGS",
+  "dof_names": [
+    "fr3v2_1_joint1",
+    "fr3v2_1_joint2",
+    "fr3v2_1_joint3",
+    "fr3v2_1_joint4",
+    "fr3v2_1_joint5",
+    "fr3v2_1_joint6",
+    "fr3v2_1_joint7",
+    "deploy",
+    "clamp"
+  ],
+  "kinematics_position_error_m": 3.420384501671115e-07,
+  "controller_period_s": 0.001,
+  "maximum_fabric_sync_stride_steps": 1,
+  "timestep_audit": {
+    "requested_steps": 16000,
+    "observed_physics_callbacks": 16000,
+    "observed_simulated_time_s": 2.0000000949949026,
+    "expected_simulated_time_s": 2.0,
+    "clock_consistent": true
+  },
+  "video_frames": 60,
+  "cantilever": {
+    "beam_prediction_m": 0.04684508706597223,
+    "simulated_tip_sag_m": 0.046080987419903296,
+    "ratio_to_beam_prediction": 0.9836887986782297,
+    "beam_agreement_within_25_percent": true,
+    "hardware_calibrated": false,
+    "note": "Clamping the first full segment adds a discrete boundary compliance; compare the exact linear hinge-chain prediction too.",
+    "linear_hinge_chain_prediction_m": 0.05013148437500003,
+    "nonlinear_hinge_chain_prediction_m": 0.04613169297856325,
+    "reference_maximum_gradient_residual_rad": 1.824720929910484e-12,
+    "reference_joint_angles_rad": [
+      0.04268449268491982,
+      0.039667035292030445,
+      0.03676267544260044,
+      0.033974310104952825,
+      0.03130362222206352,
+      0.028751315886496116,
+      0.026317323228902293,
+      0.024000983963762584,
+      0.021801199208717575,
+      0.01971656159723938,
+      0.017745463905208023,
+      0.015886188466121724,
+      0.014136979602373008,
+      0.012496101186584067,
+      0.010961881294160985,
+      0.009532745735597325,
+      0.008207242078472433,
+      0.006984055593871946,
+      0.005862018395983052,
+      0.0048401128901945575,
+      0.003917470505612768,
+      0.0030933665626374143,
+      0.0023672120144006973,
+      0.0017385427011795782,
+      0.0012070066677598603,
+      0.0007723500134419777,
+      0.0004344016712126318,
+      0.00019305744493393708,
+      4.826356974924609e-05
+    ],
+    "ratio_to_hinge_chain_prediction": 0.9989008519872982,
+    "hinge_chain_agreement_within_20_percent": true,
+    "declared_static_shape_relative_tolerance": 0.01,
+    "maximum_cable_angular_speed_rad_s": 0.03274510055780411,
+    "dense_pose_motion_final_25_ms": {
+      "samples": 199,
+      "maximum_linear_speed_m_s": 0.001018524616398517,
+      "maximum_angular_speed_rad_s": 0.04626761795508157,
+      "maximum_surface_point_excursion_bound_m": 1.254827181204722e-07
+    },
+    "equilibrium_velocity_source": "Finite differences of every link pose at each physics step; reported velocities retained separately",
+    "angular_speed_below_0_01_rad_s": false,
+    "static_shape_excursion_tolerance_m": 2.9999999999999997e-06,
+    "static_shape_agreement_qualified": true,
+    "last_four_samples_tip_height_range_m": 4.7279477943806825e-08,
+    "equilibrium_window_duration_s": 0.299875,
+    "equilibrium_window_within_2_percent": true,
+    "equilibrium_agreement_qualified": false
+  },
+  "physics": {
+    "steps": 16000,
+    "simulated_time_s": 2.0000000949949026,
+    "min_cable_center_z_m": 0.14993885159492493,
+    "max_cable_center_z_m": 0.20000000298023224,
+    "finite_state": true,
+    "tool_exercised": false,
+    "cable_above_desk": true
+  },
+  "captures": [
+    "Overview.png",
+    "Overhead.png",
+    "ConnectorMacro.png"
+  ],
+  "status": "PASS"
+}

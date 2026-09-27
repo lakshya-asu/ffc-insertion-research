@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "seed": 260927,
+  "isaac_version": "6.1.0.0",
+  "physics_dt_s": 0.000125,
+  "robot_home_rad": [
+    0.0,
+    -0.55,
+    0.0,
+    -2.15,
+    0.0,
+    1.65,
+    0.7853981634
+  ],
+  "cable": {
+    "length_m": 0.15,
+    "width_m": 0.008,
+    "thickness_m": 0.0003,
+    "segments": 30,
+    "mass_kg": 0.0007,
+    "start_xyz_m": [
+      0.3,
+      -0.18,
+      0.001
+    ],
+    "bend_stiffness_nm_per_degree": 0.00018849555921538751,
+    "swing_stiffness_nm_per_degree": 0.00027925268031909263,
+    "damping_nm_s_per_degree": 2e-07,
+    "stiffener_segments": 2,
+    "contact_offset_m": 2e-05,
+    "stiffener_gain_multiplier": 3.0,
+    "solver_iterations": 255,
+    "reduced_coordinate": true,
+    "solver_velocity_iterations": 0,
+    "benchmark_drag_per_s": 20
+  },
+  "connector": {
+    "mouth_xyz_m": [
+      0.75,
+      -0.18,
+      0.1226
+    ],
+    "width_m": 0.0116,
+    "depth_m": 0.0064,
+    "height_m": 0.002,
+    "slot_width_m": 0.0084,
+    "slot_height_m": 0.0005,
+    "insertion_depth_m": 0.004,
+    "latch_open_deg": 75.0
+  },
+  "fixture": {
+    "center_xyz_m": [
+      0.55,
+      -0.18,
+      0.065
+    ],
+    "shelf_length_m": 0.15,
+    "shelf_width_m": 0.024,
+    "shelf_thickness_m": 0.003
+  },
+  "provenance": {
+    "robot": "Franka Robotics franka_simulation v0.1.0 FR3 v2.1 USD; variant explicitly differs from earlier Menagerie model",
+    "connector": "External envelope reference FH12; slot, latch and insertion depth are design assumptions, not manufacturing CAD",
+    "cable": "Native homogeneous surface FEM or discrete compliant ribbon selected per run; all mechanics uncalibrated, not a validated laminate or electrical model",
+    "tool_fixture": "Parametric concept geometry; unmanufactured",
+    "suction": "No pressure/flow solver. Optional attachment surrogate must be explicitly requested; disabled by default",
+    "layout": "Linear front-side layout; connector at leading PCB edge for lower-jaw clearance.",
+    "benchmark_drag": "Body velocity damping for numerical settling only; zero force at static equilibrium"
+  },
+  "shell": {
+    "longitudinal_elements": 120,
+    "width_elements": 8,
+    "youngs_modulus_pa": 3000000000.0,
+    "poisson_ratio": 0.35,
+    "dynamic_friction": 0.4,
+    "elasticity_damping": 0.005,
+    "bend_damping": 0.005,
+    "provenance": "Uncalibrated effective homogeneous laminate. No resolved copper conductors or end stiffener in shell mode. Sweep required."
+  },
+  "robot_controller": {
+    "position_gain_scale": 5.0,
+    "integral_gain_per_s": 5.0,
+    "integral_limit_rad": 0.03,
+    "provenance": "Assumed simulation position servo with gravity and velocity feedforward; not an identified FR3 firmware model.",
+    "period_s": 0.001
+  },
+  "tool": {
+    "closed_clamp_target_m": -0.0068,
+    "clamp_stiffness_n_per_m": 600.0,
+    "maximum_clamp_force_n": 2.0,
+    "nominal_contact_preload_n": 0.36,
+    "provenance": "Finite-force pinch target; nominal preload estimated from drive deflection, not measured fingertip force."
+  },
+  "physics_solver": "TGS",
+  "solver_velocity_iterations": 0,
+  "external_forces_every_iteration": true
+}

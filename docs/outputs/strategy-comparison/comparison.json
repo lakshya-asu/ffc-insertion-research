@@ -1,0 +1,35 @@
+{
+  "trials": [
+    {
+      "strategy": "Direct",
+      "run": "outputs/e040-direct-pgs",
+      "geometric_task_qualified": true,
+      "simulated_time_s": 41.76000198349357,
+      "recorded_stages": 16,
+      "maximum_sampled_pre_insertion_grip_drift_um": 1.315086605779923,
+      "final_tip_depth_mm": 3.8010501861571733,
+      "phase_group_durations_s": {
+        "Desk acquisition": 17.333375000000004,
+        "Grip transfer / regrasp": 9.033375,
+        "Transport / alignment": 10.600000000000001,
+        "Insertion / hold": 4.793126983493565
+      }
+    },
+    {
+      "strategy": "Fixture",
+      "run": "outputs/e040-fixture-pgs",
+      "geometric_task_qualified": true,
+      "simulated_time_s": 66.78900317230728,
+      "recorded_stages": 23,
+      "maximum_sampled_pre_insertion_grip_drift_um": 1.9294110879299489,
+      "final_tip_depth_mm": 3.800990581512398,
+      "phase_group_durations_s": {
+        "Desk acquisition": 17.333375000000004,
+        "Grip transfer / regrasp": 34.433375,
+        "Transport / alignment": 10.233250000000005,
+        "Insertion / hold": 4.788878172307271
+      }
+    }
+  ],
+  "limits": "One deterministic trial per strategy; no reliability estimate or hardware cycle-time claim. Phase boundaries are sampled at the video frame rate. Materials and contact are uncalibrated."
+}

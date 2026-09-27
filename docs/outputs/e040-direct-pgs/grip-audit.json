@@ -1,0 +1,18 @@
+{
+  "grip_stability_qualified": true,
+  "maximum_tip_drift_m": 1.315086605779923e-06,
+  "declared_drift_limit_m": 0.001,
+  "per_phase_maximum_tip_drift_m": {
+    "release_after_pinch": 1.1076084336120878e-07,
+    "raise_after_pinch": 1.051546809645465e-06,
+    "transport_to_pcb": 1.2112651675689543e-06,
+    "align_connector": 9.938410575262098e-07,
+    "approach_slot": 1.315086605779923e-06
+  },
+  "tool_rotation_source": "Vendor forward kinematics reconstructed from recorded joint positions",
+  "maximum_forward_kinematics_patch_error_m": 5.849582112799207e-07,
+  "reference_time_s": 21.5,
+  "sampling_hz": 10,
+  "note": "Retrospective sampled check; cannot bound motion between samples or certify hardware grip",
+  "audit_source_sha256": "b2bfb13128613f55503f1f5c8dfb1acf11e61e35ef4c73159840ef9cb82e726a"
+}

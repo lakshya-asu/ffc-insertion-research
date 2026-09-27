@@ -1,0 +1,457 @@
+[
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_029/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.02286723292854731,
+    "minimum_separation_m": -2.1750951734178514e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_028/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.01848503711698868,
+    "minimum_separation_m": -3.344690496787095e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_027/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.021057840740468237,
+    "minimum_separation_m": -6.4071595251569136e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_026/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.018478122910892125,
+    "minimum_separation_m": -3.357921579683065e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_025/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.021060403469164157,
+    "minimum_separation_m": -8.173956303481056e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_024/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.01847804333010572,
+    "minimum_separation_m": -3.351019461916849e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_023/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.02106044826177822,
+    "minimum_separation_m": -8.152464814337179e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_022/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.018478044921721448,
+    "minimum_separation_m": -3.392304839811011e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_021/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.021060503286207677,
+    "minimum_separation_m": -8.575973264868253e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_020/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.01847801831900142,
+    "minimum_separation_m": -3.381984969852425e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_019/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.02106048168570851,
+    "minimum_separation_m": -7.958458544954361e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_018/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.018478022184353904,
+    "minimum_separation_m": -3.3864376580705624e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_017/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.021060447579657193,
+    "minimum_separation_m": -8.378121113539194e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_016/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.01847804833232658,
+    "minimum_separation_m": -3.353676364392655e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_015/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.02106053898387472,
+    "minimum_separation_m": -8.052000038949458e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_014/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.018477995126886526,
+    "minimum_separation_m": -3.3723621117864866e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_013/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.021060478047729703,
+    "minimum_separation_m": -8.107760990361257e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_012/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.018478016272638342,
+    "minimum_separation_m": -3.351108626703514e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_011/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.021060521248728037,
+    "minimum_separation_m": -8.504703885581222e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_010/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.018477987623555236,
+    "minimum_separation_m": -3.3630525447803095e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_009/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.02106049169015023,
+    "minimum_separation_m": -8.35133351362316e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_008/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.018477999674360035,
+    "minimum_separation_m": -3.384998531474892e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_007/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.021060493736513308,
+    "minimum_separation_m": -8.379449911721792e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_006/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.018478064021110185,
+    "minimum_separation_m": -3.3693887957486623e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_005/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.02106066426676989,
+    "minimum_separation_m": -8.656067182477578e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_004/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.018477724097465398,
+    "minimum_separation_m": -3.305418438959151e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_003/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.021059527853140025,
+    "minimum_separation_m": -4.129542194308833e-12
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_002/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.018477806179362233,
+    "minimum_separation_m": -4.469521627803452e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_001/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.020579418560373597,
+    "minimum_separation_m": -1.4689183897020897e-11
+  },
+  {
+    "step": 99,
+    "collider0": "/World/Cable/segment_000/Shape",
+    "collider1": "/World/Desk/Shape",
+    "sum_contact_force_magnitudes_n": 0.01714924223961134,
+    "minimum_separation_m": -9.191635300109802e-12
+  },
+  {
+    "step": 406586,
+    "collider0": "/World/Tool/Body/UpperSupport/Shape",
+    "collider1": "/World/Cable/segment_026/Shape",
+    "sum_contact_force_magnitudes_n": 0.14065200597573194,
+    "minimum_separation_m": -3.4344094501648215e-07
+  },
+  {
+    "step": 362169,
+    "collider0": "/World/Tool/Body/UpperSupport/Shape",
+    "collider1": "/World/Cable/segment_027/Shape",
+    "sum_contact_force_magnitudes_n": 0.17156588541334683,
+    "minimum_separation_m": -4.078704023413593e-07
+  },
+  {
+    "step": 104248,
+    "collider0": "/World/Tool/Body/UpperSupport/Shape",
+    "collider1": "/World/Cable/segment_025/Shape",
+    "sum_contact_force_magnitudes_n": 0.0012818660929377584,
+    "minimum_separation_m": -3.465338949126817e-08
+  },
+  {
+    "step": 362426,
+    "collider0": "/World/Tool/Body/UpperSupport/Shape",
+    "collider1": "/World/Cable/segment_028/Shape",
+    "sum_contact_force_magnitudes_n": 0.1409330915026317,
+    "minimum_separation_m": -1.2681996963692654e-07
+  },
+  {
+    "step": 362248,
+    "collider0": "/World/Cable/segment_000/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.002107776595039468,
+    "minimum_separation_m": -6.05359673500061e-09
+  },
+  {
+    "step": 268526,
+    "collider0": "/World/Cable/segment_001/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.002132945482458126,
+    "minimum_separation_m": -2.0954757928848267e-09
+  },
+  {
+    "step": 361906,
+    "collider0": "/World/Cable/segment_002/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0013374705076785176,
+    "minimum_separation_m": -3.6088749766349792e-09
+  },
+  {
+    "step": 269270,
+    "collider0": "/World/Cable/segment_003/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0019625256832966897,
+    "minimum_separation_m": -1.5133991837501526e-08
+  },
+  {
+    "step": 361678,
+    "collider0": "/World/Cable/segment_004/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0011099628522970306,
+    "minimum_separation_m": 1.1641532182693481e-09
+  },
+  {
+    "step": 269980,
+    "collider0": "/World/Cable/segment_005/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0018325078876557654,
+    "minimum_separation_m": -1.1059455573558807e-08
+  },
+  {
+    "step": 270266,
+    "collider0": "/World/Cable/segment_006/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.000999622557174007,
+    "minimum_separation_m": -3.259629011154175e-09
+  },
+  {
+    "step": 270569,
+    "collider0": "/World/Cable/segment_007/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.001706326600015018,
+    "minimum_separation_m": -3.026798367500305e-09
+  },
+  {
+    "step": 270948,
+    "collider0": "/World/Cable/segment_008/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0010859125154638605,
+    "minimum_separation_m": -2.6775524020195007e-09
+  },
+  {
+    "step": 271181,
+    "collider0": "/World/Cable/segment_009/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0015156713537578526,
+    "minimum_separation_m": -9.080395102500916e-09
+  },
+  {
+    "step": 271394,
+    "collider0": "/World/Cable/segment_010/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.001021375794607593,
+    "minimum_separation_m": -1.0477378964424133e-09
+  },
+  {
+    "step": 271709,
+    "collider0": "/World/Cable/segment_011/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0014111915902503824,
+    "minimum_separation_m": -2.944608112898095e-09
+  },
+  {
+    "step": 360968,
+    "collider0": "/World/Cable/segment_012/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0009764511901266815,
+    "minimum_separation_m": -1.1641532182693481e-09
+  },
+  {
+    "step": 272289,
+    "collider0": "/World/Cable/segment_013/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0012006659630969807,
+    "minimum_separation_m": 8.149072527885437e-10
+  },
+  {
+    "step": 272605,
+    "collider0": "/World/Cable/segment_014/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0009544374108827469,
+    "minimum_separation_m": 0.0
+  },
+  {
+    "step": 354819,
+    "collider0": "/World/Cable/segment_015/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0010827982350747334,
+    "minimum_separation_m": -1.280568540096283e-09
+  },
+  {
+    "step": 276288,
+    "collider0": "/World/Cable/segment_016/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0013225867405708414,
+    "minimum_separation_m": 3.876630216836929e-08
+  },
+  {
+    "step": 276293,
+    "collider0": "/World/Cable/segment_017/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.002677408929230296,
+    "minimum_separation_m": -1.7462298274040222e-09
+  },
+  {
+    "step": 276293,
+    "collider0": "/World/Cable/segment_018/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.001991260319300636,
+    "minimum_separation_m": -3.026798367500305e-09
+  },
+  {
+    "step": 276295,
+    "collider0": "/World/Cable/segment_019/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0034305650160604273,
+    "minimum_separation_m": 1.2468603927118238e-09
+  },
+  {
+    "step": 276297,
+    "collider0": "/World/Cable/segment_020/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0026832980211111135,
+    "minimum_separation_m": -6.752088665962219e-09
+  },
+  {
+    "step": 276299,
+    "collider0": "/World/Cable/segment_021/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.00359968771590502,
+    "minimum_separation_m": -3.3760443329811096e-09
+  },
+  {
+    "step": 276301,
+    "collider0": "/World/Cable/segment_022/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0035656445334097953,
+    "minimum_separation_m": 4.656612873077393e-10
+  },
+  {
+    "step": 276303,
+    "collider0": "/World/Cable/segment_023/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0036539794336931664,
+    "minimum_separation_m": 4.5855995267629623e-07
+  },
+  {
+    "step": 276309,
+    "collider0": "/World/Cable/segment_024/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.0032110795018525096,
+    "minimum_separation_m": -1.2689270079135895e-08
+  },
+  {
+    "step": 276310,
+    "collider0": "/World/Cable/segment_025/Shape",
+    "collider1": "/World/Regrasp/Shelf/Shape",
+    "sum_contact_force_magnitudes_n": 0.007061884616632597,
+    "minimum_separation_m": -5.9371814131736755e-09
+  },
+  {
+    "step": 360669,
+    "collider0": "/World/Tool/LowerJaw/Shape",
+    "collider1": "/World/Cable/segment_028/Shape",
+    "sum_contact_force_magnitudes_n": 0.13710030660268574,
+    "minimum_separation_m": -2.7242640499025583e-07
+  },
+  {
+    "step": 362426,
+    "collider0": "/World/Tool/LowerJaw/RodLug/Shape",
+    "collider1": "/World/Cable/segment_027/Shape",
+    "sum_contact_force_magnitudes_n": 0.04957475946176281,
+    "minimum_separation_m": -1.0271011774420913e-07
+  },
+  {
+    "step": 360681,
+    "collider0": "/World/Tool/LowerJaw/Shape",
+    "collider1": "/World/Cable/segment_027/Shape",
+    "sum_contact_force_magnitudes_n": 0.0854756842496921,
+    "minimum_separation_m": -3.5639999396153144e-07
+  },
+  {
+    "step": 362409,
+    "collider0": "/World/Tool/LowerJaw/RodLug/Shape",
+    "collider1": "/World/Cable/segment_026/Shape",
+    "sum_contact_force_magnitudes_n": 0.04193934201584087,
+    "minimum_separation_m": 3.14321368932724e-09
+  },
+  {
+    "step": 367634,
+    "collider0": "/World/Tool/LowerJaw/Shape",
+    "collider1": "/World/Cable/segment_026/Shape",
+    "sum_contact_force_magnitudes_n": 0.23465688458754072,
+    "minimum_separation_m": -6.47167325951159e-07
+  }
+]

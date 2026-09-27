@@ -1,0 +1,9 @@
+{
+  "artifact_checks": "PASS",
+  "verified_source_hashes": 19,
+  "experiment_status": "ABORTED",
+  "decoded_video_frames": 36,
+  "stage_clips": 2,
+  "trajectory_samples": 2,
+  "physics_clock_audited": true
+}

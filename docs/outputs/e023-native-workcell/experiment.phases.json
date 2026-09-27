@@ -1,0 +1,44 @@
+[
+  {
+    "phase": "parked_above_pickup_plane",
+    "first_frame": 0,
+    "frames": 45,
+    "first_simulation_time_s": 0.00025
+  },
+  {
+    "phase": "lower_jaw_opening",
+    "first_frame": 45,
+    "frames": 30,
+    "first_simulation_time_s": 1.50025
+  },
+  {
+    "phase": "jaw_deployment",
+    "first_frame": 75,
+    "frames": 45,
+    "first_simulation_time_s": 2.50025
+  },
+  {
+    "phase": "pinch_closure",
+    "first_frame": 120,
+    "frames": 60,
+    "first_simulation_time_s": 4.00025
+  },
+  {
+    "phase": "pinch_release",
+    "first_frame": 180,
+    "frames": 45,
+    "first_simulation_time_s": 6.00025
+  },
+  {
+    "phase": "lateral_retraction",
+    "first_frame": 225,
+    "frames": 30,
+    "first_simulation_time_s": 7.50025
+  },
+  {
+    "phase": "jaw_parking",
+    "first_frame": 255,
+    "frames": 45,
+    "first_simulation_time_s": 8.50025
+  }
+]

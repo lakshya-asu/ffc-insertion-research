@@ -1,0 +1,11 @@
+.venv/
+.venv-isaac/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+third_party/
+/outputs/
+
+# Original user research document remains local.
+brief/
+OVERNIGHT.md

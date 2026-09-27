@@ -1,0 +1,98 @@
+[
+  {
+    "phase": "settle",
+    "first_frame": 0,
+    "frames": 42,
+    "first_simulation_time_s": 0.000125
+  },
+  {
+    "phase": "approach_pick",
+    "first_frame": 42,
+    "frames": 145,
+    "first_simulation_time_s": 1.400125
+  },
+  {
+    "phase": "hover_pick",
+    "first_frame": 187,
+    "frames": 102,
+    "first_simulation_time_s": 6.2335
+  },
+  {
+    "phase": "descend_pick",
+    "first_frame": 289,
+    "frames": 102,
+    "first_simulation_time_s": 9.6335
+  },
+  {
+    "phase": "acquire_suction",
+    "first_frame": 391,
+    "frames": 27,
+    "first_simulation_time_s": 13.0335
+  },
+  {
+    "phase": "lift",
+    "first_frame": 418,
+    "frames": 102,
+    "first_simulation_time_s": 13.9335
+  },
+  {
+    "phase": "open_lower_jaw",
+    "first_frame": 520,
+    "frames": 42,
+    "first_simulation_time_s": 17.3335
+  },
+  {
+    "phase": "deploy_lower_jaw",
+    "first_frame": 562,
+    "frames": 42,
+    "first_simulation_time_s": 18.7335
+  },
+  {
+    "phase": "pinch",
+    "first_frame": 604,
+    "frames": 42,
+    "first_simulation_time_s": 20.1335
+  },
+  {
+    "phase": "release_after_pinch",
+    "first_frame": 646,
+    "frames": 43,
+    "first_simulation_time_s": 21.5335
+  },
+  {
+    "phase": "raise_after_pinch",
+    "first_frame": 689,
+    "frames": 102,
+    "first_simulation_time_s": 22.966875
+  },
+  {
+    "phase": "transport_to_pcb",
+    "first_frame": 791,
+    "frames": 113,
+    "first_simulation_time_s": 26.366875
+  },
+  {
+    "phase": "align_connector",
+    "first_frame": 904,
+    "frames": 103,
+    "first_simulation_time_s": 30.1335
+  },
+  {
+    "phase": "approach_slot",
+    "first_frame": 1007,
+    "frames": 102,
+    "first_simulation_time_s": 33.566875
+  },
+  {
+    "phase": "insert",
+    "first_frame": 1109,
+    "frames": 102,
+    "first_simulation_time_s": 36.966875
+  },
+  {
+    "phase": "verify_seating",
+    "first_frame": 1211,
+    "frames": 42,
+    "first_simulation_time_s": 40.366875
+  }
+]
