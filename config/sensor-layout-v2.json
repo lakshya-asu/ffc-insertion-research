@@ -1,0 +1,132 @@
+{
+  "revision": "sensor-layout-v2",
+  "status": "candidate static optical layout; not a calibrated or collision-qualified installation",
+  "motion_permitted": false,
+  "image_size": [
+    2448,
+    2048
+  ],
+  "sensor_aperture_mm": [
+    6.70752,
+    5.61152
+  ],
+  "cameras": [
+    {
+      "id": "overview",
+      "name": "C1 \u00b7 Pickup overview",
+      "eye_m": [
+        0.49,
+        -0.17,
+        0.68
+      ],
+      "target_m": [
+        0.49,
+        -0.169,
+        0.0
+      ],
+      "horizontal_fov_mm": 450,
+      "purpose": "Locate loose cable and board; observe pickup approach. Not final insertion metrology."
+    },
+    {
+      "id": "inspection",
+      "name": "C2 \u00b7 End presentation",
+      "eye_m": [
+        0.48,
+        -0.57,
+        0.16
+      ],
+      "target_m": [
+        0.48,
+        -0.3,
+        0.14
+      ],
+      "horizontal_fov_mm": 45,
+      "purpose": "Inspect a deliberately presented cable end before approaching the board. Reorient to inspect its other face."
+    },
+    {
+      "id": "insertion-a",
+      "name": "C3 \u00b7 CSI west view",
+      "eye_m": [
+        0.41,
+        -0.17,
+        0.17
+      ],
+      "target_m": [
+        0.6465,
+        -0.1285,
+        0.044
+      ],
+      "horizontal_fov_mm": 45,
+      "purpose": "Observe cable width, near edge and socket during downward approach."
+    },
+    {
+      "id": "insertion-b",
+      "name": "C4 \u00b7 CSI east view",
+      "eye_m": [
+        0.88,
+        -0.17,
+        0.17
+      ],
+      "target_m": [
+        0.6465,
+        -0.1285,
+        0.044
+      ],
+      "horizontal_fov_mm": 45,
+      "purpose": "Opposite-face observation when the cable or jaw hides features from C3."
+    }
+  ],
+  "presentation_tip_m": [
+    0.48,
+    -0.3,
+    0.14
+  ],
+  "nominal_csi_review_center_m": [
+    0.6465,
+    -0.1285,
+    0.0371
+  ],
+  "jaw_proxy": {
+    "thickness_mm": 4,
+    "width_mm": 12,
+    "height_mm": 3,
+    "center_above_tip_mm": 5,
+    "inner_half_gap_mm": 0.2
+  },
+  "limitations": [
+    "Optical centers are not lens-front working distances.",
+    "FOV-derived ideal pinhole focal lengths are not purchasable lens specifications.",
+    "Jaw boxes represent an unqualified thin-finger envelope, not the current FR3 end effector.",
+    "Presented cable poses are authored rigid transforms, not gravity, grasping or contact simulation.",
+    "Nominal CSI review center is not a calibrated insertion target.",
+    "Full robot/tool swept-volume, mount clearance and optical calibration remain required."
+  ],
+  "inspection_lighting": {
+    "backdrop_center_m": [
+      0.48,
+      -0.2,
+      0.25
+    ],
+    "backdrop_size_m": [
+      0.08,
+      0.002,
+      0.26
+    ],
+    "light_eye_m": [
+      0.4,
+      -0.46,
+      0.23
+    ],
+    "light_target_m": [
+      0.48,
+      -0.3,
+      0.14
+    ],
+    "light_size_m": [
+      0.15,
+      0.15
+    ],
+    "intensity": 500,
+    "scope": "authored matte backdrop and diffuse area light, not calibrated radiometry; fixture clearance unqualified"
+  }
+}

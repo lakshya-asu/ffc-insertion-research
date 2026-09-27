@@ -1,0 +1,116 @@
+{
+  "revision": "csi-entrance-audit-v1",
+  "status": "candidate static optical layout; not a calibrated or collision-qualified installation",
+  "motion_permitted": false,
+  "image_size": [
+    2448,
+    2048
+  ],
+  "sensor_aperture_mm": [
+    6.70752,
+    5.61152
+  ],
+  "cameras": [
+    {
+      "id": "entrance-top",
+      "name": "E1 \u00b7 Axial entrance audit",
+      "eye_m": [
+        0.6465,
+        -0.128499,
+        0.3
+      ],
+      "target_m": [
+        0.6465,
+        -0.1285,
+        0.0369
+      ],
+      "horizontal_fov_mm": 28,
+      "purpose": "Audit visible slot geometry; no assumption of a qualified physical entrance."
+    },
+    {
+      "id": "entrance-west",
+      "name": "E2 \u00b7 11 degree west offset",
+      "eye_m": [
+        0.5865,
+        -0.1285,
+        0.35
+      ],
+      "target_m": [
+        0.6465,
+        -0.1285,
+        0.0369
+      ],
+      "horizontal_fov_mm": 28,
+      "purpose": "Audit visible slot geometry; no assumption of a qualified physical entrance."
+    },
+    {
+      "id": "entrance-east",
+      "name": "E3 \u00b7 11 degree east offset",
+      "eye_m": [
+        0.7065,
+        -0.1285,
+        0.35
+      ],
+      "target_m": [
+        0.6465,
+        -0.1285,
+        0.0369
+      ],
+      "horizontal_fov_mm": 28,
+      "purpose": "Audit visible slot geometry; no assumption of a qualified physical entrance."
+    }
+  ],
+  "presentation_tip_m": [
+    0.48,
+    -0.3,
+    0.14
+  ],
+  "nominal_csi_review_center_m": [
+    0.6465,
+    -0.1285,
+    0.0371
+  ],
+  "jaw_proxy": {
+    "thickness_mm": 4,
+    "width_mm": 12,
+    "height_mm": 3,
+    "center_above_tip_mm": 5,
+    "inner_half_gap_mm": 0.2
+  },
+  "limitations": [
+    "Optical centers are not lens-front working distances.",
+    "FOV-derived ideal pinhole focal lengths are not purchasable lens specifications.",
+    "Jaw boxes represent an unqualified thin-finger envelope, not the current FR3 end effector.",
+    "Presented cable poses are authored rigid transforms, not gravity, grasping or contact simulation.",
+    "Nominal CSI review center is not a calibrated insertion target.",
+    "Full robot/tool swept-volume, mount clearance and optical calibration remain required."
+  ],
+  "inspection_lighting": {
+    "backdrop_center_m": [
+      0.48,
+      -0.2,
+      0.25
+    ],
+    "backdrop_size_m": [
+      0.08,
+      0.002,
+      0.26
+    ],
+    "light_eye_m": [
+      0.4,
+      -0.46,
+      0.23
+    ],
+    "light_target_m": [
+      0.48,
+      -0.3,
+      0.14
+    ],
+    "light_size_m": [
+      0.15,
+      0.15
+    ],
+    "intensity": 500,
+    "scope": "authored matte backdrop and diffuse area light, not calibrated radiometry; fixture clearance unqualified"
+  }
+}

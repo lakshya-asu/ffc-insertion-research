@@ -1,0 +1,14 @@
+{
+  "revision": 1,
+  "status": "specified; no trained entrance estimator or qualified physical labels yet",
+  "motion_permitted": false,
+  "inputs": ["raw camera frames", "measured camera calibration", "timestamps", "measured robot/tool state when available", "measured tactile/force signals when available"],
+  "forbidden_runtime_inputs": ["simulator object poses", "CAD recess plane", "offline masks", "perfect simulator crop boxes", "simulator latch state"],
+  "visible_targets": ["entrance aperture", "two long entrance rims", "entrance end boundaries", "connector housing", "latch", "cable leading edge", "exposed contacts", "stiffener", "gripper occluder"],
+  "outputs": ["visible-only masks", "edge polylines and endpoint uncertainty", "entrance-plane estimate with calibrated uncertainty when observable", "latch open/closed/unknown evidence", "occluded or unobservable flag"],
+  "required_examples": ["verified open latch", "closed latch", "partly open latch", "tool occlusion", "cable occlusion", "glare", "dim exposure", "different board and connector specimens", "partly inserted cable", "absent connector"],
+  "metrics": ["aperture IoU", "rim boundary error", "end-boundary localization error", "calibrated metric error after physical calibration", "false-open latch rate", "false aperture on absent or occluded entrance", "uncertainty coverage and abstention", "capture-to-estimate latency", "frame loss and timestamp jitter"],
+  "label_scope": "CAD-derived prototype labels stay offline and are not physical qualification. Validate the actual connector and latch geometry before entrance training.",
+  "camera_inventory": {"user_report": "Arducams capable of approximately 4K at 15 fps", "exact_models": "unknown", "quantity": "unknown", "lenses": "unknown", "usb_observed_models": ["RealSense D405", "RealSense D415"], "images_captured": false},
+  "learning_plan": "Use a pretrained dense-feature model with high-resolution boundary and endpoint heads. Compare against a baseline on fresh scene and real-image holdouts. Do not resize away the slot or evaluate only whole-housing IoU."
+}
