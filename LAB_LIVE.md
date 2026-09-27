@@ -54,7 +54,7 @@ This page observes the simulated workcell. It has no actuator endpoint. Actor/cr
 The current preview is the separate Zero 2 W side-entry scene. Restart it with the usual command plus:
 
 ```bash
---stage /workspace/outputs/pi-zero-review-001/pi-zero-workcell.usda \
+--stage /workspace/outputs/pi-zero-review-002/pi-zero-workcell.usda \
 --layout /workspace/config/pi-zero-task.json --board-camera entrance
 ```
 

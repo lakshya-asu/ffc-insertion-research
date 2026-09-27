@@ -43,3 +43,27 @@ def test_sideways_probes_keep_height_and_stay_outside_mouth():
         .ExtractTranslation(),
         b["tip_m"],
     )
+
+
+def test_pickup_camera_contains_both_loose_cable_ends():
+    from pxr import Gf
+
+    from ffc.camera_optics import apply_reference_optics
+
+    stage = Usd.Stage.CreateInMemory()
+    UsdGeom.SetStageMetersPerUnit(stage, 1)
+    cam = UsdGeom.Camera.Define(stage, "/Camera")
+    view = next(v for v in CFG["cameras"] if v["id"] == "overview")
+    eye, target = np.array(view["eye_m"]), np.array(view["target_m"])
+    cam.AddTransformOp().Set(
+        Gf.Matrix4d().SetLookAt(Gf.Vec3d(*eye), Gf.Vec3d(*target), Gf.Vec3d(0, 0, 1)).GetInverse()
+    )
+    profile = json.loads((Path(__file__).parents[1] / "config/arducam-b0498.json").read_text())
+    apply_reference_optics(stage, cam, profile, float(np.linalg.norm(eye - target)))
+    frustum = cam.GetCamera().frustum
+    transform = frustum.ComputeViewMatrix() * frustum.ComputeProjectionMatrix()
+    # Include the wider far-end corners, with a five-percent half-frame margin.
+    for x in [0.34, 0.54]:
+        for y in [-0.238, -0.222]:
+            projected = transform.Transform(Gf.Vec3d(x, y, 0.0003))
+            assert abs(projected[0]) < 0.95 and abs(projected[1]) < 0.95

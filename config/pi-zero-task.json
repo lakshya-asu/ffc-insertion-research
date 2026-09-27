@@ -1,5 +1,5 @@
 {
-  "revision": "pi-zero2w-side-entry-v1",
+  "revision": "pi-zero2w-side-entry-v2",
   "board": "Raspberry Pi Zero 2 W",
   "asset": "third_party/raspberry_pi/zero/zero2w.usdc",
   "assembly_name": "Raspberry Pi Zero 2 W",
@@ -54,13 +54,13 @@
       "id": "overview",
       "name": "Pickup overview",
       "eye_m": [
-        0.6,
-        -0.1401,
+        0.53,
+        -0.1501,
         0.62
       ],
       "target_m": [
-        0.6,
-        -0.14,
+        0.53,
+        -0.15,
         0.015
       ],
       "role": "Arducam reference"

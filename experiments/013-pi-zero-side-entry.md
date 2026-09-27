@@ -26,7 +26,9 @@ Board underside is 30 mm above the desk on four visual supports. The connector f
 
 Three native 3840 × 2160 views use the B0498 / IMX585 16 mm reference: overhead, nearly axial entrance, and offset entrance. A fourth virtual macro is explicitly for human CAD inspection; its short working distance is not claimed as a real Arducam capability. All optics are ideal projections with DOF disabled. The macro must not silently enter a training dataset as a deployable sensor.
 
-Run `outputs/pi-zero-review-001` saves 12 RGB frames, the new scene USD, camera settings, provenance and the geometry audit. All public WebP copies match source pixels exactly. A 12-second montage shows the three static situations. Live preview uses this scene, the overhead view and the entrance view at 960 × 540; the whole-cell camera remains a human observer. The old Pi 4 scene and model evaluation remain intact. No new perception model has been trained on these views.
+The initial run `outputs/pi-zero-review-001` clipped the loose cable’s narrow end in the overhead frame. It is preserved as placement evidence. Revision two recenters the overhead view; an independent USD projection test checks that both cable ends lie inside the image with margin.
+
+Run `outputs/pi-zero-review-002` saves 12 RGB frames, the new scene USD, camera settings, provenance and the geometry audit. All public WebP copies match source pixels exactly. A 12-second montage shows the three static situations. Live preview uses this scene, the overhead view and the entrance view at 960 × 540; the whole-cell camera remains a human observer. The old Pi 4 scene and model evaluation remain intact. No new perception model has been trained on these views.
 
 ## Reproduction
 

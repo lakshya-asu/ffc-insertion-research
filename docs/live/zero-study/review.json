@@ -1,6 +1,6 @@
 {
   "configuration": {
-    "revision": "pi-zero2w-side-entry-v1",
+    "revision": "pi-zero2w-side-entry-v2",
     "board": "Raspberry Pi Zero 2 W",
     "asset": "third_party/raspberry_pi/zero/zero2w.usdc",
     "assembly_name": "Raspberry Pi Zero 2 W",
@@ -55,13 +55,13 @@
         "id": "overview",
         "name": "Pickup overview",
         "eye_m": [
-          0.6,
-          -0.1401,
+          0.53,
+          -0.1501,
           0.62
         ],
         "target_m": [
-          0.6,
-          -0.14,
+          0.53,
+          -0.15,
           0.015
         ],
         "role": "Arducam reference"
@@ -126,13 +126,13 @@
       "id": "overview",
       "name": "Pickup overview",
       "eye_m": [
-        0.6,
-        -0.1401,
+        0.53,
+        -0.1501,
         0.62
       ],
       "target_m": [
-        0.6,
-        -0.14,
+        0.53,
+        -0.15,
         0.015
       ],
       "role": "Arducam reference",
@@ -326,7 +326,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "5cc309a5e043015424329c3b452804b64cdc8486246519c1a539190e359e5093"
+      "sha256": "e9d2885b4c9e5e31116788c2841f05c39df1d8d0760707d19fc99475866684bd"
     },
     {
       "file": "loose-entrance.png",
@@ -342,7 +342,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "5c62b8149b3f66d5a17ef99b1b23624104869d2705df897ac2e4a80b0deb51c7"
+      "sha256": "27e67bfcd00091cdd6b9864dc0b3b94a5749dac1e0cf722c69876bb7501af381"
     },
     {
       "file": "loose-offset.png",
@@ -358,7 +358,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "67b67c473dd55804c6d781a06f4cde62dd6db76853d18426c101fda857ae8109"
+      "sha256": "1366a71a12010ec6f8e6df8cec189b55c2c96504d6765a34c42df646ee76e1cc"
     },
     {
       "file": "loose-macro.png",
@@ -374,7 +374,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "9d9e4084de25dba944ee12dfc9a683f26fb03cecaa0a456b01e68578eb143ba6"
+      "sha256": "2df61dd9c676bacdec711fc28feb55d31bd27c097dd8545a16dec0c5a3622e8c"
     },
     {
       "file": "approach-overview.png",
@@ -390,7 +390,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "ec3dd51c29d34162b5baddd18e80b2c437dc33bb320772fa964d38b03a7a07ba"
+      "sha256": "a162c0edf44030f6b1a1a7c5b344350a8a0532126501bf91a3c2ca9f4a4eaa41"
     },
     {
       "file": "approach-entrance.png",
@@ -406,7 +406,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "c47a95e106514ac28aa4650dc185b417c788e3909e069720f82d6cc17e6a37ba"
+      "sha256": "83a92ad29dc0b1b9ab31acd2db2d30209156125f3e82d19539e0694e2236d862"
     },
     {
       "file": "approach-offset.png",
@@ -422,7 +422,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "6ff60e743d06aa241695dc8aac4ff7826fed74c4c356713887542460d40bc699"
+      "sha256": "050911dc8bc6b029c4a459c689bf6c31d306e74e807a2383682d54dbff28bde6"
     },
     {
       "file": "approach-macro.png",
@@ -438,7 +438,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "7696d8631ec23e9cb5337a5ff4d4be25b4c6d62fceef0ab279b8792b0d4cf3bb"
+      "sha256": "cc5c75bde8e47e80fe81aaf2b43245cd6529e57fb6c9c9bcc25ef340b8580971"
     },
     {
       "file": "near-overview.png",
@@ -454,7 +454,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "e2113863e72fb20e7642b13e5a7a09b8dfcf1495f205aa1f6f208badb9b550ea"
+      "sha256": "08a0cd707585ee03354de7748f679443b7902cf58dd3e092feecee2492a8253f"
     },
     {
       "file": "near-entrance.png",
@@ -470,7 +470,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "bd061f95617e728afd5500a2d3601bfc0a7b5e17cf6888acd4fc9cb54b30e661"
+      "sha256": "982ace08e120fcedeeba5f488af3e04977278d3b274303ea9d9ef7fedbc7a0ed"
     },
     {
       "file": "near-offset.png",
@@ -486,7 +486,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "d6f9ac38d38ffb616aa7b3fe042b51ceccbf7ba00f733bcf29cbbc340e8c714d"
+      "sha256": "80172e3f1d06e47477928bcbfac1107469b4ac10ecc19f901d6e305eb20f1dbd"
     },
     {
       "file": "near-macro.png",
@@ -502,7 +502,7 @@
         "jaw_inner_gap_mm": 0.5,
         "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
       },
-      "sha256": "81bb02447317c55ea764e19d85bf3360595e67440cff08f2fb9ccb5c3ee332c4"
+      "sha256": "2ce2143f34dc7624f63ec54ea9caf3cb894258412eddd58c21be7d791ba0bf25"
     }
   ],
   "cad": {
