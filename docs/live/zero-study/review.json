@@ -1,0 +1,612 @@
+{
+  "configuration": {
+    "revision": "pi-zero2w-side-entry-v1",
+    "board": "Raspberry Pi Zero 2 W",
+    "asset": "third_party/raspberry_pi/zero/zero2w.usdc",
+    "assembly_name": "Raspberry Pi Zero 2 W",
+    "source": "Optocam Zero community assembly, not manufacturer-certified",
+    "board_translation_m": [
+      0.6,
+      -0.14,
+      0.03
+    ],
+    "board_outline_mm": [
+      65,
+      30
+    ],
+    "nominal_mouth_review_point_m": [
+      0.6333,
+      -0.1408,
+      0.0322
+    ],
+    "insertion_direction_world": [
+      -1,
+      0,
+      0
+    ],
+    "board_normal_world": [
+      0,
+      0,
+      1
+    ],
+    "motion_permitted": false,
+    "training_ready": false,
+    "hardware_profile": "config/arducam-b0498.json",
+    "cable": {
+      "product": "Raspberry Pi Camera Cable Standard\u2013Mini 200 mm, revision two outline",
+      "length_mm": 200,
+      "mini_contacts": 22,
+      "mini_pitch_mm": 0.5,
+      "mini_width_mm": 11.5,
+      "standard_contacts": 15,
+      "standard_pitch_mm": 1,
+      "standard_width_mm": 16,
+      "outline_source": "PCN 36 / RP-009201-PC-1",
+      "assumed_wide_end_length_mm": 27,
+      "assumed_body_thickness_mm": 0.14,
+      "assumed_header_thickness_mm": 0.3,
+      "assumed_exposed_length_mm": 4,
+      "assumed_support_length_mm": 6,
+      "appearance": "black shielded body, blue stiffeners; uncalibrated; markings omitted",
+      "contact_faces": "mini downward; far-end opposite face is an unverified visual assumption"
+    },
+    "cameras": [
+      {
+        "id": "overview",
+        "name": "Pickup overview",
+        "eye_m": [
+          0.6,
+          -0.1401,
+          0.62
+        ],
+        "target_m": [
+          0.6,
+          -0.14,
+          0.015
+        ],
+        "role": "Arducam reference"
+      },
+      {
+        "id": "entrance",
+        "name": "Look into the side entrance",
+        "eye_m": [
+          0.94,
+          -0.1408,
+          0.039
+        ],
+        "target_m": [
+          0.6333,
+          -0.1408,
+          0.0322
+        ],
+        "role": "Arducam reference"
+      },
+      {
+        "id": "offset",
+        "name": "Offset entrance and approach",
+        "eye_m": [
+          0.9,
+          -0.23,
+          0.085
+        ],
+        "target_m": [
+          0.6333,
+          -0.1408,
+          0.0322
+        ],
+        "role": "Arducam reference"
+      },
+      {
+        "id": "macro",
+        "name": "Geometry inspection / virtual macro",
+        "eye_m": [
+          0.67,
+          -0.16,
+          0.049
+        ],
+        "target_m": [
+          0.632,
+          -0.1408,
+          0.0322
+        ],
+        "role": "Human CAD inspection only; not a qualified Arducam mount"
+      }
+    ],
+    "limitations": [
+      "Nominal review point from CAD envelope; not an insertion target or clearance estimate",
+      "Unarticulated CAD latch; open state and travel unverified",
+      "Cable outline dimensions partly sourced; thickness, exposed length, stiffener and transition length require specimen measurements",
+      "No deformable physics or task colliders; no manipulation result",
+      "Ideal Arducam projection; physical near focus, blur, distortion and rolling readout uncalibrated",
+      "No simulator truth supplied to runtime perception or control"
+    ]
+  },
+  "camera_metrics": [
+    {
+      "id": "overview",
+      "name": "Pickup overview",
+      "eye_m": [
+        0.6,
+        -0.1401,
+        0.62
+      ],
+      "target_m": [
+        0.6,
+        -0.14,
+        0.015
+      ],
+      "role": "Arducam reference",
+      "optics": {
+        "model": "Arducam B0498",
+        "focal_length_mm": 16.0,
+        "image_size": [
+          3840,
+          2160
+        ],
+        "K": [
+          [
+            5517.241379310345,
+            0,
+            1920.0
+          ],
+          [
+            0,
+            5517.241379310345,
+            1080.0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "horizontal_fov_mm": 421.08000575206603,
+        "normal_plane_pixels_per_mm": 9.119407113955942,
+        "focus_distance_m": 0.6050000082644628,
+        "focus_mode": "fixed manual setting; physical focus reach unverified",
+        "depth_of_field_enabled": false,
+        "horizontal_fov_degrees": 38.37579320925515,
+        "usd_mm_scale": 0.01
+      }
+    },
+    {
+      "id": "entrance",
+      "name": "Look into the side entrance",
+      "eye_m": [
+        0.94,
+        -0.1408,
+        0.039
+      ],
+      "target_m": [
+        0.6333,
+        -0.1408,
+        0.0322
+      ],
+      "role": "Arducam reference",
+      "optics": {
+        "model": "Arducam B0498",
+        "focal_length_mm": 16.0,
+        "image_size": [
+          3840,
+          2160
+        ],
+        "K": [
+          [
+            5517.241379310345,
+            0,
+            1920.0
+          ],
+          [
+            0,
+            5517.241379310345,
+            1080.0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "horizontal_fov_mm": 213.5156601986842,
+        "normal_plane_pixels_per_mm": 17.984629307408827,
+        "focus_distance_m": 0.30677537384868425,
+        "focus_mode": "fixed manual setting; physical focus reach unverified",
+        "depth_of_field_enabled": false,
+        "horizontal_fov_degrees": 38.37579320925515,
+        "usd_mm_scale": 0.01
+      }
+    },
+    {
+      "id": "offset",
+      "name": "Offset entrance and approach",
+      "eye_m": [
+        0.9,
+        -0.23,
+        0.085
+      ],
+      "target_m": [
+        0.6333,
+        -0.1408,
+        0.0322
+      ],
+      "role": "Arducam reference",
+      "optics": {
+        "model": "Arducam B0498",
+        "focal_length_mm": 16.0,
+        "image_size": [
+          3840,
+          2160
+        ],
+        "K": [
+          [
+            5517.241379310345,
+            0,
+            1920.0
+          ],
+          [
+            0,
+            5517.241379310345,
+            1080.0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "horizontal_fov_mm": 199.1501202658939,
+        "normal_plane_pixels_per_mm": 19.281936635905872,
+        "focus_distance_m": 0.286135230267089,
+        "focus_mode": "fixed manual setting; physical focus reach unverified",
+        "depth_of_field_enabled": false,
+        "horizontal_fov_degrees": 38.37579320925515,
+        "usd_mm_scale": 0.01
+      }
+    },
+    {
+      "id": "macro",
+      "name": "Geometry inspection / virtual macro",
+      "eye_m": [
+        0.67,
+        -0.16,
+        0.049
+      ],
+      "target_m": [
+        0.632,
+        -0.1408,
+        0.0322
+      ],
+      "role": "Human CAD inspection only; not a qualified Arducam mount",
+      "optics": {
+        "model": "Virtual inspection camera; not a deployable Arducam view",
+        "focal_length_mm": 16.0,
+        "image_size": [
+          3840,
+          2160
+        ],
+        "K": [
+          [
+            5517.241379310345,
+            0,
+            1920.0
+          ],
+          [
+            0,
+            5517.241379310345,
+            1080.0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "horizontal_fov_mm": 31.855821918136108,
+        "normal_plane_pixels_per_mm": 120.54311484626353,
+        "focus_distance_m": 0.04576985907778177,
+        "focus_mode": "fixed manual setting; physical focus reach unverified",
+        "depth_of_field_enabled": false,
+        "horizontal_fov_degrees": 38.37579320925515,
+        "usd_mm_scale": 0.01
+      }
+    }
+  ],
+  "frames": [
+    {
+      "file": "loose-overview.png",
+      "case": "loose",
+      "camera": "overview",
+      "pose": {
+        "tip_m": [
+          0.34,
+          -0.23,
+          0.0003
+        ],
+        "case": "loose",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "5cc309a5e043015424329c3b452804b64cdc8486246519c1a539190e359e5093"
+    },
+    {
+      "file": "loose-entrance.png",
+      "case": "loose",
+      "camera": "entrance",
+      "pose": {
+        "tip_m": [
+          0.34,
+          -0.23,
+          0.0003
+        ],
+        "case": "loose",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "5c62b8149b3f66d5a17ef99b1b23624104869d2705df897ac2e4a80b0deb51c7"
+    },
+    {
+      "file": "loose-offset.png",
+      "case": "loose",
+      "camera": "offset",
+      "pose": {
+        "tip_m": [
+          0.34,
+          -0.23,
+          0.0003
+        ],
+        "case": "loose",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "67b67c473dd55804c6d781a06f4cde62dd6db76853d18426c101fda857ae8109"
+    },
+    {
+      "file": "loose-macro.png",
+      "case": "loose",
+      "camera": "macro",
+      "pose": {
+        "tip_m": [
+          0.34,
+          -0.23,
+          0.0003
+        ],
+        "case": "loose",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "9d9e4084de25dba944ee12dfc9a683f26fb03cecaa0a456b01e68578eb143ba6"
+    },
+    {
+      "file": "approach-overview.png",
+      "case": "approach",
+      "camera": "overview",
+      "pose": {
+        "tip_m": [
+          0.6483,
+          -0.1408,
+          0.0322
+        ],
+        "case": "approach",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "ec3dd51c29d34162b5baddd18e80b2c437dc33bb320772fa964d38b03a7a07ba"
+    },
+    {
+      "file": "approach-entrance.png",
+      "case": "approach",
+      "camera": "entrance",
+      "pose": {
+        "tip_m": [
+          0.6483,
+          -0.1408,
+          0.0322
+        ],
+        "case": "approach",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "c47a95e106514ac28aa4650dc185b417c788e3909e069720f82d6cc17e6a37ba"
+    },
+    {
+      "file": "approach-offset.png",
+      "case": "approach",
+      "camera": "offset",
+      "pose": {
+        "tip_m": [
+          0.6483,
+          -0.1408,
+          0.0322
+        ],
+        "case": "approach",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "6ff60e743d06aa241695dc8aac4ff7826fed74c4c356713887542460d40bc699"
+    },
+    {
+      "file": "approach-macro.png",
+      "case": "approach",
+      "camera": "macro",
+      "pose": {
+        "tip_m": [
+          0.6483,
+          -0.1408,
+          0.0322
+        ],
+        "case": "approach",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "7696d8631ec23e9cb5337a5ff4d4be25b4c6d62fceef0ab279b8792b0d4cf3bb"
+    },
+    {
+      "file": "near-overview.png",
+      "case": "near",
+      "camera": "overview",
+      "pose": {
+        "tip_m": [
+          0.6363,
+          -0.1408,
+          0.0322
+        ],
+        "case": "near",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "e2113863e72fb20e7642b13e5a7a09b8dfcf1495f205aa1f6f208badb9b550ea"
+    },
+    {
+      "file": "near-entrance.png",
+      "case": "near",
+      "camera": "entrance",
+      "pose": {
+        "tip_m": [
+          0.6363,
+          -0.1408,
+          0.0322
+        ],
+        "case": "near",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "bd061f95617e728afd5500a2d3601bfc0a7b5e17cf6888acd4fc9cb54b30e661"
+    },
+    {
+      "file": "near-offset.png",
+      "case": "near",
+      "camera": "offset",
+      "pose": {
+        "tip_m": [
+          0.6363,
+          -0.1408,
+          0.0322
+        ],
+        "case": "near",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "d6f9ac38d38ffb616aa7b3fe042b51ceccbf7ba00f733bcf29cbbc340e8c714d"
+    },
+    {
+      "file": "near-macro.png",
+      "case": "near",
+      "camera": "macro",
+      "pose": {
+        "tip_m": [
+          0.6363,
+          -0.1408,
+          0.0322
+        ],
+        "case": "near",
+        "jaw_inner_gap_mm": 0.5,
+        "description": "authored visibility probe; no grasp, contact, seating or latch actuation"
+      },
+      "sha256": "81bb02447317c55ea764e19d85bf3360595e67440cff08f2fb9ccb5c3ee332c4"
+    }
+  ],
+  "cad": {
+    "source_file": "optocam.step",
+    "selected_assembly": "Raspberry Pi Zero 2 W",
+    "source_sha256": "9c4da17832337f7bee0ed323a2cb30cc64cb2050d41757d053036e24b7eaec98",
+    "units": "metres in USD; millimetres in report",
+    "deflection_mm": 0.015,
+    "angular_deflection_rad": 0.15,
+    "component_count": 94,
+    "triangle_count": 478024,
+    "bounds_mm": [
+      [
+        -35.50000000000001,
+        -16.37593808287668,
+        5.551115123125783e-16
+      ],
+      [
+        33.3,
+        14.200000000000003,
+        5.050000000000002
+      ]
+    ],
+    "materials": "CAD colours retained; roughness 0.42 is an unmeasured rendering assumption",
+    "physics": "none: visual assembly only"
+  },
+  "cable": {
+    "length_m": 0.2,
+    "end_contacts": [
+      22,
+      15
+    ],
+    "pitch_m": [
+      0.0005,
+      0.001
+    ],
+    "width_m": [
+      0.0115,
+      0.016
+    ],
+    "mechanics": "none; flat authored visual probe",
+    "unmeasured_dimensions": {
+      "assumed_wide_end_length_mm": 27,
+      "assumed_body_thickness_mm": 0.14,
+      "assumed_header_thickness_mm": 0.3,
+      "assumed_exposed_length_mm": 4,
+      "assumed_support_length_mm": 6
+    }
+  },
+  "geometry_audit": {
+    "outline_mm": [
+      65.0,
+      30.0
+    ],
+    "mounting_hole_diameter_mm": 2.7,
+    "mounting_hole_pitch_mm": [
+      58,
+      23
+    ],
+    "outline_and_hole_pattern": "pass",
+    "source_sha256": "9c4da17832337f7bee0ed323a2cb30cc64cb2050d41757d053036e24b7eaec98",
+    "component_count": 94,
+    "triangle_count": 478024,
+    "reference": "official Zero 2 W mechanical drawing",
+    "connector": "CAD names Molex 54548-2271; source BOM and aperture tolerances unverified",
+    "limitations": [
+      "Board dimensions do not certify connector clearance or latch state",
+      "CAD PCB thickness 1.6 mm is not independently certified by this outline drawing"
+    ]
+  },
+  "image_size": [
+    3840,
+    2160
+  ],
+  "renderer": "Isaac Sim 6.1 RTX RaytracedLighting",
+  "motion_permitted": false,
+  "training_ready": false,
+  "timeline_elapsed_s": 0.0,
+  "script_sha256": "b26d32de994f100820e75cfc75a5c6d23cf6dfe6413736f442111fdf65758f2d",
+  "sources": {
+    "optocam.step": {
+      "url": "https://raw.githubusercontent.com/dorukkumkumoglu/optocamzero/d9772fbc432eae7b8a84007a5d435ba0c5c10b62/hardware/cad/optocamzero_V1.1.step",
+      "bytes": 49153694,
+      "sha256": "9c4da17832337f7bee0ed323a2cb30cc64cb2050d41757d053036e24b7eaec98"
+    },
+    "mechanical.pdf": {
+      "url": "https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-mechanical-drawing.pdf",
+      "bytes": 163618,
+      "sha256": "58a9cb559ec2747af2581b0e0a95890fabc3d2c627c8192b7b485f612345692d"
+    },
+    "cable-pcn36.pdf": {
+      "url": "https://pip-assets.raspberrypi.com/categories/1267-pcn/documents/RP-009201-PC-1-15%20to%2022%20pin%20camera%20cables%20Rev%202.pdf",
+      "bytes": 100185,
+      "sha256": "b036e74dff1b2328a365e074620af38b0503e988fae27e24d93779daba311dc6"
+    },
+    "optocam-LICENSE": {
+      "url": "https://raw.githubusercontent.com/dorukkumkumoglu/optocamzero/d9772fbc432eae7b8a84007a5d435ba0c5c10b62/LICENSE",
+      "bytes": 713,
+      "sha256": "547d0a126ed1ab72b9a2fb22ab73a8625d2835b49f80615f3f92034775185a16"
+    }
+  },
+  "asset_audit": {
+    "lossless_images": 12,
+    "all_match_source_pixels": true
+  },
+  "render_asset_license": "CC BY-SA 4.0; adapted Optocam Zero CAD, Doruk Kumkumoglu; see ATTRIBUTION.txt"
+}

@@ -1,0 +1,22 @@
+{
+  "optocam.step": {
+    "url": "https://raw.githubusercontent.com/dorukkumkumoglu/optocamzero/d9772fbc432eae7b8a84007a5d435ba0c5c10b62/hardware/cad/optocamzero_V1.1.step",
+    "bytes": 49153694,
+    "sha256": "9c4da17832337f7bee0ed323a2cb30cc64cb2050d41757d053036e24b7eaec98"
+  },
+  "mechanical.pdf": {
+    "url": "https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-mechanical-drawing.pdf",
+    "bytes": 163618,
+    "sha256": "58a9cb559ec2747af2581b0e0a95890fabc3d2c627c8192b7b485f612345692d"
+  },
+  "cable-pcn36.pdf": {
+    "url": "https://pip-assets.raspberrypi.com/categories/1267-pcn/documents/RP-009201-PC-1-15%20to%2022%20pin%20camera%20cables%20Rev%202.pdf",
+    "bytes": 100185,
+    "sha256": "b036e74dff1b2328a365e074620af38b0503e988fae27e24d93779daba311dc6"
+  },
+  "optocam-LICENSE": {
+    "url": "https://raw.githubusercontent.com/dorukkumkumoglu/optocamzero/d9772fbc432eae7b8a84007a5d435ba0c5c10b62/LICENSE",
+    "bytes": 713,
+    "sha256": "547d0a126ed1ab72b9a2fb22ab73a8625d2835b49f80615f3f92034775185a16"
+  }
+}

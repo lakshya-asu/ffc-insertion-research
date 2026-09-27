@@ -17,6 +17,8 @@ def main():
     p.add_argument("--output", type=Path, default=ROOT / "outputs/lab-live/feed")
     p.add_argument("--stage", type=Path, default=ROOT / "outputs/pi4-refined-002/raspberry-pi-workcell.usda")
     p.add_argument("--seconds", type=float, default=600)
+    p.add_argument("--layout", type=Path, default=ROOT / "config/arducam-b0498-cell-v1.json")
+    p.add_argument("--board-camera", default="insertion-a")
     a = p.parse_args()
     a.output.mkdir(parents=True, exist_ok=True)
     from isaacsim import SimulationApp
@@ -53,10 +55,10 @@ def main():
             app.update()
         stage = context.get_stage()
         profile = json.loads((ROOT / "config/arducam-b0498.json").read_text())
-        layout = json.loads((ROOT / "config/arducam-b0498-cell-v1.json").read_text())
+        layout = json.loads(a.layout.read_text())
         poses = {v["id"]: v for v in layout["cameras"]}
         views = {"workcell": ((1.4, -1.4, 1.25), (0.30, -0.02, 0.42), 28)}
-        for name, pose in [("desk", poses["overview"]), ("board", poses["insertion-a"])]:
+        for name, pose in [("desk", poses["overview"]), ("board", poses[a.board_camera])]:
             views[name] = (pose["eye_m"], pose["target_m"], profile["focal_length_mm"])
         optics = {}
         for name, design in views.items():
@@ -104,6 +106,8 @@ def main():
                     "reference_optics": optics.get(name),
                     "motion_permitted": False,
                 }
+                metadata["workpiece"] = layout.get("board", "Raspberry Pi 4 Model B")
+                metadata["description"] = metadata["workpiece"] + ". " + metadata["description"]
                 if name in optics:
                     metadata["description"] += (
                         " Arducam B0498 reference, manual 16 mm lens; 960 × 540 preview of a"

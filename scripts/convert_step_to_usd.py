@@ -29,7 +29,13 @@ from OCP.XCAFDoc import XCAFDoc_ColorGen, XCAFDoc_ColorSurf, XCAFDoc_DocumentToo
 from pxr import Gf, Sdf, Usd, UsdGeom, UsdShade
 
 
-def convert(source: Path, output: Path, deflection_mm: float = 0.015, split_connectors: bool = False):
+def convert(
+    source: Path,
+    output: Path,
+    deflection_mm: float = 0.015,
+    split_connectors: bool = False,
+    assembly_name: str | None = None,
+):
     reader = STEPCAFControl_Reader()
     reader.SetColorMode(True)
     reader.SetNameMode(True)
@@ -169,11 +175,34 @@ def convert(source: Path, output: Path, deflection_mm: float = 0.015, split_conn
 
     labels = TDF_LabelSequence()
     shapes.GetFreeShapes(labels)
-    for i in range(1, labels.Length() + 1):
-        visit(labels.Value(i), TopLoc_Location(), [])
+    selected = []
+
+    def find_assembly(label):
+        if shapes.IsReference_s(label):
+            referred = TDF_Label()
+            shapes.GetReferredShape_s(label, referred)
+            find_assembly(referred)
+        elif label_name(label) == assembly_name:
+            selected.append(label)
+        elif shapes.IsAssembly_s(label):
+            children = TDF_LabelSequence()
+            shapes.GetComponents_s(label, children)
+            for j in range(1, children.Length() + 1):
+                find_assembly(children.Value(j))
+
+    if assembly_name:
+        for i in range(1, labels.Length() + 1):
+            find_assembly(labels.Value(i))
+        if len(selected) != 1:
+            raise ValueError(f"Expected one assembly named {assembly_name!r}, found {len(selected)}")
+    else:
+        selected = [labels.Value(i) for i in range(1, labels.Length() + 1)]
+    for label in selected:
+        visit(label, TopLoc_Location(), [])
     bounds = np.asarray([r["bounds_mm"] for r in records])
     report = {
         "source_file": source.name,
+        "selected_assembly": assembly_name,
         "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
         "units": "metres in USD; millimetres in report",
         "deflection_mm": deflection_mm,
@@ -200,5 +229,6 @@ if __name__ == "__main__":
     p.add_argument("output", type=Path)
     p.add_argument("--deflection-mm", type=float, default=0.015)
     p.add_argument("--split-connectors", action="store_true")
+    p.add_argument("--assembly-name", help="Extract exactly one named assembly in its own local frame")
     a = p.parse_args()
-    convert(a.source, a.output, a.deflection_mm, a.split_connectors)
+    convert(a.source, a.output, a.deflection_mm, a.split_connectors, a.assembly_name)

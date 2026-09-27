@@ -1,5 +1,6 @@
 """Fetch official Camera 3 CAD, community Pi 4 CAD, and official dimension drawings."""
 
+import argparse
 import concurrent.futures
 import hashlib
 import json
@@ -42,6 +43,13 @@ def fetch(item):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--manifest", type=Path, default=ROOT / "config/raspberry-pi-sources.json")
+    parser.add_argument("--destination", type=Path, default=DEST)
+    args = parser.parse_args()
+    DEST = args.destination
+    LOCK = json.loads(args.manifest.read_text())
+    SOURCES = {name: record["url"] for name, record in LOCK.items()}
     DEST.mkdir(parents=True, exist_ok=True)
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         result = dict(pool.map(fetch, SOURCES.items()))

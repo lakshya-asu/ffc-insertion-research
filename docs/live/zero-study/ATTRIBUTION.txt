@@ -1,0 +1,12 @@
+Pi Zero 2 W review images and montage: CC BY-SA 4.0.
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Contains adapted community geometry from Optocam Zero by Doruk Kumkumoglu.
+Source: https://github.com/dorukkumkumoglu/optocamzero
+Pinned source commit and SHA-256: review.json / sources.
+Changes: extracted Raspberry Pi Zero 2 W assembly, STEP-to-USD tessellation,
+workcell placement, rendering materials and lighting, added cable and jaw
+visibility probes, camera views and montage composition.
+
+The community geometry is not manufacturer-certified. Raspberry Pi is a
+trademark of Raspberry Pi Ltd. No endorsement is implied.

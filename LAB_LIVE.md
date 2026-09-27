@@ -48,3 +48,14 @@ The notes field is browser-local storage. It is not an agent inbox. The user cop
 ## Observation boundary
 
 This page observes the simulated workcell. It has no actuator endpoint. Actor/critic inputs, rewards and stage transitions must use deployable measurements in future work. Simulator geometry and labels are permitted for offline supervision and evaluation, not privileged runtime control.
+
+## Current scene selection
+
+The current preview is the separate Zero 2 W side-entry scene. Restart it with the usual command plus:
+
+```bash
+--stage /workspace/outputs/pi-zero-review-001/pi-zero-workcell.usda \
+--layout /workspace/config/pi-zero-task.json --board-camera entrance
+```
+
+With no extra arguments, the renderer still selects the Pi 4 / Arducam reference. The page's saved Zero review is `/live/#zero`; its virtual macro is for human geometry inspection and is not a deployed observation camera.

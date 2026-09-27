@@ -1,0 +1,122 @@
+{
+  "revision": "pi-zero2w-side-entry-v1",
+  "board": "Raspberry Pi Zero 2 W",
+  "asset": "third_party/raspberry_pi/zero/zero2w.usdc",
+  "assembly_name": "Raspberry Pi Zero 2 W",
+  "source": "Optocam Zero community assembly, not manufacturer-certified",
+  "board_translation_m": [
+    0.6,
+    -0.14,
+    0.03
+  ],
+  "board_outline_mm": [
+    65,
+    30
+  ],
+  "nominal_mouth_review_point_m": [
+    0.6333,
+    -0.1408,
+    0.0322
+  ],
+  "insertion_direction_world": [
+    -1,
+    0,
+    0
+  ],
+  "board_normal_world": [
+    0,
+    0,
+    1
+  ],
+  "motion_permitted": false,
+  "training_ready": false,
+  "hardware_profile": "config/arducam-b0498.json",
+  "cable": {
+    "product": "Raspberry Pi Camera Cable Standard\u2013Mini 200 mm, revision two outline",
+    "length_mm": 200,
+    "mini_contacts": 22,
+    "mini_pitch_mm": 0.5,
+    "mini_width_mm": 11.5,
+    "standard_contacts": 15,
+    "standard_pitch_mm": 1,
+    "standard_width_mm": 16,
+    "outline_source": "PCN 36 / RP-009201-PC-1",
+    "assumed_wide_end_length_mm": 27,
+    "assumed_body_thickness_mm": 0.14,
+    "assumed_header_thickness_mm": 0.3,
+    "assumed_exposed_length_mm": 4,
+    "assumed_support_length_mm": 6,
+    "appearance": "black shielded body, blue stiffeners; uncalibrated; markings omitted",
+    "contact_faces": "mini downward; far-end opposite face is an unverified visual assumption"
+  },
+  "cameras": [
+    {
+      "id": "overview",
+      "name": "Pickup overview",
+      "eye_m": [
+        0.6,
+        -0.1401,
+        0.62
+      ],
+      "target_m": [
+        0.6,
+        -0.14,
+        0.015
+      ],
+      "role": "Arducam reference"
+    },
+    {
+      "id": "entrance",
+      "name": "Look into the side entrance",
+      "eye_m": [
+        0.94,
+        -0.1408,
+        0.039
+      ],
+      "target_m": [
+        0.6333,
+        -0.1408,
+        0.0322
+      ],
+      "role": "Arducam reference"
+    },
+    {
+      "id": "offset",
+      "name": "Offset entrance and approach",
+      "eye_m": [
+        0.9,
+        -0.23,
+        0.085
+      ],
+      "target_m": [
+        0.6333,
+        -0.1408,
+        0.0322
+      ],
+      "role": "Arducam reference"
+    },
+    {
+      "id": "macro",
+      "name": "Geometry inspection / virtual macro",
+      "eye_m": [
+        0.67,
+        -0.16,
+        0.049
+      ],
+      "target_m": [
+        0.632,
+        -0.1408,
+        0.0322
+      ],
+      "role": "Human CAD inspection only; not a qualified Arducam mount"
+    }
+  ],
+  "limitations": [
+    "Nominal review point from CAD envelope; not an insertion target or clearance estimate",
+    "Unarticulated CAD latch; open state and travel unverified",
+    "Cable outline dimensions partly sourced; thickness, exposed length, stiffener and transition length require specimen measurements",
+    "No deformable physics or task colliders; no manipulation result",
+    "Ideal Arducam projection; physical near focus, blur, distortion and rolling readout uncalibrated",
+    "No simulator truth supplied to runtime perception or control"
+  ]
+}
