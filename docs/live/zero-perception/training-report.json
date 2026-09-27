@@ -1,0 +1,30 @@
+{
+  "models": {
+    "dino": {
+      "best_validation_foreground_mean_iou": 0.9276156821848038,
+      "model_sha256": "24764d6ff4e481d964ccdab6ad8598779afa16b83bf2f668a2d947888e451fe3"
+    },
+    "rgb_ablation": {
+      "best_validation_foreground_mean_iou": 0.7059494498446459,
+      "model_sha256": "56bf7fb8d9466ea3226e311b3c9b205727356909fe4f0e1223bfcd9053f1a2de"
+    }
+  },
+  "epochs": 40,
+  "train_images": 128,
+  "validation_images": 32,
+  "elapsed_s": 62.37502220600436,
+  "device": "cuda",
+  "classes": [
+    "background",
+    "connector",
+    "cable",
+    "mini_end",
+    "gripper"
+  ],
+  "motion_permitted": false,
+  "backbone": "frozen DINOv2 ViT-B/14, blocks 6 and 12; native RGB detail decoder",
+  "backbone_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+  "labels_sha256": "89183c1364da625b0601715ca51d35a185df9342fefcee06a4f9d6faa666b0ab",
+  "test_used_for_training_or_selection": false,
+  "seed": 927611
+}

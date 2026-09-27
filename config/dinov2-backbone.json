@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/facebookresearch/dinov2",
+  "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "source_archive_sha256": "51c5c5c52c2a1248f09c61b2fbaa9aaf097d0e9e02f535c954e1d13464c10829",
+  "model": "dinov2_vitb14",
+  "weights_url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_pretrain.pth",
+  "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+  "license": "Apache-2.0 for DINOv2 backbone and code; see upstream LICENSE and model card",
+  "frozen": true
+}

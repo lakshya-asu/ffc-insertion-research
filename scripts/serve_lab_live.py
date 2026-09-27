@@ -26,12 +26,19 @@ def snapshot():
         meta = load(LIVE / "feed" / (name + ".json"), None)
         if meta and (LIVE / "feed" / (name + ".jpg")).is_file():
             feeds[name] = meta
-    history = load(ROOT / "outputs/pi-perception-model-002/history.json", [])
-    training = {"epochs_planned": 40, "epochs_completed": len(history), "history": history}
+    active = load(ROOT / "config/lab-active-training.json", {})
+    run = ROOT / active.get("run", "outputs/pi-perception-model-002")
+    history = load(run / "history.json", [])
+    training = {
+        "epochs_planned": active.get("epochs", 40),
+        "epochs_completed": len(history),
+        "history": history,
+        "name": active.get("name", "Pi 4 baseline"),
+    }
     if history:
         training["best_validation_foreground_mean_iou"] = max(r["foreground_mean_iou"] for r in history)
-    training["invalid"] = load(ROOT / "outputs/pi-perception-model-002/invalid.json", None)
-    training["complete"] = (ROOT / "outputs/pi-perception-model-002/training-report.json").exists()
+    training["invalid"] = load(run / "invalid.json", None)
+    training["complete"] = (run / "training-report.json").exists()
     return {
         "server_time": time.time(),
         "status": status,

@@ -1,0 +1,27 @@
+{
+  "revision": "zero-visible-regions-v1",
+  "task": "Zero 2 W local connector and cable-end perception prerequisite",
+  "classes": ["background", "connector", "cable", "mini_end", "gripper"],
+  "source_camera_profile": "config/arducam-b0498.json",
+  "cameras": ["entrance", "offset"],
+  "native_resolution": [3840, 2160],
+  "fixed_crop_xyxy": [1472, 856, 2368, 1304],
+  "crop_basis": "Fixed 896 x 448 pixel window centered on each optical axis, inspected in raw RGB; identical for every frame. No simulator or ground-truth object box used at inference.",
+  "input_resolution": [896, 448],
+  "backbone": "DINOv2 ViT-B/14 frozen pretrained RGB encoder",
+  "decoder": "DINO features fused with native RGB convolutional detail, predicting five visible-region masks",
+  "development_scenes": {"train": 64, "validation": 16},
+  "held_out_scenes": {"ordinary": 20, "challenge": 16},
+  "epochs": 40,
+  "selection": "maximum validation foreground macro IoU; one frozen checkpoint before held-out capture",
+  "motion_permitted": false,
+  "aperture_geometry_verified": false,
+  "limitations": [
+    "Connector class is visible CAD housing/contact assembly, not an aperture or insertion target",
+    "Mini-end class is visible mini-end stiffener and contact pads; it is not a verified leading edge or grasp point",
+    "No latch state, insertion depth, 3D tip frame or calibrated uncertainty is produced",
+    "Fixed local camera windows require the task to be inside the observed region; this is not whole-desk cable discovery",
+    "Virtual macro camera is excluded",
+    "Static synthetic data with uncalibrated optics and cable geometry; no real-image qualification"
+  ]
+}

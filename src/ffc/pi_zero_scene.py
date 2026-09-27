@@ -40,9 +40,8 @@ def add_zero(stage, root, cfg):
     return json.loads(source.with_suffix(".json").read_text())
 
 
-def make_zero_cable(stage, cfg):
+def make_zero_cable(stage, cfg, root="/World/Hardware/ZeroCable"):
     """Flat visual coupon: +X points away from its 22-pin leading edge."""
-    root = "/World/Hardware/ZeroCable"
     UsdGeom.Xform.Define(stage, root)
     spec = cfg["cable"]
     length = spec["length_mm"] / 1000

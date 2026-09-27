@@ -1,0 +1,51 @@
+{
+  "frozen_training_report_utc": "2026-09-27T21:00:52.829377+00:00",
+  "first_test_frame_written_utc": "2026-09-27T21:01:52.446589+00:00",
+  "checkpoint_selection_before_test_capture": true,
+  "development_validation": {
+    "valid": true,
+    "images": 160,
+    "scenes": 80,
+    "split_pixels": {
+      "train": [
+        44226368,
+        718056,
+        4512516,
+        168803,
+        1754481
+      ],
+      "validation": [
+        11009628,
+        178336,
+        1153804,
+        44097,
+        459191
+      ]
+    },
+    "unique_rgb": true,
+    "development_hash_disjoint": false
+  },
+  "test_validation": {
+    "valid": true,
+    "images": 72,
+    "scenes": 36,
+    "split_pixels": {
+      "test": [
+        13914341,
+        223192,
+        1276162,
+        43039,
+        599586
+      ],
+      "challenge": [
+        11610292,
+        150674,
+        687106,
+        24266,
+        372718
+      ]
+    },
+    "unique_rgb": true,
+    "development_hash_disjoint": true
+  }
+}

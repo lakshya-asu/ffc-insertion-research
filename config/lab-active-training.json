@@ -1,0 +1,5 @@
+{
+  "run": "outputs/zero-region-model-001",
+  "epochs": 40,
+  "name": "Zero DINOv2 visible-region head"
+}
