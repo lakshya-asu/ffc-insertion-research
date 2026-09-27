@@ -1,0 +1,27 @@
+{
+  "pi4-detailed.step": {
+    "url": "https://raw.githubusercontent.com/multigamesystem/MGS-CAD-Files/c2cc26be009e7c2825ff7b8162e8863d88b8be08/STEP%20files%20with%20images/Raspberry%20Pi%204%20Model%20B%20v4.step",
+    "bytes": 17535443,
+    "sha256": "fd75897c59e79106ada16c3c744c212b92e60f1992b8b42349ddc2f2b3e90ce4"
+  },
+  "pi4-mechanical.pdf": {
+    "url": "https://datasheets.raspberrypi.com/rpi4/raspberry-pi-4-mechanical-drawing.pdf",
+    "bytes": 22819,
+    "sha256": "a5c88057563016631ebca26666fd672614fc9aaa1c59128a541612c7798e9809"
+  },
+  "camera3.zip": {
+    "url": "https://datasheets.raspberrypi.com/camera/camera-module-3-step.zip",
+    "bytes": 9971996,
+    "sha256": "b2e2026ea5322bddf1ddcbae97c094822ee9e0ca92d7bc5c748f60a8b5ef6683"
+  },
+  "camera3-mechanical.pdf": {
+    "url": "https://datasheets.raspberrypi.com/camera/camera-module-3-standard-mechanical-drawing.pdf",
+    "bytes": 949985,
+    "sha256": "bde27f5ab38dd46aa05713bbb17c6e8acc4cb1d48ff9109df511256f6fbc66ac"
+  },
+  "cable-drawing.pdf": {
+    "url": "https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf",
+    "bytes": 53662,
+    "sha256": "eb57535be81b6d63e3cc5cb77ac26c84727f5b52f147819186e56bee0eab117d"
+  }
+}

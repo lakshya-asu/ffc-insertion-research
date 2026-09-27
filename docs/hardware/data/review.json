@@ -1,0 +1,7048 @@
+{
+  "assets": {
+    "Pi4": {
+      "source_file": "pi4-detailed.step",
+      "source_sha256": "fd75897c59e79106ada16c3c744c212b92e60f1992b8b42349ddc2f2b3e90ce4",
+      "units": "metres in USD; millimetres in report",
+      "deflection_mm": 0.015,
+      "angular_deflection_rad": 0.15,
+      "component_count": 19,
+      "triangle_count": 246331,
+      "bounds_mm": [
+        [
+          -42.5,
+          -30.7520692157759,
+          -3.2520692157758
+        ],
+        [
+          46.490000000000094,
+          27.64793078422418,
+          16.647930784224172
+        ]
+      ],
+      "materials": "CAD colours retained; roughness 0.42 is an unmeasured rendering assumption",
+      "physics": "none: visual assembly only",
+      "components": [
+        {
+          "path": "/Asset/Components/Part_0000",
+          "name": "PCB, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "PCB, RPi4ModelB:1"
+          ],
+          "triangles": 20376,
+          "bounds_mm": [
+            [
+              -42.5,
+              -28.35206921577582,
+              -1.1520692157758246
+            ],
+            [
+              42.5,
+              27.64793078422418,
+              0.4479307842241838
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.0,
+              0.52712,
+              0.0
+            ],
+            [
+              1.0,
+              1.0,
+              0.21586
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0001",
+          "name": "Broadcom BCM2711B0 CPU, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "Broadcom BCM2711B0 CPU, RPi4ModelB:1"
+          ],
+          "triangles": 964,
+          "bounds_mm": [
+            [
+              -20.75,
+              -3.3520692157758,
+              0.4479307842241795
+            ],
+            [
+              -5.75,
+              11.6479307842242,
+              2.74793078422418
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0002",
+          "name": "2.54 mm DUPONT MALE PIN HEADER, POE, 2X2, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "2.54 mm DUPONT MALE PIN HEADER, POE, 2X2, RPi4ModelB:1"
+          ],
+          "triangles": 300,
+          "bounds_mm": [
+            [
+              16.46,
+              15.467930784224201,
+              -2.552069215775817
+            ],
+            [
+              21.54,
+              20.5479307842242,
+              8.747930784224184
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ],
+            [
+              0.37626,
+              0.23074,
+              0.0
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0003",
+          "name": "2.54 mm DUPONT MALE PIN HEADER, IO, 2X20, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "2.54 mm DUPONT MALE PIN HEADER, IO, 2X20, RPi4ModelB:1"
+          ],
+          "triangles": 2460,
+          "bounds_mm": [
+            [
+              -35.4,
+              21.607930784224205,
+              -2.552069215775806
+            ],
+            [
+              15.399999999999999,
+              26.6879307842242,
+              8.747930784224195
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ],
+            [
+              0.37626,
+              0.23074,
+              0.0
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0004",
+          "name": "Camera Connector, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "Camera Connector, RPi4ModelB:1"
+          ],
+          "triangles": 20248,
+          "bounds_mm": [
+            [
+              1.3781612016192817,
+              -28.0520692157758,
+              0.2479307842240925
+            ],
+            [
+              6.44999999999999,
+              -5.6520692157758,
+              5.927930784224186
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0005",
+          "name": "Microphone Plug, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "Microphone Plug, RPi4ModelB:1"
+          ],
+          "triangles": 16802,
+          "bounds_mm": [
+            [
+              7.88595218229423,
+              -30.7520692157759,
+              -1.1020692157756362
+            ],
+            [
+              15.11404781770577,
+              -15.752069215775508,
+              6.447930784224184
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0006",
+          "name": "Display Connector, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "Display Connector, RPi4ModelB:1"
+          ],
+          "triangles": 20248,
+          "bounds_mm": [
+            [
+              -40.95,
+              -11.552069215775822,
+              0.24793078422408849
+            ],
+            [
+              -35.8781612016193,
+              10.847930784224179,
+              5.927930784224182
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0007",
+          "name": "Gigabit Ethernet Port, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "Gigabit Ethernet Port, RPi4ModelB:1"
+          ],
+          "triangles": 8895,
+          "bounds_mm": [
+            [
+              24.15,
+              9.2979307842242,
+              -3.2520692157758
+            ],
+            [
+              45.75,
+              25.497930784224202,
+              13.947930784224202
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.40198,
+              0.4452,
+              0.55201
+            ],
+            [
+              1.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.52712,
+              0.0
+            ],
+            [
+              0.21586,
+              0.21586,
+              0.21586
+            ],
+            [
+              0.93011,
+              0.7454,
+              0.31855
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0008",
+          "name": "Female Micro HDMI Connector, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "Female Micro HDMI Connector, RPi4ModelB:1"
+          ],
+          "triangles": 21386,
+          "bounds_mm": [
+            [
+              -6.2500000000000195,
+              -30.15206921588831,
+              -0.09706921577577299
+            ],
+            [
+              0.24999999999998,
+              -22.65206921569932,
+              3.4179307842252307
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.78354,
+              0.78354,
+              0.78354
+            ],
+            [
+              0.93011,
+              0.7454,
+              0.31855
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0009",
+          "name": "Female Micro HDMI Connector, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "Female Micro HDMI Connector, RPi4ModelB:2"
+          ],
+          "triangles": 21386,
+          "bounds_mm": [
+            [
+              -19.75,
+              -30.15206921588831,
+              -0.09706921577577399
+            ],
+            [
+              -13.25,
+              -22.65206921569932,
+              3.4179307842252293
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.78354,
+              0.78354,
+              0.78354
+            ],
+            [
+              0.93011,
+              0.7454,
+              0.31855
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0010",
+          "name": "Female USB Type C Connector, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "Female USB Type C Connector, RPi4ModelB:1"
+          ],
+          "triangles": 14006,
+          "bounds_mm": [
+            [
+              -35.77,
+              -29.85206921933687,
+              -0.35206921577582523
+            ],
+            [
+              -26.830000000000002,
+              -21.95206921933687,
+              3.60793078422418
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.78354,
+              0.78354,
+              0.78354
+            ],
+            [
+              0.93011,
+              0.7454,
+              0.31855
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0011",
+          "name": "2X USB3.0 PORTS, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "2X USB3.0 PORTS, RPi4ModelB:1"
+          ],
+          "triangles": 28216,
+          "bounds_mm": [
+            [
+              28.64,
+              -9.18706921586533,
+              -2.7496867460345715
+            ],
+            [
+              46.1,
+              6.4829307843209705,
+              16.647930784224172
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.40198,
+              0.4452,
+              0.55201
+            ],
+            [
+              0.00061,
+              0.04519,
+              0.64448
+            ],
+            [
+              0.93011,
+              0.7454,
+              0.31855
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0012",
+          "name": "91D77 D9WHV 778K, 4 GB LPDDR4 SDRAM, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "91D77 D9WHV 778K, 4 GB LPDDR4 SDRAM, RPi4ModelB:1"
+          ],
+          "triangles": 5824,
+          "bounds_mm": [
+            [
+              -2.7500000000000204,
+              -3.1020692157758,
+              0.4479307842241795
+            ],
+            [
+              7.2499999999999805,
+              11.397930784224203,
+              1.2479307842248573
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.21586,
+              0.21586,
+              0.21586
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0013",
+          "name": "Cypress CYW43455 Wireless Module Cover, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "Cypress CYW43455 Wireless Module Cover, RPi4ModelB:1"
+          ],
+          "triangles": 844,
+          "bounds_mm": [
+            [
+              -36.000000000000014,
+              7.647930784224201,
+              0.44793078422417393
+            ],
+            [
+              -24.99999999999999,
+              20.64793078422421,
+              2.0479307842241776
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.78354,
+              0.78354,
+              0.78354
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0014",
+          "name": "SD Card Slot, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "SD Card Slot, RPi4ModelB:1"
+          ],
+          "triangles": 14086,
+          "bounds_mm": [
+            [
+              -41.0,
+              -6.25206921577581,
+              -2.6020692157758205
+            ],
+            [
+              -29.599999999999998,
+              5.697930784224181,
+              -1.152069215775757
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ],
+            [
+              0.37626,
+              0.23074,
+              0.0
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0015",
+          "name": "VIA VL805 PCIe USB 3.0 controller, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "VIA VL805 PCIe USB 3.0 controller, RPi4ModelB:1"
+          ],
+          "triangles": 6164,
+          "bounds_mm": [
+            [
+              13.100000000000001,
+              -8.752069215775832,
+              0.44793078422417965
+            ],
+            [
+              21.9,
+              0.0479307842242207,
+              1.2479307842241807
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.21586,
+              0.21586,
+              0.21586
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.40198,
+              0.4452,
+              0.55201
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0016",
+          "name": "2X USB2.0 PORTS, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "2X USB2.0 PORTS, RPi4ModelB:1"
+          ],
+          "triangles": 26854,
+          "bounds_mm": [
+            [
+              28.630000000000045,
+              -27.014555864136707,
+              -2.9892605412560047
+            ],
+            [
+              46.490000000000094,
+              -11.689583952859493,
+              16.167930784224165
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.40198,
+              0.4452,
+              0.55201
+            ],
+            [
+              0.21586,
+              0.21586,
+              0.21586
+            ],
+            [
+              0.93011,
+              0.7454,
+              0.31855
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0017",
+          "name": "Broadcom BCM54213PE Gigabit Ethernet Transceiver, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "Broadcom BCM54213PE Gigabit Ethernet Transceiver, RPi4ModelB:1"
+          ],
+          "triangles": 14336,
+          "bounds_mm": [
+            [
+              13.100000000000001,
+              6.2479307842242,
+              0.44793078422418175
+            ],
+            [
+              19.9,
+              13.04793078422423,
+              1.4479307842243923
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.21586,
+              0.21586,
+              0.21586
+            ],
+            [
+              0.40198,
+              0.4452,
+              0.55201
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0018",
+          "name": "MxL7704 Universal PMIC, RPi4ModelB",
+          "assembly": [
+            "Raspberry Pi 4 Model B v4",
+            "MxL7704 Universal PMIC, RPi4ModelB:1"
+          ],
+          "triangles": 2936,
+          "bounds_mm": [
+            [
+              -35.2,
+              -19.05206921577581,
+              0.4479307842241798
+            ],
+            [
+              -29.8,
+              -13.652069215775779,
+              1.247930784224284
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.21586,
+              0.21586,
+              0.21586
+            ],
+            [
+              0.40198,
+              0.4452,
+              0.55201
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ]
+          ]
+        }
+      ]
+    },
+    "Camera3": {
+      "source_file": "Camera_module_3_std_model_simple.stp",
+      "source_sha256": "ecbc4b091e51f31c6186b81ad68d4205b8dceec0d90c116cd7fd699e1f1c5702",
+      "units": "metres in USD; millimetres in report",
+      "deflection_mm": 0.015,
+      "angular_deflection_rad": 0.15,
+      "component_count": 197,
+      "triangle_count": 533626,
+      "bounds_mm": [
+        [
+          -1.13686837721616e-15,
+          0.0,
+          -7.65
+        ],
+        [
+          23.8619995117188,
+          25.0,
+          2.595
+        ]
+      ],
+      "materials": "CAD colours retained; roughness 0.42 is an unmeasured rendering assumption",
+      "physics": "none: visual assembly only",
+      "components": [
+        {
+          "path": "/Asset/Components/Part_0000",
+          "name": "/PWDN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "/PWDN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              14.89,
+              -0.73152
+            ],
+            [
+              2.69,
+              15.11,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0001",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              14.9,
+              15.825,
+              -0.03048
+            ],
+            [
+              15.9,
+              16.775,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0002",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              15.225000000000001,
+              19.0,
+              -0.03048
+            ],
+            [
+              16.175,
+              20.0,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0003",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              3.2,
+              18.31,
+              -0.03048
+            ],
+            [
+              3.77,
+              18.89,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0004",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.8,
+              8.51,
+              -0.03048
+            ],
+            [
+              5.370000000000001,
+              9.090000000000002,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0005",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              1.71,
+              4.93,
+              -0.03048
+            ],
+            [
+              2.29,
+              5.5,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0006",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              1.23,
+              11.41,
+              -0.03048
+            ],
+            [
+              1.8000000000000003,
+              11.99,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0007",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.3,
+              7.41,
+              -0.03048
+            ],
+            [
+              2.87,
+              7.99,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0008",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              3.41,
+              16.9,
+              -0.03048
+            ],
+            [
+              3.9900000000000007,
+              17.47,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0009",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              8.675,
+              22.825,
+              -0.03048
+            ],
+            [
+              9.125,
+              23.1,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0010",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              9.700000000000001,
+              6.8100000000000005,
+              -0.03048
+            ],
+            [
+              10.27,
+              7.39,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0011",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              8.125,
+              22.075,
+              -0.03048
+            ],
+            [
+              8.4,
+              22.525,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0012",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              6.63,
+              6.8100000000000005,
+              -0.03048
+            ],
+            [
+              7.200000000000001,
+              7.39,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0013",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.21,
+              15.2,
+              -0.03048
+            ],
+            [
+              2.79,
+              15.77,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0014",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              3.61,
+              11.6,
+              -0.03048
+            ],
+            [
+              4.19,
+              12.17,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0015",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              9.6,
+              2.11,
+              -0.03048
+            ],
+            [
+              10.17,
+              2.69,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0016",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.425,
+              19.775,
+              -0.03048
+            ],
+            [
+              5.575,
+              21.225,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0017",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              6.73,
+              2.11,
+              -0.03048
+            ],
+            [
+              7.3,
+              2.69,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0018",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              10.575,
+              17.85,
+              -0.03048
+            ],
+            [
+              11.425,
+              18.75,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0019",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              1.21,
+              17.4,
+              -0.03048
+            ],
+            [
+              1.79,
+              17.97,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0020",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              6.575,
+              17.050000000000004,
+              -0.03048
+            ],
+            [
+              7.525,
+              19.35,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0021",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              5.20005004882812,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              5.79994995117188,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0022",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.8,
+              7.41,
+              -0.03048
+            ],
+            [
+              5.370000000000001,
+              7.99,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0023",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              9.63,
+              16.81,
+              -0.03048
+            ],
+            [
+              10.2,
+              17.39,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0024",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              15.100000000000001,
+              17.21,
+              -0.03048
+            ],
+            [
+              15.67,
+              17.79,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0025",
+          "name": "1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              3.61,
+              14.3,
+              -0.03048
+            ],
+            [
+              4.19,
+              14.87,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0026",
+          "name": "10",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "10"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              14.2000500488281,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              14.7999499511719,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0027",
+          "name": "11",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "11"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              15.200050048828102,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              15.799949951171898,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0028",
+          "name": "12",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "12"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              16.200050048828103,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              16.7999499511719,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0029",
+          "name": "13",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "13"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              17.2000500488281,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              17.7999499511719,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0030",
+          "name": "14",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "14"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              18.2000500488281,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              18.7999499511719,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0031",
+          "name": "15",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "15"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              19.2000500488281,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              19.7999499511719,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0032",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              3.61,
+              13.33,
+              -0.03048
+            ],
+            [
+              4.19,
+              13.9,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0033",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              6.225,
+              19.775,
+              -0.03048
+            ],
+            [
+              7.375000000000001,
+              21.225,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0034",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              8.975,
+              17.85,
+              -0.03048
+            ],
+            [
+              9.825,
+              18.75,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0035",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.675000000000001,
+              17.050000000000004,
+              -0.03048
+            ],
+            [
+              5.625,
+              19.35,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0036",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              6.200050048828121,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              6.79994995117188,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0037",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              3.41,
+              15.93,
+              -0.03048
+            ],
+            [
+              3.9900000000000007,
+              16.5,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0038",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              13.625,
+              19.0,
+              -0.03048
+            ],
+            [
+              14.575,
+              20.0,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0039",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              1.21,
+              16.43,
+              -0.03048
+            ],
+            [
+              1.79,
+              17.0,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0040",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              7.7,
+              2.11,
+              -0.03048
+            ],
+            [
+              8.27,
+              2.69,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0041",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              8.63,
+              2.11,
+              -0.03048
+            ],
+            [
+              9.2,
+              2.69,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0042",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              7.6,
+              6.8100000000000005,
+              -0.03048
+            ],
+            [
+              8.17,
+              7.39,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0043",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              3.83,
+              7.41,
+              -0.03048
+            ],
+            [
+              4.4,
+              7.99,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0044",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              3.61,
+              10.63,
+              -0.03048
+            ],
+            [
+              4.19,
+              11.2,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0045",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.21,
+              14.230000000000002,
+              -0.03048
+            ],
+            [
+              2.79,
+              14.8,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0046",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              1.33,
+              7.41,
+              -0.03048
+            ],
+            [
+              1.9,
+              7.99,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0047",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.2,
+              11.41,
+              -0.03048
+            ],
+            [
+              2.77,
+              11.99,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0048",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              1.71,
+              5.9,
+              -0.03048
+            ],
+            [
+              2.29,
+              6.47,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0049",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              3.83,
+              8.51,
+              -0.03048
+            ],
+            [
+              4.4,
+              9.090000000000002,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0050",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.2300000000000004,
+              18.31,
+              -0.03048
+            ],
+            [
+              2.8,
+              18.89,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0051",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              14.9,
+              14.225,
+              -0.03048
+            ],
+            [
+              15.9,
+              15.175,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0052",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              8.73,
+              6.8100000000000005,
+              -0.03048
+            ],
+            [
+              9.3,
+              7.39,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0053",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              10.6,
+              16.81,
+              -0.03048
+            ],
+            [
+              11.17,
+              17.39,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0054",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              8.675,
+              22.3,
+              -0.03048
+            ],
+            [
+              9.125,
+              22.575000000000003,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0055",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              14.130000000000003,
+              17.21,
+              -0.03048
+            ],
+            [
+              14.7,
+              17.79,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0056",
+          "name": "2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              7.6,
+              22.075,
+              -0.03048
+            ],
+            [
+              7.875,
+              22.525,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0057",
+          "name": "3",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "3"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              7.200050048828121,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              7.79994995117188,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0058",
+          "name": "4",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "4"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              8.20005004882812,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              8.79994995117188,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0059",
+          "name": "5",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "5"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              9.20005004882812,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              9.79994995117188,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0060",
+          "name": "6",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "6"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              10.2000500488281,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              10.7999499511719,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0061",
+          "name": "7",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "7"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              11.200050048828102,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              11.7999499511719,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0062",
+          "name": "8",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "8"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              12.2000500488281,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              12.7999499511719,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0063",
+          "name": "9",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "9"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              16.861999511718803,
+              13.200050048828102,
+              -0.03048
+            ],
+            [
+              18.8619995117188,
+              13.7999499511719,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0064",
+          "name": "AFVDD",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "AFVDD"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              16.49,
+              -0.73152
+            ],
+            [
+              2.69,
+              16.71,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0065",
+          "name": "AGND",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "AGND"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              13.29,
+              -0.73152
+            ],
+            [
+              2.69,
+              13.51,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0066",
+          "name": "D2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "D2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.45,
+              8.85,
+              -0.03048
+            ],
+            [
+              2.75,
+              9.350000000000001,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0067",
+          "name": "D2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "D2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              1.45,
+              10.45,
+              -0.03048
+            ],
+            [
+              1.75,
+              10.95,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0068",
+          "name": "DGND1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "DGND1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              10.89,
+              -0.73152
+            ],
+            [
+              2.69,
+              11.11,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0069",
+          "name": "DGND2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "DGND2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              12.09,
+              -0.73152
+            ],
+            [
+              2.69,
+              12.310000000000002,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0070",
+          "name": "DGND3",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "DGND3"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              13.69,
+              -0.73152
+            ],
+            [
+              2.69,
+              13.91,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0071",
+          "name": "DGND4",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "DGND4"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              14.490000000000002,
+              -0.73152
+            ],
+            [
+              2.69,
+              14.71,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0072",
+          "name": "DGND5",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "DGND5"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              10.89,
+              -0.73152
+            ],
+            [
+              5.34,
+              11.11,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0073",
+          "name": "DGND6",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "DGND6"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              12.09,
+              -0.73152
+            ],
+            [
+              5.34,
+              12.310000000000002,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0074",
+          "name": "DGND7",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "DGND7"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              13.29,
+              -0.73152
+            ],
+            [
+              5.34,
+              13.51,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0075",
+          "name": "DGND8",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "DGND8"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              14.490000000000002,
+              -0.73152
+            ],
+            [
+              5.34,
+              14.71,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0076",
+          "name": "DGND9",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "DGND9"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              15.69,
+              -0.73152
+            ],
+            [
+              5.34,
+              15.91,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0077",
+          "name": "DVDD",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "DVDD"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              15.29,
+              -0.73152
+            ],
+            [
+              2.69,
+              15.51,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0078",
+          "name": "DVDD/GPIO",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "DVDD/GPIO"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              12.490000000000002,
+              -0.73152
+            ],
+            [
+              2.69,
+              12.71,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0079",
+          "name": "EN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "EN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              9.15,
+              9.85,
+              -0.03048
+            ],
+            [
+              10.25,
+              10.45,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0080",
+          "name": "EN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "EN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              9.15,
+              5.15,
+              -0.03048
+            ],
+            [
+              10.25,
+              5.75,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0081",
+          "name": "EN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "EN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              7.95,
+              21.15,
+              -0.03048
+            ],
+            [
+              9.05,
+              21.750000000000004,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0082",
+          "name": "EXP_PAD",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "EXP_PAD"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              11.8000500488281,
+              15.7,
+              -0.03048
+            ],
+            [
+              13.3999499511719,
+              17.1,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0083",
+          "name": "FB",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "FB"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              10.55,
+              21.15,
+              -0.03048
+            ],
+            [
+              11.65,
+              21.750000000000004,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0084",
+          "name": "G2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "G2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              1.95,
+              8.85,
+              -0.03048
+            ],
+            [
+              2.2500000000000004,
+              9.350000000000001,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0085",
+          "name": "G2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "G2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              1.95,
+              10.45,
+              -0.03048
+            ],
+            [
+              2.2500000000000004,
+              10.95,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0086",
+          "name": "GND",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "GND"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              16.09,
+              -0.73152
+            ],
+            [
+              2.69,
+              16.31,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0087",
+          "name": "GND",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "GND"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              9.15,
+              8.9,
+              -0.03048
+            ],
+            [
+              10.25,
+              9.5,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0088",
+          "name": "GND",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "GND"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.87505004882812,
+              6.22494995117188,
+              -0.03048
+            ],
+            [
+              3.77494995117187,
+              7.0250500488281205,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0089",
+          "name": "GND",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "GND"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              7.95,
+              20.2,
+              -0.03048
+            ],
+            [
+              9.05,
+              20.800000000000004,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0090",
+          "name": "GND",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "GND"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              4.55,
+              11.695,
+              -0.03048
+            ],
+            [
+              6.05,
+              12.295,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0091",
+          "name": "GND",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "GND"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              11.700000000000001,
+              17.3,
+              -0.03048
+            ],
+            [
+              12.0,
+              18.15,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0092",
+          "name": "GND",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "GND"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              9.15,
+              4.2,
+              -0.03048
+            ],
+            [
+              10.25,
+              4.8,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0093",
+          "name": "IN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "IN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              9.15,
+              7.95,
+              -0.03048
+            ],
+            [
+              10.25,
+              8.55,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0094",
+          "name": "IN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "IN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              9.15,
+              3.2500000000000004,
+              -0.03048
+            ],
+            [
+              10.25,
+              3.85,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0095",
+          "name": "LX",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "LX"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              7.95,
+              19.25,
+              -0.03048
+            ],
+            [
+              9.05,
+              19.85,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0096",
+          "name": "MCKN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MCKN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              14.89,
+              -0.73152
+            ],
+            [
+              5.34,
+              15.11,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0097",
+          "name": "MCKP",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MCKP"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              15.29,
+              -0.73152
+            ],
+            [
+              5.34,
+              15.51,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0098",
+          "name": "MCLK",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MCLK"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              14.09,
+              -0.73152
+            ],
+            [
+              2.69,
+              14.310000000000002,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0099",
+          "name": "MD0N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MD0N"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              13.69,
+              -0.73152
+            ],
+            [
+              5.34,
+              13.91,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0100",
+          "name": "MD0P",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MD0P"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              14.09,
+              -0.73152
+            ],
+            [
+              5.34,
+              14.310000000000002,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0101",
+          "name": "MD1N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MD1N"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              12.490000000000002,
+              -0.73152
+            ],
+            [
+              5.34,
+              12.71,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0102",
+          "name": "MD1P",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MD1P"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              12.89,
+              -0.73152
+            ],
+            [
+              5.34,
+              13.11,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0103",
+          "name": "MECHANICAL PIN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MECHANICAL PIN"
+          ],
+          "triangles": 332,
+          "bounds_mm": [
+            [
+              19.7500014193283,
+              21.949999988475227,
+              -0.73152
+            ],
+            [
+              21.25,
+              23.449998569146974,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0104",
+          "name": "MECHANICAL PIN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MECHANICAL PIN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              18.8620495605469,
+              1.16,
+              -0.03048
+            ],
+            [
+              22.4619506835938,
+              3.8400000000000003,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0105",
+          "name": "MECHANICAL PIN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MECHANICAL PIN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              18.8620495605469,
+              21.16,
+              -0.03048
+            ],
+            [
+              22.4619506835938,
+              23.84,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0106",
+          "name": "MECHANICAL PIN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MECHANICAL PIN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              17.8620495605469,
+              4.15,
+              -0.03048
+            ],
+            [
+              22.0619506835938,
+              4.8500000000000005,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0107",
+          "name": "MECHANICAL PIN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MECHANICAL PIN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              17.8620495605469,
+              20.15,
+              -0.03048
+            ],
+            [
+              22.0619506835938,
+              20.85,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0108",
+          "name": "MECHANICAL PIN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "MECHANICAL PIN"
+          ],
+          "triangles": 332,
+          "bounds_mm": [
+            [
+              20.3500002243421,
+              6.250000223106808,
+              -0.03048
+            ],
+            [
+              21.85,
+              7.749999998764752,
+              -1.73472347597681e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0109",
+          "name": "NC",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              6.550000000000001,
+              5.15,
+              -0.03048
+            ],
+            [
+              7.65,
+              5.75,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0110",
+          "name": "NC",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              6.550000000000001,
+              9.85,
+              -0.03048
+            ],
+            [
+              7.65,
+              10.45,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0111",
+          "name": "NC1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC1"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              4.55,
+              15.505,
+              -0.03048
+            ],
+            [
+              6.05,
+              16.105,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0112",
+          "name": "NC1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              11.29,
+              -0.73152
+            ],
+            [
+              2.69,
+              11.51,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0113",
+          "name": "NC1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC1"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              13.2,
+              17.3,
+              -0.03048
+            ],
+            [
+              13.5,
+              18.15,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0114",
+          "name": "NC2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC2"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              4.55,
+              14.235,
+              -0.03048
+            ],
+            [
+              6.05,
+              14.835,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0115",
+          "name": "NC2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              11.69,
+              -0.73152
+            ],
+            [
+              2.69,
+              11.91,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0116",
+          "name": "NC2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC2"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              12.7,
+              17.3,
+              -0.03048
+            ],
+            [
+              13.000000000000002,
+              18.15,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0117",
+          "name": "NC3",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC3"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              12.2,
+              17.3,
+              -0.03048
+            ],
+            [
+              12.5,
+              18.15,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0118",
+          "name": "NC3",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC3"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              4.55,
+              12.965000000000002,
+              -0.03048
+            ],
+            [
+              6.05,
+              13.565,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0119",
+          "name": "NC4",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC4"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              9.95,
+              14.235,
+              -0.03048
+            ],
+            [
+              11.450000000000001,
+              14.835,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0120",
+          "name": "NC6",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC6"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              11.29,
+              -0.73152
+            ],
+            [
+              5.34,
+              11.51,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0121",
+          "name": "NC7",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC7"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              11.69,
+              -0.73152
+            ],
+            [
+              5.34,
+              11.91,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0122",
+          "name": "NC7",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "NC7"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              12.7,
+              14.65,
+              -0.03048
+            ],
+            [
+              13.000000000000002,
+              15.5,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0123",
+          "name": "OE",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "OE"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.725049743652341,
+              6.22494995117188,
+              -0.03048
+            ],
+            [
+              5.62494995117188,
+              7.0250500488281205,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0124",
+          "name": "OUT",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "OUT"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              6.550000000000001,
+              3.2500000000000004,
+              -0.03048
+            ],
+            [
+              7.65,
+              3.85,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0125",
+          "name": "OUT",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "OUT"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              6.550000000000001,
+              7.95,
+              -0.03048
+            ],
+            [
+              7.65,
+              8.55,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0126",
+          "name": "OUTPUT",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "OUTPUT"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.87505004882812,
+              4.7749499511718705,
+              -0.03048
+            ],
+            [
+              3.77494995117187,
+              5.57505004882812,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0127",
+          "name": "P1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              15.775,
+              6.585,
+              -0.03048
+            ],
+            [
+              16.475,
+              6.865,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0128",
+          "name": "P1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              15.775,
+              12.585,
+              -0.03048
+            ],
+            [
+              16.475,
+              12.865,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0129",
+          "name": "P1",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P1"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              15.775,
+              9.585,
+              -0.03048
+            ],
+            [
+              16.475,
+              9.865,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0130",
+          "name": "P2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              14.525000000000002,
+              6.585,
+              -0.03048
+            ],
+            [
+              15.225000000000001,
+              6.865,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0131",
+          "name": "P2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              14.525000000000002,
+              12.585,
+              -0.03048
+            ],
+            [
+              15.225000000000001,
+              12.865,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0132",
+          "name": "P2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              14.525000000000002,
+              9.585,
+              -0.03048
+            ],
+            [
+              15.225000000000001,
+              9.865,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0133",
+          "name": "P3",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P3"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              14.525000000000002,
+              7.135,
+              -0.03048
+            ],
+            [
+              15.225000000000001,
+              7.415000000000001,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0134",
+          "name": "P3",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P3"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              14.525000000000002,
+              10.135,
+              -0.03048
+            ],
+            [
+              15.225000000000001,
+              10.415,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0135",
+          "name": "P3",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P3"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              14.525000000000002,
+              13.135000000000002,
+              -0.03048
+            ],
+            [
+              15.225000000000001,
+              13.415,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0136",
+          "name": "P4",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P4"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              15.775,
+              7.135,
+              -0.03048
+            ],
+            [
+              16.475,
+              7.415000000000001,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0137",
+          "name": "P4",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P4"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              15.775,
+              10.135,
+              -0.03048
+            ],
+            [
+              16.475,
+              10.415,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0138",
+          "name": "P4",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "P4"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              15.775,
+              13.135000000000002,
+              -0.03048
+            ],
+            [
+              16.475,
+              13.415,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0139",
+          "name": "PG",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "PG"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              10.55,
+              20.2,
+              -0.03048
+            ],
+            [
+              11.65,
+              20.800000000000004,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0140",
+          "name": "S2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "S2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              1.45,
+              8.85,
+              -0.03048
+            ],
+            [
+              1.75,
+              9.350000000000001,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0141",
+          "name": "S2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "S2"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.45,
+              10.45,
+              -0.03048
+            ],
+            [
+              2.75,
+              10.95,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0142",
+          "name": "SCL",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "SCL"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              9.95,
+              12.965000000000002,
+              -0.03048
+            ],
+            [
+              11.450000000000001,
+              13.565,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0143",
+          "name": "SCL",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "SCL"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              12.2,
+              14.65,
+              -0.03048
+            ],
+            [
+              12.5,
+              15.5,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0144",
+          "name": "SCL",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "SCL"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              16.09,
+              -0.73152
+            ],
+            [
+              5.34,
+              16.31,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0145",
+          "name": "SDA",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "SDA"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.71,
+              16.49,
+              -0.73152
+            ],
+            [
+              5.34,
+              16.71,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0146",
+          "name": "SDA",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "SDA"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              11.700000000000001,
+              14.65,
+              -0.03048
+            ],
+            [
+              12.0,
+              15.5,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0147",
+          "name": "SDA",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "SDA"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              9.95,
+              11.695,
+              -0.03048
+            ],
+            [
+              11.450000000000001,
+              12.295,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0148",
+          "name": "VA2V8",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "VA2V8"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              12.89,
+              -0.73152
+            ],
+            [
+              2.69,
+              13.11,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0149",
+          "name": "VCC",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "VCC"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              13.2,
+              14.65,
+              -0.03048
+            ],
+            [
+              13.5,
+              15.5,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0150",
+          "name": "VCC",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "VCC"
+          ],
+          "triangles": 340,
+          "bounds_mm": [
+            [
+              9.95,
+              15.505,
+              -0.03048
+            ],
+            [
+              11.450000000000001,
+              16.105,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0151",
+          "name": "VDD",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "VDD"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              4.725049743652341,
+              4.7749499511718705,
+              -0.03048
+            ],
+            [
+              5.62494995117188,
+              5.57505004882812,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0152",
+          "name": "VIN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "VIN"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              10.55,
+              19.25,
+              -0.03048
+            ],
+            [
+              11.65,
+              19.85,
+              -1.77635683940025e-17
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0153",
+          "name": "VO1V8",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Pins",
+            "VO1V8"
+          ],
+          "triangles": 12,
+          "bounds_mm": [
+            [
+              2.06,
+              15.69,
+              -0.73152
+            ],
+            [
+              2.69,
+              15.91,
+              -0.70104
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.47932,
+              0.17144,
+              0.0331
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0154",
+          "name": "SILKSCREEN_TOP",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Shapes",
+            ""
+          ],
+          "triangles": 114288,
+          "bounds_mm": [
+            [
+              0.025,
+              1.025,
+              0.0128
+            ],
+            [
+              18.4748999023438,
+              23.675,
+              0.0255
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0155",
+          "name": "PASTEMASK_TOP",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Shapes",
+            ""
+          ],
+          "triangles": 8012,
+          "bounds_mm": [
+            [
+              1.21,
+              1.16,
+              0.0
+            ],
+            [
+              22.4619506835938,
+              23.84,
+              0.0001
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0156",
+          "name": "SOLDERMASK_TOP",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Shapes",
+            ""
+          ],
+          "triangles": 9100,
+          "bounds_mm": [
+            [
+              -1.4210854715202e-16,
+              0.0,
+              0.0
+            ],
+            [
+              23.8619995117188,
+              25.0,
+              0.012700000000000001
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.01033,
+              0.0999,
+              0.01764
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0157",
+          "name": "Dielectric",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Shapes",
+            ""
+          ],
+          "triangles": 1708,
+          "bounds_mm": [
+            [
+              -1.13686837721616e-15,
+              0.0,
+              -0.70104
+            ],
+            [
+              23.8619995117188,
+              25.0,
+              -0.0304800000000002
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.98225,
+              1.0,
+              0.67954
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0158",
+          "name": "SOLDERMASK_BOTTOM",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Shapes",
+            ""
+          ],
+          "triangles": 2032,
+          "bounds_mm": [
+            [
+              -1.4210854715202e-16,
+              0.0,
+              -0.74422
+            ],
+            [
+              23.8619995117188,
+              25.0,
+              -0.73152
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.01033,
+              0.0999,
+              0.01764
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0159",
+          "name": "PASTEMASK_BOTTOM",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Shapes",
+            ""
+          ],
+          "triangles": 360,
+          "bounds_mm": [
+            [
+              2.06,
+              10.89,
+              -0.73162
+            ],
+            [
+              5.34,
+              16.71,
+              -0.73152
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0160",
+          "name": "SILKSCREEN_BOTTOM",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Shapes",
+            ""
+          ],
+          "triangles": 38208,
+          "bounds_mm": [
+            [
+              0.149899997711182,
+              5.315999755857653,
+              -0.7569200001
+            ],
+            [
+              22.608266582240102,
+              20.075999755860682,
+              -0.7442200001000001
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0161",
+          "name": "AP3445",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "U11"
+          ],
+          "triangles": 2694,
+          "bounds_mm": [
+            [
+              8.4,
+              19.05,
+              1.35525271560688e-17
+            ],
+            [
+              11.2,
+              21.95,
+              1.45
+            ]
+          ],
+          "cad_colours": [
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.01161,
+              0.01161,
+              0.01161
+            ],
+            [
+              0.55201,
+              0.55201,
+              0.55201
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0162",
+          "name": "ATMEL_ATSHA204A_8UDFN",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "U4"
+          ],
+          "triangles": 167988,
+          "bounds_mm": [
+            [
+              1.70015298937997,
+              7.099999698159,
+              -7.65
+            ],
+            [
+              19.800000301841,
+              18.2499999999999,
+              -0.960000000000002
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.17465,
+              0.17465,
+              0.17465
+            ],
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0163",
+          "name": "ATMEL_ATSHA204A_SOIC8",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "U12"
+          ],
+          "triangles": 3390,
+          "bounds_mm": [
+            [
+              5.0,
+              11.45,
+              -1.18584612615602e-17
+            ],
+            [
+              11.0,
+              16.350000000000005,
+              1.75
+            ]
+          ],
+          "cad_colours": [
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.01161,
+              0.01161,
+              0.01161
+            ],
+            [
+              0.55201,
+              0.55201,
+              0.55201
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0164",
+          "name": "BOURNS_SRN2512",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "L1"
+          ],
+          "triangles": 7676,
+          "bounds_mm": [
+            [
+              4.8500000000000005,
+              17.2,
+              0.0
+            ],
+            [
+              7.35,
+              19.2,
+              0.9000000000000001
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.41254,
+              0.41254,
+              0.41254
+            ],
+            [
+              0.07036,
+              0.07036,
+              0.07036
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0165",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C11"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              8.9,
+              2.15,
+              0.05
+            ],
+            [
+              9.9,
+              2.65,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0166",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C6"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              6.9,
+              6.8500000000000005,
+              0.05
+            ],
+            [
+              7.9,
+              7.35,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0167",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C12"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              9.000000000000002,
+              6.8500000000000005,
+              0.05
+            ],
+            [
+              10.0,
+              7.35,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0168",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C9"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              4.1,
+              7.45,
+              0.05
+            ],
+            [
+              5.1,
+              7.95,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0169",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C2"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              3.65,
+              10.9,
+              0.05
+            ],
+            [
+              4.15,
+              11.9,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0170",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C3"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              2.2500000000000004,
+              14.5,
+              0.05
+            ],
+            [
+              2.75,
+              15.5,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0171",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C4"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              3.65,
+              13.6,
+              0.05
+            ],
+            [
+              4.15,
+              14.6,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0172",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C10"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              14.400000000000002,
+              17.25,
+              0.05
+            ],
+            [
+              15.4,
+              17.750000000000004,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0173",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C1"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              9.9,
+              16.85,
+              0.05
+            ],
+            [
+              10.9,
+              17.35,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0174",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C5"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              7.0,
+              2.15,
+              0.05
+            ],
+            [
+              8.0,
+              2.65,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0175",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C13"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              1.25,
+              16.7,
+              0.05
+            ],
+            [
+              1.75,
+              17.7,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0176",
+          "name": "CAPC1005X55N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C14"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              3.45,
+              16.2,
+              0.05
+            ],
+            [
+              3.95,
+              17.2,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0177",
+          "name": "CAPC1608",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C8"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              9.4,
+              17.9,
+              -0.15
+            ],
+            [
+              11.0,
+              18.700000000000003,
+              0.6500000000000001
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0178",
+          "name": "CAPC1608X90N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "FB1"
+          ],
+          "triangles": 112,
+          "bounds_mm": [
+            [
+              15.0,
+              14.7,
+              0.0499999999999977
+            ],
+            [
+              15.8,
+              16.3,
+              0.5
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0179",
+          "name": "CAPC1608X90N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "FB2"
+          ],
+          "triangles": 112,
+          "bounds_mm": [
+            [
+              14.1,
+              19.1,
+              0.0499999999999977
+            ],
+            [
+              15.7,
+              19.9,
+              0.5
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0180",
+          "name": "CAPC2012",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "C7"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              4.9,
+              19.875,
+              -3.5527136788005e-17
+            ],
+            [
+              6.9,
+              21.125,
+              0.6
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0181",
+          "name": "FCI_SFW15R-1STE1LF",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "J1"
+          ],
+          "triangles": 18792,
+          "bounds_mm": [
+            [
+              16.9519995117187,
+              1.04,
+              0.03499999999999969
+            ],
+            [
+              23.4919995117187,
+              23.96,
+              2.595
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0182",
+          "name": "HIROSE_DF37NC-30DS-04V",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "J2"
+          ],
+          "triangles": 52534,
+          "bounds_mm": [
+            [
+              2.251244,
+              9.69,
+              -1.72618100427246
+            ],
+            [
+              5.231244,
+              17.91,
+              -0.746181004272471
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.14413,
+              0.14413,
+              0.14413
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0183",
+          "name": "MURATA_DLP11SNXXXHL2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "L2"
+          ],
+          "triangles": 2784,
+          "bounds_mm": [
+            [
+              14.875000000000002,
+              6.57,
+              -0.025
+            ],
+            [
+              16.175,
+              7.57,
+              0.82
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.52712,
+              0.52712,
+              0.52712
+            ],
+            [
+              0.39157,
+              0.0999,
+              0.0137
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0184",
+          "name": "MURATA_DLP11SNXXXHL2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "L3"
+          ],
+          "triangles": 2784,
+          "bounds_mm": [
+            [
+              14.875000000000002,
+              9.57,
+              -0.025
+            ],
+            [
+              16.175,
+              10.570000000000002,
+              0.82
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.52712,
+              0.52712,
+              0.52712
+            ],
+            [
+              0.39157,
+              0.0999,
+              0.0137
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0185",
+          "name": "MURATA_DLP11SNXXXHL2",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "L4"
+          ],
+          "triangles": 2784,
+          "bounds_mm": [
+            [
+              14.875000000000002,
+              12.570000000000002,
+              -0.025
+            ],
+            [
+              16.175,
+              13.57,
+              0.82
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.52712,
+              0.52712,
+              0.52712
+            ],
+            [
+              0.39157,
+              0.0999,
+              0.0137
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0186",
+          "name": "OSC_2P5X2MM",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "X1"
+          ],
+          "triangles": 416,
+          "bounds_mm": [
+            [
+              2.64999999999999,
+              4.65,
+              -0.0100000000000001
+            ],
+            [
+              5.84999999999999,
+              7.15,
+              0.91
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.59062,
+              0.6376,
+              0.85499
+            ],
+            [
+              0.05127,
+              0.05127,
+              0.05127
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.52712,
+              0.52712,
+              0.52712
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0187",
+          "name": "RESC0603",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "R29"
+          ],
+          "triangles": 4168,
+          "bounds_mm": [
+            [
+              7.7,
+              22.15,
+              0.0
+            ],
+            [
+              8.3,
+              22.450000000000003,
+              0.15
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.37626,
+              0.34191,
+              0.30499
+            ],
+            [
+              0.96469,
+              0.96469,
+              1.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.5
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.00972,
+              0.00972,
+              0.00972
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0188",
+          "name": "RESC0603",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "R28"
+          ],
+          "triangles": 4168,
+          "bounds_mm": [
+            [
+              8.75,
+              22.4,
+              0.0
+            ],
+            [
+              9.05,
+              23.0,
+              0.15
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.37626,
+              0.34191,
+              0.30499
+            ],
+            [
+              0.96469,
+              0.96469,
+              1.0
+            ],
+            [
+              0.5,
+              0.5,
+              0.5
+            ],
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.00972,
+              0.00972,
+              0.00972
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0189",
+          "name": "RESC1005X40N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "R30"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              4.1,
+              8.55,
+              0.05
+            ],
+            [
+              5.1,
+              9.05,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0190",
+          "name": "RESC1005X40N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "R3"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              1.75,
+              5.200000000000001,
+              0.05
+            ],
+            [
+              2.2500000000000004,
+              6.200000000000001,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0191",
+          "name": "RESC1005X40N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "R1"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              1.5,
+              11.45,
+              0.05
+            ],
+            [
+              2.5,
+              11.95,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0192",
+          "name": "RESC1005X40N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "R2"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              1.6,
+              7.45,
+              0.05
+            ],
+            [
+              2.6000000000000005,
+              7.95,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0193",
+          "name": "RESC1005X40N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "R31"
+          ],
+          "triangles": 3988,
+          "bounds_mm": [
+            [
+              2.5,
+              18.35,
+              0.05
+            ],
+            [
+              3.5,
+              18.85,
+              0.55
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.45079,
+              0.40198,
+              0.37626
+            ],
+            [
+              0.39676,
+              0.27889,
+              0.16827
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0194",
+          "name": "SOT50P160X60-6N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "Q1"
+          ],
+          "triangles": 620,
+          "bounds_mm": [
+            [
+              1.2999999999978902,
+              9.09999999999998,
+              -0.00999999999980503
+            ],
+            [
+              2.8999999999982,
+              10.7,
+              0.590000000000238
+            ]
+          ],
+          "cad_colours": [
+            [
+              0.5,
+              0.5,
+              0.5
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0195",
+          "name": "SOT95P280X145-5N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "U2"
+          ],
+          "triangles": 2694,
+          "bounds_mm": [
+            [
+              7.0,
+              7.75,
+              1.35525271560688e-17
+            ],
+            [
+              9.8,
+              10.65,
+              1.45
+            ]
+          ],
+          "cad_colours": [
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.01161,
+              0.01161,
+              0.01161
+            ],
+            [
+              0.55201,
+              0.55201,
+              0.55201
+            ]
+          ]
+        },
+        {
+          "path": "/Asset/Components/Part_0196",
+          "name": "SOT95P280X145-5N",
+          "assembly": [
+            "rpi-cam-v3_day_r1.brd",
+            "",
+            "Symbols",
+            "U1"
+          ],
+          "triangles": 2694,
+          "bounds_mm": [
+            [
+              7.0,
+              3.05,
+              1.35525271560688e-17
+            ],
+            [
+              9.8,
+              5.95,
+              1.45
+            ]
+          ],
+          "cad_colours": [
+            [
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.01161,
+              0.01161,
+              0.01161
+            ],
+            [
+              0.55201,
+              0.55201,
+              0.55201
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "motion_permitted": false,
+  "collision_ready": false,
+  "board_lower_left_bottom_m": [
+    0.6,
+    -0.14,
+    0.03
+  ],
+  "task": {
+    "schema_version": 1,
+    "stage": "static_asset_review",
+    "robot": "Franka FR3 v2.1",
+    "board": "Raspberry Pi 4 Model B",
+    "camera_module": "Camera Module 3 Standard, normal FoV",
+    "board_outline_mm": [
+      85,
+      56
+    ],
+    "mounting_hole_pitch_mm": [
+      58,
+      49
+    ],
+    "board_source": "Community STEP, MGS-CAD-Files; not manufacturer-certified",
+    "camera_source": "Official Raspberry Pi simplified STEP",
+    "cable": {
+      "length_mm": 200.0,
+      "width_mm": 16.0,
+      "contacts": 15,
+      "pitch_mm": 1.0,
+      "conductor_width_mm": 0.7,
+      "conductor_thickness_mm": 0.027,
+      "insulation_layer_thickness_mm": 0.055,
+      "body_thickness_mm": 0.137,
+      "contact_header_thickness_mm": 0.309,
+      "exposed_contact_length_mm": 5.0,
+      "support_tape_length_mm": 6.3,
+      "contact_sides": "opposite",
+      "drawing": "RP-008146-DS-1",
+      "body_thickness_basis": "Derived as Ct + 2 Ft; verify physical sample and adhesive layers before mechanics calibration",
+      "shape": "Authored shallow curve for asset review; no physical settling or calibrated mechanics"
+    },
+    "pi4_insertion": {
+      "direction": "down into upright CSI socket, normal to PCB",
+      "latch": "unarticulated community CAD; open/closed travel not yet verified",
+      "electrical_confirmation": "future physical rpicam test after safe power sequencing"
+    },
+    "training_ready": false,
+    "motion_permitted": false,
+    "stage_2": {
+      "task": "phone-style FPC-to-board press-on connector",
+      "candidate_family": "Hirose BM28, representative research coupon; not claimed as a specific phone BOM",
+      "status": "scope agreed; separate hardware and contact-model milestone"
+    }
+  },
+  "cable": {
+    "centerline_arc_length_m": 0.20000000000000015,
+    "width_m": 0.016,
+    "contacts_per_end": 15,
+    "contact_sides": "opposite",
+    "physics": "static authored pose; no elastic or contact solver",
+    "dimensions_source": "RP-008146-DS-1; body thickness derived from two film layers",
+    "appearance": "unmeasured film, support and contact rendering materials"
+  },
+  "appearance": {
+    "basis": "engineering appearance choices, not measured BRDF or calibrated camera response",
+    "overrides": [
+      {
+        "subset": "/World/Hardware/Pi4/Components/Part_0000/Colour_0",
+        "material": "pcb"
+      },
+      {
+        "subset": "/World/Hardware/Pi4/Components/Part_0001/Colour_0",
+        "material": "metal"
+      },
+      {
+        "subset": "/World/Hardware/Pi4/Components/Part_0002/Colour_0",
+        "material": "black"
+      },
+      {
+        "subset": "/World/Hardware/Pi4/Components/Part_0003/Colour_0",
+        "material": "black"
+      },
+      {
+        "subset": "/World/Hardware/Pi4/Components/Part_0013/Colour_0",
+        "material": "metal"
+      },
+      {
+        "subset": "/World/Hardware/Camera3/Components/Part_0162/Colour_0",
+        "material": "black"
+      },
+      {
+        "subset": "/World/Hardware/Camera3/Components/Part_0162/Colour_1",
+        "material": "black"
+      }
+    ]
+  },
+  "views": [
+    {
+      "id": "workcell",
+      "file": "workcell.png",
+      "eye_m": [
+        1.1,
+        -0.95,
+        0.78
+      ],
+      "target_m": [
+        0.35,
+        -0.04,
+        0.2
+      ],
+      "focal_mm": 35
+    },
+    {
+      "id": "hardware",
+      "file": "hardware.png",
+      "eye_m": [
+        0.75,
+        -0.4,
+        0.34
+      ],
+      "target_m": [
+        0.525,
+        -0.13,
+        0.018
+      ],
+      "focal_mm": 45
+    },
+    {
+      "id": "pi4",
+      "file": "pi4.png",
+      "eye_m": [
+        0.73,
+        -0.235,
+        0.15
+      ],
+      "target_m": [
+        0.642,
+        -0.112,
+        0.038
+      ],
+      "focal_mm": 55
+    },
+    {
+      "id": "pi4-top",
+      "file": "pi4-top.png",
+      "eye_m": [
+        0.6425,
+        -0.1121,
+        0.235
+      ],
+      "target_m": [
+        0.6425,
+        -0.112,
+        0.031
+      ],
+      "focal_mm": 55
+    },
+    {
+      "id": "csi-macro",
+      "file": "csi-macro.png",
+      "eye_m": [
+        0.619,
+        -0.15,
+        0.061
+      ],
+      "target_m": [
+        0.647,
+        -0.1285,
+        0.0358
+      ],
+      "focal_mm": 65
+    },
+    {
+      "id": "camera3",
+      "file": "camera3.png",
+      "eye_m": [
+        0.522,
+        -0.12,
+        0.063
+      ],
+      "target_m": [
+        0.49,
+        -0.08,
+        0.006
+      ],
+      "focal_mm": 60
+    },
+    {
+      "id": "cable-tip",
+      "file": "cable-tip.png",
+      "eye_m": [
+        0.317,
+        -0.216,
+        0.035
+      ],
+      "target_m": [
+        0.34,
+        -0.19,
+        0.0006
+      ],
+      "focal_mm": 55
+    }
+  ],
+  "renderer": "Isaac Sim 6.1 RTX RaytracedLighting",
+  "resolution": [
+    1440,
+    960
+  ],
+  "physics_steps_requested": 0,
+  "timeline_elapsed_s": 0.0,
+  "orbit_frames": 72,
+  "training_ready": false,
+  "purpose": "CAD and appearance review, not a manipulation demonstration"
+}

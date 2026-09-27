@@ -1,0 +1,4 @@
+# CPU-only STEP conversion; tested in Python 3.12.13. Separate from Isaac Python.
+cadquery-ocp==7.8.1.1.post1
+numpy==2.5.3
+usd-core==26.8

@@ -1,0 +1,60 @@
+{
+  "browser_checks": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "views": 7,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "views": 7,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "views": 7,
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "views": 7,
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "lighthouse": {
+    "desktop-light": {
+      "performance": 1,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 1
+    },
+    "desktop-dark": {
+      "performance": 1,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 1
+    },
+    "mobile-light": {
+      "performance": 0.97,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 1
+    },
+    "mobile-dark": {
+      "performance": 0.97,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  "python_tests": 65,
+  "scope": "Static CAD import and webpage checks; no contact/perception qualification"
+}

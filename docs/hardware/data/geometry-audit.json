@@ -1,0 +1,32 @@
+{
+  "outline_mm": [
+    85.0,
+    56.0
+  ],
+  "outline_check": "pass",
+  "hole_diameter_mm": 2.7,
+  "hole_centres_from_pcb_lower_left_mm": [
+    [
+      3.5,
+      3.5
+    ],
+    [
+      3.5,
+      52.5
+    ],
+    [
+      61.5,
+      3.5
+    ],
+    [
+      61.5,
+      52.5
+    ]
+  ],
+  "hole_pattern_check": "pass",
+  "reference": "RP-008343-DS-1",
+  "community_pcb_thickness_mm": 1.6000000000000083,
+  "connector_check": "not certified: source CAD nominal envelope only; latch and contact travel unknown",
+  "appearance_check": "not accepted for training: missing Pi4 passives/silkscreen and unmeasured materials",
+  "training_ready": false
+}

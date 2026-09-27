@@ -41,3 +41,11 @@ The earlier MuJoCo endpoint study remains available through `scripts/evaluate_ge
 ## Sensor-driven architecture
 
 [Interactive architecture and research guide](https://lakshya-asu.github.io/ffc-insertion-research/architecture/) explains the sensors, cable/PCB research, control and learning milestones. [SENSOR_FIRST.md](SENSOR_FIRST.md) records current implementation limits and gates. The historical full-suite runner now requires `--historical-baseline`; it uses privileged simulator state and is not a deployable skill.
+
+## Selected hardware and second task
+
+The first task now uses **Pi 4 Model B + Camera Module 3 Standard + the 200 mm Standard-Standard cable**. [Inspect the CAD renders and roadmap](https://lakshya-asu.github.io/ffc-insertion-research/hardware/) or read [the import and reproduction notes](experiments/009-raspberry-pi-cad.md). The assets are loaded in a separate static FR3 workcell; appearance, connector mechanics and calibrated cable deformation are not yet training-ready.
+
+Stage 2 is a **phone-style press-on FPC-to-board connector**, with a representative research coupon to be selected and measured separately. Neither task uses exact simulator state for new control, critic inputs, stage transitions or rewards.
+
+The [fixed-camera prototype](experiments/008-fixed-camera-perception.md) exercises image ingress and isolated inference on the earlier generic scene. Its endpoint gate failed; it is infrastructure evidence, not a qualified Raspberry Pi perception model.
