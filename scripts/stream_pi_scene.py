@@ -44,6 +44,7 @@ def main():
         import omni.usd
         from PIL import Image
 
+        from ffc.camera_optics import apply_reference_optics
         from ffc.isaac_scene import camera
 
         context = omni.usd.get_context()
@@ -51,14 +52,25 @@ def main():
         for _ in range(8):
             app.update()
         stage = context.get_stage()
-        views = {
-            "workcell": ((1.4, -1.4, 1.25), (0.30, -0.02, 0.42), 28),
-            "desk": ((0.50, -0.20, 0.64), (0.50, -0.14, 0.005), 42),
-            "board": ((0.64, -0.245, 0.22), (0.6425, -0.112, 0.035), 50),
-        }
+        profile = json.loads((ROOT / "config/arducam-b0498.json").read_text())
+        layout = json.loads((ROOT / "config/arducam-b0498-cell-v1.json").read_text())
+        poses = {v["id"]: v for v in layout["cameras"]}
+        views = {"workcell": ((1.4, -1.4, 1.25), (0.30, -0.02, 0.42), 28)}
+        for name, pose in [("desk", poses["overview"]), ("board", poses["insertion-a"])]:
+            views[name] = (pose["eye_m"], pose["target_m"], profile["focal_length_mm"])
+        optics = {}
         for name, design in views.items():
             cam = camera(stage, "/World/Cameras/Live_" + name, *design)
-            product = rep.create.render_product(str(cam.GetPath()), (960, 640))
+            resolution = (960, 640) if name == "workcell" else (960, 540)
+            if name != "workcell":
+                optics[name] = apply_reference_optics(
+                    stage,
+                    cam,
+                    profile,
+                    float(np.linalg.norm(np.array(design[0]) - np.array(design[1]))),
+                    resolution,
+                )
+            product = rep.create.render_product(str(cam.GetPath()), resolution)
             annotator = rep.AnnotatorRegistry.get_annotator("rgb")
             annotator.attach(product)
             streams.append((name, product, annotator))
@@ -87,10 +99,16 @@ def main():
                         "Stationary scene, freshly rendered; zero physics steps. Not a manipulation rollout."
                     ),
                     "camera": name,
-                    "width": 960,
-                    "height": 640,
+                    "width": int(raw.shape[1]),
+                    "height": int(raw.shape[0]),
+                    "reference_optics": optics.get(name),
                     "motion_permitted": False,
                 }
+                if name in optics:
+                    metadata["description"] += (
+                        " Arducam B0498 reference, manual 16 mm lens; 960 × 540 preview of a"
+                        " 3840 × 2160 field. Ideal projection; blur and rolling readout uncalibrated."
+                    )
                 tmp = a.output / (name + ".json.tmp")
                 tmp.write_text(json.dumps(metadata))
                 os.replace(tmp, a.output / (name + ".json"))

@@ -1,0 +1,35 @@
+{
+  "model": "Arducam B0498",
+  "sensor": "Sony IMX585",
+  "selection": "User-selected simulation reference; physical ownership not verified",
+  "source_url": "https://www.arducam.com/presalesarducam-8-3mp-imx585-manual-focus-usb-3-0-camera-module-with-16mm-c-mount-lens.html",
+  "native_resolution": [
+    3840,
+    2160
+  ],
+  "pixel_pitch_um": 2.9,
+  "active_crop_mm": [
+    11.136,
+    6.264
+  ],
+  "active_crop_assumption": "Centered 3840x2160 crop at native pixel pitch; ISP crop must be checked on hardware",
+  "focal_length_mm": 16.0,
+  "focus_mode": "manual, fixed per camera pose",
+  "frame_rate_hz": 15,
+  "hardware_shutter": "rolling",
+  "hardware_format": "YUY2 over USB3",
+  "reported_horizontal_fov_degrees": 41,
+  "render_model": "ideal rectilinear projection",
+  "depth_of_field_enabled": false,
+  "rolling_shutter_simulated": false,
+  "distortion_calibrated": false,
+  "focus_reach_verified": false,
+  "readout_time_ms": null,
+  "exposure_time_ms": null,
+  "limitations": [
+    "Lens near-focus range is unverified; stored focus distances are assumptions, not hardware capability.",
+    "Depth of field, distortion, Bayer/ISP, noise, rolling scan and transport latency are not calibrated or simulated.",
+    "Published 41 degree HFOV differs from the nominal focal-length/pixel-pitch pinhole estimate; real calibration must resolve this.",
+    "15 fps specifies the reference hardware mode, not achieved rendering or control frequency."
+  ]
+}

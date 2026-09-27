@@ -1,0 +1,133 @@
+{
+  "revision": "arducam-b0498-cell-v1",
+  "status": "candidate static optical layout; not a calibrated or collision-qualified installation",
+  "motion_permitted": false,
+  "image_size": [
+    3840,
+    2160
+  ],
+  "sensor_aperture_mm": [
+    11.136,
+    6.264
+  ],
+  "cameras": [
+    {
+      "id": "overview",
+      "name": "C1 \u00b7 Pickup overview",
+      "eye_m": [
+        0.49,
+        -0.17,
+        0.68
+      ],
+      "target_m": [
+        0.49,
+        -0.169,
+        0.0
+      ],
+      "purpose": "Locate loose cable and board; observe pickup approach. Not final insertion metrology.",
+      "focal_length_mm": 16
+    },
+    {
+      "id": "inspection",
+      "name": "C2 \u00b7 End presentation",
+      "eye_m": [
+        0.48,
+        -0.57,
+        0.16
+      ],
+      "target_m": [
+        0.48,
+        -0.3,
+        0.14
+      ],
+      "purpose": "Inspect a deliberately presented cable end before approaching the board. Reorient to inspect its other face.",
+      "focal_length_mm": 16
+    },
+    {
+      "id": "insertion-a",
+      "name": "C3 \u00b7 Entrance / west offset",
+      "eye_m": [
+        0.5865,
+        -0.1285,
+        0.35
+      ],
+      "target_m": [
+        0.6465,
+        -0.1285,
+        0.0369
+      ],
+      "purpose": "Entrance-facing view at about 11 degrees from the board normal; complement with side view.",
+      "focal_length_mm": 16
+    },
+    {
+      "id": "insertion-b",
+      "name": "C4 \u00b7 CSI east view",
+      "eye_m": [
+        0.88,
+        -0.17,
+        0.17
+      ],
+      "target_m": [
+        0.6465,
+        -0.1285,
+        0.044
+      ],
+      "purpose": "Opposite-face observation when the cable or jaw hides features from C3.",
+      "focal_length_mm": 16
+    }
+  ],
+  "presentation_tip_m": [
+    0.48,
+    -0.3,
+    0.14
+  ],
+  "nominal_csi_review_center_m": [
+    0.6465,
+    -0.1285,
+    0.0371
+  ],
+  "jaw_proxy": {
+    "thickness_mm": 4,
+    "width_mm": 12,
+    "height_mm": 3,
+    "center_above_tip_mm": 5,
+    "inner_half_gap_mm": 0.2
+  },
+  "limitations": [
+    "Lens near-focus range is unverified; stored focus distances are assumptions, not hardware capability.",
+    "Depth of field, distortion, Bayer/ISP, noise, rolling scan and transport latency are not calibrated or simulated.",
+    "Published 41 degree HFOV differs from the nominal focal-length/pixel-pitch pinhole estimate; real calibration must resolve this.",
+    "15 fps specifies the reference hardware mode, not achieved rendering or control frequency.",
+    "Static authored cable and jaw probes, not qualified grasp/contact physics."
+  ],
+  "inspection_lighting": {
+    "backdrop_center_m": [
+      0.48,
+      -0.2,
+      0.25
+    ],
+    "backdrop_size_m": [
+      0.08,
+      0.002,
+      0.26
+    ],
+    "light_eye_m": [
+      0.4,
+      -0.46,
+      0.23
+    ],
+    "light_target_m": [
+      0.48,
+      -0.3,
+      0.14
+    ],
+    "light_size_m": [
+      0.15,
+      0.15
+    ],
+    "intensity": 500,
+    "scope": "authored matte backdrop and diffuse area light, not calibrated radiometry; fixture clearance unqualified"
+  },
+  "display_title": "ARDUCAM B0498 / 16 MM",
+  "hardware_profile": "config/arducam-b0498.json"
+}

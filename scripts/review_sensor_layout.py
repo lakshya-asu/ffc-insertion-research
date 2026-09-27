@@ -42,10 +42,14 @@ def main():
         from PIL import Image
         from pxr import Gf, UsdGeom, UsdLux, UsdSemantics
 
+        from ffc.camera_optics import apply_reference_optics
         from ffc.isaac_scene import box, camera
         from ffc.raspberry_pi_scene import make_camera_cable
 
         cfg = json.loads(args.config.read_text())
+        profile = (
+            json.loads((ROOT / cfg["hardware_profile"]).read_text()) if cfg.get("hardware_profile") else None
+        )
         context = omni.usd.get_context()
         context.new_stage()
         stage = context.get_stage()
@@ -79,7 +83,11 @@ def main():
         metrics = []
         for view in cfg["cameras"]:
             distance = float(np.linalg.norm(np.array(view["eye_m"]) - view["target_m"]))
-            focal = aperture[0] * distance * 1000 / view["horizontal_fov_mm"]
+            focal = (
+                view["focal_length_mm"]
+                if profile
+                else aperture[0] * distance * 1000 / view["horizontal_fov_mm"]
+            )
             cam = camera(
                 stage,
                 "/World/Cameras/SensorStudy_" + view["id"].replace("-", "_"),
@@ -89,6 +97,8 @@ def main():
             )
             cam.CreateHorizontalApertureAttr(aperture[0])
             cam.CreateVerticalApertureAttr(aperture[1])
+            optics = apply_reference_optics(stage, cam, profile, distance) if profile else {}
+            fov = optics["horizontal_fov_mm"] if profile else view["horizontal_fov_mm"]
             product = rep.create.render_product(str(cam.GetPath()), (width, height))
             rgb = rep.AnnotatorRegistry.get_annotator("rgb")
             rgb.attach(product)
@@ -104,8 +114,10 @@ def main():
                     **view,
                     "optical_center_to_target_mm": distance * 1000,
                     "ideal_focal_mm": focal,
-                    "normal_plane_pixels_per_mm": width / view["horizontal_fov_mm"],
-                    "normal_plane_vertical_fov_mm": view["horizontal_fov_mm"] * height / width,
+                    "normal_plane_pixels_per_mm": width / fov,
+                    "horizontal_fov_mm": fov,
+                    "reference_optics": optics,
+                    "normal_plane_vertical_fov_mm": fov * height / width,
                 }
             )
 
@@ -230,6 +242,7 @@ def main():
             json.dumps(
                 {
                     "configuration": cfg,
+                    "hardware_profile": profile,
                     "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                     "camera_metrics": metrics,
                     "frames": frames,

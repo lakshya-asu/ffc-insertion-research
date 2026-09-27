@@ -33,10 +33,17 @@ def main():
         "Authored tip 15 mm above nominal socket",
         "Authored tip 3 mm above nominal socket",
     ]
+    tile_h = round(784 * cfg["image_size"][1] / cfg["image_size"][0])
+    row_h = tile_h + 40
     for i, case in enumerate(["loose", "present", "approach", "near"]):
-        canvas = Image.new("RGB", (1600, 1480), "#f2f3ed")
+        canvas = Image.new("RGB", (1600, 96 + 2 * row_h), "#f2f3ed")
         d = ImageDraw.Draw(canvas)
-        d.text((24, 18), "SENSOR LAYOUT V2  /  " + captions[i], fill="#162925", font=font)
+        d.text(
+            (24, 18),
+            cfg.get("display_title", "SENSOR LAYOUT V2") + "  /  " + captions[i],
+            fill="#162925",
+            font=font,
+        )
         d.text(
             (24, 55),
             "Static optical study. Jaw envelope only. No simulated grasp, physics or robot motion.",
@@ -44,11 +51,11 @@ def main():
             font=small,
         )
         for j, camera in enumerate(cfg["cameras"]):
-            x, y = (j % 2) * 800, 96 + (j // 2) * 690
+            x, y = (j % 2) * 800, 96 + (j // 2) * row_h
             img = Image.open(a.run / f"{case}-{camera['id']}.png").convert("RGB")
-            img.thumbnail((784, 650), Image.Resampling.LANCZOS)
+            img.thumbnail((784, tile_h), Image.Resampling.LANCZOS)
             canvas.paste(img, (x + 8, y))
-            d.text((x + 15, y + 654), camera["name"], fill="#162925", font=small)
+            d.text((x + 15, y + tile_h + 4), camera["name"], fill="#162925", font=small)
         canvas.save(a.run / "montage" / f"{i:04d}.png")
     # Image-plane sampling in task axes; this is not a detector-accuracy estimate.
     for camera in report["camera_metrics"]:
