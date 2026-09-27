@@ -1,0 +1,23 @@
+{
+  "images": 112,
+  "class_pixels_per_split": {
+    "test": [
+      31007618,
+      242203,
+      4165,
+      8018,
+      95545,
+      99731
+    ],
+    "challenge": [
+      12425640,
+      81837,
+      1446,
+      2818,
+      34506,
+      36665
+    ]
+  },
+  "gate": "passed",
+  "scope": "label presence, shape, checksum and absence consistency; not real-world accuracy"
+}

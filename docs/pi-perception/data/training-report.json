@@ -1,0 +1,15 @@
+{
+  "seed": 927311,
+  "device": "cuda",
+  "torch": "2.8.0+cu128",
+  "epochs": 40,
+  "train_images": 192,
+  "validation_images": 48,
+  "selection": "maximum validation foreground mean IoU",
+  "best_validation_foreground_mean_iou": 0.8740881220130949,
+  "elapsed_s": 269.4862615460006,
+  "model_sha256": "60d8a832914e6e67ff2db5c91e6b702cefe87057c96c0850bb940e755aa0ca31",
+  "labels_sha256": "db81b1158954bedd6828f8b7fccb6c5f64633ed712870e92c83a73cd70a474e9",
+  "test_used_for_training_or_selection": false,
+  "motion_permitted": false
+}

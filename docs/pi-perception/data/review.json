@@ -1,0 +1,7 @@
+{
+  "images": 112,
+  "video_frames": 46,
+  "raw_webp": "lossless encoding of the exact RGB input pixels",
+  "overlays": "offline visualization only",
+  "motion_permitted": false
+}

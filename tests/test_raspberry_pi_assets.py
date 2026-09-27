@@ -50,3 +50,18 @@ def test_support_and_contact_faces_are_opposite():
     assert b_support.min() > b.max()
     assert abs(a.max() - a_support.min() - 0.000309) < 1e-7
     assert abs(b_support.max() - b.min() - 0.000309) < 1e-7
+
+
+def test_randomized_bows_preserve_length_and_face_flip_keeps_cable_above_desk():
+    for height, lateral in [(0.001, -0.012), (0.014, 0.025)]:
+        center = cable_centerline(height_m=height, lateral_m=lateral)
+        assert abs(np.linalg.norm(np.diff(center, axis=0), axis=1).sum() - 0.2) < 1e-10
+        stage = Usd.Stage.CreateInMemory()
+        spec = json.loads((ROOT / "config/raspberry-pi-task.json").read_text())
+        spec["cable"].update(face_a_up=False, curve_height_m=height, lateral_bow_m=lateral)
+        make_camera_cable(stage, spec)
+        for prim in stage.Traverse():
+            if prim.IsA(UsdGeom.Mesh):
+                assert np.asarray(UsdGeom.Mesh(prim).GetPointsAttr().Get())[:, 2].min() > 0
+        assert points(stage, "ContactsA/Pin_08")[:4, 2].max() < points(stage, "TipASupport")[:4, 2].min()
+        assert points(stage, "ContactsB/Pin_08")[-4:, 2].min() > points(stage, "TipBSupport")[-4:, 2].max()

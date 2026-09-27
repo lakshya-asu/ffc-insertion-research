@@ -20,6 +20,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--orbit-frames", type=int, default=72)
+    parser.add_argument("--refined", action="store_true")
     args = parser.parse_args()
     if (args.output / "review.json").exists():
         parser.error("Use a fresh output directory")
@@ -46,7 +47,7 @@ def main():
         from pxr import Gf, UsdGeom, UsdLux
 
         from ffc.isaac_scene import box, build, camera
-        from ffc.raspberry_pi_scene import add_assets, apply_review_materials, make_camera_cable
+        from ffc.raspberry_pi_scene import add_assets, apply_review_materials, make_camera_cable, refine_pi4
 
         cfg = json.loads((ROOT / "config/isaac-workcell.json").read_text())
         cfg["tip_pose_alignment"] = False
@@ -60,11 +61,13 @@ def main():
         build(stage, ROOT, cfg)
         for path in ["/World/Cable", "/World/PCB", "/World/PCBStand", "/World/Connector", "/World/Regrasp"]:
             stage.RemovePrim(path)
-        report = add_assets(stage, ROOT)
+        report = add_assets(stage, ROOT, detailed=args.refined)
         task = json.loads((ROOT / "config/raspberry-pi-task.json").read_text())
         report["task"] = task
         report["cable"] = make_camera_cable(stage, task)
         report["appearance"] = apply_review_materials(stage)
+        if args.refined:
+            report["refinement"] = refine_pi4(stage, ROOT)
         for i, (x, y) in enumerate(
             [(0.6035, -0.1365), (0.6615, -0.1365), (0.6035, -0.0875), (0.6615, -0.0875)]
         ):

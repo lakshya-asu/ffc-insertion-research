@@ -4,8 +4,14 @@
   "robot": "Franka FR3 v2.1",
   "board": "Raspberry Pi 4 Model B",
   "camera_module": "Camera Module 3 Standard, normal FoV",
-  "board_outline_mm": [85, 56],
-  "mounting_hole_pitch_mm": [58, 49],
+  "board_outline_mm": [
+    85,
+    56
+  ],
+  "mounting_hole_pitch_mm": [
+    58,
+    49
+  ],
   "board_source": "Community STEP, MGS-CAD-Files; not manufacturer-certified",
   "camera_source": "Official Raspberry Pi simplified STEP",
   "cable": {
@@ -36,5 +42,8 @@
     "task": "phone-style FPC-to-board press-on connector",
     "candidate_family": "Hirose BM28, representative research coupon; not claimed as a specific phone BOM",
     "status": "scope agreed; separate hardware and contact-model milestone"
-  }
+  },
+  "synthetic_perception_development": true,
+  "real_camera_validated": false,
+  "training_ready_scope": "Contact/action learning remains unqualified; offline synthetic segmentation development is enabled"
 }

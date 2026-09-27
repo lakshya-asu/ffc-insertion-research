@@ -1,0 +1,1125 @@
+{
+  "timestamp_domain": "host monotonic render completion",
+  "frames": [
+    {
+      "file": "0000-desk.png",
+      "camera_id": "desk",
+      "sequence": 0,
+      "timestamp_s": 0.8812995570042403,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "9796094c5cfbbbd0dacedbe754554a1571be6a27dd2a2da8eb64eadfd9701103"
+    },
+    {
+      "file": "0000-board.png",
+      "camera_id": "board",
+      "sequence": 0,
+      "timestamp_s": 0.9333946490078233,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "ec0e950a2cb7bc308ac72b86f1de2dacd79ed46c1ecd2399a1d11ae08513db0f"
+    },
+    {
+      "file": "0001-desk.png",
+      "camera_id": "desk",
+      "sequence": 1,
+      "timestamp_s": 1.5094895770016592,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "9f73b4d7ff05bcd2e7785fe5812c06e7a4944cc76a838da445f0d856191011d2"
+    },
+    {
+      "file": "0001-board.png",
+      "camera_id": "board",
+      "sequence": 1,
+      "timestamp_s": 1.5667292819998693,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "4c189f46e3339f2f0a0a366b7989f2d47a9b6872403fde1cb7a653580443349a"
+    },
+    {
+      "file": "0002-desk.png",
+      "camera_id": "desk",
+      "sequence": 2,
+      "timestamp_s": 2.052786540996749,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "d64697dede998fed057a1a0c43d2d546c59c19a79ac0fe9e668e622705043b0d"
+    },
+    {
+      "file": "0002-board.png",
+      "camera_id": "board",
+      "sequence": 2,
+      "timestamp_s": 2.1172511180047877,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "8056dc4443473794653175a4e8eeb3e80e50185c4c4621463e1f318f9e29169f"
+    },
+    {
+      "file": "0003-desk.png",
+      "camera_id": "desk",
+      "sequence": 3,
+      "timestamp_s": 2.617542626001523,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "e3d93ce3137bb5825d67439270d4f4dbd0ae3202b910ee3754a85a23c22562c5"
+    },
+    {
+      "file": "0003-board.png",
+      "camera_id": "board",
+      "sequence": 3,
+      "timestamp_s": 2.662822023994522,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "6ec31a3e926bf410c1df2047835625a1fcfb0e1dcec8366f8140c974606928e4"
+    },
+    {
+      "file": "0004-desk.png",
+      "camera_id": "desk",
+      "sequence": 4,
+      "timestamp_s": 3.1740310760069406,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "47647d3f89d8e6d677b647cce3220d62df4a40b88f4d7bfbc52ea4068bf69ed0"
+    },
+    {
+      "file": "0004-board.png",
+      "camera_id": "board",
+      "sequence": 4,
+      "timestamp_s": 3.2331581869948423,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "d2024de9381ee050df40bfdcdd7266d198ff6b4930401a6da4e542b50c5cc136"
+    },
+    {
+      "file": "0005-desk.png",
+      "camera_id": "desk",
+      "sequence": 5,
+      "timestamp_s": 3.764053156002774,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "f838a33a970bc1e8a0c4eb0626e66e42d7b5ae04e93821267ec83234fc0b7456"
+    },
+    {
+      "file": "0005-board.png",
+      "camera_id": "board",
+      "sequence": 5,
+      "timestamp_s": 3.8152288050041534,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "050a026ba4d054d4c64d7d482233567d324beca3642b257aa278776f76cac9e2"
+    },
+    {
+      "file": "0006-desk.png",
+      "camera_id": "desk",
+      "sequence": 6,
+      "timestamp_s": 4.352510541997617,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "a5c8e0b5d4ee8f29dfdc2464e308e7976c0502bacd215c4750b56a5efed06c84"
+    },
+    {
+      "file": "0006-board.png",
+      "camera_id": "board",
+      "sequence": 6,
+      "timestamp_s": 4.4062228569964645,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "58d9006cc082785452ea2d07f7ec2609a28f41703de709b4cc1989b91f3f9e91"
+    },
+    {
+      "file": "0007-desk.png",
+      "camera_id": "desk",
+      "sequence": 7,
+      "timestamp_s": 4.937918269002694,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "093a5d49dd35902c4ac7c277b6c0db7fcd4cc4883d1a48610a335d33f2cd7302"
+    },
+    {
+      "file": "0007-board.png",
+      "camera_id": "board",
+      "sequence": 7,
+      "timestamp_s": 4.991094366996549,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "65c4f041dd476a53a8fa73e6ad3c729e8d2ff20f4454d29dc74a5c8030b82d3c"
+    },
+    {
+      "file": "0008-desk.png",
+      "camera_id": "desk",
+      "sequence": 8,
+      "timestamp_s": 5.519718148003449,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "113a3e87532400276cca95b76d2ee55a699b949a049bb3e89f414500472341f4"
+    },
+    {
+      "file": "0008-board.png",
+      "camera_id": "board",
+      "sequence": 8,
+      "timestamp_s": 5.574392074995558,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "7a3e0003311870f8747047a9c1ce05212643f2c563f669a9388fd83949f72f6a"
+    },
+    {
+      "file": "0009-desk.png",
+      "camera_id": "desk",
+      "sequence": 9,
+      "timestamp_s": 6.12700046300597,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "456c3595f9c407c5f4e7153d37d723245734cee9d5a966e3d03189dde627fcc5"
+    },
+    {
+      "file": "0009-board.png",
+      "camera_id": "board",
+      "sequence": 9,
+      "timestamp_s": 6.179925332995481,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "cf94a9b6ce211b24c85a9ba3eb20700f78ede99a47fb690701ad56b0223653ac"
+    },
+    {
+      "file": "0010-desk.png",
+      "camera_id": "desk",
+      "sequence": 10,
+      "timestamp_s": 6.715555697999662,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "3553cc0f71fddadaa15d071064eb890d424c2e6e97b47aa54479c6dba01e9054"
+    },
+    {
+      "file": "0010-board.png",
+      "camera_id": "board",
+      "sequence": 10,
+      "timestamp_s": 6.77052872099739,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "9545125999f130a80d362ebfd0201981cfb0407d7f3dbdfcd1ab8ac5864de702"
+    },
+    {
+      "file": "0011-desk.png",
+      "camera_id": "desk",
+      "sequence": 11,
+      "timestamp_s": 7.29414763400564,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "63ac2efd243015975d848b0a4fba75418ab2e5dd936ecfa0d08efe87cdd606be"
+    },
+    {
+      "file": "0011-board.png",
+      "camera_id": "board",
+      "sequence": 11,
+      "timestamp_s": 7.350600082005258,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "55045eab57051da9430a42c42f1c3a2f90d31bd8909ef8d9c630cc1a9a06c860"
+    },
+    {
+      "file": "0012-desk.png",
+      "camera_id": "desk",
+      "sequence": 12,
+      "timestamp_s": 7.866446187006659,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "efa2ef5730d2dce030d3379131529eff672ce8d22e8d43581fc30014e0380244"
+    },
+    {
+      "file": "0012-board.png",
+      "camera_id": "board",
+      "sequence": 12,
+      "timestamp_s": 7.919616180006415,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "ba20ea7024ce3eb3f1e80332ec55a49e940668bb32c82c68341f7011ee5c8afd"
+    },
+    {
+      "file": "0013-desk.png",
+      "camera_id": "desk",
+      "sequence": 13,
+      "timestamp_s": 8.487746489001438,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "475e941e3388a3ff15202792aecbf46698c0edf9c79ce70fee35739dc968f1c9"
+    },
+    {
+      "file": "0013-board.png",
+      "camera_id": "board",
+      "sequence": 13,
+      "timestamp_s": 8.547521215004963,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "73fa8c1601c98cac1cdf075c2f5a9774abdd3c67e5b5ff3057973731a3640669"
+    },
+    {
+      "file": "0014-desk.png",
+      "camera_id": "desk",
+      "sequence": 14,
+      "timestamp_s": 9.070089442000608,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "042c0b2b86930bf024bc0c24cff4ca307979c03c561f6f02654a8150cc43c625"
+    },
+    {
+      "file": "0014-board.png",
+      "camera_id": "board",
+      "sequence": 14,
+      "timestamp_s": 9.119175950007048,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "e99d2cbb8ccf5578569624150182284e63fa028d9906c8971f7e981c002f41bb"
+    },
+    {
+      "file": "0015-desk.png",
+      "camera_id": "desk",
+      "sequence": 15,
+      "timestamp_s": 9.676241901994217,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "9dd7ad43cd340095bfe434be46f98d2f64bbcd0cc6318c4840a4c049ec487d35"
+    },
+    {
+      "file": "0015-board.png",
+      "camera_id": "board",
+      "sequence": 15,
+      "timestamp_s": 9.732767018998857,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "520867c0383e964718657346f1d441f859fcd62a8b9a26cefd1d201c350bfa67"
+    },
+    {
+      "file": "0016-desk.png",
+      "camera_id": "desk",
+      "sequence": 16,
+      "timestamp_s": 10.286403360005352,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "b803954119cd10ca8063ef36695dd88ce5cfdcd3987217e18b6273c7e3a508b1"
+    },
+    {
+      "file": "0016-board.png",
+      "camera_id": "board",
+      "sequence": 16,
+      "timestamp_s": 10.349074427998858,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "707bd1b9ed48374bd9fccd7806ff32b78e6672e63d70934cbebe44572c71c7df"
+    },
+    {
+      "file": "0017-desk.png",
+      "camera_id": "desk",
+      "sequence": 17,
+      "timestamp_s": 10.903272987998207,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "74717607b17e61fa213175662053577ea8e17e0335e7f862867ecf536cae7f31"
+    },
+    {
+      "file": "0017-board.png",
+      "camera_id": "board",
+      "sequence": 17,
+      "timestamp_s": 10.948763410997344,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "91f36549940235506672312c87a318e8da1bda2b1d241e2d465ed6bcb6d0cd27"
+    },
+    {
+      "file": "0018-desk.png",
+      "camera_id": "desk",
+      "sequence": 18,
+      "timestamp_s": 11.45893288400839,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "beed745c6e7d302d9fbe00911baf3c5dbfbac266d6c40dcddd82a80f927070c6"
+    },
+    {
+      "file": "0018-board.png",
+      "camera_id": "board",
+      "sequence": 18,
+      "timestamp_s": 11.518739909006399,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "f675837e008b42f5b76153a62f406e4be0e2e1bfd843744d50b6af437d7ba9e8"
+    },
+    {
+      "file": "0019-desk.png",
+      "camera_id": "desk",
+      "sequence": 19,
+      "timestamp_s": 12.057420358003583,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "218ee3e9874fea44bed5919f824a3242cf83e2681906fb75a23a9545f8ae9dd1"
+    },
+    {
+      "file": "0019-board.png",
+      "camera_id": "board",
+      "sequence": 19,
+      "timestamp_s": 12.114706652006134,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "909b19bfdd1e5ce4972f9e19f82207e4e70ad5c1e339ff7131b1034a0c9e7d97"
+    },
+    {
+      "file": "0020-desk.png",
+      "camera_id": "desk",
+      "sequence": 20,
+      "timestamp_s": 12.643585818004794,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "2c3c2cb27a4764fb7174af8301e38d710f4032041c06e71fd12fa1825ca9dbcf"
+    },
+    {
+      "file": "0020-board.png",
+      "camera_id": "board",
+      "sequence": 20,
+      "timestamp_s": 12.697274546007975,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "582ba3e98559edab4e22a90977d1b5ac369df0310ec1da961bc22a92ae8a577a"
+    },
+    {
+      "file": "0021-desk.png",
+      "camera_id": "desk",
+      "sequence": 21,
+      "timestamp_s": 13.237592564008082,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "223a70b46ffaac137ae4050c3ced428407d58a076d374b41b305a5542ca50848"
+    },
+    {
+      "file": "0021-board.png",
+      "camera_id": "board",
+      "sequence": 21,
+      "timestamp_s": 13.286476624998613,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "0fca96681ecdc210051844d2e2adc32113b307f44b7de908d60e2e4a3074c295"
+    },
+    {
+      "file": "0022-desk.png",
+      "camera_id": "desk",
+      "sequence": 22,
+      "timestamp_s": 13.857653554994613,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "0b2d08689d44abfd09cef8d9147eede8747aee54347d1763699e82048feaddc8"
+    },
+    {
+      "file": "0022-board.png",
+      "camera_id": "board",
+      "sequence": 22,
+      "timestamp_s": 13.910312777996296,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "7134eeb4512579db7b1c7fbffd2d181ee5ff74db3a09fde6257740b91006cb66"
+    },
+    {
+      "file": "0023-desk.png",
+      "camera_id": "desk",
+      "sequence": 23,
+      "timestamp_s": 14.485129912005505,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "9b9fde98bde0f1cd529f2af8f38dc10e35a291f6a3ede3ad8d05bb21f4618384"
+    },
+    {
+      "file": "0023-board.png",
+      "camera_id": "board",
+      "sequence": 23,
+      "timestamp_s": 14.541233900003135,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "ea19d21e868072b410e2dcdf3489deca4c2cc37dd30c39e97211c70a2f30c279"
+    },
+    {
+      "file": "0024-desk.png",
+      "camera_id": "desk",
+      "sequence": 24,
+      "timestamp_s": 15.063994509997428,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "f4bb2bb0a3c180132429869491863b8bb73fdd2173882f0090509a22b7c428dd"
+    },
+    {
+      "file": "0024-board.png",
+      "camera_id": "board",
+      "sequence": 24,
+      "timestamp_s": 15.12273464500322,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "c2b00e8a9d192334ba90d6792c8af4ea263f891668332385cf9b3c31c8bdd9c4"
+    },
+    {
+      "file": "0025-desk.png",
+      "camera_id": "desk",
+      "sequence": 25,
+      "timestamp_s": 15.715214976007701,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "bf354a3a89b1f648c31367b1797e23c146e40585b19fc6e05dbfa850913d8cf1"
+    },
+    {
+      "file": "0025-board.png",
+      "camera_id": "board",
+      "sequence": 25,
+      "timestamp_s": 15.765188339006272,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "2b9814363dc1ca7a0f9efdfd959be517bd4d40e5b0815dafb350ee83431d3800"
+    },
+    {
+      "file": "0026-desk.png",
+      "camera_id": "desk",
+      "sequence": 26,
+      "timestamp_s": 16.305120218006778,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "44e89aef497195376b32393891e06d522e493f284b04f7869428f509ba41e5ac"
+    },
+    {
+      "file": "0026-board.png",
+      "camera_id": "board",
+      "sequence": 26,
+      "timestamp_s": 16.36190160199476,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "63fb88ecc9e83c4ae3fa622e981a9d949594b68858541e780e2d1b2de1d4f408"
+    },
+    {
+      "file": "0027-desk.png",
+      "camera_id": "desk",
+      "sequence": 27,
+      "timestamp_s": 16.88013404600497,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "f22cda26bb068a13d8ca6d2b08d40377a6503f6bd544237f9d1b211d9b5b130e"
+    },
+    {
+      "file": "0027-board.png",
+      "camera_id": "board",
+      "sequence": 27,
+      "timestamp_s": 16.933463769993978,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "346a1885c03387e971d85ec379e7fc13c6acfb7341354f4dce01ac20c7af9ad2"
+    },
+    {
+      "file": "0028-desk.png",
+      "camera_id": "desk",
+      "sequence": 28,
+      "timestamp_s": 17.49518286700186,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "cab61d4ed3d180908824091dbb63f931744a963de3785dbb2127528ad3cecbad"
+    },
+    {
+      "file": "0028-board.png",
+      "camera_id": "board",
+      "sequence": 28,
+      "timestamp_s": 17.546696421006345,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "37758b0930c44199f7b27e82dba749d64966561f4e7bad19241919db6778effe"
+    },
+    {
+      "file": "0029-desk.png",
+      "camera_id": "desk",
+      "sequence": 29,
+      "timestamp_s": 18.104857831000118,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "c1913cab9721a803c5d03d679412f0634c492a099e01d5039522ff8fed8fe903"
+    },
+    {
+      "file": "0029-board.png",
+      "camera_id": "board",
+      "sequence": 29,
+      "timestamp_s": 18.167194951005513,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "718c73439df0d86f71c43627fd840c253fa2993b73e930953653fa7ce75e8a2c"
+    },
+    {
+      "file": "0030-desk.png",
+      "camera_id": "desk",
+      "sequence": 30,
+      "timestamp_s": 18.70391719500185,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "008ad0e7f91f72643775c3ec2e8a02f71eb3345b673d6ee96e846064a48e7c86"
+    },
+    {
+      "file": "0030-board.png",
+      "camera_id": "board",
+      "sequence": 30,
+      "timestamp_s": 18.760057524996228,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "55dba84c2dd2495a9a552c33f7ab472cd4c865911ec9d3840466f33d5640c6e1"
+    },
+    {
+      "file": "0031-desk.png",
+      "camera_id": "desk",
+      "sequence": 31,
+      "timestamp_s": 19.33257364000019,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "285f3d1d5e1338b34abdf175652cfdfee2324e75d48109e38905661e31035713"
+    },
+    {
+      "file": "0031-board.png",
+      "camera_id": "board",
+      "sequence": 31,
+      "timestamp_s": 19.38887151700328,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "9be083db646b160ecda45a5f7b7d0b7bd894341ee02557fac901206ccdbbca5e"
+    },
+    {
+      "file": "0032-desk.png",
+      "camera_id": "desk",
+      "sequence": 32,
+      "timestamp_s": 19.922549269002047,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "3f92958c5d538ab524972705724c250bd23075394c5aa385316ebdc1b35a6464"
+    },
+    {
+      "file": "0032-board.png",
+      "camera_id": "board",
+      "sequence": 32,
+      "timestamp_s": 19.980953136997414,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "00fa77e37c1f3bdcfa821483b05d62f6a0c35ebf02377b07f9092d0b71dc5358"
+    },
+    {
+      "file": "0033-desk.png",
+      "camera_id": "desk",
+      "sequence": 33,
+      "timestamp_s": 20.488146425996092,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "7ea1d1a2fcb29dbdad1b9aaa48ba66c065f71290457d2101763e27a686026b51"
+    },
+    {
+      "file": "0033-board.png",
+      "camera_id": "board",
+      "sequence": 33,
+      "timestamp_s": 20.549185794006917,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "de89afbd036d8816193bde04c9f8936efa8a36c72743f9c8a59cb415e2186c67"
+    },
+    {
+      "file": "0034-desk.png",
+      "camera_id": "desk",
+      "sequence": 34,
+      "timestamp_s": 21.06461035400571,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "0a8fc985ae86041b39a5788a6f008421702a63b66427884f3e4fe662ba44eeb4"
+    },
+    {
+      "file": "0034-board.png",
+      "camera_id": "board",
+      "sequence": 34,
+      "timestamp_s": 21.113163490008446,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "76711a8fa82beb6183166fc74a0699b5af7a70fd9b84f88a5af9653790a1511e"
+    },
+    {
+      "file": "0035-desk.png",
+      "camera_id": "desk",
+      "sequence": 35,
+      "timestamp_s": 21.62236545799533,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "bac9a08b298d465418f5230836d4ec13bd639c30c8925575357699d4390d4213"
+    },
+    {
+      "file": "0035-board.png",
+      "camera_id": "board",
+      "sequence": 35,
+      "timestamp_s": 21.68023342800734,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "d3a438995dcd30d913e118a73188822732ae2703e31e58c08ed5459885586082"
+    },
+    {
+      "file": "0036-desk.png",
+      "camera_id": "desk",
+      "sequence": 36,
+      "timestamp_s": 22.17615749599645,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "29cc7cdd0d4b82f8f6969edb1569e2e0ef29d0f9c44cf264d0e28e3132146270"
+    },
+    {
+      "file": "0036-board.png",
+      "camera_id": "board",
+      "sequence": 36,
+      "timestamp_s": 22.23071068500576,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "3f4b06f4e2b7098edb743f3007066ebecfcf36ffdaa19174fe017251299bc656"
+    },
+    {
+      "file": "0037-desk.png",
+      "camera_id": "desk",
+      "sequence": 37,
+      "timestamp_s": 22.826461838994874,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "5aaa950ef5731fe576a74a15bfe16be0be8a4e1bdee1b90bb9ef471cf919e3cd"
+    },
+    {
+      "file": "0037-board.png",
+      "camera_id": "board",
+      "sequence": 37,
+      "timestamp_s": 22.88500053700409,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "c3e64856d3a8c34ebf7801f494b1f0012cd69a853e677875cee2fca2e304ba8b"
+    },
+    {
+      "file": "0038-desk.png",
+      "camera_id": "desk",
+      "sequence": 38,
+      "timestamp_s": 23.411019596998813,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "de7bff030d69ddd17535084943b9ec17d7d647c5fea8880a46d3421f17cfc861"
+    },
+    {
+      "file": "0038-board.png",
+      "camera_id": "board",
+      "sequence": 38,
+      "timestamp_s": 23.46330686600413,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "e9a397bc3fdcfad237584ddd9d3bb47336fc1ab7fd0b639222bced3d7a97c6b7"
+    },
+    {
+      "file": "0039-desk.png",
+      "camera_id": "desk",
+      "sequence": 39,
+      "timestamp_s": 23.94422459299676,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "779dee8fc90027978472e9b007023814d30bd19a2ed8278fbe4ca9ef7af130ab"
+    },
+    {
+      "file": "0039-board.png",
+      "camera_id": "board",
+      "sequence": 39,
+      "timestamp_s": 24.003739701001905,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "63c5e5f79bd0a570b819b68e61234a4b890bb77abae84dc57cf6161937f3b8c9"
+    },
+    {
+      "file": "0040-desk.png",
+      "camera_id": "desk",
+      "sequence": 40,
+      "timestamp_s": 24.484996797007625,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "6cb7886f4f87ad9d6ebfac0190345add741c4a2fd0ebb02d283efb3f4d60b060"
+    },
+    {
+      "file": "0040-board.png",
+      "camera_id": "board",
+      "sequence": 40,
+      "timestamp_s": 24.535357799002668,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "4d608cd6bc1b85e32865bcf6b4d6333db9c51952abe9b2c8fd2cef4d951e3e4b"
+    },
+    {
+      "file": "0041-desk.png",
+      "camera_id": "desk",
+      "sequence": 41,
+      "timestamp_s": 25.025467633007793,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "cb6cecf0450319059eb5b8ac40e6b87fae7da7a04007cdc9378635b5406768c9"
+    },
+    {
+      "file": "0041-board.png",
+      "camera_id": "board",
+      "sequence": 41,
+      "timestamp_s": 25.08367657099734,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "d2488a56371037030e8586826e062a32ca1d210887710aa540b23f97cfb79d34"
+    },
+    {
+      "file": "0042-desk.png",
+      "camera_id": "desk",
+      "sequence": 42,
+      "timestamp_s": 25.554939670008025,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "e79f8109d25c6a6420df7a7d932f405ed383b6b7975df005504da33583d6e6a5"
+    },
+    {
+      "file": "0042-board.png",
+      "camera_id": "board",
+      "sequence": 42,
+      "timestamp_s": 25.604077049996704,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "4d1d661d986ccbec4b85042ae2ac8bcfa78171c45076632cff24e38200e9f19e"
+    },
+    {
+      "file": "0043-desk.png",
+      "camera_id": "desk",
+      "sequence": 43,
+      "timestamp_s": 26.188286358999903,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "4f7520ef5a56bf8c276c634621da4cd8442dd320ab41c2b70003615455563404"
+    },
+    {
+      "file": "0043-board.png",
+      "camera_id": "board",
+      "sequence": 43,
+      "timestamp_s": 26.245284638003795,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "199ed49fc53c0f31aa677b00e2e4e9d447fc097abbab3ee15173a15cd8ae51bf"
+    },
+    {
+      "file": "0044-desk.png",
+      "camera_id": "desk",
+      "sequence": 44,
+      "timestamp_s": 26.80616642300447,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "bd6e9f089c839616d4a9b8fded21103609afbd7987f557402fefdc6f98554132"
+    },
+    {
+      "file": "0044-board.png",
+      "camera_id": "board",
+      "sequence": 44,
+      "timestamp_s": 26.867438568995567,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "af48b5e98d760df9bcaf27966d457392bc27cbccae86ebd4860d13b4c824111c"
+    },
+    {
+      "file": "0045-desk.png",
+      "camera_id": "desk",
+      "sequence": 45,
+      "timestamp_s": 27.6141368230019,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "b6de31bbb1ee063f3ee1ed848a4ac2576aec9db84ab5dcef7e238de782a29562"
+    },
+    {
+      "file": "0045-board.png",
+      "camera_id": "board",
+      "sequence": 45,
+      "timestamp_s": 27.66156668700569,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "884e80ba81de78dc57ea859c9c10987a74ac7bd552277a5aee3c173bab1b3805"
+    },
+    {
+      "file": "0046-desk.png",
+      "camera_id": "desk",
+      "sequence": 46,
+      "timestamp_s": 28.205839458998526,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "1af244c60e8dcbb4eb848adbf61fed9c72bce307b60b41b3c7ac5b8dd6258523"
+    },
+    {
+      "file": "0046-board.png",
+      "camera_id": "board",
+      "sequence": 46,
+      "timestamp_s": 28.251328785001533,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "3aa8ab6c93533502291e88db4658d0ff4e2232cbb8986517a20eda93c2b983ad"
+    },
+    {
+      "file": "0047-desk.png",
+      "camera_id": "desk",
+      "sequence": 47,
+      "timestamp_s": 28.812210784002673,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "ca54abfb5bf12619812c7fb74aec73ebeedaa9102a7a073a2c54754b985c524d"
+    },
+    {
+      "file": "0047-board.png",
+      "camera_id": "board",
+      "sequence": 47,
+      "timestamp_s": 28.86081722700328,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "0644e27872eab4e387a2c77a8ab981436184040fed9b10f007693cab82f083c9"
+    },
+    {
+      "file": "0048-desk.png",
+      "camera_id": "desk",
+      "sequence": 48,
+      "timestamp_s": 29.374752203002572,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "50bfb9625114f169bf08f2c246288061d8b469d63b156d58f7bcc000bd90e304"
+    },
+    {
+      "file": "0048-board.png",
+      "camera_id": "board",
+      "sequence": 48,
+      "timestamp_s": 29.430927237001015,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "22bdf5b96aefdf6e58aa135cf24a01514e9ae130cac61e91b87881605ad79d48"
+    },
+    {
+      "file": "0049-desk.png",
+      "camera_id": "desk",
+      "sequence": 49,
+      "timestamp_s": 29.99562799099658,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "361ecca32959a55df0fd7b71023532804de1b2077d29f36514dec23fac7456e9"
+    },
+    {
+      "file": "0049-board.png",
+      "camera_id": "board",
+      "sequence": 49,
+      "timestamp_s": 30.055162028002087,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "280f32265de92c593cb7aa90793ea5d5c7996f69a07aaa951d90183fa6aa3016"
+    },
+    {
+      "file": "0050-desk.png",
+      "camera_id": "desk",
+      "sequence": 50,
+      "timestamp_s": 30.643304919998627,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "60412adfabc8784592c6ad08ac1793d7fd2e555f98692fedf0a6e4a2e28ae98f"
+    },
+    {
+      "file": "0050-board.png",
+      "camera_id": "board",
+      "sequence": 50,
+      "timestamp_s": 30.697448553997674,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "f22d6d8573fb2e0423c4ae8c84e584994aa0189cfb784284c92bbcba74707be3"
+    },
+    {
+      "file": "0051-desk.png",
+      "camera_id": "desk",
+      "sequence": 51,
+      "timestamp_s": 31.354851583004347,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "af852bac98b613e9d83f3c0475ea810cc97a057d30cf2d37796c4deb2cf59dfe"
+    },
+    {
+      "file": "0051-board.png",
+      "camera_id": "board",
+      "sequence": 51,
+      "timestamp_s": 31.415649204005604,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "87897764953c052bedf099ae11f4e932d79e7ff1ed98931cc7fc62f946ed7622"
+    },
+    {
+      "file": "0052-desk.png",
+      "camera_id": "desk",
+      "sequence": 52,
+      "timestamp_s": 31.944279749994166,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "7c1ab29723985d97d2bec5d3a5740019fea34a5bd848bcad3433b522ca423d4a"
+    },
+    {
+      "file": "0052-board.png",
+      "camera_id": "board",
+      "sequence": 52,
+      "timestamp_s": 31.998891202994855,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "b43da3973cf72c14baf20f902b031c255c33b5f18017f0758a2eeb5e00ca184e"
+    },
+    {
+      "file": "0053-desk.png",
+      "camera_id": "desk",
+      "sequence": 53,
+      "timestamp_s": 32.54054634399654,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "4fc95a89ceba6526057bfd0c04b46313651862f325edb1a9a786e32f0770813d"
+    },
+    {
+      "file": "0053-board.png",
+      "camera_id": "board",
+      "sequence": 53,
+      "timestamp_s": 32.588101629997254,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "914eaeb27b31b69e1eb054c6b5534c2a69ed312f6d7dd7be8769b6f9c7fe3b51"
+    },
+    {
+      "file": "0054-desk.png",
+      "camera_id": "desk",
+      "sequence": 54,
+      "timestamp_s": 33.1429132320045,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "87200c678cbfa1f9c06e8904ec863252d9a34fe1638e6322dbf838242eec1f51"
+    },
+    {
+      "file": "0054-board.png",
+      "camera_id": "board",
+      "sequence": 54,
+      "timestamp_s": 33.201431011999375,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "3b3e0941f0d19d0be1de6ae5bd68373bf84e8469144fea87668574f1ddf9fa12"
+    },
+    {
+      "file": "0055-desk.png",
+      "camera_id": "desk",
+      "sequence": 55,
+      "timestamp_s": 33.70905826399394,
+      "calibration_id": "8ee775906993443afd9834c47c2de570df453ebda1fc92b5e256e8066ccf9328",
+      "width": 768,
+      "height": 512,
+      "sha256": "e137feadf4ad948df05511eb6ee2daf7966cb779572a380338d6c8e0374b054e"
+    },
+    {
+      "file": "0055-board.png",
+      "camera_id": "board",
+      "sequence": 55,
+      "timestamp_s": 33.76584030300728,
+      "calibration_id": "c41a615e6fdb5bf14c44fe626708146b21a48d66ba478b5c34d020c68739d2ea",
+      "width": 768,
+      "height": 512,
+      "sha256": "b2be38fefff5c59f1e6f9d5fd435574d03e943e4c2e339bf74a36983149b4639"
+    }
+  ]
+}

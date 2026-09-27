@@ -1,7 +1,8 @@
 'use strict';
 const views = {
   hardware: ['Pi 4, Camera Module 3 and loose 200 mm ribbon laid out separately on the desk.', 'The cable starts loose on the desk. The camera module is shown separately; neither end is connected in this review scene.'],
-  pi4: ['Oblique view of the imported Pi 4 Model B.', 'Pi 4 community STEP: the major connectors and chips are present. Small passives, board markings and measured finishes remain incomplete.'],
+  'pi4-before': ['Pi 4 before surface refinement.', 'Earlier imported scene, retained for comparison. The current Pi 4 view adds drawing-derived package proxies, board labels and separate socket materials.'],
+  pi4: ['Oblique view of the imported Pi 4 Model B.', 'Pi 4 community STEP plus 102 drawing-derived package footprints and seven approximate board labels. Socket contacts and polymer parts have separate materials; finishes remain unmeasured.'],
   'pi4-top': ['Top view of the Pi 4 board and its two ribbon sockets.', 'The camera socket lies between micro HDMI and the audio jack. The socket on the opposite short edge is the display connector.'],
   'csi-macro': ['Close view into the upright CSI socket from the imported Pi 4 CAD.', 'The upright camera socket replaces the old horizontal slot. Latch travel, contact compliance and open-state geometry have not been qualified.'],
   camera3: ['Official Camera Module 3 simplified CAD with the lens facing up.', 'Official normal-FoV Camera Module 3 STEP, rotated lens-up. The review applies a black lens-assembly material; optical response is not simulated.'],

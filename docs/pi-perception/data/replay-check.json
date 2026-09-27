@@ -1,0 +1,8 @@
+{
+  "images": 112,
+  "identical_masks_and_object_outputs": true,
+  "timing_excluded": true,
+  "model_sha256": "60d8a832914e6e67ff2db5c91e6b702cefe87057c96c0850bb940e755aa0ca31",
+  "scope": "two CPU inference processes with RGB and frozen weights; offline labels never mounted",
+  "motion_permitted": false
+}

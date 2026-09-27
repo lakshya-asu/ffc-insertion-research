@@ -21,7 +21,7 @@ from OCP.TCollection import TCollection_ExtendedString
 from OCP.TDataStd import TDataStd_Name
 from OCP.TDF import TDF_Label, TDF_LabelSequence
 from OCP.TDocStd import TDocStd_Document
-from OCP.TopAbs import TopAbs_FACE, TopAbs_REVERSED
+from OCP.TopAbs import TopAbs_FACE, TopAbs_REVERSED, TopAbs_SOLID
 from OCP.TopExp import TopExp_Explorer
 from OCP.TopLoc import TopLoc_Location
 from OCP.TopoDS import TopoDS
@@ -29,7 +29,7 @@ from OCP.XCAFDoc import XCAFDoc_ColorGen, XCAFDoc_ColorSurf, XCAFDoc_DocumentToo
 from pxr import Gf, Sdf, Usd, UsdGeom, UsdShade
 
 
-def convert(source: Path, output: Path, deflection_mm: float = 0.015):
+def convert(source: Path, output: Path, deflection_mm: float = 0.015, split_connectors: bool = False):
     reader = STEPCAFControl_Reader()
     reader.SetColorMode(True)
     reader.SetNameMode(True)
@@ -77,7 +77,7 @@ def convert(source: Path, output: Path, deflection_mm: float = 0.015):
         attr = TDataStd_Name()
         return attr.Get().ToExtString() if label.FindAttribute(TDataStd_Name.GetID_s(), attr) else "unnamed"
 
-    def visit(label, location, names, inherited=(0.5, 0.5, 0.5)):
+    def visit(label, location, names, inherited=(0.5, 0.5, 0.5), solid=None, solid_index=None):
         name = label_name(label)
         rgb = colour(label, inherited)
         if shapes.IsReference_s(label):
@@ -91,7 +91,21 @@ def convert(source: Path, output: Path, deflection_mm: float = 0.015):
             for i in range(1, children.Length() + 1):
                 visit(children.Value(i), location, names + [name], rgb)
             return
-        shape = shapes.GetShape_s(label)
+        shape = solid if solid is not None else shapes.GetShape_s(label)
+        if (
+            split_connectors
+            and solid is None
+            and any(n in name for n in ["Camera Connector", "Display Connector"])
+        ):
+            solids = TopExp_Explorer(shape, TopAbs_SOLID)
+            index = 0
+            while solids.More():
+                visit(label, location, names, rgb, solids.Current(), index)
+                index += 1
+                solids.Next()
+            if index != 17:
+                raise ValueError(f"Expected 15 contacts and two polymer solids, got {index}: {name}")
+            return
         if shape.IsNull():
             return
         mesher = BRepMesh_IncrementalMesh(shape, deflection_mm, False, 0.15, True)
@@ -131,6 +145,8 @@ def convert(source: Path, output: Path, deflection_mm: float = 0.015):
         mesh.CreateSubdivisionSchemeAttr("none")
         mesh.CreateDoubleSidedAttr(False)
         mesh.GetPrim().SetCustomDataByKey("cad_component", " / ".join(names + [name]))
+        if solid_index is not None:
+            mesh.GetPrim().SetCustomDataByKey("cad_solid_index", solid_index)
         mesh.CreateDisplayColorAttr([rgb])
         for k, (face_rgb, faces) in enumerate(groups.items()):
             subset = UsdGeom.Subset.CreateGeomSubset(
@@ -142,6 +158,7 @@ def convert(source: Path, output: Path, deflection_mm: float = 0.015):
             {
                 "path": path,
                 "name": name,
+                "solid_index": solid_index,
                 "assembly": names,
                 "triangles": face_number,
                 "bounds_mm": [arr.min(axis=0).tolist(), arr.max(axis=0).tolist()],
@@ -182,5 +199,6 @@ if __name__ == "__main__":
     p.add_argument("source", type=Path)
     p.add_argument("output", type=Path)
     p.add_argument("--deflection-mm", type=float, default=0.015)
+    p.add_argument("--split-connectors", action="store_true")
     a = p.parse_args()
-    convert(a.source, a.output, a.deflection_mm)
+    convert(a.source, a.output, a.deflection_mm, a.split_connectors)

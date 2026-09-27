@@ -1,0 +1,23 @@
+{
+  "split": "test",
+  "capture_started_unix_s": 1790534574.5284383,
+  "capture_completed_unix_s": 1790534628.5335114,
+  "seed": 927203,
+  "cases": 56,
+  "images": 112,
+  "capture_script_sha256": "192cb9abec06def780409a710c8fad8fbac4f3424023fe6aeb371d6942384620",
+  "timeline_elapsed_s": 0.0,
+  "motion_permitted": false,
+  "source_stage_sha256": "025253a44b607f47eff88d6886027aa1760f17f940f4b90d2f232575092ddb2f",
+  "real_camera_validation": false,
+  "camera_fixed": true,
+  "classes": [
+    "background",
+    "cable",
+    "contacts",
+    "stiffener",
+    "csi",
+    "dsi"
+  ],
+  "label_scope": "offline supervised annotations only"
+}

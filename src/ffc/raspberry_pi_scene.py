@@ -24,11 +24,11 @@ def make_material(stage, path, colour, roughness=0.45, metallic=0.0):
     return mat
 
 
-def add_assets(stage, project: Path):
+def add_assets(stage, project: Path, detailed=False):
     """Place imported CAD in a dedicated namespace; old baseline is untouched."""
     asset_dir = project / "third_party/raspberry_pi"
     report = {"assets": {}, "motion_permitted": False, "collision_ready": False}
-    for name, filename in [("Pi4", "pi4.usdc"), ("Camera3", "camera3.usdc")]:
+    for name, filename in [("Pi4", "pi4-v2.usdc" if detailed else "pi4.usdc"), ("Camera3", "camera3.usdc")]:
         source = asset_dir / filename
         if not source.exists():
             raise FileNotFoundError(f"Convert STEP before scene construction: {source}")
@@ -48,29 +48,38 @@ def add_assets(stage, project: Path):
     return report
 
 
-def cable_centerline(length_m=0.2, count=801):
+def cable_centerline(length_m=0.2, count=801, height_m=0.003, lateral_m=0.0):
     """Author a shallow curved display pose with a specified centreline arc length."""
     u = np.linspace(0, 1, count)
-    z = 0.0005 + 0.003 * np.sin(np.pi * u) ** 2
+    z = 0.0005 + height_m * np.sin(np.pi * u) ** 2
+    y = lateral_m * np.sin(np.pi * u)
     lo, hi = 0.18, length_m
     for _ in range(45):
         span = (lo + hi) / 2
-        arc = np.linalg.norm(np.diff(np.column_stack((span * u, z)), axis=0), axis=1).sum()
+        arc = np.linalg.norm(np.diff(np.column_stack((span * u, y, z)), axis=0), axis=1).sum()
         if arc > length_m:
             hi = span
         else:
             lo = span
-    return np.column_stack((0.335 + span * u, np.full(count, -0.19), z))
+    return np.column_stack((0.335 + span * u, -0.19 + y, z))
 
 
-def make_camera_cable(stage, cfg):
+def make_camera_cable(stage, cfg, root="/World/Hardware/CameraCable"):
     spec = cfg["cable"]
-    center = cable_centerline(spec["length_mm"] / 1000)
+    center = cable_centerline(
+        spec["length_mm"] / 1000,
+        height_m=spec.get("curve_height_m", 0.003),
+        lateral_m=spec.get("lateral_bow_m", 0.0),
+    )
     distance = np.r_[0, np.cumsum(np.linalg.norm(np.diff(center, axis=0), axis=1))]
     tangent = np.gradient(center, axis=0)
     tangent /= np.linalg.norm(tangent, axis=1)[:, None]
-    normal = np.column_stack((-tangent[:, 2], np.zeros(len(center)), tangent[:, 0]))
-    root = "/World/Hardware/CameraCable"
+    side = np.cross(np.tile([0.0, 0.0, 1.0], (len(center), 1)), tangent)
+    side /= np.linalg.norm(side, axis=1)[:, None]
+    normal = np.cross(tangent, side)
+    if not spec.get("face_a_up", True):
+        normal *= -1
+        side *= -1
     UsdGeom.Xform.Define(stage, root)
     mats = {
         "film": make_material(stage, root + "/Materials/Film", (0.78, 0.79, 0.73), 0.36),
@@ -92,9 +101,11 @@ def make_camera_cable(stage, cfg):
         cs = np.column_stack([np.interp(ds, distance, center[:, k]) for k in range(3)])
         ns = np.column_stack([np.interp(ds, distance, normal[:, k]) for k in range(3)])
         ns /= np.linalg.norm(ns, axis=1)[:, None]
+        sides = np.column_stack([np.interp(ds, distance, side[:, k]) for k in range(3)])
+        sides /= np.linalg.norm(sides, axis=1)[:, None]
         points = []
-        for c, n in zip(cs, ns, strict=True):
-            points.extend([c + [0, y, 0] + z * n for y, z in [(ya, za), (yb, za), (yb, zb), (ya, zb)]])
+        for c, n, lateral in zip(cs, ns, sides, strict=True):
+            points.extend([c + y * lateral + z * n for y, z in [(ya, za), (yb, za), (yb, zb), (ya, zb)]])
         faces = [0, 3, 2, 1]
         for i in range(len(cs) - 1):
             a, b = 4 * i, 4 * (i + 1)
@@ -204,4 +215,78 @@ def apply_review_materials(stage):
     return {
         "basis": "engineering appearance choices, not measured BRDF or calibrated camera response",
         "overrides": applied,
+    }
+
+
+def refine_pi4(stage, project):
+    """Add drawing-based visual detail and materialise existing connector solids."""
+    root = "/World/Hardware/Pi4"
+    # Local CAD coordinates; the Pi4 parent carries the scene placement.
+    origin = np.array([-0.0425, -0.0283520692157758, 0.00044793078422418])
+    materials = {
+        "ceramic": make_material(stage, root + "/DetailMaterials/Ceramic", (0.20, 0.13, 0.055), 0.6),
+        "resistor": make_material(stage, root + "/DetailMaterials/Resistor", (0.014, 0.016, 0.018), 0.52),
+        "solder": make_material(stage, root + "/DetailMaterials/Solder", (0.52, 0.55, 0.58), 0.32, 0.9),
+        "ivory_polymer": make_material(stage, root + "/DetailMaterials/Housing", (0.72, 0.70, 0.60), 0.42),
+        "black_polymer": make_material(stage, root + "/DetailMaterials/Latch", (0.012, 0.013, 0.014), 0.4),
+        "silk": make_material(stage, root + "/DetailMaterials/Silk", (0.73, 0.77, 0.69), 0.7),
+    }
+    layout = json.loads((project / "config/pi4-detail-layout.json").read_text())
+    for i, package in enumerate(layout["packages"]):
+        x, y = np.array(package["xy_mm"]) / 1000
+        dx, dy = np.array(package["size_xy_mm"]) / 1000
+        height = float(np.clip(min(dx, dy) * 0.5, 0.00025, 0.0007))
+        center = origin + [x, y, height / 2]
+        path = root + f"/DrawingDetails/Package_{i:03d}"
+        body = UsdGeom.Cube.Define(stage, path + "/Body")
+        body.CreateSizeAttr(1)
+        body.AddTranslateOp().Set(Gf.Vec3d(*center))
+        body.AddScaleOp().Set(Gf.Vec3f(dx, dy, height))
+        UsdShade.MaterialBindingAPI.Apply(body.GetPrim()).Bind(materials["ceramic" if i % 3 else "resistor"])
+        major = 0 if dx >= dy else 1
+        for j, sign in enumerate([-1, 1]):
+            pos = center.copy()
+            pos[major] += sign * [dx, dy][major] * 0.38
+            size = np.array([dx, dy, height + 0.000015])
+            size[major] *= 0.24
+            cap = UsdGeom.Cube.Define(stage, path + f"/Termination{j}")
+            cap.CreateSizeAttr(1)
+            cap.AddTranslateOp().Set(Gf.Vec3d(*pos))
+            cap.AddScaleOp().Set(Gf.Vec3f(*size))
+            UsdShade.MaterialBindingAPI.Apply(cap.GetPrim()).Bind(materials["solder"])
+    labels = json.loads((project / "config/pi4-silkscreen.json").read_text())
+    for i, label in enumerate(labels["labels"]):
+        xy = np.asarray(label["xy_mm"]) / 1000
+        xyz = np.column_stack((xy, np.full(len(xy), 0.000015))) + origin
+        mesh = UsdGeom.Mesh.Define(stage, root + f"/Silkscreen/Label_{i:02d}")
+        mesh.CreatePointsAttr(xyz.tolist())
+        mesh.CreateFaceVertexCountsAttr([3] * (len(label["triangles"]) // 3))
+        mesh.CreateFaceVertexIndicesAttr(label["triangles"])
+        mesh.CreateSubdivisionSchemeAttr("none")
+        mesh.CreateDoubleSidedAttr(True)
+        UsdShade.MaterialBindingAPI.Apply(mesh.GetPrim()).Bind(materials["silk"])
+    connectors = {"csi": [], "dsi": []}
+    for prim in stage.Traverse():
+        if not prim.IsA(UsdGeom.Mesh) or not str(prim.GetPath()).startswith(root + "/Components/"):
+            continue
+        name = prim.GetCustomDataByKey("cad_component") or ""
+        index = prim.GetCustomDataByKey("cad_solid_index")
+        if index is None:
+            continue
+        role = "contact" if index < 15 else "black_polymer" if index == 15 else "ivory_polymer"
+        kind = "csi" if "Camera Connector" in name else "dsi"
+        for subset in UsdGeom.Subset.GetAllGeomSubsets(UsdGeom.Mesh(prim)):
+            UsdShade.MaterialBindingAPI.Apply(subset.GetPrim()).Bind(
+                materials["solder" if role == "contact" else role]
+            )
+        prim.SetCustomDataByKey("visual_role", role)
+        connectors[kind].append({"path": str(prim.GetPath()), "role": role})
+    return {
+        "packages": layout["count"],
+        "silkscreen_labels": len(labels["labels"]),
+        "connectors": connectors,
+        "provenance": (
+            "XY footprints from official drawing; package heights/types, markings and finishes approximate"
+        ),
+        "latch_status": "CAD rest pose; no latch travel or contact mechanics claimed",
     }

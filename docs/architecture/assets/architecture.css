@@ -12,3 +12,5 @@
 /* Keep long inspector labels clear of their definitions. */
 .inspector dl{grid-template-columns:140px minmax(0,1fr)}
 @media(max-width:800px){.inspector dl{grid-template-columns:1fr}}
+
+@media(max-width:600px){.toplinks a[href="../"]{display:none}}

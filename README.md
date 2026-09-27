@@ -2,6 +2,11 @@
 
 **[Watch the experiments online](https://lakshya-asu.github.io/ffc-insertion-research/)** — full videos, stage clips and measured checks.
 
+
+**[Open the live lab](https://lakshya-asu.github.io/ffc-insertion-research/live/)** — timestamped cell views, experiment progress, engineering decisions and a place to collect discussion notes. [Operation details](LAB_LIVE.md).
+
+**Current task:** Pi 4 Model B + Camera Module 3, with a dimensioned 200 mm ribbon. See the [refined hardware](https://lakshya-asu.github.io/ffc-insertion-research/hardware/) and [new RGB perception experiment](https://lakshya-asu.github.io/ffc-insertion-research/pi-perception/). New perception runs on camera images in an isolated worker. Real-camera qualification and contact mechanics remain open; robot motion is disabled. The manipulation results below are historical generic-scene baselines using privileged simulator state.
+
 A runnable Isaac Sim experiment for picking a ribbon cable off a desk, transferring it from suction to a mechanical pinch, and attempting insertion into an open PCB connector. The project compares direct transfer in the tool with placement and regrasp on a passive fixture.
 
 The Docker runtime, official FR3 model, physical workcell, two-actuator tool, cable models, force gates and stage-video recorder are implemented. **Both direct and passive-fixture desk-to-open-slot sequences pass their independent geometric and grip audits.** Both tips reach 3.801 mm depth; maximum sampled pre-insertion grip drift is 1.32 µm direct and 1.93 µm with the fixture. These are single deterministic privileged-state trials, not reliability estimates. Electrical continuity, latch closure and hardware transfer are not established.
