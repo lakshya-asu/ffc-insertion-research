@@ -1,0 +1,69 @@
+{
+  "checked_at_utc": "2026-09-27T16:40:37.329147+00:00",
+  "scope": "Website and vector observation ingress prototype only; no sensor-driven motion or physical qualification.",
+  "python_tests": {
+    "passed": 42,
+    "new_ingress_cases": 25
+  },
+  "browser": {
+    "results": [
+      {
+        "width": 1440,
+        "theme": "light",
+        "overflow": false,
+        "stageButtonsChecked": 39
+      },
+      {
+        "width": 1440,
+        "theme": "dark",
+        "overflow": false,
+        "stageButtonsChecked": 39
+      },
+      {
+        "width": 390,
+        "theme": "light",
+        "overflow": false,
+        "stageButtonsChecked": 39
+      },
+      {
+        "width": 390,
+        "theme": "dark",
+        "overflow": false,
+        "stageButtonsChecked": 39
+      }
+    ],
+    "errors": []
+  },
+  "lighthouse": {
+    "desktop-light": {
+      "performance": 1,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 1
+    },
+    "desktop-dark": {
+      "performance": 1,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 1
+    },
+    "mobile-light": {
+      "performance": 0.95,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 1
+    },
+    "mobile-dark": {
+      "performance": 0.95,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 1
+    }
+  },
+  "file_sha256": {
+    "index.html": "641eed035a39d165b860b45eaea7f7bb39fed4e6ff60f7ccfa9364b8ae7b7a2f",
+    "assets/architecture.css": "3dae850561953581f471baf20b4fc61079d8c5512be7f1ac48a5c95897a943e8",
+    "assets/architecture.js": "019d826a7c86feddf134a27ad96cccaa9b56cd38d582e0f3f845e721e79e12b9",
+    "assets/stages.json": "540bcd0941af3dc0cfce0a9a738955e5877a4abdd521fb101e004bf97a619679"
+  }
+}

@@ -112,7 +112,7 @@ def main():
     shutil.copy2(ROOT / "outputs/e030-stop-check02/artifact-checks.json", stop / "artifact-checks.json")
     body = """<header><p class="muted">FRANKA FR3 · ISAAC SIM 6.1 · EXPERIMENT RECORD</p><h1>From desk pickup to cable insertion</h1>
 <p>Both direct and passive-fixture strategies passed the independent geometric insertion and grip audits. Watch the actual simulation recordings below.</p>
-<nav><a href="#e040-direct-pgs">Direct video</a><a href="#e040-fixture-pgs">Fixture video</a><a href="#comparison">Comparison</a><a href="https://github.com/lakshya-asu/ffc-insertion-research">Source and Docker setup</a></nav>
+<nav><a href="architecture/">Architecture and research roadmap</a><a href="#e040-direct-pgs">Direct video</a><a href="#e040-fixture-pgs">Fixture video</a><a href="#comparison">Comparison</a><a href="https://github.com/lakshya-asu/ffc-insertion-research">Source and Docker setup</a></nav>
 <p><strong>Scope:</strong> one deterministic trial per strategy, using exact simulated state and uncalibrated material/contact parameters. The assumed open slot has no terminal-spring resistance. These results do not establish latch closure, electrical continuity, hardware performance or reliability.</p>
 <div class="table"><table><tr><th>Verified measure</th><th>Direct</th><th>Fixture</th></tr><tr><td>Full-tip seating depth</td><td>3.80105 mm</td><td>3.80099 mm</td></tr><tr><td>Maximum sampled pre-insertion grip drift</td><td>1.32 µm</td><td>1.93 µm</td></tr><tr><td>Verified stage clips</td><td>16</td><td>23</td></tr></table></div>
 <p class="muted">17 regression tests passed. Source hashes, decoded recordings and physics-clock checks accompany the selected runs. Recorded 27 September 2026.</p></header>"""

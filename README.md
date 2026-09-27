@@ -37,3 +37,7 @@ uv run python scripts/render_report.py
 `check_artifacts.py` checks decoded videos and recorded data; it reports the experiment's separate PASS/FAIL status. The seventeen tests verify geometry/kinematics utilities, preload-preserving command transitions, full-tip seating acceptance, and physical suction-anchor placement; full physics validation runs in Isaac Sim.
 
 The earlier MuJoCo endpoint study remains available through `scripts/evaluate_geometry.py` and [E001](experiments/001-workcell-geometry.md). Its model and static-clearance results are separate from the vendor FR3 v2.1 Isaac workcell.
+
+## Sensor-driven architecture
+
+[Interactive architecture and research guide](https://lakshya-asu.github.io/ffc-insertion-research/architecture/) explains the sensors, cable/PCB research, control and learning milestones. [SENSOR_FIRST.md](SENSOR_FIRST.md) records current implementation limits and gates. The historical full-suite runner now requires `--historical-baseline`; it uses privileged simulator state and is not a deployable skill.

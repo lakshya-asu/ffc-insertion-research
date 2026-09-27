@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
-# Reproduce the numerical benchmark, workcell check and both handling strategies.
+# Historical privileged-state baseline only. Not the sensor-driven skill pipeline.
 set -euo pipefail
 project_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$project_dir"
+if [[ "${1:-}" != "--historical-baseline" ]]; then
+  printf 'This runner uses privileged simulator state. To reproduce historical geometry checks, pass --historical-baseline explicitly. See SENSOR_FIRST.md for the new milestones.\n' >&2
+  exit 2
+fi
+shift
 run_id="${1:-$(date -u +%Y%m%dT%H%M%SZ)}"
 if [[ ! "$run_id" =~ ^[a-zA-Z0-9_-]+$ ]]; then
   printf 'Run identifier must contain only letters, digits, underscores and hyphens.\n' >&2
