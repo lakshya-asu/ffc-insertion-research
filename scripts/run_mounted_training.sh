@@ -28,7 +28,7 @@ source = model / 'source'
 source.mkdir()
 files = ['scripts/train_mounted_macro.py', 'src/ffc/entrance_feature_model.py',
          'src/ffc/zero_region_model.py', 'src/ffc/dinov3_features.py',
-         'ros2_ws/src/ffc_cell/ffc_cell/cv_frontend.py', 'config/macro-training-v1.json']
+         'ros2_ws/src/ffc_cell/ffc_cell/cv_frontend.py', 'src/ffc/macro_contract.py', 'config/macro-training-v1.json']
 for filename in files:
     (source / Path(filename).name).write_bytes(Path(filename).read_bytes())
 (model / 'sensor-contract.json').write_bytes((data / 'sensor/camera.json').read_bytes())

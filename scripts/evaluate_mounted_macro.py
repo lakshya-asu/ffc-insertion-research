@@ -4,8 +4,8 @@ import argparse
 import json
 from pathlib import Path
 
-import cv2
 import numpy as np
+from ffc_cell.macro_contract import CameraCalibration, labels_to_model, require
 from PIL import Image
 from scipy.ndimage import binary_erosion, distance_transform_edt
 
@@ -17,15 +17,15 @@ a = p.parse_args()
 if a.output.exists():
     p.error("Fresh output required")
 truth = json.loads((a.data / "offline/labels.json").read_text())
-assert not any(json.loads((a.data / "sensor/camera.json").read_text())["d"]), (
-    "Nonzero distortion requires matched mask rectification"
-)
+camera_contract = CameraCalibration.from_mapping(json.loads((a.data / "sensor/camera.json").read_text()))
 inference = json.loads((a.predictions / "predictions.json").read_text())
-assert len(truth["frames"]) == len(inference["frames"])
-assert {r["split"] for r in truth["frames"]} == {"test"}
-assert {r["file"]: r["rgb_sha256"] for r in truth["frames"]} == {
-    r["file"]: r["rgb_sha256"] for r in inference["frames"]
-}
+require(len(truth["frames"]) == len(inference["frames"]), "Prediction count mismatch")
+require({r["split"] for r in truth["frames"]} == {"test"}, "Final scorer accepts test split only")
+require(
+    {r["file"]: r["rgb_sha256"] for r in truth["frames"]}
+    == {r["file"]: r["rgb_sha256"] for r in inference["frames"]},
+    "Predictions do not match labeled sensor hashes",
+)
 classes = inference["classes"]
 cm = np.zeros((6, 6), np.int64)
 rows = []
@@ -43,17 +43,9 @@ def boundary_f1(gt, pred):
 
 for row in truth["frames"]:
     native = np.array(Image.open(a.data / "offline" / row["file"]))
-    gt = cv2.copyMakeBorder(
-        cv2.resize(native, (1224, 1024), interpolation=cv2.INTER_NEAREST_EXACT),
-        0,
-        0,
-        4,
-        4,
-        cv2.BORDER_CONSTANT,
-        value=0,
-    )
+    gt = labels_to_model(native, camera_contract)
     pred = np.array(Image.open(a.predictions / row["file"]))
-    assert pred.shape == gt.shape and pred.max() < 6
+    require(pred.shape == gt.shape and pred.max() < 6, "Invalid predicted label image")
     cm += np.bincount((gt.astype(int) * 6 + pred).ravel(), minlength=36).reshape(6, 6)
     scores = []
     for c in range(1, 6):

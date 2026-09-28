@@ -10,24 +10,24 @@ import torch
 from dinov3_features import encode_dinov3, load_dinov3
 from entrance_feature_model import CLASSES, FeatureHead
 from ffc_cell.cv_frontend import REVISION, Frontend
+from ffc_cell.macro_contract import CameraCalibration, require, validate_checkpoint_metadata, verify_digest
 from PIL import Image
 
 sensor, output = Path("/sensor"), Path("/results")
 if any(output.iterdir()):
     raise RuntimeError("Fresh output directory required")
 weights = Path("/model/member0.pt")
+freeze = json.loads(Path("/model/frozen.json").read_text())
+verify_digest(hashlib.sha256(weights.read_bytes()).hexdigest(), freeze["model_sha256"], "model")
+with open("/backbone/model.safetensors", "rb") as source:
+    backbone_sha256 = hashlib.file_digest(source, "sha256").hexdigest()
+verify_digest(backbone_sha256, freeze["training_report"]["backbone_sha256"], "backbone")
 checkpoint = torch.load(weights, map_location="cpu", weights_only=True)
-assert tuple(checkpoint["classes"]) == CLASSES
-assert checkpoint["preprocessing_revision"] == REVISION
-assert checkpoint["input_size"] == [1232, 1024]
+validate_checkpoint_metadata(checkpoint)
 calibration = json.loads((sensor / "camera.json").read_text())
 reference = json.loads(Path("/model/sensor-contract.json").read_text())
-assert calibration == reference, "Camera calibration or profile changed"
-assert calibration["profile"] == checkpoint["camera_profile"]
-assert (
-    hashlib.sha256(weights.read_bytes()).hexdigest()
-    == json.loads(Path("/model/frozen.json").read_text())["model_sha256"]
-)
+camera_contract = CameraCalibration.from_mapping(calibration)
+require(camera_contract == CameraCalibration.from_mapping(reference), "Camera calibration or profile changed")
 frontend = Frontend()
 torch.set_num_threads(4)
 head = FeatureHead().cuda().eval()
@@ -67,7 +67,8 @@ report = dict(
     input_size=[1232, 1024],
     camera_profile=calibration["profile"],
     model_sha256=hashlib.sha256(weights.read_bytes()).hexdigest(),
-    backbone_sha256=hashlib.file_digest(open("/backbone/model.safetensors", "rb"), "sha256").hexdigest(),
+    backbone_sha256=backbone_sha256,
+    rig_calibration_sha256=camera_contract.fingerprint,
     motion_permitted=False,
     insertion_pose=None,
     latch_state_verified=False,

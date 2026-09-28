@@ -7,13 +7,13 @@ import random
 import time
 from pathlib import Path
 
-import cv2
 import numpy as np
 import torch
 from dinov3_features import encode_dinov3 as encode
 from dinov3_features import load_dinov3
 from entrance_feature_model import CLASSES, FeatureHead
 from ffc_cell.cv_frontend import REVISION, Frontend
+from ffc_cell.macro_contract import CameraCalibration, labels_to_model, require
 from PIL import Image
 from torch.nn import functional as F
 
@@ -30,14 +30,17 @@ def main():
     torch.set_num_threads(4)
     device = "cuda"
     rows = json.loads((a.data / "offline/labels.json").read_text())["frames"]
-    assert set(r["split"] for r in rows) == {"train", "validation"}
+    require(
+        set(r["split"] for r in rows) == {"train", "validation"}, "Training accepts only train/validation"
+    )
     train = [i for i, r in enumerate(rows) if r["split"] == "train"]
     val = [i for i, r in enumerate(rows) if r["split"] == "validation"]
-    assert not {rows[i]["scene"] for i in train} & {rows[i]["scene"] for i in val}
+    require(
+        not {rows[i]["scene"] for i in train} & {rows[i]["scene"] for i in val},
+        "Scene leakage between splits",
+    )
     calibration = json.loads((a.data / "sensor/camera.json").read_text())
-    assert calibration["preprocessing_revision"] == REVISION
-    assert calibration["profile"] == "macro-mount-elevation45-v1"
-    assert not any(calibration["d"]), "Mask rectification must be implemented for nonzero distortion"
+    camera_contract = CameraCalibration.from_mapping(calibration)
     frontend = Frontend()
     images = np.stack(
         [
@@ -51,22 +54,7 @@ def main():
         ]
     )
     masks = np.stack(
-        [
-            cv2.copyMakeBorder(
-                cv2.resize(
-                    np.array(Image.open(a.data / "offline" / r["file"])),
-                    (1224, 1024),
-                    interpolation=cv2.INTER_NEAREST_EXACT,
-                ),
-                0,
-                0,
-                4,
-                4,
-                cv2.BORDER_CONSTANT,
-                value=0,
-            )
-            for r in rows
-        ]
+        [labels_to_model(np.array(Image.open(a.data / "offline" / r["file"])), camera_contract) for r in rows]
     )
     backbone = load_dinov3(a.backbone, device)
     features = []

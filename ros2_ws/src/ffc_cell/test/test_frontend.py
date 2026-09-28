@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import pytest
-from ffc_cell.cv_frontend import Frontend
+from ffc_cell.cv_frontend import OUTPUT_SIZE, REVISION, Frontend
 from ffc_cell.guard import FrameGuard
 
 
@@ -47,3 +47,8 @@ def test_timestamp_and_calibration_faults():
     for stamp, now, calib, reason in cases:
         with pytest.raises(ValueError, match=reason):
             g.check(stamp, now, calib)
+
+
+def test_frontend_public_contract_exports():
+    assert OUTPUT_SIZE == (1232, 1024)
+    assert REVISION == "macro-rectify-area-half-pad4-v1"

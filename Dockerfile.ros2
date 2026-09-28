@@ -11,6 +11,8 @@ RUN python3 -m pip install --no-cache-dir --target /opt/perception --upgrade num
 ENV PYTHONPATH=/opt/perception ROS_DOMAIN_ID=73 ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST RMW_IMPLEMENTATION=rmw_fastrtps_cpp OMP_NUM_THREADS=4
 WORKDIR /work
 COPY ros2_ws/src /work/ros2_ws/src
+# One pure-Python contract shared by ROS and the offline learning entrypoints.
+COPY src/ffc/macro_contract.py /work/src/ffc/macro_contract.py
 RUN /bin/bash -c 'source /opt/ros/jazzy/setup.bash && cd /work/ros2_ws && colcon build --event-handlers console_direct+'
 COPY scripts/ros2_entrypoint.sh /ros2_entrypoint.sh
 ENTRYPOINT ["/ros2_entrypoint.sh"]

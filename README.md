@@ -121,6 +121,8 @@ Those experiments used **privileged simulator state for alignment** and an assum
 - [ ] Compare pickup routes, add latch manipulation and verify the full assembly.
 - [ ] Run controlled imitation/RL comparisons, followed by physical transfer.
 
+Read [Interfaces and code ownership](IO_CONTRACTS.md) for the active ROS channels, camera/model contracts, artifact boundaries and remaining integration gates.
+
 ## Repository map
 
 | Path | Contents |

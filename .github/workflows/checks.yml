@@ -28,3 +28,5 @@ jobs:
           git diff --exit-code -- config/fr3-source.json
       - name: Run CPU unit tests
         run: uv run pytest -q
+      - name: Check ROS observation contracts without middleware
+        run: PYTHONPATH=src:ros2_ws/src/ffc_cell uv run pytest -q ros2_ws/src/ffc_cell/test/test_observation_contract.py -k "not mask_transform"

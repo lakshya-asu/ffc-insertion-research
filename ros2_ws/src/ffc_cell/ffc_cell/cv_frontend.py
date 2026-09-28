@@ -6,9 +6,9 @@ import json
 import cv2
 import numpy as np
 
-REVISION = "macro-rectify-area-half-pad4-v1"
-NATIVE_SIZE = (2448, 2048)
-OUTPUT_SIZE = (1232, 1024)
+from ffc_cell.macro_contract import NATIVE_SIZE
+from ffc_cell.macro_contract import OUTPUT_SIZE as OUTPUT_SIZE
+from ffc_cell.macro_contract import PREPROCESSING_REVISION as REVISION  # noqa: F401 — public API
 
 
 def calibration_id(width, height, k, d, frame):
