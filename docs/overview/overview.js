@@ -26,9 +26,9 @@
   });
 
   const videos = {
-    perception: {src:'demo/live-perception.mp4', poster:'demo/poster.jpg', kind:'Implemented · stationary scene', title:'Camera RGB meets learned entrance features.', description:'47 matched camera/prediction pairs over 38.8 seconds of acquisition time. The frozen model receives ROS observations, preserving their timestamps. This recording shows perception, not robot movement.', link:'demo/', linkText:'Open the live demo →'},
+    perception: {src:'demo/live-perception.mp4', poster:'demo/poster.jpg', kind:'Implemented · stationary scene', title:'Camera images and predicted entrance features.', description:'47 matched camera/prediction pairs over 38.8 seconds of acquisition time. The frozen model receives ROS observations, preserving their timestamps. This recording shows perception, not robot movement.', link:'demo/', linkText:'Open the live demo →'},
     motion: {src:'hardware/mounted-tool/cycle.mp4', poster:'hardware/mounted-tool/poster.jpg', kind:'Actual physics · empty-tool commissioning', title:'The mounted tool moves with the FR3.', description:'44.009 simulated seconds, 44,009 physics steps and 1,100 recorded frames. The shoulder moves out and back, then the tool exercises its two prismatic axes. This is the larger PQ12-based mechanism, without cable or PCB; the compact PGEA is not integrated.', link:'hardware/custom-gripper.html#mounted-motion', linkText:'Motion evidence and source hashes →'},
-    cancel: {src:'hardware/mounted-tool/tool-cancel.mp4', poster:'hardware/mounted-tool/poster.jpg', kind:'Actual physics · cancellation test', title:'Cancel the deployment. Measure the hold.', description:'The tool is interrupted during deployment. Measured post-cancel drift was about 0.0066 mm in this one simulated test. This is evidence for the bounded controller under the declared model, not a hardware protective-stop guarantee.', link:'hardware/mounted-tool/tool-cancel-results.json', linkText:'Inspect the recorded result →'},
+    cancel: {src:'hardware/mounted-tool/tool-cancel.mp4', poster:'hardware/mounted-tool/poster.jpg', kind:'Actual physics · cancellation test', title:'Stopping the tool during deployment.', description:'The tool is interrupted during deployment. Measured post-cancel drift was about 0.0066 mm in this one simulated test. This is evidence for the bounded controller under the declared model, not a hardware protective-stop guarantee.', link:'hardware/mounted-tool/tool-cancel-results.json', linkText:'Inspect the recorded result →'},
     mechanics: {src:'outputs/e043-selected-static/experiment.mp4', poster:'outputs/e043-selected-static/latest-frame.jpg', kind:'Historical physics · numerical benchmark', title:'Check the cable against a mechanics reference.', description:'The selected articulated cable reached 46.081 mm sag against a 46.132 mm nominal independent reference. This tests numerical agreement for assumed material properties; it does not calibrate the Pi cable or qualify insertion contact.', link:'experiments.html#e043-selected-static', linkText:'Benchmark, plot and assumptions →'}
   };
   const video = $('evidence-video');
@@ -74,7 +74,7 @@
   $('cell-image').addEventListener('error', () => { $('cell-caption').textContent = 'This render could not load. The full mounting study is linked beside the viewer.'; });
 
   const benchmarks = {
-    shape: {src:'outputs/e043-selected-static/static-shape-comparison.png', caption:'Selected PGS static benchmark: 46.081 mm sag versus 46.132 mm independent nonlinear reference, approximately 0.11% difference. The historical ribbon is 150 × 8 × 0.3 mm; these are not the current Pi Standard–Mini cable dimensions.', description:'The independent reference minimizes gravitational and elastic energy. Benchmark-only body damping helps reach equilibrium and is disallowed in handling runs. This static agreement does not establish dynamic forces, laminate properties or insertion contact.', source:'007-contact-and-transport.md'},
+    shape: {src:'outputs/e043-selected-static/static-shape-comparison.png', caption:'Selected PGS static benchmark: 46.081 mm sag versus 46.132 mm independent nonlinear reference, approximately 0.11% difference. The historical ribbon is 150 × 8 × 0.3 mm; these are not the current Pi Standard-to-Mini cable dimensions.', description:'The independent reference minimizes gravitational and elastic energy. Benchmark-only body damping helps reach equilibrium and is disallowed in handling runs. This static agreement does not establish dynamic forces, laminate properties or insertion contact.', source:'007-contact-and-transport.md'},
     segments: {src:'overview/mechanics/segment-convergence.png', caption:'Short-span articulated cable: timestep and solver-iteration sweep against the independently derived discrete-chain prediction. These are early numerical profiles, not the selected final full-span benchmark.', description:'The coarsest configuration sagged about 25 times its static prediction. With the same material stiffness, finer timesteps reduced the error to 4.6% at 0.0625 ms. This isolated numerical compliance instead of hiding it by changing material constants.', source:'005-numerical-validation.md'},
     shell: {src:'overview/mechanics/shell-convergence.png', caption:'Native surface FEM: mesh, timestep and iteration sensitivity against a homogeneous continuum cantilever reference. It is a mechanics comparison, not a successful native-FEM handling rollout.', description:'Measured sag/reference ratios ranged from about 1.32 to 1.91 across the reported valid configurations. Mesh refinement alone did not produce convergence. A request for 512 iterations exceeded the 255-iteration schema limit and was excluded.', source:'005-numerical-validation.md'}
   };
@@ -114,7 +114,7 @@
     $('review-caption').textContent = layerCaptions[layer];
     $('review-kind').textContent = layer === 'offline' ? 'Offline scorer only · not a model input' : 'Fresh test after model freeze';
     $('review-title').textContent = `${String(frame.index).padStart(3,'0')} · ${frame.condition.replaceAll('_',' ')}`;
-    $('review-description').textContent = descriptions[frame.condition] || 'A held-out synthetic stress scene. Compare the RGB, prediction and offline labels to see both successful regions and misses.';
+    $('review-description').textContent = descriptions[frame.condition] || 'Compare this held-out stress scene across RGB, prediction and offline labels to find the matches and misses.';
     const facts = $('review-facts'); facts.replaceChildren();
     const label = document.createElement('p');
     label.textContent = 'Offline review: visible-class IoU'; facts.append(label);
@@ -151,7 +151,7 @@
       $('review-controls').addEventListener('click',event=>{const button=event.target.closest('button[data-layer]');if(button){layer=button.dataset.layer;updateReview();}});
       updateReview();
     } catch (_) {
-      $('review-status').textContent='The review manifest could not load. The first RGB image remains available; use the full evaluation link to inspect the published results.';
+      $('review-status').textContent='The scene list could not load. You can still see the first RGB image, or open the full evaluation below.';
     }
   }
   loadReview();

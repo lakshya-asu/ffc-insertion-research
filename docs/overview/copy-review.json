@@ -1,0 +1,18 @@
+{
+  "passes": [
+    {
+      "name": "Structure and repetition",
+      "changes": "Replaced slogan headings, removed staged emphasis and repeated bold labels; kept completed/planned status."
+    },
+    {
+      "name": "Read-aloud and technical clarity",
+      "changes": "Explained coordinate transforms, sensor inputs, policy actions and failure findings in plainer prose; preserved uncertainties and evidence."
+    }
+  ],
+  "guards": {
+    "link_and_media_targets_unchanged": true,
+    "section_and_control_ids_unchanged": true,
+    "numeric_claims_unchanged": true
+  },
+  "scope": "Overview HTML and dynamic overview captions; archived reports and linked pages retain their original wording."
+}
