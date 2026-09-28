@@ -28,7 +28,9 @@ Edition 01 records the project through commit `30b6a78`. Subsequent experiments 
 
 ## Current milestone
 
-The active scene is **Raspberry Pi Zero 2 W side-entry cable insertion**, with the full offset tool and a **Basler ace 2 / Kowa 35 mm macro camera at 45°**. The Pi 4 Model B + Camera Module 3 scene remains available. A phone-style press-on flex connector is a separate later task.
+**[Seven skills: completed work, remaining work and pass criteria](SEVEN_STEPS.md)** · **[Mounted tool motion](https://lakshya-asu.github.io/ffc-insertion-research/hardware/custom-gripper.html#mounted-motion)**
+
+The active scene is **Raspberry Pi Zero 2 W side-entry cable insertion**, with the earlier offset tool and a **Basler ace 2 / Kowa 35 mm macro camera at 45°**. The Pi 4 Model B + Camera Module 3 scene remains available. A phone-style press-on flex connector is a separate later task.
 
 | Area | Evidence so far | Still required |
 |---|---|---|
@@ -37,7 +39,9 @@ The active scene is **Raspberry Pi Zero 2 W side-entry cable insertion**, with t
 | Mounted-camera dataset | 160 scenes: 128 train / 32 validation; independent 30-scene audit and three matched setback pairs | Broader appearance/geometry variation and physical validation |
 | Perception | Earlier DINOv3 feature study completed; mounted macro model independently tested on 60 fresh scenes | Verified cable-to-entrance pose, calibrated uncertainty and action readiness |
 | Cable/contact mechanics | Numerical benchmarks and historical generic-scene handling tests | Pi cable bending/twist, grip slip, connector resistance and latch mechanics |
-| Robot actions | Skill contracts and failure criteria defined | Sensor-driven pickup, insertion, latching and verification; motion remains disabled |
+| Robot actions | Unloaded FR3 joint tests; new CAD tool mounted in a separate empty-tool physics scene | Sensor-driven pickup, insertion, latching and verification; the Pi perception cell still has motion disabled |
+
+The larger commercial-actuator CAD tool has a separate mounted dynamics study. It does not inherit the earlier tool’s camera, PCB or approach-clearance results.
 
 The matched mounting audit found that a **6 mm grasp setback hid the leading band in all three tested pairs**, while a **10 mm setback exposed it**. That supports a visibility choice, not a claim of grasp stability. [Inspect the RGB, offline labels and video](https://lakshya-asu.github.io/ffc-insertion-research/live/#macro-data).
 
@@ -61,6 +65,7 @@ The ROS camera/frontend and live mounted-model inference paths are implemented. 
 
 | Record | What it answers |
 |---|---|
+| [030 · Mounted tool motion](experiments/030-mounted-tool-motion.md) | Physical tool joints, loaded arm movement, cancellation and model limits |
 | [022 · Mounted macro DINOv3](experiments/022-mounted-macro-dinov3.md) | Frozen-model test on 60 fresh scenes, including the misses |
 | [021 · Mounted macro dataset](experiments/021-mounted-macro-dataset.md) | What the full tool hides; dataset integrity and matched setback comparison |
 | [020 · Native camera over ROS2](experiments/020-native-camera-ros2.md) | Message contracts, timing, transport failures and fault tests |

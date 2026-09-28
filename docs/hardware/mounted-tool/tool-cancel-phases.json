@@ -1,0 +1,38 @@
+[
+  {
+    "phase": "settle",
+    "first_frame": 0,
+    "frames": 75,
+    "first_simulation_time_s": 0.04000000189989805
+  },
+  {
+    "phase": "joint_probe",
+    "first_frame": 75,
+    "frames": 50,
+    "first_simulation_time_s": 3.040000144392252
+  },
+  {
+    "phase": "return",
+    "first_frame": 125,
+    "frames": 50,
+    "first_simulation_time_s": 5.040000239387155
+  },
+  {
+    "phase": "lower_parked_jaw",
+    "first_frame": 175,
+    "frames": 125,
+    "first_simulation_time_s": 7.040000334382057
+  },
+  {
+    "phase": "deploy_finger",
+    "first_frame": 300,
+    "frames": 62,
+    "first_simulation_time_s": 12.040000571869314
+  },
+  {
+    "phase": "cancel_hold",
+    "first_frame": 362,
+    "frames": 6,
+    "first_simulation_time_s": 14.520000689662993
+  }
+]

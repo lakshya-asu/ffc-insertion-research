@@ -31,3 +31,17 @@ def reference(start, target, elapsed, duration):
     ds = (30 * t**2 - 60 * t**3 + 30 * t**4) / duration
     delta = np.asarray(target) - np.asarray(start)
     return np.asarray(start) + s * delta, ds * delta
+
+
+def bounded_integral(desired, measured, integral, lower, upper, limit, gain_dt):
+    """Conditional integration at position-target limits (not effort anti-windup).
+
+    Do not build correction in a direction the clipped target cannot command.
+    Correction can unwind when the error reverses. All arrays use the same per-axis
+    units; callers are responsible for finite feedback and valid travel limits.
+    """
+    error = np.asarray(desired) - np.asarray(measured)
+    candidate = np.clip(integral + gain_dt * error, -np.asarray(limit), limit)
+    target = np.asarray(desired) + candidate
+    blocked = ((target > upper) & (error > 0)) | ((target < lower) & (error < 0))
+    return np.where(blocked, integral, candidate)

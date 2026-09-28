@@ -78,3 +78,7 @@ Check `review.json`, the encoded video and images, not only process exit. Restor
 The force cartridge, exact guides, screw retention, threaded inserts, vacuum plumbing, print tolerances, FR3 adapter/inertia and camera clearance remain unresolved. This larger prototype has not inherited the previous tool's clearance results. The sampled solid check excludes supplier actuator shells, same-motion-group pairs, the sensor reservation, cable and absent fasteners. It is not a swept-volume proof. Housing interference, tube bends and tool stiffness still need checking.
 
 For Isaac dynamics, add actual travel/backlash/deadband and duty constraints, compliant contact pads, measured-signal emulation and a declared suction/leakage model. Runtime decisions must use camera, jaw position, force and pressure observations. Simulator geometry may support collision modeling and offline scoring, not hidden-state grasp decisions.
+
+## Mounted dynamics follow-up
+
+[Experiment 030](../../experiments/030-mounted-tool-motion.md) mounts this CAD on the FR3 with a provisional adapter and two driven prismatic joints. The empty-tool physics sequence and cancellation trials are separate from the zero-time kinematic review above. The force cartridge, vacuum model and cable grasp remain unqualified. The adapter in the dynamics scene is a structural envelope, not a manufacturing release; the original standalone STEP downloads do not include it.

@@ -1,0 +1,76 @@
+{
+  "scope": "Mounted empty-tool commissioning only",
+  "controller_sha256": "7a746372870b8cb51723921eaa0f1e225125c41cdf73b13fa1b8a23ad7afb571",
+  "runs": {
+    "cycle": {
+      "run": "mounted-tool-probe-003",
+      "frames": 1100,
+      "physics_seconds": 44.009002090315334,
+      "source_hashes": {
+        "isaac_recording.py": "0324a0505e36505f5bd9b59512c3da927b83560e3219ee2b1815f88ad93924d0",
+        "hybrid_tool.py": "1506e7ec981aa436e7004233497f46e370ab333836a36bb2169e7052fc5a7699",
+        "fr3-isaac-source.json": "911e805ad7bfe4e751ac11a7b69d15885d64fe0f39f2cc549177d4b71b442768",
+        "isaac_contacts.py": "7a8f8b48e50494f3e64d2284459c0179166836b12113d08d7bcf4c91dcf53364",
+        "isaac_kinematics.py": "3cd21f802dc93968a8fbb2410f69a33698a611d1cd66951e9a601047c55eb38b",
+        "isaac_joint_probe.py": "f81fcf9fe2aa3885f84c601678ad12fc7d2679672c361734a2e81d089c94f4b5",
+        "joint_trajectory.py": "7a746372870b8cb51723921eaa0f1e225125c41cdf73b13fa1b8a23ad7afb571",
+        "isaac_scene.py": "3fa626880d7602f9a3fb96a43cd07a038e42764525609a34379bdbae7bd82ea2"
+      }
+    },
+    "arm-cancel": {
+      "run": "mounted-arm-cancel-002",
+      "frames": 175,
+      "physics_seconds": 7.002000332577154,
+      "source_hashes": {
+        "isaac_recording.py": "0324a0505e36505f5bd9b59512c3da927b83560e3219ee2b1815f88ad93924d0",
+        "hybrid_tool.py": "1506e7ec981aa436e7004233497f46e370ab333836a36bb2169e7052fc5a7699",
+        "fr3-isaac-source.json": "911e805ad7bfe4e751ac11a7b69d15885d64fe0f39f2cc549177d4b71b442768",
+        "isaac_contacts.py": "7a8f8b48e50494f3e64d2284459c0179166836b12113d08d7bcf4c91dcf53364",
+        "isaac_kinematics.py": "3cd21f802dc93968a8fbb2410f69a33698a611d1cd66951e9a601047c55eb38b",
+        "isaac_joint_probe.py": "f81fcf9fe2aa3885f84c601678ad12fc7d2679672c361734a2e81d089c94f4b5",
+        "joint_trajectory.py": "7a746372870b8cb51723921eaa0f1e225125c41cdf73b13fa1b8a23ad7afb571",
+        "isaac_scene.py": "3fa626880d7602f9a3fb96a43cd07a038e42764525609a34379bdbae7bd82ea2"
+      }
+    },
+    "tool-cancel": {
+      "run": "mounted-tool-cancel-002",
+      "frames": 368,
+      "physics_seconds": 14.755000700824894,
+      "source_hashes": {
+        "isaac_recording.py": "0324a0505e36505f5bd9b59512c3da927b83560e3219ee2b1815f88ad93924d0",
+        "hybrid_tool.py": "1506e7ec981aa436e7004233497f46e370ab333836a36bb2169e7052fc5a7699",
+        "fr3-isaac-source.json": "911e805ad7bfe4e751ac11a7b69d15885d64fe0f39f2cc549177d4b71b442768",
+        "isaac_contacts.py": "7a8f8b48e50494f3e64d2284459c0179166836b12113d08d7bcf4c91dcf53364",
+        "isaac_kinematics.py": "3cd21f802dc93968a8fbb2410f69a33698a611d1cd66951e9a601047c55eb38b",
+        "isaac_joint_probe.py": "f81fcf9fe2aa3885f84c601678ad12fc7d2679672c361734a2e81d089c94f4b5",
+        "joint_trajectory.py": "7a746372870b8cb51723921eaa0f1e225125c41cdf73b13fa1b8a23ad7afb571",
+        "isaac_scene.py": "3fa626880d7602f9a3fb96a43cd07a038e42764525609a34379bdbae7bd82ea2"
+      }
+    }
+  },
+  "artifact_sha256": {
+    "cycle-trace.json": "11d2b3f97f15bbfec95b3ddeec66eebb0c53b7d3e0d7a69a0087822e07ea4317",
+    "cycle-results.json": "0c75acf3df775d3d5c1e23d7779a3e5140a6386396c5a0d85f208fe0e087bb8f",
+    "tool-cancel-results.json": "c810f918415670613b25ca08e72f75532c76366bc01370c2f46011e16f6ecefb",
+    "tracking.png": "d477975c5cf762fd6d0304a63cb873b93be282f2b96d801222c862aa23e92831",
+    "arm-cancel-results.json": "595d425fe5646acd69467310128295855499672543aa24308e23817c78d38e33",
+    "arm-cancel-trace.json": "fd1e817c488049536c76f7cb898886614c3d8f7059c708d2edf9bfc8dfc90118",
+    "arm-cancel.mp4": "acdf0d00355a4dbb6add429e6574bbe6f138c0616eed0a60bb2a012ad30ee7ec",
+    "cycle-phases.json": "3764c9fdb0e719392d94695ff311d7960b51854cc133911ce50d26182446f2af",
+    "poster.jpg": "c545deb5b0eaa0575f0e406308f246769aaa7093f2e34508468f254c79b052ab",
+    "tool-cancel-trace.json": "2f27580dcc6008a33a9428b016104a523522f888f12c3fb50989684569561e31",
+    "arm-cancel-phases.json": "b480be4cc573c7c6c4bdc2376419c2e38772f8ce49c6ae2f7e81313adda552f0",
+    "cycle.mp4": "9f1b1da680c914deb132a3c2ec5025f162fc2d05fb079fcc3e61d22c049e9460",
+    "tool-cancel-phases.json": "25b20b725b2151986f048d6a83a39be441df69617e8d5558241196ccd0f648c3",
+    "tool-cancel.mp4": "e8dc3c035b250d3303691d657d9ab12fa8e1fe99d05b2530fcd2fc81a3c9c08a",
+    "stage-clips/06-open_empty.mp4": "1f765e69685995decfc86f037f39e61e6e42274830827193e5a6563df93383ef",
+    "stage-clips/03-lower_parked_jaw.mp4": "a45907e434d50aa791614532e39a502f575bb16ce3ab7ccc116a1c834f8687b4",
+    "stage-clips/04-deploy_finger.mp4": "7fad6d17219b337f72372ca8d0a481c4552c55d868610e06de2b35646249e6ec",
+    "stage-clips/02-return.mp4": "b4e45a6781ded72ab35d31b2217275d540f660ba3662c221bd82e83e8373430f",
+    "stage-clips/00-settle.mp4": "2bcf0a46b0c2b02409def72613cb080ac2f281ec36efc5a7a6658e4eb8277068",
+    "stage-clips/05-close_empty.mp4": "a799b084673dcaeb8cd854e9dc5f93bdd61bb8595b91ca746411567da46dcccb",
+    "stage-clips/07-withdraw_finger.mp4": "c2eb67303a651763382f8a0fcc6f7c376b3b8becbc14ffb5fcb05c57caa8b4e1",
+    "stage-clips/08-raise_parked_jaw.mp4": "ef1bd2b3c32479f73a33c94d471893addfeeedff4ab17eed6896c38d390312fa",
+    "stage-clips/01-joint_probe.mp4": "9005685f5765814c2cb92ded39911db520c767f40dcab00e93de58d0aa36e88b"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "phase": "settle",
+    "first_frame": 0,
+    "frames": 75,
+    "first_simulation_time_s": 0.04000000189989805
+  },
+  {
+    "phase": "joint_probe",
+    "first_frame": 75,
+    "frames": 93,
+    "first_simulation_time_s": 3.040000144392252
+  },
+  {
+    "phase": "cancel_hold",
+    "first_frame": 168,
+    "frames": 7,
+    "first_simulation_time_s": 6.760000321082771
+  }
+]
