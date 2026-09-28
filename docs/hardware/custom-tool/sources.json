@@ -1,0 +1,17 @@
+[
+  {
+    "file": "pq12-cad.zip",
+    "sha256": "ac14635e19ec6f9759fc1f033954c30f93f18ca0c56faaa7504247fc2fd2710c",
+    "bytes": 259325
+  },
+  {
+    "file": "PQ12_NEWSHAFT.stp",
+    "sha256": "0a1eabc15536edc0bc455dbdd5f3971a070bc7a36ca059887ec54429d139d24b",
+    "bytes": 1490019
+  },
+  {
+    "file": "pq12-datasheet.pdf",
+    "sha256": "7eb0fddd86243f50d390640bcdc9c5f0f11e7c3e9af67d18d9571b57ec54d48f",
+    "bytes": 255738
+  }
+]

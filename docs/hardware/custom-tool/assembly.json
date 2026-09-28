@@ -1,0 +1,1246 @@
+{
+  "status": "FIT_REVIEW_ONLY",
+  "units": "mm",
+  "manufacturer_step_sha256": "0a1eabc15536edc0bc455dbdd5f3971a070bc7a36ca059887ec54429d139d24b",
+  "source_url": "https://www.actuonix.com/assets/images/datasheets/PQ12_NEWSHAFT_STP.zip",
+  "actuator_candidate": "2 x PQ12-30-6-P",
+  "actuator_stroke_mm": 20,
+  "deployment_used_mm": 18,
+  "clamp_review_used_mm": 18,
+  "clamp_extension_at_closed_mm": 8,
+  "closed_cable_gap_mm": 0.14,
+  "parts": [
+    {
+      "name": "deploy_actuator_body",
+      "group": "fixed",
+      "kind": "purchased",
+      "note": "Manufacturer STEP; PQ12 family, electrical variant not encoded",
+      "color": [
+        0.22,
+        0.25,
+        0.28
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -63.01509745608097,
+          -52.508785657946206,
+          102.49444204039335
+        ],
+        [
+          -20.5042089979057,
+          -37.399999899996835,
+          124.00878562267077
+        ]
+      ],
+      "solid_count": 0,
+      "volume_mm3": null
+    },
+    {
+      "name": "deploy_actuator_shaft",
+      "group": "deploy_rod",
+      "kind": "purchased",
+      "note": "Manufacturer STEP; 18 mm extension at closed reference",
+      "color": [
+        0.22,
+        0.25,
+        0.28
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -28.50315545233141,
+          -49.45319429236388,
+          104.59958197088199
+        ],
+        [
+          3.0021648794234874,
+          -40.546805707381544,
+          111.40041802937277
+        ]
+      ],
+      "solid_count": 0,
+      "volume_mm3": null
+    },
+    {
+      "name": "clamp_actuator_body",
+      "group": "carriage",
+      "kind": "purchased",
+      "note": "Manufacturer STEP",
+      "color": [
+        0.22,
+        0.25,
+        0.28
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -5.505557959606659,
+          -52.5087856579462,
+          27.50420899790572
+        ],
+        [
+          16.00878562267078,
+          -37.399999899996835,
+          70.01509745608098
+        ]
+      ],
+      "solid_count": 0,
+      "volume_mm3": null
+    },
+    {
+      "name": "clamp_actuator_shaft",
+      "group": "jaw",
+      "kind": "purchased",
+      "note": "Manufacturer STEP; retracts to close",
+      "color": [
+        0.22,
+        0.25,
+        0.28
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -3.4004180291179984,
+          -49.45319429236382,
+          13.997835120576509
+        ],
+        [
+          3.4004180293727586,
+          -40.546805707381544,
+          45.5031554523314
+        ]
+      ],
+      "solid_count": 0,
+      "volume_mm3": null
+    },
+    {
+      "name": "backbone_plate",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "Custom metal stock; bench fixture interface, FR3 bolt pattern unresolved",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -78.0000001,
+          -94.0000001,
+          59.9999999
+        ],
+        [
+          36.0000001,
+          -87.9999999,
+          138.0000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 53352.0
+    },
+    {
+      "name": "overhead_spine",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "Custom concept geometry",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          20.999999899999995,
+          -94.00000010000001,
+          131.9999999
+        ],
+        [
+          35.0000001,
+          6.000000100000004,
+          138.0000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 8400.0
+    },
+    {
+      "name": "front_standoff",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "Custom concept geometry",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          23.9999999,
+          -6.0000001,
+          5.9999999
+        ],
+        [
+          32.0000001,
+          6.0000001,
+          132.0000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 12095.999999999998
+    },
+    {
+      "name": "shoe_bridge",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "Custom concept geometry",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -4.000000100000001,
+          -6.000000100000001,
+          5.999999899999999
+        ],
+        [
+          30.0000001,
+          6.000000100000001,
+          11.000000100000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 2040.0
+    },
+    {
+      "name": "vacuum_shoe",
+      "group": "fixed",
+      "kind": "printed",
+      "note": "Print fit prototype; two M3 clearance bores. Thread retention and airtight fittings not qualified",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -7.000000100000003,
+          -8.000000100000003,
+          -0.0005129496986539546
+        ],
+        [
+          7.000000100000003,
+          8.000000100000003,
+          6.000512949698654
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 1241.3641680072215
+    },
+    {
+      "name": "cup_0",
+      "group": "fixed",
+      "kind": "soft",
+      "note": "SUF 3 maximum-diameter envelope, not manufacturer CAD or lip deformation",
+      "color": [
+        0.13,
+        0.15,
+        0.17
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -1.8512937961414637,
+          -4.351293796141463,
+          -1.0012937961414636
+        ],
+        [
+          1.8512937961414637,
+          -0.6487062038585364,
+          0.0012937961414635738
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 10.752100856911067
+    },
+    {
+      "name": "cup_stem_0",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "Connection envelope only",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -1.5010490428174026,
+          -4.001049042817403,
+          -0.0010490428174026597
+        ],
+        [
+          1.5010490428174026,
+          -0.9989509571825973,
+          5.501049042817403
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 38.877209088173686
+    },
+    {
+      "name": "cup_1",
+      "group": "fixed",
+      "kind": "soft",
+      "note": "SUF 3 maximum-diameter envelope, not manufacturer CAD or lip deformation",
+      "color": [
+        0.13,
+        0.15,
+        0.17
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -1.8512937961414635,
+          0.6487062038585365,
+          -1.0012937961414634
+        ],
+        [
+          1.8512937961414635,
+          4.351293796141463,
+          0.0012937961414634558
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 10.752100856911067
+    },
+    {
+      "name": "cup_stem_1",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "Connection envelope only",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -1.5010490428174026,
+          0.9989509571825973,
+          -0.0010490428174026905
+        ],
+        [
+          1.5010490428174026,
+          4.001049042817403,
+          5.501049042817403
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 38.877209088173686
+    },
+    {
+      "name": "deploy_guide_0",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "4 mm metal shaft envelope; exact rail/bearing supplier open",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -42.001398690423215,
+          -67.00139869042322,
+          87.99860130957678
+        ],
+        [
+          28.001398690423215,
+          -62.998601309576785,
+          92.00139869042322
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 879.645943005142
+    },
+    {
+      "name": "deploy_bearing_0",
+      "group": "carriage",
+      "kind": "purchased",
+      "note": "Bearing space reservation; running fit not specified",
+      "color": [
+        0.22,
+        0.25,
+        0.28
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -7.00314692845222,
+          -69.50314692845222,
+          85.49685307154778
+        ],
+        [
+          7.00314692845222,
+          -60.49685307154778,
+          94.50314692845222
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 696.6795868600725
+    },
+    {
+      "name": "guide_holder_0_0",
+      "group": "fixed",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -46.000637276898345,
+          -70.00000010000002,
+          80.99999989999998
+        ],
+        [
+          -37.999362723101655,
+          -59.99999989999998,
+          99.00000010000002
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 1334.379654986311
+    },
+    {
+      "name": "guide_holder_0_1",
+      "group": "fixed",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          23.99936272310165,
+          -70.00000010000002,
+          80.99999989999998
+        ],
+        [
+          32.000637276898345,
+          -59.99999989999998,
+          99.00000010000002
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 1334.379654986311
+    },
+    {
+      "name": "deploy_guide_1",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "4 mm metal shaft envelope; exact rail/bearing supplier open",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -42.001398690423215,
+          -27.001398690423215,
+          87.99860130957678
+        ],
+        [
+          28.001398690423215,
+          -22.998601309576785,
+          92.00139869042322
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 879.6459430051424
+    },
+    {
+      "name": "deploy_bearing_1",
+      "group": "carriage",
+      "kind": "purchased",
+      "note": "Bearing space reservation; running fit not specified",
+      "color": [
+        0.22,
+        0.25,
+        0.28
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -7.003146928452219,
+          -29.50314692845222,
+          85.49685307154778
+        ],
+        [
+          7.003146928452219,
+          -20.49685307154778,
+          94.50314692845222
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 696.6795868600725
+    },
+    {
+      "name": "guide_holder_1_0",
+      "group": "fixed",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -46.000637276898345,
+          -30.000000100000015,
+          80.99999989999999
+        ],
+        [
+          -37.999362723101655,
+          -19.999999899999985,
+          99.00000010000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 1334.3796549863112
+    },
+    {
+      "name": "guide_holder_1_1",
+      "group": "fixed",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          23.999362723101658,
+          -30.000000100000015,
+          80.99999989999999
+        ],
+        [
+          32.000637276898345,
+          -19.999999899999985,
+          99.00000010000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 1334.3796549863112
+    },
+    {
+      "name": "guide_end_bridge_0",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "Custom concept geometry",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -46.0000001,
+          -91.0000001,
+          74.9999999
+        ],
+        [
+          -37.9999999,
+          -22.9999999,
+          81.0000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 3264.0
+    },
+    {
+      "name": "guide_end_bridge_1",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "Custom concept geometry",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          23.9999999,
+          -91.0000001,
+          74.9999999
+        ],
+        [
+          32.0000001,
+          -22.9999999,
+          81.0000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 3264.0
+    },
+    {
+      "name": "deployment_carriage",
+      "group": "carriage",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -14.000000100000001,
+          -70.0000001,
+          80.49999989999999
+        ],
+        [
+          14.000000100000001,
+          -19.999999899999995,
+          86.00000010000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 6918.0
+    },
+    {
+      "name": "deploy_rear_mount",
+      "group": "fixed",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -65.01300010000004,
+          -55.50049740879871,
+          104.99999989999996
+        ],
+        [
+          -55.01299989999997,
+          -34.49950259120129,
+          132.00000010000002
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 2171.7451368408615
+    },
+    {
+      "name": "deploy_rear_mount_pin",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "M3 pin envelope; retention hardware pending",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -61.51404904281742,
+          -57.00104904281742,
+          106.49895095718259
+        ],
+        [
+          -58.51195095718258,
+          -32.99895095718258,
+          109.50104904281741
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 169.64600329384882
+    },
+    {
+      "name": "rear_mount_bridge",
+      "group": "fixed",
+      "kind": "metal",
+      "note": "Custom concept geometry",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -67.01300010000001,
+          -92.00000010000001,
+          129.4999999
+        ],
+        [
+          -53.01299989999999,
+          -42.99999989999999,
+          134.5000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 3430.0000000000014
+    },
+    {
+      "name": "deploy_rod_mount",
+      "group": "carriage",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -5.0000001000000145,
+          -55.50049740879871,
+          79.99999989999999
+        ],
+        [
+          5.0000001000000145,
+          -34.49950259120129,
+          111.00000010000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 2411.745136840861
+    },
+    {
+      "name": "deploy_rod_mount_pin",
+      "group": "carriage",
+      "kind": "metal",
+      "note": "M3 pin envelope; retention hardware pending",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -1.501049042817415,
+          -57.001049042817414,
+          106.49895095718259
+        ],
+        [
+          1.501049042817415,
+          -32.998950957182586,
+          109.50104904281741
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 169.6460032938488
+    },
+    {
+      "name": "clamp_rear_mount",
+      "group": "carriage",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -5.0000001000000145,
+          -55.50049740879871,
+          64.0129999
+        ],
+        [
+          5.0000001000000145,
+          -34.49950259120129,
+          83.00000010000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 1690.965136840861
+    },
+    {
+      "name": "clamp_rear_mount_pin",
+      "group": "carriage",
+      "kind": "metal",
+      "note": "M3 pin envelope; retention hardware pending",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -1.501049042817415,
+          -57.001049042817414,
+          65.51195095718259
+        ],
+        [
+          1.501049042817415,
+          -32.998950957182586,
+          68.51404904281742
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 169.6460032938488
+    },
+    {
+      "name": "clamp_guide_0",
+      "group": "carriage",
+      "kind": "metal",
+      "note": "3 mm shaft envelope; bearing supplier open",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -11.501049042817407,
+          -46.50104904281741,
+          3.9989509571825934
+        ],
+        [
+          -8.498950957182593,
+          -43.49895095718259,
+          80.0010490428174
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 537.2123437638547
+    },
+    {
+      "name": "clamp_guide_top_0",
+      "group": "carriage",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -14.000000100000014,
+          -50.000000100000015,
+          50.99951813210126
+        ],
+        [
+          -5.9999998999999855,
+          -39.999999899999985,
+          81.00048186789874
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 2173.569709492516
+    },
+    {
+      "name": "clamp_bearing_0",
+      "group": "jaw",
+      "kind": "purchased",
+      "note": "Bearing envelope",
+      "color": [
+        0.22,
+        0.25,
+        0.28
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -13.00209798563481,
+          -48.00209798563481,
+          11.99790201436519
+        ],
+        [
+          -6.99790201436519,
+          -41.99790201436519,
+          22.00209798563481
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 202.31856689118266
+    },
+    {
+      "name": "clamp_guide_1",
+      "group": "carriage",
+      "kind": "metal",
+      "note": "3 mm shaft envelope; bearing supplier open",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          18.498950957182593,
+          -46.50104904281741,
+          3.9989509571825943
+        ],
+        [
+          21.501049042817407,
+          -43.49895095718259,
+          80.0010490428174
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 537.2123437638547
+    },
+    {
+      "name": "clamp_guide_top_1",
+      "group": "carriage",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          15.999999899999985,
+          -50.000000100000015,
+          50.99951813210126
+        ],
+        [
+          24.000000100000015,
+          -39.999999899999985,
+          81.00048186789874
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 2173.569709492516
+    },
+    {
+      "name": "clamp_bearing_1",
+      "group": "jaw",
+      "kind": "purchased",
+      "note": "Bearing envelope",
+      "color": [
+        0.22,
+        0.25,
+        0.28
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          16.997902014365188,
+          -48.00209798563481,
+          11.997902014365188
+        ],
+        [
+          23.002097985634812,
+          -41.99790201436519,
+          22.002097985634812
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 202.31856689118266
+    },
+    {
+      "name": "lower_yoke",
+      "group": "jaw",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -14.00000010000001,
+          -52.00000010000001,
+          10.99905190510248
+        ],
+        [
+          24.00000010000001,
+          -37.99999989999999,
+          15.00094809489752
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 1894.2026747198474
+    },
+    {
+      "name": "clamp_rod_mount",
+      "group": "jaw",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -5.000000100000004,
+          -55.5004974087987,
+          5.999999899999996
+        ],
+        [
+          5.000000100000004,
+          -34.4995025912013,
+          20.000000100000005
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 1391.7451368408606
+    },
+    {
+      "name": "clamp_rod_mount_pin",
+      "group": "jaw",
+      "kind": "metal",
+      "note": "M3 pin envelope; retention hardware pending",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -1.5010490428174057,
+          -57.00104904281741,
+          15.498950957182593
+        ],
+        [
+          1.5010490428174057,
+          -32.99895095718259,
+          18.501049042817407
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 169.64600329384882
+    },
+    {
+      "name": "finger_carrier",
+      "group": "jaw",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -7.000000100000004,
+          -40.0000001,
+          8.999999899999997
+        ],
+        [
+          7.000000100000004,
+          -11.999999899999997,
+          14.000000100000003
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 1960.0
+    },
+    {
+      "name": "finger_insert",
+      "group": "jaw",
+      "kind": "metal",
+      "note": "Thin metal insert required; not a printed load-bearing edge",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -5.0000001,
+          -20.0000001,
+          -3.3900001000000004
+        ],
+        [
+          5.0000001,
+          4.0000001,
+          -1.8899998999999998
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 359.99999999999994
+    },
+    {
+      "name": "finger_riser",
+      "group": "jaw",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          16.9999999,
+          -21.0000001,
+          -3.7500001000000007
+        ],
+        [
+          23.0000001,
+          -14.999999899999999,
+          13.750000100000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 630.0
+    },
+    {
+      "name": "finger_side_bridge",
+      "group": "jaw",
+      "kind": "printed",
+      "note": "Custom concept geometry",
+      "color": [
+        0.1,
+        0.48,
+        0.42
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -3.5000001,
+          -21.0000001,
+          8.9999999
+        ],
+        [
+          23.5000001,
+          -14.9999999,
+          14.0000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 810.0
+    },
+    {
+      "name": "finger_under_bridge",
+      "group": "jaw",
+      "kind": "metal",
+      "note": "Custom concept geometry",
+      "color": [
+        0.65,
+        0.69,
+        0.72
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -5.0000001,
+          -21.0000001,
+          -3.3900001
+        ],
+        [
+          25.0000001,
+          -14.9999999,
+          -1.8899998999999998
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 270.0
+    },
+    {
+      "name": "contact_pad",
+      "group": "jaw",
+      "kind": "soft",
+      "note": "Replaceable pad; hardness, friction and compression unmeasured",
+      "color": [
+        0.13,
+        0.15,
+        0.17
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -5.0000001,
+          -4.0000001,
+          -1.8900001000000002
+        ],
+        [
+          5.0000001,
+          4.0000001,
+          -1.1399998999999996
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 60.0
+    },
+    {
+      "name": "force_sensor_reservation",
+      "group": "jaw",
+      "kind": "envelope",
+      "note": "Space claim only; force path/compliance cartridge not yet designed",
+      "color": [
+        0.88,
+        0.55,
+        0.2
+      ],
+      "valid_brep": true,
+      "bounds_mm": [
+        [
+          -10.000000100000001,
+          -34.0000001,
+          13.999999899999999
+        ],
+        [
+          10.000000100000001,
+          -21.9999999,
+          20.0000001
+        ]
+      ],
+      "solid_count": 1,
+      "volume_mm3": 1439.9999999999998
+    }
+  ],
+  "open_items": [
+    "force sensing and series compliance load path",
+    "hardware fasteners and retention",
+    "exact guides and running fits",
+    "FR3 adapter and inertia",
+    "hose routing and ESD",
+    "collision and stiffness qualification",
+    "actuator low-speed/force qualification"
+  ],
+  "scope": "Kinematic layout with authentic actuator CAD. No grasp physics, manufacturing release or collision-free claim."
+}

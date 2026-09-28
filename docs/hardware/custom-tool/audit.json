@@ -1,0 +1,15 @@
+{
+  "states_checked": 19,
+  "interference_volume_threshold_mm3": 0.01,
+  "floor_penetration_threshold_mm": 1e-05,
+  "floor_intrusions": [],
+  "solid_interferences": [],
+  "excluded": [
+    "manufacturer actuator shells",
+    "sensor space reservation",
+    "same-motion-group pairs",
+    "cable",
+    "fasteners not yet modeled"
+  ],
+  "scope": "Sampled authored solids only, not full collision or manufacturing qualification"
+}

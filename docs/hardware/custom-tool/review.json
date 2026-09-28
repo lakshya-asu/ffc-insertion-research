@@ -1,0 +1,1689 @@
+{
+  "status": "RENDERED_KINEMATIC_REVIEW",
+  "input_cad_manifest_sha256": "845deb4081d0905227c0ee0c26642063e1345ad142106a0581e7754d1a4aa97a",
+  "frames": 240,
+  "fps": 12,
+  "physics_time_advanced": 0.0,
+  "trace": [
+    {
+      "frame": 0,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 1,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 2,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 3,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 4,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 5,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 6,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 7,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 8,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 9,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 10,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 11,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 12,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 13,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 14,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 15,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 16,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 17,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 18,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 19,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 20,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 21,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 22,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 23,
+      "phase": "Vacuum pickup | finger stowed above desk",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 24,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    },
+    {
+      "frame": 25,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.19273444563162653
+    },
+    {
+      "frame": 26,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.7479247143913866
+    },
+    {
+      "frame": 27,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 1.6310512040766008
+    },
+    {
+      "frame": 28,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 2.8075943124845897
+    },
+    {
+      "frame": 29,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 4.243034437412674
+    },
+    {
+      "frame": 30,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 5.902851976658173
+    },
+    {
+      "frame": 31,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 7.752527328018412
+    },
+    {
+      "frame": 32,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 9.757540889290704
+    },
+    {
+      "frame": 33,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 11.88337305827238
+    },
+    {
+      "frame": 34,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 14.09550423276075
+    },
+    {
+      "frame": 35,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 16.359414810553137
+    },
+    {
+      "frame": 36,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 18.640585189446867
+    },
+    {
+      "frame": 37,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 20.904495767239254
+    },
+    {
+      "frame": 38,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 23.116626941727628
+    },
+    {
+      "frame": 39,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 25.242459110709298
+    },
+    {
+      "frame": 40,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 27.24747267198159
+    },
+    {
+      "frame": 41,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 29.097148023341823
+    },
+    {
+      "frame": 42,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 30.756965562587332
+    },
+    {
+      "frame": 43,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 32.19240568751541
+    },
+    {
+      "frame": 44,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 33.36894879592341
+    },
+    {
+      "frame": 45,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 34.25207528560861
+    },
+    {
+      "frame": 46,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 34.80726555436838
+    },
+    {
+      "frame": 47,
+      "phase": "Lift 35 mm | prescribed cable shape",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 48,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 49,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.09912057203912221,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 50,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.38464699597271307,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 51,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.8388263335251089,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 52,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 1.443905646420646,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 53,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 2.1821319963836605,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 54,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 3.0357524451384887,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 55,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 3.9870140544094688,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 56,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 5.018163885920933,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 57,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 6.111449001397223,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 58,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 7.249116462562671,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 59,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 8.413413331141614,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 60,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 9.586586668858388,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 61,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 10.750883537437328,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 62,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 11.88855099860278,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 63,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 12.981836114079066,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 64,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 14.01298594559053,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 65,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 14.964247554861508,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 66,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 15.81786800361634,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 67,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 16.55609435357935,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 68,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 17.16117366647489,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 69,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 17.615353004027284,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 70,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 17.900879427960877,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 71,
+      "phase": "Lower the parked finger",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 72,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 73,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 0.09912057203912221,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 74,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 0.38464699597271307,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 75,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 0.8388263335251089,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 76,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 1.443905646420646,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 77,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 2.1821319963836605,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 78,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 3.0357524451384887,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 79,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 3.9870140544094688,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 80,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 5.018163885920933,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 81,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 6.111449001397223,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 82,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 7.249116462562671,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 83,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 8.413413331141614,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 84,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 9.586586668858388,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 85,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 10.750883537437328,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 86,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 11.88855099860278,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 87,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 12.981836114079066,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 88,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 14.01298594559053,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 89,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 14.964247554861508,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 90,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 15.81786800361634,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 91,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 16.55609435357935,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 92,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 17.16117366647489,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 93,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 17.615353004027284,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 94,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 17.900879427960877,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 95,
+      "phase": "Deploy underneath | 18 mm lateral travel",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 96,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 97,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 17.94493301553382,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 98,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 17.786307224459605,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 99,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 17.533985370263828,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 100,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 17.197830196432975,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 101,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 16.78770444645352,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 102,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 16.31347086381195,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 103,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 15.78499219199474,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 104,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 15.21213117448837,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 105,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 14.60475055477932,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 106,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 13.972713076354072,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 107,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 13.325881482699103,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 108,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 12.674118517300895,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 109,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 12.027286923645928,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 110,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 11.395249445220678,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 111,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 10.78786882551163,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 112,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 10.21500780800526,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 113,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 9.686529136188051,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 114,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 9.212295553546477,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 115,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.802169803567027,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 116,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.466014629736172,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 117,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.213692775540398,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 118,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.05506698446618,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 119,
+      "phase": "Close to the ribbon | 10 mm return",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 120,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 121,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 122,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 123,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 124,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 125,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 126,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 127,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 128,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 129,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 130,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 131,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 132,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 133,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 134,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 135,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 136,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 137,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 138,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 139,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 140,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 141,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 142,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 143,
+      "phase": "Pinch pose | retention is NOT simulated",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 144,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 145,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.05506698446618,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 146,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.213692775540396,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 147,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.466014629736172,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 148,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 8.802169803567025,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 149,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 9.212295553546479,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 150,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 9.68652913618805,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 151,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 10.21500780800526,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 152,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 10.78786882551163,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 153,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 11.39524944522068,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 154,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 12.027286923645928,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 155,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 12.674118517300897,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 156,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 13.325881482699105,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 157,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 13.972713076354072,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 158,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 14.604750554779322,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 159,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 15.21213117448837,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 160,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 15.78499219199474,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 161,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 16.31347086381195,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 162,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 16.787704446453525,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 163,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 17.197830196432975,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 164,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 17.533985370263828,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 165,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 17.786307224459602,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 166,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 17.94493301553382,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 167,
+      "phase": "Open before withdrawing the finger",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 168,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 18.0,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 169,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 17.900879427960877,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 170,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 17.615353004027288,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 171,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 17.16117366647489,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 172,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 16.556094353579354,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 173,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 15.81786800361634,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 174,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 14.964247554861512,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 175,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 14.01298594559053,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 176,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 12.981836114079066,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 177,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 11.888550998602778,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 178,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 10.750883537437328,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 179,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 9.586586668858386,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 180,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 8.413413331141612,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 181,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 7.249116462562672,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 182,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 6.1114490013972205,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 183,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 5.018163885920934,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 184,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 3.987014054409469,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 185,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 3.035752445138492,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 186,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 2.18213199638366,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 187,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 1.4439056464206494,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 188,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 0.8388263335251089,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 189,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 0.3846469959727159,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 190,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 0.09912057203912283,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 191,
+      "phase": "Withdraw sideways",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 192,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 18.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 193,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 17.900879427960877,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 194,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 17.615353004027288,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 195,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 17.16117366647489,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 196,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 16.556094353579354,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 197,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 15.81786800361634,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 198,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 14.964247554861512,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 199,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 14.01298594559053,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 200,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 12.981836114079066,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 201,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 11.888550998602778,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 202,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 10.750883537437328,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 203,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 9.586586668858386,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 204,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 8.413413331141612,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 205,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 7.249116462562672,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 206,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 6.1114490013972205,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 207,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 5.018163885920934,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 208,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 3.987014054409469,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 209,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 3.035752445138492,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 210,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 2.18213199638366,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 211,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 1.4439056464206494,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 212,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.8388263335251089,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 213,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.3846469959727159,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 214,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.09912057203912283,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 215,
+      "phase": "Raise into the stowed position",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 216,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 35.0
+    },
+    {
+      "frame": 217,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 34.80726555436838
+    },
+    {
+      "frame": 218,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 34.25207528560862
+    },
+    {
+      "frame": 219,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 33.36894879592341
+    },
+    {
+      "frame": 220,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 32.19240568751541
+    },
+    {
+      "frame": 221,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 30.75696556258733
+    },
+    {
+      "frame": 222,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 29.09714802334183
+    },
+    {
+      "frame": 223,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 27.24747267198159
+    },
+    {
+      "frame": 224,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 25.242459110709298
+    },
+    {
+      "frame": 225,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 23.116626941727624
+    },
+    {
+      "frame": 226,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 20.904495767239254
+    },
+    {
+      "frame": 227,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 18.640585189446867
+    },
+    {
+      "frame": 228,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 16.359414810553137
+    },
+    {
+      "frame": 229,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 14.09550423276075
+    },
+    {
+      "frame": 230,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 11.883373058272376
+    },
+    {
+      "frame": 231,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 9.757540889290706
+    },
+    {
+      "frame": 232,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 7.752527328018413
+    },
+    {
+      "frame": 233,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 5.902851976658178
+    },
+    {
+      "frame": 234,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 4.243034437412672
+    },
+    {
+      "frame": 235,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 2.80759431248459
+    },
+    {
+      "frame": 236,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 1.6310512040765972
+    },
+    {
+      "frame": 237,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.7479247143913903
+    },
+    {
+      "frame": 238,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.19273444563162878
+    },
+    {
+      "frame": 239,
+      "phase": "Lower and release | prescribed motion",
+      "deploy_mm": 0.0,
+      "clamp_extension_mm": 0.0,
+      "lift_mm": 0.0
+    }
+  ]
+}
