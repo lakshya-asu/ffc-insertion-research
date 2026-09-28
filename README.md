@@ -78,6 +78,7 @@ The ROS camera/frontend path is implemented. The new mounted-camera model is und
 
 ```bash
 uv sync --locked
+uv run python scripts/fetch_fr3.py  # pinned public assets for geometry tests
 uv run pytest -q
 uv run ruff check src tests
 ```
