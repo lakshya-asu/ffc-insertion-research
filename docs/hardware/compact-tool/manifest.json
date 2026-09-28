@@ -1,0 +1,17 @@
+{
+  "cad_run": "outputs/compact-fingers-002",
+  "render_run": "outputs/compact-fingers-render-001",
+  "render_input_run": "outputs/compact-fingers-001",
+  "identical_usd_sha256": "d1528020b71255129e236dcacddfbadc502632b19ea413d55d2ebdffbda8350e",
+  "source_supplier_sha256": "c067fb10adedf664a4defb3c2f686acd64c55d2fb73ad32e9d11e52b9c74c90e",
+  "assets": {
+    "finger-motion.mp4": "991f7d0611a7d1bf83494698fae14739e54c9b4bfa957cbc122f0f0123e95d6b",
+    "assembly-open.webp": "1b152bb9887e04df3df617ecc16906a615e459d3370fdcd43fb993df3cbd52cc",
+    "lower-finger.step": "3a8932e5a3591f93e748b58f6d5e5dff3adbb2320f6cd0f07353f81b214b0c1b",
+    "geometry-report.json": "93e1f5f3afd48b17e17cd35138ac26fcb4b5d1a6bfb8ed87262f759b5012e2bc",
+    "fingers-contact.webp": "f385f7e456cf8692cc57d282c6df9937d59e09fb1c73672ab212af4bc17c7b24",
+    "fingers-open.webp": "4e3e89ea2d3171e1eab8ecd0b143b84535149f3000277874de9459c7faec4cbc",
+    "upper-finger.step": "0e159d07ec7fc5364bbea98dcc2ba936e69e063e5ce659747e211f22bb129022",
+    "render-report.json": "8f442c0b83cb36d1288d5b1343caa3742d978260c0b682cc9d71feb07ea3bf14"
+  }
+}

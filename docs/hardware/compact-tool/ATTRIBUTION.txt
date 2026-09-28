@@ -1,0 +1,2 @@
+DH Robotics PGEA family supplier geometry from the public TechShare CAD portal: https://techshare.co.jp/faq/dhrobotics/dh-download-portal.html
+Original supplier STEP retained locally; not redistributed here. Images and video are Isaac renders of that geometry with our own proposed fingers. Gold is a review color, not a material specification. Only our two finger solids are offered as STEP downloads. They are not released for manufacture.

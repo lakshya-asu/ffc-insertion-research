@@ -1,22 +1,37 @@
 {
-  "revision": "pgea-2-10-candidate-v1",
+  "revision": "pgea-2-10-candidate-v2",
   "status": "CANDIDATE_NOT_PURCHASE_RELEASED",
   "manufacturer": "DH Robotics",
   "model": "PGEA-2-10",
-  "preferred_cable_exit": "side / B, pending hose and robot routing review",
+  "preferred_cable_exit": "side; downloaded O-S geometry, ordering suffix unresolved",
   "supplier_catalog": "https://en.dh-robotics.com/wp-content/uploads/2025/06/DH_PGEAPGIA-catalog_V255.pdf",
   "catalog_pdf_page_zero_based": 5,
   "body_dimensions_mm": {
-    "side_exit": [89, 30, 18],
-    "bottom_exit": [94, 30, 18]
+    "side_exit": [
+      89,
+      30,
+      18
+    ],
+    "bottom_exit": [
+      94,
+      30,
+      18
+    ]
   },
   "gripper_mass_kg": 0.15,
-  "force_per_jaw_N": {"minimum": 0.8, "maximum": 2.0},
+  "force_per_jaw_N": {
+    "minimum": 0.8,
+    "maximum": 2.0
+  },
   "total_stroke_mm": 10,
   "position_repeatability_plus_minus_mm": 0.02,
   "controller": {
     "location": "external",
-    "envelope_mm": [78, 52.4, 27.2],
+    "envelope_mm": [
+      78,
+      52.4,
+      27.2
+    ],
     "supply_V": 24,
     "supply_tolerance_percent": 10,
     "device_rated_current_A": 0.1,
@@ -27,8 +42,19 @@
     "hardware_commands_enabled": false
   },
   "runtime_observation_boundary": {
-    "permitted": ["camera images and calibration", "measured robot joints", "timestamped gripper feedback", "measured pressure", "measured fingertip load"],
-    "not_yet_available": ["verified gripper register map", "pressure sensor selection and model", "fingertip force sensing", "seal and slip inference"],
+    "permitted": [
+      "camera images and calibration",
+      "measured robot joints",
+      "timestamped gripper feedback",
+      "measured pressure",
+      "measured fingertip load"
+    ],
+    "not_yet_available": [
+      "verified gripper register map",
+      "pressure sensor selection and model",
+      "fingertip force sensing",
+      "seal and slip inference"
+    ],
     "simulator_object_state": "offline labels and scoring only"
   },
   "limitations": [
@@ -38,5 +64,19 @@
     "Total assembled payload also includes adapter, fingers, vacuum hardware, sensors and cables",
     "Exact jaw datum and custom finger offsets require the detailed drawing/CAD review",
     "No motor, contact, vacuum or cable dynamics have been validated for this candidate"
-  ]
+  ],
+  "geometry_audit": {
+    "report": "design/compact-tool/geometry-audit.json",
+    "source_variant": "O-S STEP 20250624, 89 mm side-exit geometry",
+    "imported_base_gap_mm": 11.4,
+    "nominal_base_gap_range_mm": [
+      1,
+      11
+    ],
+    "nominal_pose_rebase_each_jaw_mm": 0.2,
+    "fingertip_inward_offset_each_mm": 0.5,
+    "fingertip_status": "CAD candidate; assembled sampled sweep and nominal coupon contact checks pass; not manufacturing released",
+    "ordering_code_verified": false,
+    "fingertip_report": "docs/hardware/compact-tool/geometry-report.json"
+  }
 }

@@ -34,6 +34,12 @@ Direct downloads from the manufacturer's site returned HTTP 403 on this lab host
 
 The user confirms access to I2RT YAM and UFACTORY Lite 6. Work remains simulation-only; see the [arm comparison protocol](robot-candidates.md). Neither arm is ruled out or qualified for insertion.
 
-The supplier STEP and PDF downloads succeeded. The B-labelled drawing dimensions the assembly at 94 mm, differing from the catalogue's 89 mm side-exit listing. Resolve this discrepancy before releasing an adapter; do not silently rescale the supplier geometry. The STEP imports as 16 solids; its overall bounds include cable and jaw hardware and are not the catalogue body envelope.
+Both supplier variants are now imported. The O-B drawing/model has a bottom/rear cable exit and 94 mm length; O-S has a side exit and 89 mm length. The English catalogue suffix table conflicts with those files, so the ordering code remains unresolved. The original local `pgea-2-10-side.STEP` filename is misleading: it contains O-B geometry. Preserve its original hash and use the explicitly named O-S file for the next design. Overall CAD bounds include the cable and jaw hardware.
+
+See the [jaw geometry audit](geometry-audit.md) for the measured 11.4 mm imported opening, nominal-range rebase and sampled interference checks. The imported USD assets contain visual geometry only.
 
 The local perception viewer had reached its configured 12-hour duration and exited cleanly. It was restarted through `scripts/start_demo.sh`; `scripts/check_demo.py` then passed with a recent matched image. Open [the local demo](http://127.0.0.1:8766/demo/) and [the existing mounted-tool video](http://127.0.0.1:8766/hardware/custom-gripper.html#mounted-motion). The local demo still shows the earlier stationary Pi tool; it is not a live view of this new candidate.
+
+## First finger assembly
+
+The [compact finger study](../../experiments/031-compact-fingers.md) adds bolt-on fingers and nominal mounting hardware. The assembled mechanism passes 23 sampled jaw openings; four dimensional cable coupons touch both pads without penetration. [Watch the Isaac review](../../docs/hardware/custom-gripper.html#compact-fingers). Motion is prescribed and the coupon stays fixed. Material selection, stiffness, pin retention, nozzle/adapter design and workcell clearance remain open.

@@ -1,0 +1,489 @@
+{
+  "renderer": "Isaac Sim RTX RaytracedLighting",
+  "physics_steps": 0,
+  "frame_count": 96,
+  "fps": 12,
+  "trace": [
+    {
+      "frame": 0,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 1,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 2,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 3,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 4,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 5,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 6,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 7,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 8,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 9,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 10,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 11,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 12,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    },
+    {
+      "frame": 13,
+      "base_gap_mm": 10.976313002915452,
+      "pad_gap_mm": 9.976313002915452
+    },
+    {
+      "frame": 14,
+      "base_gap_mm": 10.907091778425656,
+      "pad_gap_mm": 9.907091778425656
+    },
+    {
+      "frame": 15,
+      "base_gap_mm": 10.795095976676384,
+      "pad_gap_mm": 9.795095976676384
+    },
+    {
+      "frame": 16,
+      "base_gap_mm": 10.643085247813412,
+      "pad_gap_mm": 9.643085247813412
+    },
+    {
+      "frame": 17,
+      "base_gap_mm": 10.453819241982508,
+      "pad_gap_mm": 9.453819241982508
+    },
+    {
+      "frame": 18,
+      "base_gap_mm": 10.230057609329446,
+      "pad_gap_mm": 9.230057609329446
+    },
+    {
+      "frame": 19,
+      "base_gap_mm": 9.97456,
+      "pad_gap_mm": 8.97456
+    },
+    {
+      "frame": 20,
+      "base_gap_mm": 9.690086064139942,
+      "pad_gap_mm": 8.690086064139942
+    },
+    {
+      "frame": 21,
+      "base_gap_mm": 9.379395451895045,
+      "pad_gap_mm": 8.379395451895045
+    },
+    {
+      "frame": 22,
+      "base_gap_mm": 9.045247813411079,
+      "pad_gap_mm": 8.045247813411079
+    },
+    {
+      "frame": 23,
+      "base_gap_mm": 8.69040279883382,
+      "pad_gap_mm": 7.690402798833819
+    },
+    {
+      "frame": 24,
+      "base_gap_mm": 8.31762005830904,
+      "pad_gap_mm": 7.317620058309039
+    },
+    {
+      "frame": 25,
+      "base_gap_mm": 7.929659241982508,
+      "pad_gap_mm": 6.929659241982508
+    },
+    {
+      "frame": 26,
+      "base_gap_mm": 7.52928,
+      "pad_gap_mm": 6.52928
+    },
+    {
+      "frame": 27,
+      "base_gap_mm": 7.1192419825072895,
+      "pad_gap_mm": 6.1192419825072895
+    },
+    {
+      "frame": 28,
+      "base_gap_mm": 6.702304839650146,
+      "pad_gap_mm": 5.702304839650146
+    },
+    {
+      "frame": 29,
+      "base_gap_mm": 6.281228221574344,
+      "pad_gap_mm": 5.281228221574344
+    },
+    {
+      "frame": 30,
+      "base_gap_mm": 5.858771778425657,
+      "pad_gap_mm": 4.858771778425657
+    },
+    {
+      "frame": 31,
+      "base_gap_mm": 5.437695160349855,
+      "pad_gap_mm": 4.437695160349855
+    },
+    {
+      "frame": 32,
+      "base_gap_mm": 5.020758017492712,
+      "pad_gap_mm": 4.020758017492712
+    },
+    {
+      "frame": 33,
+      "base_gap_mm": 4.610720000000001,
+      "pad_gap_mm": 3.6107200000000006
+    },
+    {
+      "frame": 34,
+      "base_gap_mm": 4.210340758017493,
+      "pad_gap_mm": 3.2103407580174927
+    },
+    {
+      "frame": 35,
+      "base_gap_mm": 3.8223799416909623,
+      "pad_gap_mm": 2.8223799416909623
+    },
+    {
+      "frame": 36,
+      "base_gap_mm": 3.4495972011661804,
+      "pad_gap_mm": 2.4495972011661804
+    },
+    {
+      "frame": 37,
+      "base_gap_mm": 3.094752186588921,
+      "pad_gap_mm": 2.094752186588921
+    },
+    {
+      "frame": 38,
+      "base_gap_mm": 2.760604548104956,
+      "pad_gap_mm": 1.760604548104956
+    },
+    {
+      "frame": 39,
+      "base_gap_mm": 2.4499139358600583,
+      "pad_gap_mm": 1.4499139358600583
+    },
+    {
+      "frame": 40,
+      "base_gap_mm": 2.1654400000000003,
+      "pad_gap_mm": 1.1654400000000003
+    },
+    {
+      "frame": 41,
+      "base_gap_mm": 1.9099423906705546,
+      "pad_gap_mm": 0.9099423906705546
+    },
+    {
+      "frame": 42,
+      "base_gap_mm": 1.6861807580174926,
+      "pad_gap_mm": 0.6861807580174926
+    },
+    {
+      "frame": 43,
+      "base_gap_mm": 1.4969147521865889,
+      "pad_gap_mm": 0.49691475218658887
+    },
+    {
+      "frame": 44,
+      "base_gap_mm": 1.3449040233236165,
+      "pad_gap_mm": 0.34490402332361647
+    },
+    {
+      "frame": 45,
+      "base_gap_mm": 1.2329082215743448,
+      "pad_gap_mm": 0.23290822157434476
+    },
+    {
+      "frame": 46,
+      "base_gap_mm": 1.1636869970845485,
+      "pad_gap_mm": 0.16368699708454848
+    },
+    {
+      "frame": 47,
+      "base_gap_mm": 1.1400000000000006,
+      "pad_gap_mm": 0.14000000000000057
+    },
+    {
+      "frame": 48,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 49,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 50,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 51,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 52,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 53,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 54,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 55,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 56,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 57,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 58,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 59,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 60,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 61,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 62,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 63,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 64,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 65,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 66,
+      "base_gap_mm": 1.14,
+      "pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "frame": 67,
+      "base_gap_mm": 1.1743638525564803,
+      "pad_gap_mm": 0.17436385255648035
+    },
+    {
+      "frame": 68,
+      "base_gap_mm": 1.274221165279429,
+      "pad_gap_mm": 0.2742211652794291
+    },
+    {
+      "frame": 69,
+      "base_gap_mm": 1.4347205707491082,
+      "pad_gap_mm": 0.4347205707491082
+    },
+    {
+      "frame": 70,
+      "base_gap_mm": 1.6510107015457787,
+      "pad_gap_mm": 0.6510107015457787
+    },
+    {
+      "frame": 71,
+      "base_gap_mm": 1.9182401902497026,
+      "pad_gap_mm": 0.9182401902497026
+    },
+    {
+      "frame": 72,
+      "base_gap_mm": 2.231557669441141,
+      "pad_gap_mm": 1.2315576694411412
+    },
+    {
+      "frame": 73,
+      "base_gap_mm": 2.5861117717003568,
+      "pad_gap_mm": 1.5861117717003568
+    },
+    {
+      "frame": 74,
+      "base_gap_mm": 2.9770511296076094,
+      "pad_gap_mm": 1.9770511296076094
+    },
+    {
+      "frame": 75,
+      "base_gap_mm": 3.3995243757431632,
+      "pad_gap_mm": 2.3995243757431632
+    },
+    {
+      "frame": 76,
+      "base_gap_mm": 3.848680142687277,
+      "pad_gap_mm": 2.848680142687277
+    },
+    {
+      "frame": 77,
+      "base_gap_mm": 4.319667063020213,
+      "pad_gap_mm": 3.319667063020213
+    },
+    {
+      "frame": 78,
+      "base_gap_mm": 4.807633769322235,
+      "pad_gap_mm": 3.8076337693222353
+    },
+    {
+      "frame": 79,
+      "base_gap_mm": 5.307728894173603,
+      "pad_gap_mm": 4.307728894173603
+    },
+    {
+      "frame": 80,
+      "base_gap_mm": 5.815101070154578,
+      "pad_gap_mm": 4.815101070154578
+    },
+    {
+      "frame": 81,
+      "base_gap_mm": 6.324898929845421,
+      "pad_gap_mm": 5.324898929845421
+    },
+    {
+      "frame": 82,
+      "base_gap_mm": 6.832271105826396,
+      "pad_gap_mm": 5.832271105826396
+    },
+    {
+      "frame": 83,
+      "base_gap_mm": 7.3323662306777635,
+      "pad_gap_mm": 6.3323662306777635
+    },
+    {
+      "frame": 84,
+      "base_gap_mm": 7.820332936979786,
+      "pad_gap_mm": 6.820332936979786
+    },
+    {
+      "frame": 85,
+      "base_gap_mm": 8.291319857312722,
+      "pad_gap_mm": 7.291319857312722
+    },
+    {
+      "frame": 86,
+      "base_gap_mm": 8.740475624256838,
+      "pad_gap_mm": 7.740475624256838
+    },
+    {
+      "frame": 87,
+      "base_gap_mm": 9.162948870392391,
+      "pad_gap_mm": 8.162948870392391
+    },
+    {
+      "frame": 88,
+      "base_gap_mm": 9.553888228299643,
+      "pad_gap_mm": 8.553888228299643
+    },
+    {
+      "frame": 89,
+      "base_gap_mm": 9.90844233055886,
+      "pad_gap_mm": 8.90844233055886
+    },
+    {
+      "frame": 90,
+      "base_gap_mm": 10.221759809750298,
+      "pad_gap_mm": 9.221759809750298
+    },
+    {
+      "frame": 91,
+      "base_gap_mm": 10.48898929845422,
+      "pad_gap_mm": 9.48898929845422
+    },
+    {
+      "frame": 92,
+      "base_gap_mm": 10.705279429250892,
+      "pad_gap_mm": 9.705279429250892
+    },
+    {
+      "frame": 93,
+      "base_gap_mm": 10.86577883472057,
+      "pad_gap_mm": 9.86577883472057
+    },
+    {
+      "frame": 94,
+      "base_gap_mm": 10.965636147443519,
+      "pad_gap_mm": 9.965636147443519
+    },
+    {
+      "frame": 95,
+      "base_gap_mm": 11.0,
+      "pad_gap_mm": 10.0
+    }
+  ],
+  "limitations": "Prescribed geometric motion; no grasp/contact validation; fixed coupon"
+}

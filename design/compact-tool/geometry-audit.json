@@ -1,0 +1,239 @@
+{
+  "scope": "Offline CAD geometry only; no actuator, cable, contact or grasp physics",
+  "source_sha256": "c067fb10adedf664a4defb3c2f686acd64c55d2fb73ad32e9d11e52b9c74c90e",
+  "component_count": 21,
+  "coordinate_units": "mm in supplier frame",
+  "jaw_axis": "Z",
+  "front_attachment_plane_y_mm": -248.2103195204206,
+  "inner_planes_z_mm": [
+    8.66012059394438,
+    20.060120593944365
+  ],
+  "imported_gap_mm": 11.399999999999984,
+  "drawing_gap_range_mm": [
+    1,
+    11
+  ],
+  "rebase": "Translate lower jaw +Z and upper jaw -Z by (imported_gap - nominal_gap)/2; no scaling",
+  "moving_components_zero_based": {
+    "lower": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "upper": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ]
+  },
+  "proposed_fingertips": {
+    "status": "dimensional concept only; geometry and mounting not released",
+    "inward_offset_each_mm": 0.5,
+    "pad_gap_range_mm": [
+      0,
+      10
+    ],
+    "assumed_header_thickness_mm": 0.3,
+    "base_gap_at_header_contact_mm": 1.3,
+    "assumed_body_thickness_mm": 0.14,
+    "base_gap_at_body_contact_mm": 1.14,
+    "warning": "These are geometric contact positions, not safe force commands or a damage threshold"
+  },
+  "sampled_sweep": [
+    {
+      "nominal_base_gap_mm": 1.0,
+      "each_jaw_offset_from_import_mm": 5.199999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 0.0
+    },
+    {
+      "nominal_base_gap_mm": 1.14,
+      "each_jaw_offset_from_import_mm": 5.129999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 0.1399999999999999
+    },
+    {
+      "nominal_base_gap_mm": 1.3,
+      "each_jaw_offset_from_import_mm": 5.049999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 0.30000000000000004
+    },
+    {
+      "nominal_base_gap_mm": 1.5,
+      "each_jaw_offset_from_import_mm": 4.949999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 0.5
+    },
+    {
+      "nominal_base_gap_mm": 2.0,
+      "each_jaw_offset_from_import_mm": 4.699999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 1.0
+    },
+    {
+      "nominal_base_gap_mm": 2.5,
+      "each_jaw_offset_from_import_mm": 4.449999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 1.5
+    },
+    {
+      "nominal_base_gap_mm": 3.0,
+      "each_jaw_offset_from_import_mm": 4.199999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 2.0
+    },
+    {
+      "nominal_base_gap_mm": 3.5,
+      "each_jaw_offset_from_import_mm": 3.949999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 2.5
+    },
+    {
+      "nominal_base_gap_mm": 4.0,
+      "each_jaw_offset_from_import_mm": 3.699999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 3.0
+    },
+    {
+      "nominal_base_gap_mm": 4.5,
+      "each_jaw_offset_from_import_mm": 3.449999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 3.5
+    },
+    {
+      "nominal_base_gap_mm": 5.0,
+      "each_jaw_offset_from_import_mm": 3.199999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 4.0
+    },
+    {
+      "nominal_base_gap_mm": 5.5,
+      "each_jaw_offset_from_import_mm": 2.949999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 4.5
+    },
+    {
+      "nominal_base_gap_mm": 6.0,
+      "each_jaw_offset_from_import_mm": 2.699999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 5.0
+    },
+    {
+      "nominal_base_gap_mm": 6.5,
+      "each_jaw_offset_from_import_mm": 2.449999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 5.5
+    },
+    {
+      "nominal_base_gap_mm": 7.0,
+      "each_jaw_offset_from_import_mm": 2.199999999999992,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 6.0
+    },
+    {
+      "nominal_base_gap_mm": 7.5,
+      "each_jaw_offset_from_import_mm": 1.9499999999999922,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 6.5
+    },
+    {
+      "nominal_base_gap_mm": 8.0,
+      "each_jaw_offset_from_import_mm": 1.6999999999999922,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 7.0
+    },
+    {
+      "nominal_base_gap_mm": 8.5,
+      "each_jaw_offset_from_import_mm": 1.4499999999999922,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 7.5
+    },
+    {
+      "nominal_base_gap_mm": 9.0,
+      "each_jaw_offset_from_import_mm": 1.1999999999999922,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 8.0
+    },
+    {
+      "nominal_base_gap_mm": 9.5,
+      "each_jaw_offset_from_import_mm": 0.9499999999999922,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 8.5
+    },
+    {
+      "nominal_base_gap_mm": 10.0,
+      "each_jaw_offset_from_import_mm": 0.6999999999999922,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 9.0
+    },
+    {
+      "nominal_base_gap_mm": 10.5,
+      "each_jaw_offset_from_import_mm": 0.4499999999999922,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 9.5
+    },
+    {
+      "nominal_base_gap_mm": 11.0,
+      "each_jaw_offset_from_import_mm": 0.19999999999999218,
+      "jaw_pair_overlap_mm3": 0.0,
+      "lower_fixed_overlap_mm3": 0.0,
+      "upper_fixed_overlap_mm3": 0.0,
+      "proposed_pad_gap_mm": 10.0
+    }
+  ],
+  "limitations": [
+    "Sampled poses do not prove swept-volume clearance between samples",
+    "Supplier CAD can contain deliberate overlaps and omitted internal mechanics",
+    "No new fingers, nozzle, adapter, cable or board is included in the collision audit",
+    "Ordering suffix conflicts between English catalogue and downloaded variants remain unresolved"
+  ]
+}
