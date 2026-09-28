@@ -1,0 +1,48 @@
+{
+  "results": [
+    {
+      "case": "valid",
+      "result": "accepted",
+      "stamp_preserved": true
+    },
+    {
+      "case": "stale",
+      "result": "no observation emitted"
+    },
+    {
+      "case": "wrong optical frame",
+      "result": "no observation emitted"
+    },
+    {
+      "case": "calibration changed",
+      "result": "no observation emitted"
+    },
+    {
+      "case": "timestamp mismatch",
+      "result": "no observation emitted"
+    },
+    {
+      "case": "blank image",
+      "result": "no observation emitted"
+    },
+    {
+      "case": "camera dropout",
+      "result": "stale status, motion false"
+    },
+    {
+      "case": "fresh recovery",
+      "result": "observation_only, motion false"
+    }
+  ],
+  "observations": 2,
+  "status_messages": 53,
+  "diagnostic_reasons": [
+    "Blank or saturated camera window",
+    "Fresh rectified RGB observation",
+    "No fresh synchronized camera frame",
+    "calibration changed; restart with an explicitly reviewed profile",
+    "image/calibration optical frame or stamp mismatch",
+    "stale acquisition timestamp"
+  ],
+  "motion_permitted": false
+}

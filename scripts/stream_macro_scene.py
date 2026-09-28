@@ -14,6 +14,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--stage", type=Path, required=True)
     p.add_argument("--seconds", type=float, default=43200)
+    p.add_argument("--ros", action="store_true", help="Publish native RGB and fixed calibration via ROS 2")
     a = p.parse_args()
     from isaacsim import SimulationApp
 
@@ -34,16 +35,22 @@ def main():
     signal.signal(signal.SIGTERM, stop)
     signal.signal(signal.SIGINT, stop)
     streams = []
+    ros_camera = None
     try:
         import numpy as np
         import omni.replicator.core as rep
         import omni.timeline
         import omni.usd
+        from isaacsim.core.utils.extensions import enable_extension
         from pxr import UsdGeom
 
         from ffc.isaac_scene import camera
         from ffc.lab_feed import publish_snapshot
 
+        if a.ros:
+            enable_extension("isaacsim.ros2.bridge")
+            for _ in range(8):
+                app.update()
         context = omni.usd.get_context()
         context.open_stage(str(a.stage))
         for _ in range(8):
@@ -58,7 +65,7 @@ def main():
             )
         )
         for name, path, size in [
-            ("board", "MountMacro" if mounted else "Macro", (1224, 1024)),
+            ("board", "MountMacro" if mounted else "Macro", (2448, 2048) if a.ros else (1224, 1024)),
             ("desk", "MountReview" if mounted else "MacroOverview", (960, 720)),
             ("workcell", "MacroCell", (960, 640)),
         ]:
@@ -66,6 +73,18 @@ def main():
             rgb = rep.AnnotatorRegistry.get_annotator("rgb")
             rgb.attach(rp)
             streams.append((name, rp, rgb))
+        if a.ros:
+            from isaac_ros_camera import RosCamera
+
+            cam = UsdGeom.Camera.Get(
+                stage, "/World/Cameras/MountMacro" if mounted else "/World/Cameras/Macro"
+            )
+            fx = cam.GetFocalLengthAttr().Get() / cam.GetHorizontalApertureAttr().Get() * 2448
+            fy = cam.GetFocalLengthAttr().Get() / cam.GetVerticalApertureAttr().Get() * 2048
+            k = np.array([[fx, 0, 1224], [0, fy, 1024], [0, 0, 1]])
+            world_camera = np.asarray(UsdGeom.XformCache().GetLocalToWorldTransform(cam.GetPrim())).T
+            world_optical = world_camera @ np.diag([1.0, -1.0, -1.0, 1.0])
+            ros_camera = RosCamera(k, world_optical)
         timeline = omni.timeline.get_timeline_interface()
         timeline.pause()
         initial, start, sequence = timeline.get_current_time(), time.monotonic(), 0
@@ -84,6 +103,8 @@ def main():
                     if (name == "board") != is_macro:
                         continue
                     arr = np.asarray(rgb.get_data())[..., :3].astype(np.uint8)
+                    if is_macro and ros_camera is not None:
+                        ros_camera.publish(arr)
                     publish_snapshot(
                         arr,
                         feed,
@@ -91,7 +112,8 @@ def main():
                         sequence,
                         "Zero 2 W macro study. Static scene, 0.3 mm gap; no motion or inference. "
                         + (
-                            "Half-resolution Basler/Kowa framing with uncalibrated finite-aperture blur."
+                            "Basler/Kowa framing with uncalibrated finite-aperture blur; "
+                            "native RGB when ROS is enabled."
                             if is_macro
                             else "Camera and lens are dimensioned placement envelopes."
                         ),
@@ -100,6 +122,8 @@ def main():
             sequence += 1
             time.sleep(0.5)
     finally:
+        if ros_camera is not None:
+            ros_camera.close()
         for _, rp, rgb in streams:
             rgb.detach()
             rp.destroy()

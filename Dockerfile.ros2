@@ -1,0 +1,17 @@
+FROM ffc-foundation:4.57.6 AS foundation
+FROM ros:jazzy-ros-base-noble@sha256:c3706ef0a0aa45413c07803cf433602f543b22e45b4855f6fca955c2d8ecc4e8
+RUN apt-get update && apt-get install -y --no-install-recommends \
+ python3-opencv python3-pip python3-scipy python3-pytest \
+ ros-jazzy-cv-bridge ros-jazzy-message-filters ros-jazzy-tf2-ros \
+ ros-jazzy-rosbag2-storage-mcap ros-jazzy-diagnostic-msgs \
+ && apt-get clean
+# Reuse the tested CUDA/transformers wheels; NumPy 1.x matches Ubuntu cv_bridge ABI.
+COPY --from=foundation /usr/local/lib/python3.12/site-packages/ /opt/perception/
+RUN python3 -m pip install --no-cache-dir --target /opt/perception --upgrade numpy==1.26.4
+ENV PYTHONPATH=/opt/perception ROS_DOMAIN_ID=73 ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST RMW_IMPLEMENTATION=rmw_fastrtps_cpp OMP_NUM_THREADS=4
+WORKDIR /work
+COPY ros2_ws/src /work/ros2_ws/src
+RUN /bin/bash -c 'source /opt/ros/jazzy/setup.bash && cd /work/ros2_ws && colcon build --event-handlers console_direct+'
+COPY scripts/ros2_entrypoint.sh /ros2_entrypoint.sh
+ENTRYPOINT ["/ros2_entrypoint.sh"]
+CMD ["ros2", "launch", "ffc_cell", "perception.launch.py"]

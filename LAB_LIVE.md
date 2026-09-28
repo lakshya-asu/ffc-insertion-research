@@ -73,3 +73,7 @@ systemd-run --user --unit=ffc-lab-preview --working-directory="$PWD" \
 The Pi close-up now shows a half-resolution Basler/Kowa reference, with finite-aperture sensitivity blur. Cable view shows the camera placement envelopes. This human preview is not a ROS camera publisher or perception input. The same stop-preview flag cleanly yields the GPU for later experiments. Saved native images and comparison video: `/live/#macro`.
 
 The active mounting revision is experiment 019: full tool, braced opposite-side stand and a 45-degree camera view. `/live/#mount` records clearance and visibility evidence. The older `/live/#macro` is retained as the earlier optics study.
+
+## Native ROS camera milestone
+
+Experiment 020 adds native RGB publication to the mounted preview. Start it with `docker compose -f compose.yaml -f compose.ros2.yaml run --rm experiment` and the receiver with `docker compose -f compose.yaml -f compose.ros2.yaml up -d perception`. This supersedes the non-ROS preview description above. The human feed remains read-only. ROS observations use wall-clock acquisition timestamps for this static scene, and motion stays disabled. Native rendering currently runs about 1.2 fps; the 500 ms watchdog therefore correctly reports stale intervals. See `/live/#ros-camera`.

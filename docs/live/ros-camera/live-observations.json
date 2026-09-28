@@ -1,0 +1,403 @@
+{
+  "frames": [
+    {
+      "stamp_ns": 1790558960177460160,
+      "age_ms": 44.868816,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558961017647496,
+      "age_ms": 32.812939,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558961860732311,
+      "age_ms": 28.920878,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558962701378683,
+      "age_ms": 29.331134,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558963528089190,
+      "age_ms": 29.229698,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558964371021002,
+      "age_ms": 28.489467,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558965204181041,
+      "age_ms": 28.75118,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558966044371322,
+      "age_ms": 29.023562,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558966906213130,
+      "age_ms": 34.368255,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558967708057702,
+      "age_ms": 30.315372,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558968552825237,
+      "age_ms": 28.868841,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558969390298971,
+      "age_ms": 28.817535,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558970225677173,
+      "age_ms": 28.796737,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558971083234343,
+      "age_ms": 30.767978,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558971943222124,
+      "age_ms": 35.520042,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558972776468222,
+      "age_ms": 30.839289,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558973622242610,
+      "age_ms": 29.966394,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558974453330679,
+      "age_ms": 34.797175,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558975287102465,
+      "age_ms": 34.798579,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558976115825603,
+      "age_ms": 30.761317,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558976966967675,
+      "age_ms": 28.918881,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558977799568000,
+      "age_ms": 22.714319,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558978634534097,
+      "age_ms": 28.889692,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558979470091990,
+      "age_ms": 24.031644,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558980308851541,
+      "age_ms": 30.260305,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558981138366719,
+      "age_ms": 28.447166,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558981990427503,
+      "age_ms": 26.125717,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558982822352287,
+      "age_ms": 24.015424,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558983672247389,
+      "age_ms": 25.755532,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558984524394196,
+      "age_ms": 24.159296,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558985363031535,
+      "age_ms": 22.773535,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558986195845335,
+      "age_ms": 22.90759,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558987043109324,
+      "age_ms": 23.129377,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558987883468313,
+      "age_ms": 27.496739,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    },
+    {
+      "stamp_ns": 1790558988720529121,
+      "age_ms": 22.458528,
+      "width": 1232,
+      "height": 1024,
+      "frame_id": "macro_optical_frame",
+      "calibration_id": "2fe09d99bfac4eebc1f48725408366b7d040c52ab28ba63f73905cc58c22ba2e",
+      "preprocessing_revision": "macro-rectify-area-half-pad4-v1"
+    }
+  ],
+  "raw_stamps": [
+    1790558961017647496,
+    1790558961860732311,
+    1790558962701378683,
+    1790558963528089190,
+    1790558964371021002,
+    1790558965204181041,
+    1790558966044371322,
+    1790558966906213130,
+    1790558967708057702,
+    1790558968552825237,
+    1790558969390298971,
+    1790558970225677173,
+    1790558971083234343,
+    1790558971943222124,
+    1790558972776468222,
+    1790558973622242610,
+    1790558974453330679,
+    1790558975287102465,
+    1790558976115825603,
+    1790558976966967675,
+    1790558977799568000,
+    1790558978634534097,
+    1790558979470091990,
+    1790558980308851541,
+    1790558981138366719,
+    1790558981990427503,
+    1790558982822352287,
+    1790558983672247389,
+    1790558984524394196,
+    1790558985363031535,
+    1790558986195845335,
+    1790558987043109324,
+    1790558987883468313,
+    1790558988720529121
+  ],
+  "info_stamps": [
+    1790558961017647496,
+    1790558961860732311,
+    1790558962701378683,
+    1790558963528089190,
+    1790558964371021002,
+    1790558965204181041,
+    1790558966044371322,
+    1790558966906213130,
+    1790558967708057702,
+    1790558968552825237,
+    1790558969390298971,
+    1790558970225677173,
+    1790558971083234343,
+    1790558971943222124,
+    1790558972776468222,
+    1790558973622242610,
+    1790558974453330679,
+    1790558975287102465,
+    1790558976115825603,
+    1790558976966967675,
+    1790558977799568000,
+    1790558978634534097,
+    1790558979470091990,
+    1790558980308851541,
+    1790558981138366719,
+    1790558981990427503,
+    1790558982822352287,
+    1790558983672247389,
+    1790558984524394196,
+    1790558985363031535,
+    1790558986195845335,
+    1790558987043109324,
+    1790558987883468313,
+    1790558988720529121
+  ],
+  "statuses": [
+    "observation_only",
+    "stale"
+  ],
+  "static_transforms": [
+    {
+      "parent": "world",
+      "child": "macro_optical_frame"
+    }
+  ],
+  "scope": "Native rendered RGB through ROS 2 transport; static simulation, wall-clock acquisition stamps",
+  "motion_permitted": false
+}

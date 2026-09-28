@@ -1,0 +1,25 @@
+services:
+  experiment:
+    network_mode: host
+    ipc: host
+    environment:
+      ROS_DISTRO: jazzy
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+      ROS_DOMAIN_ID: '73'
+      ROS_AUTOMATIC_DISCOVERY_RANGE: LOCALHOST
+      FASTRTPS_DEFAULT_PROFILES_FILE: /workspace/config/fastdds-camera.xml
+      LD_LIBRARY_PATH: /isaac-sim/exts/isaacsim.ros2.core/jazzy/lib
+    command: ["scripts/stream_macro_scene.py", "--stage", "/workspace/outputs/mount-review-003/mounted-workcell.usda", "--ros", "--seconds", "43200"]
+  perception:
+    image: ffc-ros2:jazzy-dinov3
+    network_mode: host
+    ipc: host
+    environment:
+      ROS_DOMAIN_ID: '73'
+      ROS_AUTOMATIC_DISCOVERY_RANGE: LOCALHOST
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+      FASTRTPS_DEFAULT_PROFILES_FILE: /config/fastdds-camera.xml
+    volumes:
+      - ./config/fastdds-camera.xml:/config/fastdds-camera.xml:ro
+    # No workspace, USD scene, simulator label or object-pose mount.
+    command: ["ros2", "launch", "ffc_cell", "perception.launch.py"]
