@@ -1,0 +1,199 @@
+{
+  "frames": 160,
+  "splits": {
+    "train": 128,
+    "validation": 32
+  },
+  "independent_from_audit": true,
+  "source_snapshot_verified": true,
+  "min_tool_mount_gap_mm": 33.26193756408545,
+  "short_grasp_band_visible": 0,
+  "validation": {
+    "valid": true,
+    "frames": 160,
+    "conditions": {
+      "ordinary": {
+        "images": 16,
+        "visible": [
+          16,
+          16,
+          16,
+          7,
+          9
+        ],
+        "pixels": [
+          417318,
+          879934,
+          798794,
+          985370,
+          1244718
+        ]
+      },
+      "near_entry": {
+        "images": 16,
+        "visible": [
+          16,
+          16,
+          16,
+          6,
+          10
+        ],
+        "pixels": [
+          447278,
+          402054,
+          761490,
+          843634,
+          1384385
+        ]
+      },
+      "board_rotation": {
+        "images": 16,
+        "visible": [
+          16,
+          16,
+          16,
+          9,
+          7
+        ],
+        "pixels": [
+          351164,
+          868986,
+          777597,
+          1241109,
+          966213
+        ]
+      },
+      "short_grasp": {
+        "images": 16,
+        "visible": [
+          9,
+          4,
+          0,
+          5,
+          7
+        ],
+        "pixels": [
+          219248,
+          190103,
+          0,
+          606216,
+          821867
+        ]
+      },
+      "dim": {
+        "images": 16,
+        "visible": [
+          16,
+          16,
+          16,
+          7,
+          9
+        ],
+        "pixels": [
+          417464,
+          881765,
+          799092,
+          985648,
+          1247135
+        ]
+      },
+      "bright": {
+        "images": 16,
+        "visible": [
+          16,
+          16,
+          16,
+          7,
+          9
+        ],
+        "pixels": [
+          419301,
+          881930,
+          802559,
+          982052,
+          1249180
+        ]
+      },
+      "focus_drift": {
+        "images": 16,
+        "visible": [
+          16,
+          16,
+          16,
+          7,
+          9
+        ],
+        "pixels": [
+          416629,
+          875312,
+          783616,
+          974069,
+          1244672
+        ]
+      },
+      "absent_cable": {
+        "images": 16,
+        "visible": [
+          16,
+          16,
+          0,
+          9,
+          7
+        ],
+        "pixels": [
+          357314,
+          880287,
+          0,
+          1261253,
+          971679
+        ]
+      },
+      "absent_socket": {
+        "images": 16,
+        "visible": [
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        "pixels": [
+          0,
+          0,
+          795075,
+          0,
+          0
+        ]
+      },
+      "empty_targets": {
+        "images": 16,
+        "visible": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pixels": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "checks": [
+      "native dimensions",
+      "label range",
+      "RGB/mask hashes",
+      "no duplicate RGB",
+      "class counts",
+      "latch consistency",
+      "strict absent labels",
+      "independent leading-band containment",
+      "zero physics"
+    ],
+    "scope": "Annotation integrity only; not learned accuracy, optical resolution or physical validation"
+  }
+}

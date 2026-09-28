@@ -1,0 +1,14 @@
+{
+  "revision": "mounted-macro-features-v1",
+  "camera_profile": "macro-mount-elevation45-v1",
+  "preprocessing_revision": "macro-rectify-area-half-pad4-v1",
+  "classes": ["background", "upper_rim", "lower_rim", "leading_band", "slider_open", "slider_closed"],
+  "audit_seed": 930101,
+  "development_seed": 930201,
+  "audit_scenes": 32,
+  "development_scenes": 160,
+  "validation_fraction": 0.2,
+  "conditions": ["ordinary", "near_entry", "board_rotation", "short_grasp", "dim", "bright", "focus_drift", "absent_cable", "absent_socket", "empty_targets"],
+  "scope": "Static native RGB and offline visibility labels with the complete tool. No physical grasp/contact claim.",
+  "motion_permitted": false
+}

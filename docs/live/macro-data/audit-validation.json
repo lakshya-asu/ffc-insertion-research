@@ -1,0 +1,188 @@
+{
+  "valid": true,
+  "frames": 30,
+  "conditions": {
+    "ordinary": {
+      "images": 3,
+      "visible": [
+        3,
+        3,
+        3,
+        1,
+        2
+      ],
+      "pixels": [
+        89336,
+        165709,
+        150294,
+        140941,
+        277559
+      ]
+    },
+    "near_entry": {
+      "images": 3,
+      "visible": [
+        3,
+        3,
+        3,
+        0,
+        3
+      ],
+      "pixels": [
+        118294,
+        123178,
+        142197,
+        0,
+        413279
+      ]
+    },
+    "board_rotation": {
+      "images": 3,
+      "visible": [
+        3,
+        3,
+        3,
+        2,
+        1
+      ],
+      "pixels": [
+        56718,
+        164771,
+        148692,
+        280506,
+        138049
+      ]
+    },
+    "short_grasp": {
+      "images": 3,
+      "visible": [
+        2,
+        1,
+        0,
+        0,
+        2
+      ],
+      "pixels": [
+        80106,
+        55348,
+        0,
+        0,
+        277758
+      ]
+    },
+    "dim": {
+      "images": 3,
+      "visible": [
+        3,
+        3,
+        3,
+        1,
+        2
+      ],
+      "pixels": [
+        88589,
+        166148,
+        147691,
+        141154,
+        277923
+      ]
+    },
+    "bright": {
+      "images": 3,
+      "visible": [
+        3,
+        3,
+        3,
+        2,
+        1
+      ],
+      "pixels": [
+        56809,
+        164508,
+        149458,
+        278600,
+        139448
+      ]
+    },
+    "focus_drift": {
+      "images": 3,
+      "visible": [
+        3,
+        3,
+        3,
+        2,
+        1
+      ],
+      "pixels": [
+        56901,
+        165091,
+        147016,
+        280934,
+        138615
+      ]
+    },
+    "absent_cable": {
+      "images": 3,
+      "visible": [
+        3,
+        3,
+        0,
+        2,
+        1
+      ],
+      "pixels": [
+        57010,
+        164683,
+        0,
+        279605,
+        139091
+      ]
+    },
+    "absent_socket": {
+      "images": 3,
+      "visible": [
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      "pixels": [
+        0,
+        0,
+        149987,
+        0,
+        0
+      ]
+    },
+    "empty_targets": {
+      "images": 3,
+      "visible": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pixels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "checks": [
+    "native dimensions",
+    "label range",
+    "RGB/mask hashes",
+    "no duplicate RGB",
+    "class counts",
+    "latch consistency",
+    "strict absent labels",
+    "independent leading-band containment",
+    "zero physics"
+  ],
+  "scope": "Annotation integrity only; not learned accuracy, optical resolution or physical validation"
+}

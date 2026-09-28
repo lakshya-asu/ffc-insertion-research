@@ -1,0 +1,10 @@
+{
+  "frames": 30,
+  "seed": 930101,
+  "split": "audit",
+  "physics_elapsed_s": 0,
+  "motion_permitted": false,
+  "stage_sha256": "881533cd8a58772669baa8fd3801965659be8b83a8f454aa0a20f84a62f5c409",
+  "script_sha256": "8b6be5b39ac53256b489874a3d379a9cb2ec0c73c00b45fb45bc9ec0721f6f44",
+  "scope": "Static native RGB and offline visibility labels with the complete tool. No physical grasp/contact claim."
+}

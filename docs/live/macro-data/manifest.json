@@ -1,0 +1,622 @@
+{
+  "frames": [
+    {
+      "group": "audit",
+      "scene": 0,
+      "condition": "ordinary",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4730086,
+        40628,
+        55008,
+        49387,
+        0,
+        138395
+      ],
+      "rgb": "audit-000-rgb.webp",
+      "offline": "audit-000-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 1,
+      "condition": "near_entry",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4734204,
+        39994,
+        52968,
+        47654,
+        0,
+        138684
+      ],
+      "rgb": "audit-001-rgb.webp",
+      "offline": "audit-001-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 2,
+      "condition": "board_rotation",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4757727,
+        8688,
+        55235,
+        51492,
+        140362,
+        0
+      ],
+      "rgb": "audit-002-rgb.webp",
+      "offline": "audit-002-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 3,
+      "condition": "short_grasp",
+      "setback_mm": 6.0,
+      "visible_pixels": [
+        4834910,
+        39980,
+        0,
+        0,
+        0,
+        138614
+      ],
+      "rgb": "audit-003-rgb.webp",
+      "offline": "audit-003-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 4,
+      "condition": "dim",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4727936,
+        40077,
+        55497,
+        50558,
+        0,
+        139436
+      ],
+      "rgb": "audit-004-rgb.webp",
+      "offline": "audit-004-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 5,
+      "condition": "bright",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4728432,
+        40022,
+        55531,
+        50071,
+        0,
+        139448
+      ],
+      "rgb": "audit-005-rgb.webp",
+      "offline": "audit-005-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 6,
+      "condition": "focus_drift",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4761657,
+        8243,
+        54395,
+        49382,
+        139827,
+        0
+      ],
+      "rgb": "audit-006-rgb.webp",
+      "offline": "audit-006-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 7,
+      "condition": "absent_cable",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4811572,
+        8247,
+        54317,
+        0,
+        139368,
+        0
+      ],
+      "rgb": "audit-007-rgb.webp",
+      "offline": "audit-007-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 8,
+      "condition": "absent_socket",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4963727,
+        0,
+        0,
+        49777,
+        0,
+        0
+      ],
+      "rgb": "audit-008-rgb.webp",
+      "offline": "audit-008-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 9,
+      "condition": "empty_targets",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        5013504,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rgb": "audit-009-rgb.webp",
+      "offline": "audit-009-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 10,
+      "condition": "ordinary",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4757904,
+        8637,
+        55347,
+        50675,
+        140941,
+        0
+      ],
+      "rgb": "audit-010-rgb.webp",
+      "offline": "audit-010-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 11,
+      "condition": "near_entry",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4745797,
+        39791,
+        41176,
+        47380,
+        0,
+        139360
+      ],
+      "rgb": "audit-011-rgb.webp",
+      "offline": "audit-011-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 12,
+      "condition": "board_rotation",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4759753,
+        8770,
+        55289,
+        49548,
+        140144,
+        0
+      ],
+      "rgb": "audit-012-rgb.webp",
+      "offline": "audit-012-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 13,
+      "condition": "short_grasp",
+      "setback_mm": 6.0,
+      "visible_pixels": [
+        5013504,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rgb": "audit-013-rgb.webp",
+      "offline": "audit-013-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 14,
+      "condition": "dim",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4731818,
+        39935,
+        55248,
+        48016,
+        0,
+        138487
+      ],
+      "rgb": "audit-014-rgb.webp",
+      "offline": "audit-014-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 15,
+      "condition": "bright",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4765499,
+        8144,
+        53712,
+        48164,
+        137985,
+        0
+      ],
+      "rgb": "audit-015-rgb.webp",
+      "offline": "audit-015-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 16,
+      "condition": "focus_drift",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4758863,
+        8652,
+        55432,
+        49450,
+        141107,
+        0
+      ],
+      "rgb": "audit-016-rgb.webp",
+      "offline": "audit-016-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 17,
+      "condition": "absent_cable",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4809578,
+        8629,
+        55060,
+        0,
+        140237,
+        0
+      ],
+      "rgb": "audit-017-rgb.webp",
+      "offline": "audit-017-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 18,
+      "condition": "absent_socket",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4962775,
+        0,
+        0,
+        50729,
+        0,
+        0
+      ],
+      "rgb": "audit-018-rgb.webp",
+      "offline": "audit-018-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 19,
+      "condition": "empty_targets",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        5013504,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rgb": "audit-019-rgb.webp",
+      "offline": "audit-019-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 20,
+      "condition": "ordinary",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4728683,
+        40071,
+        55354,
+        50232,
+        0,
+        139164
+      ],
+      "rgb": "audit-020-rgb.webp",
+      "offline": "audit-020-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 21,
+      "condition": "near_entry",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4763563,
+        38509,
+        29034,
+        47163,
+        0,
+        135235
+      ],
+      "rgb": "audit-021-rgb.webp",
+      "offline": "audit-021-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 22,
+      "condition": "board_rotation",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4734296,
+        39260,
+        54247,
+        47652,
+        0,
+        138049
+      ],
+      "rgb": "audit-022-rgb.webp",
+      "offline": "audit-022-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 23,
+      "condition": "short_grasp",
+      "setback_mm": 6.0,
+      "visible_pixels": [
+        4778886,
+        40126,
+        55348,
+        0,
+        0,
+        139144
+      ],
+      "rgb": "audit-023-rgb.webp",
+      "offline": "audit-023-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 24,
+      "condition": "dim",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4759253,
+        8577,
+        55403,
+        49117,
+        141154,
+        0
+      ],
+      "rgb": "audit-024-rgb.webp",
+      "offline": "audit-024-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 25,
+      "condition": "bright",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4757758,
+        8643,
+        55265,
+        51223,
+        140615,
+        0
+      ],
+      "rgb": "audit-025-rgb.webp",
+      "offline": "audit-025-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 26,
+      "condition": "focus_drift",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4731435,
+        40006,
+        55264,
+        48184,
+        0,
+        138615
+      ],
+      "rgb": "audit-026-rgb.webp",
+      "offline": "audit-026-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 27,
+      "condition": "absent_cable",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4778973,
+        40134,
+        55306,
+        0,
+        0,
+        139091
+      ],
+      "rgb": "audit-027-rgb.webp",
+      "offline": "audit-027-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 28,
+      "condition": "absent_socket",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4964023,
+        0,
+        0,
+        49481,
+        0,
+        0
+      ],
+      "rgb": "audit-028-rgb.webp",
+      "offline": "audit-028-offline.webp"
+    },
+    {
+      "group": "audit",
+      "scene": 29,
+      "condition": "empty_targets",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        5013504,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "rgb": "audit-029-rgb.webp",
+      "offline": "audit-029-offline.webp"
+    },
+    {
+      "group": "matched",
+      "scene": 0,
+      "condition": "short_grasp",
+      "setback_mm": 6.0,
+      "visible_pixels": [
+        4834481,
+        40628,
+        0,
+        0,
+        0,
+        138395
+      ],
+      "rgb": "matched-000-rgb.webp",
+      "offline": "matched-000-offline.webp"
+    },
+    {
+      "group": "matched",
+      "scene": 1,
+      "condition": "paired_10mm",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4730086,
+        40628,
+        55008,
+        49387,
+        0,
+        138395
+      ],
+      "rgb": "matched-001-rgb.webp",
+      "offline": "matched-001-offline.webp"
+    },
+    {
+      "group": "matched",
+      "scene": 2,
+      "condition": "short_grasp",
+      "setback_mm": 6.0,
+      "visible_pixels": [
+        4779587,
+        39994,
+        55239,
+        0,
+        0,
+        138684
+      ],
+      "rgb": "matched-002-rgb.webp",
+      "offline": "matched-002-offline.webp"
+    },
+    {
+      "group": "matched",
+      "scene": 3,
+      "condition": "paired_10mm",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4728144,
+        39994,
+        55239,
+        51443,
+        0,
+        138684
+      ],
+      "rgb": "matched-003-rgb.webp",
+      "offline": "matched-003-offline.webp"
+    },
+    {
+      "group": "matched",
+      "scene": 4,
+      "condition": "short_grasp",
+      "setback_mm": 6.0,
+      "visible_pixels": [
+        4809228,
+        8684,
+        55227,
+        0,
+        140365,
+        0
+      ],
+      "rgb": "matched-004-rgb.webp",
+      "offline": "matched-004-offline.webp"
+    },
+    {
+      "group": "matched",
+      "scene": 5,
+      "condition": "paired_10mm",
+      "setback_mm": 10.0,
+      "visible_pixels": [
+        4757629,
+        8684,
+        55227,
+        51599,
+        140365,
+        0
+      ],
+      "rgb": "matched-005-rgb.webp",
+      "offline": "matched-005-offline.webp"
+    }
+  ],
+  "classes": [
+    "background",
+    "upper_rim",
+    "lower_rim",
+    "leading_band",
+    "slider_open",
+    "slider_closed"
+  ],
+  "colors": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      236,
+      146,
+      52
+    ],
+    [
+      56,
+      190,
+      170
+    ],
+    [
+      221,
+      75,
+      127
+    ],
+    [
+      91,
+      148,
+      240
+    ],
+    [
+      161,
+      106,
+      211
+    ]
+  ],
+  "motion_permitted": false,
+  "scope": "Static visibility audit. Offline geometry labels, not learned predictions or an insertion result."
+}

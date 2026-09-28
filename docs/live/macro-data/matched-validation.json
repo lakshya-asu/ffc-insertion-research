@@ -1,0 +1,52 @@
+{
+  "valid": true,
+  "frames": 6,
+  "conditions": {
+    "short_grasp": {
+      "images": 3,
+      "visible": [
+        3,
+        2,
+        0,
+        1,
+        2
+      ],
+      "pixels": [
+        89306,
+        110466,
+        0,
+        140365,
+        277079
+      ]
+    },
+    "paired_10mm": {
+      "images": 3,
+      "visible": [
+        3,
+        3,
+        3,
+        1,
+        2
+      ],
+      "pixels": [
+        89306,
+        165474,
+        152429,
+        140365,
+        277079
+      ]
+    }
+  },
+  "checks": [
+    "native dimensions",
+    "label range",
+    "RGB/mask hashes",
+    "no duplicate RGB",
+    "class counts",
+    "latch consistency",
+    "strict absent labels",
+    "independent leading-band containment",
+    "zero physics"
+  ],
+  "scope": "Annotation integrity only; not learned accuracy, optical resolution or physical validation"
+}
