@@ -67,7 +67,9 @@ The current macro preview uses the composed static scene from experiment 018:
 ```bash
 systemd-run --user --unit=ffc-lab-preview --working-directory="$PWD" \
   /usr/bin/docker compose run --rm experiment scripts/stream_macro_scene.py \
-  --stage /workspace/outputs/macro-preview-scene-002/macro-workcell.usda --seconds 43200
+  --stage /workspace/outputs/mount-review-003/mounted-workcell.usda --seconds 43200
 ```
 
 The Pi close-up now shows a half-resolution Basler/Kowa reference, with finite-aperture sensitivity blur. Cable view shows the camera placement envelopes. This human preview is not a ROS camera publisher or perception input. The same stop-preview flag cleanly yields the GPU for later experiments. Saved native images and comparison video: `/live/#macro`.
+
+The active mounting revision is experiment 019: full tool, braced opposite-side stand and a 45-degree camera view. `/live/#mount` records clearance and visibility evidence. The older `/live/#macro` is retained as the earlier optics study.

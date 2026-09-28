@@ -1,0 +1,61 @@
+{
+  "revision": "macro-mount-elevation45-v1",
+  "model": "Basler ace 2 a2A2448-75ucBAS",
+  "lens": "Kowa LM35JC10M",
+  "sensor": "Sony IMX547-AAQJ-C, color global shutter",
+  "native_resolution": [
+    2448,
+    2048
+  ],
+  "pixel_pitch_um": 2.74,
+  "active_crop_mm": [
+    6.70752,
+    5.61152
+  ],
+  "nominal_focal_length_mm": 35.0,
+  "magnification": 0.38,
+  "lens_front_working_distance_mm": 100.0,
+  "lens_envelope_diameter_length_mm": [
+    43.0,
+    49.0
+  ],
+  "camera_envelope_width_height_length_mm": [
+    29.0,
+    29.0,
+    48.1
+  ],
+  "placement": {
+    "yaw_degrees": 0.0,
+    "elevation_degrees": 45.0,
+    "target_offset_from_mouth_mm": [
+      0.15,
+      0.0,
+      0.0
+    ]
+  },
+  "starting_settings": {
+    "fps": 30,
+    "exposure_us": 500,
+    "gain_db": 0,
+    "physical_f_number": 8.0,
+    "auto_exposure": false,
+    "auto_gain": false,
+    "focus": "manual, fixed",
+    "white_balance": "lock after calibration"
+  },
+  "projection": "Thin-lens equivalent at nominal 0.38x; inferred principal plane, not a manufacturer optical prescription",
+  "render_policy": "Ideal framing baseline plus finite-aperture sensitivity render. No calibrated MTF, Bayer response, noise or exposure radiometry.",
+  "runtime": {
+    "frame_id": "macro_optical_frame",
+    "image_topic": "/cell/cameras/macro/image_raw",
+    "camera_info_topic": "/cell/cameras/macro/camera_info",
+    "model_compatible": false,
+    "reason": "Existing DINO model uses different optics and a fixed 4K ROI; macro data requires separate preprocessing, training and held-out evaluation.",
+    "motion_permitted": false
+  },
+  "sources": [
+    "https://docs.baslerweb.com/a2a2448-75ucbas",
+    "https://www.kowa-lenses.com/LM35JC10M-2-3-35mm-10MP-C-Mount-Lens/10707"
+  ],
+  "status": "Simulation reference selected; no purchase or physical calibration"
+}

@@ -6,3 +6,5 @@ main{max-width:1560px;padding:38px 36px 70px;margin:auto}.page-heading{display:f
 #grasp-visibility select,#entrance-features select{display:block;box-sizing:border-box;width:100%;max-width:100%;margin:.4rem 0 1rem;padding:.65rem;font:inherit;background:var(--panel,#f5f5ef);color:inherit;border:1px solid var(--line,#a9b6af)}#grasp-visibility label,#entrance-features label{display:block;margin-top:1rem}#grasp-visibility button,#entrance-features button{padding:.6rem 1rem;margin-bottom:1rem}#entrance-features figure img{display:block;width:100%;height:auto}
 
 #macro select{max-width:100%;display:block;margin:8px 0 18px}#macro-image{max-width:100%;height:auto}#macro code{overflow-wrap:anywhere}
+
+#mount select{display:block;max-width:100%;margin:8px 0 18px}#mount-image{max-width:100%;height:auto}

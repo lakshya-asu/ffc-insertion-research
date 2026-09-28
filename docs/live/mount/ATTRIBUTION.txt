@@ -1,0 +1,1 @@
+FR3 geometry: official Franka Robotics franka_simulation v0.1.0, FR3 v2.1. PCB provenance: ../zero-study/ATTRIBUTION.txt. Tool and stand are design envelopes, not manufacturing CAD. Static scene poses; no physics steps or runtime privileged-state control.

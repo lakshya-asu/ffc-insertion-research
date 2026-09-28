@@ -30,7 +30,9 @@ def optical_budget(profile):
     }
 
 
-def add_macro_camera(stage, profile, mouth):
+def add_macro_camera(
+    stage, profile, mouth, camera_path="/World/Cameras/Macro", envelope_path="/World/Hardware/MacroEnvelope"
+):
     from pxr import Gf, UsdGeom
 
     from ffc.camera_optics import apply_reference_optics
@@ -45,13 +47,13 @@ def add_macro_camera(stage, profile, mouth):
     target = np.asarray(mouth) + np.asarray(pose["target_offset_from_mouth_mm"]) / 1000
     front = target + axis * profile["lens_front_working_distance_mm"] / 1000
     eye = target + axis * budget["object_distance_from_inferred_principal_plane_mm"] / 1000
-    cam = UsdGeom.Camera.Define(stage, "/World/Cameras/Macro")
+    cam = UsdGeom.Camera.Define(stage, camera_path)
     view = Gf.Matrix4d().SetLookAt(Gf.Vec3d(*eye), Gf.Vec3d(*target), Gf.Vec3d(0, 0, 1))
     cam.AddTransformOp().Set(view.GetInverse())
     cam.CreateClippingRangeAttr(Gf.Vec2f(0.0001, 20))
     projection = dict(profile, focal_length_mm=budget["projection_focal_length_mm"])
     apply_reference_optics(stage, cam, projection, float(np.linalg.norm(eye - target)))
-    path = "/World/Hardware/MacroEnvelope"
+    path = envelope_path
     root = UsdGeom.Xform.Define(stage, path)
     mat = Gf.Matrix4d().SetLookAt(Gf.Vec3d(*front), Gf.Vec3d(*target), Gf.Vec3d(0, 0, 1)).GetInverse()
     root.AddTransformOp().Set(mat)

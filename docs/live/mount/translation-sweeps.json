@@ -1,0 +1,60 @@
+{
+  "source": "outputs/mount-clearance-004/report.json",
+  "segments": [
+    {
+      "group": "cable",
+      "segment": "side_low",
+      "minimum_gap_lower_bound_m": 0.04450000000000001,
+      "moving_part": "rigid_held_cable",
+      "mount_part": "locking_tilt_saddle"
+    },
+    {
+      "group": "cable",
+      "segment": "preapproach",
+      "minimum_gap_lower_bound_m": 0.01700000016763793,
+      "moving_part": "/World/Tool/Body/Neck/Shape",
+      "mount_part": "lens_keepout"
+    },
+    {
+      "group": "cable",
+      "segment": "near_entry",
+      "minimum_gap_lower_bound_m": 0.017000000167637915,
+      "moving_part": "/World/Tool/Body/Neck/Shape",
+      "mount_part": "lens_keepout"
+    },
+    {
+      "group": "cable",
+      "segment": "withdraw",
+      "minimum_gap_lower_bound_m": 0.017000000167637915,
+      "moving_part": "/World/Tool/Body/Neck/Shape",
+      "mount_part": "lens_keepout"
+    },
+    {
+      "group": "cable",
+      "segment": "side_exit",
+      "minimum_gap_lower_bound_m": 0.01700000016763793,
+      "moving_part": "/World/Tool/Body/Neck/Shape",
+      "mount_part": "lens_keepout"
+    },
+    {
+      "group": "cable",
+      "segment": "lift_clear",
+      "minimum_gap_lower_bound_m": 0.04450000000000001,
+      "moving_part": "rigid_held_cable",
+      "mount_part": "locking_tilt_saddle"
+    },
+    {
+      "group": "latch_access",
+      "segment": "latch_precontact",
+      "minimum_gap_lower_bound_m": 0.03949999962747083,
+      "moving_part": "/World/Tool/Body/Shape",
+      "mount_part": "lens_keepout"
+    }
+  ],
+  "minimum_nominal_gap_m": 0.017000000167637915,
+  "assembly_budget_m": 0.002,
+  "required_remaining_gap_m": 0.005,
+  "scope": "Swept OBB containment for continuous fixed-orientation translations. Rigid cable; full robot remains a sampled IK check.",
+  "motion_permitted": false,
+  "passes_assumed_budget": true
+}

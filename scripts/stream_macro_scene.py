@@ -51,10 +51,15 @@ def main():
         stage = context.get_stage()
         stage.SetEditTarget(stage.GetSessionLayer())
         camera(stage, "/World/Cameras/MacroCell", (1.4, -1.4, 1.25), (0.3, -0.02, 0.42), 28)
-        envelope = UsdGeom.Imageable(stage.GetPrimAtPath("/World/Hardware/MacroEnvelope"))
+        mounted = bool(stage.GetPrimAtPath("/World/Cameras/MountMacro"))
+        envelope = UsdGeom.Imageable(
+            stage.GetPrimAtPath(
+                "/World/Hardware/MountMacroEnvelope" if mounted else "/World/Hardware/MacroEnvelope"
+            )
+        )
         for name, path, size in [
-            ("board", "Macro", (1224, 1024)),
-            ("desk", "MacroOverview", (960, 720)),
+            ("board", "MountMacro" if mounted else "Macro", (1224, 1024)),
+            ("desk", "MountReview" if mounted else "MacroOverview", (960, 720)),
             ("workcell", "MacroCell", (960, 640)),
         ]:
             rp = rep.create.render_product("/World/Cameras/" + path, size)

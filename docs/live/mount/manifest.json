@@ -1,0 +1,116 @@
+{
+  "frames": [
+    {
+      "frame": 0,
+      "sample": 0,
+      "segment": "side_low",
+      "group": "cable",
+      "offset_m": [
+        0.03,
+        0.08,
+        0.08
+      ],
+      "placement": "00-placement.webp",
+      "macro": "00-macro.webp",
+      "cell": "00-cell.webp"
+    },
+    {
+      "frame": 1,
+      "sample": 40,
+      "segment": "side_low",
+      "group": "cable",
+      "offset_m": [
+        0.03,
+        0.08,
+        0.0
+      ],
+      "placement": "01-placement.webp",
+      "macro": "01-macro.webp",
+      "cell": "01-cell.webp"
+    },
+    {
+      "frame": 2,
+      "sample": 81,
+      "segment": "preapproach",
+      "group": "cable",
+      "offset_m": [
+        0.03,
+        0.0,
+        0.0
+      ],
+      "placement": "02-placement.webp",
+      "macro": "02-macro.webp",
+      "cell": "02-cell.webp"
+    },
+    {
+      "frame": 3,
+      "sample": 97,
+      "segment": "near_entry",
+      "group": "cable",
+      "offset_m": [
+        0.0003,
+        0.0,
+        0.0
+      ],
+      "placement": "03-placement.webp",
+      "macro": "03-macro.webp",
+      "cell": "03-cell.webp"
+    },
+    {
+      "frame": 4,
+      "sample": 113,
+      "segment": "withdraw",
+      "group": "cable",
+      "offset_m": [
+        0.03,
+        0.0,
+        0.0
+      ],
+      "placement": "04-placement.webp",
+      "macro": "04-macro.webp",
+      "cell": "04-cell.webp"
+    },
+    {
+      "frame": 5,
+      "sample": 154,
+      "segment": "side_exit",
+      "group": "cable",
+      "offset_m": [
+        0.03,
+        0.08,
+        0.0
+      ],
+      "placement": "05-placement.webp",
+      "macro": "05-macro.webp",
+      "cell": "05-cell.webp"
+    },
+    {
+      "frame": 6,
+      "sample": 195,
+      "segment": "lift_clear",
+      "group": "cable",
+      "offset_m": [
+        0.03,
+        0.08,
+        0.08
+      ],
+      "placement": "06-placement.webp",
+      "macro": "06-macro.webp",
+      "cell": "06-cell.webp"
+    },
+    {
+      "frame": 7,
+      "sample": 210,
+      "segment": "latch_precontact",
+      "group": "latch_access",
+      "offset_m": [
+        -0.001,
+        0.0,
+        0.003
+      ],
+      "placement": "07-placement.webp",
+      "macro": "07-macro.webp",
+      "cell": "07-cell.webp"
+    }
+  ]
+}

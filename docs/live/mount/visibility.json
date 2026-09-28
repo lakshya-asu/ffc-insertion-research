@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "no-tool": {
+      "upper_rim": 8618,
+      "lower_rim": 548,
+      "leading_band": 47982
+    },
+    "full-tool": {
+      "upper_rim": 8597,
+      "lower_rim": 522,
+      "leading_band": 47982
+    }
+  },
+  "retention": {
+    "upper_rim": 0.997563239730796,
+    "lower_rim": 0.9525547445255474,
+    "leading_band": 1.0
+  },
+  "scope": "Offline pinhole label visibility, not optical resolution or learned localization",
+  "physics_elapsed_s": 0
+}
