@@ -10,3 +10,6 @@ third_party/
 # Original user research document remains local.
 brief/
 OVERNIGHT.md
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/

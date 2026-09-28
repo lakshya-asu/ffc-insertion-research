@@ -59,3 +59,15 @@ The current preview is the separate Zero 2 W side-entry scene. Restart it with t
 ```
 
 With no extra arguments, the renderer still selects the Pi 4 / Arducam reference. The page's saved Zero review is `/live/#zero`; its virtual macro is for human geometry inspection and is not a deployed observation camera.
+
+## Macro preview
+
+The current macro preview uses the composed static scene from experiment 018:
+
+```bash
+systemd-run --user --unit=ffc-lab-preview --working-directory="$PWD" \
+  /usr/bin/docker compose run --rm experiment scripts/stream_macro_scene.py \
+  --stage /workspace/outputs/macro-setup-002/macro-workcell.usda --seconds 43200
+```
+
+The Pi close-up now shows a half-resolution Basler/Kowa reference, with finite-aperture sensitivity blur. Cable view shows the camera placement envelopes. This human preview is not a ROS camera publisher or perception input. The same stop-preview flag cleanly yields the GPU for later experiments. Saved native images and comparison video: `/live/#macro`.

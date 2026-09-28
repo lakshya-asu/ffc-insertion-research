@@ -1,0 +1,50 @@
+{
+  "revision": "zero-feature-v1",
+  "source_connector": "Molex 54548-2271 name in community CAD; not a verified board BOM",
+  "source_url": "https://www.molex.com/en-us/products/part-detail/545482271",
+  "supported_specs": {
+    "circuits": 22,
+    "pitch_mm": 0.5,
+    "height_mm": 1.2,
+    "actuator_type": "slider",
+    "contact_position": "bottom"
+  },
+  "assumptions": {
+    "slot_width_mm": 11.7,
+    "slot_height_open_mm": 0.5,
+    "slider_travel_mm": 0.8,
+    "insertion_depth_mm": 2.5,
+    "front_rim_depth_mm": 0.3,
+    "leading_band_depth_mm": 0.3,
+    "slider_clamping": "Not simulated in static perception study"
+  },
+  "mouth_m": [
+    0.6333,
+    -0.1408,
+    0.0322
+  ],
+  "classes": [
+    "background",
+    "upper_entrance_rim",
+    "lower_entrance_rim",
+    "cable_leading_band",
+    "slider_open",
+    "slider_closed"
+  ],
+  "crop_xyxy": [
+    1472,
+    856,
+    2368,
+    1304
+  ],
+  "development_scenes": 120,
+  "validation_scenes": 24,
+  "test_scenes": 48,
+  "development_seed": 929101,
+  "test_seed": 929903,
+  "training_seed": 929211,
+  "epochs": 60,
+  "motion_permitted": false,
+  "geometry_status": "Engineered simulation substitute for the fused CAD connector; slot dimensions and slider travel are explicit assumptions, not manufacturer tolerances",
+  "physics_status": "Static perception capture. Finite-thickness contact and deformable mechanics require independent numerical qualification."
+}

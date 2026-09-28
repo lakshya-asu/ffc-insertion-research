@@ -1,0 +1,21 @@
+{
+  "members": {
+    "member0": {
+      "best_validation_feature_mean_per_visible_image_iou": 0.6707058750604554,
+      "sha256": "28f7cd3965207bdba1ecb253c755007cd9bf3f37835784a852ddedc9cf73d611",
+      "seed": 929211
+    }
+  },
+  "backbone": "official DINOv3 ViT-B/16",
+  "scope": "Engineered socket substitute; no physical qualification or action policy",
+  "loss": "sqrt-frequency weighted focal CE, gamma 2, plus per-image Dice; candidate selected on validation only",
+  "epochs": 120,
+  "train_images": 192,
+  "validation_images": 48,
+  "elapsed_s": 168.27192508400185,
+  "motion_permitted": false,
+  "selection": "validation feature mean per-visible-image IoU",
+  "labels_sha256": "fb40f6cb1f433007dbcc99ed403fddba3e50a66d8e2f8e57e555a71ebdb962e0",
+  "backbone_sha256": "9a21ac3df0c63839d62612dda6f454d816c25611cc7a52966ed5a5a94921dc8b",
+  "calibration_or_test_used_for_training": false
+}

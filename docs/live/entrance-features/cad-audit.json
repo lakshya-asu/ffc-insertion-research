@@ -1,0 +1,29 @@
+{
+  "asset": "third_party/raspberry_pi/zero/zero2w.usdc",
+  "asset_sha256": "dfb82c3b4885433b2057e73f46f7774b2303a06c1e92cf96fa3af1ba758d71f6",
+  "connector_path": "/Asset/Components/Part_0010",
+  "triangles": 22384,
+  "weld_tolerance_mm": 1e-05,
+  "connected_components": 1,
+  "bounds_mm": [
+    [
+      28.300000354647636,
+      -8.899999782443047,
+      1.5999999595806003
+    ],
+    [
+      33.3000011742115,
+      7.300000172108412,
+      2.79999990016222
+    ]
+  ],
+  "authored_latch_joint": false,
+  "decision": "Source has no independent actuator mesh or joint. Use an explicitly documented simulation substitute.",
+  "manufacturer_url": "https://www.molex.com/en-us/products/part-detail/545482271",
+  "actuator_type": "slider",
+  "limitations": [
+    "Connected topology does not prove physical construction",
+    "Community mesh is not an aperture-tolerance or contact-surface certification",
+    "Cross section is CAD geometry, not a measured specimen"
+  ]
+}

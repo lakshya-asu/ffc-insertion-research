@@ -1,0 +1,5384 @@
+{
+  "frames": [
+    {
+      "file": "0000-entrance.png",
+      "scene": 0,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.13524590163934427,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0000-entrance-rgb.webp",
+      "ensemble": "0000-entrance-ensemble.webp",
+      "previous": "0000-entrance-previous.webp",
+      "offline": "0000-entrance-offline.webp"
+    },
+    {
+      "file": "0000-offset.png",
+      "scene": 0,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.772972972972973,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0000-offset-rgb.webp",
+      "ensemble": "0000-offset-ensemble.webp",
+      "previous": "0000-offset-previous.webp",
+      "offline": "0000-offset-offline.webp"
+    },
+    {
+      "file": "0001-entrance.png",
+      "scene": 1,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9445628997867804,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0001-entrance-rgb.webp",
+      "ensemble": "0001-entrance-ensemble.webp",
+      "previous": "0001-entrance-previous.webp",
+      "offline": "0001-entrance-offline.webp"
+    },
+    {
+      "file": "0001-offset.png",
+      "scene": 1,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.981311098332375,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0001-offset-rgb.webp",
+      "ensemble": "0001-offset-ensemble.webp",
+      "previous": "0001-offset-previous.webp",
+      "offline": "0001-offset-offline.webp"
+    },
+    {
+      "file": "0002-entrance.png",
+      "scene": 2,
+      "condition": "absent_board",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0002-entrance-rgb.webp",
+      "ensemble": "0002-entrance-ensemble.webp",
+      "previous": "0002-entrance-previous.webp",
+      "offline": "0002-entrance-offline.webp"
+    },
+    {
+      "file": "0002-offset.png",
+      "scene": 2,
+      "condition": "absent_board",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0002-offset-rgb.webp",
+      "ensemble": "0002-offset-ensemble.webp",
+      "previous": "0002-offset-previous.webp",
+      "offline": "0002-offset-offline.webp"
+    },
+    {
+      "file": "0003-entrance.png",
+      "scene": 3,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.948152948801037,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0003-entrance-rgb.webp",
+      "ensemble": "0003-entrance-ensemble.webp",
+      "previous": "0003-entrance-previous.webp",
+      "offline": "0003-entrance-offline.webp"
+    },
+    {
+      "file": "0003-offset.png",
+      "scene": 3,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9828834759710335,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0003-offset-rgb.webp",
+      "ensemble": "0003-offset-ensemble.webp",
+      "previous": "0003-offset-previous.webp",
+      "offline": "0003-offset-offline.webp"
+    },
+    {
+      "file": "0004-entrance.png",
+      "scene": 4,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9066843150231635,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0004-entrance-rgb.webp",
+      "ensemble": "0004-entrance-ensemble.webp",
+      "previous": "0004-entrance-previous.webp",
+      "offline": "0004-entrance-offline.webp"
+    },
+    {
+      "file": "0004-offset.png",
+      "scene": 4,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9495652173913044,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0004-offset-rgb.webp",
+      "ensemble": "0004-offset-ensemble.webp",
+      "previous": "0004-offset-previous.webp",
+      "offline": "0004-offset-offline.webp"
+    },
+    {
+      "file": "0005-entrance.png",
+      "scene": 5,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8149038461538461,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0005-entrance-rgb.webp",
+      "ensemble": "0005-entrance-ensemble.webp",
+      "previous": "0005-entrance-previous.webp",
+      "offline": "0005-entrance-offline.webp"
+    },
+    {
+      "file": "0005-offset.png",
+      "scene": 5,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9711211778029445,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0005-offset-rgb.webp",
+      "ensemble": "0005-offset-ensemble.webp",
+      "previous": "0005-offset-previous.webp",
+      "offline": "0005-offset-offline.webp"
+    },
+    {
+      "file": "0006-entrance.png",
+      "scene": 6,
+      "condition": "tool_occlusion",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9006928406466512,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0006-entrance-rgb.webp",
+      "ensemble": "0006-entrance-ensemble.webp",
+      "previous": "0006-entrance-previous.webp",
+      "offline": "0006-entrance-offline.webp"
+    },
+    {
+      "file": "0006-offset.png",
+      "scene": 6,
+      "condition": "tool_occlusion",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9304347826086956,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0006-offset-rgb.webp",
+      "ensemble": "0006-offset-ensemble.webp",
+      "previous": "0006-offset-previous.webp",
+      "offline": "0006-offset-offline.webp"
+    },
+    {
+      "file": "0007-entrance.png",
+      "scene": 7,
+      "condition": "dim",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8897364771151179,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0007-entrance-rgb.webp",
+      "ensemble": "0007-entrance-ensemble.webp",
+      "previous": "0007-entrance-previous.webp",
+      "offline": "0007-entrance-offline.webp"
+    },
+    {
+      "file": "0007-offset.png",
+      "scene": 7,
+      "condition": "dim",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9511831166062673,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0007-offset-rgb.webp",
+      "ensemble": "0007-offset-ensemble.webp",
+      "previous": "0007-offset-previous.webp",
+      "offline": "0007-offset-offline.webp"
+    },
+    {
+      "file": "0008-entrance.png",
+      "scene": 8,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9207459207459208,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0008-entrance-rgb.webp",
+      "ensemble": "0008-entrance-ensemble.webp",
+      "previous": "0008-entrance-previous.webp",
+      "offline": "0008-entrance-offline.webp"
+    },
+    {
+      "file": "0008-offset.png",
+      "scene": 8,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9338235294117647,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0008-offset-rgb.webp",
+      "ensemble": "0008-offset-ensemble.webp",
+      "previous": "0008-offset-previous.webp",
+      "offline": "0008-offset-offline.webp"
+    },
+    {
+      "file": "0009-entrance.png",
+      "scene": 9,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7191489361702128,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0009-entrance-rgb.webp",
+      "ensemble": "0009-entrance-ensemble.webp",
+      "previous": "0009-entrance-previous.webp",
+      "offline": "0009-entrance-offline.webp"
+    },
+    {
+      "file": "0009-offset.png",
+      "scene": 9,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8669642857142857,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0009-offset-rgb.webp",
+      "ensemble": "0009-offset-ensemble.webp",
+      "previous": "0009-offset-previous.webp",
+      "offline": "0009-offset-offline.webp"
+    },
+    {
+      "file": "0010-entrance.png",
+      "scene": 10,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.3574468085106383,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0010-entrance-rgb.webp",
+      "ensemble": "0010-entrance-ensemble.webp",
+      "previous": "0010-entrance-previous.webp",
+      "offline": "0010-entrance-offline.webp"
+    },
+    {
+      "file": "0010-offset.png",
+      "scene": 10,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8059701492537313,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0010-offset-rgb.webp",
+      "ensemble": "0010-offset-ensemble.webp",
+      "previous": "0010-offset-previous.webp",
+      "offline": "0010-offset-offline.webp"
+    },
+    {
+      "file": "0011-entrance.png",
+      "scene": 11,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.6345679012345679,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0011-entrance-rgb.webp",
+      "ensemble": "0011-entrance-ensemble.webp",
+      "previous": "0011-entrance-previous.webp",
+      "offline": "0011-entrance-offline.webp"
+    },
+    {
+      "file": "0011-offset.png",
+      "scene": 11,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_cut_by_window",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0011-offset-rgb.webp",
+      "ensemble": "0011-offset-ensemble.webp",
+      "previous": "0011-offset-previous.webp",
+      "offline": "0011-offset-offline.webp"
+    },
+    {
+      "file": "0012-entrance.png",
+      "scene": 12,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.6864608076009501,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0012-entrance-rgb.webp",
+      "ensemble": "0012-entrance-ensemble.webp",
+      "previous": "0012-entrance-previous.webp",
+      "offline": "0012-entrance-offline.webp"
+    },
+    {
+      "file": "0012-offset.png",
+      "scene": 12,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0012-offset-rgb.webp",
+      "ensemble": "0012-offset-ensemble.webp",
+      "previous": "0012-offset-previous.webp",
+      "offline": "0012-offset-offline.webp"
+    },
+    {
+      "file": "0013-entrance.png",
+      "scene": 13,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9096774193548387,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0013-entrance-rgb.webp",
+      "ensemble": "0013-entrance-ensemble.webp",
+      "previous": "0013-entrance-previous.webp",
+      "offline": "0013-entrance-offline.webp"
+    },
+    {
+      "file": "0013-offset.png",
+      "scene": 13,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.6470588235294118,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0013-offset-rgb.webp",
+      "ensemble": "0013-offset-ensemble.webp",
+      "previous": "0013-offset-previous.webp",
+      "offline": "0013-offset-offline.webp"
+    },
+    {
+      "file": "0014-entrance.png",
+      "scene": 14,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8137510879025239,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0014-entrance-rgb.webp",
+      "ensemble": "0014-entrance-ensemble.webp",
+      "previous": "0014-entrance-previous.webp",
+      "offline": "0014-entrance-offline.webp"
+    },
+    {
+      "file": "0014-offset.png",
+      "scene": 14,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9835039817974972,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0014-offset-rgb.webp",
+      "ensemble": "0014-offset-ensemble.webp",
+      "previous": "0014-offset-previous.webp",
+      "offline": "0014-offset-offline.webp"
+    },
+    {
+      "file": "0015-entrance.png",
+      "scene": 15,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9402985074626866,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0015-entrance-rgb.webp",
+      "ensemble": "0015-entrance-ensemble.webp",
+      "previous": "0015-entrance-previous.webp",
+      "offline": "0015-entrance-offline.webp"
+    },
+    {
+      "file": "0015-offset.png",
+      "scene": 15,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.982247403210576,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0015-offset-rgb.webp",
+      "ensemble": "0015-offset-ensemble.webp",
+      "previous": "0015-offset-previous.webp",
+      "offline": "0015-offset-offline.webp"
+    },
+    {
+      "file": "0016-entrance.png",
+      "scene": 16,
+      "condition": "empty",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0016-entrance-rgb.webp",
+      "ensemble": "0016-entrance-ensemble.webp",
+      "previous": "0016-entrance-previous.webp",
+      "offline": "0016-entrance-offline.webp"
+    },
+    {
+      "file": "0016-offset.png",
+      "scene": 16,
+      "condition": "empty",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0016-offset-rgb.webp",
+      "ensemble": "0016-offset-ensemble.webp",
+      "previous": "0016-offset-previous.webp",
+      "offline": "0016-offset-offline.webp"
+    },
+    {
+      "file": "0017-entrance.png",
+      "scene": 17,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7503217503217503,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0017-entrance-rgb.webp",
+      "ensemble": "0017-entrance-ensemble.webp",
+      "previous": "0017-entrance-previous.webp",
+      "offline": "0017-entrance-offline.webp"
+    },
+    {
+      "file": "0017-offset.png",
+      "scene": 17,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9402017291066282,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0017-offset-rgb.webp",
+      "ensemble": "0017-offset-ensemble.webp",
+      "previous": "0017-offset-previous.webp",
+      "offline": "0017-offset-offline.webp"
+    },
+    {
+      "file": "0018-entrance.png",
+      "scene": 18,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.925343811394892,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0018-entrance-rgb.webp",
+      "ensemble": "0018-entrance-ensemble.webp",
+      "previous": "0018-entrance-previous.webp",
+      "offline": "0018-entrance-offline.webp"
+    },
+    {
+      "file": "0018-offset.png",
+      "scene": 18,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.983140655105973,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0018-offset-rgb.webp",
+      "ensemble": "0018-offset-ensemble.webp",
+      "previous": "0018-offset-previous.webp",
+      "offline": "0018-offset-offline.webp"
+    },
+    {
+      "file": "0019-entrance.png",
+      "scene": 19,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9340576995129262,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0019-entrance-rgb.webp",
+      "ensemble": "0019-entrance-ensemble.webp",
+      "previous": "0019-entrance-previous.webp",
+      "offline": "0019-entrance-offline.webp"
+    },
+    {
+      "file": "0019-offset.png",
+      "scene": 19,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9841826103428679,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0019-offset-rgb.webp",
+      "ensemble": "0019-offset-ensemble.webp",
+      "previous": "0019-offset-previous.webp",
+      "offline": "0019-offset-offline.webp"
+    },
+    {
+      "file": "0020-entrance.png",
+      "scene": 20,
+      "condition": "absent_cable",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0020-entrance-rgb.webp",
+      "ensemble": "0020-entrance-ensemble.webp",
+      "previous": "0020-entrance-previous.webp",
+      "offline": "0020-entrance-offline.webp"
+    },
+    {
+      "file": "0020-offset.png",
+      "scene": 20,
+      "condition": "absent_cable",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0020-offset-rgb.webp",
+      "ensemble": "0020-offset-ensemble.webp",
+      "previous": "0020-offset-previous.webp",
+      "offline": "0020-offset-offline.webp"
+    },
+    {
+      "file": "0021-entrance.png",
+      "scene": 21,
+      "condition": "dim",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.4493927125506073,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0021-entrance-rgb.webp",
+      "ensemble": "0021-entrance-ensemble.webp",
+      "previous": "0021-entrance-previous.webp",
+      "offline": "0021-entrance-offline.webp"
+    },
+    {
+      "file": "0021-offset.png",
+      "scene": 21,
+      "condition": "dim",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9183266932270916,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0021-offset-rgb.webp",
+      "ensemble": "0021-offset-ensemble.webp",
+      "previous": "0021-offset-previous.webp",
+      "offline": "0021-offset-offline.webp"
+    },
+    {
+      "file": "0022-entrance.png",
+      "scene": 22,
+      "condition": "bright",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.920303605313093,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0022-entrance-rgb.webp",
+      "ensemble": "0022-entrance-ensemble.webp",
+      "previous": "0022-entrance-previous.webp",
+      "offline": "0022-entrance-offline.webp"
+    },
+    {
+      "file": "0022-offset.png",
+      "scene": 22,
+      "condition": "bright",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9279538904899135,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0022-offset-rgb.webp",
+      "ensemble": "0022-offset-ensemble.webp",
+      "previous": "0022-offset-previous.webp",
+      "offline": "0022-offset-offline.webp"
+    },
+    {
+      "file": "0023-entrance.png",
+      "scene": 23,
+      "condition": "empty",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0023-entrance-rgb.webp",
+      "ensemble": "0023-entrance-ensemble.webp",
+      "previous": "0023-entrance-previous.webp",
+      "offline": "0023-entrance-offline.webp"
+    },
+    {
+      "file": "0023-offset.png",
+      "scene": 23,
+      "condition": "empty",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0023-offset-rgb.webp",
+      "ensemble": "0023-offset-ensemble.webp",
+      "previous": "0023-offset-previous.webp",
+      "offline": "0023-offset-offline.webp"
+    },
+    {
+      "file": "0024-entrance.png",
+      "scene": 24,
+      "condition": "absent_board",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0024-entrance-rgb.webp",
+      "ensemble": "0024-entrance-ensemble.webp",
+      "previous": "0024-entrance-previous.webp",
+      "offline": "0024-entrance-offline.webp"
+    },
+    {
+      "file": "0024-offset.png",
+      "scene": 24,
+      "condition": "absent_board",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0024-offset-rgb.webp",
+      "ensemble": "0024-offset-ensemble.webp",
+      "previous": "0024-offset-previous.webp",
+      "offline": "0024-offset-offline.webp"
+    },
+    {
+      "file": "0025-entrance.png",
+      "scene": 25,
+      "condition": "large_offset",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8138297872340425,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0025-entrance-rgb.webp",
+      "ensemble": "0025-entrance-ensemble.webp",
+      "previous": "0025-entrance-previous.webp",
+      "offline": "0025-entrance-offline.webp"
+    },
+    {
+      "file": "0025-offset.png",
+      "scene": 25,
+      "condition": "large_offset",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9372623574144486,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0025-offset-rgb.webp",
+      "ensemble": "0025-offset-ensemble.webp",
+      "previous": "0025-offset-previous.webp",
+      "offline": "0025-offset-offline.webp"
+    },
+    {
+      "file": "0026-entrance.png",
+      "scene": 26,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8155339805825242,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0026-entrance-rgb.webp",
+      "ensemble": "0026-entrance-ensemble.webp",
+      "previous": "0026-entrance-previous.webp",
+      "offline": "0026-entrance-offline.webp"
+    },
+    {
+      "file": "0026-offset.png",
+      "scene": 26,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9066455696202531,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0026-offset-rgb.webp",
+      "ensemble": "0026-offset-ensemble.webp",
+      "previous": "0026-offset-previous.webp",
+      "offline": "0026-offset-offline.webp"
+    },
+    {
+      "file": "0027-entrance.png",
+      "scene": 27,
+      "condition": "large_offset",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8742138364779874,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0027-entrance-rgb.webp",
+      "ensemble": "0027-entrance-ensemble.webp",
+      "previous": "0027-entrance-previous.webp",
+      "offline": "0027-entrance-offline.webp"
+    },
+    {
+      "file": "0027-offset.png",
+      "scene": 27,
+      "condition": "large_offset",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_cut_by_window",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0027-offset-rgb.webp",
+      "ensemble": "0027-offset-ensemble.webp",
+      "previous": "0027-offset-previous.webp",
+      "offline": "0027-offset-offline.webp"
+    },
+    {
+      "file": "0028-entrance.png",
+      "scene": 28,
+      "condition": "absent_cable",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0028-entrance-rgb.webp",
+      "ensemble": "0028-entrance-ensemble.webp",
+      "previous": "0028-entrance-previous.webp",
+      "offline": "0028-entrance-offline.webp"
+    },
+    {
+      "file": "0028-offset.png",
+      "scene": 28,
+      "condition": "absent_cable",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0028-offset-rgb.webp",
+      "ensemble": "0028-offset-ensemble.webp",
+      "previous": "0028-offset-previous.webp",
+      "offline": "0028-offset-offline.webp"
+    },
+    {
+      "file": "0029-entrance.png",
+      "scene": 29,
+      "condition": "blur",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7057793345008757,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0029-entrance-rgb.webp",
+      "ensemble": "0029-entrance-ensemble.webp",
+      "previous": "0029-entrance-previous.webp",
+      "offline": "0029-entrance-offline.webp"
+    },
+    {
+      "file": "0029-offset.png",
+      "scene": 29,
+      "condition": "blur",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.953977709454266,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0029-offset-rgb.webp",
+      "ensemble": "0029-offset-ensemble.webp",
+      "previous": "0029-offset-previous.webp",
+      "offline": "0029-offset-offline.webp"
+    },
+    {
+      "file": "0030-entrance.png",
+      "scene": 30,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9564056939501779,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0030-entrance-rgb.webp",
+      "ensemble": "0030-entrance-ensemble.webp",
+      "previous": "0030-entrance-previous.webp",
+      "offline": "0030-entrance-offline.webp"
+    },
+    {
+      "file": "0030-offset.png",
+      "scene": 30,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9748614410134601,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0030-offset-rgb.webp",
+      "ensemble": "0030-offset-ensemble.webp",
+      "previous": "0030-offset-previous.webp",
+      "offline": "0030-offset-offline.webp"
+    },
+    {
+      "file": "0031-entrance.png",
+      "scene": 31,
+      "condition": "large_offset",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5273311897106109,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0031-entrance-rgb.webp",
+      "ensemble": "0031-entrance-ensemble.webp",
+      "previous": "0031-entrance-previous.webp",
+      "offline": "0031-entrance-offline.webp"
+    },
+    {
+      "file": "0031-offset.png",
+      "scene": 31,
+      "condition": "large_offset",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0031-offset-rgb.webp",
+      "ensemble": "0031-offset-ensemble.webp",
+      "previous": "0031-offset-previous.webp",
+      "offline": "0031-offset-offline.webp"
+    },
+    {
+      "file": "0032-entrance.png",
+      "scene": 32,
+      "condition": "bright",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.6433333333333333,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0032-entrance-rgb.webp",
+      "ensemble": "0032-entrance-ensemble.webp",
+      "previous": "0032-entrance-previous.webp",
+      "offline": "0032-entrance-offline.webp"
+    },
+    {
+      "file": "0032-offset.png",
+      "scene": 32,
+      "condition": "bright",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9706970404984424,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0032-offset-rgb.webp",
+      "ensemble": "0032-offset-ensemble.webp",
+      "previous": "0032-offset-previous.webp",
+      "offline": "0032-offset-offline.webp"
+    },
+    {
+      "file": "0033-entrance.png",
+      "scene": 33,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7316239316239316,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0033-entrance-rgb.webp",
+      "ensemble": "0033-entrance-ensemble.webp",
+      "previous": "0033-entrance-previous.webp",
+      "offline": "0033-entrance-offline.webp"
+    },
+    {
+      "file": "0033-offset.png",
+      "scene": 33,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9575315195753152,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0033-offset-rgb.webp",
+      "ensemble": "0033-offset-ensemble.webp",
+      "previous": "0033-offset-previous.webp",
+      "offline": "0033-offset-offline.webp"
+    },
+    {
+      "file": "0034-entrance.png",
+      "scene": 34,
+      "condition": "tool_occlusion",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8096135721017907,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0034-entrance-rgb.webp",
+      "ensemble": "0034-entrance-ensemble.webp",
+      "previous": "0034-entrance-previous.webp",
+      "offline": "0034-entrance-offline.webp"
+    },
+    {
+      "file": "0034-offset.png",
+      "scene": 34,
+      "condition": "tool_occlusion",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9689716312056738,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0034-offset-rgb.webp",
+      "ensemble": "0034-offset-ensemble.webp",
+      "previous": "0034-offset-previous.webp",
+      "offline": "0034-offset-offline.webp"
+    },
+    {
+      "file": "0035-entrance.png",
+      "scene": 35,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8697394789579158,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0035-entrance-rgb.webp",
+      "ensemble": "0035-entrance-ensemble.webp",
+      "previous": "0035-entrance-previous.webp",
+      "offline": "0035-entrance-offline.webp"
+    },
+    {
+      "file": "0035-offset.png",
+      "scene": 35,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.904126213592233,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0035-offset-rgb.webp",
+      "ensemble": "0035-offset-ensemble.webp",
+      "previous": "0035-offset-previous.webp",
+      "offline": "0035-offset-offline.webp"
+    },
+    {
+      "file": "0036-entrance.png",
+      "scene": 36,
+      "condition": "absent_board",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0036-entrance-rgb.webp",
+      "ensemble": "0036-entrance-ensemble.webp",
+      "previous": "0036-entrance-previous.webp",
+      "offline": "0036-entrance-offline.webp"
+    },
+    {
+      "file": "0036-offset.png",
+      "scene": 36,
+      "condition": "absent_board",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0036-offset-rgb.webp",
+      "ensemble": "0036-offset-ensemble.webp",
+      "previous": "0036-offset-previous.webp",
+      "offline": "0036-offset-offline.webp"
+    },
+    {
+      "file": "0037-entrance.png",
+      "scene": 37,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5495867768595041,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0037-entrance-rgb.webp",
+      "ensemble": "0037-entrance-ensemble.webp",
+      "previous": "0037-entrance-previous.webp",
+      "offline": "0037-entrance-offline.webp"
+    },
+    {
+      "file": "0037-offset.png",
+      "scene": 37,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9745222929936306,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0037-offset-rgb.webp",
+      "ensemble": "0037-offset-ensemble.webp",
+      "previous": "0037-offset-previous.webp",
+      "offline": "0037-offset-offline.webp"
+    },
+    {
+      "file": "0038-entrance.png",
+      "scene": 38,
+      "condition": "absent_board",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0038-entrance-rgb.webp",
+      "ensemble": "0038-entrance-ensemble.webp",
+      "previous": "0038-entrance-previous.webp",
+      "offline": "0038-entrance-offline.webp"
+    },
+    {
+      "file": "0038-offset.png",
+      "scene": 38,
+      "condition": "absent_board",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0038-offset-rgb.webp",
+      "ensemble": "0038-offset-ensemble.webp",
+      "previous": "0038-offset-previous.webp",
+      "offline": "0038-offset-offline.webp"
+    },
+    {
+      "file": "0039-entrance.png",
+      "scene": 39,
+      "condition": "empty",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0039-entrance-rgb.webp",
+      "ensemble": "0039-entrance-ensemble.webp",
+      "previous": "0039-entrance-previous.webp",
+      "offline": "0039-entrance-offline.webp"
+    },
+    {
+      "file": "0039-offset.png",
+      "scene": 39,
+      "condition": "empty",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0039-offset-rgb.webp",
+      "ensemble": "0039-offset-ensemble.webp",
+      "previous": "0039-offset-previous.webp",
+      "offline": "0039-offset-offline.webp"
+    },
+    {
+      "file": "0040-entrance.png",
+      "scene": 40,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8326585695006747,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0040-entrance-rgb.webp",
+      "ensemble": "0040-entrance-ensemble.webp",
+      "previous": "0040-entrance-previous.webp",
+      "offline": "0040-entrance-offline.webp"
+    },
+    {
+      "file": "0040-offset.png",
+      "scene": 40,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9014675052410901,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0040-offset-rgb.webp",
+      "ensemble": "0040-offset-ensemble.webp",
+      "previous": "0040-offset-previous.webp",
+      "offline": "0040-offset-offline.webp"
+    },
+    {
+      "file": "0041-entrance.png",
+      "scene": 41,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8590425531914894,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0041-entrance-rgb.webp",
+      "ensemble": "0041-entrance-ensemble.webp",
+      "previous": "0041-entrance-previous.webp",
+      "offline": "0041-entrance-offline.webp"
+    },
+    {
+      "file": "0041-offset.png",
+      "scene": 41,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0041-offset-rgb.webp",
+      "ensemble": "0041-offset-ensemble.webp",
+      "previous": "0041-offset-previous.webp",
+      "offline": "0041-offset-offline.webp"
+    },
+    {
+      "file": "0042-entrance.png",
+      "scene": 42,
+      "condition": "dim",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7607843137254902,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0042-entrance-rgb.webp",
+      "ensemble": "0042-entrance-ensemble.webp",
+      "previous": "0042-entrance-previous.webp",
+      "offline": "0042-entrance-offline.webp"
+    },
+    {
+      "file": "0042-offset.png",
+      "scene": 42,
+      "condition": "dim",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8743169398907104,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0042-offset-rgb.webp",
+      "ensemble": "0042-offset-ensemble.webp",
+      "previous": "0042-offset-previous.webp",
+      "offline": "0042-offset-offline.webp"
+    },
+    {
+      "file": "0043-entrance.png",
+      "scene": 43,
+      "condition": "empty",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0043-entrance-rgb.webp",
+      "ensemble": "0043-entrance-ensemble.webp",
+      "previous": "0043-entrance-previous.webp",
+      "offline": "0043-entrance-offline.webp"
+    },
+    {
+      "file": "0043-offset.png",
+      "scene": 43,
+      "condition": "empty",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0043-offset-rgb.webp",
+      "ensemble": "0043-offset-ensemble.webp",
+      "previous": "0043-offset-previous.webp",
+      "offline": "0043-offset-offline.webp"
+    },
+    {
+      "file": "0044-entrance.png",
+      "scene": 44,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9240924092409241,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0044-entrance-rgb.webp",
+      "ensemble": "0044-entrance-ensemble.webp",
+      "previous": "0044-entrance-previous.webp",
+      "offline": "0044-entrance-offline.webp"
+    },
+    {
+      "file": "0044-offset.png",
+      "scene": 44,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9848582891160864,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0044-offset-rgb.webp",
+      "ensemble": "0044-offset-ensemble.webp",
+      "previous": "0044-offset-previous.webp",
+      "offline": "0044-offset-offline.webp"
+    },
+    {
+      "file": "0045-entrance.png",
+      "scene": 45,
+      "condition": "bright",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9354330708661417,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0045-entrance-rgb.webp",
+      "ensemble": "0045-entrance-ensemble.webp",
+      "previous": "0045-entrance-previous.webp",
+      "offline": "0045-entrance-offline.webp"
+    },
+    {
+      "file": "0045-offset.png",
+      "scene": 45,
+      "condition": "bright",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9416846652267818,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0045-offset-rgb.webp",
+      "ensemble": "0045-offset-ensemble.webp",
+      "previous": "0045-offset-previous.webp",
+      "offline": "0045-offset-offline.webp"
+    },
+    {
+      "file": "0046-entrance.png",
+      "scene": 46,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7965451055662188,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0046-entrance-rgb.webp",
+      "ensemble": "0046-entrance-ensemble.webp",
+      "previous": "0046-entrance-previous.webp",
+      "offline": "0046-entrance-offline.webp"
+    },
+    {
+      "file": "0046-offset.png",
+      "scene": 46,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9667089985486212,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0046-offset-rgb.webp",
+      "ensemble": "0046-offset-ensemble.webp",
+      "previous": "0046-offset-previous.webp",
+      "offline": "0046-offset-offline.webp"
+    },
+    {
+      "file": "0047-entrance.png",
+      "scene": 47,
+      "condition": "large_offset",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8721461187214612,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0047-entrance-rgb.webp",
+      "ensemble": "0047-entrance-ensemble.webp",
+      "previous": "0047-entrance-previous.webp",
+      "offline": "0047-entrance-offline.webp"
+    },
+    {
+      "file": "0047-offset.png",
+      "scene": 47,
+      "condition": "large_offset",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8603642671292281,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0047-offset-rgb.webp",
+      "ensemble": "0047-offset-ensemble.webp",
+      "previous": "0047-offset-previous.webp",
+      "offline": "0047-offset-offline.webp"
+    },
+    {
+      "file": "0048-entrance.png",
+      "scene": 48,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8528708133971292,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0048-entrance-rgb.webp",
+      "ensemble": "0048-entrance-ensemble.webp",
+      "previous": "0048-entrance-previous.webp",
+      "offline": "0048-entrance-offline.webp"
+    },
+    {
+      "file": "0048-offset.png",
+      "scene": 48,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8805970149253731,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0048-offset-rgb.webp",
+      "ensemble": "0048-offset-ensemble.webp",
+      "previous": "0048-offset-previous.webp",
+      "offline": "0048-offset-offline.webp"
+    },
+    {
+      "file": "0049-entrance.png",
+      "scene": 49,
+      "condition": "tool_occlusion",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.543859649122807,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0049-entrance-rgb.webp",
+      "ensemble": "0049-entrance-ensemble.webp",
+      "previous": "0049-entrance-previous.webp",
+      "offline": "0049-entrance-offline.webp"
+    },
+    {
+      "file": "0049-offset.png",
+      "scene": 49,
+      "condition": "tool_occlusion",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7988505747126436,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0049-offset-rgb.webp",
+      "ensemble": "0049-offset-ensemble.webp",
+      "previous": "0049-offset-previous.webp",
+      "offline": "0049-offset-offline.webp"
+    },
+    {
+      "file": "0050-entrance.png",
+      "scene": 50,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8250825082508251,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0050-entrance-rgb.webp",
+      "ensemble": "0050-entrance-ensemble.webp",
+      "previous": "0050-entrance-previous.webp",
+      "offline": "0050-entrance-offline.webp"
+    },
+    {
+      "file": "0050-offset.png",
+      "scene": 50,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9588550983899821,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0050-offset-rgb.webp",
+      "ensemble": "0050-offset-ensemble.webp",
+      "previous": "0050-offset-previous.webp",
+      "offline": "0050-offset-offline.webp"
+    },
+    {
+      "file": "0051-entrance.png",
+      "scene": 51,
+      "condition": "blur",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7634194831013916,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0051-entrance-rgb.webp",
+      "ensemble": "0051-entrance-ensemble.webp",
+      "previous": "0051-entrance-previous.webp",
+      "offline": "0051-entrance-offline.webp"
+    },
+    {
+      "file": "0051-offset.png",
+      "scene": 51,
+      "condition": "blur",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9413489736070382,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0051-offset-rgb.webp",
+      "ensemble": "0051-offset-ensemble.webp",
+      "previous": "0051-offset-previous.webp",
+      "offline": "0051-offset-offline.webp"
+    },
+    {
+      "file": "0052-entrance.png",
+      "scene": 52,
+      "condition": "large_offset",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5967413441955194,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0052-entrance-rgb.webp",
+      "ensemble": "0052-entrance-ensemble.webp",
+      "previous": "0052-entrance-previous.webp",
+      "offline": "0052-entrance-offline.webp"
+    },
+    {
+      "file": "0052-offset.png",
+      "scene": 52,
+      "condition": "large_offset",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9205526770293609,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0052-offset-rgb.webp",
+      "ensemble": "0052-offset-ensemble.webp",
+      "previous": "0052-offset-previous.webp",
+      "offline": "0052-offset-offline.webp"
+    },
+    {
+      "file": "0053-entrance.png",
+      "scene": 53,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8824404761904762,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0053-entrance-rgb.webp",
+      "ensemble": "0053-entrance-ensemble.webp",
+      "previous": "0053-entrance-previous.webp",
+      "offline": "0053-entrance-offline.webp"
+    },
+    {
+      "file": "0053-offset.png",
+      "scene": 53,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9699764705882353,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0053-offset-rgb.webp",
+      "ensemble": "0053-offset-ensemble.webp",
+      "previous": "0053-offset-previous.webp",
+      "offline": "0053-offset-offline.webp"
+    },
+    {
+      "file": "0054-entrance.png",
+      "scene": 54,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8851774530271399,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0054-entrance-rgb.webp",
+      "ensemble": "0054-entrance-ensemble.webp",
+      "previous": "0054-entrance-previous.webp",
+      "offline": "0054-entrance-offline.webp"
+    },
+    {
+      "file": "0054-offset.png",
+      "scene": 54,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9302325581395349,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0054-offset-rgb.webp",
+      "ensemble": "0054-offset-ensemble.webp",
+      "previous": "0054-offset-previous.webp",
+      "offline": "0054-offset-offline.webp"
+    },
+    {
+      "file": "0055-entrance.png",
+      "scene": 55,
+      "condition": "blur",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9075500770416025,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0055-entrance-rgb.webp",
+      "ensemble": "0055-entrance-ensemble.webp",
+      "previous": "0055-entrance-previous.webp",
+      "offline": "0055-entrance-offline.webp"
+    },
+    {
+      "file": "0055-offset.png",
+      "scene": 55,
+      "condition": "blur",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9680023923444976,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0055-offset-rgb.webp",
+      "ensemble": "0055-offset-ensemble.webp",
+      "previous": "0055-offset-previous.webp",
+      "offline": "0055-offset-offline.webp"
+    },
+    {
+      "file": "0056-entrance.png",
+      "scene": 56,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.6892430278884463,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0056-entrance-rgb.webp",
+      "ensemble": "0056-entrance-ensemble.webp",
+      "previous": "0056-entrance-previous.webp",
+      "offline": "0056-entrance-offline.webp"
+    },
+    {
+      "file": "0056-offset.png",
+      "scene": 56,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9538239538239538,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0056-offset-rgb.webp",
+      "ensemble": "0056-offset-ensemble.webp",
+      "previous": "0056-offset-previous.webp",
+      "offline": "0056-offset-offline.webp"
+    },
+    {
+      "file": "0057-entrance.png",
+      "scene": 57,
+      "condition": "empty",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0057-entrance-rgb.webp",
+      "ensemble": "0057-entrance-ensemble.webp",
+      "previous": "0057-entrance-previous.webp",
+      "offline": "0057-entrance-offline.webp"
+    },
+    {
+      "file": "0057-offset.png",
+      "scene": 57,
+      "condition": "empty",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0057-offset-rgb.webp",
+      "ensemble": "0057-offset-ensemble.webp",
+      "previous": "0057-offset-previous.webp",
+      "offline": "0057-offset-offline.webp"
+    },
+    {
+      "file": "0058-entrance.png",
+      "scene": 58,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9014084507042254,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0058-entrance-rgb.webp",
+      "ensemble": "0058-entrance-ensemble.webp",
+      "previous": "0058-entrance-previous.webp",
+      "offline": "0058-entrance-offline.webp"
+    },
+    {
+      "file": "0058-offset.png",
+      "scene": 58,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8313989004276114,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0058-offset-rgb.webp",
+      "ensemble": "0058-offset-ensemble.webp",
+      "previous": "0058-offset-previous.webp",
+      "offline": "0058-offset-offline.webp"
+    },
+    {
+      "file": "0059-entrance.png",
+      "scene": 59,
+      "condition": "bright",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.6941176470588235,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0059-entrance-rgb.webp",
+      "ensemble": "0059-entrance-ensemble.webp",
+      "previous": "0059-entrance-previous.webp",
+      "offline": "0059-entrance-offline.webp"
+    },
+    {
+      "file": "0059-offset.png",
+      "scene": 59,
+      "condition": "bright",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0059-offset-rgb.webp",
+      "ensemble": "0059-offset-ensemble.webp",
+      "previous": "0059-offset-previous.webp",
+      "offline": "0059-offset-offline.webp"
+    },
+    {
+      "file": "0060-entrance.png",
+      "scene": 60,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7644444444444445,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0060-entrance-rgb.webp",
+      "ensemble": "0060-entrance-ensemble.webp",
+      "previous": "0060-entrance-previous.webp",
+      "offline": "0060-entrance-offline.webp"
+    },
+    {
+      "file": "0060-offset.png",
+      "scene": 60,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8310940499040307,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0060-offset-rgb.webp",
+      "ensemble": "0060-offset-ensemble.webp",
+      "previous": "0060-offset-previous.webp",
+      "offline": "0060-offset-offline.webp"
+    },
+    {
+      "file": "0061-entrance.png",
+      "scene": 61,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8903709879116298,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0061-entrance-rgb.webp",
+      "ensemble": "0061-entrance-ensemble.webp",
+      "previous": "0061-entrance-previous.webp",
+      "offline": "0061-entrance-offline.webp"
+    },
+    {
+      "file": "0061-offset.png",
+      "scene": 61,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9686298076923077,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0061-offset-rgb.webp",
+      "ensemble": "0061-offset-ensemble.webp",
+      "previous": "0061-offset-previous.webp",
+      "offline": "0061-offset-offline.webp"
+    },
+    {
+      "file": "0062-entrance.png",
+      "scene": 62,
+      "condition": "dim",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9001814882032668,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0062-entrance-rgb.webp",
+      "ensemble": "0062-entrance-ensemble.webp",
+      "previous": "0062-entrance-previous.webp",
+      "offline": "0062-entrance-offline.webp"
+    },
+    {
+      "file": "0062-offset.png",
+      "scene": 62,
+      "condition": "dim",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9756392375639238,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0062-offset-rgb.webp",
+      "ensemble": "0062-offset-ensemble.webp",
+      "previous": "0062-offset-previous.webp",
+      "offline": "0062-offset-offline.webp"
+    },
+    {
+      "file": "0063-entrance.png",
+      "scene": 63,
+      "condition": "large_offset",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_cut_by_window",
+          "mini_end_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.796969696969697,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0063-entrance-rgb.webp",
+      "ensemble": "0063-entrance-ensemble.webp",
+      "previous": "0063-entrance-previous.webp",
+      "offline": "0063-entrance-offline.webp"
+    },
+    {
+      "file": "0063-offset.png",
+      "scene": 63,
+      "condition": "large_offset",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_cut_by_window",
+          "mini_end_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.983899194959748,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0063-offset-rgb.webp",
+      "ensemble": "0063-offset-ensemble.webp",
+      "previous": "0063-offset-previous.webp",
+      "offline": "0063-offset-offline.webp"
+    },
+    {
+      "file": "0064-entrance.png",
+      "scene": 64,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9486338797814208,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0064-entrance-rgb.webp",
+      "ensemble": "0064-entrance-ensemble.webp",
+      "previous": "0064-entrance-previous.webp",
+      "offline": "0064-entrance-offline.webp"
+    },
+    {
+      "file": "0064-offset.png",
+      "scene": 64,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9825650387950707,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0064-offset-rgb.webp",
+      "ensemble": "0064-offset-ensemble.webp",
+      "previous": "0064-offset-previous.webp",
+      "offline": "0064-offset-offline.webp"
+    },
+    {
+      "file": "0065-entrance.png",
+      "scene": 65,
+      "condition": "dim",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.16666666666666666,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0065-entrance-rgb.webp",
+      "ensemble": "0065-entrance-ensemble.webp",
+      "previous": "0065-entrance-previous.webp",
+      "offline": "0065-entrance-offline.webp"
+    },
+    {
+      "file": "0065-offset.png",
+      "scene": 65,
+      "condition": "dim",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.851985559566787,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0065-offset-rgb.webp",
+      "ensemble": "0065-offset-ensemble.webp",
+      "previous": "0065-offset-previous.webp",
+      "offline": "0065-offset-offline.webp"
+    },
+    {
+      "file": "0066-entrance.png",
+      "scene": 66,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8905908096280087,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0066-entrance-rgb.webp",
+      "ensemble": "0066-entrance-ensemble.webp",
+      "previous": "0066-entrance-previous.webp",
+      "offline": "0066-entrance-offline.webp"
+    },
+    {
+      "file": "0066-offset.png",
+      "scene": 66,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8985039102346141,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0066-offset-rgb.webp",
+      "ensemble": "0066-offset-ensemble.webp",
+      "previous": "0066-offset-previous.webp",
+      "offline": "0066-offset-offline.webp"
+    },
+    {
+      "file": "0067-entrance.png",
+      "scene": 67,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.878727634194831,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0067-entrance-rgb.webp",
+      "ensemble": "0067-entrance-ensemble.webp",
+      "previous": "0067-entrance-previous.webp",
+      "offline": "0067-entrance-offline.webp"
+    },
+    {
+      "file": "0067-offset.png",
+      "scene": 67,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9512195121951219,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0067-offset-rgb.webp",
+      "ensemble": "0067-offset-ensemble.webp",
+      "previous": "0067-offset-previous.webp",
+      "offline": "0067-offset-offline.webp"
+    },
+    {
+      "file": "0068-entrance.png",
+      "scene": 68,
+      "condition": "absent_board",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0068-entrance-rgb.webp",
+      "ensemble": "0068-entrance-ensemble.webp",
+      "previous": "0068-entrance-previous.webp",
+      "offline": "0068-entrance-offline.webp"
+    },
+    {
+      "file": "0068-offset.png",
+      "scene": 68,
+      "condition": "absent_board",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0068-offset-rgb.webp",
+      "ensemble": "0068-offset-ensemble.webp",
+      "previous": "0068-offset-previous.webp",
+      "offline": "0068-offset-offline.webp"
+    },
+    {
+      "file": "0069-entrance.png",
+      "scene": 69,
+      "condition": "empty",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0069-entrance-rgb.webp",
+      "ensemble": "0069-entrance-ensemble.webp",
+      "previous": "0069-entrance-previous.webp",
+      "offline": "0069-entrance-offline.webp"
+    },
+    {
+      "file": "0069-offset.png",
+      "scene": 69,
+      "condition": "empty",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0069-offset-rgb.webp",
+      "ensemble": "0069-offset-ensemble.webp",
+      "previous": "0069-offset-previous.webp",
+      "offline": "0069-offset-offline.webp"
+    },
+    {
+      "file": "0070-entrance.png",
+      "scene": 70,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9067796610169492,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0070-entrance-rgb.webp",
+      "ensemble": "0070-entrance-ensemble.webp",
+      "previous": "0070-entrance-previous.webp",
+      "offline": "0070-entrance-offline.webp"
+    },
+    {
+      "file": "0070-offset.png",
+      "scene": 70,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9403669724770642,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0070-offset-rgb.webp",
+      "ensemble": "0070-offset-ensemble.webp",
+      "previous": "0070-offset-previous.webp",
+      "offline": "0070-offset-offline.webp"
+    },
+    {
+      "file": "0071-entrance.png",
+      "scene": 71,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.683,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0071-entrance-rgb.webp",
+      "ensemble": "0071-entrance-ensemble.webp",
+      "previous": "0071-entrance-previous.webp",
+      "offline": "0071-entrance-offline.webp"
+    },
+    {
+      "file": "0071-offset.png",
+      "scene": 71,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0071-offset-rgb.webp",
+      "ensemble": "0071-offset-ensemble.webp",
+      "previous": "0071-offset-previous.webp",
+      "offline": "0071-offset-offline.webp"
+    },
+    {
+      "file": "0072-entrance.png",
+      "scene": 72,
+      "condition": "dim",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9078014184397163,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0072-entrance-rgb.webp",
+      "ensemble": "0072-entrance-ensemble.webp",
+      "previous": "0072-entrance-previous.webp",
+      "offline": "0072-entrance-offline.webp"
+    },
+    {
+      "file": "0072-offset.png",
+      "scene": 72,
+      "condition": "dim",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9623416027128324,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0072-offset-rgb.webp",
+      "ensemble": "0072-offset-ensemble.webp",
+      "previous": "0072-offset-previous.webp",
+      "offline": "0072-offset-offline.webp"
+    },
+    {
+      "file": "0073-entrance.png",
+      "scene": 73,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9249394673123487,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0073-entrance-rgb.webp",
+      "ensemble": "0073-entrance-ensemble.webp",
+      "previous": "0073-entrance-previous.webp",
+      "offline": "0073-entrance-offline.webp"
+    },
+    {
+      "file": "0073-offset.png",
+      "scene": 73,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9784145887606996,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0073-offset-rgb.webp",
+      "ensemble": "0073-offset-ensemble.webp",
+      "previous": "0073-offset-previous.webp",
+      "offline": "0073-offset-offline.webp"
+    },
+    {
+      "file": "0074-entrance.png",
+      "scene": 74,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.732824427480916,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0074-entrance-rgb.webp",
+      "ensemble": "0074-entrance-ensemble.webp",
+      "previous": "0074-entrance-previous.webp",
+      "offline": "0074-entrance-offline.webp"
+    },
+    {
+      "file": "0074-offset.png",
+      "scene": 74,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8582677165354331,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0074-offset-rgb.webp",
+      "ensemble": "0074-offset-ensemble.webp",
+      "previous": "0074-offset-previous.webp",
+      "offline": "0074-offset-offline.webp"
+    },
+    {
+      "file": "0075-entrance.png",
+      "scene": 75,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.4839124839124839,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0075-entrance-rgb.webp",
+      "ensemble": "0075-entrance-ensemble.webp",
+      "previous": "0075-entrance-previous.webp",
+      "offline": "0075-entrance-offline.webp"
+    },
+    {
+      "file": "0075-offset.png",
+      "scene": 75,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9450757575757576,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0075-offset-rgb.webp",
+      "ensemble": "0075-offset-ensemble.webp",
+      "previous": "0075-offset-previous.webp",
+      "offline": "0075-offset-offline.webp"
+    },
+    {
+      "file": "0076-entrance.png",
+      "scene": 76,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9184668989547038,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0076-entrance-rgb.webp",
+      "ensemble": "0076-entrance-ensemble.webp",
+      "previous": "0076-entrance-previous.webp",
+      "offline": "0076-entrance-offline.webp"
+    },
+    {
+      "file": "0076-offset.png",
+      "scene": 76,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.980219111381619,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0076-offset-rgb.webp",
+      "ensemble": "0076-offset-ensemble.webp",
+      "previous": "0076-offset-previous.webp",
+      "offline": "0076-offset-offline.webp"
+    },
+    {
+      "file": "0077-entrance.png",
+      "scene": 77,
+      "condition": "large_offset",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7746478873239436,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0077-entrance-rgb.webp",
+      "ensemble": "0077-entrance-ensemble.webp",
+      "previous": "0077-entrance-previous.webp",
+      "offline": "0077-entrance-offline.webp"
+    },
+    {
+      "file": "0077-offset.png",
+      "scene": 77,
+      "condition": "large_offset",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.775,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0077-offset-rgb.webp",
+      "ensemble": "0077-offset-ensemble.webp",
+      "previous": "0077-offset-previous.webp",
+      "offline": "0077-offset-offline.webp"
+    },
+    {
+      "file": "0078-entrance.png",
+      "scene": 78,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7081545064377682,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0078-entrance-rgb.webp",
+      "ensemble": "0078-entrance-ensemble.webp",
+      "previous": "0078-entrance-previous.webp",
+      "offline": "0078-entrance-offline.webp"
+    },
+    {
+      "file": "0078-offset.png",
+      "scene": 78,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8205128205128205,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0078-offset-rgb.webp",
+      "ensemble": "0078-offset-ensemble.webp",
+      "previous": "0078-offset-previous.webp",
+      "offline": "0078-offset-offline.webp"
+    },
+    {
+      "file": "0079-entrance.png",
+      "scene": 79,
+      "condition": "empty",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0079-entrance-rgb.webp",
+      "ensemble": "0079-entrance-ensemble.webp",
+      "previous": "0079-entrance-previous.webp",
+      "offline": "0079-entrance-offline.webp"
+    },
+    {
+      "file": "0079-offset.png",
+      "scene": 79,
+      "condition": "empty",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0079-offset-rgb.webp",
+      "ensemble": "0079-offset-ensemble.webp",
+      "previous": "0079-offset-previous.webp",
+      "offline": "0079-offset-offline.webp"
+    },
+    {
+      "file": "0080-entrance.png",
+      "scene": 80,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8597122302158273,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0080-entrance-rgb.webp",
+      "ensemble": "0080-entrance-ensemble.webp",
+      "previous": "0080-entrance-previous.webp",
+      "offline": "0080-entrance-offline.webp"
+    },
+    {
+      "file": "0080-offset.png",
+      "scene": 80,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9334637964774951,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0080-offset-rgb.webp",
+      "ensemble": "0080-offset-ensemble.webp",
+      "previous": "0080-offset-previous.webp",
+      "offline": "0080-offset-offline.webp"
+    },
+    {
+      "file": "0081-entrance.png",
+      "scene": 81,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7997594708358389,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0081-entrance-rgb.webp",
+      "ensemble": "0081-entrance-ensemble.webp",
+      "previous": "0081-entrance-previous.webp",
+      "offline": "0081-entrance-offline.webp"
+    },
+    {
+      "file": "0081-offset.png",
+      "scene": 81,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9447103877453327,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0081-offset-rgb.webp",
+      "ensemble": "0081-offset-ensemble.webp",
+      "previous": "0081-offset-previous.webp",
+      "offline": "0081-offset-offline.webp"
+    },
+    {
+      "file": "0082-entrance.png",
+      "scene": 82,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8549323017408124,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0082-entrance-rgb.webp",
+      "ensemble": "0082-entrance-ensemble.webp",
+      "previous": "0082-entrance-previous.webp",
+      "offline": "0082-entrance-offline.webp"
+    },
+    {
+      "file": "0082-offset.png",
+      "scene": 82,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9352226720647774,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0082-offset-rgb.webp",
+      "ensemble": "0082-offset-ensemble.webp",
+      "previous": "0082-offset-previous.webp",
+      "offline": "0082-offset-offline.webp"
+    },
+    {
+      "file": "0083-entrance.png",
+      "scene": 83,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5058479532163743,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0083-entrance-rgb.webp",
+      "ensemble": "0083-entrance-ensemble.webp",
+      "previous": "0083-entrance-previous.webp",
+      "offline": "0083-entrance-offline.webp"
+    },
+    {
+      "file": "0083-offset.png",
+      "scene": 83,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8516260162601627,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0083-offset-rgb.webp",
+      "ensemble": "0083-offset-ensemble.webp",
+      "previous": "0083-offset-previous.webp",
+      "offline": "0083-offset-offline.webp"
+    },
+    {
+      "file": "0084-entrance.png",
+      "scene": 84,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9298597194388778,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0084-entrance-rgb.webp",
+      "ensemble": "0084-entrance-ensemble.webp",
+      "previous": "0084-entrance-previous.webp",
+      "offline": "0084-entrance-offline.webp"
+    },
+    {
+      "file": "0084-offset.png",
+      "scene": 84,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7831325301204819,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0084-offset-rgb.webp",
+      "ensemble": "0084-offset-ensemble.webp",
+      "previous": "0084-offset-previous.webp",
+      "offline": "0084-offset-offline.webp"
+    },
+    {
+      "file": "0085-entrance.png",
+      "scene": 85,
+      "condition": "bright",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_cut_by_window",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5118733509234829,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0085-entrance-rgb.webp",
+      "ensemble": "0085-entrance-ensemble.webp",
+      "previous": "0085-entrance-previous.webp",
+      "offline": "0085-entrance-offline.webp"
+    },
+    {
+      "file": "0085-offset.png",
+      "scene": 85,
+      "condition": "bright",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7448275862068966,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0085-offset-rgb.webp",
+      "ensemble": "0085-offset-ensemble.webp",
+      "previous": "0085-offset-previous.webp",
+      "offline": "0085-offset-offline.webp"
+    },
+    {
+      "file": "0086-entrance.png",
+      "scene": 86,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8465346534653465,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0086-entrance-rgb.webp",
+      "ensemble": "0086-entrance-ensemble.webp",
+      "previous": "0086-entrance-previous.webp",
+      "offline": "0086-entrance-offline.webp"
+    },
+    {
+      "file": "0086-offset.png",
+      "scene": 86,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9581939799331104,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0086-offset-rgb.webp",
+      "ensemble": "0086-offset-ensemble.webp",
+      "previous": "0086-offset-previous.webp",
+      "offline": "0086-offset-offline.webp"
+    },
+    {
+      "file": "0087-entrance.png",
+      "scene": 87,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.45776566757493187,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0087-entrance-rgb.webp",
+      "ensemble": "0087-entrance-ensemble.webp",
+      "previous": "0087-entrance-previous.webp",
+      "offline": "0087-entrance-offline.webp"
+    },
+    {
+      "file": "0087-offset.png",
+      "scene": 87,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8314121037463977,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0087-offset-rgb.webp",
+      "ensemble": "0087-offset-ensemble.webp",
+      "previous": "0087-offset-previous.webp",
+      "offline": "0087-offset-offline.webp"
+    },
+    {
+      "file": "0088-entrance.png",
+      "scene": 88,
+      "condition": "tool_occlusion",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.6754966887417219,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0088-entrance-rgb.webp",
+      "ensemble": "0088-entrance-ensemble.webp",
+      "previous": "0088-entrance-previous.webp",
+      "offline": "0088-entrance-offline.webp"
+    },
+    {
+      "file": "0088-offset.png",
+      "scene": 88,
+      "condition": "tool_occlusion",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9651764705882353,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0088-offset-rgb.webp",
+      "ensemble": "0088-offset-ensemble.webp",
+      "previous": "0088-offset-previous.webp",
+      "offline": "0088-offset-offline.webp"
+    },
+    {
+      "file": "0089-entrance.png",
+      "scene": 89,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8894806924101198,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0089-entrance-rgb.webp",
+      "ensemble": "0089-entrance-ensemble.webp",
+      "previous": "0089-entrance-previous.webp",
+      "offline": "0089-entrance-offline.webp"
+    },
+    {
+      "file": "0089-offset.png",
+      "scene": 89,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9285714285714286,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0089-offset-rgb.webp",
+      "ensemble": "0089-offset-ensemble.webp",
+      "previous": "0089-offset-previous.webp",
+      "offline": "0089-offset-offline.webp"
+    },
+    {
+      "file": "0090-entrance.png",
+      "scene": 90,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8004626951995373,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0090-entrance-rgb.webp",
+      "ensemble": "0090-entrance-ensemble.webp",
+      "previous": "0090-entrance-previous.webp",
+      "offline": "0090-entrance-offline.webp"
+    },
+    {
+      "file": "0090-offset.png",
+      "scene": 90,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8921488725889704,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0090-offset-rgb.webp",
+      "ensemble": "0090-offset-ensemble.webp",
+      "previous": "0090-offset-previous.webp",
+      "offline": "0090-offset-offline.webp"
+    },
+    {
+      "file": "0091-entrance.png",
+      "scene": 91,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9272967614011897,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0091-entrance-rgb.webp",
+      "ensemble": "0091-entrance-ensemble.webp",
+      "previous": "0091-entrance-previous.webp",
+      "offline": "0091-entrance-offline.webp"
+    },
+    {
+      "file": "0091-offset.png",
+      "scene": 91,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9842051472637741,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0091-offset-rgb.webp",
+      "ensemble": "0091-offset-ensemble.webp",
+      "previous": "0091-offset-previous.webp",
+      "offline": "0091-offset-offline.webp"
+    },
+    {
+      "file": "0092-entrance.png",
+      "scene": 92,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8504464285714286,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0092-entrance-rgb.webp",
+      "ensemble": "0092-entrance-ensemble.webp",
+      "previous": "0092-entrance-previous.webp",
+      "offline": "0092-entrance-offline.webp"
+    },
+    {
+      "file": "0092-offset.png",
+      "scene": 92,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.972972972972973,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0092-offset-rgb.webp",
+      "ensemble": "0092-offset-ensemble.webp",
+      "previous": "0092-offset-previous.webp",
+      "offline": "0092-offset-offline.webp"
+    },
+    {
+      "file": "0093-entrance.png",
+      "scene": 93,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.822550831792976,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0093-entrance-rgb.webp",
+      "ensemble": "0093-entrance-ensemble.webp",
+      "previous": "0093-entrance-previous.webp",
+      "offline": "0093-entrance-offline.webp"
+    },
+    {
+      "file": "0093-offset.png",
+      "scene": 93,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.7414330218068536,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0093-offset-rgb.webp",
+      "ensemble": "0093-offset-ensemble.webp",
+      "previous": "0093-offset-previous.webp",
+      "offline": "0093-offset-offline.webp"
+    },
+    {
+      "file": "0094-entrance.png",
+      "scene": 94,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9583901773533424,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0094-entrance-rgb.webp",
+      "ensemble": "0094-entrance-ensemble.webp",
+      "previous": "0094-entrance-previous.webp",
+      "offline": "0094-entrance-offline.webp"
+    },
+    {
+      "file": "0094-offset.png",
+      "scene": 94,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9819425444596444,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0094-offset-rgb.webp",
+      "ensemble": "0094-offset-ensemble.webp",
+      "previous": "0094-offset-previous.webp",
+      "offline": "0094-offset-offline.webp"
+    },
+    {
+      "file": "0095-entrance.png",
+      "scene": 95,
+      "condition": "tool_occlusion",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9364278506559032,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0095-entrance-rgb.webp",
+      "ensemble": "0095-entrance-ensemble.webp",
+      "previous": "0095-entrance-previous.webp",
+      "offline": "0095-entrance-offline.webp"
+    },
+    {
+      "file": "0095-offset.png",
+      "scene": 95,
+      "condition": "tool_occlusion",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9579037800687286,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0095-offset-rgb.webp",
+      "ensemble": "0095-offset-ensemble.webp",
+      "previous": "0095-offset-previous.webp",
+      "offline": "0095-offset-offline.webp"
+    },
+    {
+      "file": "0096-entrance.png",
+      "scene": 96,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9250871080139372,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0096-entrance-rgb.webp",
+      "ensemble": "0096-entrance-ensemble.webp",
+      "previous": "0096-entrance-previous.webp",
+      "offline": "0096-entrance-offline.webp"
+    },
+    {
+      "file": "0096-offset.png",
+      "scene": 96,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9808118081180812,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0096-offset-rgb.webp",
+      "ensemble": "0096-offset-ensemble.webp",
+      "previous": "0096-offset-previous.webp",
+      "offline": "0096-offset-offline.webp"
+    },
+    {
+      "file": "0097-entrance.png",
+      "scene": 97,
+      "condition": "tool_occlusion",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9321212121212121,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0097-entrance-rgb.webp",
+      "ensemble": "0097-entrance-ensemble.webp",
+      "previous": "0097-entrance-previous.webp",
+      "offline": "0097-entrance-offline.webp"
+    },
+    {
+      "file": "0097-offset.png",
+      "scene": 97,
+      "condition": "tool_occlusion",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9583333333333334,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0097-offset-rgb.webp",
+      "ensemble": "0097-offset-ensemble.webp",
+      "previous": "0097-offset-previous.webp",
+      "offline": "0097-offset-offline.webp"
+    },
+    {
+      "file": "0098-entrance.png",
+      "scene": 98,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5952380952380952,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0098-entrance-rgb.webp",
+      "ensemble": "0098-entrance-ensemble.webp",
+      "previous": "0098-entrance-previous.webp",
+      "offline": "0098-entrance-offline.webp"
+    },
+    {
+      "file": "0098-offset.png",
+      "scene": 98,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9791500875378004,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0098-offset-rgb.webp",
+      "ensemble": "0098-offset-ensemble.webp",
+      "previous": "0098-offset-previous.webp",
+      "offline": "0098-offset-offline.webp"
+    },
+    {
+      "file": "0099-entrance.png",
+      "scene": 99,
+      "condition": "absent_cable",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0099-entrance-rgb.webp",
+      "ensemble": "0099-entrance-ensemble.webp",
+      "previous": "0099-entrance-previous.webp",
+      "offline": "0099-entrance-offline.webp"
+    },
+    {
+      "file": "0099-offset.png",
+      "scene": 99,
+      "condition": "absent_cable",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0099-offset-rgb.webp",
+      "ensemble": "0099-offset-ensemble.webp",
+      "previous": "0099-offset-previous.webp",
+      "offline": "0099-offset-offline.webp"
+    },
+    {
+      "file": "0100-entrance.png",
+      "scene": 100,
+      "condition": "large_yaw",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5656934306569343,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0100-entrance-rgb.webp",
+      "ensemble": "0100-entrance-ensemble.webp",
+      "previous": "0100-entrance-previous.webp",
+      "offline": "0100-entrance-offline.webp"
+    },
+    {
+      "file": "0100-offset.png",
+      "scene": 100,
+      "condition": "large_yaw",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8872135102533173,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0100-offset-rgb.webp",
+      "ensemble": "0100-offset-ensemble.webp",
+      "previous": "0100-offset-previous.webp",
+      "offline": "0100-offset-offline.webp"
+    },
+    {
+      "file": "0101-entrance.png",
+      "scene": 101,
+      "condition": "blur",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8230383973288815,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0101-entrance-rgb.webp",
+      "ensemble": "0101-entrance-ensemble.webp",
+      "previous": "0101-entrance-previous.webp",
+      "offline": "0101-entrance-offline.webp"
+    },
+    {
+      "file": "0101-offset.png",
+      "scene": 101,
+      "condition": "blur",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.940677966101695,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0101-offset-rgb.webp",
+      "ensemble": "0101-offset-ensemble.webp",
+      "previous": "0101-offset-previous.webp",
+      "offline": "0101-offset-offline.webp"
+    },
+    {
+      "file": "0102-entrance.png",
+      "scene": 102,
+      "condition": "bright",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.14468085106382977,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0102-entrance-rgb.webp",
+      "ensemble": "0102-entrance-ensemble.webp",
+      "previous": "0102-entrance-previous.webp",
+      "offline": "0102-entrance-offline.webp"
+    },
+    {
+      "file": "0102-offset.png",
+      "scene": 102,
+      "condition": "bright",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.6744186046511628,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0102-offset-rgb.webp",
+      "ensemble": "0102-offset-ensemble.webp",
+      "previous": "0102-offset-previous.webp",
+      "offline": "0102-offset-offline.webp"
+    },
+    {
+      "file": "0103-entrance.png",
+      "scene": 103,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8397291196388262,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0103-entrance-rgb.webp",
+      "ensemble": "0103-entrance-ensemble.webp",
+      "previous": "0103-entrance-previous.webp",
+      "offline": "0103-entrance-offline.webp"
+    },
+    {
+      "file": "0103-offset.png",
+      "scene": 103,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.815242494226328,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0103-offset-rgb.webp",
+      "ensemble": "0103-offset-ensemble.webp",
+      "previous": "0103-offset-previous.webp",
+      "offline": "0103-offset-offline.webp"
+    },
+    {
+      "file": "0104-entrance.png",
+      "scene": 104,
+      "condition": "blur",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5949895615866388,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0104-entrance-rgb.webp",
+      "ensemble": "0104-entrance-ensemble.webp",
+      "previous": "0104-entrance-previous.webp",
+      "offline": "0104-entrance-offline.webp"
+    },
+    {
+      "file": "0104-offset.png",
+      "scene": 104,
+      "condition": "blur",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8103161397670549,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0104-offset-rgb.webp",
+      "ensemble": "0104-offset-ensemble.webp",
+      "previous": "0104-offset-previous.webp",
+      "offline": "0104-offset-offline.webp"
+    },
+    {
+      "file": "0105-entrance.png",
+      "scene": 105,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8638268156424581,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0105-entrance-rgb.webp",
+      "ensemble": "0105-entrance-ensemble.webp",
+      "previous": "0105-entrance-previous.webp",
+      "offline": "0105-entrance-offline.webp"
+    },
+    {
+      "file": "0105-offset.png",
+      "scene": 105,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9489559164733179,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0105-offset-rgb.webp",
+      "ensemble": "0105-offset-ensemble.webp",
+      "previous": "0105-offset-previous.webp",
+      "offline": "0105-offset-offline.webp"
+    },
+    {
+      "file": "0106-entrance.png",
+      "scene": 106,
+      "condition": "large_offset",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8349788434414669,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0106-entrance-rgb.webp",
+      "ensemble": "0106-entrance-ensemble.webp",
+      "previous": "0106-entrance-previous.webp",
+      "offline": "0106-entrance-offline.webp"
+    },
+    {
+      "file": "0106-offset.png",
+      "scene": 106,
+      "condition": "large_offset",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9312169312169312,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0106-offset-rgb.webp",
+      "ensemble": "0106-offset-ensemble.webp",
+      "previous": "0106-offset-previous.webp",
+      "offline": "0106-offset-offline.webp"
+    },
+    {
+      "file": "0107-entrance.png",
+      "scene": 107,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8645598194130926,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0107-entrance-rgb.webp",
+      "ensemble": "0107-entrance-ensemble.webp",
+      "previous": "0107-entrance-previous.webp",
+      "offline": "0107-entrance-offline.webp"
+    },
+    {
+      "file": "0107-offset.png",
+      "scene": 107,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9444444444444444,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0107-offset-rgb.webp",
+      "ensemble": "0107-offset-ensemble.webp",
+      "previous": "0107-offset-previous.webp",
+      "offline": "0107-offset-offline.webp"
+    },
+    {
+      "file": "0108-entrance.png",
+      "scene": 108,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9288224956063269,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0108-entrance-rgb.webp",
+      "ensemble": "0108-entrance-ensemble.webp",
+      "previous": "0108-entrance-previous.webp",
+      "offline": "0108-entrance-offline.webp"
+    },
+    {
+      "file": "0108-offset.png",
+      "scene": 108,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9685020437605194,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0108-offset-rgb.webp",
+      "ensemble": "0108-offset-ensemble.webp",
+      "previous": "0108-offset-previous.webp",
+      "offline": "0108-offset-offline.webp"
+    },
+    {
+      "file": "0109-entrance.png",
+      "scene": 109,
+      "condition": "large_offset",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5813008130081301,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0109-entrance-rgb.webp",
+      "ensemble": "0109-entrance-ensemble.webp",
+      "previous": "0109-entrance-previous.webp",
+      "offline": "0109-entrance-offline.webp"
+    },
+    {
+      "file": "0109-offset.png",
+      "scene": 109,
+      "condition": "large_offset",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_cut_by_window",
+          "mini_end_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0109-offset-rgb.webp",
+      "ensemble": "0109-offset-ensemble.webp",
+      "previous": "0109-offset-previous.webp",
+      "offline": "0109-offset-offline.webp"
+    },
+    {
+      "file": "0110-entrance.png",
+      "scene": 110,
+      "condition": "absent_board",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0110-entrance-rgb.webp",
+      "ensemble": "0110-entrance-ensemble.webp",
+      "previous": "0110-entrance-previous.webp",
+      "offline": "0110-entrance-offline.webp"
+    },
+    {
+      "file": "0110-offset.png",
+      "scene": 110,
+      "condition": "absent_board",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "connector_too_small_or_missing",
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.0,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0110-offset-rgb.webp",
+      "ensemble": "0110-offset-ensemble.webp",
+      "previous": "0110-offset-previous.webp",
+      "offline": "0110-offset-offline.webp"
+    },
+    {
+      "file": "0111-entrance.png",
+      "scene": 111,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.4546952224052718,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0111-entrance-rgb.webp",
+      "ensemble": "0111-entrance-ensemble.webp",
+      "previous": "0111-entrance-previous.webp",
+      "offline": "0111-entrance-offline.webp"
+    },
+    {
+      "file": "0111-offset.png",
+      "scene": 111,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9782506796662604,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0111-offset-rgb.webp",
+      "ensemble": "0111-offset-ensemble.webp",
+      "previous": "0111-offset-previous.webp",
+      "offline": "0111-offset-offline.webp"
+    },
+    {
+      "file": "0112-entrance.png",
+      "scene": 112,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9394884591391142,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0112-entrance-rgb.webp",
+      "ensemble": "0112-entrance-ensemble.webp",
+      "previous": "0112-entrance-previous.webp",
+      "offline": "0112-entrance-offline.webp"
+    },
+    {
+      "file": "0112-offset.png",
+      "scene": 112,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9835504421412951,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0112-offset-rgb.webp",
+      "ensemble": "0112-offset-ensemble.webp",
+      "previous": "0112-offset-previous.webp",
+      "offline": "0112-offset-offline.webp"
+    },
+    {
+      "file": "0113-entrance.png",
+      "scene": 113,
+      "condition": "blur",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.829730530056263,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0113-entrance-rgb.webp",
+      "ensemble": "0113-entrance-ensemble.webp",
+      "previous": "0113-entrance-previous.webp",
+      "offline": "0113-entrance-offline.webp"
+    },
+    {
+      "file": "0113-offset.png",
+      "scene": 113,
+      "condition": "blur",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9544026568530652,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0113-offset-rgb.webp",
+      "ensemble": "0113-offset-ensemble.webp",
+      "previous": "0113-offset-previous.webp",
+      "offline": "0113-offset-offline.webp"
+    },
+    {
+      "file": "0114-entrance.png",
+      "scene": 114,
+      "condition": "bright",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0114-entrance-rgb.webp",
+      "ensemble": "0114-entrance-ensemble.webp",
+      "previous": "0114-entrance-previous.webp",
+      "offline": "0114-entrance-offline.webp"
+    },
+    {
+      "file": "0114-offset.png",
+      "scene": 114,
+      "condition": "bright",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5862068965517241,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0114-offset-rgb.webp",
+      "ensemble": "0114-offset-ensemble.webp",
+      "previous": "0114-offset-previous.webp",
+      "offline": "0114-offset-offline.webp"
+    },
+    {
+      "file": "0115-entrance.png",
+      "scene": 115,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.604075691411936,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0115-entrance-rgb.webp",
+      "ensemble": "0115-entrance-ensemble.webp",
+      "previous": "0115-entrance-previous.webp",
+      "offline": "0115-entrance-offline.webp"
+    },
+    {
+      "file": "0115-offset.png",
+      "scene": 115,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9564056939501779,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0115-offset-rgb.webp",
+      "ensemble": "0115-offset-ensemble.webp",
+      "previous": "0115-offset-previous.webp",
+      "offline": "0115-offset-offline.webp"
+    },
+    {
+      "file": "0116-entrance.png",
+      "scene": 116,
+      "condition": "dim",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5490654205607477,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0116-entrance-rgb.webp",
+      "ensemble": "0116-entrance-ensemble.webp",
+      "previous": "0116-entrance-previous.webp",
+      "offline": "0116-entrance-offline.webp"
+    },
+    {
+      "file": "0116-offset.png",
+      "scene": 116,
+      "condition": "dim",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.954642787619233,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0116-offset-rgb.webp",
+      "ensemble": "0116-offset-ensemble.webp",
+      "previous": "0116-offset-previous.webp",
+      "offline": "0116-offset-offline.webp"
+    },
+    {
+      "file": "0117-entrance.png",
+      "scene": 117,
+      "condition": "dim",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.5697674418604651,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0117-entrance-rgb.webp",
+      "ensemble": "0117-entrance-ensemble.webp",
+      "previous": "0117-entrance-previous.webp",
+      "offline": "0117-entrance-offline.webp"
+    },
+    {
+      "file": "0117-offset.png",
+      "scene": 117,
+      "condition": "dim",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.8844765342960289,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": false,
+      "rgb": "0117-offset-rgb.webp",
+      "ensemble": "0117-offset-ensemble.webp",
+      "previous": "0117-offset-previous.webp",
+      "offline": "0117-offset-offline.webp"
+    },
+    {
+      "file": "0118-entrance.png",
+      "scene": 118,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.848397551314368,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0118-entrance-rgb.webp",
+      "ensemble": "0118-entrance-ensemble.webp",
+      "previous": "0118-entrance-previous.webp",
+      "offline": "0118-entrance-offline.webp"
+    },
+    {
+      "file": "0118-offset.png",
+      "scene": 118,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9740515222482435,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0118-offset-rgb.webp",
+      "ensemble": "0118-offset-ensemble.webp",
+      "previous": "0118-offset-previous.webp",
+      "offline": "0118-offset-offline.webp"
+    },
+    {
+      "file": "0119-entrance.png",
+      "scene": 119,
+      "condition": "ordinary",
+      "camera_id": "entrance",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9413012729844413,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0119-entrance-rgb.webp",
+      "ensemble": "0119-entrance-ensemble.webp",
+      "previous": "0119-entrance-previous.webp",
+      "offline": "0119-entrance-offline.webp"
+    },
+    {
+      "file": "0119-offset.png",
+      "scene": 119,
+      "condition": "ordinary",
+      "camera_id": "offset",
+      "decision": {
+        "status": "need_another_view",
+        "accepted": false,
+        "reasons": [
+          "camera_not_qualified_by_calibration"
+        ],
+        "score": 0.9841089670828603,
+        "motion_permitted": false,
+        "insertion_pose": "unknown",
+        "latch_state": "unknown"
+      },
+      "good_component_pair": true,
+      "rgb": "0119-offset-rgb.webp",
+      "ensemble": "0119-offset-ensemble.webp",
+      "previous": "0119-offset-previous.webp",
+      "offline": "0119-offset-offline.webp"
+    }
+  ],
+  "video_frames": [
+    "0000-entrance.png",
+    "0000-offset.png",
+    "0002-entrance.png",
+    "0002-offset.png",
+    "0006-entrance.png",
+    "0006-offset.png",
+    "0007-entrance.png",
+    "0007-offset.png",
+    "0011-entrance.png",
+    "0011-offset.png",
+    "0016-entrance.png",
+    "0016-offset.png",
+    "0020-entrance.png",
+    "0020-offset.png",
+    "0022-entrance.png",
+    "0022-offset.png",
+    "0025-entrance.png",
+    "0025-offset.png",
+    "0029-entrance.png",
+    "0029-offset.png"
+  ],
+  "all_webp_pixels_verified": true
+}

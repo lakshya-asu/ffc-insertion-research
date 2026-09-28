@@ -1,0 +1,869 @@
+{
+  "frames": [
+    {
+      "file": "0000-entrance.png",
+      "condition": "ordinary",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0000-entrance-rgb.webp",
+      "prediction": "0000-entrance-prediction.webp",
+      "offline": "0000-entrance-offline.webp"
+    },
+    {
+      "file": "0000-offset.png",
+      "condition": "ordinary",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0000-offset-rgb.webp",
+      "prediction": "0000-offset-prediction.webp",
+      "offline": "0000-offset-offline.webp"
+    },
+    {
+      "file": "0001-entrance.png",
+      "condition": "glare",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0001-entrance-rgb.webp",
+      "prediction": "0001-entrance-prediction.webp",
+      "offline": "0001-entrance-offline.webp"
+    },
+    {
+      "file": "0001-offset.png",
+      "condition": "glare",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0001-offset-rgb.webp",
+      "prediction": "0001-offset-prediction.webp",
+      "offline": "0001-offset-offline.webp"
+    },
+    {
+      "file": "0002-entrance.png",
+      "condition": "dim",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0002-entrance-rgb.webp",
+      "prediction": "0002-entrance-prediction.webp",
+      "offline": "0002-entrance-offline.webp"
+    },
+    {
+      "file": "0002-offset.png",
+      "condition": "dim",
+      "camera": "offset",
+      "predicted_slider_state": "unknown",
+      "rgb": "0002-offset-rgb.webp",
+      "prediction": "0002-offset-prediction.webp",
+      "offline": "0002-offset-offline.webp"
+    },
+    {
+      "file": "0003-entrance.png",
+      "condition": "rotation",
+      "camera": "entrance",
+      "predicted_slider_state": "open",
+      "rgb": "0003-entrance-rgb.webp",
+      "prediction": "0003-entrance-prediction.webp",
+      "offline": "0003-entrance-offline.webp"
+    },
+    {
+      "file": "0003-offset.png",
+      "condition": "rotation",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0003-offset-rgb.webp",
+      "prediction": "0003-offset-prediction.webp",
+      "offline": "0003-offset-offline.webp"
+    },
+    {
+      "file": "0004-entrance.png",
+      "condition": "occlusion",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0004-entrance-rgb.webp",
+      "prediction": "0004-entrance-prediction.webp",
+      "offline": "0004-entrance-offline.webp"
+    },
+    {
+      "file": "0004-offset.png",
+      "condition": "occlusion",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0004-offset-rgb.webp",
+      "prediction": "0004-offset-prediction.webp",
+      "offline": "0004-offset-offline.webp"
+    },
+    {
+      "file": "0005-entrance.png",
+      "condition": "blur",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0005-entrance-rgb.webp",
+      "prediction": "0005-entrance-prediction.webp",
+      "offline": "0005-entrance-offline.webp"
+    },
+    {
+      "file": "0005-offset.png",
+      "condition": "blur",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0005-offset-rgb.webp",
+      "prediction": "0005-offset-prediction.webp",
+      "offline": "0005-offset-offline.webp"
+    },
+    {
+      "file": "0006-entrance.png",
+      "condition": "absent_cable",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0006-entrance-rgb.webp",
+      "prediction": "0006-entrance-prediction.webp",
+      "offline": "0006-entrance-offline.webp"
+    },
+    {
+      "file": "0006-offset.png",
+      "condition": "absent_cable",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0006-offset-rgb.webp",
+      "prediction": "0006-offset-prediction.webp",
+      "offline": "0006-offset-offline.webp"
+    },
+    {
+      "file": "0007-entrance.png",
+      "condition": "absent_socket",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0007-entrance-rgb.webp",
+      "prediction": "0007-entrance-prediction.webp",
+      "offline": "0007-entrance-offline.webp"
+    },
+    {
+      "file": "0007-offset.png",
+      "condition": "absent_socket",
+      "camera": "offset",
+      "predicted_slider_state": "unknown",
+      "rgb": "0007-offset-rgb.webp",
+      "prediction": "0007-offset-prediction.webp",
+      "offline": "0007-offset-offline.webp"
+    },
+    {
+      "file": "0008-entrance.png",
+      "condition": "ordinary",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0008-entrance-rgb.webp",
+      "prediction": "0008-entrance-prediction.webp",
+      "offline": "0008-entrance-offline.webp"
+    },
+    {
+      "file": "0008-offset.png",
+      "condition": "ordinary",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0008-offset-rgb.webp",
+      "prediction": "0008-offset-prediction.webp",
+      "offline": "0008-offset-offline.webp"
+    },
+    {
+      "file": "0009-entrance.png",
+      "condition": "glare",
+      "camera": "entrance",
+      "predicted_slider_state": "open",
+      "rgb": "0009-entrance-rgb.webp",
+      "prediction": "0009-entrance-prediction.webp",
+      "offline": "0009-entrance-offline.webp"
+    },
+    {
+      "file": "0009-offset.png",
+      "condition": "glare",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0009-offset-rgb.webp",
+      "prediction": "0009-offset-prediction.webp",
+      "offline": "0009-offset-offline.webp"
+    },
+    {
+      "file": "0010-entrance.png",
+      "condition": "dim",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0010-entrance-rgb.webp",
+      "prediction": "0010-entrance-prediction.webp",
+      "offline": "0010-entrance-offline.webp"
+    },
+    {
+      "file": "0010-offset.png",
+      "condition": "dim",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0010-offset-rgb.webp",
+      "prediction": "0010-offset-prediction.webp",
+      "offline": "0010-offset-offline.webp"
+    },
+    {
+      "file": "0011-entrance.png",
+      "condition": "rotation",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0011-entrance-rgb.webp",
+      "prediction": "0011-entrance-prediction.webp",
+      "offline": "0011-entrance-offline.webp"
+    },
+    {
+      "file": "0011-offset.png",
+      "condition": "rotation",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0011-offset-rgb.webp",
+      "prediction": "0011-offset-prediction.webp",
+      "offline": "0011-offset-offline.webp"
+    },
+    {
+      "file": "0012-entrance.png",
+      "condition": "occlusion",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0012-entrance-rgb.webp",
+      "prediction": "0012-entrance-prediction.webp",
+      "offline": "0012-entrance-offline.webp"
+    },
+    {
+      "file": "0012-offset.png",
+      "condition": "occlusion",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0012-offset-rgb.webp",
+      "prediction": "0012-offset-prediction.webp",
+      "offline": "0012-offset-offline.webp"
+    },
+    {
+      "file": "0013-entrance.png",
+      "condition": "blur",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0013-entrance-rgb.webp",
+      "prediction": "0013-entrance-prediction.webp",
+      "offline": "0013-entrance-offline.webp"
+    },
+    {
+      "file": "0013-offset.png",
+      "condition": "blur",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0013-offset-rgb.webp",
+      "prediction": "0013-offset-prediction.webp",
+      "offline": "0013-offset-offline.webp"
+    },
+    {
+      "file": "0014-entrance.png",
+      "condition": "absent_cable",
+      "camera": "entrance",
+      "predicted_slider_state": "open",
+      "rgb": "0014-entrance-rgb.webp",
+      "prediction": "0014-entrance-prediction.webp",
+      "offline": "0014-entrance-offline.webp"
+    },
+    {
+      "file": "0014-offset.png",
+      "condition": "absent_cable",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0014-offset-rgb.webp",
+      "prediction": "0014-offset-prediction.webp",
+      "offline": "0014-offset-offline.webp"
+    },
+    {
+      "file": "0015-entrance.png",
+      "condition": "absent_socket",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0015-entrance-rgb.webp",
+      "prediction": "0015-entrance-prediction.webp",
+      "offline": "0015-entrance-offline.webp"
+    },
+    {
+      "file": "0015-offset.png",
+      "condition": "absent_socket",
+      "camera": "offset",
+      "predicted_slider_state": "unknown",
+      "rgb": "0015-offset-rgb.webp",
+      "prediction": "0015-offset-prediction.webp",
+      "offline": "0015-offset-offline.webp"
+    },
+    {
+      "file": "0016-entrance.png",
+      "condition": "ordinary",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0016-entrance-rgb.webp",
+      "prediction": "0016-entrance-prediction.webp",
+      "offline": "0016-entrance-offline.webp"
+    },
+    {
+      "file": "0016-offset.png",
+      "condition": "ordinary",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0016-offset-rgb.webp",
+      "prediction": "0016-offset-prediction.webp",
+      "offline": "0016-offset-offline.webp"
+    },
+    {
+      "file": "0017-entrance.png",
+      "condition": "glare",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0017-entrance-rgb.webp",
+      "prediction": "0017-entrance-prediction.webp",
+      "offline": "0017-entrance-offline.webp"
+    },
+    {
+      "file": "0017-offset.png",
+      "condition": "glare",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0017-offset-rgb.webp",
+      "prediction": "0017-offset-prediction.webp",
+      "offline": "0017-offset-offline.webp"
+    },
+    {
+      "file": "0018-entrance.png",
+      "condition": "dim",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0018-entrance-rgb.webp",
+      "prediction": "0018-entrance-prediction.webp",
+      "offline": "0018-entrance-offline.webp"
+    },
+    {
+      "file": "0018-offset.png",
+      "condition": "dim",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0018-offset-rgb.webp",
+      "prediction": "0018-offset-prediction.webp",
+      "offline": "0018-offset-offline.webp"
+    },
+    {
+      "file": "0019-entrance.png",
+      "condition": "rotation",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0019-entrance-rgb.webp",
+      "prediction": "0019-entrance-prediction.webp",
+      "offline": "0019-entrance-offline.webp"
+    },
+    {
+      "file": "0019-offset.png",
+      "condition": "rotation",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0019-offset-rgb.webp",
+      "prediction": "0019-offset-prediction.webp",
+      "offline": "0019-offset-offline.webp"
+    },
+    {
+      "file": "0020-entrance.png",
+      "condition": "occlusion",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0020-entrance-rgb.webp",
+      "prediction": "0020-entrance-prediction.webp",
+      "offline": "0020-entrance-offline.webp"
+    },
+    {
+      "file": "0020-offset.png",
+      "condition": "occlusion",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0020-offset-rgb.webp",
+      "prediction": "0020-offset-prediction.webp",
+      "offline": "0020-offset-offline.webp"
+    },
+    {
+      "file": "0021-entrance.png",
+      "condition": "blur",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0021-entrance-rgb.webp",
+      "prediction": "0021-entrance-prediction.webp",
+      "offline": "0021-entrance-offline.webp"
+    },
+    {
+      "file": "0021-offset.png",
+      "condition": "blur",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0021-offset-rgb.webp",
+      "prediction": "0021-offset-prediction.webp",
+      "offline": "0021-offset-offline.webp"
+    },
+    {
+      "file": "0022-entrance.png",
+      "condition": "absent_cable",
+      "camera": "entrance",
+      "predicted_slider_state": "open",
+      "rgb": "0022-entrance-rgb.webp",
+      "prediction": "0022-entrance-prediction.webp",
+      "offline": "0022-entrance-offline.webp"
+    },
+    {
+      "file": "0022-offset.png",
+      "condition": "absent_cable",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0022-offset-rgb.webp",
+      "prediction": "0022-offset-prediction.webp",
+      "offline": "0022-offset-offline.webp"
+    },
+    {
+      "file": "0023-entrance.png",
+      "condition": "absent_socket",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0023-entrance-rgb.webp",
+      "prediction": "0023-entrance-prediction.webp",
+      "offline": "0023-entrance-offline.webp"
+    },
+    {
+      "file": "0023-offset.png",
+      "condition": "absent_socket",
+      "camera": "offset",
+      "predicted_slider_state": "unknown",
+      "rgb": "0023-offset-rgb.webp",
+      "prediction": "0023-offset-prediction.webp",
+      "offline": "0023-offset-offline.webp"
+    },
+    {
+      "file": "0024-entrance.png",
+      "condition": "ordinary",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0024-entrance-rgb.webp",
+      "prediction": "0024-entrance-prediction.webp",
+      "offline": "0024-entrance-offline.webp"
+    },
+    {
+      "file": "0024-offset.png",
+      "condition": "ordinary",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0024-offset-rgb.webp",
+      "prediction": "0024-offset-prediction.webp",
+      "offline": "0024-offset-offline.webp"
+    },
+    {
+      "file": "0025-entrance.png",
+      "condition": "glare",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0025-entrance-rgb.webp",
+      "prediction": "0025-entrance-prediction.webp",
+      "offline": "0025-entrance-offline.webp"
+    },
+    {
+      "file": "0025-offset.png",
+      "condition": "glare",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0025-offset-rgb.webp",
+      "prediction": "0025-offset-prediction.webp",
+      "offline": "0025-offset-offline.webp"
+    },
+    {
+      "file": "0026-entrance.png",
+      "condition": "dim",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0026-entrance-rgb.webp",
+      "prediction": "0026-entrance-prediction.webp",
+      "offline": "0026-entrance-offline.webp"
+    },
+    {
+      "file": "0026-offset.png",
+      "condition": "dim",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0026-offset-rgb.webp",
+      "prediction": "0026-offset-prediction.webp",
+      "offline": "0026-offset-offline.webp"
+    },
+    {
+      "file": "0027-entrance.png",
+      "condition": "rotation",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0027-entrance-rgb.webp",
+      "prediction": "0027-entrance-prediction.webp",
+      "offline": "0027-entrance-offline.webp"
+    },
+    {
+      "file": "0027-offset.png",
+      "condition": "rotation",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0027-offset-rgb.webp",
+      "prediction": "0027-offset-prediction.webp",
+      "offline": "0027-offset-offline.webp"
+    },
+    {
+      "file": "0028-entrance.png",
+      "condition": "occlusion",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0028-entrance-rgb.webp",
+      "prediction": "0028-entrance-prediction.webp",
+      "offline": "0028-entrance-offline.webp"
+    },
+    {
+      "file": "0028-offset.png",
+      "condition": "occlusion",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0028-offset-rgb.webp",
+      "prediction": "0028-offset-prediction.webp",
+      "offline": "0028-offset-offline.webp"
+    },
+    {
+      "file": "0029-entrance.png",
+      "condition": "blur",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0029-entrance-rgb.webp",
+      "prediction": "0029-entrance-prediction.webp",
+      "offline": "0029-entrance-offline.webp"
+    },
+    {
+      "file": "0029-offset.png",
+      "condition": "blur",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0029-offset-rgb.webp",
+      "prediction": "0029-offset-prediction.webp",
+      "offline": "0029-offset-offline.webp"
+    },
+    {
+      "file": "0030-entrance.png",
+      "condition": "absent_cable",
+      "camera": "entrance",
+      "predicted_slider_state": "open",
+      "rgb": "0030-entrance-rgb.webp",
+      "prediction": "0030-entrance-prediction.webp",
+      "offline": "0030-entrance-offline.webp"
+    },
+    {
+      "file": "0030-offset.png",
+      "condition": "absent_cable",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0030-offset-rgb.webp",
+      "prediction": "0030-offset-prediction.webp",
+      "offline": "0030-offset-offline.webp"
+    },
+    {
+      "file": "0031-entrance.png",
+      "condition": "absent_socket",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0031-entrance-rgb.webp",
+      "prediction": "0031-entrance-prediction.webp",
+      "offline": "0031-entrance-offline.webp"
+    },
+    {
+      "file": "0031-offset.png",
+      "condition": "absent_socket",
+      "camera": "offset",
+      "predicted_slider_state": "unknown",
+      "rgb": "0031-offset-rgb.webp",
+      "prediction": "0031-offset-prediction.webp",
+      "offline": "0031-offset-offline.webp"
+    },
+    {
+      "file": "0032-entrance.png",
+      "condition": "ordinary",
+      "camera": "entrance",
+      "predicted_slider_state": "open",
+      "rgb": "0032-entrance-rgb.webp",
+      "prediction": "0032-entrance-prediction.webp",
+      "offline": "0032-entrance-offline.webp"
+    },
+    {
+      "file": "0032-offset.png",
+      "condition": "ordinary",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0032-offset-rgb.webp",
+      "prediction": "0032-offset-prediction.webp",
+      "offline": "0032-offset-offline.webp"
+    },
+    {
+      "file": "0033-entrance.png",
+      "condition": "glare",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0033-entrance-rgb.webp",
+      "prediction": "0033-entrance-prediction.webp",
+      "offline": "0033-entrance-offline.webp"
+    },
+    {
+      "file": "0033-offset.png",
+      "condition": "glare",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0033-offset-rgb.webp",
+      "prediction": "0033-offset-prediction.webp",
+      "offline": "0033-offset-offline.webp"
+    },
+    {
+      "file": "0034-entrance.png",
+      "condition": "dim",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0034-entrance-rgb.webp",
+      "prediction": "0034-entrance-prediction.webp",
+      "offline": "0034-entrance-offline.webp"
+    },
+    {
+      "file": "0034-offset.png",
+      "condition": "dim",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0034-offset-rgb.webp",
+      "prediction": "0034-offset-prediction.webp",
+      "offline": "0034-offset-offline.webp"
+    },
+    {
+      "file": "0035-entrance.png",
+      "condition": "rotation",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0035-entrance-rgb.webp",
+      "prediction": "0035-entrance-prediction.webp",
+      "offline": "0035-entrance-offline.webp"
+    },
+    {
+      "file": "0035-offset.png",
+      "condition": "rotation",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0035-offset-rgb.webp",
+      "prediction": "0035-offset-prediction.webp",
+      "offline": "0035-offset-offline.webp"
+    },
+    {
+      "file": "0036-entrance.png",
+      "condition": "occlusion",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0036-entrance-rgb.webp",
+      "prediction": "0036-entrance-prediction.webp",
+      "offline": "0036-entrance-offline.webp"
+    },
+    {
+      "file": "0036-offset.png",
+      "condition": "occlusion",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0036-offset-rgb.webp",
+      "prediction": "0036-offset-prediction.webp",
+      "offline": "0036-offset-offline.webp"
+    },
+    {
+      "file": "0037-entrance.png",
+      "condition": "blur",
+      "camera": "entrance",
+      "predicted_slider_state": "open",
+      "rgb": "0037-entrance-rgb.webp",
+      "prediction": "0037-entrance-prediction.webp",
+      "offline": "0037-entrance-offline.webp"
+    },
+    {
+      "file": "0037-offset.png",
+      "condition": "blur",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0037-offset-rgb.webp",
+      "prediction": "0037-offset-prediction.webp",
+      "offline": "0037-offset-offline.webp"
+    },
+    {
+      "file": "0038-entrance.png",
+      "condition": "absent_cable",
+      "camera": "entrance",
+      "predicted_slider_state": "open",
+      "rgb": "0038-entrance-rgb.webp",
+      "prediction": "0038-entrance-prediction.webp",
+      "offline": "0038-entrance-offline.webp"
+    },
+    {
+      "file": "0038-offset.png",
+      "condition": "absent_cable",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0038-offset-rgb.webp",
+      "prediction": "0038-offset-prediction.webp",
+      "offline": "0038-offset-offline.webp"
+    },
+    {
+      "file": "0039-entrance.png",
+      "condition": "absent_socket",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0039-entrance-rgb.webp",
+      "prediction": "0039-entrance-prediction.webp",
+      "offline": "0039-entrance-offline.webp"
+    },
+    {
+      "file": "0039-offset.png",
+      "condition": "absent_socket",
+      "camera": "offset",
+      "predicted_slider_state": "unknown",
+      "rgb": "0039-offset-rgb.webp",
+      "prediction": "0039-offset-prediction.webp",
+      "offline": "0039-offset-offline.webp"
+    },
+    {
+      "file": "0040-entrance.png",
+      "condition": "ordinary",
+      "camera": "entrance",
+      "predicted_slider_state": "open",
+      "rgb": "0040-entrance-rgb.webp",
+      "prediction": "0040-entrance-prediction.webp",
+      "offline": "0040-entrance-offline.webp"
+    },
+    {
+      "file": "0040-offset.png",
+      "condition": "ordinary",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0040-offset-rgb.webp",
+      "prediction": "0040-offset-prediction.webp",
+      "offline": "0040-offset-offline.webp"
+    },
+    {
+      "file": "0041-entrance.png",
+      "condition": "glare",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0041-entrance-rgb.webp",
+      "prediction": "0041-entrance-prediction.webp",
+      "offline": "0041-entrance-offline.webp"
+    },
+    {
+      "file": "0041-offset.png",
+      "condition": "glare",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0041-offset-rgb.webp",
+      "prediction": "0041-offset-prediction.webp",
+      "offline": "0041-offset-offline.webp"
+    },
+    {
+      "file": "0042-entrance.png",
+      "condition": "dim",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0042-entrance-rgb.webp",
+      "prediction": "0042-entrance-prediction.webp",
+      "offline": "0042-entrance-offline.webp"
+    },
+    {
+      "file": "0042-offset.png",
+      "condition": "dim",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0042-offset-rgb.webp",
+      "prediction": "0042-offset-prediction.webp",
+      "offline": "0042-offset-offline.webp"
+    },
+    {
+      "file": "0043-entrance.png",
+      "condition": "rotation",
+      "camera": "entrance",
+      "predicted_slider_state": "closed",
+      "rgb": "0043-entrance-rgb.webp",
+      "prediction": "0043-entrance-prediction.webp",
+      "offline": "0043-entrance-offline.webp"
+    },
+    {
+      "file": "0043-offset.png",
+      "condition": "rotation",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0043-offset-rgb.webp",
+      "prediction": "0043-offset-prediction.webp",
+      "offline": "0043-offset-offline.webp"
+    },
+    {
+      "file": "0044-entrance.png",
+      "condition": "occlusion",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0044-entrance-rgb.webp",
+      "prediction": "0044-entrance-prediction.webp",
+      "offline": "0044-entrance-offline.webp"
+    },
+    {
+      "file": "0044-offset.png",
+      "condition": "occlusion",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0044-offset-rgb.webp",
+      "prediction": "0044-offset-prediction.webp",
+      "offline": "0044-offset-offline.webp"
+    },
+    {
+      "file": "0045-entrance.png",
+      "condition": "blur",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0045-entrance-rgb.webp",
+      "prediction": "0045-entrance-prediction.webp",
+      "offline": "0045-entrance-offline.webp"
+    },
+    {
+      "file": "0045-offset.png",
+      "condition": "blur",
+      "camera": "offset",
+      "predicted_slider_state": "open",
+      "rgb": "0045-offset-rgb.webp",
+      "prediction": "0045-offset-prediction.webp",
+      "offline": "0045-offset-offline.webp"
+    },
+    {
+      "file": "0046-entrance.png",
+      "condition": "absent_cable",
+      "camera": "entrance",
+      "predicted_slider_state": "open",
+      "rgb": "0046-entrance-rgb.webp",
+      "prediction": "0046-entrance-prediction.webp",
+      "offline": "0046-entrance-offline.webp"
+    },
+    {
+      "file": "0046-offset.png",
+      "condition": "absent_cable",
+      "camera": "offset",
+      "predicted_slider_state": "closed",
+      "rgb": "0046-offset-rgb.webp",
+      "prediction": "0046-offset-prediction.webp",
+      "offline": "0046-offset-offline.webp"
+    },
+    {
+      "file": "0047-entrance.png",
+      "condition": "absent_socket",
+      "camera": "entrance",
+      "predicted_slider_state": "unknown",
+      "rgb": "0047-entrance-rgb.webp",
+      "prediction": "0047-entrance-prediction.webp",
+      "offline": "0047-entrance-offline.webp"
+    },
+    {
+      "file": "0047-offset.png",
+      "condition": "absent_socket",
+      "camera": "offset",
+      "predicted_slider_state": "unknown",
+      "rgb": "0047-offset-rgb.webp",
+      "prediction": "0047-offset-prediction.webp",
+      "offline": "0047-offset-offline.webp"
+    }
+  ],
+  "lossless_pixels_verified": true
+}

@@ -36,6 +36,8 @@ def snapshot():
         "name": active.get("name", "Pi 4 baseline"),
     }
     if history:
+        if "member" in history[-1]:
+            training["name"] += f" / head {history[-1]['member'] + 1} of {active.get('members', 2)}"
         training["best_validation_foreground_mean_iou"] = max(r["foreground_mean_iou"] for r in history)
     training["invalid"] = load(run / "invalid.json", None)
     training["complete"] = (run / "training-report.json").exists()

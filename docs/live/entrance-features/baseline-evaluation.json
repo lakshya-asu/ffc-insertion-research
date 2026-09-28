@@ -1,0 +1,6286 @@
+{
+  "classes": [
+    {
+      "name": "upper_entrance_rim",
+      "pooled_iou": 0.8390751869351805,
+      "visible_images": 79,
+      "mean_visible_iou": 0.806889289668558,
+      "mean_boundary_f1_2px": 0.9635058155946769,
+      "absent_images": 17,
+      "absent_false_positives_8px": 1
+    },
+    {
+      "name": "lower_entrance_rim",
+      "pooled_iou": 0.8473256837780045,
+      "visible_images": 77,
+      "mean_visible_iou": 0.7386646135063513,
+      "mean_boundary_f1_2px": 0.8970445398252994,
+      "absent_images": 19,
+      "absent_false_positives_8px": 2
+    },
+    {
+      "name": "cable_leading_band",
+      "pooled_iou": 0.020461520715960982,
+      "visible_images": 55,
+      "mean_visible_iou": 0.04449727512241659,
+      "mean_boundary_f1_2px": 0.12985847184773747,
+      "absent_images": 41,
+      "absent_false_positives_8px": 41
+    },
+    {
+      "name": "slider_open",
+      "pooled_iou": 0.5187849478615687,
+      "visible_images": 36,
+      "mean_visible_iou": 0.5197237055853754,
+      "mean_boundary_f1_2px": 0.6909735300812394,
+      "absent_images": 60,
+      "absent_false_positives_8px": 42
+    },
+    {
+      "name": "slider_closed",
+      "pooled_iou": 0.5635884155757763,
+      "visible_images": 45,
+      "mean_visible_iou": 0.5177562380581536,
+      "mean_boundary_f1_2px": 0.9093773522546501,
+      "absent_images": 51,
+      "absent_false_positives_8px": 21
+    }
+  ],
+  "frames": [
+    {
+      "file": "0000-entrance.png",
+      "scene": 0,
+      "camera": "entrance",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 505,
+          "predicted_pixels": 638,
+          "iou": 0.6422413793103449,
+          "boundary_f1_2px": 0.9850746268656716
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 1,
+          "predicted_pixels": 0,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 6147,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 183,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 414,
+          "predicted_pixels": 507,
+          "iou": 0.2917251051893408,
+          "boundary_f1_2px": 0.8761002853153645
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0000-offset.png",
+      "scene": 0,
+      "camera": "offset",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1041,
+          "predicted_pixels": 1090,
+          "iou": 0.918091809180918,
+          "boundary_f1_2px": 0.9954751131221719
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1113,
+          "predicted_pixels": 1341,
+          "iou": 0.7367303609341825,
+          "boundary_f1_2px": 0.9763543727815598
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 257,
+          "predicted_pixels": 4016,
+          "iou": 0.057673267326732676,
+          "boundary_f1_2px": 0.33061266222662544
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 385,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1029,
+          "predicted_pixels": 1015,
+          "iou": 0.7835951134380453,
+          "boundary_f1_2px": 0.9519230769230769
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0001-entrance.png",
+      "scene": 1,
+      "camera": "entrance",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 191,
+          "predicted_pixels": 174,
+          "iou": 0.6976744186046512,
+          "boundary_f1_2px": 0.9545454545454545
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 92,
+          "predicted_pixels": 132,
+          "iou": 0.6470588235294118,
+          "boundary_f1_2px": 0.9111111111111111
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 215,
+          "predicted_pixels": 1879,
+          "iou": 0.08835758835758836,
+          "boundary_f1_2px": 0.49896865724203854
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 78,
+          "predicted_pixels": 10,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.022727272727272728
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 274,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0001-offset.png",
+      "scene": 1,
+      "camera": "offset",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 868,
+          "predicted_pixels": 960,
+          "iou": 0.88259526261586,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1435,
+          "predicted_pixels": 1510,
+          "iou": 0.9426121372031663,
+          "boundary_f1_2px": 0.9988726042841037
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 269,
+          "predicted_pixels": 6496,
+          "iou": 0.04141009852216749,
+          "boundary_f1_2px": 0.005291005291005291
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1033,
+          "predicted_pixels": 1061,
+          "iou": 0.9388888888888889,
+          "boundary_f1_2px": 0.9965792474344356
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0002-entrance.png",
+      "scene": 2,
+      "camera": "entrance",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 290,
+          "predicted_pixels": 214,
+          "iou": 0.610223642172524,
+          "boundary_f1_2px": 0.8668181172795684
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 342,
+          "predicted_pixels": 358,
+          "iou": 0.6166281755196305,
+          "boundary_f1_2px": 0.895362104839251
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 1,
+          "predicted_pixels": 5454,
+          "iou": 0.00018335166850018335,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 157,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 89,
+          "predicted_pixels": 71,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.7955290036615918
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0002-offset.png",
+      "scene": 2,
+      "camera": "offset",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 14,
+          "predicted_pixels": 0,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 104,
+          "predicted_pixels": 1085,
+          "iou": 0.07504520795660036,
+          "boundary_f1_2px": 0.3994097393015248
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 221,
+          "predicted_pixels": 52,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.23131352116300014
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0003-entrance.png",
+      "scene": 3,
+      "camera": "entrance",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 840,
+          "predicted_pixels": 1059,
+          "iou": 0.7932011331444759,
+          "boundary_f1_2px": 0.9770642201834863
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 169,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 18,
+          "predicted_pixels": 5311,
+          "iou": 0.0033891922425155338,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 245,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 618,
+          "predicted_pixels": 647,
+          "iou": 0.21168582375478928,
+          "boundary_f1_2px": 0.8343322042688363
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0003-offset.png",
+      "scene": 3,
+      "camera": "offset",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1008,
+          "predicted_pixels": 1096,
+          "iou": 0.9109900090826522,
+          "boundary_f1_2px": 0.9976958525345622
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1412,
+          "predicted_pixels": 1465,
+          "iou": 0.9386792452830188,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 265,
+          "predicted_pixels": 6137,
+          "iou": 0.04318070718592146,
+          "boundary_f1_2px": 0.01717791411042945
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 239,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1013,
+          "predicted_pixels": 1166,
+          "iou": 0.8388185654008439,
+          "boundary_f1_2px": 0.9976744186046511
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0004-entrance.png",
+      "scene": 4,
+      "camera": "entrance",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 197,
+          "predicted_pixels": 206,
+          "iou": 0.5866141732283464,
+          "boundary_f1_2px": 0.7883177015315208
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 123,
+          "predicted_pixels": 109,
+          "iou": 0.5782312925170068,
+          "boundary_f1_2px": 0.9335111449799962
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 657,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 76,
+          "predicted_pixels": 24,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 409,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0004-offset.png",
+      "scene": 4,
+      "camera": "offset",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 864,
+          "predicted_pixels": 646,
+          "iou": 0.6167023554603854,
+          "boundary_f1_2px": 0.9521753877462921
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 144,
+          "predicted_pixels": 2424,
+          "iou": 0.05375461633155519,
+          "boundary_f1_2px": 0.39793641002635566
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1019,
+          "predicted_pixels": 538,
+          "iou": 0.17420814479638008,
+          "boundary_f1_2px": 0.4452501907488441
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 613,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0005-entrance.png",
+      "scene": 5,
+      "camera": "entrance",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 120,
+          "predicted_pixels": 117,
+          "iou": 0.926829268292683,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 830,
+          "predicted_pixels": 875,
+          "iou": 0.9029017857142857,
+          "boundary_f1_2px": 0.9839743589743589
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 34,
+          "predicted_pixels": 8487,
+          "iou": 0.003651354534746761,
+          "boundary_f1_2px": 0.03874717468517921
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 215,
+          "predicted_pixels": 17,
+          "iou": 0.07906976744186046,
+          "boundary_f1_2px": 0.30708661417322836
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 51,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0005-offset.png",
+      "scene": 5,
+      "camera": "offset",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 853,
+          "predicted_pixels": 930,
+          "iou": 0.880801687763713,
+          "boundary_f1_2px": 0.9976958525345622
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1410,
+          "predicted_pixels": 1549,
+          "iou": 0.9078014184397163,
+          "boundary_f1_2px": 0.9718100112214614
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 263,
+          "predicted_pixels": 5514,
+          "iou": 0.04523249502442555,
+          "boundary_f1_2px": 0.07267775036069199
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1024,
+          "predicted_pixels": 1053,
+          "iou": 0.9302973977695167,
+          "boundary_f1_2px": 0.9988331388564761
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0006-entrance.png",
+      "scene": 6,
+      "camera": "entrance",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1025,
+          "predicted_pixels": 1051,
+          "iou": 0.9640491958372753,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1260,
+          "predicted_pixels": 1317,
+          "iou": 0.9567198177676538,
+          "boundary_f1_2px": 0.9942062572421785
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 6980,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 138,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 414,
+          "predicted_pixels": 283,
+          "iou": 0.6516587677725119,
+          "boundary_f1_2px": 0.8703956343792634
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0006-offset.png",
+      "scene": 6,
+      "camera": "offset",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1022,
+          "predicted_pixels": 1125,
+          "iou": 0.9050576752440106,
+          "boundary_f1_2px": 0.9932584269662922
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1432,
+          "predicted_pixels": 1502,
+          "iou": 0.9430463576158941,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 2727,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 204,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1024,
+          "predicted_pixels": 1285,
+          "iou": 0.796887159533074,
+          "boundary_f1_2px": 0.9920903954802259
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0007-entrance.png",
+      "scene": 7,
+      "camera": "entrance",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 3,
+          "predicted_pixels": 4132,
+          "iou": 0.0007260406582768635,
+          "boundary_f1_2px": 0.0032467532467532465
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0007-offset.png",
+      "scene": 7,
+      "camera": "offset",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 274,
+          "predicted_pixels": 3554,
+          "iou": 0.07709622960045019,
+          "boundary_f1_2px": 0.006711409395973154
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0008-entrance.png",
+      "scene": 8,
+      "camera": "entrance",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1055,
+          "predicted_pixels": 759,
+          "iou": 0.7113207547169811,
+          "boundary_f1_2px": 0.9988221436984689
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 337,
+          "predicted_pixels": 167,
+          "iou": 0.344,
+          "boundary_f1_2px": 0.42443729903536975
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 5825,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 414,
+          "predicted_pixels": 56,
+          "iou": 0.03982300884955752,
+          "boundary_f1_2px": 0.32727272727272727
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 652,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0008-offset.png",
+      "scene": 8,
+      "camera": "offset",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 847,
+          "predicted_pixels": 937,
+          "iou": 0.8978723404255319,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1405,
+          "predicted_pixels": 1468,
+          "iou": 0.9451591062965471,
+          "boundary_f1_2px": 0.9965317919075144
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 289,
+          "predicted_pixels": 6316,
+          "iou": 0.04575680810639645,
+          "boundary_f1_2px": 0.014285714285714285
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1028,
+          "predicted_pixels": 1043,
+          "iou": 0.9409559512652296,
+          "boundary_f1_2px": 0.9988358556461001
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0009-entrance.png",
+      "scene": 9,
+      "camera": "entrance",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 208,
+          "predicted_pixels": 217,
+          "iou": 0.6666666666666666,
+          "boundary_f1_2px": 0.9295499021526419
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 36,
+          "predicted_pixels": 84,
+          "iou": 0.30434782608695654,
+          "boundary_f1_2px": 0.8333333333333333
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 1955,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 98,
+          "predicted_pixels": 36,
+          "iou": 0.3137254901960784,
+          "boundary_f1_2px": 0.8698186528497409
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 82,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0009-offset.png",
+      "scene": 9,
+      "camera": "offset",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 873,
+          "predicted_pixels": 955,
+          "iou": 0.9061522419186653,
+          "boundary_f1_2px": 0.9954751131221719
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1443,
+          "predicted_pixels": 1534,
+          "iou": 0.925614489003881,
+          "boundary_f1_2px": 0.9899190988639307
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 147,
+          "predicted_pixels": 6952,
+          "iou": 0.021144994246260068,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1041,
+          "predicted_pixels": 1116,
+          "iou": 0.9122340425531915,
+          "boundary_f1_2px": 0.996594778660613
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0010-entrance.png",
+      "scene": 10,
+      "camera": "entrance",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 162,
+          "predicted_pixels": 247,
+          "iou": 0.47653429602888087,
+          "boundary_f1_2px": 0.8983957219251336
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 378,
+          "predicted_pixels": 515,
+          "iou": 0.7339805825242719,
+          "boundary_f1_2px": 0.9270850955845035
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 93,
+          "predicted_pixels": 2651,
+          "iou": 0.030416823131806235,
+          "boundary_f1_2px": 0.17471264367816092
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 104,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 60,
+          "predicted_pixels": 235,
+          "iou": 0.12595419847328243,
+          "boundary_f1_2px": 0.4864864864864865
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0010-offset.png",
+      "scene": 10,
+      "camera": "offset",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1007,
+          "predicted_pixels": 1441,
+          "iou": 0.6988202637057599,
+          "boundary_f1_2px": 0.9584584386330447
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 244,
+          "predicted_pixels": 998,
+          "iou": 0.23214285714285715,
+          "boundary_f1_2px": 0.8327228457052327
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 90,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1012,
+          "predicted_pixels": 1077,
+          "iou": 0.8519503546099291,
+          "boundary_f1_2px": 0.998819362455726
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0011-entrance.png",
+      "scene": 11,
+      "camera": "entrance",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 2,
+          "predicted_pixels": 56,
+          "iou": 0.03571428571428571,
+          "boundary_f1_2px": 0.2857142857142857
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 2,
+          "predicted_pixels": 2124,
+          "iou": 0.00047058823529411766,
+          "boundary_f1_2px": 0.020512820512820513
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 20,
+          "predicted_pixels": 26,
+          "iou": 0.35294117647058826,
+          "boundary_f1_2px": 0.9787234042553191
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 9,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0011-offset.png",
+      "scene": 11,
+      "camera": "offset",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 866,
+          "predicted_pixels": 911,
+          "iou": 0.9087003222341569,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 522,
+          "predicted_pixels": 645,
+          "iou": 0.7981510015408321,
+          "boundary_f1_2px": 0.8772845953002611
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 93,
+          "predicted_pixels": 3491,
+          "iou": 0.026639931251790316,
+          "boundary_f1_2px": 0.021673690547862737
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1015,
+          "predicted_pixels": 1045,
+          "iou": 0.9003690036900369,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0012-entrance.png",
+      "scene": 12,
+      "camera": "entrance",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 124,
+          "predicted_pixels": 207,
+          "iou": 0.5114155251141552,
+          "boundary_f1_2px": 0.7446808510638298
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 212,
+          "predicted_pixels": 95,
+          "iou": 0.42790697674418604,
+          "boundary_f1_2px": 0.7657964434354899
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 1380,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 3,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 58,
+          "predicted_pixels": 148,
+          "iou": 0.3918918918918919,
+          "boundary_f1_2px": 0.8936170212765957
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0012-offset.png",
+      "scene": 12,
+      "camera": "offset",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1014,
+          "predicted_pixels": 1079,
+          "iou": 0.9044585987261147,
+          "boundary_f1_2px": 0.9942594718714122
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1411,
+          "predicted_pixels": 1499,
+          "iou": 0.9258769027134348,
+          "boundary_f1_2px": 0.9931662870159453
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 101,
+          "predicted_pixels": 4718,
+          "iou": 0.019031507718333687,
+          "boundary_f1_2px": 0.019414334250121342
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 337,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 998,
+          "predicted_pixels": 1059,
+          "iou": 0.8802559414990859,
+          "boundary_f1_2px": 1.0
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0013-entrance.png",
+      "scene": 13,
+      "camera": "entrance",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 940,
+          "predicted_pixels": 876,
+          "iou": 0.8975966562173459,
+          "boundary_f1_2px": 0.9905437352245863
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 124,
+          "predicted_pixels": 121,
+          "iou": 0.762589928057554,
+          "boundary_f1_2px": 0.98989898989899
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 219,
+          "predicted_pixels": 5851,
+          "iou": 0.0374294992309007,
+          "boundary_f1_2px": 0.01855486173059768
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 61,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 414,
+          "predicted_pixels": 405,
+          "iou": 0.5166666666666667,
+          "boundary_f1_2px": 0.9425287356321839
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0013-offset.png",
+      "scene": 13,
+      "camera": "offset",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1013,
+          "predicted_pixels": 1115,
+          "iou": 0.9016979445933869,
+          "boundary_f1_2px": 0.9965317919075144
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1417,
+          "predicted_pixels": 1470,
+          "iou": 0.9375838926174497,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 284,
+          "predicted_pixels": 7430,
+          "iou": 0.03822341857335128,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 239,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1022,
+          "predicted_pixels": 1199,
+          "iou": 0.837055417700579,
+          "boundary_f1_2px": 0.9941410775562446
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0014-entrance.png",
+      "scene": 14,
+      "camera": "entrance",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 250,
+          "predicted_pixels": 278,
+          "iou": 0.76,
+          "boundary_f1_2px": 0.9169989126495106
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 319,
+          "predicted_pixels": 549,
+          "iou": 0.563963963963964,
+          "boundary_f1_2px": 0.6544081361168924
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 5011,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 70,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 98,
+          "predicted_pixels": 83,
+          "iou": 0.33088235294117646,
+          "boundary_f1_2px": 0.9493720056972678
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0014-offset.png",
+      "scene": 14,
+      "camera": "offset",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 994,
+          "predicted_pixels": 1099,
+          "iou": 0.8855855855855855,
+          "boundary_f1_2px": 0.9930232558139535
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 898,
+          "predicted_pixels": 1019,
+          "iou": 0.87573385518591,
+          "boundary_f1_2px": 0.9443507588532883
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 3203,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 58,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1004,
+          "predicted_pixels": 1387,
+          "iou": 0.7238644556596971,
+          "boundary_f1_2px": 1.0
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0015-entrance.png",
+      "scene": 15,
+      "camera": "entrance",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 3,
+          "predicted_pixels": 1037,
+          "iou": 0.0028929604628736743,
+          "boundary_f1_2px": 0.03773584905660378
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0015-offset.png",
+      "scene": 15,
+      "camera": "offset",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 138,
+          "predicted_pixels": 1265,
+          "iou": 0.10559495665878645,
+          "boundary_f1_2px": 0.15549796371714178
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0016-entrance.png",
+      "scene": 16,
+      "camera": "entrance",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 836,
+          "predicted_pixels": 975,
+          "iou": 0.8574358974358974,
+          "boundary_f1_2px": 0.9953051643192489
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 6,
+          "predicted_pixels": 50,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 44,
+          "predicted_pixels": 4608,
+          "iou": 0.009548611111111112,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 412,
+          "predicted_pixels": 371,
+          "iou": 0.7096069868995634,
+          "boundary_f1_2px": 0.997005988023952
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 367,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0016-offset.png",
+      "scene": 16,
+      "camera": "offset",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 863,
+          "predicted_pixels": 932,
+          "iou": 0.9136460554371002,
+          "boundary_f1_2px": 0.9988623435722412
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1414,
+          "predicted_pixels": 1559,
+          "iou": 0.8996805111821087,
+          "boundary_f1_2px": 0.9776785714285714
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 249,
+          "predicted_pixels": 5267,
+          "iou": 0.04628224582701062,
+          "boundary_f1_2px": 0.2009513594179919
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1009,
+          "predicted_pixels": 1056,
+          "iou": 0.9138090824837812,
+          "boundary_f1_2px": 0.9977116704805492
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0017-entrance.png",
+      "scene": 17,
+      "camera": "entrance",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 125,
+          "predicted_pixels": 204,
+          "iou": 0.5446009389671361,
+          "boundary_f1_2px": 0.7857142857142858
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1123,
+          "predicted_pixels": 968,
+          "iou": 0.8262008733624454,
+          "boundary_f1_2px": 0.9610027855153203
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 3,
+          "predicted_pixels": 9360,
+          "iou": 0.00021365238756543105,
+          "boundary_f1_2px": 0.006993006993006993
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 56,
+          "predicted_pixels": 0,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 152,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0017-offset.png",
+      "scene": 17,
+      "camera": "offset",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 818,
+          "predicted_pixels": 821,
+          "iou": 0.5260707635009311,
+          "boundary_f1_2px": 0.9591287363655189
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 21,
+          "predicted_pixels": 4,
+          "iou": 0.041666666666666664,
+          "boundary_f1_2px": 0.46153846153846156
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 246,
+          "predicted_pixels": 1396,
+          "iou": 0.08526107072042301,
+          "boundary_f1_2px": 0.556528754882126
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1042,
+          "predicted_pixels": 335,
+          "iou": 0.20262008733624454,
+          "boundary_f1_2px": 0.44836972259222796
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 822,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0018-entrance.png",
+      "scene": 18,
+      "camera": "entrance",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 839,
+          "predicted_pixels": 1195,
+          "iou": 0.7006688963210702,
+          "boundary_f1_2px": 0.9827387802071346
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 319,
+          "predicted_pixels": 425,
+          "iou": 0.7025171624713958,
+          "boundary_f1_2px": 0.903289706402547
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 5405,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 414,
+          "predicted_pixels": 44,
+          "iou": 0.10628019323671498,
+          "boundary_f1_2px": 0.443609022556391
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 376,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0018-offset.png",
+      "scene": 18,
+      "camera": "offset",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 867,
+          "predicted_pixels": 982,
+          "iou": 0.849,
+          "boundary_f1_2px": 0.9831649831649832
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1431,
+          "predicted_pixels": 1618,
+          "iou": 0.8625534514355528,
+          "boundary_f1_2px": 0.9766431809161212
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 260,
+          "predicted_pixels": 6418,
+          "iou": 0.040511062636335304,
+          "boundary_f1_2px": 0.17617320732841715
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1031,
+          "predicted_pixels": 1055,
+          "iou": 0.9032846715328468,
+          "boundary_f1_2px": 0.9965397923875432
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0019-entrance.png",
+      "scene": 19,
+      "camera": "entrance",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 897,
+          "predicted_pixels": 970,
+          "iou": 0.8782696177062375,
+          "boundary_f1_2px": 0.9976359338061466
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 351,
+          "predicted_pixels": 426,
+          "iou": 0.819672131147541,
+          "boundary_f1_2px": 0.9647058823529412
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 4754,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 190,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 431,
+          "predicted_pixels": 563,
+          "iou": 0.2842377260981912,
+          "boundary_f1_2px": 0.8668163334462894
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0019-offset.png",
+      "scene": 19,
+      "camera": "offset",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 955,
+          "predicted_pixels": 1041,
+          "iou": 0.8883632923368022,
+          "boundary_f1_2px": 0.9963636363636362
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1335,
+          "predicted_pixels": 1432,
+          "iou": 0.914878892733564,
+          "boundary_f1_2px": 0.9951807228915662
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 252,
+          "predicted_pixels": 6092,
+          "iou": 0.04136572554169402,
+          "boundary_f1_2px": 0.007530120481927711
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 130,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 979,
+          "predicted_pixels": 1220,
+          "iou": 0.7907166123778502,
+          "boundary_f1_2px": 0.9951010354971681
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0020-entrance.png",
+      "scene": 20,
+      "camera": "entrance",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 205,
+          "predicted_pixels": 223,
+          "iou": 0.7907949790794979,
+          "boundary_f1_2px": 0.9347480602037954
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 114,
+          "predicted_pixels": 192,
+          "iou": 0.5854922279792746,
+          "boundary_f1_2px": 0.8108108108108109
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 2700,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 42,
+          "predicted_pixels": 7,
+          "iou": 0.020833333333333332,
+          "boundary_f1_2px": 0.18633540372670807
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 26,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0020-offset.png",
+      "scene": 20,
+      "camera": "offset",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 881,
+          "predicted_pixels": 940,
+          "iou": 0.9128151260504201,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1458,
+          "predicted_pixels": 1514,
+          "iou": 0.9174193548387096,
+          "boundary_f1_2px": 0.9854798314177404
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 68,
+          "predicted_pixels": 5502,
+          "iou": 0.012359142130134497,
+          "boundary_f1_2px": 0.0030441400304414006
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1048,
+          "predicted_pixels": 1104,
+          "iou": 0.9317773788150808,
+          "boundary_f1_2px": 0.9988545246277205
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0021-entrance.png",
+      "scene": 21,
+      "camera": "entrance",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 5,
+          "predicted_pixels": 0,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 384,
+          "predicted_pixels": 443,
+          "iou": 0.7978260869565217,
+          "boundary_f1_2px": 0.938625450180072
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 3,
+          "predicted_pixels": 6916,
+          "iou": 0.00043377674956622325,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 90,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0021-offset.png",
+      "scene": 21,
+      "camera": "offset",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1011,
+          "predicted_pixels": 1073,
+          "iou": 0.9101741521539871,
+          "boundary_f1_2px": 0.9953703703703703
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1408,
+          "predicted_pixels": 1377,
+          "iou": 0.8455931080185554,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 261,
+          "predicted_pixels": 4539,
+          "iou": 0.05587329520457545,
+          "boundary_f1_2px": 0.24231146427942768
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 337,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1018,
+          "predicted_pixels": 1096,
+          "iou": 0.8891867739052726,
+          "boundary_f1_2px": 1.0
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0022-entrance.png",
+      "scene": 22,
+      "camera": "entrance",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1055,
+          "predicted_pixels": 941,
+          "iou": 0.8278388278388278,
+          "boundary_f1_2px": 0.9873708381171068
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1266,
+          "predicted_pixels": 1309,
+          "iou": 0.9671504965622613,
+          "boundary_f1_2px": 0.9873708381171068
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 7138,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 618,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 414,
+          "predicted_pixels": 243,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.6796998910450026
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0022-offset.png",
+      "scene": 22,
+      "camera": "offset",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1020,
+          "predicted_pixels": 1110,
+          "iou": 0.9137466307277629,
+          "boundary_f1_2px": 0.9965792474344356
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1425,
+          "predicted_pixels": 1510,
+          "iou": 0.9385733157199472,
+          "boundary_f1_2px": 0.9875986471251409
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 2724,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 282,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1017,
+          "predicted_pixels": 1140,
+          "iou": 0.8562822719449226,
+          "boundary_f1_2px": 1.0
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0023-entrance.png",
+      "scene": 23,
+      "camera": "entrance",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 22,
+          "predicted_pixels": 7235,
+          "iou": 0.0002756719503790489,
+          "boundary_f1_2px": 0.04633956386292835
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0023-offset.png",
+      "scene": 23,
+      "camera": "offset",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 263,
+          "predicted_pixels": 2518,
+          "iou": 0.10138613861386139,
+          "boundary_f1_2px": 0.16314333148865523
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0024-entrance.png",
+      "scene": 24,
+      "camera": "entrance",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 836,
+          "predicted_pixels": 913,
+          "iou": 0.9156626506024096,
+          "boundary_f1_2px": 0.9871944121071013
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 513,
+          "predicted_pixels": 790,
+          "iou": 0.6246882793017456,
+          "boundary_f1_2px": 0.9951923076923077
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 5453,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 192,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 410,
+          "predicted_pixels": 607,
+          "iou": 0.4405099150141643,
+          "boundary_f1_2px": 0.9869451697127937
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0024-offset.png",
+      "scene": 24,
+      "camera": "offset",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1008,
+          "predicted_pixels": 1110,
+          "iou": 0.9029649595687331,
+          "boundary_f1_2px": 0.9908675799086757
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1411,
+          "predicted_pixels": 1507,
+          "iou": 0.9337309476474487,
+          "boundary_f1_2px": 0.9875141884222474
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 285,
+          "predicted_pixels": 7691,
+          "iou": 0.037056299570927057,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 276,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1006,
+          "predicted_pixels": 1169,
+          "iou": 0.8526405451448041,
+          "boundary_f1_2px": 1.0
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0025-entrance.png",
+      "scene": 25,
+      "camera": "entrance",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 236,
+          "predicted_pixels": 198,
+          "iou": 0.7290836653386454,
+          "boundary_f1_2px": 0.9511111111111111
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 18,
+          "predicted_pixels": 104,
+          "iou": 0.1619047619047619,
+          "boundary_f1_2px": 0.6301369863013699
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 3,
+          "predicted_pixels": 2585,
+          "iou": 0.0011605415860735009,
+          "boundary_f1_2px": 0.006600660066006601
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 100,
+          "predicted_pixels": 0,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 94,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0025-offset.png",
+      "scene": 25,
+      "camera": "offset",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 870,
+          "predicted_pixels": 932,
+          "iou": 0.9211087420042644,
+          "boundary_f1_2px": 0.9954545454545455
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1037,
+          "predicted_pixels": 1208,
+          "iou": 0.8326530612244898,
+          "boundary_f1_2px": 0.896129240272192
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 98,
+          "predicted_pixels": 4642,
+          "iou": 0.020891664871850096,
+          "boundary_f1_2px": 0.008478168715557441
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1022,
+          "predicted_pixels": 1101,
+          "iou": 0.9074573225516622,
+          "boundary_f1_2px": 0.9942726231386024
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0026-entrance.png",
+      "scene": 26,
+      "camera": "entrance",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 2,
+          "predicted_pixels": 0,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 548,
+          "predicted_pixels": 468,
+          "iou": 0.6765676567656765,
+          "boundary_f1_2px": 0.9113924050632911
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 5561,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0026-offset.png",
+      "scene": 26,
+      "camera": "offset",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 863,
+          "predicted_pixels": 976,
+          "iou": 0.851963746223565,
+          "boundary_f1_2px": 0.9819004524886877
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 749,
+          "predicted_pixels": 910,
+          "iou": 0.5276243093922652,
+          "boundary_f1_2px": 0.9480263199639593
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 253,
+          "predicted_pixels": 3771,
+          "iou": 0.06680805938494168,
+          "boundary_f1_2px": 0.3179229648200629
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1035,
+          "predicted_pixels": 1099,
+          "iou": 0.8884955752212389,
+          "boundary_f1_2px": 0.9965556831228473
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0027-entrance.png",
+      "scene": 27,
+      "camera": "entrance",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 324,
+          "predicted_pixels": 337,
+          "iou": 0.9048991354466859,
+          "boundary_f1_2px": 0.9969788519637462
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 103,
+          "predicted_pixels": 117,
+          "iou": 0.8032786885245902,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 2864,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 43,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 210,
+          "predicted_pixels": 237,
+          "iou": 0.4326923076923077,
+          "boundary_f1_2px": 0.9969040247678018
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0027-offset.png",
+      "scene": 27,
+      "camera": "offset",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1065,
+          "predicted_pixels": 1134,
+          "iou": 0.8973252804141502,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1486,
+          "predicted_pixels": 1576,
+          "iou": 0.934301958307012,
+          "boundary_f1_2px": 0.9869019416937583
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 124,
+          "predicted_pixels": 7516,
+          "iou": 0.016498137307078234,
+          "boundary_f1_2px": 0.00511182108626198
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 434,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1053,
+          "predicted_pixels": 1015,
+          "iou": 0.8333333333333334,
+          "boundary_f1_2px": 0.994311717861206
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0028-entrance.png",
+      "scene": 28,
+      "camera": "entrance",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 151,
+          "predicted_pixels": 193,
+          "iou": 0.7114427860696517,
+          "boundary_f1_2px": 0.9139072847682119
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 162,
+          "predicted_pixels": 207,
+          "iou": 0.782608695652174,
+          "boundary_f1_2px": 0.9104477611940298
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 1664,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 44,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 56,
+          "predicted_pixels": 92,
+          "iou": 0.24369747899159663,
+          "boundary_f1_2px": 0.8484848484848484
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0028-offset.png",
+      "scene": 28,
+      "camera": "offset",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1057,
+          "predicted_pixels": 1125,
+          "iou": 0.9326837909654562,
+          "boundary_f1_2px": 0.9988826815642458
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1477,
+          "predicted_pixels": 1554,
+          "iou": 0.936741214057508,
+          "boundary_f1_2px": 0.9966480446927374
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 26,
+          "predicted_pixels": 7833,
+          "iou": 0.00331929018256096,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 263,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1046,
+          "predicted_pixels": 1243,
+          "iou": 0.8239043824701195,
+          "boundary_f1_2px": 0.9988674971687429
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0029-entrance.png",
+      "scene": 29,
+      "camera": "entrance",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 118,
+          "predicted_pixels": 159,
+          "iou": 0.7421383647798742,
+          "boundary_f1_2px": 0.9927007299270074
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 98,
+          "predicted_pixels": 116,
+          "iou": 0.7983193277310925,
+          "boundary_f1_2px": 0.9879518072289156
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 1258,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 36,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 61,
+          "predicted_pixels": 66,
+          "iou": 0.2828282828282828,
+          "boundary_f1_2px": 0.983050847457627
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0029-offset.png",
+      "scene": 29,
+      "camera": "offset",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1034,
+          "predicted_pixels": 637,
+          "iou": 0.5544186046511628,
+          "boundary_f1_2px": 0.8511749347258486
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 12,
+          "predicted_pixels": 0,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 222,
+          "predicted_pixels": 1772,
+          "iou": 0.10716268739589117,
+          "boundary_f1_2px": 0.5720558184760067
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 88,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1023,
+          "predicted_pixels": 1554,
+          "iou": 0.6583011583011583,
+          "boundary_f1_2px": 0.9079497907949792
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0030-entrance.png",
+      "scene": 30,
+      "camera": "entrance",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 392,
+          "predicted_pixels": 399,
+          "iou": 0.9627791563275434,
+          "boundary_f1_2px": 0.99009900990099
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1385,
+          "predicted_pixels": 756,
+          "iou": 0.517363571934798,
+          "boundary_f1_2px": 0.6687116564417177
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 9645,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 194,
+          "predicted_pixels": 214,
+          "iou": 0.880184331797235,
+          "boundary_f1_2px": 0.9948979591836734
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 1,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0030-offset.png",
+      "scene": 30,
+      "camera": "offset",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 884,
+          "predicted_pixels": 976,
+          "iou": 0.8921668362156663,
+          "boundary_f1_2px": 0.9943883277216611
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 467,
+          "predicted_pixels": 545,
+          "iou": 0.8534798534798534,
+          "boundary_f1_2px": 0.9202453987730062
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 4805,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1035,
+          "predicted_pixels": 1082,
+          "iou": 0.9210526315789473,
+          "boundary_f1_2px": 0.9965870307167235
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0031-entrance.png",
+      "scene": 31,
+      "camera": "entrance",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 434,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0031-offset.png",
+      "scene": 31,
+      "camera": "offset",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 240,
+          "predicted_pixels": 1151,
+          "iou": 0.11996779388083736,
+          "boundary_f1_2px": 0.6243097598296853
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0032-entrance.png",
+      "scene": 32,
+      "camera": "entrance",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 330,
+          "predicted_pixels": 360,
+          "iou": 0.9166666666666666,
+          "boundary_f1_2px": 0.9724137931034482
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 197,
+          "predicted_pixels": 292,
+          "iou": 0.6746575342465754,
+          "boundary_f1_2px": 0.893559756488305
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 20,
+          "predicted_pixels": 3508,
+          "iou": 0.005701254275940707,
+          "boundary_f1_2px": 0.012165450121654502
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 128,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 128,
+          "predicted_pixels": 87,
+          "iou": 0.023809523809523808,
+          "boundary_f1_2px": 0.9249999999999999
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0032-offset.png",
+      "scene": 32,
+      "camera": "offset",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1027,
+          "predicted_pixels": 1109,
+          "iou": 0.915695067264574,
+          "boundary_f1_2px": 0.9954545454545455
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 748,
+          "predicted_pixels": 830,
+          "iou": 0.7850678733031674,
+          "boundary_f1_2px": 0.8729150673459418
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 98,
+          "predicted_pixels": 3994,
+          "iou": 0.023767825869402053,
+          "boundary_f1_2px": 0.00980392156862745
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 98,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1013,
+          "predicted_pixels": 1304,
+          "iou": 0.7727620504973222,
+          "boundary_f1_2px": 0.9977116704805492
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0033-entrance.png",
+      "scene": 33,
+      "camera": "entrance",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 920,
+          "predicted_pixels": 857,
+          "iou": 0.8924387646432375,
+          "boundary_f1_2px": 0.9976580796252927
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1055,
+          "predicted_pixels": 1151,
+          "iou": 0.8111658456486043,
+          "boundary_f1_2px": 0.9965075669383004
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 4870,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 513,
+          "predicted_pixels": 17,
+          "iou": 0.03313840155945419,
+          "boundary_f1_2px": 0.17218543046357618
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 611,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0033-offset.png",
+      "scene": 33,
+      "camera": "offset",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 840,
+          "predicted_pixels": 910,
+          "iou": 0.912568306010929,
+          "boundary_f1_2px": 0.9930394431554525
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1391,
+          "predicted_pixels": 1461,
+          "iou": 0.9361846571622539,
+          "boundary_f1_2px": 0.991859064118011
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 286,
+          "predicted_pixels": 6327,
+          "iou": 0.045203097834676784,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1013,
+          "predicted_pixels": 1081,
+          "iou": 0.905368516833485,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0034-entrance.png",
+      "scene": 34,
+      "camera": "entrance",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 840,
+          "predicted_pixels": 1197,
+          "iou": 0.6387771520514883,
+          "boundary_f1_2px": 0.9636363636363636
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 324,
+          "predicted_pixels": 437,
+          "iou": 0.7334851936218679,
+          "boundary_f1_2px": 0.8846153846153846
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 6582,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 414,
+          "predicted_pixels": 67,
+          "iou": 0.12910798122065728,
+          "boundary_f1_2px": 0.5266903914590747
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 552,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0034-offset.png",
+      "scene": 34,
+      "camera": "offset",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 849,
+          "predicted_pixels": 1001,
+          "iou": 0.801363193768257,
+          "boundary_f1_2px": 0.9874572405929305
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1411,
+          "predicted_pixels": 1577,
+          "iou": 0.8616822429906542,
+          "boundary_f1_2px": 0.9886104783599089
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 284,
+          "predicted_pixels": 7260,
+          "iou": 0.03911845730027548,
+          "boundary_f1_2px": 0.013181545835829839
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1023,
+          "predicted_pixels": 1017,
+          "iou": 0.8647166361974405,
+          "boundary_f1_2px": 0.9942062572421785
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0035-entrance.png",
+      "scene": 35,
+      "camera": "entrance",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1060,
+          "predicted_pixels": 1048,
+          "iou": 0.9830667920978363,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 277,
+          "predicted_pixels": 616,
+          "iou": 0.4085173501577287,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 5525,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 416,
+          "predicted_pixels": 183,
+          "iou": 0.4028103044496487,
+          "boundary_f1_2px": 0.9199488854181458
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 248,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0035-offset.png",
+      "scene": 35,
+      "camera": "offset",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 872,
+          "predicted_pixels": 967,
+          "iou": 0.9017580144777663,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1445,
+          "predicted_pixels": 1516,
+          "iou": 0.9454664914586071,
+          "boundary_f1_2px": 0.9966178128523112
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 280,
+          "predicted_pixels": 6737,
+          "iou": 0.04156152590173668,
+          "boundary_f1_2px": 0.010843373493975903
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1045,
+          "predicted_pixels": 1063,
+          "iou": 0.9410681399631676,
+          "boundary_f1_2px": 0.9977272727272727
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0036-entrance.png",
+      "scene": 36,
+      "camera": "entrance",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 76,
+          "predicted_pixels": 246,
+          "iou": 0.3089430894308943,
+          "boundary_f1_2px": 0.48677248677248675
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 276,
+          "predicted_pixels": 152,
+          "iou": 0.4657534246575342,
+          "boundary_f1_2px": 0.544841158279449
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 4293,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 44,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 36,
+          "predicted_pixels": 19,
+          "iou": 0.12244897959183673,
+          "boundary_f1_2px": 0.9318715740015662
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0036-offset.png",
+      "scene": 36,
+      "camera": "offset",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1011,
+          "predicted_pixels": 1081,
+          "iou": 0.9052823315118397,
+          "boundary_f1_2px": 0.9953703703703703
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1403,
+          "predicted_pixels": 1311,
+          "iou": 0.8313090418353576,
+          "boundary_f1_2px": 0.9824451445743353
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 218,
+          "predicted_pixels": 4632,
+          "iou": 0.04638619201725998,
+          "boundary_f1_2px": 0.1579130032392411
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 161,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1024,
+          "predicted_pixels": 1233,
+          "iou": 0.8070456365092074,
+          "boundary_f1_2px": 1.0
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0037-entrance.png",
+      "scene": 37,
+      "camera": "entrance",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 307,
+          "predicted_pixels": 339,
+          "iou": 0.7845303867403315,
+          "boundary_f1_2px": 0.9323308270676692
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 621,
+          "predicted_pixels": 616,
+          "iou": 0.9237947122861586,
+          "boundary_f1_2px": 0.954147552246083
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 44,
+          "predicted_pixels": 3854,
+          "iou": 0.000513347022587269,
+          "boundary_f1_2px": 0.006451612903225806
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 101,
+          "predicted_pixels": 68,
+          "iou": 0.4444444444444444,
+          "boundary_f1_2px": 0.9538461538461539
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 73,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0037-offset.png",
+      "scene": 37,
+      "camera": "offset",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 110,
+          "predicted_pixels": 142,
+          "iou": 0.44,
+          "boundary_f1_2px": 0.8634361233480176
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 48,
+          "predicted_pixels": 57,
+          "iou": 0.5217391304347826,
+          "boundary_f1_2px": 0.9127789046653144
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 238,
+          "predicted_pixels": 529,
+          "iou": 0.0638002773925104,
+          "boundary_f1_2px": 0.3313128900301574
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 154,
+          "predicted_pixels": 344,
+          "iou": 0.2087378640776699,
+          "boundary_f1_2px": 0.34563160060348375
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 66,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0038-entrance.png",
+      "scene": 38,
+      "camera": "entrance",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 938,
+          "predicted_pixels": 950,
+          "iou": 0.905146316851665,
+          "boundary_f1_2px": 0.9918887601390498
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1406,
+          "predicted_pixels": 1515,
+          "iou": 0.928052805280528,
+          "boundary_f1_2px": 0.9839080459770115
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 5426,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 527,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 412,
+          "predicted_pixels": 195,
+          "iou": 0.050173010380622836,
+          "boundary_f1_2px": 0.6903765690376569
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0038-offset.png",
+      "scene": 38,
+      "camera": "offset",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1011,
+          "predicted_pixels": 1104,
+          "iou": 0.9002695417789758,
+          "boundary_f1_2px": 0.9942987457240594
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1411,
+          "predicted_pixels": 1484,
+          "iou": 0.9455645161290323,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 2772,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 352,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1007,
+          "predicted_pixels": 1036,
+          "iou": 0.8864265927977839,
+          "boundary_f1_2px": 0.9976580796252927
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0039-entrance.png",
+      "scene": 39,
+      "camera": "entrance",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 34,
+          "predicted_pixels": 5303,
+          "iou": 0.006411465208372619,
+          "boundary_f1_2px": 0.10068027210884353
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0039-offset.png",
+      "scene": 39,
+      "camera": "offset",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 255,
+          "predicted_pixels": 2741,
+          "iou": 0.09263311451495258,
+          "boundary_f1_2px": 0.012598425196850394
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0040-entrance.png",
+      "scene": 40,
+      "camera": "entrance",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 437,
+          "predicted_pixels": 930,
+          "iou": 0.46203208556149733,
+          "boundary_f1_2px": 0.9517396184062851
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 64,
+          "predicted_pixels": 153,
+          "iou": 0.4090909090909091,
+          "boundary_f1_2px": 0.7924528301886793
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 5685,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 140,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 412,
+          "predicted_pixels": 395,
+          "iou": 0.002484472049689441,
+          "boundary_f1_2px": 0.719512513601741
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0040-offset.png",
+      "scene": 40,
+      "camera": "offset",
+      "condition": "ordinary",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 995,
+          "predicted_pixels": 1086,
+          "iou": 0.9074243813015582,
+          "boundary_f1_2px": 0.9953596287703016
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1392,
+          "predicted_pixels": 1478,
+          "iou": 0.935266351989211,
+          "boundary_f1_2px": 0.9965397923875432
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 283,
+          "predicted_pixels": 7037,
+          "iou": 0.04021600113684809,
+          "boundary_f1_2px": 0.002369668246445498
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 352,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 991,
+          "predicted_pixels": 1030,
+          "iou": 0.9192782526115859,
+          "boundary_f1_2px": 1.0
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0041-entrance.png",
+      "scene": 41,
+      "camera": "entrance",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1021,
+          "predicted_pixels": 1042,
+          "iou": 0.9517502365184485,
+          "boundary_f1_2px": 0.9894242068155111
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 295,
+          "predicted_pixels": 233,
+          "iou": 0.29411764705882354,
+          "boundary_f1_2px": 0.7979539641943734
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 17,
+          "predicted_pixels": 6447,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.01335113484646195
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 167,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 412,
+          "predicted_pixels": 356,
+          "iou": 0.47126436781609193,
+          "boundary_f1_2px": 1.0
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0041-offset.png",
+      "scene": 41,
+      "camera": "offset",
+      "condition": "glare",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1035,
+          "predicted_pixels": 1135,
+          "iou": 0.9085312225153914,
+          "boundary_f1_2px": 0.9966178128523112
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1449,
+          "predicted_pixels": 1480,
+          "iou": 0.9346103038309115,
+          "boundary_f1_2px": 0.9977528089887641
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 291,
+          "predicted_pixels": 6084,
+          "iou": 0.04783037475345168,
+          "boundary_f1_2px": 0.08338092518560823
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 188,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1021,
+          "predicted_pixels": 1293,
+          "iou": 0.7882534775888718,
+          "boundary_f1_2px": 0.9988597491448118
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0042-entrance.png",
+      "scene": 42,
+      "camera": "entrance",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 156,
+          "predicted_pixels": 188,
+          "iou": 0.7551020408163265,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 498,
+          "predicted_pixels": 574,
+          "iou": 0.8324786324786325,
+          "boundary_f1_2px": 0.9843749999999999
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 3,
+          "predicted_pixels": 4114,
+          "iou": 0.0007292173067574137,
+          "boundary_f1_2px": 0.007952286282306164
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 4,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 36,
+          "predicted_pixels": 103,
+          "iou": 0.34951456310679613,
+          "boundary_f1_2px": 0.7241379310344828
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0042-offset.png",
+      "scene": 42,
+      "camera": "offset",
+      "condition": "dim",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1037,
+          "predicted_pixels": 1189,
+          "iou": 0.7610759493670886,
+          "boundary_f1_2px": 0.9887133182844243
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1448,
+          "predicted_pixels": 1642,
+          "iou": 0.8603251053582179,
+          "boundary_f1_2px": 0.986579677942639
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 282,
+          "predicted_pixels": 7346,
+          "iou": 0.0383882384971413,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 669,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1038,
+          "predicted_pixels": 549,
+          "iou": 0.5215723873441994,
+          "boundary_f1_2px": 0.904040404040404
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0043-entrance.png",
+      "scene": 43,
+      "camera": "entrance",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 934,
+          "predicted_pixels": 825,
+          "iou": 0.8438155136268344,
+          "boundary_f1_2px": 0.9623947097902635
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 654,
+          "predicted_pixels": 1019,
+          "iou": 0.6258503401360545,
+          "boundary_f1_2px": 0.8250115063449274
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 29,
+          "predicted_pixels": 7419,
+          "iou": 0.003908882598732983,
+          "boundary_f1_2px": 0.02343348521703381
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 172,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 412,
+          "predicted_pixels": 463,
+          "iou": 0.35030864197530864,
+          "boundary_f1_2px": 0.9857954545454545
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0043-offset.png",
+      "scene": 43,
+      "camera": "offset",
+      "condition": "rotation",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 975,
+          "predicted_pixels": 1051,
+          "iou": 0.8952291861552854,
+          "boundary_f1_2px": 0.992822966507177
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1363,
+          "predicted_pixels": 1470,
+          "iou": 0.9128966914247131,
+          "boundary_f1_2px": 0.9893798112651963
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 254,
+          "predicted_pixels": 4952,
+          "iou": 0.043495690519142115,
+          "boundary_f1_2px": 0.1814370431664598
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 215,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 992,
+          "predicted_pixels": 1180,
+          "iou": 0.8175732217573222,
+          "boundary_f1_2px": 1.0
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0044-entrance.png",
+      "scene": 44,
+      "camera": "entrance",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 35,
+          "predicted_pixels": 48,
+          "iou": 0.509090909090909,
+          "boundary_f1_2px": 0.8979591836734693
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 42,
+          "predicted_pixels": 19,
+          "iou": 0.38636363636363635,
+          "boundary_f1_2px": 0.9
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 7382,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 12,
+          "predicted_pixels": 0,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 28,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0044-offset.png",
+      "scene": 44,
+      "camera": "offset",
+      "condition": "occlusion",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 849,
+          "predicted_pixels": 935,
+          "iou": 0.8998935037273695,
+          "boundary_f1_2px": 1.0
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1399,
+          "predicted_pixels": 1481,
+          "iou": 0.9380888290713324,
+          "boundary_f1_2px": 0.9953703703703703
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 276,
+          "predicted_pixels": 7756,
+          "iou": 0.03558535327488396,
+          "boundary_f1_2px": 0.004415011037527594
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 1029,
+          "predicted_pixels": 1056,
+          "iou": 0.919889502762431,
+          "boundary_f1_2px": 0.9930394431554525
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0045-entrance.png",
+      "scene": 45,
+      "camera": "entrance",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 21,
+          "predicted_pixels": 1298,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.051752528816748994
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 12,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0045-offset.png",
+      "scene": 45,
+      "camera": "offset",
+      "condition": "blur",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 572,
+          "predicted_pixels": 634,
+          "iou": 0.8468606431852986,
+          "boundary_f1_2px": 0.9948600664890481
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 885,
+          "predicted_pixels": 934,
+          "iou": 0.8561224489795919,
+          "boundary_f1_2px": 0.9730184708908114
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 73,
+          "predicted_pixels": 2250,
+          "iou": 0.02878653675819309,
+          "boundary_f1_2px": 0.1988304093567251
+        },
+        {
+          "class_id": 4,
+          "visible": true,
+          "gt_pixels": 699,
+          "predicted_pixels": 679,
+          "iou": 0.8928571428571429,
+          "boundary_f1_2px": 0.979310344827586
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0046-entrance.png",
+      "scene": 46,
+      "camera": "entrance",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1055,
+          "predicted_pixels": 1074,
+          "iou": 0.9823091247672253,
+          "boundary_f1_2px": 0.9942062572421785
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1266,
+          "predicted_pixels": 1304,
+          "iou": 0.9693486590038314,
+          "boundary_f1_2px": 0.9873708381171068
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 6725,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 417,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 412,
+          "predicted_pixels": 220,
+          "iou": 0.0047694753577106515,
+          "boundary_f1_2px": 0.9791183294663574
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "open"
+    },
+    {
+      "file": "0046-offset.png",
+      "scene": 46,
+      "camera": "offset",
+      "condition": "absent_cable",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": true,
+          "gt_pixels": 1037,
+          "predicted_pixels": 1118,
+          "iou": 0.9206773618538324,
+          "boundary_f1_2px": 0.9966024915062288
+        },
+        {
+          "class_id": 2,
+          "visible": true,
+          "gt_pixels": 1447,
+          "predicted_pixels": 1496,
+          "iou": 0.9323703217334208,
+          "boundary_f1_2px": 0.9931818181818182
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 2671,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 181,
+          "iou": 0.0,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": true,
+          "gt_pixels": 1025,
+          "predicted_pixels": 1295,
+          "iou": 0.7901234567901234,
+          "boundary_f1_2px": 0.9954441913439636
+        }
+      ],
+      "latch_visible": true,
+      "authored_slider_state": "closed",
+      "predicted_slider_state": "closed"
+    },
+    {
+      "file": "0047-entrance.png",
+      "scene": 47,
+      "camera": "entrance",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": false,
+          "gt_pixels": 3,
+          "predicted_pixels": 3389,
+          "iou": 0.0,
+          "boundary_f1_2px": 0.011822660098522168
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    },
+    {
+      "file": "0047-offset.png",
+      "scene": 47,
+      "camera": "offset",
+      "condition": "absent_socket",
+      "scores": [
+        {
+          "class_id": 1,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 2,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 3,
+          "visible": true,
+          "gt_pixels": 139,
+          "predicted_pixels": 4052,
+          "iou": 0.0343040473840079,
+          "boundary_f1_2px": 0.0
+        },
+        {
+          "class_id": 4,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        },
+        {
+          "class_id": 5,
+          "visible": false,
+          "gt_pixels": 0,
+          "predicted_pixels": 0,
+          "iou": null,
+          "boundary_f1_2px": null
+        }
+      ],
+      "latch_visible": false,
+      "authored_slider_state": "open",
+      "predicted_slider_state": "unknown"
+    }
+  ],
+  "confusion": [
+    [
+      37893556,
+      6368,
+      7815,
+      429028,
+      7346,
+      9315
+    ],
+    [
+      991,
+      54873,
+      4,
+      1051,
+      345,
+      461
+    ],
+    [
+      949,
+      184,
+      60627,
+      1939,
+      3,
+      0
+    ],
+    [
+      526,
+      94,
+      30,
+      9047,
+      68,
+      45
+    ],
+    [
+      513,
+      339,
+      0,
+      217,
+      17164,
+      3687
+    ],
+    [
+      669,
+      687,
+      0,
+      102,
+      3403,
+      23722
+    ]
+  ],
+  "inference": {
+    "frames": [
+      {
+        "file": "0000-entrance.png",
+        "seconds": 0.20614553400082514,
+        "rgb_sha256": "00b9edde33549a6f060c69f1eccd6176e65dc168eda89b31493fb6b2b7c431bf",
+        "predicted_pixels": [
+          393933,
+          638,
+          0,
+          6147,
+          183,
+          507
+        ]
+      },
+      {
+        "file": "0000-offset.png",
+        "seconds": 0.008264998003141955,
+        "rgb_sha256": "6c676a506c88caf081bbb4b1739259f49c262dccb0d8fe81b4246d74431955b3",
+        "predicted_pixels": [
+          393561,
+          1090,
+          1341,
+          4016,
+          385,
+          1015
+        ]
+      },
+      {
+        "file": "0001-entrance.png",
+        "seconds": 0.008293182007037103,
+        "rgb_sha256": "6794c070c8ce950e65af0398c3ada1f904a83d597bfec3cd85e95b9d4b13ed6e",
+        "predicted_pixels": [
+          398939,
+          174,
+          132,
+          1879,
+          10,
+          274
+        ]
+      },
+      {
+        "file": "0001-offset.png",
+        "seconds": 0.008289206991321407,
+        "rgb_sha256": "13524b29e2ac3d3e127baea511ce0a25ee0430df8ac109dbc88f6a32aadde8e6",
+        "predicted_pixels": [
+          391381,
+          960,
+          1510,
+          6496,
+          1061,
+          0
+        ]
+      },
+      {
+        "file": "0002-entrance.png",
+        "seconds": 0.008300060988403857,
+        "rgb_sha256": "52633f0429a73965f6b1abb6a439ce6647d7eddd6bb4c2c6a9e3a613f67a4dc7",
+        "predicted_pixels": [
+          395154,
+          214,
+          358,
+          5454,
+          157,
+          71
+        ]
+      },
+      {
+        "file": "0002-offset.png",
+        "seconds": 0.008327221003128216,
+        "rgb_sha256": "04234e2f915851fd9979ade3ce307effa96df1da89774bc21f4a347661af1517",
+        "predicted_pixels": [
+          400271,
+          0,
+          0,
+          1085,
+          0,
+          52
+        ]
+      },
+      {
+        "file": "0003-entrance.png",
+        "seconds": 0.008320691005792469,
+        "rgb_sha256": "48b32430233df5dcc3194ef8d4e171d6d4560859160e00d6a526c71aa0233ddf",
+        "predicted_pixels": [
+          393977,
+          1059,
+          169,
+          5311,
+          245,
+          647
+        ]
+      },
+      {
+        "file": "0003-offset.png",
+        "seconds": 0.008315740997204557,
+        "rgb_sha256": "3208ea337b3b404fccf31f4d33190f55b2c0382e4cf20573cc1209b232d2ecfb",
+        "predicted_pixels": [
+          391305,
+          1096,
+          1465,
+          6137,
+          239,
+          1166
+        ]
+      },
+      {
+        "file": "0004-entrance.png",
+        "seconds": 0.008294184997794218,
+        "rgb_sha256": "d981b3e69075fa9ea615e1b2376d69550f33badd99d0b4f74371c7f34497b776",
+        "predicted_pixels": [
+          400003,
+          206,
+          109,
+          657,
+          24,
+          409
+        ]
+      },
+      {
+        "file": "0004-offset.png",
+        "seconds": 0.008368807000806555,
+        "rgb_sha256": "2ea34178acfcb493f6ba22f7f06e0f641dbca05d58576732d8f04f42ebacb62f",
+        "predicted_pixels": [
+          397187,
+          646,
+          0,
+          2424,
+          538,
+          613
+        ]
+      },
+      {
+        "file": "0005-entrance.png",
+        "seconds": 0.008319258005940355,
+        "rgb_sha256": "107eab902e8c862d2030e5471905578e50c08169e42ac88c6421bc18b03660c8",
+        "predicted_pixels": [
+          391861,
+          117,
+          875,
+          8487,
+          17,
+          51
+        ]
+      },
+      {
+        "file": "0005-offset.png",
+        "seconds": 0.008307762996992096,
+        "rgb_sha256": "e3d5e3694c9eb431ff94b132168116577c9f648b48cfb501c63e43a2062e018b",
+        "predicted_pixels": [
+          392362,
+          930,
+          1549,
+          5514,
+          1053,
+          0
+        ]
+      },
+      {
+        "file": "0006-entrance.png",
+        "seconds": 0.008272235994809307,
+        "rgb_sha256": "8868785bd1e99300260a1b0708b780f84c119d126bcb5c8fd6a6b1bc03dcb547",
+        "predicted_pixels": [
+          391639,
+          1051,
+          1317,
+          6980,
+          138,
+          283
+        ]
+      },
+      {
+        "file": "0006-offset.png",
+        "seconds": 0.008316298000863753,
+        "rgb_sha256": "0d2dc8da94a270dde16661813354b0be9fa725e1f3e61bda2d57b327e4c61a69",
+        "predicted_pixels": [
+          394565,
+          1125,
+          1502,
+          2727,
+          204,
+          1285
+        ]
+      },
+      {
+        "file": "0007-entrance.png",
+        "seconds": 0.00829911399341654,
+        "rgb_sha256": "b4f9172765b2a15963bc90fedf903f9bc2958bb59488ebf48c6c83004438a2ec",
+        "predicted_pixels": [
+          397276,
+          0,
+          0,
+          4132,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0007-offset.png",
+        "seconds": 0.008323923000716604,
+        "rgb_sha256": "fe238226bc9d28fc1780dc717fbccc3a46330571c30b88d7672b3314097a0bc7",
+        "predicted_pixels": [
+          397854,
+          0,
+          0,
+          3554,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0008-entrance.png",
+        "seconds": 0.008304722010507248,
+        "rgb_sha256": "86e3ab394a3eca89dc2e773d0c325aa1dfdc7ca66360df6cb751126aee1594ee",
+        "predicted_pixels": [
+          393949,
+          759,
+          167,
+          5825,
+          56,
+          652
+        ]
+      },
+      {
+        "file": "0008-offset.png",
+        "seconds": 0.008332041994435713,
+        "rgb_sha256": "59b23c1e62299f929a435a88af94ec277314dd698bd5abb9ce42fed6071f5afe",
+        "predicted_pixels": [
+          391644,
+          937,
+          1468,
+          6316,
+          1043,
+          0
+        ]
+      },
+      {
+        "file": "0009-entrance.png",
+        "seconds": 0.008315683997352608,
+        "rgb_sha256": "212eddafa3af4d6d9fb6a7200cd13f9217a2541698d010cbf2040d1bab84d33d",
+        "predicted_pixels": [
+          399034,
+          217,
+          84,
+          1955,
+          36,
+          82
+        ]
+      },
+      {
+        "file": "0009-offset.png",
+        "seconds": 0.008302396992803551,
+        "rgb_sha256": "f7014e9bbb0c9c1de8291839c4c935ca62b53fb306d07e296d6517a6438b6e9d",
+        "predicted_pixels": [
+          390851,
+          955,
+          1534,
+          6952,
+          1116,
+          0
+        ]
+      },
+      {
+        "file": "0010-entrance.png",
+        "seconds": 0.008308080999995582,
+        "rgb_sha256": "a5113c2162bbf02895e46834234a39171a8d018a54bb6266b1f23cebd999a9eb",
+        "predicted_pixels": [
+          397656,
+          247,
+          515,
+          2651,
+          104,
+          235
+        ]
+      },
+      {
+        "file": "0010-offset.png",
+        "seconds": 0.008286494994536042,
+        "rgb_sha256": "2aff07b20563c945564679967ff758626108673b553b4a9cbe321fded23081af",
+        "predicted_pixels": [
+          397802,
+          1441,
+          0,
+          998,
+          90,
+          1077
+        ]
+      },
+      {
+        "file": "0011-entrance.png",
+        "seconds": 0.008309345997986384,
+        "rgb_sha256": "ef600cceb9df57bb4ef2ec61471726f247504a598c1046c19eb8a77b6ebfdcce",
+        "predicted_pixels": [
+          399193,
+          56,
+          0,
+          2124,
+          26,
+          9
+        ]
+      },
+      {
+        "file": "0011-offset.png",
+        "seconds": 0.008333065998158418,
+        "rgb_sha256": "6b805bc337b4bb0386203cce47aa40b5af6bdc5ac09dab8eaa2e184cc9a61425",
+        "predicted_pixels": [
+          395316,
+          911,
+          645,
+          3491,
+          1045,
+          0
+        ]
+      },
+      {
+        "file": "0012-entrance.png",
+        "seconds": 0.008321285000420175,
+        "rgb_sha256": "781031085607e257af91b5bd1b831aa0da836e33cb40dfbb098d291898407161",
+        "predicted_pixels": [
+          399575,
+          207,
+          95,
+          1380,
+          3,
+          148
+        ]
+      },
+      {
+        "file": "0012-offset.png",
+        "seconds": 0.008299824999994598,
+        "rgb_sha256": "87a369695b4833fc626145c977be32f884f0630e4f683df4b817db7aee4429f4",
+        "predicted_pixels": [
+          392716,
+          1079,
+          1499,
+          4718,
+          337,
+          1059
+        ]
+      },
+      {
+        "file": "0013-entrance.png",
+        "seconds": 0.008307938012876548,
+        "rgb_sha256": "76fb04c63d46f9ec2f8fc4dab272fe94325b8b1b25b8fa6ee24efe1310cb5b92",
+        "predicted_pixels": [
+          394094,
+          876,
+          121,
+          5851,
+          61,
+          405
+        ]
+      },
+      {
+        "file": "0013-offset.png",
+        "seconds": 0.00831588300934527,
+        "rgb_sha256": "7cd2df29a64195e41057ff90b3187311cf33316591dc6deb247fcff1bf933ea3",
+        "predicted_pixels": [
+          389955,
+          1115,
+          1470,
+          7430,
+          239,
+          1199
+        ]
+      },
+      {
+        "file": "0014-entrance.png",
+        "seconds": 0.008305284005473368,
+        "rgb_sha256": "4b45676072c959d8f1a3a185152117a8efba32552f7da81f2145e1485b28fbd5",
+        "predicted_pixels": [
+          395417,
+          278,
+          549,
+          5011,
+          70,
+          83
+        ]
+      },
+      {
+        "file": "0014-offset.png",
+        "seconds": 0.008306409014039673,
+        "rgb_sha256": "ec98300feae4702f4f75b3d875ea84c17302d90d16e61bad0bf5d540cf2f8469",
+        "predicted_pixels": [
+          394642,
+          1099,
+          1019,
+          3203,
+          58,
+          1387
+        ]
+      },
+      {
+        "file": "0015-entrance.png",
+        "seconds": 0.008317828003782779,
+        "rgb_sha256": "8363878fecc3b91bee86cc860d64a370d549ba1e9d65bc219fc9f6ee5856cfca",
+        "predicted_pixels": [
+          400371,
+          0,
+          0,
+          1037,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0015-offset.png",
+        "seconds": 0.00831048100371845,
+        "rgb_sha256": "57db6088ac2977b78ab357abd5940dd9ae453302e735bd29691f96a5b9207c13",
+        "predicted_pixels": [
+          400143,
+          0,
+          0,
+          1265,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0016-entrance.png",
+        "seconds": 0.008323283997015096,
+        "rgb_sha256": "8695cdca2a79b084ac0d7ffb16a836934007bad205ba81e4a89e0da34408afff",
+        "predicted_pixels": [
+          395037,
+          975,
+          50,
+          4608,
+          371,
+          367
+        ]
+      },
+      {
+        "file": "0016-offset.png",
+        "seconds": 0.008305862007546239,
+        "rgb_sha256": "2e3f8d0813ea925a81b4f9127f2c251253ccd5f6345734b275377ad618c3e044",
+        "predicted_pixels": [
+          392594,
+          932,
+          1559,
+          5267,
+          1056,
+          0
+        ]
+      },
+      {
+        "file": "0017-entrance.png",
+        "seconds": 0.00832088099559769,
+        "rgb_sha256": "90b1e47839017967225b7f1bfe095c4a95c3b4d8d8547b0d69e102672a912491",
+        "predicted_pixels": [
+          390724,
+          204,
+          968,
+          9360,
+          0,
+          152
+        ]
+      },
+      {
+        "file": "0017-offset.png",
+        "seconds": 0.008337898994795978,
+        "rgb_sha256": "5768ce55c90612de46ea72ac429634136150b48b2b8edd94fad5c178a51aa22e",
+        "predicted_pixels": [
+          398030,
+          821,
+          4,
+          1396,
+          335,
+          822
+        ]
+      },
+      {
+        "file": "0018-entrance.png",
+        "seconds": 0.008285657007945701,
+        "rgb_sha256": "e6236c0f754990ca7d2f080dd17b1d268e9707d4509e0d648397f29372740423",
+        "predicted_pixels": [
+          393963,
+          1195,
+          425,
+          5405,
+          44,
+          376
+        ]
+      },
+      {
+        "file": "0018-offset.png",
+        "seconds": 0.008330564000061713,
+        "rgb_sha256": "c5f55ab1f4e96bdf93839278ec4160c515a368983cb63a6bbc346b8e7c669e33",
+        "predicted_pixels": [
+          391335,
+          982,
+          1618,
+          6418,
+          1055,
+          0
+        ]
+      },
+      {
+        "file": "0019-entrance.png",
+        "seconds": 0.00830602199130226,
+        "rgb_sha256": "97ba99b725ba17ef77d564ebb9c41b6103f23cca2a557cb7861a2be28651dc61",
+        "predicted_pixels": [
+          394505,
+          970,
+          426,
+          4754,
+          190,
+          563
+        ]
+      },
+      {
+        "file": "0019-offset.png",
+        "seconds": 0.008316940002259798,
+        "rgb_sha256": "23438c393dd05f5d6e8937b665f8b83730ebc673e6be648246c7304689301211",
+        "predicted_pixels": [
+          391493,
+          1041,
+          1432,
+          6092,
+          130,
+          1220
+        ]
+      },
+      {
+        "file": "0020-entrance.png",
+        "seconds": 0.008306451010867022,
+        "rgb_sha256": "7a9da97d35a19605dd1c0c51e84b800042ef95a516f99487f181713bd1052495",
+        "predicted_pixels": [
+          398260,
+          223,
+          192,
+          2700,
+          7,
+          26
+        ]
+      },
+      {
+        "file": "0020-offset.png",
+        "seconds": 0.008323645000928082,
+        "rgb_sha256": "eecca97843e150ee16adbb4e3fae126cbe912b85f4c2c3ad1a094744b2828b5b",
+        "predicted_pixels": [
+          392348,
+          940,
+          1514,
+          5502,
+          1104,
+          0
+        ]
+      },
+      {
+        "file": "0021-entrance.png",
+        "seconds": 0.008310721008456312,
+        "rgb_sha256": "40a83e8655c3dfce984a01bb04178c5a95935f5144b096927731bd045c19ba97",
+        "predicted_pixels": [
+          393959,
+          0,
+          443,
+          6916,
+          0,
+          90
+        ]
+      },
+      {
+        "file": "0021-offset.png",
+        "seconds": 0.008277389002614655,
+        "rgb_sha256": "e145589ea8302d93ec1d7ccdf274b8e47067507c33a94f529495d0ae1a2f3ba1",
+        "predicted_pixels": [
+          392986,
+          1073,
+          1377,
+          4539,
+          337,
+          1096
+        ]
+      },
+      {
+        "file": "0022-entrance.png",
+        "seconds": 0.00829635800619144,
+        "rgb_sha256": "69a37b98777052254fb8f17ac92844de4a125316da84d05ceda16ed81be65f04",
+        "predicted_pixels": [
+          391159,
+          941,
+          1309,
+          7138,
+          618,
+          243
+        ]
+      },
+      {
+        "file": "0022-offset.png",
+        "seconds": 0.008343307999894023,
+        "rgb_sha256": "4edbdbe4dc4ac87f7f86fc117d1e9cf300793e5f09774c516c6d216c8c3f51f7",
+        "predicted_pixels": [
+          394642,
+          1110,
+          1510,
+          2724,
+          282,
+          1140
+        ]
+      },
+      {
+        "file": "0023-entrance.png",
+        "seconds": 0.008296376006910577,
+        "rgb_sha256": "8826426f606a105209d03e6c8e617b10940b205fc9dfd9df2ab91e9009d0034f",
+        "predicted_pixels": [
+          394173,
+          0,
+          0,
+          7235,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0023-offset.png",
+        "seconds": 0.00832642700697761,
+        "rgb_sha256": "bd9972124303c6bdb554b94d352c4657d33b5ed48981720c8943f11c76213df6",
+        "predicted_pixels": [
+          398890,
+          0,
+          0,
+          2518,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0024-entrance.png",
+        "seconds": 0.008308132004458457,
+        "rgb_sha256": "adb0f04929288d2e1822c4b1aafcd8a7c7b837a90e5b5a483132b63f01ef0dbe",
+        "predicted_pixels": [
+          393453,
+          913,
+          790,
+          5453,
+          192,
+          607
+        ]
+      },
+      {
+        "file": "0024-offset.png",
+        "seconds": 0.00829917199735064,
+        "rgb_sha256": "15d53b02e05e89e974b530ba69b102c424f864eebc0a0b82e9d8cc030139281b",
+        "predicted_pixels": [
+          389655,
+          1110,
+          1507,
+          7691,
+          276,
+          1169
+        ]
+      },
+      {
+        "file": "0025-entrance.png",
+        "seconds": 0.00837191600294318,
+        "rgb_sha256": "d16831429c30b3eb6cebdd1c3797962ff58264c501d7ae5bd36b62d6c7ac16ba",
+        "predicted_pixels": [
+          398427,
+          198,
+          104,
+          2585,
+          0,
+          94
+        ]
+      },
+      {
+        "file": "0025-offset.png",
+        "seconds": 0.008331531993462704,
+        "rgb_sha256": "79b1d086b2a2b2446fef54a779bb8139145b4c667a36cbb1acae7971ec744946",
+        "predicted_pixels": [
+          393525,
+          932,
+          1208,
+          4642,
+          1101,
+          0
+        ]
+      },
+      {
+        "file": "0026-entrance.png",
+        "seconds": 0.008301028996356763,
+        "rgb_sha256": "3134818e3e85801c4cb8ba2a7f05ba8f9e96a4375cb5fff55bc112af60cd9747",
+        "predicted_pixels": [
+          395379,
+          0,
+          468,
+          5561,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0026-offset.png",
+        "seconds": 0.008324191003339365,
+        "rgb_sha256": "0b08069d5c2c73e388ac1df4783c33dc119f9319bf6a37bf8adab71604b43680",
+        "predicted_pixels": [
+          394652,
+          976,
+          910,
+          3771,
+          1099,
+          0
+        ]
+      },
+      {
+        "file": "0027-entrance.png",
+        "seconds": 0.008337081992067397,
+        "rgb_sha256": "9759cd2b6471f843986ca97817f831e97092c7b7def8d2d67af047cc4953d9b4",
+        "predicted_pixels": [
+          397810,
+          337,
+          117,
+          2864,
+          43,
+          237
+        ]
+      },
+      {
+        "file": "0027-offset.png",
+        "seconds": 0.008311739002238028,
+        "rgb_sha256": "bfb7b8f8eb314ffd6774308b2dc2ba6a96d83523fb6a87a2a984435016ad4d05",
+        "predicted_pixels": [
+          389733,
+          1134,
+          1576,
+          7516,
+          434,
+          1015
+        ]
+      },
+      {
+        "file": "0028-entrance.png",
+        "seconds": 0.008313701997394674,
+        "rgb_sha256": "41269ea1c5276369b98dcc88d6455f4cd791845a656de3d410b649fbfea2cc63",
+        "predicted_pixels": [
+          399208,
+          193,
+          207,
+          1664,
+          44,
+          92
+        ]
+      },
+      {
+        "file": "0028-offset.png",
+        "seconds": 0.008333201010827906,
+        "rgb_sha256": "ec9d7c6e04b6ced7cba6d84b009133f6ffde91978c1a066b54cb919efb3134e6",
+        "predicted_pixels": [
+          389390,
+          1125,
+          1554,
+          7833,
+          263,
+          1243
+        ]
+      },
+      {
+        "file": "0029-entrance.png",
+        "seconds": 0.008295460997032933,
+        "rgb_sha256": "e9f6a4614636011f51b5b3ce4a0328ed8f39bb14277403a6ecd676ea87c96384",
+        "predicted_pixels": [
+          399773,
+          159,
+          116,
+          1258,
+          36,
+          66
+        ]
+      },
+      {
+        "file": "0029-offset.png",
+        "seconds": 0.0082978869904764,
+        "rgb_sha256": "cfad76d4f8cbf411434c1381de9852a9d0c656f28beec498fbef4fb5e49e4f1c",
+        "predicted_pixels": [
+          397357,
+          637,
+          0,
+          1772,
+          88,
+          1554
+        ]
+      },
+      {
+        "file": "0030-entrance.png",
+        "seconds": 0.00831221700354945,
+        "rgb_sha256": "d49d8493d00e13e1015ad7b4b5dcffa799c0683a6534121e9a5b77729d8ca6d8",
+        "predicted_pixels": [
+          390393,
+          399,
+          756,
+          9645,
+          214,
+          1
+        ]
+      },
+      {
+        "file": "0030-offset.png",
+        "seconds": 0.00833929299551528,
+        "rgb_sha256": "56e451600e740891cf0b6375c0c14394d0f57de44d4b952dde23734b10c42d0d",
+        "predicted_pixels": [
+          394000,
+          976,
+          545,
+          4805,
+          1082,
+          0
+        ]
+      },
+      {
+        "file": "0031-entrance.png",
+        "seconds": 0.008329128002515063,
+        "rgb_sha256": "85f8f5a8730f1d41603f7d5065709f6b9355d4b6928670725f92b1732ca2aa48",
+        "predicted_pixels": [
+          400974,
+          0,
+          0,
+          434,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0031-offset.png",
+        "seconds": 0.008318887004861608,
+        "rgb_sha256": "6332c63ec4ea47f81b8adc57615ef5b1eed8d54eda6feec81e92aed4c030e08e",
+        "predicted_pixels": [
+          400257,
+          0,
+          0,
+          1151,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0032-entrance.png",
+        "seconds": 0.00831028600805439,
+        "rgb_sha256": "3a3f9c97e3a8190bca3e8d772329bd3c19663e8f56e338252e091421796b07a3",
+        "predicted_pixels": [
+          397033,
+          360,
+          292,
+          3508,
+          128,
+          87
+        ]
+      },
+      {
+        "file": "0032-offset.png",
+        "seconds": 0.008315643994137645,
+        "rgb_sha256": "d3fa88dde82c2f594ffe58583ee886090d29c2cb4df248f2a89e011f1eb2e9e4",
+        "predicted_pixels": [
+          394073,
+          1109,
+          830,
+          3994,
+          98,
+          1304
+        ]
+      },
+      {
+        "file": "0033-entrance.png",
+        "seconds": 0.008298843997181393,
+        "rgb_sha256": "e282436917d9787e99877415f840d2660a8e83917943dbf3897b753ea3e4ca09",
+        "predicted_pixels": [
+          393902,
+          857,
+          1151,
+          4870,
+          17,
+          611
+        ]
+      },
+      {
+        "file": "0033-offset.png",
+        "seconds": 0.008297809996292926,
+        "rgb_sha256": "b0f059555793d4c9710e00f81dead2f8ba55f01591532fd488df3b4fb4546839",
+        "predicted_pixels": [
+          391629,
+          910,
+          1461,
+          6327,
+          1081,
+          0
+        ]
+      },
+      {
+        "file": "0034-entrance.png",
+        "seconds": 0.008309113007271662,
+        "rgb_sha256": "063afdef7926305fc1d26c729401698b78c32c3b319ad9f7e86b864576fc4026",
+        "predicted_pixels": [
+          392573,
+          1197,
+          437,
+          6582,
+          67,
+          552
+        ]
+      },
+      {
+        "file": "0034-offset.png",
+        "seconds": 0.008350549003807828,
+        "rgb_sha256": "a0c29a1680d025b3ad70274d32db737b318b380ba81243bf7f83450f98693c34",
+        "predicted_pixels": [
+          390553,
+          1001,
+          1577,
+          7260,
+          1017,
+          0
+        ]
+      },
+      {
+        "file": "0035-entrance.png",
+        "seconds": 0.008299225999508053,
+        "rgb_sha256": "96e5b6af0db81181eb8e9bfd023ab13ae992aa80b1ffaee43b05661687556b22",
+        "predicted_pixels": [
+          393788,
+          1048,
+          616,
+          5525,
+          183,
+          248
+        ]
+      },
+      {
+        "file": "0035-offset.png",
+        "seconds": 0.008309595999890007,
+        "rgb_sha256": "e0b0a76c037031b6b64c126e3a4589e5aabb542a5170af688eb94d9a0b44f71c",
+        "predicted_pixels": [
+          391125,
+          967,
+          1516,
+          6737,
+          1063,
+          0
+        ]
+      },
+      {
+        "file": "0036-entrance.png",
+        "seconds": 0.008300047004013322,
+        "rgb_sha256": "4c852c3a5b7f6e778debf2cb4c98ca461de5d540073dfa8d0f03d9cc76837c09",
+        "predicted_pixels": [
+          396654,
+          246,
+          152,
+          4293,
+          44,
+          19
+        ]
+      },
+      {
+        "file": "0036-offset.png",
+        "seconds": 0.008306790012284182,
+        "rgb_sha256": "ada9f51b25805e6c78ddec8ec878d9599b26c835375cdf684a6288b7d8c5f8f4",
+        "predicted_pixels": [
+          392990,
+          1081,
+          1311,
+          4632,
+          161,
+          1233
+        ]
+      },
+      {
+        "file": "0037-entrance.png",
+        "seconds": 0.008293775012134574,
+        "rgb_sha256": "487ec5a0b416b8e71d85119c9e3157071c2ebef734f4b8539b56c7b725218ab6",
+        "predicted_pixels": [
+          396458,
+          339,
+          616,
+          3854,
+          68,
+          73
+        ]
+      },
+      {
+        "file": "0037-offset.png",
+        "seconds": 0.008311074998346157,
+        "rgb_sha256": "46c20954eb32206380ff13748aa2c1f2db6be707943c06e0ea00f3a4b4ed9f1a",
+        "predicted_pixels": [
+          400270,
+          142,
+          57,
+          529,
+          344,
+          66
+        ]
+      },
+      {
+        "file": "0038-entrance.png",
+        "seconds": 0.008298811997519806,
+        "rgb_sha256": "2991103648742032bbc75afb173120cc7e37fd645c121add2a85b19ffdbd4562",
+        "predicted_pixels": [
+          392795,
+          950,
+          1515,
+          5426,
+          527,
+          195
+        ]
+      },
+      {
+        "file": "0038-offset.png",
+        "seconds": 0.008302208996610716,
+        "rgb_sha256": "70c5f191edadb6f960928470574da9c04d5f94b69592a1a09a62493aeb0f6c54",
+        "predicted_pixels": [
+          394660,
+          1104,
+          1484,
+          2772,
+          352,
+          1036
+        ]
+      },
+      {
+        "file": "0039-entrance.png",
+        "seconds": 0.008306073999847285,
+        "rgb_sha256": "35c14d2b2c09fba32fab2353fe3a896e9957573876ea338f73cdf5f52c3ebcd5",
+        "predicted_pixels": [
+          396105,
+          0,
+          0,
+          5303,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0039-offset.png",
+        "seconds": 0.008304374990984797,
+        "rgb_sha256": "ae726918fe432105e190fbeef695d48faeb4bafbd8e24c5eab1a8f1fed2b481f",
+        "predicted_pixels": [
+          398667,
+          0,
+          0,
+          2741,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0040-entrance.png",
+        "seconds": 0.00830231499276124,
+        "rgb_sha256": "4783e0a8b3c53413b20be620d5d0dbf5c73ab9f631cf12872bfad248fc1ebcea",
+        "predicted_pixels": [
+          394105,
+          930,
+          153,
+          5685,
+          140,
+          395
+        ]
+      },
+      {
+        "file": "0040-offset.png",
+        "seconds": 0.008320540000568144,
+        "rgb_sha256": "f445d49ed2e7bc7665050cc6b1a721a3109e54622b7aeb6490f6f8e2df4e7200",
+        "predicted_pixels": [
+          390425,
+          1086,
+          1478,
+          7037,
+          352,
+          1030
+        ]
+      },
+      {
+        "file": "0041-entrance.png",
+        "seconds": 0.008385276989429258,
+        "rgb_sha256": "5a9151bf3215181a90138cbb8c1b96a29d0210096075facd83c0a809f3a1093e",
+        "predicted_pixels": [
+          393163,
+          1042,
+          233,
+          6447,
+          167,
+          356
+        ]
+      },
+      {
+        "file": "0041-offset.png",
+        "seconds": 0.008308795004268177,
+        "rgb_sha256": "c56a162e71a9f077af69fb60ec9e2baa02678bb33de44abf5c7e9f8aec3af4d0",
+        "predicted_pixels": [
+          391228,
+          1135,
+          1480,
+          6084,
+          188,
+          1293
+        ]
+      },
+      {
+        "file": "0042-entrance.png",
+        "seconds": 0.008308999007567763,
+        "rgb_sha256": "78914f84d5bc8345b3aaca6a5a713a734d753c26e22ee376934e25515634cc13",
+        "predicted_pixels": [
+          396425,
+          188,
+          574,
+          4114,
+          4,
+          103
+        ]
+      },
+      {
+        "file": "0042-offset.png",
+        "seconds": 0.008305804003612138,
+        "rgb_sha256": "00dc332bbc31bcf9f4c3a93747adade1244281f53772806c79b5c5644a7ca4da",
+        "predicted_pixels": [
+          390013,
+          1189,
+          1642,
+          7346,
+          669,
+          549
+        ]
+      },
+      {
+        "file": "0043-entrance.png",
+        "seconds": 0.008307822005008347,
+        "rgb_sha256": "5e5127139f138a4d578f3aafccceeb1ee393eee0950e58b4c8d34bc6e945e95d",
+        "predicted_pixels": [
+          391510,
+          825,
+          1019,
+          7419,
+          172,
+          463
+        ]
+      },
+      {
+        "file": "0043-offset.png",
+        "seconds": 0.00829728900862392,
+        "rgb_sha256": "5e6220f357ecc90a7a2a265f19edc9d210ca4f37563da1d15a35be82e7a639f4",
+        "predicted_pixels": [
+          392540,
+          1051,
+          1470,
+          4952,
+          215,
+          1180
+        ]
+      },
+      {
+        "file": "0044-entrance.png",
+        "seconds": 0.00829761200293433,
+        "rgb_sha256": "4d667deb17898ea6903c5a6938d15acc2ce198f670da3300259bac7e31119ef8",
+        "predicted_pixels": [
+          393931,
+          48,
+          19,
+          7382,
+          0,
+          28
+        ]
+      },
+      {
+        "file": "0044-offset.png",
+        "seconds": 0.00832371499564033,
+        "rgb_sha256": "4b2e348de05dd77165d718f060a10e0e8024545839f6a9433d9713736bcf56cc",
+        "predicted_pixels": [
+          390180,
+          935,
+          1481,
+          7756,
+          1056,
+          0
+        ]
+      },
+      {
+        "file": "0045-entrance.png",
+        "seconds": 0.008307195006636903,
+        "rgb_sha256": "c96a622a57c1af5dad385d17bac3710148d78b9b2c049dc9548df4ca17150fa4",
+        "predicted_pixels": [
+          400098,
+          0,
+          0,
+          1298,
+          0,
+          12
+        ]
+      },
+      {
+        "file": "0045-offset.png",
+        "seconds": 0.008302817994263023,
+        "rgb_sha256": "39420134d630abc935234fccc87431b818e311caffccd1ea9cf6eee80ea28706",
+        "predicted_pixels": [
+          396911,
+          634,
+          934,
+          2250,
+          679,
+          0
+        ]
+      },
+      {
+        "file": "0046-entrance.png",
+        "seconds": 0.008331428995006718,
+        "rgb_sha256": "1ddf359ded6f7da44f19365a03d037cace1c90dc3f5918209fdee5c9c48c3e4b",
+        "predicted_pixels": [
+          391668,
+          1074,
+          1304,
+          6725,
+          417,
+          220
+        ]
+      },
+      {
+        "file": "0046-offset.png",
+        "seconds": 0.008313218990224414,
+        "rgb_sha256": "78796894f7a8b88e2cc01459b14367d5a5246e1f5ad83930a7eb056d8d766404",
+        "predicted_pixels": [
+          394647,
+          1118,
+          1496,
+          2671,
+          181,
+          1295
+        ]
+      },
+      {
+        "file": "0047-entrance.png",
+        "seconds": 0.00830041199515108,
+        "rgb_sha256": "56663b119e327d73833ba8ecdf1e62b0a7a7203967527a26c664de611abe208f",
+        "predicted_pixels": [
+          398019,
+          0,
+          0,
+          3389,
+          0,
+          0
+        ]
+      },
+      {
+        "file": "0047-offset.png",
+        "seconds": 0.008328967989655212,
+        "rgb_sha256": "137b552f765a0aac818145d715c0e1c5a794649bc4664c593e9fab8342f7e31c",
+        "predicted_pixels": [
+          397356,
+          0,
+          0,
+          4052,
+          0,
+          0
+        ]
+      }
+    ],
+    "classes": [
+      "background",
+      "upper_entrance_rim",
+      "lower_entrance_rim",
+      "cable_leading_band",
+      "slider_open",
+      "slider_closed"
+    ],
+    "crop_xyxy": [
+      1472,
+      856,
+      2368,
+      1304
+    ],
+    "model_sha256": "3ca1d3532563ff4df2c840578cab4a4fb4631c97aeda113500e1dd25ea00366b",
+    "backbone_sha256": "9a21ac3df0c63839d62612dda6f454d816c25611cc7a52966ed5a5a94921dc8b",
+    "motion_permitted": false,
+    "insertion_pose": null,
+    "latch_state_verified": false,
+    "runtime_inputs": "RGB only; fixed crop; offline files unavailable",
+    "runtime_code_sha256": {
+      "zero_region_model.py": "d09833ddbef1bfc5db2a7718d3fd021131796701c32d7aa2aadcc80de5dde60d",
+      "entrance_feature_model.py": "d064f840d6ed14410e6ebcbc4bd692b55cddc188fd10df06e35a5397f7932b6e",
+      "dinov3_features.py": "c5d0f275313b3804445247f9eaaa7df82bc69ba410ef978e4d53f312b5f63bfa",
+      "infer.py": "dab8d85f86403e096d951efd6f202443286f6dd02afdec43a5b1b7eac25c7499"
+    },
+    "peak_cuda_allocated_bytes": 561098752
+  },
+  "slider": {
+    "visible_views": 81,
+    "correct": 57,
+    "unknown": 3,
+    "unobservable_views": 15,
+    "predictions_on_unobservable_views": 1
+  },
+  "scope": "Simulation geometry; 2-pixel boundary tolerance is descriptive, not insertion clearance",
+  "motion_permitted": false,
+  "thresholds_fitted_on_test": false
+}

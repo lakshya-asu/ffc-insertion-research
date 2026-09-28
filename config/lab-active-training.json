@@ -1,5 +1,6 @@
 {
-  "run": "outputs/zero-region-model-001",
-  "epochs": 40,
-  "name": "Zero DINOv2 visible-region head"
+  "run": "outputs/entrance-focal-model-001",
+  "epochs": 120,
+  "name": "DINOv3 thin-feature candidate",
+  "members": 1
 }

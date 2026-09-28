@@ -1,0 +1,1974 @@
+{
+  "frames": [
+    {
+      "file": "000-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": false,
+        "setback_mm": 0,
+        "width_mm": 0,
+        "thickness_mm": 0
+      },
+      "pixels": {
+        "connector": 4578,
+        "mini_end": 1326
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 1.0
+      },
+      "sha256": "b987c7f2a0aeb5507c128c1c28aca24903404094bd991543506e3928e9f66783"
+    },
+    {
+      "file": "000-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": false,
+        "setback_mm": 0,
+        "width_mm": 0,
+        "thickness_mm": 0
+      },
+      "pixels": {
+        "connector": 9894,
+        "mini_end": 6454
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 1.0
+      },
+      "sha256": "94b929a0e4f105126fed6fb3b34cd98d658def13c713fd21dae655e59b85d5d7"
+    },
+    {
+      "file": "001-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 2416,
+        "mini_end": 858
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.527741371778069,
+        "mini_end": 0.6470588235294118
+      },
+      "sha256": "8af877e888396de359863f9c609f45dd40b3fd05470244cbc0739b0e825aa36a"
+    },
+    {
+      "file": "001-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 9894,
+        "mini_end": 1503
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.2328788348311125
+      },
+      "sha256": "588e679f059d1b69e02ca902b7deada7b46ae27bee5dc1d38c45d5c3be8d2fa6"
+    },
+    {
+      "file": "002-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 2416,
+        "mini_end": 858
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.527741371778069,
+        "mini_end": 0.6470588235294118
+      },
+      "sha256": "2b2fa54d27d7c9e96178a57bf7091fb79ae2161309522d7fb23eddf84caffd28"
+    },
+    {
+      "file": "002-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 9872,
+        "mini_end": 1503
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.9977764301596928,
+        "mini_end": 0.2328788348311125
+      },
+      "sha256": "b06b1818b6edf177399b3d8a992474b1bb14deed9c89ce9f475bb6a3bc0cf01b"
+    },
+    {
+      "file": "003-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 1282,
+        "mini_end": 666
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.2800349497597204,
+        "mini_end": 0.502262443438914
+      },
+      "sha256": "3e7ea336c6209daa26f61c2f9ec202a2548ff5e7acd429595810b00347dfb365"
+    },
+    {
+      "file": "003-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 9894,
+        "mini_end": 216
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.03346761698171676
+      },
+      "sha256": "24a282ece00b05f8f3f2634f4513e3499694f3dab2e4552606061cdb61a8c230"
+    },
+    {
+      "file": "004-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 1282,
+        "mini_end": 666
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.2800349497597204,
+        "mini_end": 0.502262443438914
+      },
+      "sha256": "1580b323ec5f317aa1cfeb3228470997cc423329334a25c49b4712a6c4475b83"
+    },
+    {
+      "file": "004-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 9872,
+        "mini_end": 216
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.9977764301596928,
+        "mini_end": 0.03346761698171676
+      },
+      "sha256": "895d5fca46a9cde4741631bc98e3ecf8af46abf8fe7a01fb897de13525957c36"
+    },
+    {
+      "file": "005-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 2388,
+        "mini_end": 536
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.5216251638269986,
+        "mini_end": 0.4042232277526395
+      },
+      "sha256": "791073163f959a96db775217ad81f48ae71c8699f1488af2191fa0db74ac2014"
+    },
+    {
+      "file": "005-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 9894,
+        "mini_end": 2383
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.369228385497366
+      },
+      "sha256": "344fed7a02daa96e59f3db844131aa01219ce35aceb108c88f9ee5ae209de9e6"
+    },
+    {
+      "file": "006-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 2388,
+        "mini_end": 536
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.5216251638269986,
+        "mini_end": 0.4042232277526395
+      },
+      "sha256": "ddf9e65da91e99ddaadca2d3230687b05cabc4d470f1bdb909bfe0e71b4f3e0c"
+    },
+    {
+      "file": "006-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 9894,
+        "mini_end": 1991
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.30849085838239854
+      },
+      "sha256": "5626541ba7b0454e82574cebdf00489678b7f616b999c473bd6a1357489d1928"
+    },
+    {
+      "file": "007-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 1220,
+        "mini_end": 222
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.26649191786806464,
+        "mini_end": 0.167420814479638
+      },
+      "sha256": "b8254e642dd8d616f45aa502187c5c499da107428161f791bb6cb0f5e2383d68"
+    },
+    {
+      "file": "007-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 9894,
+        "mini_end": 1381
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.21397582894329098
+      },
+      "sha256": "ce91ec7af9f0706484df679dff4153fb5d9121eb5c1a0a157b1539811f40df57"
+    },
+    {
+      "file": "008-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 1220,
+        "mini_end": 222
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.26649191786806464,
+        "mini_end": 0.167420814479638
+      },
+      "sha256": "3246c0f8c7a4d856bc9e1b96c4b1ae24fb9591e8251ba2496b46b96af35167bf"
+    },
+    {
+      "file": "008-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 9894,
+        "mini_end": 877
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.13588472265261853
+      },
+      "sha256": "8d829c17fd8ebb1bdf8439fa135714ce2e5d078cc64da0f79c77eef3687078b0"
+    },
+    {
+      "file": "009-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 2360,
+        "mini_end": 366
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.5155089558759284,
+        "mini_end": 0.27601809954751133
+      },
+      "sha256": "a568a7752df97ea48ec34c3ab45590074e2d026fbcbc01eb98b31d96d04898b2"
+    },
+    {
+      "file": "009-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 9894,
+        "mini_end": 5938
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.9200495816547877
+      },
+      "sha256": "c6d707d3a065e6e622385b605899d92998368531a4e95c836b0c2bb95d7f7902"
+    },
+    {
+      "file": "010-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 2360,
+        "mini_end": 366
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.5155089558759284,
+        "mini_end": 0.27601809954751133
+      },
+      "sha256": "46acdcea54ab7709b7a643d37740caedd017e683de12652b47ff8f788f176d21"
+    },
+    {
+      "file": "010-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 9894,
+        "mini_end": 3022
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.4682367524016114
+      },
+      "sha256": "32abf72b0cf729e86bd6930dca79e582cb57a762101fe400326e76eb5c624078"
+    },
+    {
+      "file": "011-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 1110,
+        "mini_end": 0
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.24246395806028834,
+        "mini_end": 0.0
+      },
+      "sha256": "c63f5f1e2f3205a21c48d78be9e0b68b357b926a212a890c9ccacf0654622dc8"
+    },
+    {
+      "file": "011-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 9894,
+        "mini_end": 5783
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.8960334676169818
+      },
+      "sha256": "9929591b68c5b7872109afd54a3fdb50f22f277f069f6b5811f5b05abd3560a6"
+    },
+    {
+      "file": "012-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 1110,
+        "mini_end": 0
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.24246395806028834,
+        "mini_end": 0.0
+      },
+      "sha256": "88205332ef9a44c12616c09ffab67a08fe2aa8d09cd8800024c61f695b6b22f9"
+    },
+    {
+      "file": "012-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 15,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 9894,
+        "mini_end": 1849
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.286488999070344
+      },
+      "sha256": "af42639f97e71afaff2b534933ffb95213e671941908b0356463507f37b86486"
+    },
+    {
+      "file": "013-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": false,
+        "setback_mm": 0,
+        "width_mm": 0,
+        "thickness_mm": 0
+      },
+      "pixels": {
+        "connector": 3560,
+        "mini_end": 1062
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 1.0
+      },
+      "sha256": "5663c5a29f96be0c43538762c33e6301eca2bad21de92b16f4d5e884511521d0"
+    },
+    {
+      "file": "013-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": false,
+        "setback_mm": 0,
+        "width_mm": 0,
+        "thickness_mm": 0
+      },
+      "pixels": {
+        "connector": 9814,
+        "mini_end": 5742
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 1.0
+      },
+      "sha256": "b12c43906eee739c4d7c2b82935cd149f1f49229508fb65fb68dec11a6570b68"
+    },
+    {
+      "file": "014-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 2210,
+        "mini_end": 612
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6207865168539326,
+        "mini_end": 0.576271186440678
+      },
+      "sha256": "1aa8999dfe47da8daf0f9411370bb88852552e7f50d2844f0141c2136e2d72b9"
+    },
+    {
+      "file": "014-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 7982,
+        "mini_end": 1349
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.8133278989199103,
+        "mini_end": 0.23493556252176942
+      },
+      "sha256": "5ec8209d2924bbecc212177331a3ccbc2107aa4475f8c183b1ac50f7ad3be8e8"
+    },
+    {
+      "file": "015-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 2210,
+        "mini_end": 612
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6207865168539326,
+        "mini_end": 0.576271186440678
+      },
+      "sha256": "9ff8701e416b064014deecb49a310adae771fb93d647bed1658bfd01c6c6fc43"
+    },
+    {
+      "file": "015-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 4603,
+        "mini_end": 1349
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.4690238434888934,
+        "mini_end": 0.23493556252176942
+      },
+      "sha256": "d7e211166215ac08669c0fdbfb4565084bcb47667eeeb453cfc51186a219f7d9"
+    },
+    {
+      "file": "016-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 1506,
+        "mini_end": 428
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.42303370786516853,
+        "mini_end": 0.4030131826741996
+      },
+      "sha256": "f739d7d989e18554d87625991b04ad68a2a07e8ffada168e98b91f54a3d2f716"
+    },
+    {
+      "file": "016-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 7347,
+        "mini_end": 182
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.7486244141023028,
+        "mini_end": 0.03169627307558342
+      },
+      "sha256": "47fd0eb0163ad1aa7b83aae93f81797a746d0c73465c5e23b3ad41d9847b875a"
+    },
+    {
+      "file": "017-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 1506,
+        "mini_end": 428
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.42303370786516853,
+        "mini_end": 0.4030131826741996
+      },
+      "sha256": "089016d824905ac02a4dc0496d58dbdf44eaf4aad0696358688bb6a8cc902d0c"
+    },
+    {
+      "file": "017-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 3410,
+        "mini_end": 182
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.34746280823313636,
+        "mini_end": 0.03169627307558342
+      },
+      "sha256": "cee9b8c230af7be699950ed3c9204c1f26187a77b5d177a0a7de64cf82df19f2"
+    },
+    {
+      "file": "018-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 2192,
+        "mini_end": 302
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6157303370786517,
+        "mini_end": 0.2843691148775895
+      },
+      "sha256": "e5ccec3031ead1806440ee67b951c48a5001b2c8daa14c2bee289d2084530d54"
+    },
+    {
+      "file": "018-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 9769,
+        "mini_end": 1914
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.9954147136743428,
+        "mini_end": 0.3333333333333333
+      },
+      "sha256": "8d647ed1975dc6c5192dc4f8c1f9d89bd5f588f184b080f3c03bdbf40d1d94aa"
+    },
+    {
+      "file": "019-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 2192,
+        "mini_end": 302
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6157303370786517,
+        "mini_end": 0.2843691148775895
+      },
+      "sha256": "8d6792e6a7d2089bcf8f4d2d0ec9b4a4c8bd7654968efad48ee6d6840d0fdfaa"
+    },
+    {
+      "file": "019-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 6054,
+        "mini_end": 1745
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6168738536784186,
+        "mini_end": 0.30390107976314873
+      },
+      "sha256": "2d50239a480bb385ed6e5a2f6ad10a7fa80f89aab649043e5fec6d7b0fb302f5"
+    },
+    {
+      "file": "020-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 1458,
+        "mini_end": 0
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.4095505617977528,
+        "mini_end": 0.0
+      },
+      "sha256": "2fd025281e811437211e87c11190d1b6f4a8b50e2185eb29f1593d76a9b0a5c4"
+    },
+    {
+      "file": "020-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 9767,
+        "mini_end": 960
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.9952109231709803,
+        "mini_end": 0.1671891327063741
+      },
+      "sha256": "30ab582e13a91c77527b860d4242b6a2f15eb5a6d676827ce29f8ef8b99727e2"
+    },
+    {
+      "file": "021-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 1458,
+        "mini_end": 0
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.4095505617977528,
+        "mini_end": 0.0
+      },
+      "sha256": "d5a3c12a76e5402a7b586c4200dc4cf445ba04d2a425129f70a16e39b6718afb"
+    },
+    {
+      "file": "021-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 5123,
+        "mini_end": 744
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.5220093743631546,
+        "mini_end": 0.12957157784743992
+      },
+      "sha256": "df7e0be390e7a07194677e71c7128ab7dc43ab7f5e75f8ffd1de1a12d4a0b56d"
+    },
+    {
+      "file": "022-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 2174,
+        "mini_end": 292
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6106741573033708,
+        "mini_end": 0.2749529190207156
+      },
+      "sha256": "a301ffcd31fc45af4661c0d5fb5063e2e1fb3018afd28ef18565a5b19945a6b8"
+    },
+    {
+      "file": "022-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 9814,
+        "mini_end": 5062
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.881574364332985
+      },
+      "sha256": "bcaf5f53f1f844afeb46b3d7f8dfe05ef8cf7fb08b259ddb4dc17e25ae7c268a"
+    },
+    {
+      "file": "023-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 2174,
+        "mini_end": 292
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6106741573033708,
+        "mini_end": 0.2749529190207156
+      },
+      "sha256": "8a12186d8a85682dce366ebb7cfd9613135937cd8531a5cb5314949c8e40aed6"
+    },
+    {
+      "file": "023-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 8984,
+        "mini_end": 2588
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.9154269411045445,
+        "mini_end": 0.4507140369209335
+      },
+      "sha256": "9d8b6e9f08706d2c66f0297d90b4fddaf61f2c14a88f4709178ab786d1cf1005"
+    },
+    {
+      "file": "024-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 1370,
+        "mini_end": 0
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.3848314606741573,
+        "mini_end": 0.0
+      },
+      "sha256": "130cf447683614cef4a8615de0554de71f14cdc830a6ad810280510d6bc6f043"
+    },
+    {
+      "file": "024-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 9814,
+        "mini_end": 4869
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.8479623824451411
+      },
+      "sha256": "05c6955547d2395d94bb4d45c818630774be3102b0bb357e0ca05fa324aa1fe1"
+    },
+    {
+      "file": "025-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 1370,
+        "mini_end": 0
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.3848314606741573,
+        "mini_end": 0.0
+      },
+      "sha256": "641e422eadac86e7b0dbfcd55be0a269b59d69b6a036ba359159db3c0b84b396"
+    },
+    {
+      "file": "025-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 3,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 8791,
+        "mini_end": 1563
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.8957611575300591,
+        "mini_end": 0.2722048066875653
+      },
+      "sha256": "7d2ced31c91e5c6055c95590b7b9f88dd85eb13885c65688c914427d4b847e84"
+    },
+    {
+      "file": "026-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": false,
+        "setback_mm": 0,
+        "width_mm": 0,
+        "thickness_mm": 0
+      },
+      "pixels": {
+        "connector": 3356,
+        "mini_end": 1266
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 1.0
+      },
+      "sha256": "28a0a2d5b77956750c9afc2ca1364b0becd9738b1647083296029b36c0c39cf7"
+    },
+    {
+      "file": "026-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": false,
+        "setback_mm": 0,
+        "width_mm": 0,
+        "thickness_mm": 0
+      },
+      "pixels": {
+        "connector": 8971,
+        "mini_end": 5630
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 1.0
+      },
+      "sha256": "d34ecab563ebd4067b398e045964d4ca6072d48246a939aed4fc10e83d41935f"
+    },
+    {
+      "file": "027-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 2172,
+        "mini_end": 822
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6471990464839095,
+        "mini_end": 0.6492890995260664
+      },
+      "sha256": "2a38e00818af0220319b6afa43891eb0d9921487f8fd0abd4989515b47494709"
+    },
+    {
+      "file": "027-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 6549,
+        "mini_end": 1316
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.7300189499498384,
+        "mini_end": 0.23374777975133215
+      },
+      "sha256": "0c78f41418bdb9574c96ebd785581c33766c83e5d4c2a44e5f1ff96e702c5374"
+    },
+    {
+      "file": "028-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 2172,
+        "mini_end": 822
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6471990464839095,
+        "mini_end": 0.6492890995260664
+      },
+      "sha256": "65b79823b82f67b42fa0e95063c4a2f273c26113ae4ebc3a37e89fd1f33a8acb"
+    },
+    {
+      "file": "028-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 4320,
+        "mini_end": 1316
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.4815516664808828,
+        "mini_end": 0.23374777975133215
+      },
+      "sha256": "56d21c66b0440a14a64817efcccec3260a48c0c9a9b0b23428242a07c9df5e88"
+    },
+    {
+      "file": "029-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 1544,
+        "mini_end": 636
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.4600715137067938,
+        "mini_end": 0.5023696682464455
+      },
+      "sha256": "1ee7a42bbe4919ff99bdc0c561bc8766477fc5e455912b7a35b768fae04d8a2d"
+    },
+    {
+      "file": "029-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 5470,
+        "mini_end": 177
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6097425036227845,
+        "mini_end": 0.031438721136767316
+      },
+      "sha256": "be61b32023554d21d6b190370b7f07a793d8b08b73dd2ecfb1ec55e646d8ada7"
+    },
+    {
+      "file": "030-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 1544,
+        "mini_end": 636
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.4600715137067938,
+        "mini_end": 0.5023696682464455
+      },
+      "sha256": "40ae0939fd220228a69d0716fb99b61cf990309846717dc99840669ea266319d"
+    },
+    {
+      "file": "030-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 6,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 2978,
+        "mini_end": 177
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.3319585330509419,
+        "mini_end": 0.031438721136767316
+      },
+      "sha256": "6df7f9fffb9889d184b6905ece3516dbe91fcb9fcbeca4d9440e13cdac7dbf2c"
+    },
+    {
+      "file": "031-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 2156,
+        "mini_end": 516
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6424314660309892,
+        "mini_end": 0.4075829383886256
+      },
+      "sha256": "8fe6cbe64816fc57ab7b998232ecd41b8a81ca5413430cb859b9d77b17886da9"
+    },
+    {
+      "file": "031-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 8779,
+        "mini_end": 1832
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.9785977037119608,
+        "mini_end": 0.32539964476021316
+      },
+      "sha256": "278f370e8e745c8abf2338ce23b31ab1419183a5bc13f762a931435f5a17d874"
+    },
+    {
+      "file": "032-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 2156,
+        "mini_end": 516
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6424314660309892,
+        "mini_end": 0.4075829383886256
+      },
+      "sha256": "d6421dd479c770248ab05b3bb1a07ade1209f87ee52373b88bd51a4c45980060"
+    },
+    {
+      "file": "032-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 4626,
+        "mini_end": 1696
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.5156615761899453,
+        "mini_end": 0.30124333925399643
+      },
+      "sha256": "78137a8caa4c55ad13d68bcfedd05fda660df7ad8ae1add2fdd9d1ba22418cd7"
+    },
+    {
+      "file": "033-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 1472,
+        "mini_end": 212
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.43861740166865315,
+        "mini_end": 0.1674565560821485
+      },
+      "sha256": "53ba44897611385447f853d136db7e567b6ae27b598eb3622ea0c615bdb6b261"
+    },
+    {
+      "file": "033-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 8710,
+        "mini_end": 881
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.9709062534834466,
+        "mini_end": 0.15648312611012433
+      },
+      "sha256": "a97685c22a708dfd270bc2c26b595c1c59ef68bb84a3872704ecaf6f52f61170"
+    },
+    {
+      "file": "034-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 1472,
+        "mini_end": 212
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.43861740166865315,
+        "mini_end": 0.1674565560821485
+      },
+      "sha256": "b24178913f3cc6df79114fe5efd850c961609e7f7f22e39bbabbe14a1258ae06"
+    },
+    {
+      "file": "034-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 10,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 3618,
+        "mini_end": 706
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.4032995206777394,
+        "mini_end": 0.12539964476021315
+      },
+      "sha256": "50ce60114485e76b8fd00c1bb24139fede27d63ae4a81caaa2eb26a7cd2673ad"
+    },
+    {
+      "file": "035-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 2140,
+        "mini_end": 354
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6376638855780691,
+        "mini_end": 0.2796208530805687
+      },
+      "sha256": "0f0b9d3b19f7c731deef2c0b6596e5704143adf33f757544974a01c5c3bab25d"
+    },
+    {
+      "file": "035-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 8971,
+        "mini_end": 4929
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.8754884547069272
+      },
+      "sha256": "51ce88b07e03436698ed57063f2f7afd0bf175eb30460ff8a510223673bf525c"
+    },
+    {
+      "file": "036-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 2140,
+        "mini_end": 354
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.6376638855780691,
+        "mini_end": 0.2796208530805687
+      },
+      "sha256": "85862dadfa39314b836ed71f796080cca49cb15e26f97487186e5e17d41123f9"
+    },
+    {
+      "file": "036-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 8,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 7452,
+        "mini_end": 2529
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.8306766246795229,
+        "mini_end": 0.4492007104795737
+      },
+      "sha256": "168ae108b168631904b917c0148342ff229ea483ba349db67447d9f735e2900c"
+    },
+    {
+      "file": "037-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 1386,
+        "mini_end": 0
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.4129916567342074,
+        "mini_end": 0.0
+      },
+      "sha256": "027ec70318250c8f56bce5d76c79095c8ffcb838de15f748d5b6df47828eb214"
+    },
+    {
+      "file": "037-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 1.5
+      },
+      "pixels": {
+        "connector": 8971,
+        "mini_end": 4734
+      },
+      "retention_vs_no_jaws": {
+        "connector": 1.0,
+        "mini_end": 0.8408525754884547
+      },
+      "sha256": "af397d8b4a18e734c915241a06ce8da17ae03c4ba4d6b0fb94b74884575c567a"
+    },
+    {
+      "file": "038-entrance.png",
+      "camera": "entrance",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 1386,
+        "mini_end": 0
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.4129916567342074,
+        "mini_end": 0.0
+      },
+      "sha256": "ab6a6baa656a0d6803a2f7f25788e55d21103fa32f89e9fefd78ee27a0c52076"
+    },
+    {
+      "file": "038-offset.png",
+      "camera": "offset",
+      "case": {
+        "gap_mm": 1,
+        "jaws": true,
+        "setback_mm": 15,
+        "width_mm": 12,
+        "thickness_mm": 3
+      },
+      "pixels": {
+        "connector": 7105,
+        "mini_end": 1540
+      },
+      "retention_vs_no_jaws": {
+        "connector": 0.7919964329506186,
+        "mini_end": 0.27353463587921845
+      },
+      "sha256": "6459ac5bbba530d072a08300aaaa0037e5851142c5e712166c17fc0e6e5563f2"
+    }
+  ],
+  "cases": [
+    {
+      "gap_mm": 15,
+      "jaws": false,
+      "setback_mm": 0,
+      "width_mm": 0,
+      "thickness_mm": 0
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 8,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 8,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 12,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 12,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 8,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 8,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 12,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 12,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 8,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 8,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 12,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 15,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 12,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 3,
+      "jaws": false,
+      "setback_mm": 0,
+      "width_mm": 0,
+      "thickness_mm": 0
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 8,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 8,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 12,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 12,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 8,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 8,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 12,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 12,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 8,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 8,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 12,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 3,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 12,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 1,
+      "jaws": false,
+      "setback_mm": 0,
+      "width_mm": 0,
+      "thickness_mm": 0
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 8,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 8,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 12,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 6,
+      "width_mm": 12,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 8,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 8,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 12,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 10,
+      "width_mm": 12,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 8,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 8,
+      "thickness_mm": 3
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 12,
+      "thickness_mm": 1.5
+    },
+    {
+      "gap_mm": 1,
+      "jaws": true,
+      "setback_mm": 15,
+      "width_mm": 12,
+      "thickness_mm": 3
+    }
+  ],
+  "configuration": {
+    "revision": "pi-zero2w-side-entry-v2",
+    "board": "Raspberry Pi Zero 2 W",
+    "asset": "third_party/raspberry_pi/zero/zero2w.usdc",
+    "assembly_name": "Raspberry Pi Zero 2 W",
+    "source": "Optocam Zero community assembly, not manufacturer-certified",
+    "board_translation_m": [
+      0.6,
+      -0.14,
+      0.03
+    ],
+    "board_outline_mm": [
+      65,
+      30
+    ],
+    "nominal_mouth_review_point_m": [
+      0.6333,
+      -0.1408,
+      0.0322
+    ],
+    "insertion_direction_world": [
+      -1,
+      0,
+      0
+    ],
+    "board_normal_world": [
+      0,
+      0,
+      1
+    ],
+    "motion_permitted": false,
+    "training_ready": false,
+    "hardware_profile": "config/arducam-b0498.json",
+    "cable": {
+      "product": "Raspberry Pi Camera Cable Standard\u2013Mini 200 mm, revision two outline",
+      "length_mm": 200,
+      "mini_contacts": 22,
+      "mini_pitch_mm": 0.5,
+      "mini_width_mm": 11.5,
+      "standard_contacts": 15,
+      "standard_pitch_mm": 1,
+      "standard_width_mm": 16,
+      "outline_source": "PCN 36 / RP-009201-PC-1",
+      "assumed_wide_end_length_mm": 27,
+      "assumed_body_thickness_mm": 0.14,
+      "assumed_header_thickness_mm": 0.3,
+      "assumed_exposed_length_mm": 4,
+      "assumed_support_length_mm": 6,
+      "appearance": "black shielded body, blue stiffeners; uncalibrated; markings omitted",
+      "contact_faces": "mini downward; far-end opposite face is an unverified visual assumption"
+    },
+    "cameras": [
+      {
+        "id": "overview",
+        "name": "Pickup overview",
+        "eye_m": [
+          0.53,
+          -0.1501,
+          0.62
+        ],
+        "target_m": [
+          0.53,
+          -0.15,
+          0.015
+        ],
+        "role": "Arducam reference"
+      },
+      {
+        "id": "entrance",
+        "name": "Look into the side entrance",
+        "eye_m": [
+          0.94,
+          -0.1408,
+          0.039
+        ],
+        "target_m": [
+          0.6333,
+          -0.1408,
+          0.0322
+        ],
+        "role": "Arducam reference"
+      },
+      {
+        "id": "offset",
+        "name": "Offset entrance and approach",
+        "eye_m": [
+          0.9,
+          -0.23,
+          0.085
+        ],
+        "target_m": [
+          0.6333,
+          -0.1408,
+          0.0322
+        ],
+        "role": "Arducam reference"
+      },
+      {
+        "id": "macro",
+        "name": "Geometry inspection / virtual macro",
+        "eye_m": [
+          0.67,
+          -0.16,
+          0.049
+        ],
+        "target_m": [
+          0.632,
+          -0.1408,
+          0.0322
+        ],
+        "role": "Human CAD inspection only; not a qualified Arducam mount"
+      }
+    ],
+    "limitations": [
+      "Nominal review point from CAD envelope; not an insertion target or clearance estimate",
+      "Unarticulated CAD latch; open state and travel unverified",
+      "Cable outline dimensions partly sourced; thickness, exposed length, stiffener and transition length require specimen measurements",
+      "No deformable physics or task colliders; no manipulation result",
+      "Ideal Arducam projection; physical near focus, blur, distortion and rolling readout uncalibrated",
+      "No simulator truth supplied to runtime perception or control"
+    ]
+  },
+  "motion_permitted": false,
+  "physics_elapsed_s": 0.0,
+  "scope": "Offline component visibility, not aperture observability or stable grasp",
+  "jaw_length_mm": 4,
+  "inner_gap_mm": 0.5,
+  "limitations": [
+    "Rigid flat cable",
+    "Unverified mouth review point and latch",
+    "Whole-component pixel retention does not measure entrance rim or leading-edge visibility",
+    "Ideal reference optics; real lens focus unverified",
+    "No contact, grip force, slip or deformation"
+  ],
+  "script_sha256": "106419047598fc573103a8c02ec9c656eeb7727809adec414fcaa117d32e3087"
+}

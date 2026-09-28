@@ -1,0 +1,1 @@
+Rendered from the project Zero 2 W scene. Original PCB asset provenance: ../zero-study/ATTRIBUTION.txt. Connector aperture and camera/lens envelopes are engineered approximations; see report JSON and experiment 018. No vendor camera CAD is redistributed.

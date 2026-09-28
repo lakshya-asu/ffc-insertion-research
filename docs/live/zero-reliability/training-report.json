@@ -1,0 +1,23 @@
+{
+  "members": {
+    "member0": {
+      "best_validation_mini_end_mean_per_visible_image_iou": 0.7128661758102038,
+      "sha256": "e4eb2359116fabcb659ffb42fe64383613c8d4b7469c74f65c1bb61565d28762",
+      "seed": 928611
+    },
+    "member1": {
+      "best_validation_mini_end_mean_per_visible_image_iou": 0.7078685409334653,
+      "sha256": "ddfa80b9e6d25d1c84203fe93a4ac15491c1b5660bfb821351e585c79bc951f8",
+      "seed": 928612
+    }
+  },
+  "epochs": 60,
+  "train_images": 320,
+  "validation_images": 80,
+  "elapsed_s": 259.8230409359967,
+  "motion_permitted": false,
+  "selection": "validation mini-end mean per-visible-image IoU",
+  "labels_sha256": "5a0d24447dabe306ba19b9d4360730cb4842d7865e5e2810afc9b775aae7ca89",
+  "backbone_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+  "calibration_or_test_used_for_training": false
+}

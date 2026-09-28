@@ -1,0 +1,6 @@
+{
+  "reason": "higher validation mean visible-feature IoU",
+  "old_validation": 0.5924735668141552,
+  "new_validation": 0.6707058750604554,
+  "test_used": false
+}

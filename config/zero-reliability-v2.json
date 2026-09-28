@@ -1,0 +1,78 @@
+{
+  "revision": "zero-reliability-v2",
+  "scope": "visible connector and mini-end masks, never an insertion target",
+  "development": {
+    "scenes": 200,
+    "train": 160,
+    "validation": 40,
+    "seed": 928401
+  },
+  "threshold_calibration": {
+    "scenes": 80,
+    "seed": 928451
+  },
+  "test": {
+    "scenes": 120,
+    "seed": 928503,
+    "capture_after_model_and_gate_freeze": true
+  },
+  "condition_probabilities": {
+    "ordinary": 0.45,
+    "absent_board": 0.06,
+    "absent_cable": 0.06,
+    "empty": 0.04,
+    "dim": 0.06,
+    "bright": 0.06,
+    "large_offset": 0.07,
+    "large_yaw": 0.07,
+    "tool_occlusion": 0.08,
+    "blur": 0.05
+  },
+  "model": "two independently initialized DINOv2 region heads sharing a frozen encoder",
+  "training": {
+    "epochs": 60,
+    "seeds": [
+      928611,
+      928612
+    ],
+    "loss": "per-image class-balanced cross entropy and foreground Dice; mini-end weighted twice",
+    "selection": "validation mean per-visible-image mini-end IoU"
+  },
+  "gate": {
+    "score": "minimum of head mask agreement and mean foreground probability, across connector and mini-end",
+    "min_component_pixels": {
+      "connector": 64,
+      "mini_end": 32
+    },
+    "reject_crop_border_contact": true,
+    "threshold_grid": [
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "selection": "per-camera maximum calibration coverage with zero observed bad accepts and at least 20 accepts; otherwise always abstain",
+    "offline_good": "both connector and mini-end visible and mask IoU >= 0.75",
+    "motion_permitted": false,
+    "minimum_detail_energy": 0.02,
+    "detail_energy_definition": "variance of Laplacian after sigma-1 Gaussian smoothing of mean RGB8; threshold chosen using development images only, not calibrated optical focus"
+  },
+  "qualification": "Independent test risk and coverage, per camera and condition; zero failures on a small synthetic set is not deployment qualification",
+  "stress": "Black/white camera and severe blur replays, plus invalid/stale/reordered/calibration-mismatched packet tests",
+  "limitations": [
+    "Shared encoder and shared data can cause both heads to agree on mistakes",
+    "Gate score is not a calibrated probability",
+    "Blur is a digital stress transform, not measured lens defocus",
+    "No real images, aperture labels, contact mechanics, tactile input or physical insertion qualification"
+  ]
+}

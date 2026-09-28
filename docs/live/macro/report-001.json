@@ -1,0 +1,162 @@
+{
+  "profile": {
+    "revision": "macro-basler-kowa-v1",
+    "model": "Basler ace 2 a2A2448-75ucBAS",
+    "lens": "Kowa LM35JC10M",
+    "sensor": "Sony IMX547-AAQJ-C, color global shutter",
+    "native_resolution": [
+      2448,
+      2048
+    ],
+    "pixel_pitch_um": 2.74,
+    "active_crop_mm": [
+      6.70752,
+      5.61152
+    ],
+    "nominal_focal_length_mm": 35.0,
+    "magnification": 0.38,
+    "lens_front_working_distance_mm": 100.0,
+    "lens_envelope_diameter_length_mm": [
+      43.0,
+      49.0
+    ],
+    "camera_envelope_width_height_length_mm": [
+      29.0,
+      29.0,
+      48.1
+    ],
+    "placement": {
+      "yaw_degrees": 35.0,
+      "elevation_degrees": 25.0,
+      "target_offset_from_mouth_mm": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "starting_settings": {
+      "fps": 30,
+      "exposure_us": 500,
+      "gain_db": 0,
+      "physical_f_number": 8.0,
+      "auto_exposure": false,
+      "auto_gain": false,
+      "focus": "manual, fixed",
+      "white_balance": "lock after calibration"
+    },
+    "projection": "Thin-lens equivalent at nominal 0.38x; inferred principal plane, not a manufacturer optical prescription",
+    "render_policy": "Ideal framing baseline plus finite-aperture sensitivity render. No calibrated MTF, Bayer response, noise or exposure radiometry.",
+    "runtime": {
+      "frame_id": "macro_optical_frame",
+      "image_topic": "/cell/cameras/macro/image_raw",
+      "camera_info_topic": "/cell/cameras/macro/camera_info",
+      "model_compatible": false,
+      "reason": "Existing DINO model uses different optics and a fixed 4K ROI; macro data requires separate preprocessing, training and held-out evaluation.",
+      "motion_permitted": false
+    },
+    "sources": [
+      "https://docs.baslerweb.com/a2a2448-75ucbas",
+      "https://www.kowa-lenses.com/LM35JC10M-2-3-35mm-10MP-C-Mount-Lens/10707"
+    ],
+    "status": "Simulation reference selected; no purchase or physical calibration"
+  },
+  "optics": {
+    "object_distance_from_inferred_principal_plane_mm": 127.10526315789474,
+    "principal_plane_behind_lens_front_mm": 27.10526315789474,
+    "projection_focal_length_mm": 48.3,
+    "field_of_view_normal_plane_mm": [
+      17.651368421052634,
+      14.767157894736844
+    ],
+    "object_sampling_um_per_pixel": 7.210526315789474,
+    "K": [
+      [
+        17627.737226277368,
+        0,
+        1224.0
+      ],
+      [
+        0,
+        17627.737226277368,
+        1024.0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "approx_total_dof_one_pixel_coc_mm": 0.4189695290858726,
+    "approx_airy_diameter_pixels_550nm": 5.407182481751824,
+    "equivalent_renderer_f_number": 11.04,
+    "bayer8_payload_MB_s_at_target_fps": 150.40512,
+    "notes": "Thin-lens estimates, unit pupil magnification. DOF excludes diffraction; pixel sampling is not optical resolution. Settings are targets, not achieved capture rates.",
+    "eye_m": [
+      0.7286634400927495,
+      -0.07472600791565644,
+      0.08591700537388364
+    ],
+    "lens_front_m": [
+      0.7085403876506103,
+      -0.08881632092743157,
+      0.07446182617406995
+    ],
+    "target_m": [
+      0.6343,
+      -0.1408,
+      0.0322
+    ],
+    "envelope_status": "Conservative dimensioned primitives, not vendor CAD; no mounting bracket, USB cable or collision qualification"
+  },
+  "frames": [
+    {
+      "file": "gap-6-ideal.png",
+      "gap_mm": 6,
+      "optics": "ideal"
+    },
+    {
+      "file": "gap-6-finite-aperture.png",
+      "gap_mm": 6,
+      "optics": "finite-aperture"
+    },
+    {
+      "file": "gap-3-ideal.png",
+      "gap_mm": 3,
+      "optics": "ideal"
+    },
+    {
+      "file": "gap-3-finite-aperture.png",
+      "gap_mm": 3,
+      "optics": "finite-aperture"
+    },
+    {
+      "file": "gap-1-ideal.png",
+      "gap_mm": 1,
+      "optics": "ideal"
+    },
+    {
+      "file": "gap-1-finite-aperture.png",
+      "gap_mm": 1,
+      "optics": "finite-aperture"
+    },
+    {
+      "file": "gap-0.3-ideal.png",
+      "gap_mm": 0.3,
+      "optics": "ideal"
+    },
+    {
+      "file": "gap-0.3-finite-aperture.png",
+      "gap_mm": 0.3,
+      "optics": "finite-aperture"
+    }
+  ],
+  "physics_elapsed_s": 0,
+  "motion_permitted": false,
+  "limitations": [
+    "Static rigid cable and finger proxies; no contact or grasp qualification",
+    "Engineered connector opening uses assumed dimensions",
+    "Finite-aperture image is an uncalibrated sensitivity test, not a lens prescription or measured MTF",
+    "Macro envelope hidden only during its own exposure to avoid rendering inside a solid placeholder lens",
+    "No detector inference: macro optics require a separately evaluated model"
+  ]
+}

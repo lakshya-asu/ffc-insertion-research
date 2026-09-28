@@ -1,0 +1,5 @@
+# Official SAM 3.1 source pinned separately from the DINO experiments.
+FROM ffc-perception:2.8.0-cu128
+COPY third_party/sam3 /opt/sam3
+RUN pip install --no-cache-dir torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128 && \
+    pip install --no-cache-dir /opt/sam3 numpy==1.26.4 einops==0.8.1 decord==0.6.0 pycocotools==2.0.11 psutil==7.2.2 setuptools==80.9.0

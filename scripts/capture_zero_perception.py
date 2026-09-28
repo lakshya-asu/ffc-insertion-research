@@ -16,8 +16,9 @@ sys.path.insert(0, str(ROOT / "src"))
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--output", type=Path, required=True)
-    p.add_argument("--split", choices=["development", "test"], required=True)
+    p.add_argument("--split", choices=["development", "calibration", "test"], required=True)
     p.add_argument("--count", type=int)
+    p.add_argument("--profile", choices=["v1", "reliability"], default="v1")
     a = p.parse_args()
     if a.output.exists():
         p.error("Use a fresh output directory")
@@ -52,6 +53,13 @@ def main():
 
         cfg = json.loads((ROOT / "config/pi-zero-task.json").read_text())
         contract = json.loads((ROOT / "config/zero-perception-v1.json").read_text())
+        if a.profile == "reliability":
+            protocol = json.loads((ROOT / "config/zero-reliability-v2.json").read_text())
+            contract = {
+                k: contract[k]
+                for k in ["classes", "fixed_crop_xyxy", "native_resolution", "cameras", "limitations"]
+            }
+            contract["reliability_protocol"] = protocol
         classes = contract["classes"]
         profile = json.loads((ROOT / cfg["hardware_profile"]).read_text())
         ctx = omni.usd.get_context()
@@ -83,27 +91,101 @@ def main():
             rgb = rep.AnnotatorRegistry.get_annotator("rgb")
             rgb.attach(rp)
             seg = rep.AnnotatorRegistry.get_annotator(
-                "semantic_segmentation", init_params={"colorize": False, "semanticTypes": ["class"]}
+                "instance_id_segmentation", init_params={"colorize": False}
             )
             seg.attach(rp)
             streams.append((view["id"], rp, rgb, seg))
         timeline = omni.timeline.get_timeline_interface()
         timeline.pause()
         initial = timeline.get_current_time()
-        rng = np.random.default_rng(927401 if a.split == "development" else 927503)
-        count = a.count or (80 if a.split == "development" else 36)
+        seed = (
+            {"development": 928401, "calibration": 928451, "test": 928503}[a.split]
+            if a.profile == "reliability"
+            else (927401 if a.split == "development" else 927503)
+        )
+        rng = np.random.default_rng(seed)
+        count = a.count or (
+            {"development": 200, "calibration": 80, "test": 120}[a.split]
+            if a.profile == "reliability"
+            else (80 if a.split == "development" else 36)
+        )
         frames = []
         labels = []
-        previous = None
+        # Keep semantic prim identities stable throughout the run. Delete/recreate
+        # caused labels from removed cable meshes to attach to unrelated geometry.
+        root = "/World/ZeroDataset/Scene"
+        group = UsdGeom.Xform.Define(stage, root)
+        group.AddTranslateOp()
+        group.AddRotateZOp()
+        board = UsdGeom.Xform.Define(stage, root + "/Board")
+        board.GetPrim().GetReferences().AddReference(str(ROOT / cfg["asset"]))
+        for prim in stage.Traverse():
+            if str(prim.GetPath()).startswith(root + "/Board") and prim.IsA(UsdGeom.Mesh):
+                if "22 Pin FPC Connector" in (prim.GetCustomDataByKey("cad_component") or ""):
+                    UsdSemantics.LabelsAPI.Apply(prim, "class").CreateLabelsAttr(["connector"])
+        UsdGeom.Xform.Define(stage, root + "/Supports")
+        posts = []
+        for post_i, (px, py) in enumerate(
+            [(-0.029, -0.0123), (0.029, -0.0123), (-0.029, 0.0107), (0.029, 0.0107)]
+        ):
+            post = UsdGeom.Cylinder.Define(stage, root + f"/Supports/Post{post_i}")
+            post.CreateRadiusAttr(0.0024)
+            post.CreateHeightAttr(0.03)
+            post.AddTranslateOp().Set(Gf.Vec3d(px, py, -0.015))
+            post.CreateDisplayColorAttr([Gf.Vec3f(0.12, 0.13, 0.14)])
+            posts.append((post, px, py))
+        cable_root = root + "/Cable"
+        make_zero_cable(stage, cfg, root=cable_root)
+        cable = UsdGeom.Xformable(stage.GetPrimAtPath(cable_root))
+        cable.AddTranslateOp()
+        cable.AddRotateZOp()
+        cable.AddRotateXOp()
+        for prim in stage.Traverse():
+            name = str(prim.GetPath())
+            if name.startswith(cable_root) and (prim.IsA(UsdGeom.Mesh) or prim.IsA(UsdGeom.Cube)):
+                kind = "mini_end" if "/Mini" in name else "cable"
+                UsdSemantics.LabelsAPI.Apply(prim, "class").CreateLabelsAttr([kind])
+        shader = UsdShade.Shader(stage.GetPrimAtPath(cable_root + "/Materials/Film/Surface"))
+        jaws = UsdGeom.Xform.Define(stage, root + "/Jaws")
+        jaws.AddTranslateOp()
+        jaws.AddRotateZOp()
+        jaws.AddRotateXOp()
+        for j, sign in enumerate([-1, 1]):
+            prim = box(
+                stage,
+                root + f"/Jaws/Jaw{j}",
+                (0.0075, 0, sign * 0.00175),
+                (0.004, 0.012, 0.003),
+                (0.16, 0.18, 0.2),
+            )
+            UsdSemantics.LabelsAPI.Apply(prim, "class").CreateLabelsAttr(["gripper"])
+
+        def visible(path, value):
+            obj = UsdGeom.Imageable(stage.GetPrimAtPath(path))
+            obj.MakeVisible() if value else obj.MakeInvisible()
+
         start = time.monotonic()
         for i in range(count):
-            if previous:
-                stage.RemovePrim(previous)
-            root = f"/World/ZeroDataset/Scene_{i:04d}"
-            previous = root
-            group = UsdGeom.Xform.Define(stage, root)
             condition = "ordinary"
-            if a.split == "test" and i >= 20:
+            if a.profile == "reliability":
+                condition = str(
+                    rng.choice(
+                        [
+                            "ordinary",
+                            "absent_board",
+                            "absent_cable",
+                            "empty",
+                            "dim",
+                            "bright",
+                            "large_offset",
+                            "large_yaw",
+                            "tool_occlusion",
+                            "blur",
+                        ],
+                        p=[0.45, 0.06, 0.06, 0.04, 0.06, 0.06, 0.07, 0.07, 0.08, 0.05],
+                    )
+                )
+            elif a.split == "test" and i >= 20:
                 condition = [
                     "absent_board",
                     "absent_cable",
@@ -121,64 +203,51 @@ def main():
             )
             yaw = float(rng.uniform(-8, 8))
             if condition == "large_offset":
-                shift[1] = 0.016 * (-1 if i % 2 else 1)
+                shift[1] = (
+                    0.016 * int(rng.choice([-1, 1]))
+                    if a.profile == "reliability"
+                    else 0.016 * (-1 if i % 2 else 1)
+                )
             if condition == "large_yaw":
-                yaw = 20 * (-1 if i % 2 else 1)
-            group.AddTranslateOp().Set(Gf.Vec3d(*(np.array(cfg["board_translation_m"]) + shift)))
-            group.AddRotateZOp().Set(yaw)
-            if condition not in ["absent_board", "empty"]:
-                board = UsdGeom.Xform.Define(stage, root + "/Board")
-                board.GetPrim().GetReferences().AddReference(str(ROOT / cfg["asset"]))
-                height = cfg["board_translation_m"][2] + float(shift[2])
-                for post_i, (px, py) in enumerate(
-                    [(-0.029, -0.0123), (0.029, -0.0123), (-0.029, 0.0107), (0.029, 0.0107)]
-                ):
-                    post = UsdGeom.Cylinder.Define(stage, root + f"/Supports/Post{post_i}")
-                    post.CreateRadiusAttr(0.0024)
-                    post.CreateHeightAttr(height)
-                    post.AddTranslateOp().Set(Gf.Vec3d(px, py, -height / 2))
-                    post.CreateDisplayColorAttr([Gf.Vec3f(0.12, 0.13, 0.14)])
-                for prim in stage.Traverse():
-                    if str(prim.GetPath()).startswith(root + "/Board") and prim.IsA(UsdGeom.Mesh):
-                        if "22 Pin FPC Connector" in (prim.GetCustomDataByKey("cad_component") or ""):
-                            UsdSemantics.LabelsAPI.Apply(prim, "class").CreateLabelsAttr(["connector"])
+                yaw = (
+                    20 * int(rng.choice([-1, 1])) if a.profile == "reliability" else 20 * (-1 if i % 2 else 1)
+                )
+            group.GetPrim().GetAttribute("xformOp:translate").Set(
+                Gf.Vec3d(*(np.array(cfg["board_translation_m"]) + shift))
+            )
+            group.GetPrim().GetAttribute("xformOp:rotateZ").Set(yaw)
+            board_present = condition not in ["absent_board", "empty"]
+            cable_present = condition not in ["absent_cable", "empty"]
+            visible(root + "/Board", board_present)
+            visible(root + "/Supports", board_present)
+            visible(cable_root, cable_present)
+            height = cfg["board_translation_m"][2] + float(shift[2])
+            for post, px, py in posts:
+                post.GetHeightAttr().Set(height)
+                post.GetPrim().GetAttribute("xformOp:translate").Set(Gf.Vec3d(px, py, -height / 2))
             gap = float(rng.uniform(0.003, 0.025))
-            roll = float(rng.uniform(-12, 12) + (180 if i % 5 == 0 else 0))
+            flip = rng.random() < 0.2 if a.profile == "reliability" else i % 5 == 0
+            roll = float(rng.uniform(-12, 12) + (180 if flip else 0))
             cyaw = float(rng.uniform(-10, 10))
             dy = float(rng.uniform(-0.004, 0.004))
             dz = float(rng.uniform(-0.0008, 0.0008))
-            jaw_visible = (i % 3 != 0) or condition == "tool_occlusion"
-            if condition not in ["absent_cable", "empty"]:
-                cable_root = root + "/Cable"
-                make_zero_cable(stage, cfg, root=cable_root)
-                cable = UsdGeom.Xformable(stage.GetPrimAtPath(cable_root))
+            jaw_visible = (
+                (rng.random() < 2 / 3) if a.profile == "reliability" else (i % 3 != 0)
+            ) or condition == "tool_occlusion"
+            visible(root + "/Jaws", cable_present and jaw_visible)
+            if cable_present:
                 tip = np.array([0.0333 + gap, -0.0008 + dy, 0.0022 + dz])
-                cable.AddTranslateOp().Set(Gf.Vec3d(*tip))
-                cable.AddRotateZOp().Set(cyaw)
-                cable.AddRotateXOp().Set(roll)
-                for prim in stage.Traverse():
-                    name = str(prim.GetPath())
-                    if name.startswith(cable_root) and (prim.IsA(UsdGeom.Mesh) or prim.IsA(UsdGeom.Cube)):
-                        kind = "mini_end" if "/Mini" in name else "cable"
-                        UsdSemantics.LabelsAPI.Apply(prim, "class").CreateLabelsAttr([kind])
-                shader = UsdShade.Shader(stage.GetPrimAtPath(cable_root + "/Materials/Film/Surface"))
+                for obj in [cable.GetPrim(), jaws.GetPrim()]:
+                    obj.GetAttribute("xformOp:translate").Set(Gf.Vec3d(*tip))
+                    obj.GetAttribute("xformOp:rotateZ").Set(cyaw)
+                    obj.GetAttribute("xformOp:rotateX").Set(roll)
                 grey = float(rng.uniform(0.015, 0.065))
                 shader.GetInput("diffuseColor").Set(Gf.Vec3f(grey, grey * 1.05, grey * 1.1))
-                if jaw_visible:
-                    jaws = UsdGeom.Xform.Define(stage, root + "/Jaws")
-                    jaws.AddTranslateOp().Set(Gf.Vec3d(*tip))
-                    jaws.AddRotateZOp().Set(cyaw)
-                    jaws.AddRotateXOp().Set(roll)
-                    x = 0.003 if condition == "tool_occlusion" else 0.0075
-                    for j, sign in enumerate([-1, 1]):
-                        prim = box(
-                            stage,
-                            root + f"/Jaws/Jaw{j}",
-                            (x, 0, sign * 0.00175),
-                            (0.004, 0.012, 0.003),
-                            (0.16, 0.18, 0.2),
-                        )
-                        UsdSemantics.LabelsAPI.Apply(prim, "class").CreateLabelsAttr(["gripper"])
+                x = 0.003 if condition == "tool_occlusion" else 0.0075
+                for j, sign in enumerate([-1, 1]):
+                    stage.GetPrimAtPath(root + f"/Jaws/Jaw{j}").GetAttribute("xformOp:translate").Set(
+                        Gf.Vec3d(x, 0, sign * 0.00175)
+                    )
             scale = (
                 0.15 if condition == "dim" else 2.5 if condition == "bright" else float(rng.uniform(0.6, 1.4))
             )
@@ -198,13 +267,31 @@ def main():
                 ids = np.asarray(data["data"]).reshape(2160, 3840)
                 mask = np.zeros((2160, 3840), np.uint8)
                 for key, value in data["info"]["idToLabels"].items():
-                    text = value.get("class", "")
-                    if text in classes[1:]:
-                        mask[ids == int(key)] = classes.index(text)
+                    path = str(value)
+                    cls = 0
+                    if path.startswith(root + "/Cable/"):
+                        cls = 3 if path.startswith(root + "/Cable/Mini") else 2
+                    elif path.startswith(root + "/Jaws/"):
+                        cls = 4
+                    elif path.startswith(root + "/Board/"):
+                        prim = stage.GetPrimAtPath(path)
+                        while prim and str(prim.GetPath()).startswith(root + "/Board/"):
+                            if "22 Pin FPC Connector" in (prim.GetCustomDataByKey("cad_component") or ""):
+                                cls = 1
+                                break
+                            prim = prim.GetParent()
+                    if cls:
+                        mask[ids == int(key)] = cls
+                if i < 2:
+                    (offline / f"instance-map-{i:04d}-{name}.json").write_text(
+                        json.dumps(data["info"], default=str, indent=2)
+                    )
                 x0, y0, x1, y1 = contract["fixed_crop_xyxy"]
                 cropped = mask[y0:y1, x0:x1]
                 counts = np.bincount(cropped.ravel(), minlength=len(classes)).tolist()
-                if condition in ["absent_board", "absent_cable", "empty"]:
+                if condition in ["absent_board", "absent_cable", "empty"] or (
+                    condition == "ordinary" and (counts[1] < 20 or counts[2] < 50)
+                ):
                     (offline / f"debug-{i:04d}-{name}.json").write_text(
                         json.dumps(
                             {"condition": condition, "counts": counts, "labels": data["info"]["idToLabels"]},
@@ -217,10 +304,14 @@ def main():
                     raise RuntimeError("Stale board labels")
                 if condition in ["absent_cable", "empty"] and sum(counts[2:]):
                     raise RuntimeError("Stale cable labels")
-                if condition == "ordinary" and i % 3 == 0 and counts[1] < 20:
+                if condition == "ordinary" and not jaw_visible and counts[1] < 20:
                     raise RuntimeError("Missing unobstructed connector label")
                 if condition == "ordinary" and counts[2] < 50:
                     raise RuntimeError("Missing visible cable label")
+                if condition == "blur":
+                    from PIL import ImageFilter
+
+                    raw = np.array(Image.fromarray(raw).filter(ImageFilter.GaussianBlur(2.0)))
                 file = f"{i:04d}-{name}.png"
                 Image.fromarray(raw).save(sensor / file)
                 Image.fromarray(cropped).save(offline / file)
@@ -241,6 +332,8 @@ def main():
                     if a.split == "development"
                     else ("test" if i < 20 else "challenge")
                 )
+                if a.profile == "reliability":
+                    split = ("train" if i < 160 else "validation") if a.split == "development" else a.split
                 labels.append(
                     {
                         "file": file,
@@ -279,6 +372,9 @@ def main():
         )
         report = {
             "scenes": count,
+            "profile": a.profile,
+            "semantic_identity": "persistent prims; visibility and transforms only",
+            "seed": seed,
             "images": len(frames),
             "split": a.split,
             "timeline_elapsed_s": timeline.get_current_time() - initial,
@@ -287,6 +383,7 @@ def main():
             "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             "elapsed_s": time.monotonic() - start,
             "scope": "offline visible CAD component masks, no aperture or latch labels",
+            "label_source": "renderer instance IDs mapped to explicit USD paths, not dynamic semantic IDs",
         }
         (a.output / "capture-report.json").write_text(json.dumps(report, indent=2))
     except Exception as exc:

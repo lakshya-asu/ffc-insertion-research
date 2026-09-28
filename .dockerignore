@@ -16,3 +16,8 @@
 !task-specification.md
 !experiments/**
 **/__pycache__
+!third_party/
+!third_party/sam3/**
+third_party/sam3/.git
+!ros2_ws/
+!ros2_ws/src/**

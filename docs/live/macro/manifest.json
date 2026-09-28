@@ -1,0 +1,68 @@
+{
+  "frames": [
+    {
+      "run": "001",
+      "placement": "Diagonal view, yaw 35 degrees",
+      "gap_mm": 6.0,
+      "ideal": "001-6-ideal.webp",
+      "finite-aperture": "001-6-finite-aperture.webp",
+      "overview": "001-6-placement.webp"
+    },
+    {
+      "run": "001",
+      "placement": "Diagonal view, yaw 35 degrees",
+      "gap_mm": 3.0,
+      "ideal": "001-3-ideal.webp",
+      "finite-aperture": "001-3-finite-aperture.webp",
+      "overview": "001-3-placement.webp"
+    },
+    {
+      "run": "001",
+      "placement": "Diagonal view, yaw 35 degrees",
+      "gap_mm": 1.0,
+      "ideal": "001-1-ideal.webp",
+      "finite-aperture": "001-1-finite-aperture.webp",
+      "overview": "001-1-placement.webp"
+    },
+    {
+      "run": "001",
+      "placement": "Diagonal view, yaw 35 degrees",
+      "gap_mm": 0.3,
+      "ideal": "001-0.3-ideal.webp",
+      "finite-aperture": "001-0.3-finite-aperture.webp",
+      "overview": "001-0.3-placement.webp"
+    },
+    {
+      "run": "002",
+      "placement": "Selected view, yaw 0 degrees",
+      "gap_mm": 6.0,
+      "ideal": "002-6-ideal.webp",
+      "finite-aperture": "002-6-finite-aperture.webp",
+      "overview": "002-6-placement.webp"
+    },
+    {
+      "run": "002",
+      "placement": "Selected view, yaw 0 degrees",
+      "gap_mm": 3.0,
+      "ideal": "002-3-ideal.webp",
+      "finite-aperture": "002-3-finite-aperture.webp",
+      "overview": "002-3-placement.webp"
+    },
+    {
+      "run": "002",
+      "placement": "Selected view, yaw 0 degrees",
+      "gap_mm": 1.0,
+      "ideal": "002-1-ideal.webp",
+      "finite-aperture": "002-1-finite-aperture.webp",
+      "overview": "002-1-placement.webp"
+    },
+    {
+      "run": "002",
+      "placement": "Selected view, yaw 0 degrees",
+      "gap_mm": 0.3,
+      "ideal": "002-0.3-ideal.webp",
+      "finite-aperture": "002-0.3-finite-aperture.webp",
+      "overview": "002-0.3-placement.webp"
+    }
+  ]
+}
