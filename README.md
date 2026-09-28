@@ -126,6 +126,8 @@ Read [Interfaces and code ownership](IO_CONTRACTS.md) for the active ROS channel
 
 [Open the presentation demo](https://lakshya-asu.github.io/ffc-insertion-research/demo/) · [Presenter runbook](DEMO.md) · [Live inference evidence](experiments/024-live-inference-demo.md)
 
+Latest diagnostic: [image-space edge fitting and abstention](experiments/025-image-alignment.md), with [all 60 views](https://lakshya-asu.github.io/ffc-insertion-research/demo/#alignment). This is not yet a metric pose estimator.
+
 ## Repository map
 
 | Path | Contents |

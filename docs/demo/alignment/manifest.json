@@ -1,0 +1,3644 @@
+{
+  "frames": [
+    {
+      "image": "000.webp",
+      "file": "0000-macro.png",
+      "condition": "ordinary",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.19563555482290007,
+          "max_normal_error_px": 0.3239167741095841,
+          "angle_error_deg": 0.018092893337468857
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.49240411879874507,
+          "max_normal_error_px": 1.1477944897086265,
+          "angle_error_deg": 0.105519205122729
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.3913427115428365,
+          "max_normal_error_px": 0.556488415918132,
+          "angle_error_deg": 0.02338888570869635
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            228.7050577751664,
+            491.7561519083602
+          ],
+          [
+            1041.1701653442783,
+            488.4934009632086
+          ]
+        ],
+        "lower_rim": [
+          [
+            229.7804126393301,
+            516.2999098055889
+          ],
+          [
+            1039.988627156281,
+            513.0371395766906
+          ]
+        ],
+        "cable_edge": [
+          [
+            253.39181763686875,
+            609.8535175513226
+          ],
+          [
+            1063.064805839797,
+            601.1419070419408
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 648.5,
+        "common_x_support": [
+          254,
+          1043
+        ],
+        "projected_normal_separation_px": 103.93939772469663,
+        "relative_image_angle_deg": -0.4712282423068903,
+        "apparent_rim_gap_px": 24.35807869545232
+      }
+    },
+    {
+      "image": "001.webp",
+      "file": "0001-macro.png",
+      "condition": "near_entry",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.2748945443925044,
+          "max_normal_error_px": 0.5938322648955919,
+          "angle_error_deg": 0.046447834812101796
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.40444572237391263,
+          "max_normal_error_px": 0.8111889106445168,
+          "angle_error_deg": 0.05781219874386853
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.22575975322699587,
+          "max_normal_error_px": 0.2534988829095144,
+          "angle_error_deg": 0.003965516462143603
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            193.17606667182307,
+            493.68365623137095
+          ],
+          [
+            1005.0504744663862,
+            492.4036353028661
+          ]
+        ],
+        "lower_rim": [
+          [
+            194.34912132675177,
+            518.2008874703253
+          ],
+          [
+            1003.9699429319826,
+            516.9208613323361
+          ]
+        ],
+        "cable_edge": [
+          [
+            188.09177076973484,
+            532.6794231491513
+          ],
+          [
+            989.5699971768712,
+            520.0982298275143
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 595.5,
+        "common_x_support": [
+          194,
+          997
+        ],
+        "projected_normal_separation_px": 21.535370894313296,
+        "relative_image_angle_deg": -0.7607015871960835,
+        "apparent_rim_gap_px": 24.381201037077346
+      }
+    },
+    {
+      "image": "002.webp",
+      "file": "0002-macro.png",
+      "condition": "board_rotation",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.7173250505175579,
+          "max_normal_error_px": 1.4756697282804845,
+          "angle_error_deg": 0.19362287901895098
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.45214538441487834,
+          "max_normal_error_px": 1.0450330277801738,
+          "angle_error_deg": 0.0929473257474952
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.17224488260160875,
+          "max_normal_error_px": 0.3501815907312727,
+          "angle_error_deg": 0.02512979353848377
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            216.42595866447024,
+            482.5298802432601
+          ],
+          [
+            1028.0603030452098,
+            487.1429102511942
+          ]
+        ],
+        "lower_rim": [
+          [
+            217.53380673282234,
+            507.0633371829134
+          ],
+          [
+            1026.9158280716667,
+            511.67640986756373
+          ]
+        ],
+        "cable_edge": [
+          [
+            208.46179250285897,
+            719.5017457561744
+          ],
+          [
+            1029.2901874053605,
+            742.993090334665
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 616.0,
+        "common_x_support": [
+          210,
+          1022
+        ],
+        "projected_normal_separation_px": 233.79020583538602,
+        "relative_image_angle_deg": 1.144790011123813,
+        "apparent_rim_gap_px": 25.03870376457894
+      }
+    },
+    {
+      "image": "003.webp",
+      "file": "0003-macro.png",
+      "condition": "short_grasp",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "lower_rim: insufficient visible pixels",
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 45.91829923905934,
+          "max_normal_error_px": 46.265552781156174,
+          "angle_error_deg": 0.3939865184193889
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            236.1364606698832,
+            488.808949410072
+          ],
+          [
+            1047.7172357626198,
+            483.2281382829455
+          ]
+        ],
+        "lower_rim": [
+          [
+            237.19020747371792,
+            513.3385284606926
+          ],
+          [
+            1046.5189225293348,
+            507.7576698713457
+          ]
+        ],
+        "cable_edge": [
+          [
+            258.87035168339946,
+            604.4347875693884
+          ],
+          [
+            1066.5976530357523,
+            585.6195730036438
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "004.webp",
+      "file": "0004-macro.png",
+      "condition": "dim",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.40138401916704824,
+          "max_normal_error_px": 0.9157557713069913,
+          "angle_error_deg": 0.07851228750057412
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.3797995987619059,
+          "max_normal_error_px": 0.7159140690427619,
+          "angle_error_deg": 0.04760607276816667
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.6627580381311,
+          "max_normal_error_px": 0.6641626948756706,
+          "angle_error_deg": 0.00019835675537660524
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            196.58047657084956,
+            474.3146938893612
+          ],
+          [
+            1007.8798615484322,
+            477.85787995902194
+          ]
+        ],
+        "lower_rim": [
+          [
+            197.74297113176928,
+            498.8622635716663
+          ],
+          [
+            1006.7919190130656,
+            502.4055020177113
+          ]
+        ],
+        "cable_edge": [
+          [
+            194.06305200534104,
+            633.5613044472908
+          ],
+          [
+            1005.4645548642258,
+            622.5464343640753
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 600.0,
+        "common_x_support": [
+          194,
+          1006
+        ],
+        "projected_normal_separation_px": 140.35065900653143,
+        "relative_image_angle_deg": -0.9654643174991275,
+        "apparent_rim_gap_px": 25.28713823719761
+      }
+    },
+    {
+      "image": "005.webp",
+      "file": "0005-macro.png",
+      "condition": "bright",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 1.7839778908488733,
+          "max_normal_error_px": 2.1218396276023386,
+          "angle_error_deg": 0.04785550891724771
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.9475297446825554,
+          "max_normal_error_px": 1.99292822432777,
+          "angle_error_deg": 0.255992941621634
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.37822274966003006,
+          "max_normal_error_px": 0.4041385462540199,
+          "angle_error_deg": 0.003685701645876893
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            173.64468424843278,
+            494.2108360281184
+          ],
+          [
+            986.1593662969882,
+            499.3748450034018
+          ]
+        ],
+        "lower_rim": [
+          [
+            174.8725562198523,
+            518.7385631034771
+          ],
+          [
+            985.1300153113414,
+            523.9025808614231
+          ]
+        ],
+        "cable_edge": [
+          [
+            191.47693363816256,
+            686.0572675506942
+          ],
+          [
+            1008.4952421783407,
+            705.136158955136
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 588.0,
+        "common_x_support": [
+          190,
+          986
+        ],
+        "projected_normal_separation_px": 187.35924357934218,
+        "relative_image_angle_deg": 0.8248282433574242,
+        "apparent_rim_gap_px": 26.52431622622788
+      }
+    },
+    {
+      "image": "006.webp",
+      "file": "0006-macro.png",
+      "condition": "focus_drift",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.6319151475766758,
+          "max_normal_error_px": 0.8938117203798557,
+          "angle_error_deg": 0.036940382795494595
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.2998624809092099,
+          "max_normal_error_px": 0.5797424083970072,
+          "angle_error_deg": 0.08152756257688303
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.1029059166019237,
+          "max_normal_error_px": 0.22623233295578038,
+          "angle_error_deg": 0.0270009484206975
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            182.3034152607603,
+            493.7898727181652
+          ],
+          [
+            994.7241794355398,
+            493.71787809087186
+          ]
+        ],
+        "lower_rim": [
+          [
+            183.50737740474077,
+            518.3215872982504
+          ],
+          [
+            993.6715310644522,
+            518.2495924104007
+          ]
+        ],
+        "cable_edge": [
+          [
+            187.6773102259108,
+            683.0030564993802
+          ],
+          [
+            1003.3524385609974,
+            686.777808377281
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 593.5,
+        "common_x_support": [
+          185,
+          1002
+        ],
+        "projected_normal_separation_px": 179.21105257107152,
+        "relative_image_angle_deg": 0.3195284966003168,
+        "apparent_rim_gap_px": 25.15677376233208
+      }
+    },
+    {
+      "image": "007.webp",
+      "file": "0007-macro.png",
+      "condition": "absent_cable",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 1.0966316467009458,
+          "max_normal_error_px": 2.1757909829325683,
+          "angle_error_deg": 0.15218392297250455
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 1.7327232162145216,
+          "max_normal_error_px": 1.7626936272921636,
+          "angle_error_deg": 0.0042381888150276326
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            213.09710981191162,
+            492.2777878534129
+          ],
+          [
+            1025.6833886108147,
+            488.9479268573693
+          ]
+        ],
+        "lower_rim": [
+          [
+            214.2159928512898,
+            516.8236830335389
+          ],
+          [
+            1024.5447047913945,
+            513.4938033847106
+          ]
+        ],
+        "cable_edge": [
+          [
+            205.4949031564721,
+            757.839700568294
+          ],
+          [
+            1028.937330825212,
+            765.3001078487462
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "008.webp",
+      "file": "0008-macro.png",
+      "condition": "absent_socket",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels"
+      ],
+      "features": {
+        "cable_edge": {
+          "mean_normal_error_px": 0.20879957781913103,
+          "max_normal_error_px": 0.4375914893598785,
+          "angle_error_deg": 0.03268628716573718
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            219.84996167273897,
+            488.62945698839707
+          ],
+          [
+            1032.217805736933,
+            488.5039047494425
+          ]
+        ],
+        "lower_rim": [
+          [
+            220.94956514568534,
+            513.1739970865136
+          ],
+          [
+            1031.0610922264182,
+            513.0484439819024
+          ]
+        ],
+        "cable_edge": [
+          [
+            228.79313325692638,
+            603.3563295775145
+          ],
+          [
+            1039.297184585502,
+            617.8818108673158
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "009.webp",
+      "file": "0009-macro.png",
+      "condition": "empty_targets",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels",
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {},
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            209.18701298107527,
+            477.53599230246823
+          ],
+          [
+            1020.5459699424067,
+            475.5844195219328
+          ]
+        ],
+        "lower_rim": [
+          [
+            210.31495710956534,
+            502.08358657096585
+          ],
+          [
+            1019.423177062112,
+            500.1319855262712
+          ]
+        ],
+        "cable_edge": [
+          [
+            206.9300460199776,
+            613.9698032377808
+          ],
+          [
+            1016.7561388374506,
+            592.3746807370803
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "010.webp",
+      "file": "0010-macro.png",
+      "condition": "ordinary",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.691424137346579,
+          "max_normal_error_px": 1.0223012376045584,
+          "angle_error_deg": 0.047938626739875104
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.4295598735812492,
+          "max_normal_error_px": 0.7439355977391613,
+          "angle_error_deg": 0.04538393871306075
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.22531488442783087,
+          "max_normal_error_px": 0.5201227699311234,
+          "angle_error_deg": 0.046063482127343125
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            204.08070258297525,
+            484.1366176139776
+          ],
+          [
+            1016.3768446295512,
+            482.5914987476963
+          ]
+        ],
+        "lower_rim": [
+          [
+            205.22409885932015,
+            508.6935084714039
+          ],
+          [
+            1015.2643134947645,
+            507.1483738702
+          ]
+        ],
+        "cable_edge": [
+          [
+            182.7784783723695,
+            622.4224032850318
+          ],
+          [
+            995.3058918930712,
+            636.6860742497116
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 595.5,
+        "common_x_support": [
+          199,
+          992
+        ],
+        "projected_normal_separation_px": 134.3244906468959,
+        "relative_image_angle_deg": 1.20756944217376,
+        "apparent_rim_gap_px": 25.679833680979357
+      }
+    },
+    {
+      "image": "011.webp",
+      "file": "0011-macro.png",
+      "condition": "near_entry",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.7803504418548681,
+          "max_normal_error_px": 0.8294166614584105,
+          "angle_error_deg": 0.006962423935128234
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 1.0775907784339795,
+          "max_normal_error_px": 1.4115678762489396,
+          "angle_error_deg": 0.06269782064915431
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.39881693715246136,
+          "max_normal_error_px": 0.9356686241873392,
+          "angle_error_deg": 0.09218207765696596
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            199.44147951065392,
+            483.91048658570924
+          ],
+          [
+            1011.0807817454746,
+            482.29325217343353
+          ]
+        ],
+        "lower_rim": [
+          [
+            200.5968324361421,
+            508.4482831161003
+          ],
+          [
+            1009.9838483097942,
+            506.83103196968256
+          ]
+        ],
+        "cable_edge": [
+          [
+            189.5310698848889,
+            522.3797831881992
+          ],
+          [
+            989.7249372367759,
+            503.53653827551545
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 503.0,
+        "common_x_support": [
+          195,
+          811
+        ],
+        "projected_normal_separation_px": 19.43469095232487,
+        "relative_image_angle_deg": -1.1772955940709073,
+        "apparent_rim_gap_px": 26.405476893027355
+      }
+    },
+    {
+      "image": "012.webp",
+      "file": "0012-macro.png",
+      "condition": "board_rotation",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.36439915791390354,
+          "max_normal_error_px": 0.8542467136976543,
+          "angle_error_deg": 0.08090957507902552
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.5697483077649129,
+          "max_normal_error_px": 0.599325753685,
+          "angle_error_deg": 0.0041845666855310215
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.4017424453466629,
+          "max_normal_error_px": 0.7827140446750833,
+          "angle_error_deg": 0.10958378759886545
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            271.4470208636662,
+            494.43905339950226
+          ],
+          [
+            1083.6063351160653,
+            485.08386468065555
+          ]
+        ],
+        "lower_rim": [
+          [
+            272.4037747598801,
+            518.9792587162626
+          ],
+          [
+            1082.3076282500904,
+            509.6240125557535
+          ]
+        ],
+        "cable_edge": [
+          [
+            297.67811076329036,
+            579.6198167005608
+          ],
+          [
+            1104.624321900173,
+            587.7904407722232
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 698.0,
+        "common_x_support": [
+          294,
+          1102
+        ],
+        "projected_normal_separation_px": 81.7207483279534,
+        "relative_image_angle_deg": 1.3122189719358386,
+        "apparent_rim_gap_px": 25.357702785244385
+      }
+    },
+    {
+      "image": "013.webp",
+      "file": "0013-macro.png",
+      "condition": "short_grasp",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.32344889960662876,
+          "max_normal_error_px": 0.7245744916545446,
+          "angle_error_deg": 0.05978405680596299
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 1.1318209057925541,
+          "max_normal_error_px": 1.9145633407594542,
+          "angle_error_deg": 0.11089663636135919
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            234.60670814519932,
+            479.7447929591226
+          ],
+          [
+            1045.6729941805775,
+            475.13590781919663
+          ]
+        ],
+        "lower_rim": [
+          [
+            235.66395362584115,
+            504.28218008432856
+          ],
+          [
+            1044.4810638338276,
+            499.6732307705958
+          ]
+        ],
+        "cable_edge": [
+          [
+            234.49460832462165,
+            733.3776070163105
+          ],
+          [
+            1053.0873475176832,
+            709.3120244781711
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "014.webp",
+      "file": "0014-macro.png",
+      "condition": "dim",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.5707671973019484,
+          "max_normal_error_px": 1.129967894253628,
+          "angle_error_deg": 0.08000973333086041
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.45699986341914445,
+          "max_normal_error_px": 0.64321856358131,
+          "angle_error_deg": 0.026475241544771114
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.47202711241959217,
+          "max_normal_error_px": 0.569246979443923,
+          "angle_error_deg": 0.013869990300082333
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            225.10120973563357,
+            488.3257257697065
+          ],
+          [
+            1036.5398116167921,
+            486.9968683643658
+          ]
+        ],
+        "lower_rim": [
+          [
+            226.18507002219312,
+            512.8449139340801
+          ],
+          [
+            1035.3725006640752,
+            511.51604660588634
+          ]
+        ],
+        "cable_edge": [
+          [
+            220.95020278245545,
+            535.6807907460069
+          ],
+          [
+            1024.1634969245463,
+            534.1404225740889
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 626.5,
+        "common_x_support": [
+          227,
+          1026
+        ],
+        "projected_normal_separation_px": 35.50347519670139,
+        "relative_image_angle_deg": -0.028814891712281368,
+        "apparent_rim_gap_px": 25.547194377913627
+      }
+    },
+    {
+      "image": "015.webp",
+      "file": "0015-macro.png",
+      "condition": "bright",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.26704605614023974,
+          "max_normal_error_px": 0.43951992858977856,
+          "angle_error_deg": 0.024340580591491804
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 1.0615502750738615,
+          "max_normal_error_px": 2.043561290688189,
+          "angle_error_deg": 0.13972273205746816
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.6159435403020556,
+          "max_normal_error_px": 0.9733241808508285,
+          "angle_error_deg": 0.049824493183620366
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            221.52611112795879,
+            490.09457219222475
+          ],
+          [
+            1033.5055318927457,
+            490.43951996825086
+          ]
+        ],
+        "lower_rim": [
+          [
+            222.62050720318007,
+            514.6226728555026
+          ],
+          [
+            1032.3457647789326,
+            514.9676226396778
+          ]
+        ],
+        "cable_edge": [
+          [
+            218.1581765606911,
+            780.3219450725713
+          ],
+          [
+            1043.0869537462568,
+            792.4414551502674
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 625.0,
+        "common_x_support": [
+          222,
+          1028
+        ],
+        "projected_normal_separation_px": 285.0453738793514,
+        "relative_image_angle_deg": 0.8094638954219325,
+        "apparent_rim_gap_px": 23.731782945736427
+      }
+    },
+    {
+      "image": "016.webp",
+      "file": "0016-macro.png",
+      "condition": "focus_drift",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.4794846436695081,
+          "max_normal_error_px": 0.8425820695859156,
+          "angle_error_deg": 0.05127135317198711
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.5323433917357848,
+          "max_normal_error_px": 1.24942574149076,
+          "angle_error_deg": 0.1233524582480528
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.08803872104527861,
+          "max_normal_error_px": 0.10576238935328061,
+          "angle_error_deg": 0.0025098217835612946
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            209.503998353454,
+            483.1325803576601
+          ],
+          [
+            1021.0101917572167,
+            478.56576910977674
+          ]
+        ],
+        "lower_rim": [
+          [
+            210.6314635789289,
+            507.6733656884413
+          ],
+          [
+            1019.8860455187765,
+            503.1065006846157
+          ]
+        ],
+        "cable_edge": [
+          [
+            192.92662280271688,
+            607.1680061416134
+          ],
+          [
+            1001.8936846369796,
+            587.145058962333
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 607.0,
+        "common_x_support": [
+          208,
+          1006
+        ],
+        "projected_normal_separation_px": 103.70079823798876,
+        "relative_image_angle_deg": -1.0051475710238689,
+        "apparent_rim_gap_px": 25.40906308336497
+      }
+    },
+    {
+      "image": "017.webp",
+      "file": "0017-macro.png",
+      "condition": "absent_cable",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.3892109232698703,
+          "max_normal_error_px": 0.4491538451084896,
+          "angle_error_deg": 0.008469301277674535
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.5789865239019087,
+          "max_normal_error_px": 0.6479631107609722,
+          "angle_error_deg": 0.009772743601899225
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            248.76358279743513,
+            479.2371872647046
+          ],
+          [
+            1059.7922394029388,
+            474.5934796068854
+          ]
+        ],
+        "lower_rim": [
+          [
+            249.7815237388304,
+            503.7751368560763
+          ],
+          [
+            1058.5612118010113,
+            499.1313629986892
+          ]
+        ],
+        "cable_edge": [
+          [
+            270.7955393274355,
+            570.3561465300807
+          ],
+          [
+            1076.3241883476064,
+            557.1340571586352
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "018.webp",
+      "file": "0018-macro.png",
+      "condition": "absent_socket",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels"
+      ],
+      "features": {
+        "cable_edge": {
+          "mean_normal_error_px": 0.41961296592047875,
+          "max_normal_error_px": 0.9152137006854751,
+          "angle_error_deg": 0.07115502971003318
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            207.9150414848191,
+            477.6250724853472
+          ],
+          [
+            1019.0209173848096,
+            472.65247960373904
+          ]
+        ],
+        "lower_rim": [
+          [
+            209.04639138738114,
+            502.16974878560774
+          ],
+          [
+            1017.9028601448408,
+            497.1970794245218
+          ]
+        ],
+        "cable_edge": [
+          [
+            187.3156083041723,
+            761.9400790087877
+          ],
+          [
+            1010.0711424378204,
+            744.2669509674926
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "019.webp",
+      "file": "0019-macro.png",
+      "condition": "empty_targets",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels",
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {},
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            195.0460996604748,
+            485.1361605692435
+          ],
+          [
+            1007.6365821177288,
+            490.5136603454628
+          ]
+        ],
+        "lower_rim": [
+          [
+            196.214613613179,
+            509.69078796921025
+          ],
+          [
+            1006.5474446167688,
+            515.0683273419288
+          ]
+        ],
+        "cable_edge": [
+          [
+            196.7356202247703,
+            696.1378737221478
+          ],
+          [
+            1015.2085729959624,
+            700.8625517618032
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "020.webp",
+      "file": "0020-macro.png",
+      "condition": "ordinary",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.34026023795862814,
+          "max_normal_error_px": 0.7524525633018807,
+          "angle_error_deg": 0.060543863303380324
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.7885135556910767,
+          "max_normal_error_px": 0.9367276999696832,
+          "angle_error_deg": 0.020980488246937004
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.3060892507555616,
+          "max_normal_error_px": 0.4660412170490401,
+          "angle_error_deg": 0.022232105851407447
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            185.15239413879524,
+            477.566493381747
+          ],
+          [
+            996.9225975490743,
+            478.6370090913348
+          ]
+        ],
+        "lower_rim": [
+          [
+            186.3474170256739,
+            502.1221924315918
+          ],
+          [
+            995.8646135790225,
+            503.19272260427283
+          ]
+        ],
+        "cable_edge": [
+          [
+            162.71748955942698,
+            771.7542662110055
+          ],
+          [
+            987.7828638550674,
+            787.8107334346699
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 585.0,
+        "common_x_support": [
+          183,
+          987
+        ],
+        "projected_normal_separation_px": 289.0696753781853,
+        "relative_image_angle_deg": 1.0206893403569262,
+        "apparent_rim_gap_px": 25.67180861758942
+      }
+    },
+    {
+      "image": "021.webp",
+      "file": "0021-macro.png",
+      "condition": "near_entry",
+      "status": "abstain",
+      "unavailable_target_condition": false,
+      "reasons": [
+        "lower_rim: fragmented feature"
+      ],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.16112726230353822,
+          "max_normal_error_px": 0.367959208773287,
+          "angle_error_deg": 0.04100047289932823
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.4399901928841512,
+          "max_normal_error_px": 0.746966341784864,
+          "angle_error_deg": 0.04390945613709496
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            204.9531249264114,
+            494.3034121191868
+          ],
+          [
+            1016.8729240748879,
+            488.8386924883589
+          ]
+        ],
+        "lower_rim": [
+          [
+            206.09386914568194,
+            518.8271434068758
+          ],
+          [
+            1015.7597335767031,
+            513.3623964599384
+          ]
+        ],
+        "cable_edge": [
+          [
+            196.12963474688743,
+            526.7221535522854
+          ],
+          [
+            996.9376102516518,
+            503.64058022896285
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "022.webp",
+      "file": "0022-macro.png",
+      "condition": "board_rotation",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.6686736541524086,
+          "max_normal_error_px": 1.3394928911453416,
+          "angle_error_deg": 0.1806072244201532
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.38574486505567235,
+          "max_normal_error_px": 0.8585988321723614,
+          "angle_error_deg": 0.06999795024538613
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.6702648458346503,
+          "max_normal_error_px": 0.9309823729259086,
+          "angle_error_deg": 0.036599026380299104
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            241.5286752329365,
+            504.1328371765044
+          ],
+          [
+            1054.4760608768408,
+            493.6400280867573
+          ]
+        ],
+        "lower_rim": [
+          [
+            242.56963953293464,
+            528.6713964080749
+          ],
+          [
+            1053.257115070207,
+            518.1785833788724
+          ]
+        ],
+        "cable_edge": [
+          [
+            239.74699944086643,
+            686.0434317549924
+          ],
+          [
+            1055.868642941914,
+            669.1848679743545
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 648.0,
+        "common_x_support": [
+          240,
+          1056
+        ],
+        "projected_normal_separation_px": 166.89557821960136,
+        "relative_image_angle_deg": -0.35416885009875565,
+        "apparent_rim_gap_px": 24.84261361062596
+      }
+    },
+    {
+      "image": "023.webp",
+      "file": "0023-macro.png",
+      "condition": "short_grasp",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels",
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {},
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            185.85988071943123,
+            499.11366823950243
+          ],
+          [
+            998.5789838607024,
+            503.8955708931766
+          ]
+        ],
+        "lower_rim": [
+          [
+            187.05413359554944,
+            523.6340721222095
+          ],
+          [
+            997.5148925780039,
+            528.4159686936658
+          ]
+        ],
+        "cable_edge": [
+          [
+            214.18415199122393,
+            595.7782138537153
+          ],
+          [
+            1022.4147547939222,
+            604.5294464012461
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "024.webp",
+      "file": "0024-macro.png",
+      "condition": "dim",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 1.3406443361770064,
+          "max_normal_error_px": 1.6269036201356561,
+          "angle_error_deg": 0.04052921181651936
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.3507686541422887,
+          "max_normal_error_px": 0.8082186167561987,
+          "angle_error_deg": 0.08810539683424887
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.5743664977044957,
+          "max_normal_error_px": 0.5886155415920352,
+          "angle_error_deg": 0.0020090353757601376
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            228.64218539658432,
+            483.4043986873523
+          ],
+          [
+            1040.3090092129614,
+            480.7094057222676
+          ]
+        ],
+        "lower_rim": [
+          [
+            229.71661939164034,
+            507.94633655354943
+          ],
+          [
+            1039.1309883246186,
+            505.25131392175484
+          ]
+        ],
+        "cable_edge": [
+          [
+            213.33159665108454,
+            665.2169533687819
+          ],
+          [
+            1028.491727003647,
+            654.5480207883921
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 627.0,
+        "common_x_support": [
+          228,
+          1026
+        ],
+        "projected_normal_separation_px": 166.77800089476153,
+        "relative_image_angle_deg": -0.49703891424922797,
+        "apparent_rim_gap_px": 25.70353380929697
+      }
+    },
+    {
+      "image": "025.webp",
+      "file": "0025-macro.png",
+      "condition": "bright",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 2.195303052945348,
+          "max_normal_error_px": 4.601780500327192,
+          "angle_error_deg": 0.591658718080484
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 1.0891890946422171,
+          "max_normal_error_px": 2.2077516965476436,
+          "angle_error_deg": 0.2945874870324502
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.36620417011907896,
+          "max_normal_error_px": 0.37614893503818675,
+          "angle_error_deg": 0.0013983008138620523
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            221.90625925969601,
+            496.87994975412465
+          ],
+          [
+            1035.2498411922647,
+            499.65641992109147
+          ]
+        ],
+        "lower_rim": [
+          [
+            223.00128868731127,
+            521.4270684270666
+          ],
+          [
+            1034.0831114209916,
+            524.2035407141029
+          ]
+        ],
+        "cable_edge": [
+          [
+            218.28396440200493,
+            729.6616411978689
+          ],
+          [
+            1038.9857800694558,
+            750.5442698638727
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 629.5,
+        "common_x_support": [
+          226,
+          1033
+        ],
+        "projected_normal_separation_px": 230.20813605350895,
+        "relative_image_angle_deg": 0.8171821668284744,
+        "apparent_rim_gap_px": 24.864352497374227
+      }
+    },
+    {
+      "image": "026.webp",
+      "file": "0026-macro.png",
+      "condition": "focus_drift",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.6528870977069345,
+          "max_normal_error_px": 0.8118706482573863,
+          "angle_error_deg": 0.02240684220782377
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.037716919978308644,
+          "max_normal_error_px": 0.08311564467299533,
+          "angle_error_deg": 0.009937346620980225
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.04613999196154943,
+          "max_normal_error_px": 0.0940315248753899,
+          "angle_error_deg": 0.012445417968218464
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            218.70308188584548,
+            495.7349537614652
+          ],
+          [
+            1031.7611030249482,
+            492.5839241027979
+          ]
+        ],
+        "lower_rim": [
+          [
+            219.80701538988583,
+            520.2852130993576
+          ],
+          [
+            1030.604855370253,
+            517.134172854352
+          ]
+        ],
+        "cable_edge": [
+          [
+            235.1291648265818,
+            637.188835803567
+          ],
+          [
+            1048.0467369844157,
+            640.2022098569864
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 641.5,
+        "common_x_support": [
+          234,
+          1049
+        ],
+        "projected_normal_separation_px": 132.65693436044535,
+        "relative_image_angle_deg": 0.4310201457992231,
+        "apparent_rim_gap_px": 25.18652936939469
+      }
+    },
+    {
+      "image": "027.webp",
+      "file": "0027-macro.png",
+      "condition": "absent_cable",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.47741424731335586,
+          "max_normal_error_px": 0.6977805478755741,
+          "angle_error_deg": 0.031102612774293603
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.2942099575166941,
+          "max_normal_error_px": 0.6107923301784212,
+          "angle_error_deg": 0.04510995796555384
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            198.52802365563963,
+            488.0557911218615
+          ],
+          [
+            1010.4192545114626,
+            490.68575719144707
+          ]
+        ],
+        "lower_rim": [
+          [
+            199.68600611300738,
+            512.5840847264099
+          ],
+          [
+            1009.3235393836156,
+            515.2140675951088
+          ]
+        ],
+        "cable_edge": [
+          [
+            220.50450095739077,
+            709.3486308520185
+          ],
+          [
+            1038.3327164185514,
+            693.2687799846849
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "028.webp",
+      "file": "0028-macro.png",
+      "condition": "absent_socket",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels"
+      ],
+      "features": {
+        "cable_edge": {
+          "mean_normal_error_px": 0.5057821959423299,
+          "max_normal_error_px": 0.5225097954021314,
+          "angle_error_deg": 0.002376536526696338
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            178.5941741949454,
+            487.39543492548285
+          ],
+          [
+            990.6395626839239,
+            492.59280005757256
+          ]
+        ],
+        "lower_rim": [
+          [
+            179.80759478655025,
+            511.9278368859906
+          ],
+          [
+            989.5983619745012,
+            517.1252331692499
+          ]
+        ],
+        "cable_edge": [
+          [
+            171.7237853683057,
+            657.2116013636544
+          ],
+          [
+            985.3621302084264,
+            679.1903001202679
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "029.webp",
+      "file": "0029-macro.png",
+      "condition": "empty_targets",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels",
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {},
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            188.21953342763314,
+            477.50744929299054
+          ],
+          [
+            999.112481742424,
+            479.08930610252673
+          ]
+        ],
+        "lower_rim": [
+          [
+            189.4047349775351,
+            502.03621698365936
+          ],
+          [
+            998.0495318942126,
+            503.61809495829954
+          ]
+        ],
+        "cable_edge": [
+          [
+            210.1086146003132,
+            705.2405300583276
+          ],
+          [
+            1027.0263584839433,
+            686.9135093574096
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "030.webp",
+      "file": "0030-macro.png",
+      "condition": "ordinary",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.3914696049566739,
+          "max_normal_error_px": 0.7805896700044125,
+          "angle_error_deg": 0.05486132843707399
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.39534376805104393,
+          "max_normal_error_px": 0.5110346344487449,
+          "angle_error_deg": 0.016356481189493337
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.2131173809387851,
+          "max_normal_error_px": 0.2815671098245488,
+          "angle_error_deg": 0.00966300173187018
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            229.7224606006005,
+            494.818977704048
+          ],
+          [
+            1042.4968315530675,
+            494.0277869120718
+          ]
+        ],
+        "lower_rim": [
+          [
+            230.79522216172572,
+            519.3595656811837
+          ],
+          [
+            1041.311018389758,
+            518.5683723616585
+          ]
+        ],
+        "cable_edge": [
+          [
+            243.0348130145343,
+            632.6141760548248
+          ],
+          [
+            1054.753379592809,
+            628.2002229655207
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 646.0,
+        "common_x_support": [
+          243,
+          1049
+        ],
+        "projected_normal_separation_px": 123.94726105453985,
+        "relative_image_angle_deg": -0.28462256829616295,
+        "apparent_rim_gap_px": 25.315008715173406
+      }
+    },
+    {
+      "image": "031.webp",
+      "file": "0031-macro.png",
+      "condition": "near_entry",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.5803225273450923,
+          "max_normal_error_px": 0.6826080633919649,
+          "angle_error_deg": 0.014458037172312449
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.7345259220522722,
+          "max_normal_error_px": 0.7600584682232436,
+          "angle_error_deg": 0.0036190529989115205
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.8848243854556368,
+          "max_normal_error_px": 1.0429018990093641,
+          "angle_error_deg": 0.022613415882410004
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            240.70660190530188,
+            480.8946942847002
+          ],
+          [
+            1051.3996333918171,
+            479.2902561272251
+          ]
+        ],
+        "lower_rim": [
+          [
+            241.74623317554878,
+            505.4125287187057
+          ],
+          [
+            1050.1922198576794,
+            503.8080709150556
+          ]
+        ],
+        "cable_edge": [
+          [
+            266.5801825928183,
+            531.5908773000381
+          ],
+          [
+            1067.6134281555826,
+            527.0554621300257
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 668.5,
+        "common_x_support": [
+          264,
+          1073
+        ],
+        "projected_normal_separation_px": 37.8187367150725,
+        "relative_image_angle_deg": -0.18281791895989927,
+        "apparent_rim_gap_px": 25.83947255701429
+      }
+    },
+    {
+      "image": "032.webp",
+      "file": "0032-macro.png",
+      "condition": "board_rotation",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.30258766999051023,
+          "max_normal_error_px": 0.4174496441114143,
+          "angle_error_deg": 0.01621431819130681
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.08530812631835737,
+          "max_normal_error_px": 0.19041271359544035,
+          "angle_error_deg": 0.02228364174036912
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.7218796620984933,
+          "max_normal_error_px": 1.0468461523102444,
+          "angle_error_deg": 0.04633089782765053
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            289.366171629121,
+            502.1342334027787
+          ],
+          [
+            1100.9921449934359,
+            486.8918134764345
+          ]
+        ],
+        "lower_rim": [
+          [
+            290.2731196123068,
+            526.65273277811
+          ],
+          [
+            1099.6460930370833,
+            511.4102649580764
+          ]
+        ],
+        "cable_edge": [
+          [
+            287.44409574502424,
+            549.9842164369866
+          ],
+          [
+            1091.1918693523573,
+            549.1344310822527
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 689.5,
+        "common_x_support": [
+          285,
+          1094
+        ],
+        "projected_normal_separation_px": 43.53312805798128,
+        "relative_image_angle_deg": 0.9512355366154605,
+        "apparent_rim_gap_px": 24.849762549678758
+      }
+    },
+    {
+      "image": "033.webp",
+      "file": "0033-macro.png",
+      "condition": "short_grasp",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.29124370988691056,
+          "max_normal_error_px": 0.6431507496903079,
+          "angle_error_deg": 0.07644345073688157
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 1.9666572739326431,
+          "max_normal_error_px": 2.044221298267376,
+          "angle_error_deg": 0.010969167819524209
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            208.0101393748618,
+            490.39481172508675
+          ],
+          [
+            1020.5552091155438,
+            490.5643677287887
+          ]
+        ],
+        "lower_rim": [
+          [
+            209.14285496468312,
+            514.9393733854847
+          ],
+          [
+            1019.4306244642523,
+            515.1089303532822
+          ]
+        ],
+        "cable_edge": [
+          [
+            229.96150027057135,
+            711.0909019848785
+          ],
+          [
+            1049.430335408578,
+            718.6307611969289
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "034.webp",
+      "file": "0034-macro.png",
+      "condition": "dim",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.4686114003060323,
+          "max_normal_error_px": 1.0149575568742983,
+          "angle_error_deg": 0.07930838998629741
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.4396058791274471,
+          "max_normal_error_px": 0.6913758581094488,
+          "angle_error_deg": 0.03563726805048578
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.3542927522331691,
+          "max_normal_error_px": 0.8213855606924105,
+          "angle_error_deg": 0.07458388451949927
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            183.92424128232514,
+            476.3549028841298
+          ],
+          [
+            995.7254900063659,
+            482.2457427231227
+          ]
+        ],
+        "lower_rim": [
+          [
+            185.12247286866304,
+            500.9098709801023
+          ],
+          [
+            994.6704271550024,
+            506.80078594205975
+          ]
+        ],
+        "cable_edge": [
+          [
+            194.925676447496,
+            519.1057837885517
+          ],
+          [
+            997.44358369487,
+            534.3430607530768
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 593.5,
+        "common_x_support": [
+          193,
+          994
+        ],
+        "projected_normal_separation_px": 35.38007997589448,
+        "relative_image_angle_deg": 0.8034505425044186,
+        "apparent_rim_gap_px": 25.452526562314972
+      }
+    },
+    {
+      "image": "035.webp",
+      "file": "0035-macro.png",
+      "condition": "bright",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.5232545806786695,
+          "max_normal_error_px": 0.7637705875722702,
+          "angle_error_deg": 0.0339470490572637
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 2.0243569793564764,
+          "max_normal_error_px": 4.663449788981316,
+          "angle_error_deg": 0.5077276164557288
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.35471277281959834,
+          "max_normal_error_px": 0.5911751314560675,
+          "angle_error_deg": 0.03332809064946951
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            198.77414490963852,
+            492.67123853622303
+          ],
+          [
+            1011.8764752599269,
+            496.91684850888265
+          ]
+        ],
+        "lower_rim": [
+          [
+            199.93308159955006,
+            517.2214063412077
+          ],
+          [
+            1010.7749570214798,
+            521.4670288747353
+          ]
+        ],
+        "cable_edge": [
+          [
+            218.1323500811768,
+            716.7983310056193
+          ],
+          [
+            1038.1817072991507,
+            733.4438790373872
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 614.0,
+        "common_x_support": [
+          216,
+          1012
+        ],
+        "projected_normal_separation_px": 218.83163185989892,
+        "relative_image_angle_deg": 0.5930282888900038,
+        "apparent_rim_gap_px": 24.084303403229114
+      }
+    },
+    {
+      "image": "036.webp",
+      "file": "0036-macro.png",
+      "condition": "focus_drift",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 1.143054580920113,
+          "max_normal_error_px": 1.5489441239454795,
+          "angle_error_deg": 0.05735797561538014
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.7854173159932532,
+          "max_normal_error_px": 1.2658538140488684,
+          "angle_error_deg": 0.06809559281815697
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.8550522728370376,
+          "max_normal_error_px": 1.2522188779360552,
+          "angle_error_deg": 0.056790623238770335
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            205.69515730741352,
+            477.20351150880214
+          ],
+          [
+            1016.5921884613547,
+            478.1645716763711
+          ]
+        ],
+        "lower_rim": [
+          [
+            206.83195104400787,
+            501.7339455669479
+          ],
+          [
+            1015.4808136267019,
+            502.69501896666736
+          ]
+        ],
+        "cable_edge": [
+          [
+            237.76454313909562,
+            527.6186527772097
+          ],
+          [
+            1039.1623358979032,
+            528.2077259536608
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 634.5,
+        "common_x_support": [
+          235,
+          1034
+        ],
+        "projected_normal_separation_px": 38.96535200978186,
+        "relative_image_angle_deg": 0.03627429198783999,
+        "apparent_rim_gap_px": 26.407950554671004
+      }
+    },
+    {
+      "image": "037.webp",
+      "file": "0037-macro.png",
+      "condition": "absent_cable",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.5347124771074805,
+          "max_normal_error_px": 0.9074891993544472,
+          "angle_error_deg": 0.05299855109586629
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.5032829181100044,
+          "max_normal_error_px": 0.7170470205618864,
+          "angle_error_deg": 0.030535967828211302
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            223.72694646208316,
+            490.4381879123043
+          ],
+          [
+            1036.3986648168855,
+            488.46754904819284
+          ]
+        ],
+        "lower_rim": [
+          [
+            224.81631233483625,
+            514.9896635037474
+          ],
+          [
+            1035.2300144592182,
+            513.0190121568249
+          ]
+        ],
+        "cable_edge": [
+          [
+            225.2437126483069,
+            551.4501601435517
+          ],
+          [
+            1029.941564236535,
+            560.910173733412
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "038.webp",
+      "file": "0038-macro.png",
+      "condition": "absent_socket",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels"
+      ],
+      "features": {
+        "cable_edge": {
+          "mean_normal_error_px": 0.4516704907835074,
+          "max_normal_error_px": 1.04855990350579,
+          "angle_error_deg": 0.09318833474491073
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            228.86747307030168,
+            485.9452488105784
+          ],
+          [
+            1041.4756692939654,
+            487.29800029695303
+          ]
+        ],
+        "lower_rim": [
+          [
+            229.94225633500434,
+            510.50240176055513
+          ],
+          [
+            1040.2927958632633,
+            511.85516423680394
+          ]
+        ],
+        "cable_edge": [
+          [
+            221.55023670722102,
+            728.6639405342705
+          ],
+          [
+            1043.3450933489357,
+            743.6746614105404
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "039.webp",
+      "file": "0039-macro.png",
+      "condition": "empty_targets",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels",
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {},
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            202.98246197238572,
+            495.95410039525746
+          ],
+          [
+            1015.6523055744622,
+            492.7660451826033
+          ]
+        ],
+        "lower_rim": [
+          [
+            204.12955283614895,
+            520.4919503370705
+          ],
+          [
+            1014.5413690834023,
+            517.3038848106817
+          ]
+        ],
+        "cable_edge": [
+          [
+            217.15914829813707,
+            544.7312137128899
+          ],
+          [
+            1020.5436456829109,
+            539.3740034974925
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "040.webp",
+      "file": "0040-macro.png",
+      "condition": "ordinary",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.5262154347956897,
+          "max_normal_error_px": 0.6511850352479488,
+          "angle_error_deg": 0.017643632214867533
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.8405461214642824,
+          "max_normal_error_px": 1.919614523661914,
+          "angle_error_deg": 0.2145215197490849
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.7764366864467691,
+          "max_normal_error_px": 0.9468079888535059,
+          "angle_error_deg": 0.02393884308845573
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            230.6445201050077,
+            485.1196489894517
+          ],
+          [
+            1042.282977910074,
+            480.9622062257145
+          ]
+        ],
+        "lower_rim": [
+          [
+            231.7134696527378,
+            509.65850457770296
+          ],
+          [
+            1041.0995953319155,
+            505.50101863478903
+          ]
+        ],
+        "cable_edge": [
+          [
+            256.75362557286985,
+            696.4909144771459
+          ],
+          [
+            1073.4540833974092,
+            684.8913872073826
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 650.5,
+        "common_x_support": [
+          258,
+          1043
+        ],
+        "projected_normal_separation_px": 196.93203755242834,
+        "relative_image_angle_deg": -0.42767486605863564,
+        "apparent_rim_gap_px": 24.611764366446266
+      }
+    },
+    {
+      "image": "041.webp",
+      "file": "0041-macro.png",
+      "condition": "near_entry",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.25358627624926916,
+          "max_normal_error_px": 0.327345322564274,
+          "angle_error_deg": 0.01039950537689352
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.6658961387969029,
+          "max_normal_error_px": 1.203835051904162,
+          "angle_error_deg": 0.07615854096917432
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.6425616420555431,
+          "max_normal_error_px": 0.6496151682048468,
+          "angle_error_deg": 0.001005911829608075
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            223.82723273439478,
+            500.0558757379565
+          ],
+          [
+            1036.571643621984,
+            501.8566480760549
+          ]
+        ],
+        "lower_rim": [
+          [
+            224.91617496452068,
+            524.5773610082306
+          ],
+          [
+            1035.4021684423408,
+            526.3781316785658
+          ]
+        ],
+        "cable_edge": [
+          [
+            238.89641469560675,
+            537.9442643972404
+          ],
+          [
+            1042.3787569152264,
+            546.1375637193446
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 637.0,
+        "common_x_support": [
+          236,
+          1038
+        ],
+        "projected_normal_separation_px": 29.20312615840747,
+        "relative_image_angle_deg": 0.41484011833340645,
+        "apparent_rim_gap_px": 25.448238907658776
+      }
+    },
+    {
+      "image": "042.webp",
+      "file": "0042-macro.png",
+      "condition": "board_rotation",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 1.3510757676051535,
+          "max_normal_error_px": 1.7101466574959083,
+          "angle_error_deg": 0.05073499931814385
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.7720007802651727,
+          "max_normal_error_px": 0.7957857322787489,
+          "angle_error_deg": 0.0033700733807383587
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.16160458917010304,
+          "max_normal_error_px": 0.354726024619089,
+          "angle_error_deg": 0.027891319312557616
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            156.1613979118878,
+            474.8732726243581
+          ],
+          [
+            967.1191317287003,
+            483.19886113583783
+          ]
+        ],
+        "lower_rim": [
+          [
+            157.43528908479078,
+            499.40583669143336
+          ],
+          [
+            966.1442828294362,
+            507.73153272670845
+          ]
+        ],
+        "cable_edge": [
+          [
+            154.34918373442906,
+            735.9255303282307
+          ],
+          [
+            975.9023454245242,
+            727.2675369429126
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 565.5,
+        "common_x_support": [
+          154,
+          977
+        ],
+        "projected_normal_separation_px": 240.67969945703874,
+        "relative_image_angle_deg": -1.2477573270282474,
+        "apparent_rim_gap_px": 26.651177950763667
+      }
+    },
+    {
+      "image": "043.webp",
+      "file": "0043-macro.png",
+      "condition": "short_grasp",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels",
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {},
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            231.1140129391048,
+            499.27710978288513
+          ],
+          [
+            1044.5157237670196,
+            498.4816652383182
+          ]
+        ],
+        "lower_rim": [
+          [
+            232.18373059408586,
+            523.8241985652134
+          ],
+          [
+            1043.3233836244772,
+            523.0287537205011
+          ]
+        ],
+        "cable_edge": [
+          [
+            232.91168465383353,
+            578.9704070343213
+          ],
+          [
+            1040.8290285506866,
+            589.0325349735582
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "044.webp",
+      "file": "0044-macro.png",
+      "condition": "dim",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.14674942087403103,
+          "max_normal_error_px": 0.2835900255324405,
+          "angle_error_deg": 0.0411051501489525
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.22082106078129488,
+          "max_normal_error_px": 0.4891597733055075,
+          "angle_error_deg": 0.05966993989351427
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.8621368042821392,
+          "max_normal_error_px": 1.490621150495225,
+          "angle_error_deg": 0.08927077387023763
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            214.58367715844432,
+            490.58741684939713
+          ],
+          [
+            1026.5025514421964,
+            491.22425908615315
+          ]
+        ],
+        "lower_rim": [
+          [
+            215.69724536836705,
+            515.1119337837218
+          ],
+          [
+            1025.3622911704078,
+            515.7487794712413
+          ]
+        ],
+        "cable_edge": [
+          [
+            191.38594890630475,
+            618.7873814312987
+          ],
+          [
+            1001.7677843610394,
+            632.3010069188522
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 604.5,
+        "common_x_support": [
+          211,
+          998
+        ],
+        "projected_normal_separation_px": 123.43999131887,
+        "relative_image_angle_deg": 0.990339284627389,
+        "apparent_rim_gap_px": 24.439381341501814
+      }
+    },
+    {
+      "image": "045.webp",
+      "file": "0045-macro.png",
+      "condition": "bright",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 1.3774508929400815,
+          "max_normal_error_px": 2.135625734167526,
+          "angle_error_deg": 0.10712365017101602
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 1.3625106864862142,
+          "max_normal_error_px": 1.5699222416975904,
+          "angle_error_deg": 0.029386977771860952
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.4230345570217608,
+          "max_normal_error_px": 0.6770498974872359,
+          "angle_error_deg": 0.035667713897331255
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            214.71103091957667,
+            479.1952292262237
+          ],
+          [
+            1025.740414242564,
+            478.6300537054345
+          ]
+        ],
+        "lower_rim": [
+          [
+            215.82310599734186,
+            503.7262302877135
+          ],
+          [
+            1024.6035899100507,
+            503.1610474239002
+          ]
+        ],
+        "cable_edge": [
+          [
+            217.5307232649629,
+            689.9716426539762
+          ],
+          [
+            1033.59787837832,
+            684.5593854428125
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 622.0,
+        "common_x_support": [
+          216,
+          1028
+        ],
+        "projected_normal_separation_px": 197.90535825084126,
+        "relative_image_angle_deg": -0.44392707564936146,
+        "apparent_rim_gap_px": 24.543524572375816
+      }
+    },
+    {
+      "image": "046.webp",
+      "file": "0046-macro.png",
+      "condition": "focus_drift",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.02577930067002532,
+          "max_normal_error_px": 0.047259111748090256,
+          "angle_error_deg": 0.003030026010985565
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.9872253572906294,
+          "max_normal_error_px": 1.0254512891105079,
+          "angle_error_deg": 0.005406430458908151
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.64163511125892,
+          "max_normal_error_px": 1.2539372293623658,
+          "angle_error_deg": 0.08556503759055556
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            254.86662273065187,
+            495.0187873817775
+          ],
+          [
+            1067.324618263918,
+            490.4115046616499
+          ]
+        ],
+        "lower_rim": [
+          [
+            255.8693952357975,
+            519.5560302444128
+          ],
+          [
+            1066.070500890687,
+            514.9487278310731
+          ]
+        ],
+        "cable_edge": [
+          [
+            265.3299834823978,
+            715.019826601055
+          ],
+          [
+            1085.325195538556,
+            710.4376294763503
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 673.5,
+        "common_x_support": [
+          262,
+          1085
+        ],
+        "projected_normal_separation_px": 207.9870964934586,
+        "relative_image_angle_deg": -0.07615440126999728,
+        "apparent_rim_gap_px": 25.54881326423208
+      }
+    },
+    {
+      "image": "047.webp",
+      "file": "0047-macro.png",
+      "condition": "absent_cable",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 1.2118838469866835,
+          "max_normal_error_px": 1.249429570720773,
+          "angle_error_deg": 0.005301669224582084
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.17075233986493038,
+          "max_normal_error_px": 0.36270165855279174,
+          "angle_error_deg": 0.04580144371967271
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            204.31789865935616,
+            482.58887910413847
+          ],
+          [
+            1015.8234973564752,
+            477.45108206287625
+          ]
+        ],
+        "lower_rim": [
+          [
+            205.45979857997372,
+            507.132066990635
+          ],
+          [
+            1014.7137700255064,
+            501.99420677835326
+          ]
+        ],
+        "cable_edge": [
+          [
+            200.7744268387139,
+            651.5452037720192
+          ],
+          [
+            1014.5044223716585,
+            653.5367878925515
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "048.webp",
+      "file": "0048-macro.png",
+      "condition": "absent_socket",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels"
+      ],
+      "features": {
+        "cable_edge": {
+          "mean_normal_error_px": 0.5052123714998435,
+          "max_normal_error_px": 0.6600970498483818,
+          "angle_error_deg": 0.021751305325977466
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            190.67718485283683,
+            494.71399693872127
+          ],
+          [
+            1002.7051966481163,
+            492.7000788364257
+          ]
+        ],
+        "lower_rim": [
+          [
+            191.85744958730464,
+            519.2340446785245
+          ],
+          [
+            1001.6310152636337,
+            517.2201192241462
+          ]
+        ],
+        "cable_edge": [
+          [
+            184.18597674584453,
+            709.6951684562458
+          ],
+          [
+            1002.2158402879716,
+            725.5330761274843
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "049.webp",
+      "file": "0049-macro.png",
+      "condition": "empty_targets",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels",
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {},
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            209.4517704810551,
+            500.61223613288905
+          ],
+          [
+            1022.6116598554338,
+            499.1951051352968
+          ]
+        ],
+        "lower_rim": [
+          [
+            210.5814377954718,
+            525.1491918449857
+          ],
+          [
+            1021.4806075936611,
+            523.732061225308
+          ]
+        ],
+        "cable_edge": [
+          [
+            201.70155794647073,
+            604.912983133141
+          ],
+          [
+            1011.9282173542368,
+            607.5169605924489
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "050.webp",
+      "file": "0050-macro.png",
+      "condition": "ordinary",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.564325233216661,
+          "max_normal_error_px": 0.669155503500068,
+          "angle_error_deg": 0.014824354389735839
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.015899643885654763,
+          "max_normal_error_px": 0.01858446420308154,
+          "angle_error_deg": 0.00038111457219655587
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.7203253593874258,
+          "max_normal_error_px": 0.8953767596127754,
+          "angle_error_deg": 0.024521219380140624
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            228.66981439668686,
+            490.29253627056704
+          ],
+          [
+            1041.393412352943,
+            487.92304047186235
+          ]
+        ],
+        "lower_rim": [
+          [
+            229.7455431422469,
+            514.8466596310303
+          ],
+          [
+            1040.2108310192823,
+            512.4771483064651
+          ]
+        ],
+        "cable_edge": [
+          [
+            203.65634712501102,
+            689.2738730876081
+          ],
+          [
+            1021.6379332556205,
+            678.8946882293533
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 626.0,
+        "common_x_support": [
+          228,
+          1024
+        ],
+        "projected_normal_separation_px": 183.50435109802194,
+        "relative_image_angle_deg": -0.5427771318122258,
+        "apparent_rim_gap_px": 25.13623841522383
+      }
+    },
+    {
+      "image": "051.webp",
+      "file": "0051-macro.png",
+      "condition": "near_entry",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.8878924685885403,
+          "max_normal_error_px": 1.1218863105868573,
+          "angle_error_deg": 0.03381281745618053
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.7631612324327898,
+          "max_normal_error_px": 0.9181888017846305,
+          "angle_error_deg": 0.022572755742729156
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.15631295970450407,
+          "max_normal_error_px": 0.30375942713472054,
+          "angle_error_deg": 0.04291038620138876
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            193.57046650974956,
+            493.8717953904227
+          ],
+          [
+            1006.79245880058,
+            496.17007546378005
+          ]
+        ],
+        "lower_rim": [
+          [
+            194.7441439172058,
+            518.4244354689931
+          ],
+          [
+            1005.7050605513745,
+            520.7227220112024
+          ]
+        ],
+        "cable_edge": [
+          [
+            184.0438576217093,
+            528.7330300948256
+          ],
+          [
+            986.8283304490427,
+            541.6312340869558
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 589.5,
+        "common_x_support": [
+          196,
+          983
+        ],
+        "projected_normal_separation_px": 28.03619017093688,
+        "relative_image_angle_deg": 0.6872278539730949,
+        "apparent_rim_gap_px": 26.204087264743407
+      }
+    },
+    {
+      "image": "052.webp",
+      "file": "0052-macro.png",
+      "condition": "board_rotation",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.5132007073158509,
+          "max_normal_error_px": 0.5330227933969078,
+          "angle_error_deg": 0.0029983782808897796
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 1.009151650803508,
+          "max_normal_error_px": 1.097711999865358,
+          "angle_error_deg": 0.013104003541751785
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.31914452157345363,
+          "max_normal_error_px": 0.4634676824222495,
+          "angle_error_deg": 0.020996024082902576
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            91.87537452612493,
+            468.94883610108303
+          ],
+          [
+            902.0866394170446,
+            496.3905006170053
+          ]
+        ],
+        "lower_rim": [
+          [
+            93.3266335883048,
+            493.48394846644226
+          ],
+          [
+            901.2909430444369,
+            520.9259044170292
+          ]
+        ],
+        "cable_edge": [
+          [
+            73.9330507224315,
+            708.215582507262
+          ],
+          [
+            893.2993369592355,
+            740.3463363180199
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 471.5,
+        "common_x_support": [
+          94,
+          849
+        ],
+        "projected_normal_separation_px": 229.67905717277648,
+        "relative_image_angle_deg": 0.3321433642994245,
+        "apparent_rim_gap_px": 26.04717531833296
+      }
+    },
+    {
+      "image": "053.webp",
+      "file": "0053-macro.png",
+      "condition": "short_grasp",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.24760249012935132,
+          "max_normal_error_px": 0.2696256161425067,
+          "angle_error_deg": 0.0031117900412435673
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.5390045142257878,
+          "max_normal_error_px": 0.8738482921700687,
+          "angle_error_deg": 0.047785929529772314
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            242.00271407364403,
+            477.4188755862167
+          ],
+          [
+            1053.6016926827785,
+            475.0592858244554
+          ]
+        ],
+        "lower_rim": [
+          [
+            243.0399602252979,
+            501.9749375266758
+          ],
+          [
+            1052.3868657692794,
+            499.6153131070215
+          ]
+        ],
+        "cable_edge": [
+          [
+            235.86619872185608,
+            703.2012089876314
+          ],
+          [
+            1054.0852078589976,
+            689.0372685164423
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "054.webp",
+      "file": "0054-macro.png",
+      "condition": "dim",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 1.0882414429289045,
+          "max_normal_error_px": 1.4952140317463092,
+          "angle_error_deg": 0.057392773038318544
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.33245019050882185,
+          "max_normal_error_px": 0.7795446579003457,
+          "angle_error_deg": 0.07475991144833344
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.2419043187455869,
+          "max_normal_error_px": 0.533925978332448,
+          "angle_error_deg": 0.06284484463237217
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            222.10129244027556,
+            489.7833264170904
+          ],
+          [
+            1034.669879446752,
+            489.2225630691103
+          ]
+        ],
+        "lower_rim": [
+          [
+            223.19494069196406,
+            514.331346072356
+          ],
+          [
+            1033.5060959909922,
+            513.7705791899127
+          ]
+        ],
+        "cable_edge": [
+          [
+            204.9404695801728,
+            742.3867795151864
+          ],
+          [
+            1028.5732845972361,
+            759.5078731520169
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 625.5,
+        "common_x_support": [
+          225,
+          1026
+        ],
+        "projected_normal_separation_px": 249.8584558175563,
+        "relative_image_angle_deg": 1.3593693312281034,
+        "apparent_rim_gap_px": 25.890319188367585
+      }
+    },
+    {
+      "image": "055.webp",
+      "file": "0055-macro.png",
+      "condition": "bright",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.7637859127813441,
+          "max_normal_error_px": 1.161031669356594,
+          "angle_error_deg": 0.05769397654849648
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 1.7253981475473055,
+          "max_normal_error_px": 4.0490609254586,
+          "angle_error_deg": 0.40560116085691933
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.42219052491141434,
+          "max_normal_error_px": 0.5308936091509238,
+          "angle_error_deg": 0.015375509915949492
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            223.2206640645368,
+            476.5793206035445
+          ],
+          [
+            1034.63862707906,
+            479.4525020204774
+          ]
+        ],
+        "lower_rim": [
+          [
+            224.3094565512887,
+            501.1246653963758
+          ],
+          [
+            1033.4763403264494,
+            503.9978857800333
+          ]
+        ],
+        "cable_edge": [
+          [
+            206.9705579010383,
+            684.9160770383613
+          ],
+          [
+            1023.6950250685545,
+            699.1760088559517
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 618.5,
+        "common_x_support": [
+          224,
+          1013
+        ],
+        "projected_normal_separation_px": 203.2754284414974,
+        "relative_image_angle_deg": 0.5500865600661291,
+        "apparent_rim_gap_px": 24.050752414458714
+      }
+    },
+    {
+      "image": "056.webp",
+      "file": "0056-macro.png",
+      "condition": "focus_drift",
+      "status": "image_measurement",
+      "unavailable_target_condition": false,
+      "reasons": [],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.8102397322912046,
+          "max_normal_error_px": 1.1101845082651924,
+          "angle_error_deg": 0.042399412709460765
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 0.3279809873380279,
+          "max_normal_error_px": 0.689952253629652,
+          "angle_error_deg": 0.05182065739868594
+        },
+        "cable_edge": {
+          "mean_normal_error_px": 0.13752492354743287,
+          "max_normal_error_px": 0.3138530867162751,
+          "angle_error_deg": 0.03500801187817493
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            211.2217476146097,
+            492.4069425924988
+          ],
+          [
+            1023.6463682014912,
+            494.66396963180006
+          ]
+        ],
+        "lower_rim": [
+          [
+            212.3452501743971,
+            516.9395587255684
+          ],
+          [
+            1022.5132213929521,
+            519.1965942443143
+          ]
+        ],
+        "cable_edge": [
+          [
+            218.4003694461911,
+            640.9568102863576
+          ],
+          [
+            1030.9291722962298,
+            642.3927383904488
+          ]
+        ]
+      },
+      "measurement": {
+        "reference_x_px": 624.5,
+        "common_x_support": [
+          217,
+          1032
+        ],
+        "projected_normal_separation_px": 136.47911495817647,
+        "relative_image_angle_deg": -0.07024421836198319,
+        "apparent_rim_gap_px": 25.021179165693354
+      }
+    },
+    {
+      "image": "057.webp",
+      "file": "0057-macro.png",
+      "condition": "absent_cable",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {
+        "upper_rim": {
+          "mean_normal_error_px": 0.5025380201088072,
+          "max_normal_error_px": 0.5058932251182039,
+          "angle_error_deg": 0.000474660612577088
+        },
+        "lower_rim": {
+          "mean_normal_error_px": 1.1462452753974934,
+          "max_normal_error_px": 1.4303110386583213,
+          "angle_error_deg": 0.04020614229115743
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            223.30365269192436,
+            491.55473674726807
+          ],
+          [
+            1035.2447996194398,
+            494.8097054949315
+          ]
+        ],
+        "lower_rim": [
+          [
+            224.3928945371212,
+            516.0738398007869
+          ],
+          [
+            1034.0800545383893,
+            519.3288215100138
+          ]
+        ],
+        "cable_edge": [
+          [
+            218.71527332004115,
+            576.0222400440418
+          ],
+          [
+            1023.2563917961655,
+            560.6671393397603
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "058.webp",
+      "file": "0058-macro.png",
+      "condition": "absent_socket",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels"
+      ],
+      "features": {
+        "cable_edge": {
+          "mean_normal_error_px": 0.32232858045172874,
+          "max_normal_error_px": 0.6636390531509747,
+          "angle_error_deg": 0.0478768127354981
+        }
+      },
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            221.4186232584576,
+            486.5928799464828
+          ],
+          [
+            1032.8133776897248,
+            488.3110729575313
+          ]
+        ],
+        "lower_rim": [
+          [
+            222.5124488179022,
+            511.1112247569453
+          ],
+          [
+            1031.6562708807528,
+            512.8294308251398
+          ]
+        ],
+        "cable_edge": [
+          [
+            214.10661113317863,
+            741.2144362240355
+          ],
+          [
+            1035.3411575046846,
+            738.3393439961627
+          ]
+        ]
+      },
+      "measurement": null
+    },
+    {
+      "image": "059.webp",
+      "file": "0059-macro.png",
+      "condition": "empty_targets",
+      "status": "abstain",
+      "unavailable_target_condition": true,
+      "reasons": [
+        "upper_rim: insufficient visible pixels",
+        "lower_rim: insufficient visible pixels",
+        "cable_edge: insufficient visible pixels"
+      ],
+      "features": {},
+      "projected_reference_edges": {
+        "upper_rim": [
+          [
+            196.00213373649882,
+            491.69528033393874
+          ],
+          [
+            1008.0789744281145,
+            492.0862322032415
+          ]
+        ],
+        "lower_rim": [
+          [
+            197.16752432561063,
+            516.2218410799941
+          ],
+          [
+            1006.9896615293629,
+            516.6127948244718
+          ]
+        ],
+        "cable_edge": [
+          [
+            184.32568773403457,
+            717.7913977495995
+          ],
+          [
+            1003.2373907125549,
+            732.5462475698838
+          ]
+        ]
+      },
+      "measurement": null
+    }
+  ],
+  "summary": {
+    "upper_rim": {
+      "count": 35,
+      "median_mean_error_px": 0.5707671973019484,
+      "worst_max_error_px": 4.601780500327192,
+      "worst_angle_error_deg": 0.591658718080484
+    },
+    "lower_rim": {
+      "count": 35,
+      "median_mean_error_px": 0.5323433917357848,
+      "worst_max_error_px": 4.663449788981316,
+      "worst_angle_error_deg": 0.5077276164557288
+    },
+    "cable_edge": {
+      "count": 35,
+      "median_mean_error_px": 0.3913427115428365,
+      "worst_max_error_px": 1.490621150495225,
+      "worst_angle_error_deg": 0.10958378759886545
+    }
+  }
+}
