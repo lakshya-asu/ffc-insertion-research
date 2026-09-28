@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Reuse the tested CUDA/transformers wheels; NumPy 1.x matches Ubuntu cv_bridge ABI.
 COPY --from=foundation /usr/local/lib/python3.12/site-packages/ /opt/perception/
 RUN python3 -m pip install --no-cache-dir --target /opt/perception --upgrade numpy==1.26.4
-ENV PYTHONPATH=/opt/perception ROS_DOMAIN_ID=73 ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST RMW_IMPLEMENTATION=rmw_fastrtps_cpp OMP_NUM_THREADS=4
+COPY src/ffc/zero_region_model.py src/ffc/entrance_feature_model.py src/ffc/dinov3_features.py /opt/ffc_models/
+ENV PYTHONPATH=/opt/ffc_models:/opt/perception ROS_DOMAIN_ID=73 ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST RMW_IMPLEMENTATION=rmw_fastrtps_cpp OMP_NUM_THREADS=4
 WORKDIR /work
 COPY ros2_ws/src /work/ros2_ws/src
 # One pure-Python contract shared by ROS and the offline learning entrypoints.

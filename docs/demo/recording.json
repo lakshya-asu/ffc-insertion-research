@@ -1,0 +1,12 @@
+{
+  "frames": 47,
+  "duration_seconds": 38.826143741607666,
+  "median_inference_ms": 47.233759,
+  "age_at_receipt_ms": [
+    90.28291702270508,
+    105.84545135498047
+  ],
+  "model_sha256": "8668408a864e5a677d3b7b4896ceb5ea6ba13c0b934263a777c3dc7800ccf623",
+  "rig_calibration_sha256": "1db077434bd90e0771dcfca962ee0d34f5c2575b1ecea433d6fc84e7d5484787",
+  "scope": "Recording of native Isaac camera -> ROS frontend -> frozen DINOv3 -> ROS FeatureFrame. Static scene, no robot motion."
+}

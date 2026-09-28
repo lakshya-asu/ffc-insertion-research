@@ -1,6 +1,6 @@
 # Interfaces and code ownership
 
-This is the working contract for the mounted Zero 2 W perception path. The current system observes a stationary simulated cell. It does not yet execute pickup or insertion. The independent DINOv3 test is offline; the live ROS model adapter remains disabled.
+This is the working contract for the mounted Zero 2 W perception path. The current system observes a stationary simulated cell. It does not yet execute pickup or insertion. The independent DINOv3 test is offline; the live ROS model adapter now publishes rig-bound feature frames, with motion disabled.
 
 ## Follow one image through the system
 
@@ -48,7 +48,7 @@ The canonical definitions are in [`src/ffc/macro_contract.py`](src/ffc/macro_con
 - Model: frozen DINOv3 backbone plus the trained feature head. Class order is background, upper rim, lower rim, cable leading band, open slider, closed slider. Checkpoints must match exact class names/order, input dimensions, profile and preprocessing revision.
 - Geometry conventions: calibration matrices are finite; focal lengths are positive; fixed transforms are homogeneous proper rigid transforms. ROS optical axes are right, down and forward. Future metric poses and forces must use metres, radians and newtons, with an explicit frame and acquisition time.
 
-`calibration_id` on the current ROS observation hashes native intrinsics, distortion, dimensions and frame. It does **not** lock the stand position. Offline inference additionally compares the entire frozen camera contract, including `world_optical`, and records its canonical SHA-256 fingerprint. A live estimator still needs a reviewed extrinsic registry and model-to-rig identity check. A configured profile string alone cannot establish that the physical camera is correctly mounted.
+`calibration_id` on the current ROS observation hashes native intrinsics, distortion, dimensions and frame. It does **not** lock the stand position. Offline inference additionally compares the entire frozen camera contract, including `world_optical`, and records its canonical SHA-256 fingerprint. The live inference adapter compares the native calibration identity and transformed K to the frozen model, and requires a matching direct world-to-optical static transform. A changed transform latches a fault. This validates declared calibration consistency; it does not physically measure the mount. A configured profile string alone cannot establish that the physical camera is correctly mounted.
 
 Every observation contains matching headers on RGB, edges and CameraInfo. The receiver checks encodings, lengths, dimensions, rectification, projection consistency and quality field ranges. The quality fields are mean/std luma, low/high clipped fractions, Laplacian variance and edge fraction. These are image diagnostics, not calibrated detection confidence.
 
@@ -87,7 +87,7 @@ Keep numerical transforms and validation out of launch scripts. Keep ROS transpo
 
 ## Interfaces still to commission
 
-`FeatureFrame.msg` reserves acquisition-stamped masks, calibration/model identities, class names, uncalibrated scores and processing duration. The live publisher is not commissioned. Before enabling it, test the installed model adapter, post-inference age, dropped frames, invalid metadata and recovery. A good offline score does not establish this integration.
+`FeatureFrame.msg` reserves acquisition-stamped masks, calibration/model identities, class names, uncalibrated scores and processing duration. The live segmentation publisher is commissioned in experiment 024. Its installed model adapter, post-inference age rejection, invalid metadata, rig changes and recovery have been tested. It also includes the fixed-rig fingerprint. Pose estimation remains uncommissioned. A good segmentation score does not establish insertion readiness.
 
 `TactileFrame.msg` reserves a calibrated taxel grid in newtons. Unmeasured shear arrays must be empty; invalid data must be marked invalid. There is no qualified tactile publisher yet. Measured joint state, tool state and wrist wrench adapters also remain future work. Do not synthesize a healthy sensor channel by publishing zeros.
 

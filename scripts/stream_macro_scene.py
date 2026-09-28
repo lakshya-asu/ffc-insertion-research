@@ -110,7 +110,7 @@ def main():
                         feed,
                         name,
                         sequence,
-                        "Zero 2 W macro study. Static scene, 0.3 mm gap; no motion or inference. "
+                        "Zero 2 W macro study. Static scene, 0.3 mm gap; no robot motion. "
                         + (
                             "Basler/Kowa framing with uncalibrated finite-aperture blur; "
                             "native RGB when ROS is enabled."

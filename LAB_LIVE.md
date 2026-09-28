@@ -77,3 +77,7 @@ The active mounting revision is experiment 019: full tool, braced opposite-side 
 ## Native ROS camera milestone
 
 Experiment 020 adds native RGB publication to the mounted preview. Start it with `docker compose -f compose.yaml -f compose.ros2.yaml run --rm experiment` and the receiver with `docker compose -f compose.yaml -f compose.ros2.yaml up -d perception`. This supersedes the non-ROS preview description above. The human feed remains read-only. ROS observations use wall-clock acquisition timestamps for this static scene, and motion stays disabled. Native rendering currently runs about 1.2 fps; the 500 ms watchdog therefore correctly reports stale intervals. See `/live/#ros-camera`.
+
+## Live learned-perception demo
+
+Experiment 024 connects the frozen mounted model through `compose.inference.yaml`. The presentation entry is `/demo/`; `/api/perception` serves an atomic matched RGB/prediction review snapshot with acquisition identity. The human viewer is read-only. `bash scripts/start_demo.sh` starts the reviewed services; `python3 scripts/check_demo.py` checks a recent feature frame and the recorded fallback. The actual recording and presenter script are linked from `DEMO.md`. Static scene and motion-disabled limits remain in force.

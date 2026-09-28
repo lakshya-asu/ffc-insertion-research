@@ -3,6 +3,7 @@ std_msgs/Header header
 sensor_msgs/Image mask
 sensor_msgs/CameraInfo camera_info
 string calibration_id
+string rig_calibration_sha256
 string model_sha256
 string preprocessing_revision
 string[] class_names

@@ -1,0 +1,31 @@
+# Reviewed sensor/model assets only; no scene, annotations or object-pose mounts.
+services:
+  inference:
+    image: ffc-ros2:jazzy-dinov3
+    network_mode: host
+    ipc: host
+    gpus: all
+    environment:
+      ROS_DOMAIN_ID: '73'
+      ROS_AUTOMATIC_DISCOVERY_RANGE: LOCALHOST
+      RMW_IMPLEMENTATION: rmw_fastrtps_cpp
+      FASTRTPS_DEFAULT_PROFILES_FILE: /config/fastdds-camera.xml
+      HF_HUB_OFFLINE: '1'
+    volumes:
+      - ./config/fastdds-camera.xml:/config/fastdds-camera.xml:ro
+      - ./config/mounted-model-rig-v1.json:/rig/camera.json:ro
+      - ./outputs/macro-dinov3-model-002:/model:ro
+      - ./third_party/dinov3_hf:/backbone:ro
+    command: ["ros2", "run", "ffc_cell", "infer"]
+  feature_view:
+    image: ffc-ros2:jazzy-dinov3
+    network_mode: host
+    ipc: host
+    environment:
+      ROS_DOMAIN_ID: '73'
+      FASTRTPS_DEFAULT_PROFILES_FILE: /config/fastdds-camera.xml
+    volumes:
+      - ./config/fastdds-camera.xml:/config/fastdds-camera.xml:ro
+      - ./scripts/observe_live_features.py:/viewer/observe.py:ro
+      - ./outputs/lab-live:/feed
+    command: ["python3", "/viewer/observe.py", "--output", "/feed", "--seconds", "43200"]

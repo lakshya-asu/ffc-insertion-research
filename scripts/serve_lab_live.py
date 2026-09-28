@@ -79,6 +79,13 @@ class Handler(SimpleHTTPRequestHandler):
 
     def route(self, head=False):
         path = urlsplit(self.path).path
+        if path == "/api/perception":
+            payload = load(LIVE / "perception.json", None)
+            if payload is None:
+                self.send_error(404, "No learned feature frame yet")
+            else:
+                self.reply(json.dumps(payload, allow_nan=False).encode(), "application/json", head)
+            return True
         if path == "/api/status":
             self.reply(json.dumps(snapshot(), allow_nan=False).encode(), "application/json", head)
             return True

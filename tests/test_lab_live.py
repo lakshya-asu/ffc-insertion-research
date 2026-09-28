@@ -35,6 +35,14 @@ def test_live_server_exposes_only_curated_read_only_data(tmp_path, monkeypatch):
             assert result["status"]["title"] == "Test observation"
             assert result["motion_permitted"] is False
             assert result["feeds"] == {}
+        with pytest.raises(HTTPError) as missing:
+            urlopen(base + "/api/perception")
+        assert missing.value.code == 404
+        frame = {"image": "data:image/jpeg;base64,test", "motion_permitted": False, "stamp_ns": 123}
+        (live / "perception.json").write_text(json.dumps(frame))
+        with urlopen(base + "/api/perception") as response:
+            assert json.load(response) == frame
+            assert response.headers["Cache-Control"] == "no-store"
         for path in [
             "/../private.txt",
             "/%2e%2e/private.txt",

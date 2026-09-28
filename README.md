@@ -55,7 +55,7 @@ flowchart LR
     Labels[Simulator geometry and labels] --> Offline[Offline supervision and scoring only]
 ```
 
-The ROS camera/frontend path is implemented. The mounted-camera model has an independent offline test; live ROS inference, tactile streams and robot control are not connected. Simulator object poses, mesh state and offline annotations do not enter a deployed policy, critic, reward or stage transition.
+The ROS camera/frontend and live mounted-model inference paths are implemented. The model has an independent offline test, checked rig/calibration identities and post-inference freshness rejection. Tactile streams, metric pose estimation and robot control are not connected. Simulator object poses, mesh state and offline annotations do not enter a deployed policy, critic, reward or stage transition.
 
 ## Start with these experiment records
 
@@ -115,6 +115,7 @@ Those experiments used **privileged simulator state for alignment** and an assum
 - [x] Connect native RGB/calibration through ROS2 and test observation faults.
 - [x] Audit the mounted-camera dataset and actual frontend compatibility.
 - [x] Freeze and independently evaluate a mounted-camera perception model.
+- [x] Connect rig-bound live ROS inference, test expiry/fault handling and record a presentation demo.
 - [ ] Estimate a usable cable-to-mouth frame with uncertainty.
 - [ ] Qualify cable/contact mechanics and realistic force/tactile observations.
 - [ ] Demonstrate bounded pre-grasped alignment, insertion and recovery.
@@ -122,6 +123,8 @@ Those experiments used **privileged simulator state for alignment** and an assum
 - [ ] Run controlled imitation/RL comparisons, followed by physical transfer.
 
 Read [Interfaces and code ownership](IO_CONTRACTS.md) for the active ROS channels, camera/model contracts, artifact boundaries and remaining integration gates.
+
+[Open the presentation demo](https://lakshya-asu.github.io/ffc-insertion-research/demo/) · [Presenter runbook](DEMO.md) · [Live inference evidence](experiments/024-live-inference-demo.md)
 
 ## Repository map
 
