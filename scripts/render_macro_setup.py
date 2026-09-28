@@ -35,7 +35,7 @@ def main():
         import omni.timeline
         import omni.usd
         from PIL import Image
-        from pxr import Gf, UsdGeom
+        from pxr import Gf, Usd, UsdGeom
 
         from ffc.entrance_features import make_socket, set_slider
         from ffc.isaac_scene import camera
@@ -111,7 +111,11 @@ def main():
         if timeline.get_current_time() != initial or timeline.is_playing():
             raise RuntimeError("Physics advanced during static capture")
         # Persist all edits to a new, self-contained composed scene. Source assets remain untouched.
-        stage.Flatten().Export(str(a.output / "macro-workcell.usda"))
+        export_stage = Usd.Stage.Open(stage.Flatten())
+        # Replicator graphs are process-local and must be rebuilt by the next renderer.
+        for transient in ["/Render", "/Replicator"]:
+            export_stage.RemovePrim(transient)
+        export_stage.GetRootLayer().Export(str(a.output / "macro-workcell.usda"))
         report = dict(
             profile=profile,
             optics=optics,

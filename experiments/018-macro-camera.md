@@ -32,3 +32,7 @@ docker compose run --rm experiment scripts/render_macro_setup.py --output /works
 ```
 
 The projection test catches the USD millimetre/scene-unit scaling error and checks field of view against the selected sensor and magnification. Full local suite: 94 tests passed after this addition.
+
+## Preview reload correction
+
+The first saved scene included Replicator's process-local `/Render` graphs, which caused a duplicate graph error when reopening for preview. The failed service log is preserved in journald. `outputs/macro-preview-scene-001/macro-workcell.usda` is a separate cleaned export with `/Render` and `/Replicator` removed; geometry and cameras are unchanged. Future capture exports now strip these transient graphs. The original two capture directories remain intact.
