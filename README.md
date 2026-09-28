@@ -128,6 +128,8 @@ Read [Interfaces and code ownership](IO_CONTRACTS.md) for the active ROS channel
 
 Latest diagnostic: [image-space edge fitting and abstention](experiments/025-image-alignment.md), with [all 60 views](https://lakshya-asu.github.io/ffc-insertion-research/demo/#alignment). This is not yet a metric pose estimator.
 
+Latest executed motion: [Isaac joint probes and cancellation](experiments/027-isaac-joint-motion.md), with [actual videos and joint traces](https://lakshya-asu.github.io/ffc-insertion-research/demo/#motion). This commissions unloaded joint tracking; vision-driven insertion is not connected.
+
 ## Repository map
 
 | Path | Contents |

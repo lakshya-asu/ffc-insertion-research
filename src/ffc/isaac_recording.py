@@ -15,7 +15,14 @@ from pxr import Gf, UsdGeom
 class Recorder:
     """Two camera views: the complete cell and a close view following the tool."""
 
-    def __init__(self, stage, destination: Path, fps: int = 30):
+    def __init__(
+        self,
+        stage,
+        destination: Path,
+        fps: int = 30,
+        scope_label: str = "Physics experiment: uncalibrated cable and contact parameters",
+    ):
+        self.scope_label = scope_label
         import omni.replicator.core as rep
 
         from ffc.isaac_scene import camera
@@ -100,9 +107,7 @@ class Recorder:
         draw = ImageDraw.Draw(img)
         draw.rectangle((0, 0, 1280, 44), fill=(15, 20, 25))
         draw.text((12, 8), f"FR3 / FFC   |   {phase}   |   simulation {sim_time:.2f} s", fill="white")
-        draw.text(
-            (12, 25), "Physics experiment: uncalibrated cable and contact parameters", fill=(220, 190, 100)
-        )
+        draw.text((12, 25), self.scope_label, fill=(220, 190, 100))
         if self.frames % self.fps == 0 or self.phases[-1]["frames"] == 1:
             img.save(self.destination.parent / "latest-frame.jpg", quality=90)
             (self.destination.parent / "recording-progress.json").write_text(
