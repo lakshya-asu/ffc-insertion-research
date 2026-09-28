@@ -9,7 +9,7 @@
 
 Starting with a loose ribbon cable on a desk, teach a Franka FR3 to pick it up, inspect and orient its end, insert it into a PCB connector, operate the latch and verify the connection. We are developing the proof of concept in simulation before physical hardware validation.
 
-**[Read the research notebook · PDF](https://lakshya-asu.github.io/ffc-insertion-research/notes/ffc-research-notebook.pdf)** · **[Open the live lab](https://lakshya-asu.github.io/ffc-insertion-research/live/)** · **[Explore the architecture](https://lakshya-asu.github.io/ffc-insertion-research/architecture/)** · **[Watch experiment videos](https://lakshya-asu.github.io/ffc-insertion-research/)**
+**[Read the research notebook · PDF](https://lakshya-asu.github.io/ffc-insertion-research/notes/ffc-research-notebook.pdf)** · **[Open the live lab](https://lakshya-asu.github.io/ffc-insertion-research/live/)** · **[Explore the architecture](https://lakshya-asu.github.io/ffc-insertion-research/architecture/)** · **[Start with the project overview](https://lakshya-asu.github.io/ffc-insertion-research/)** · **[Historical experiment videos](https://lakshya-asu.github.io/ffc-insertion-research/experiments.html)**
 
 <a href="https://lakshya-asu.github.io/ffc-insertion-research/notes/ffc-research-notebook.pdf"><img src="docs/notes/cover.webp" alt="Cover of the illustrated 23-page research notebook" width="280" align="right"></a>
 

@@ -1,0 +1,92 @@
+{
+  "scope": "Website validation only; no new robot or physics qualification",
+  "date": "2026-09-28",
+  "viewports": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "javascript_errors": [],
+      "failed_requests": [],
+      "axe_wcag_violations": [],
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "javascript_errors": [],
+      "failed_requests": [],
+      "axe_wcag_violations": [],
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "javascript_errors": [],
+      "failed_requests": [],
+      "axe_wcag_violations": [],
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "javascript_errors": [],
+      "failed_requests": [],
+      "axe_wcag_violations": [],
+      "horizontal_overflow": false
+    }
+  ],
+  "perception_images_loaded": 180,
+  "media_metadata": [
+    {
+      "src": "demo/live-perception.mp4",
+      "duration": 39.708333,
+      "width": 1280,
+      "height": 660
+    },
+    {
+      "src": "hardware/mounted-tool/cycle.mp4",
+      "duration": 44,
+      "width": 1280,
+      "height": 480
+    },
+    {
+      "src": "hardware/mounted-tool/tool-cancel.mp4",
+      "duration": 14.72,
+      "width": 1280,
+      "height": 480
+    },
+    {
+      "src": "outputs/e043-selected-static/experiment.mp4",
+      "duration": 2,
+      "width": 1280,
+      "height": 480
+    }
+  ],
+  "motion_and_cancellation_playback_checked": true,
+  "legacy_archive_links": true,
+  "no_javascript_fallback": {
+    "title": "A small cable.A precise task.",
+    "overflow": false,
+    "controlsHidden": true
+  },
+  "missing_manifest_fallback_checked": true,
+  "lighthouse_mobile": {
+    "source": "local HTTP server, simulated mobile throttling",
+    "scores": {
+      "performance": 0.93,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 1
+    },
+    "metrics": {
+      "largest-contentful-paint": "3.0\u00a0s",
+      "cumulative-layout-shift": "0",
+      "total-blocking-time": "120\u00a0ms"
+    }
+  },
+  "limitations": [
+    "Lighthouse is a lab measurement, not production field performance",
+    "Mobile LCP 3.0 seconds is above the 2.5 second target",
+    "Vendor pages and original model assumptions are not hardware qualification"
+  ]
+}

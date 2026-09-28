@@ -84,7 +84,7 @@ def main():
         (clip_dir / "index.html").write_text(
             page(
                 title + " — stage clips",
-                f'<h1>{title}</h1><p><a href="../../../index.html#{name}">Back to experiment</a></p><ol>{local_links}</ol>',
+                f'<h1>{title}</h1><p><a href="../../../experiments.html#{name}">Back to experiment</a></p><ol>{local_links}</ol>',
             )
         )
         evidence = " · ".join(
@@ -110,7 +110,7 @@ def main():
     stop = SITE / "outputs" / "e030-stop-check02"
     stop.mkdir(parents=True, exist_ok=True)
     shutil.copy2(ROOT / "outputs/e030-stop-check02/artifact-checks.json", stop / "artifact-checks.json")
-    body = """<header><p class="muted">FRANKA FR3 · ISAAC SIM 6.1 · EXPERIMENT RECORD</p><h1>From desk pickup to cable insertion</h1>
+    body = """<p><a href="index.html">Project overview</a></p><header><p class="muted">FRANKA FR3 · ISAAC SIM 6.1 · EXPERIMENT RECORD</p><h1>Historical simulation archive</h1>
 <p>Both direct and passive-fixture strategies passed the independent geometric insertion and grip audits. Watch the actual simulation recordings below.</p>
 <nav><a href="architecture/">Architecture and research roadmap</a><a href="#e040-direct-pgs">Direct video</a><a href="#e040-fixture-pgs">Fixture video</a><a href="#comparison">Comparison</a><a href="https://github.com/lakshya-asu/ffc-insertion-research">Source and Docker setup</a></nav>
 <p><strong>Scope:</strong> one deterministic trial per strategy, using exact simulated state and uncalibrated material/contact parameters. The assumed open slot has no terminal-spring resistance. These results do not establish latch closure, electrical continuity, hardware performance or reliability.</p>
@@ -118,7 +118,7 @@ def main():
 <p class="muted">17 regression tests passed. Source hashes, decoded recordings and physics-clock checks accompany the selected runs. Recorded 27 September 2026.</p></header>"""
     body += "".join(sections)
     body += """<section id="comparison"><h2>Measured sequence comparison</h2><img loading="lazy" src="outputs/strategy-comparison/comparison.png" alt="Direct sequence: 41.76 simulated seconds; fixture sequence: 66.79 seconds, primarily due to additional regrasp stages."><p>Direct is the initial control baseline; the fixture branch remains available for future tests with uncertain cable poses. These timings reflect the chosen simulation controllers, not predicted hardware cycle times.</p><a href="outputs/strategy-comparison/comparison.json">Comparison data</a></section><footer><a href="https://github.com/lakshya-asu/ffc-insertion-research/blob/main/MORNING_REPORT.md">Engineering report</a> · <a href="https://github.com/lakshya-asu/ffc-insertion-research/blob/main/CALIBRATION.md">Physical calibration plan</a></footer>"""
-    (SITE / "index.html").write_text(page("FR3 cable insertion — experiment videos", body))
+    (SITE / "experiments.html").write_text(page("Historical simulation archive | Ribbon-cable assembly", body))
     print(f"Built {SITE}; {sum(p.stat().st_size for p in SITE.rglob('*') if p.is_file()) / 1e6:.1f} MB")
 
 

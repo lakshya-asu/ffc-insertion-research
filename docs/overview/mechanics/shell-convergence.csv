@@ -1,0 +1,5 @@
+run,label,beam_prediction_m,simulated_tip_sag_m,ratio_to_beam_prediction,note
+e003-cantilever-audited,"30×4, 0.5 ms, 128 iterations",0.0005783344082218798,0.0008316189050674438,1.4379550883446497,Finite-width shell and Poisson effects differ from 1D beam theory
+e003-cantilever-dt025,"30×4, 0.25 ms, 128 iterations",0.0005783344082218798,0.0007650017738342341,1.3227671792627265,Finite-width shell and Poisson effects differ from 1D beam theory
+e003-cantilever-iterations255,"60×4, 0.25 ms, 255 iterations",0.0006192629594130444,0.0008196175098419411,1.3235371135693286,Finite-width shell and Poisson effects differ from 1D beam theory
+e003-cantilever-mesh60,"60×4, 0.25 ms, 128 iterations",0.0006192629594130444,0.001180166006088279,1.9057590772212099,Finite-width shell and Poisson effects differ from 1D beam theory

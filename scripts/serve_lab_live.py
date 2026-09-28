@@ -100,11 +100,8 @@ class Handler(SimpleHTTPRequestHandler):
         if path.startswith("/api/"):
             self.send_error(404, "Unknown endpoint")
             return True
-        if path == "/":
-            self.send_response(302)
-            self.send_header("Location", "/live/")
-            self.end_headers()
-            return True
+        # Serve the project overview at the root, matching GitHub Pages.
+        # The existing live view remains available at /live/.
         return False
 
     def do_GET(self):

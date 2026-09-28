@@ -1,0 +1,68 @@
+[
+  {
+    "run": "e006-segment-cantilever",
+    "dt_s": 0.004166666666666667,
+    "position_iterations": 32,
+    "angular_gain_multiplier": 1,
+    "measured_sag_m": 0.01336143120487876,
+    "continuum_prediction_m": 0.00043455234375000036,
+    "discrete_chain_prediction_m": 0.0005364843750000003,
+    "ratio_to_discrete_chain": 24.90553654033028,
+    "nominal_material": true
+  },
+  {
+    "run": "e006-segment-gain-check",
+    "dt_s": 0.004166666666666667,
+    "position_iterations": 32,
+    "angular_gain_multiplier": 57.29577951308232,
+    "measured_sag_m": 0.016143780214755182,
+    "continuum_prediction_m": 0.00043455234375000036,
+    "discrete_chain_prediction_m": 9.36341872925396e-06,
+    "ratio_to_discrete_chain": 1724.1331058192945,
+    "nominal_material": false
+  },
+  {
+    "run": "e006-segment-refined",
+    "dt_s": 0.000125,
+    "position_iterations": 255,
+    "angular_gain_multiplier": 1.0,
+    "measured_sag_m": 0.0006168582566856984,
+    "continuum_prediction_m": 0.00043455234375000036,
+    "discrete_chain_prediction_m": 0.0005364843750000003,
+    "ratio_to_discrete_chain": 1.1498158854779286,
+    "nominal_material": true
+  },
+  {
+    "run": "e006-segment-refined16k",
+    "dt_s": 6.25e-05,
+    "position_iterations": 255,
+    "angular_gain_multiplier": 1.0,
+    "measured_sag_m": 0.000561299132018106,
+    "continuum_prediction_m": 0.00043455234375000036,
+    "discrete_chain_prediction_m": 0.0005364843750000003,
+    "ratio_to_discrete_chain": 1.046254389082824,
+    "nominal_material": true
+  },
+  {
+    "run": "e006-segment-smallstep",
+    "dt_s": 0.00025,
+    "position_iterations": 128,
+    "angular_gain_multiplier": 1.0,
+    "measured_sag_m": 0.0008357737417405697,
+    "continuum_prediction_m": 0.00043455234375000036,
+    "discrete_chain_prediction_m": 0.0005364843750000003,
+    "ratio_to_discrete_chain": 1.5578715442375546,
+    "nominal_material": true
+  },
+  {
+    "run": "e006-segment-smallstep-scaled",
+    "dt_s": 0.00025,
+    "position_iterations": 128,
+    "angular_gain_multiplier": 57.29577951308232,
+    "measured_sag_m": 0.00030791779733962965,
+    "continuum_prediction_m": 0.00043455234375000036,
+    "discrete_chain_prediction_m": 9.36341872925396e-06,
+    "ratio_to_discrete_chain": 32.885189292838916,
+    "nominal_material": false
+  }
+]

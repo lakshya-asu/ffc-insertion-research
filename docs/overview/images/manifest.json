@@ -1,0 +1,68 @@
+[
+  {
+    "source": "docs/live/mount/03-cell.webp",
+    "source_sha256": "abe17638bef702d7f37f3f4f30682a676406cc10b4cef61770b55df23020fa32",
+    "output": "cell-640.webp",
+    "output_sha256": "792aaa1f94ecd1ab0004b2bbad723c2c65a6219ffa6c7dc0bb433d15c7d0fe52",
+    "size": [
+      640,
+      480
+    ],
+    "purpose": "Presentation resize only; original evidence remains unchanged"
+  },
+  {
+    "source": "docs/live/mount/03-cell.webp",
+    "source_sha256": "abe17638bef702d7f37f3f4f30682a676406cc10b4cef61770b55df23020fa32",
+    "output": "cell-960.webp",
+    "output_sha256": "5c8b1917c39eb9f7574cb8a9d79a21f89e77d11a49fd5d1c94fd44dce7955b74",
+    "size": [
+      960,
+      720
+    ],
+    "purpose": "Presentation resize only; original evidence remains unchanged"
+  },
+  {
+    "source": "docs/live/mount/03-placement.webp",
+    "source_sha256": "f2299260cf597756f0e9e7ad01bab811074c96ef88f225c30b8a21bd83ec79ab",
+    "output": "placement-640.webp",
+    "output_sha256": "1df6998cc258ff53a3c41c16ded351b2fa9b1948daf50e35f082ab4a83643e05",
+    "size": [
+      640,
+      480
+    ],
+    "purpose": "Presentation resize only; original evidence remains unchanged"
+  },
+  {
+    "source": "docs/live/mount/03-placement.webp",
+    "source_sha256": "f2299260cf597756f0e9e7ad01bab811074c96ef88f225c30b8a21bd83ec79ab",
+    "output": "placement-960.webp",
+    "output_sha256": "92293cd98a2f52261c710477ccf652cc88f28dee069ef44db66a774539703f68",
+    "size": [
+      960,
+      720
+    ],
+    "purpose": "Presentation resize only; original evidence remains unchanged"
+  },
+  {
+    "source": "docs/live/mount/03-macro.webp",
+    "source_sha256": "adf83fcefb8539f61ba9b4307c00facb8565f7917eb1866acada1d4811b5c9a9",
+    "output": "macro-640.webp",
+    "output_sha256": "67a31c6e46bd69ebbcaebae5928ba1ab96f2f99320dbe1c2dcbc97c80d805070",
+    "size": [
+      640,
+      535
+    ],
+    "purpose": "Presentation resize only; original evidence remains unchanged"
+  },
+  {
+    "source": "docs/live/mount/03-macro.webp",
+    "source_sha256": "adf83fcefb8539f61ba9b4307c00facb8565f7917eb1866acada1d4811b5c9a9",
+    "output": "macro-960.webp",
+    "output_sha256": "5358b2b5ce2c245dc202e81cc55b31fa37fcc60f9e5d4dfbd27e3a62fd0d1e31",
+    "size": [
+      960,
+      803
+    ],
+    "purpose": "Presentation resize only; original evidence remains unchanged"
+  }
+]
