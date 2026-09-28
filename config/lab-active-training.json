@@ -1,6 +1,1 @@
-{
-  "run": "outputs/entrance-focal-model-001",
-  "epochs": 120,
-  "name": "DINOv3 thin-feature candidate",
-  "members": 1
-}
+{"run":"outputs/macro-dinov3-model-002","epochs":60,"members":1,"name":"Mounted macro DINOv3 feature head"}

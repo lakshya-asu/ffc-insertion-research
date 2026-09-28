@@ -1,0 +1,4 @@
+PCB geometry derived from Doruk Kumkumoglu's Optocam Zero, CC BY-SA 4.0: https://github.com/dorukkumkumoglu/optocamzero
+Changes: extracted Zero 2 W assembly, USD tessellation, engineered socket substitute, cable and tool proxies, macro camera and lighting, offline label overlays. Derived scene images and montage: CC BY-SA 4.0.
+FR3 geometry: official Franka Robotics franka_simulation v0.1.0, FR3 v2.1.
+These are static synthetic views, not robot actions; prediction overlays are learned DINOv3 outputs.

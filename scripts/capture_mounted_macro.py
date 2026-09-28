@@ -16,14 +16,23 @@ sys.path.insert(0, str(ROOT / "src"))
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--output", type=Path, required=True)
-    p.add_argument("--split", choices=["audit", "development"], required=True)
+    p.add_argument("--split", choices=["audit", "development", "test"], required=True)
     p.add_argument("--count", type=int)
+    p.add_argument("--frozen-model", type=Path)
     p.add_argument("--paired-setback", action="store_true", help="Audit-only matched 6/10 mm tool pairs")
     a = p.parse_args()
     if a.paired_setback and a.split != "audit":
         p.error("Matched pairs are audit only")
     if a.output.exists():
         p.error("Fresh output directory required")
+    frozen_hash = None
+    if a.split == "test":
+        if not a.frozen_model:
+            p.error("Final test capture requires --frozen-model")
+        frozen = json.loads((a.frozen_model / "frozen.json").read_text())
+        frozen_hash = hashlib.sha256((a.frozen_model / "member0.pt").read_bytes()).hexdigest()
+        if frozen_hash != frozen["model_sha256"]:
+            p.error("Frozen checkpoint hash mismatch")
     sensor, offline = a.output / "sensor", a.output / "offline"
     sensor.mkdir(parents=True)
     offline.mkdir()
@@ -247,6 +256,8 @@ def main():
                 if a.split == "audit"
                 else ("validation" if i >= int(count * (1 - cfg["validation_fraction"])) else "train")
             )
+            if a.split == "test":
+                split = "test"
             rows.append(
                 dict(
                     file=filename,
@@ -291,6 +302,7 @@ def main():
                     script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                     scope=cfg["scope"],
                     paired_setback=a.paired_setback,
+                    frozen_model_sha256=frozen_hash,
                 ),
                 indent=2,
             )

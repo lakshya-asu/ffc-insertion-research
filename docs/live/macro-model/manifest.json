@@ -1,0 +1,3541 @@
+{
+  "frames": [
+    {
+      "index": 0,
+      "condition": "ordinary",
+      "rgb": "000-rgb.webp",
+      "prediction": "000-prediction.webp",
+      "offline": "000-offline.webp",
+      "metrics": {
+        "file": "0000-macro.png",
+        "scene": 0,
+        "camera": "macro",
+        "condition": "ordinary",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2133,
+            "predicted_pixels": 2286,
+            "iou": 0.8200164744645799,
+            "boundary_f1_2px": 0.9942887718626997
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13833,
+            "predicted_pixels": 14379,
+            "iou": 0.9388358188440658,
+            "boundary_f1_2px": 0.9909002377465517
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12245,
+            "predicted_pixels": 13040,
+            "iou": 0.9047080979284369,
+            "boundary_f1_2px": 0.9640807845923629
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35215,
+            "predicted_pixels": 35297,
+            "iou": 0.9867572060522386,
+            "boundary_f1_2px": 0.9818316169595194
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 1,
+      "condition": "near_entry",
+      "rgb": "001-rgb.webp",
+      "prediction": "001-prediction.webp",
+      "offline": "001-offline.webp",
+      "metrics": {
+        "file": "0001-macro.png",
+        "scene": 1,
+        "camera": "macro",
+        "condition": "near_entry",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2098,
+            "predicted_pixels": 2041,
+            "iou": 0.7347024308466052,
+            "boundary_f1_2px": 0.9933222826491843
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 7144,
+            "predicted_pixels": 7506,
+            "iou": 0.8518518518518519,
+            "boundary_f1_2px": 0.989022156679863
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 11907,
+            "predicted_pixels": 11816,
+            "iou": 0.9235384740128112,
+            "boundary_f1_2px": 0.9846803994661336
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35169,
+            "predicted_pixels": 35887,
+            "iou": 0.9764679702928987,
+            "boundary_f1_2px": 0.9773940460186039
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 2,
+      "condition": "board_rotation",
+      "rgb": "002-rgb.webp",
+      "prediction": "002-prediction.webp",
+      "offline": "002-offline.webp",
+      "metrics": {
+        "file": "0002-macro.png",
+        "scene": 2,
+        "camera": "macro",
+        "condition": "board_rotation",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9996,
+            "predicted_pixels": 10832,
+            "iou": 0.9054066416613301,
+            "boundary_f1_2px": 0.9745498403667873
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13810,
+            "predicted_pixels": 13717,
+            "iou": 0.940707839819515,
+            "boundary_f1_2px": 0.9820830156363267
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12659,
+            "predicted_pixels": 12977,
+            "iou": 0.9087186359913633,
+            "boundary_f1_2px": 0.968468630966101
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34714,
+            "predicted_pixels": 35069,
+            "iou": 0.9803899310383971,
+            "boundary_f1_2px": 0.9733183488439634
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 3,
+      "condition": "short_grasp",
+      "rgb": "003-rgb.webp",
+      "prediction": "003-prediction.webp",
+      "offline": "003-offline.webp",
+      "metrics": {
+        "file": "0003-macro.png",
+        "scene": 3,
+        "camera": "macro",
+        "condition": "short_grasp",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 102,
+            "iou": 0.0,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 13049,
+            "predicted_pixels": 11584,
+            "iou": 0.8671265064807094,
+            "boundary_f1_2px": 0.8654296266160861
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 46,
+            "iou": 0.0,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 4,
+      "condition": "dim",
+      "rgb": "004-rgb.webp",
+      "prediction": "004-prediction.webp",
+      "offline": "004-offline.webp",
+      "metrics": {
+        "file": "0004-macro.png",
+        "scene": 4,
+        "camera": "macro",
+        "condition": "dim",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9968,
+            "predicted_pixels": 9887,
+            "iou": 0.9544246480952849,
+            "boundary_f1_2px": 0.9954280319607961
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13835,
+            "predicted_pixels": 13801,
+            "iou": 0.9604171100234092,
+            "boundary_f1_2px": 0.988754067094373
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12341,
+            "predicted_pixels": 11945,
+            "iou": 0.9303711946586122,
+            "boundary_f1_2px": 0.9945233220331398
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34638,
+            "predicted_pixels": 34502,
+            "iou": 0.9809753022749412,
+            "boundary_f1_2px": 0.982314698405125
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 5,
+      "condition": "bright",
+      "rgb": "005-rgb.webp",
+      "prediction": "005-prediction.webp",
+      "offline": "005-offline.webp",
+      "metrics": {
+        "file": "0005-macro.png",
+        "scene": 5,
+        "camera": "macro",
+        "condition": "bright",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 10021,
+            "predicted_pixels": 9253,
+            "iou": 0.8645641869014221,
+            "boundary_f1_2px": 0.9596371266863992
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13827,
+            "predicted_pixels": 14376,
+            "iou": 0.9150539824811571,
+            "boundary_f1_2px": 0.981855934473203
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12508,
+            "predicted_pixels": 12769,
+            "iou": 0.931163572465429,
+            "boundary_f1_2px": 0.9847203102256151
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34804,
+            "predicted_pixels": 34885,
+            "iou": 0.9903181584509053,
+            "boundary_f1_2px": 0.9904474013296987
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 6,
+      "condition": "focus_drift",
+      "rgb": "006-rgb.webp",
+      "prediction": "006-prediction.webp",
+      "offline": "006-offline.webp",
+      "metrics": {
+        "file": "0006-macro.png",
+        "scene": 6,
+        "camera": "macro",
+        "condition": "focus_drift",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9756,
+            "predicted_pixels": 9903,
+            "iou": 0.9753818327974276,
+            "boundary_f1_2px": 0.9909057622384768
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13761,
+            "predicted_pixels": 14020,
+            "iou": 0.9228266888150609,
+            "boundary_f1_2px": 0.9824877274995812
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12516,
+            "predicted_pixels": 12677,
+            "iou": 0.9241579469945772,
+            "boundary_f1_2px": 0.9930612712419649
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 35018,
+            "predicted_pixels": 35054,
+            "iou": 0.9658297096366952,
+            "boundary_f1_2px": 0.9835709065089976
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 7,
+      "condition": "absent_cable",
+      "rgb": "007-rgb.webp",
+      "prediction": "007-prediction.webp",
+      "offline": "007-offline.webp",
+      "metrics": {
+        "file": "0007-macro.png",
+        "scene": 7,
+        "camera": "macro",
+        "condition": "absent_cable",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 10065,
+            "predicted_pixels": 10836,
+            "iou": 0.8718430951101558,
+            "boundary_f1_2px": 0.9485101312484547
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13838,
+            "predicted_pixels": 13007,
+            "iou": 0.9120370370370371,
+            "boundary_f1_2px": 0.9873013087438037
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34799,
+            "predicted_pixels": 35111,
+            "iou": 0.9863052619615865,
+            "boundary_f1_2px": 0.9847608173323156
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 8,
+      "condition": "absent_socket",
+      "rgb": "008-rgb.webp",
+      "prediction": "008-prediction.webp",
+      "offline": "008-offline.webp",
+      "metrics": {
+        "file": "0008-macro.png",
+        "scene": 8,
+        "camera": "macro",
+        "condition": "absent_socket",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12245,
+            "predicted_pixels": 12546,
+            "iou": 0.934077079107505,
+            "boundary_f1_2px": 0.995121382230795
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "unknown"
+      }
+    },
+    {
+      "index": 9,
+      "condition": "empty_targets",
+      "rgb": "009-rgb.webp",
+      "prediction": "009-prediction.webp",
+      "offline": "009-offline.webp",
+      "metrics": {
+        "file": "0009-macro.png",
+        "scene": 9,
+        "camera": "macro",
+        "condition": "empty_targets",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "unknown"
+      }
+    },
+    {
+      "index": 10,
+      "condition": "ordinary",
+      "rgb": "010-rgb.webp",
+      "prediction": "010-prediction.webp",
+      "offline": "010-offline.webp",
+      "metrics": {
+        "file": "0010-macro.png",
+        "scene": 10,
+        "camera": "macro",
+        "condition": "ordinary",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9771,
+            "predicted_pixels": 9706,
+            "iou": 0.9661821118514032,
+            "boundary_f1_2px": 0.9906600102851426
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13489,
+            "predicted_pixels": 13968,
+            "iou": 0.9602341686299707,
+            "boundary_f1_2px": 0.9851431307872485
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12303,
+            "predicted_pixels": 12189,
+            "iou": 0.9289595967551391,
+            "boundary_f1_2px": 0.9984751448612382
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34477,
+            "predicted_pixels": 34624,
+            "iou": 0.9829827531781788,
+            "boundary_f1_2px": 0.9689979338312578
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 11,
+      "condition": "near_entry",
+      "rgb": "011-rgb.webp",
+      "prediction": "011-prediction.webp",
+      "offline": "011-offline.webp",
+      "metrics": {
+        "file": "0011-macro.png",
+        "scene": 11,
+        "camera": "macro",
+        "condition": "near_entry",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9860,
+            "predicted_pixels": 9618,
+            "iou": 0.9662830607712497,
+            "boundary_f1_2px": 0.9969407634545621
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 4551,
+            "predicted_pixels": 3973,
+            "iou": 0.8280077203517049,
+            "boundary_f1_2px": 0.9538694039796027
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 11852,
+            "predicted_pixels": 12274,
+            "iou": 0.9305433303992958,
+            "boundary_f1_2px": 0.9713246338068926
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34668,
+            "predicted_pixels": 35091,
+            "iou": 0.9856256404417625,
+            "boundary_f1_2px": 0.9740208383984252
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 12,
+      "condition": "board_rotation",
+      "rgb": "012-rgb.webp",
+      "prediction": "012-prediction.webp",
+      "offline": "012-offline.webp",
+      "metrics": {
+        "file": "0012-macro.png",
+        "scene": 12,
+        "camera": "macro",
+        "condition": "board_rotation",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 10020,
+            "predicted_pixels": 10406,
+            "iou": 0.9423735260555344,
+            "boundary_f1_2px": 0.9840335121073515
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13839,
+            "predicted_pixels": 14020,
+            "iou": 0.9543318133988075,
+            "boundary_f1_2px": 0.9798703943700495
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12138,
+            "predicted_pixels": 13280,
+            "iou": 0.8818390464203746,
+            "boundary_f1_2px": 0.9689403166869671
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34758,
+            "predicted_pixels": 34923,
+            "iou": 0.9927646066291075,
+            "boundary_f1_2px": 0.9931236983757672
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 13,
+      "condition": "short_grasp",
+      "rgb": "013-rgb.webp",
+      "prediction": "013-prediction.webp",
+      "offline": "013-offline.webp",
+      "metrics": {
+        "file": "0013-macro.png",
+        "scene": 13,
+        "camera": "macro",
+        "condition": "short_grasp",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2196,
+            "predicted_pixels": 2081,
+            "iou": 0.8031197301854974,
+            "boundary_f1_2px": 0.9966797464533655
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13820,
+            "predicted_pixels": 13505,
+            "iou": 0.9323244466445089,
+            "boundary_f1_2px": 0.98668680483316
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35041,
+            "predicted_pixels": 35265,
+            "iou": 0.9830202515936143,
+            "boundary_f1_2px": 0.9785209905855157
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 14,
+      "condition": "dim",
+      "rgb": "014-rgb.webp",
+      "prediction": "014-prediction.webp",
+      "offline": "014-offline.webp",
+      "metrics": {
+        "file": "0014-macro.png",
+        "scene": 14,
+        "camera": "macro",
+        "condition": "dim",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2218,
+            "predicted_pixels": 1899,
+            "iou": 0.7761000862812769,
+            "boundary_f1_2px": 0.9844147550484702
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13736,
+            "predicted_pixels": 15060,
+            "iou": 0.9026098447307566,
+            "boundary_f1_2px": 0.9941911850663928
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 11998,
+            "predicted_pixels": 12124,
+            "iou": 0.9696252143382053,
+            "boundary_f1_2px": 0.9944800247670331
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35110,
+            "predicted_pixels": 32524,
+            "iou": 0.9142420468696932,
+            "boundary_f1_2px": 0.8897116755135298
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 2379,
+            "iou": 0.0,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 15,
+      "condition": "bright",
+      "rgb": "015-rgb.webp",
+      "prediction": "015-prediction.webp",
+      "offline": "015-offline.webp",
+      "metrics": {
+        "file": "0015-macro.png",
+        "scene": 15,
+        "camera": "macro",
+        "condition": "bright",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2552,
+            "predicted_pixels": 2547,
+            "iou": 0.9321712769988632,
+            "boundary_f1_2px": 0.991577432983683
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13886,
+            "predicted_pixels": 14785,
+            "iou": 0.9058096250997075,
+            "boundary_f1_2px": 0.9518717974460469
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12976,
+            "predicted_pixels": 13211,
+            "iou": 0.9229695990600676,
+            "boundary_f1_2px": 0.9787215914829076
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35154,
+            "predicted_pixels": 35430,
+            "iou": 0.9909175528164048,
+            "boundary_f1_2px": 0.9788431461869461
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 16,
+      "condition": "focus_drift",
+      "rgb": "016-rgb.webp",
+      "prediction": "016-prediction.webp",
+      "offline": "016-offline.webp",
+      "metrics": {
+        "file": "0016-macro.png",
+        "scene": 16,
+        "camera": "macro",
+        "condition": "focus_drift",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2150,
+            "predicted_pixels": 2323,
+            "iou": 0.801449859041482,
+            "boundary_f1_2px": 0.999096651719962
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13813,
+            "predicted_pixels": 14026,
+            "iou": 0.9506025784753364,
+            "boundary_f1_2px": 0.9960481611232773
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12242,
+            "predicted_pixels": 12443,
+            "iou": 0.9216098396387981,
+            "boundary_f1_2px": 0.9945216553668937
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35101,
+            "predicted_pixels": 35329,
+            "iou": 0.9792603417266187,
+            "boundary_f1_2px": 0.9862972584260444
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 17,
+      "condition": "absent_cable",
+      "rgb": "017-rgb.webp",
+      "prediction": "017-prediction.webp",
+      "offline": "017-offline.webp",
+      "metrics": {
+        "file": "0017-macro.png",
+        "scene": 17,
+        "camera": "macro",
+        "condition": "absent_cable",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2162,
+            "predicted_pixels": 2260,
+            "iou": 0.8425,
+            "boundary_f1_2px": 0.9868008039202402
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13802,
+            "predicted_pixels": 13690,
+            "iou": 0.956308261581157,
+            "boundary_f1_2px": 0.9836707864167088
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35059,
+            "predicted_pixels": 34911,
+            "iou": 0.9835015307858034,
+            "boundary_f1_2px": 0.9841855839020764
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 18,
+      "condition": "absent_socket",
+      "rgb": "018-rgb.webp",
+      "prediction": "018-prediction.webp",
+      "offline": "018-offline.webp",
+      "metrics": {
+        "file": "0018-macro.png",
+        "scene": 18,
+        "camera": "macro",
+        "condition": "absent_socket",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12875,
+            "predicted_pixels": 13007,
+            "iou": 0.9253142899650376,
+            "boundary_f1_2px": 0.9850513892518074
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "unknown"
+      }
+    },
+    {
+      "index": 19,
+      "condition": "empty_targets",
+      "rgb": "019-rgb.webp",
+      "prediction": "019-prediction.webp",
+      "offline": "019-offline.webp",
+      "metrics": {
+        "file": "0019-macro.png",
+        "scene": 19,
+        "camera": "macro",
+        "condition": "empty_targets",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "unknown"
+      }
+    },
+    {
+      "index": 20,
+      "condition": "ordinary",
+      "rgb": "020-rgb.webp",
+      "prediction": "020-prediction.webp",
+      "offline": "020-offline.webp",
+      "metrics": {
+        "file": "0020-macro.png",
+        "scene": 20,
+        "camera": "macro",
+        "condition": "ordinary",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9979,
+            "predicted_pixels": 10389,
+            "iou": 0.9258698940998488,
+            "boundary_f1_2px": 0.9808209838821286
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13801,
+            "predicted_pixels": 13598,
+            "iou": 0.9643676512761686,
+            "boundary_f1_2px": 0.9872318061660157
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12884,
+            "predicted_pixels": 13322,
+            "iou": 0.9040906779045266,
+            "boundary_f1_2px": 0.9711877120596412
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34696,
+            "predicted_pixels": 34906,
+            "iou": 0.9759261887863733,
+            "boundary_f1_2px": 0.9727489708862629
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 21,
+      "condition": "near_entry",
+      "rgb": "021-rgb.webp",
+      "prediction": "021-prediction.webp",
+      "offline": "021-offline.webp",
+      "metrics": {
+        "file": "0021-macro.png",
+        "scene": 21,
+        "camera": "macro",
+        "condition": "near_entry",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2166,
+            "predicted_pixels": 2307,
+            "iou": 0.752742946708464,
+            "boundary_f1_2px": 0.9945677342526775
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 1597,
+            "predicted_pixels": 1675,
+            "iou": 0.6417461113898645,
+            "boundary_f1_2px": 0.7984689335944454
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 11879,
+            "predicted_pixels": 11725,
+            "iou": 0.9341199606686332,
+            "boundary_f1_2px": 0.9799199686981965
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35169,
+            "predicted_pixels": 35866,
+            "iou": 0.9768736259148971,
+            "boundary_f1_2px": 0.9753120285283227
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 22,
+      "condition": "board_rotation",
+      "rgb": "022-rgb.webp",
+      "prediction": "022-prediction.webp",
+      "offline": "022-offline.webp",
+      "metrics": {
+        "file": "0022-macro.png",
+        "scene": 22,
+        "camera": "macro",
+        "condition": "board_rotation",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 10016,
+            "predicted_pixels": 10754,
+            "iou": 0.9238606891441274,
+            "boundary_f1_2px": 0.9957485540026996
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13843,
+            "predicted_pixels": 13752,
+            "iou": 0.9657358598090896,
+            "boundary_f1_2px": 0.9909057763657005
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12569,
+            "predicted_pixels": 12179,
+            "iou": 0.943305850019631,
+            "boundary_f1_2px": 0.9948613989480151
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34859,
+            "predicted_pixels": 35453,
+            "iou": 0.9824625708404996,
+            "boundary_f1_2px": 0.9847711949037526
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 23,
+      "condition": "short_grasp",
+      "rgb": "023-rgb.webp",
+      "prediction": "023-prediction.webp",
+      "offline": "023-offline.webp",
+      "metrics": {
+        "file": "0023-macro.png",
+        "scene": 23,
+        "camera": "macro",
+        "condition": "short_grasp",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 2197,
+            "iou": 0.0,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34617,
+            "predicted_pixels": 27763,
+            "iou": 0.7979535956189653,
+            "boundary_f1_2px": 0.5477205444868031
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 24,
+      "condition": "dim",
+      "rgb": "024-rgb.webp",
+      "prediction": "024-prediction.webp",
+      "offline": "024-offline.webp",
+      "metrics": {
+        "file": "0024-macro.png",
+        "scene": 24,
+        "camera": "macro",
+        "condition": "dim",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 10035,
+            "predicted_pixels": 9341,
+            "iou": 0.9084014576972324,
+            "boundary_f1_2px": 0.9881211736066392
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13817,
+            "predicted_pixels": 14481,
+            "iou": 0.924772139844919,
+            "boundary_f1_2px": 0.9890682635409443
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12503,
+            "predicted_pixels": 12152,
+            "iou": 0.9460888783645118,
+            "boundary_f1_2px": 0.9857385121506036
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34691,
+            "predicted_pixels": 35417,
+            "iou": 0.9755966973821399,
+            "boundary_f1_2px": 0.9775639547017277
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 25,
+      "condition": "bright",
+      "rgb": "025-rgb.webp",
+      "prediction": "025-prediction.webp",
+      "offline": "025-offline.webp",
+      "metrics": {
+        "file": "0025-macro.png",
+        "scene": 25,
+        "camera": "macro",
+        "condition": "bright",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 10053,
+            "predicted_pixels": 10045,
+            "iou": 0.8377834674469642,
+            "boundary_f1_2px": 0.8713414634146341
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13860,
+            "predicted_pixels": 14565,
+            "iou": 0.930259405133777,
+            "boundary_f1_2px": 0.9830402082719896
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12694,
+            "predicted_pixels": 13009,
+            "iou": 0.9423411169047079,
+            "boundary_f1_2px": 0.9833423954077027
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34866,
+            "predicted_pixels": 35110,
+            "iou": 0.9877851319489817,
+            "boundary_f1_2px": 0.9883386524809861
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 26,
+      "condition": "focus_drift",
+      "rgb": "026-rgb.webp",
+      "prediction": "026-prediction.webp",
+      "offline": "026-offline.webp",
+      "metrics": {
+        "file": "0026-macro.png",
+        "scene": 26,
+        "camera": "macro",
+        "condition": "focus_drift",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 10016,
+            "predicted_pixels": 9968,
+            "iou": 0.9428349212521875,
+            "boundary_f1_2px": 0.9816815832079866
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13850,
+            "predicted_pixels": 14122,
+            "iou": 0.9341723136495643,
+            "boundary_f1_2px": 0.9798768594907703
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12399,
+            "predicted_pixels": 12931,
+            "iou": 0.9316708609776557,
+            "boundary_f1_2px": 0.9705639910391269
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34827,
+            "predicted_pixels": 34863,
+            "iou": 0.9829842931937173,
+            "boundary_f1_2px": 0.9904325674947686
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 27,
+      "condition": "absent_cable",
+      "rgb": "027-rgb.webp",
+      "prediction": "027-prediction.webp",
+      "offline": "027-offline.webp",
+      "metrics": {
+        "file": "0027-macro.png",
+        "scene": 27,
+        "camera": "macro",
+        "condition": "absent_cable",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2206,
+            "predicted_pixels": 2154,
+            "iou": 0.8858131487889274,
+            "boundary_f1_2px": 0.9975907162216483
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13832,
+            "predicted_pixels": 13703,
+            "iou": 0.9578356086461889,
+            "boundary_f1_2px": 0.9857191751887459
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35154,
+            "predicted_pixels": 35175,
+            "iou": 0.9873685995252628,
+            "boundary_f1_2px": 0.9913502796484952
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 28,
+      "condition": "absent_socket",
+      "rgb": "028-rgb.webp",
+      "prediction": "028-prediction.webp",
+      "offline": "028-offline.webp",
+      "metrics": {
+        "file": "0028-macro.png",
+        "scene": 28,
+        "camera": "macro",
+        "condition": "absent_socket",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12323,
+            "predicted_pixels": 12665,
+            "iou": 0.9289794658020688,
+            "boundary_f1_2px": 0.9794858885922857
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "unknown"
+      }
+    },
+    {
+      "index": 29,
+      "condition": "empty_targets",
+      "rgb": "029-rgb.webp",
+      "prediction": "029-prediction.webp",
+      "offline": "029-offline.webp",
+      "metrics": {
+        "file": "0029-macro.png",
+        "scene": 29,
+        "camera": "macro",
+        "condition": "empty_targets",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "unknown"
+      }
+    },
+    {
+      "index": 30,
+      "condition": "ordinary",
+      "rgb": "030-rgb.webp",
+      "prediction": "030-prediction.webp",
+      "offline": "030-offline.webp",
+      "metrics": {
+        "file": "0030-macro.png",
+        "scene": 30,
+        "camera": "macro",
+        "condition": "ordinary",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 10059,
+            "predicted_pixels": 10244,
+            "iou": 0.9757687816270922,
+            "boundary_f1_2px": 0.9915188201384547
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13865,
+            "predicted_pixels": 14027,
+            "iou": 0.9627049468721413,
+            "boundary_f1_2px": 0.9854853139507455
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12339,
+            "predicted_pixels": 12767,
+            "iou": 0.9313793368720671,
+            "boundary_f1_2px": 0.9930047598671461
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34742,
+            "predicted_pixels": 34792,
+            "iou": 0.9912371134020619,
+            "boundary_f1_2px": 0.9943229093536433
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 31,
+      "condition": "near_entry",
+      "rgb": "031-rgb.webp",
+      "prediction": "031-prediction.webp",
+      "offline": "031-offline.webp",
+      "metrics": {
+        "file": "0031-macro.png",
+        "scene": 31,
+        "camera": "macro",
+        "condition": "near_entry",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9901,
+            "predicted_pixels": 10210,
+            "iou": 0.959181685338529,
+            "boundary_f1_2px": 0.9819450995814365
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13811,
+            "predicted_pixels": 14453,
+            "iou": 0.9284934497816594,
+            "boundary_f1_2px": 0.9766492150054689
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 11884,
+            "predicted_pixels": 11745,
+            "iou": 0.9457345191040843,
+            "boundary_f1_2px": 0.9904801388320226
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34615,
+            "predicted_pixels": 34813,
+            "iou": 0.9927669345579794,
+            "boundary_f1_2px": 0.9934084995663487
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 32,
+      "condition": "board_rotation",
+      "rgb": "032-rgb.webp",
+      "prediction": "032-prediction.webp",
+      "offline": "032-offline.webp",
+      "metrics": {
+        "file": "0032-macro.png",
+        "scene": 32,
+        "camera": "macro",
+        "condition": "board_rotation",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2150,
+            "predicted_pixels": 2237,
+            "iou": 0.8180687940323249,
+            "boundary_f1_2px": 0.9891438864673012
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13805,
+            "predicted_pixels": 14270,
+            "iou": 0.9431755260243633,
+            "boundary_f1_2px": 0.9933318616319688
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12063,
+            "predicted_pixels": 11941,
+            "iou": 0.9540866167372192,
+            "boundary_f1_2px": 0.992344684925854
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35186,
+            "predicted_pixels": 35830,
+            "iou": 0.9794297182038632,
+            "boundary_f1_2px": 0.9765129063638214
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 33,
+      "condition": "short_grasp",
+      "rgb": "033-rgb.webp",
+      "prediction": "033-prediction.webp",
+      "offline": "033-offline.webp",
+      "metrics": {
+        "file": "0033-macro.png",
+        "scene": 33,
+        "camera": "macro",
+        "condition": "short_grasp",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9758,
+            "predicted_pixels": 10637,
+            "iou": 0.9126887367532589,
+            "boundary_f1_2px": 0.9866979886022956
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 14052,
+            "predicted_pixels": 12415,
+            "iou": 0.8750974140984767,
+            "boundary_f1_2px": 0.9896932867103783
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34225,
+            "predicted_pixels": 34574,
+            "iou": 0.9891577760430219,
+            "boundary_f1_2px": 0.9916260667620429
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 34,
+      "condition": "dim",
+      "rgb": "034-rgb.webp",
+      "prediction": "034-prediction.webp",
+      "offline": "034-offline.webp",
+      "metrics": {
+        "file": "0034-macro.png",
+        "scene": 34,
+        "camera": "macro",
+        "condition": "dim",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9988,
+            "predicted_pixels": 10153,
+            "iou": 0.9531613653995346,
+            "boundary_f1_2px": 0.9939061411310829
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13804,
+            "predicted_pixels": 15277,
+            "iou": 0.8898492331687029,
+            "boundary_f1_2px": 0.9104873266470017
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 11853,
+            "predicted_pixels": 12074,
+            "iou": 0.9459173715029278,
+            "boundary_f1_2px": 0.9956723234653657
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34706,
+            "predicted_pixels": 34731,
+            "iou": 0.9901691028948123,
+            "boundary_f1_2px": 0.9865363084306437
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 35,
+      "condition": "bright",
+      "rgb": "035-rgb.webp",
+      "prediction": "035-prediction.webp",
+      "offline": "035-offline.webp",
+      "metrics": {
+        "file": "0035-macro.png",
+        "scene": 35,
+        "camera": "macro",
+        "condition": "bright",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2142,
+            "predicted_pixels": 2129,
+            "iou": 0.8806693086745927,
+            "boundary_f1_2px": 0.9975918121613486
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13850,
+            "predicted_pixels": 15484,
+            "iou": 0.8682886440354117,
+            "boundary_f1_2px": 0.8148231176787256
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12685,
+            "predicted_pixels": 12925,
+            "iou": 0.9231058046106481,
+            "boundary_f1_2px": 0.9706079862038142
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35269,
+            "predicted_pixels": 35206,
+            "iou": 0.9870023683320176,
+            "boundary_f1_2px": 0.9928519706013628
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 36,
+      "condition": "focus_drift",
+      "rgb": "036-rgb.webp",
+      "prediction": "036-prediction.webp",
+      "offline": "036-offline.webp",
+      "metrics": {
+        "file": "0036-macro.png",
+        "scene": 36,
+        "camera": "macro",
+        "condition": "focus_drift",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9970,
+            "predicted_pixels": 9645,
+            "iou": 0.9101178303632291,
+            "boundary_f1_2px": 0.980762000642936
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13809,
+            "predicted_pixels": 14193,
+            "iou": 0.9358451434497062,
+            "boundary_f1_2px": 0.9849059326533671
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 11806,
+            "predicted_pixels": 11940,
+            "iou": 0.9117623379760084,
+            "boundary_f1_2px": 0.9653609820845874
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34634,
+            "predicted_pixels": 34307,
+            "iou": 0.9837424107271314,
+            "boundary_f1_2px": 0.9951998646199106
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 37,
+      "condition": "absent_cable",
+      "rgb": "037-rgb.webp",
+      "prediction": "037-prediction.webp",
+      "offline": "037-offline.webp",
+      "metrics": {
+        "file": "0037-macro.png",
+        "scene": 37,
+        "camera": "macro",
+        "condition": "absent_cable",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2113,
+            "predicted_pixels": 2125,
+            "iou": 0.8259370960792761,
+            "boundary_f1_2px": 0.9899628483853163
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13796,
+            "predicted_pixels": 13464,
+            "iou": 0.9619979847416151,
+            "boundary_f1_2px": 0.9829020670238973
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35220,
+            "predicted_pixels": 35454,
+            "iou": 0.9831635659567304,
+            "boundary_f1_2px": 0.98987791720575
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 38,
+      "condition": "absent_socket",
+      "rgb": "038-rgb.webp",
+      "prediction": "038-prediction.webp",
+      "offline": "038-offline.webp",
+      "metrics": {
+        "file": "0038-macro.png",
+        "scene": 38,
+        "camera": "macro",
+        "condition": "absent_socket",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12778,
+            "predicted_pixels": 12788,
+            "iou": 0.9315503173164098,
+            "boundary_f1_2px": 0.9894845187734737
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "unknown"
+      }
+    },
+    {
+      "index": 39,
+      "condition": "empty_targets",
+      "rgb": "039-rgb.webp",
+      "prediction": "039-prediction.webp",
+      "offline": "039-offline.webp",
+      "metrics": {
+        "file": "0039-macro.png",
+        "scene": 39,
+        "camera": "macro",
+        "condition": "empty_targets",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "unknown"
+      }
+    },
+    {
+      "index": 40,
+      "condition": "ordinary",
+      "rgb": "040-rgb.webp",
+      "prediction": "040-prediction.webp",
+      "offline": "040-offline.webp",
+      "metrics": {
+        "file": "0040-macro.png",
+        "scene": 40,
+        "camera": "macro",
+        "condition": "ordinary",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2182,
+            "predicted_pixels": 2240,
+            "iou": 0.8587641866330391,
+            "boundary_f1_2px": 0.9984935133476908
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13820,
+            "predicted_pixels": 14811,
+            "iou": 0.9146047880165842,
+            "boundary_f1_2px": 0.9482317430019803
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12586,
+            "predicted_pixels": 12571,
+            "iou": 0.9327750460971113,
+            "boundary_f1_2px": 0.9809299065062508
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35115,
+            "predicted_pixels": 35349,
+            "iou": 0.9832812631934476,
+            "boundary_f1_2px": 0.9934372602618892
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 41,
+      "condition": "near_entry",
+      "rgb": "041-rgb.webp",
+      "prediction": "041-prediction.webp",
+      "offline": "041-offline.webp",
+      "metrics": {
+        "file": "0041-macro.png",
+        "scene": 41,
+        "camera": "macro",
+        "condition": "near_entry",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2166,
+            "predicted_pixels": 2131,
+            "iou": 0.731962918178154,
+            "boundary_f1_2px": 0.9906878942625413
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 12969,
+            "predicted_pixels": 13174,
+            "iou": 0.9556403351286654,
+            "boundary_f1_2px": 0.9942395501570822
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 11971,
+            "predicted_pixels": 11921,
+            "iou": 0.9533971057149865,
+            "boundary_f1_2px": 0.988984088127295
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35271,
+            "predicted_pixels": 35676,
+            "iou": 0.9811510429756221,
+            "boundary_f1_2px": 0.9761975062879644
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 42,
+      "condition": "board_rotation",
+      "rgb": "042-rgb.webp",
+      "prediction": "042-prediction.webp",
+      "offline": "042-offline.webp",
+      "metrics": {
+        "file": "0042-macro.png",
+        "scene": 42,
+        "camera": "macro",
+        "condition": "board_rotation",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 10008,
+            "predicted_pixels": 9497,
+            "iou": 0.9088862791152867,
+            "boundary_f1_2px": 0.9924079485116414
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13806,
+            "predicted_pixels": 13489,
+            "iou": 0.9433962264150944,
+            "boundary_f1_2px": 0.9816180534426917
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12806,
+            "predicted_pixels": 13157,
+            "iou": 0.9376819165609374,
+            "boundary_f1_2px": 0.9913149411459414
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34623,
+            "predicted_pixels": 35009,
+            "iou": 0.9848921068384595,
+            "boundary_f1_2px": 0.9907123323311643
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 43,
+      "condition": "short_grasp",
+      "rgb": "043-rgb.webp",
+      "prediction": "043-prediction.webp",
+      "offline": "043-offline.webp",
+      "metrics": {
+        "file": "0043-macro.png",
+        "scene": 43,
+        "camera": "macro",
+        "condition": "short_grasp",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 21900,
+            "iou": 0.0,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 24273,
+            "predicted_pixels": 9,
+            "iou": 0.0003707823507601038,
+            "boundary_f1_2px": 0.0
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 44,
+      "condition": "dim",
+      "rgb": "044-rgb.webp",
+      "prediction": "044-prediction.webp",
+      "offline": "044-offline.webp",
+      "metrics": {
+        "file": "0044-macro.png",
+        "scene": 44,
+        "camera": "macro",
+        "condition": "dim",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 1904,
+            "predicted_pixels": 2372,
+            "iou": 0.7179590196866211,
+            "boundary_f1_2px": 0.9931159637178206
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13368,
+            "predicted_pixels": 14128,
+            "iou": 0.9372930317762277,
+            "boundary_f1_2px": 0.9881497426051753
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12247,
+            "predicted_pixels": 11974,
+            "iou": 0.9241340959644105,
+            "boundary_f1_2px": 0.9917144963918949
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 34496,
+            "predicted_pixels": 32042,
+            "iou": 0.928581780238254,
+            "boundary_f1_2px": 0.9129102804311208
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 1866,
+            "iou": 0.0,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 45,
+      "condition": "bright",
+      "rgb": "045-rgb.webp",
+      "prediction": "045-prediction.webp",
+      "offline": "045-offline.webp",
+      "metrics": {
+        "file": "0045-macro.png",
+        "scene": 45,
+        "camera": "macro",
+        "condition": "bright",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 10019,
+            "predicted_pixels": 9296,
+            "iou": 0.9070892575039494,
+            "boundary_f1_2px": 0.9908383885108928
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13736,
+            "predicted_pixels": 15155,
+            "iou": 0.8847282927783939,
+            "boundary_f1_2px": 0.9819011749991479
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12588,
+            "predicted_pixels": 13132,
+            "iou": 0.9237097980553478,
+            "boundary_f1_2px": 0.9879341709797074
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34814,
+            "predicted_pixels": 34613,
+            "iou": 0.9849897072278133,
+            "boundary_f1_2px": 0.9922198664654046
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 46,
+      "condition": "focus_drift",
+      "rgb": "046-rgb.webp",
+      "prediction": "046-prediction.webp",
+      "offline": "046-offline.webp",
+      "metrics": {
+        "file": "0046-macro.png",
+        "scene": 46,
+        "camera": "macro",
+        "condition": "focus_drift",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2121,
+            "predicted_pixels": 2432,
+            "iou": 0.673281881661154,
+            "boundary_f1_2px": 0.9844551198882503
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13832,
+            "predicted_pixels": 13645,
+            "iou": 0.9134401114206128,
+            "boundary_f1_2px": 0.9704789259322408
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12755,
+            "predicted_pixels": 12392,
+            "iou": 0.9194717960461033,
+            "boundary_f1_2px": 0.9933875958636621
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35218,
+            "predicted_pixels": 35783,
+            "iou": 0.9824928798793768,
+            "boundary_f1_2px": 0.9800590358679954
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 47,
+      "condition": "absent_cable",
+      "rgb": "047-rgb.webp",
+      "prediction": "047-prediction.webp",
+      "offline": "047-offline.webp",
+      "metrics": {
+        "file": "0047-macro.png",
+        "scene": 47,
+        "camera": "macro",
+        "condition": "absent_cable",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 10002,
+            "predicted_pixels": 9513,
+            "iou": 0.9319869319869319,
+            "boundary_f1_2px": 0.9942146460331827
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13824,
+            "predicted_pixels": 14139,
+            "iou": 0.9495921355364987,
+            "boundary_f1_2px": 0.9899989766118734
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34658,
+            "predicted_pixels": 34939,
+            "iou": 0.9879177377892031,
+            "boundary_f1_2px": 0.98682974204727
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 48,
+      "condition": "absent_socket",
+      "rgb": "048-rgb.webp",
+      "prediction": "048-prediction.webp",
+      "offline": "048-offline.webp",
+      "metrics": {
+        "file": "0048-macro.png",
+        "scene": 48,
+        "camera": "macro",
+        "condition": "absent_socket",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12588,
+            "predicted_pixels": 12766,
+            "iou": 0.9373424008558111,
+            "boundary_f1_2px": 0.9857629703914546
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "unknown"
+      }
+    },
+    {
+      "index": 49,
+      "condition": "empty_targets",
+      "rgb": "049-rgb.webp",
+      "prediction": "049-prediction.webp",
+      "offline": "049-offline.webp",
+      "metrics": {
+        "file": "0049-macro.png",
+        "scene": 49,
+        "camera": "macro",
+        "condition": "empty_targets",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "unknown"
+      }
+    },
+    {
+      "index": 50,
+      "condition": "ordinary",
+      "rgb": "050-rgb.webp",
+      "prediction": "050-prediction.webp",
+      "offline": "050-offline.webp",
+      "metrics": {
+        "file": "0050-macro.png",
+        "scene": 50,
+        "camera": "macro",
+        "condition": "ordinary",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2201,
+            "predicted_pixels": 2314,
+            "iou": 0.8603213844252163,
+            "boundary_f1_2px": 0.9930516282430388
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13836,
+            "predicted_pixels": 13902,
+            "iou": 0.9448885149347918,
+            "boundary_f1_2px": 0.9823929589848258
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12614,
+            "predicted_pixels": 12840,
+            "iou": 0.9349296845305968,
+            "boundary_f1_2px": 0.9987966305655837
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35222,
+            "predicted_pixels": 35378,
+            "iou": 0.9829232670486462,
+            "boundary_f1_2px": 0.9839157933013857
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 51,
+      "condition": "near_entry",
+      "rgb": "051-rgb.webp",
+      "prediction": "051-prediction.webp",
+      "offline": "051-offline.webp",
+      "metrics": {
+        "file": "0051-macro.png",
+        "scene": 51,
+        "camera": "macro",
+        "condition": "near_entry",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9760,
+            "predicted_pixels": 9508,
+            "iou": 0.9593247915395566,
+            "boundary_f1_2px": 0.9978110324904984
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 11840,
+            "predicted_pixels": 11364,
+            "iou": 0.9545148247978437,
+            "boundary_f1_2px": 0.9971774048632995
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 11878,
+            "predicted_pixels": 12207,
+            "iou": 0.925259792166267,
+            "boundary_f1_2px": 0.9876807453666668
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34335,
+            "predicted_pixels": 34466,
+            "iou": 0.9881808987140587,
+            "boundary_f1_2px": 0.9930210137589228
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 52,
+      "condition": "board_rotation",
+      "rgb": "052-rgb.webp",
+      "prediction": "052-prediction.webp",
+      "offline": "052-offline.webp",
+      "metrics": {
+        "file": "0052-macro.png",
+        "scene": 52,
+        "camera": "macro",
+        "condition": "board_rotation",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2022,
+            "predicted_pixels": 2021,
+            "iou": 0.8537368179734067,
+            "boundary_f1_2px": 0.985952182182245
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13309,
+            "predicted_pixels": 12742,
+            "iou": 0.9167831653299978,
+            "boundary_f1_2px": 0.9660263905127777
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12286,
+            "predicted_pixels": 12293,
+            "iou": 0.9317038667085822,
+            "boundary_f1_2px": 0.9921908987651502
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 34191,
+            "predicted_pixels": 34113,
+            "iou": 0.9723369235655915,
+            "boundary_f1_2px": 0.9616987870417977
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 53,
+      "condition": "short_grasp",
+      "rgb": "053-rgb.webp",
+      "prediction": "053-prediction.webp",
+      "offline": "053-offline.webp",
+      "metrics": {
+        "file": "0053-macro.png",
+        "scene": 53,
+        "camera": "macro",
+        "condition": "short_grasp",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2245,
+            "predicted_pixels": 2198,
+            "iou": 0.8142098815843202,
+            "boundary_f1_2px": 0.9915394928491182
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13846,
+            "predicted_pixels": 13391,
+            "iou": 0.9507950150408251,
+            "boundary_f1_2px": 0.9792900030564275
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35090,
+            "predicted_pixels": 35656,
+            "iou": 0.9816806722689075,
+            "boundary_f1_2px": 0.9761861467194977
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 54,
+      "condition": "dim",
+      "rgb": "054-rgb.webp",
+      "prediction": "054-prediction.webp",
+      "offline": "054-offline.webp",
+      "metrics": {
+        "file": "0054-macro.png",
+        "scene": 54,
+        "camera": "macro",
+        "condition": "dim",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9909,
+            "predicted_pixels": 9341,
+            "iou": 0.9337016574585635,
+            "boundary_f1_2px": 0.9948412139181807
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13913,
+            "predicted_pixels": 13570,
+            "iou": 0.9088067787192665,
+            "boundary_f1_2px": 0.9911890087476485
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12828,
+            "predicted_pixels": 13479,
+            "iou": 0.9092096668843893,
+            "boundary_f1_2px": 0.9882853073299003
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34576,
+            "predicted_pixels": 34795,
+            "iou": 0.9737950264610482,
+            "boundary_f1_2px": 0.9865400910243147
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 55,
+      "condition": "bright",
+      "rgb": "055-rgb.webp",
+      "prediction": "055-prediction.webp",
+      "offline": "055-offline.webp",
+      "metrics": {
+        "file": "0055-macro.png",
+        "scene": 55,
+        "camera": "macro",
+        "condition": "bright",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 2138,
+            "predicted_pixels": 2051,
+            "iou": 0.7963121783876501,
+            "boundary_f1_2px": 0.9819017305122828
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13767,
+            "predicted_pixels": 14994,
+            "iou": 0.8636039655284131,
+            "boundary_f1_2px": 0.8140243053002217
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12546,
+            "predicted_pixels": 12958,
+            "iou": 0.920337323996687,
+            "boundary_f1_2px": 0.9863180297962907
+          },
+          {
+            "class_id": 4,
+            "visible": true,
+            "gt_pixels": 35088,
+            "predicted_pixels": 34344,
+            "iou": 0.9767680218653911,
+            "boundary_f1_2px": 0.9668996913996779
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "open"
+      }
+    },
+    {
+      "index": 56,
+      "condition": "focus_drift",
+      "rgb": "056-rgb.webp",
+      "prediction": "056-prediction.webp",
+      "offline": "056-offline.webp",
+      "metrics": {
+        "file": "0056-macro.png",
+        "scene": 56,
+        "camera": "macro",
+        "condition": "focus_drift",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9985,
+            "predicted_pixels": 9716,
+            "iou": 0.9554342431761786,
+            "boundary_f1_2px": 0.9914913866236813
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13847,
+            "predicted_pixels": 14334,
+            "iou": 0.9238803932277444,
+            "boundary_f1_2px": 0.9824937205011745
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12357,
+            "predicted_pixels": 13108,
+            "iou": 0.9271227485999697,
+            "boundary_f1_2px": 0.9724009488610658
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34739,
+            "predicted_pixels": 35044,
+            "iou": 0.9815708768741481,
+            "boundary_f1_2px": 0.9835610855241291
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 57,
+      "condition": "absent_cable",
+      "rgb": "057-rgb.webp",
+      "prediction": "057-prediction.webp",
+      "offline": "057-offline.webp",
+      "metrics": {
+        "file": "0057-macro.png",
+        "scene": 57,
+        "camera": "macro",
+        "condition": "absent_cable",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": true,
+            "gt_pixels": 9982,
+            "predicted_pixels": 9705,
+            "iou": 0.9675194883070158,
+            "boundary_f1_2px": 0.9948112088392319
+          },
+          {
+            "class_id": 2,
+            "visible": true,
+            "gt_pixels": 13813,
+            "predicted_pixels": 13298,
+            "iou": 0.9536643366721914,
+            "boundary_f1_2px": 0.994216871425182
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": true,
+            "gt_pixels": 34745,
+            "predicted_pixels": 34972,
+            "iou": 0.9911178385788542,
+            "boundary_f1_2px": 0.989834658807723
+          }
+        ],
+        "latch_visible": true,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "closed"
+      }
+    },
+    {
+      "index": 58,
+      "condition": "absent_socket",
+      "rgb": "058-rgb.webp",
+      "prediction": "058-prediction.webp",
+      "offline": "058-offline.webp",
+      "metrics": {
+        "file": "0058-macro.png",
+        "scene": 58,
+        "camera": "macro",
+        "condition": "absent_socket",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": true,
+            "gt_pixels": 12815,
+            "predicted_pixels": 13030,
+            "iou": 0.9201337295690936,
+            "boundary_f1_2px": 0.966368480482274
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "closed",
+        "predicted_slider_state": "unknown"
+      }
+    },
+    {
+      "index": 59,
+      "condition": "empty_targets",
+      "rgb": "059-rgb.webp",
+      "prediction": "059-prediction.webp",
+      "offline": "059-offline.webp",
+      "metrics": {
+        "file": "0059-macro.png",
+        "scene": 59,
+        "camera": "macro",
+        "condition": "empty_targets",
+        "scores": [
+          {
+            "class_id": 1,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 2,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 3,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 4,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          },
+          {
+            "class_id": 5,
+            "visible": false,
+            "gt_pixels": 0,
+            "predicted_pixels": 0,
+            "iou": null,
+            "boundary_f1_2px": null
+          }
+        ],
+        "latch_visible": false,
+        "authored_slider_state": "open",
+        "predicted_slider_state": "unknown"
+      }
+    }
+  ],
+  "classes": [
+    {
+      "name": "upper_entrance_rim",
+      "pooled_iou": 0.9100490564312262,
+      "visible_images": 45,
+      "mean_visible_iou": 0.8764424444907721,
+      "mean_boundary_f1_2px": 0.9863079950803213,
+      "absent_images": 15,
+      "absent_false_positives_8px": 1
+    },
+    {
+      "name": "lower_entrance_rim",
+      "pooled_iou": 0.9277149442277957,
+      "visible_images": 45,
+      "mean_visible_iou": 0.920709603000641,
+      "mean_boundary_f1_2px": 0.9699505352435133,
+      "absent_images": 15,
+      "absent_false_positives_8px": 0
+    },
+    {
+      "name": "cable_leading_band",
+      "pooled_iou": 0.9284645007521728,
+      "visible_images": 42,
+      "mean_visible_iou": 0.9287842381963584,
+      "mean_boundary_f1_2px": 0.9845308411571624,
+      "absent_images": 18,
+      "absent_false_positives_8px": 0
+    },
+    {
+      "name": "slider_open",
+      "pooled_iou": 0.9425411864261537,
+      "visible_images": 21,
+      "mean_visible_iou": 0.9706831969326662,
+      "mean_boundary_f1_2px": 0.9675915975174955,
+      "absent_images": 39,
+      "absent_false_positives_8px": 2
+    },
+    {
+      "name": "slider_closed",
+      "pooled_iou": 0.94755805453077,
+      "visible_images": 27,
+      "mean_visible_iou": 0.9410299316237629,
+      "mean_boundary_f1_2px": 0.9331830728396804,
+      "absent_images": 33,
+      "absent_false_positives_8px": 3
+    }
+  ],
+  "slider": {
+    "visible_views": 48,
+    "correct": 47,
+    "unknown": 0,
+    "unobservable_views": 12,
+    "predictions_on_unobservable_views": 0
+  },
+  "motion_permitted": false,
+  "model_sha256": "8668408a864e5a677d3b7b4896ceb5ea6ba13c0b934263a777c3dc7800ccf623",
+  "scope": "Simulation geometry; 2-pixel boundary tolerance is descriptive, not insertion clearance"
+}

@@ -1,0 +1,16 @@
+{
+ "revision": "mounted-macro-dinov3-v1",
+ "development": "outputs/macro-dataset-dev-001",
+ "seed": 930301,
+ "epochs": 60,
+ "batch_size": 2,
+ "backbone": "official frozen DINOv3 ViT-B/16",
+ "input_size": [1232, 1024],
+ "preprocessing_revision": "macro-rectify-area-half-pad4-v1",
+ "selection": "maximum validation mean per-visible-image foreground class IoU; visible class at least eight output pixels",
+ "loss": "sqrt inverse-frequency weighted focal CE, gamma 2, cap 50; foreground Dice with leading band weight 2",
+ "final_test_seed": 930401,
+ "final_test_scenes": 60,
+ "final_test_capture_after_model_freeze": true,
+ "motion_permitted": false
+}

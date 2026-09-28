@@ -34,8 +34,8 @@ The active scene is **Raspberry Pi Zero 2 W side-entry cable insertion**, with t
 |---|---|---|
 | Camera and mounting | Dimensioned optical reference; full-tool visibility; sampled arm clearance and tool/cable translation bounds | Manufactured mount, stiffness and complete workcell collision qualification |
 | ROS2 | Native 2448 × 2048 RGB, calibration, exact timestamp pairing, OpenCV preprocessing and stale-frame guards | Dynamic timing and control-rate qualification |
-| Mounted-camera dataset | 160 scenes: 128 train / 32 validation; independent 30-scene audit and three matched setback pairs | Frozen model and independent final test |
-| Perception | Earlier DINOv3 feature study completed; macro-specific training now underway | Verified cable-to-entrance pose, calibrated uncertainty and action readiness |
+| Mounted-camera dataset | 160 scenes: 128 train / 32 validation; independent 30-scene audit and three matched setback pairs | Broader appearance/geometry variation and physical validation |
+| Perception | Earlier DINOv3 feature study completed; mounted macro model independently tested on 60 fresh scenes | Verified cable-to-entrance pose, calibrated uncertainty and action readiness |
 | Cable/contact mechanics | Numerical benchmarks and historical generic-scene handling tests | Pi cable bending/twist, grip slip, connector resistance and latch mechanics |
 | Robot actions | Skill contracts and failure criteria defined | Sensor-driven pickup, insertion, latching and verification; motion remains disabled |
 
@@ -55,12 +55,13 @@ flowchart LR
     Labels[Simulator geometry and labels] --> Offline[Offline supervision and scoring only]
 ```
 
-The ROS camera/frontend path is implemented. The new mounted-camera model is under development; tactile streams and robot control are not connected. Simulator object poses, mesh state and offline annotations do not enter a deployed policy, critic, reward or stage transition.
+The ROS camera/frontend path is implemented. The mounted-camera model has an independent offline test; live ROS inference, tactile streams and robot control are not connected. Simulator object poses, mesh state and offline annotations do not enter a deployed policy, critic, reward or stage transition.
 
 ## Start with these experiment records
 
 | Record | What it answers |
 |---|---|
+| [022 · Mounted macro DINOv3](experiments/022-mounted-macro-dinov3.md) | Frozen-model test on 60 fresh scenes, including the misses |
 | [021 · Mounted macro dataset](experiments/021-mounted-macro-dataset.md) | What the full tool hides; dataset integrity and matched setback comparison |
 | [020 · Native camera over ROS2](experiments/020-native-camera-ros2.md) | Message contracts, timing, transport failures and fault tests |
 | [019 · Macro mount](experiments/019-macro-mount.md) | Why 45° replaced 25°; clearance, route and visibility limits |
@@ -113,7 +114,7 @@ Those experiments used **privileged simulator state for alignment** and an assum
 - [x] Resolve macro placement with the full tool; publish the rejected view too.
 - [x] Connect native RGB/calibration through ROS2 and test observation faults.
 - [x] Audit the mounted-camera dataset and actual frontend compatibility.
-- [ ] Freeze and independently evaluate a mounted-camera perception model.
+- [x] Freeze and independently evaluate a mounted-camera perception model.
 - [ ] Estimate a usable cable-to-mouth frame with uncertainty.
 - [ ] Qualify cable/contact mechanics and realistic force/tactile observations.
 - [ ] Demonstrate bounded pre-grasped alignment, insertion and recovery.

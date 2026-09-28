@@ -1,0 +1,29 @@
+{
+  "members": {
+    "member0": {
+      "best_validation_feature_mean_per_visible_image_iou": 0.9183179155330766,
+      "sha256": "8668408a864e5a677d3b7b4896ceb5ea6ba13c0b934263a777c3dc7800ccf623",
+      "seed": 930301
+    }
+  },
+  "backbone": "official DINOv3 ViT-B/16",
+  "scope": "Mounted-camera static simulation; engineered socket, no verified pose or action",
+  "preprocessing_revision": "macro-rectify-area-half-pad4-v1",
+  "camera_profile": "macro-mount-elevation45-v1",
+  "input_size": [
+    1232,
+    1024
+  ],
+  "batch_size": 2,
+  "precision": "bfloat16 convolutions, float32 loss",
+  "loss": "sqrt-frequency focal CE (gamma 2) plus Dice; validation-selected candidate",
+  "epochs": 60,
+  "train_images": 128,
+  "validation_images": 32,
+  "elapsed_s": 134.18730195000535,
+  "motion_permitted": false,
+  "selection": "validation feature mean per-visible-image IoU",
+  "labels_sha256": "5eb17a69853b11ec03f46321d4696aa5d2fe9a8771073288007e4e6dfc56020c",
+  "backbone_sha256": "9a21ac3df0c63839d62612dda6f454d816c25611cc7a52966ed5a5a94921dc8b",
+  "calibration_or_test_used_for_training": false
+}
