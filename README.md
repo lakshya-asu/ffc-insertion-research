@@ -1,56 +1,138 @@
-# FR3 robotic FFC insertion research
+# FR3 ribbon-cable assembly research
 
-**[Watch the experiments online](https://lakshya-asu.github.io/ffc-insertion-research/)** — full videos, stage clips and measured checks.
+[![CPU checks](https://github.com/lakshya-asu/ffc-insertion-research/actions/workflows/checks.yml/badge.svg)](https://github.com/lakshya-asu/ffc-insertion-research/actions/workflows/checks.yml)
+[![Research notebook](https://img.shields.io/badge/Research_notebook-23_page_PDF-176b57?style=flat-square)](https://lakshya-asu.github.io/ffc-insertion-research/notes/ffc-research-notebook.pdf)
+[![Isaac Sim](https://img.shields.io/badge/Isaac_Sim-6.1.0-76b900?style=flat-square)](ISAAC.md)
+[![ROS 2](https://img.shields.io/badge/ROS_2-Jazzy-22314e?style=flat-square)](experiments/020-native-camera-ros2.md)
+[![Perception](https://img.shields.io/badge/Perception-DINOv3-4067a0?style=flat-square)](experiments/017-entrance-feature-perception.md)
+[![Motion](https://img.shields.io/badge/Pi_cell_motion-disabled-b97920?style=flat-square)](SENSOR_FIRST.md)
 
+Starting with a loose ribbon cable on a desk, teach a Franka FR3 to pick it up, inspect and orient its end, insert it into a PCB connector, operate the latch and verify the connection. We are developing the proof of concept in simulation before physical hardware validation.
 
-**[Open the live lab](https://lakshya-asu.github.io/ffc-insertion-research/live/)** — timestamped cell views, experiment progress, engineering decisions and a place to collect discussion notes. [Operation details](LAB_LIVE.md).
+**[Read the research notebook · PDF](https://lakshya-asu.github.io/ffc-insertion-research/notes/ffc-research-notebook.pdf)** · **[Open the live lab](https://lakshya-asu.github.io/ffc-insertion-research/live/)** · **[Explore the architecture](https://lakshya-asu.github.io/ffc-insertion-research/architecture/)** · **[Watch experiment videos](https://lakshya-asu.github.io/ffc-insertion-research/)**
 
-**Current task:** Pi 4 Model B + Camera Module 3, with a dimensioned 200 mm ribbon. See the [refined hardware](https://lakshya-asu.github.io/ffc-insertion-research/hardware/) and [new RGB perception experiment](https://lakshya-asu.github.io/ffc-insertion-research/pi-perception/). New perception runs on camera images in an isolated worker. Real-camera qualification and contact mechanics remain open; robot motion is disabled. The manipulation results below are historical generic-scene baselines using privileged simulator state.
+<a href="https://lakshya-asu.github.io/ffc-insertion-research/notes/ffc-research-notebook.pdf"><img src="docs/notes/cover.webp" alt="Cover of the illustrated 23-page research notebook" width="280" align="right"></a>
 
-A runnable Isaac Sim experiment for picking a ribbon cable off a desk, transferring it from suction to a mechanical pinch, and attempting insertion into an open PCB connector. The project compares direct transfer in the tool with placement and regrasp on a passive fixture.
+## Read the complete notes
 
-The Docker runtime, official FR3 model, physical workcell, two-actuator tool, cable models, force gates and stage-video recorder are implemented. **Both direct and passive-fixture desk-to-open-slot sequences pass their independent geometric and grip audits.** Both tips reach 3.801 mm depth; maximum sampled pre-insertion grip drift is 1.32 µm direct and 1.93 µm with the fixture. These are single deterministic privileged-state trials, not reliability estimates. Electrical continuity, latch closure and hardware transfer are not established.
+The illustrated **23-page research notebook** explains the task, hardware choices, camera optics and mounting, software architecture, ROS2, perception results, cable mechanics, learning roadmap and evaluation plan. It includes a clickable contents page and linked experiment records.
 
-Watch [the qualified direct run](https://lakshya-asu.github.io/ffc-insertion-research/outputs/e040-direct-pgs/experiment.mp4), read [the morning report](MORNING_REPORT.md), or open [the experiment video index](https://lakshya-asu.github.io/ffc-insertion-research/) for actual rendered trials and separate clips for each stage. Read [ISAAC.md](ISAAC.md) for execution and model limits, [experiments/005-numerical-validation.md](experiments/005-numerical-validation.md) for numerical checks, and [task-specification.md](task-specification.md) for the broader research objective.
+- [Open / download the PDF](https://lakshya-asu.github.io/ffc-insertion-research/notes/ffc-research-notebook.pdf)
+- [View the PDF file on GitHub](docs/notes/ffc-research-notebook.pdf)
+- [Download directly from GitHub](https://github.com/lakshya-asu/ffc-insertion-research/raw/refs/heads/main/docs/notes/ffc-research-notebook.pdf)
+- [Source and rebuild instructions](docs/notes/README.md)
 
-## Run
+Edition 01 records the project through commit `30b6a78`. Subsequent experiments are linked below. Figures are identified as simulated; historical geometry trials and current camera-based work are kept separate.
 
-Requires an NVIDIA RTX-capable GPU, a compatible driver, Docker and NVIDIA Container Toolkit. The tested machine has an RTX 5080 with 16 GB VRAM. Run from this directory:
+<br clear="right">
 
-```bash
-python3 scripts/fetch_fr3_isaac.py
-./scripts/docker_experiment.sh build
-./scripts/docker_experiment.sh smoke --output /workspace/outputs/my-smoke
-./scripts/docker_experiment.sh direct --output /workspace/outputs/my-direct
-./scripts/docker_experiment.sh assembly --output /workspace/outputs/my-fixture
+## Current milestone
+
+The active scene is **Raspberry Pi Zero 2 W side-entry cable insertion**, with the full offset tool and a **Basler ace 2 / Kowa 35 mm macro camera at 45°**. The Pi 4 Model B + Camera Module 3 scene remains available. A phone-style press-on flex connector is a separate later task.
+
+| Area | Evidence so far | Still required |
+|---|---|---|
+| Camera and mounting | Dimensioned optical reference; full-tool visibility; sampled arm clearance and tool/cable translation bounds | Manufactured mount, stiffness and complete workcell collision qualification |
+| ROS2 | Native 2448 × 2048 RGB, calibration, exact timestamp pairing, OpenCV preprocessing and stale-frame guards | Dynamic timing and control-rate qualification |
+| Mounted-camera dataset | 160 scenes: 128 train / 32 validation; independent 30-scene audit and three matched setback pairs | Frozen model and independent final test |
+| Perception | Earlier DINOv3 feature study completed; macro-specific training now underway | Verified cable-to-entrance pose, calibrated uncertainty and action readiness |
+| Cable/contact mechanics | Numerical benchmarks and historical generic-scene handling tests | Pi cable bending/twist, grip slip, connector resistance and latch mechanics |
+| Robot actions | Skill contracts and failure criteria defined | Sensor-driven pickup, insertion, latching and verification; motion remains disabled |
+
+The matched mounting audit found that a **6 mm grasp setback hid the leading band in all three tested pairs**, while a **10 mm setback exposed it**. That supports a visibility choice, not a claim of grasp stability. [Inspect the RGB, offline labels and video](https://lakshya-asu.github.io/ffc-insertion-research/live/#macro-data).
+
+## System overview
+
+```mermaid
+flowchart LR
+    Camera[Rendered RGB + calibration] --> Guard[ROS2 timing and calibration guards]
+    Guard --> CV[OpenCV rectification and resize]
+    CV --> Perception[Learned entrance features]
+    Perception -. planned .-> Estimate[Relative pose and uncertainty]
+    Measured[Measured robot / tool / tactile signals] -. planned .-> Estimate
+    Estimate -. planned .-> Skills[Bounded skills and recovery]
+    Skills -. planned .-> Verify[Independent assembly verification]
+    Labels[Simulator geometry and labels] --> Offline[Offline supervision and scoring only]
 ```
 
-Use a **new output directory for every run** to preserve its source/configuration snapshot and results. Refined cable physics is intentionally slow; these are offline research experiments. The image is based on NVIDIA Isaac Sim 6.1.0 pinned by digest. Compose supplies GPU access and persistent shader caches without host networking or robot devices.
+The ROS camera/frontend path is implemented. The new mounted-camera model is under development; tactile streams and robot control are not connected. Simulator object poses, mesh state and offline annotations do not enter a deployed policy, critic, reward or stage transition.
 
-Each completed run includes a USD scene, results, source hashes, trajectory, contact logs, camera images, full MP4 and per-stage clips. Failures are retained with their measured cause. These are scripted experiments using exact simulated state, not vision-based autonomous manipulation.
+## Start with these experiment records
 
-## Development checks
+| Record | What it answers |
+|---|---|
+| [021 · Mounted macro dataset](experiments/021-mounted-macro-dataset.md) | What the full tool hides; dataset integrity and matched setback comparison |
+| [020 · Native camera over ROS2](experiments/020-native-camera-ros2.md) | Message contracts, timing, transport failures and fault tests |
+| [019 · Macro mount](experiments/019-macro-mount.md) | Why 45° replaced 25°; clearance, route and visibility limits |
+| [018 · Macro optics](experiments/018-macro-camera.md) | Lens choice, sampling, working distance and optical assumptions |
+| [017 · DINOv3 entrance features](experiments/017-entrance-feature-perception.md) | Earlier rim/leading-band scores and unresolved latch errors |
+| [015 · Reliability pass](experiments/015-zero-reliability.md) | Why better masks still led to an always-abstain policy |
+| [013 · Zero CAD](experiments/013-pi-zero-side-entry.md) | PCB/cable provenance and unmeasured dimensions |
+| [005–007 · Mechanics](experiments/007-contact-and-transport.md) | Solver checks, handoff failures and historical transport evidence |
+
+[Task contract](task-specification.md) · [Observation boundary](SENSOR_FIRST.md) · [Calibration assumptions](CALIBRATION.md) · [All experiments](experiments/)
+
+## Run and reproduce
+
+### CPU checks
 
 ```bash
-uv sync
+uv sync --locked
 uv run pytest -q
-uv run ruff check src scripts tests
-./scripts/docker_experiment.sh verify outputs/my-direct
-uv run python scripts/render_report.py
+uv run ruff check src tests
 ```
 
-`check_artifacts.py` checks decoded videos and recorded data; it reports the experiment's separate PASS/FAIL status. The seventeen tests verify geometry/kinematics utilities, preload-preserving command transitions, full-tip seating acceptance, and physical suction-anchor placement; full physics validation runs in Isaac Sim.
+GitHub Actions runs the CPU suite on Python 3.14. Its badge does not certify GPU rendering, ROS integration, physical mechanics or robot safety. ROS frontend tests live separately in `ros2_ws/src/ffc_cell/test/`.
 
-The earlier MuJoCo endpoint study remains available through `scripts/evaluate_geometry.py` and [E001](experiments/001-workcell-geometry.md). Its model and static-clearance results are separate from the vendor FR3 v2.1 Isaac workcell.
+### Native ROS camera setup
 
-## Sensor-driven architecture
+On a machine with the existing scene assets and Isaac image:
 
-[Interactive architecture and research guide](https://lakshya-asu.github.io/ffc-insertion-research/architecture/) explains the sensors, cable/PCB research, control and learning milestones. [SENSOR_FIRST.md](SENSOR_FIRST.md) records current implementation limits and gates. The historical full-suite runner now requires `--historical-baseline`; it uses privileged simulator state and is not a deployable skill.
+```bash
+docker build -f Dockerfile.ros2 -t ffc-ros2:jazzy-dinov3 .
+docker compose -f compose.yaml -f compose.ros2.yaml up -d perception
+docker compose -f compose.yaml -f compose.ros2.yaml run --rm experiment
+```
 
-## Selected hardware and second task
+The tested GPU is an RTX 5080 with 16 GB VRAM. Docker, NVIDIA Container Toolkit, compatible drivers and locally prepared CAD/model assets are required. See [Isaac setup](ISAAC.md), [CAD import](experiments/013-pi-zero-side-entry.md) and [ROS reproduction](experiments/020-native-camera-ros2.md). This is not a one-command fresh-clone installation: large CAD assets, model weights and generated scenes are excluded from git.
 
-The first task now uses **Pi 4 Model B + Camera Module 3 Standard + the 200 mm Standard-Standard cable**. [Inspect the CAD renders and roadmap](https://lakshya-asu.github.io/ffc-insertion-research/hardware/) or read [the import and reproduction notes](experiments/009-raspberry-pi-cad.md). The assets are loaded in a separate static FR3 workcell; appearance, connector mechanics and calibrated cable deformation are not yet training-ready.
+Follow [LAB_LIVE.md](LAB_LIVE.md) before starting capture; stop the existing preview so two renderers do not compete. Use a **fresh output directory for every experiment**. Preserve failures and source/configuration hashes. Gated model weights require the user's own approved access and remain local; credentials are never committed.
 
-Stage 2 is a **phone-style press-on FPC-to-board connector**, with a representative research coupon to be selected and measured separately. Neither task uses exact simulator state for new control, critic inputs, stage transitions or rewards.
+## Historical handling results
 
-The [fixed-camera prototype](experiments/008-fixed-camera-perception.md) exercises image ingress and isolated inference on the earlier generic scene. Its endpoint gate failed; it is infrastructure evidence, not a qualified Raspberry Pi perception model.
+The generic segmented-cable scene completed one direct desk-to-open-slot sequence and one passive-fixture sequence under its selected numerical profile. Both reached approximately 3.801 mm geometric depth. The direct trial took 41.760 simulated seconds; the fixture trial took 66.789 seconds.
+
+Those experiments used **privileged simulator state for alignment** and an assumed clearance slot with zero cable/connector contact. They do not establish camera-driven Raspberry Pi insertion, electrical function, latch closure or hardware reliability. Their failures and numerical audits remain useful evidence.
+
+[Historical direct video](https://lakshya-asu.github.io/ffc-insertion-research/outputs/e040-direct-pgs/experiment.mp4) · [Mechanics record](experiments/007-contact-and-transport.md) · [Morning report](MORNING_REPORT.md)
+
+## Next gates
+
+- [x] Import and audit Pi workpieces; isolate offline supervision from runtime inputs.
+- [x] Resolve macro placement with the full tool; publish the rejected view too.
+- [x] Connect native RGB/calibration through ROS2 and test observation faults.
+- [x] Audit the mounted-camera dataset and actual frontend compatibility.
+- [ ] Freeze and independently evaluate a mounted-camera perception model.
+- [ ] Estimate a usable cable-to-mouth frame with uncertainty.
+- [ ] Qualify cable/contact mechanics and realistic force/tactile observations.
+- [ ] Demonstrate bounded pre-grasped alignment, insertion and recovery.
+- [ ] Compare pickup routes, add latch manipulation and verify the full assembly.
+- [ ] Run controlled imitation/RL comparisons, followed by physical transfer.
+
+## Repository map
+
+| Path | Contents |
+|---|---|
+| `src/ffc/` | Geometry, kinematics, simulation, perception and audit utilities |
+| `scripts/` | Capture, training, isolated inference, scoring and publishing |
+| `config/` | Versioned task, optical, dataset and numerical protocols |
+| `ros2_ws/src/` | Camera frontend, supervision and sensor message contracts |
+| `experiments/` | Hypotheses, outcomes, failures and reproduction notes |
+| `docs/` | GitHub Pages site, curated evidence, video reviews and PDF |
+| `outputs/`, `third_party/` | Local generated runs and external assets; ignored by git |
+
+## Attribution and contribution
+
+Scene assets and model weights retain their original licenses and access terms. Zero PCB-derived review images retain the [Optocam Zero CC BY-SA 4.0 attribution](docs/live/macro-data/ATTRIBUTION.txt); FR3 geometry comes from the official Franka simulation assets. There is no blanket license claim covering all repository content. See per-asset attribution and the notebook's final page.
+
+For changes, include the experiment scope, source/configuration revisions, relevant tests and retained failure evidence. Keep static renders, software checks, simulated mechanics and physical validation distinct. [Contribution notes](CONTRIBUTING.md).

@@ -1,0 +1,26 @@
+name: CPU checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
+        with:
+          python-version: '3.14'
+          enable-cache: true
+      - name: Install locked CPU dependencies
+        run: uv sync --locked
+      - name: Lint core code and tests
+        run: uv run ruff check src tests
+      - name: Run CPU unit tests
+        run: uv run pytest -q
