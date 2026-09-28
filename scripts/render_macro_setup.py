@@ -113,7 +113,7 @@ def main():
         # Persist all edits to a new, self-contained composed scene. Source assets remain untouched.
         export_stage = Usd.Stage.Open(stage.Flatten())
         # Replicator graphs are process-local and must be rebuilt by the next renderer.
-        for transient in ["/Render", "/Replicator"]:
+        for transient in ["/Render", "/Replicator", "/Orchestrator"]:
             export_stage.RemovePrim(transient)
         export_stage.GetRootLayer().Export(str(a.output / "macro-workcell.usda"))
         report = dict(

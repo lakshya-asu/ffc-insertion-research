@@ -71,6 +71,8 @@ def main():
             for is_macro in [True, False]:
                 (envelope.MakeInvisible if is_macro else envelope.MakeVisible)()
                 rep.orchestrator.step(delta_time=0, rt_subframes=4, pause_timeline=True)
+                if "STEPPING" in str(rep.orchestrator.get_status()):
+                    raise RuntimeError("Capture did not complete; refusing to timestamp a stale frame")
                 if timeline.is_playing() or timeline.get_current_time() != initial:
                     raise RuntimeError("Static preview advanced physics")
                 for name, _, rgb in streams:
