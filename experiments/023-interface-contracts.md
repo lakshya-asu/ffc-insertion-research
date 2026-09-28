@@ -18,6 +18,7 @@ Offline inference now verifies both frozen checkpoint and backbone digests befor
 - Middleware-free observation tests: **10 passed**, also added to GitHub CI.
 - Installed ROS container suite: **15 passed**, including OpenCV label-transform parity and malformed-envelope rejection.
 - DDS pipeline `outputs/ros2-pipeline-008`: valid frame accepted with acquisition stamp preserved; stale, wrong-frame, changed-calibration, mismatched-stamp and blank inputs emitted no observation; dropout reported stale; a fresh frame recovered observation-only status. Motion stayed false.
+- Rebuilt live receiver `outputs/ros2-camera-live-004`: 34 native-camera observations in 30 seconds, with acquisition age 22.1–141.2 ms at the observer. Static camera TF arrived; status included observation-only and the expected stale intervals.
 - Isolated inference `outputs/macro-dinov3-predictions-003`: all **60 predicted PNGs byte-identical** to the original frozen test predictions.
 - Offline rescore `outputs/macro-dinov3-evaluation-002.json`: class metrics, per-frame measurements, confusion matrix and slider outcomes exactly match the original report. Only the inference metadata/timing differs.
 
