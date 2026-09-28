@@ -43,3 +43,7 @@ The local perception viewer had reached its configured 12-hour duration and exit
 ## First finger assembly
 
 The [compact finger study](../../experiments/031-compact-fingers.md) adds bolt-on fingers and nominal mounting hardware. The assembled mechanism passes 23 sampled jaw openings; four dimensional cable coupons touch both pads without penetration. [Watch the Isaac review](../../docs/hardware/custom-gripper.html#compact-fingers). Motion is prescribed and the coupon stays fixed. Material selection, stiffness, pin retention, nozzle/adapter design and workcell clearance remain open.
+
+## Mounted candidate
+
+The [stationary mounting study](../../experiments/032-compact-mounted-layout.md) places the compact tool on the FR3 in a separate candidate scene. The old tool is inactive there. Bracket CAD fit and parked environment bounds pass their limited checks; fastening, stiffness, nozzle layout and full approach clearance remain open. No compact-tool physics or insertion is demonstrated.

@@ -77,6 +77,8 @@
     "fingertip_inward_offset_each_mm": 0.5,
     "fingertip_status": "CAD candidate; assembled sampled sweep and nominal coupon contact checks pass; not manufacturing released",
     "ordering_code_verified": false,
-    "fingertip_report": "docs/hardware/compact-tool/geometry-report.json"
+    "fingertip_report": "docs/hardware/compact-tool/geometry-report.json",
+    "mounted_report": "docs/hardware/compact-mount/mount-report.json",
+    "mounted_status": "stationary visual candidate with provisional adapter; no compact-tool physics"
   }
 }

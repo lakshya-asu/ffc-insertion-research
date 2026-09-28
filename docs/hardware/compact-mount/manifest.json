@@ -1,0 +1,14 @@
+{
+  "cad_run": "outputs/compact-mount-001",
+  "render_run": "outputs/compact-mount-render-001",
+  "scope": "stationary geometric mounting review; zero physics steps",
+  "files": {
+    "CompactBracket.webp": "94a890908358a8ac84045db02db7115aa05b3b8f9676ac79d094d2a26e16d100",
+    "adapter-concept.step": "97d19ac632b41ab38a67c9378d0b108ba8cc7a6d3377a4f3087b9a74011be51e",
+    "CompactCell.webp": "84370abcfab7709c084aa415a09e00fb9600937f35250cbd7f3ad26fda46563e",
+    "mount-report.json": "862313f0f129c6ab3f26fed5211e0d9a6209f9a84136d35ca00832ce3a99c155",
+    "CompactDetail.webp": "ed0993b1298bdc27205b031188c3412b93f2f947c04cc9fd78e0cf417fb744bb",
+    "mounted-review.mp4": "9bc99f078be3710b6ea1bd7e58a031dec06d2acb699a59b4c1c7a443fa996c32",
+    "render-report.json": "2e39bdc1a4fe803db25e7734eb6672fe28235ce71d726d9af8bc502b678516fe"
+  }
+}
