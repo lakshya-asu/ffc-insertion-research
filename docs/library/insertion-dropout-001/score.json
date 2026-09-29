@@ -1,4 +1,10 @@
 {
+  "score_revision": 2,
+  "post_stop_review": {
+    "observed_s": 0.25,
+    "max_forward_excursion_m": 1.0803341865539551e-07,
+    "net_displacement_m": -1.862645149230957e-09
+  },
   "scope": "Offline assumed-channel geometry; neither seating nor Pi connector qualification",
   "case": "load_dropout",
   "controller": {

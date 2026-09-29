@@ -42,7 +42,7 @@ The first three inline cases produced entry in the open channel, a 0.5 mm retrac
 |---|---|---|
 | insertion-side-open-001 | 4 mm feed completed; seating unverified | Leading-edge corners 3.067–3.069 mm inside the assumed channel; cross-section fits |
 | insertion-side-blocked-001 | Fixture-load cap triggered a 0.5 mm retract | Peak 10 ms load proxy 0.291 N; leading edge outside after retreat |
-| insertion-side-dropout-002 | Stopped at 0.500 mm feed after injected pad-feedback loss | No measured additional feed over the 0.25 s observation window |
+| insertion-side-dropout-002 | Stopped at 0.500 mm feed after injected pad-feedback loss | 0.11 µm maximum measured forward excursion over 0.25 s; zero net displacement at the end |
 
 All three side-grip archives pass the sampled per-mesh CAD bounds check against channel/support, with a minimum separation lower bound of 0.750 mm. This excludes continuous swept motion, the robot, hoses and cable/tool interference; it does not replace full collision-enabled testing. The original inline archives retain eight or more possible-overlap pairs.
 

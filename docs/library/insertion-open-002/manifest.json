@@ -18,7 +18,7 @@
   "rerun_bundle": "rerun.tar.gz",
   "isaac_gui_playback_verified": false,
   "sha256": {
-    "score.json": "c91fdf5eafb1620f3f4f89700cf49af9cb4b60a6e82710d502c25d1ff6e3e3c3",
+    "score.json": "e29004ce273bec64a71267286a5828b8578a2fe45307b59ec3bae629e1df9b45",
     "sensor-trace.json": "99b4230bb538677de4656084632148fa64dc498cd7f6aefc11de6b39227a26fd",
     "report.json": "f6b1946a1ba2d6175364d6bcbcd89edc0780cd5d2a2830383c487326be47a365",
     "trace.png": "e1c902673c1abc15e72a3ee5180da720921b136e19f16a1300e4b7d52e1a53f3",

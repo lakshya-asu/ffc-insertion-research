@@ -47,7 +47,26 @@ def main():
     )
     final = report["final"].get("feed_command")
     loads = [row["feed_observation"]["fixture_force_n"] for row in trace if row["feed_observation"]]
+    stop_index = next(
+        (
+            i
+            for i, row in enumerate(trace)
+            if row["feed_command"] and row["feed_command"]["state"] == "stopped"
+        ),
+        None,
+    )
+    stop_review = None
+    if stop_index is not None:
+        start = trace[stop_index]["feed_observation"]["travel_m"]
+        travel = [row["feed_observation"]["travel_m"] - start for row in trace[stop_index:]]
+        stop_review = {
+            "observed_s": trace[-1]["time_s"] - trace[stop_index]["time_s"],
+            "max_forward_excursion_m": max(travel),
+            "net_displacement_m": travel[-1],
+        }
     result = {
+        "score_revision": 2,
+        "post_stop_review": stop_review,
         "scope": "Offline assumed-channel geometry; neither seating nor Pi connector qualification",
         "case": report["case"],
         "controller": final,

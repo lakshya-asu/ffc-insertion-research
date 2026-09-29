@@ -1,4 +1,6 @@
 {
+  "score_revision": 2,
+  "post_stop_review": null,
   "scope": "Offline assumed-channel geometry; neither seating nor Pi connector qualification",
   "case": "blocked",
   "controller": {
