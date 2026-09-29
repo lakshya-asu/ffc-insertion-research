@@ -1,0 +1,34 @@
+{
+  "run_id": "socket-tapered-blocked-001",
+  "type": "recorded_state_playback",
+  "physics_disabled": true,
+  "cable_frames_checked": 79,
+  "contact_frames_checked": 79,
+  "final_state": "retracted",
+  "scope": "Prealigned flexible-cable channel pilot; supplier-family socket reference; no robot or camera control",
+  "source_hashes": {
+    "source.py": "0734d131b0500ba13726b502c299c6023bb62c5c8cbc4e40af746dccf0781980",
+    "isaac_recording.py": "0324a0505e36505f5bd9b59512c3da927b83560e3219ee2b1815f88ad93924d0",
+    "cable_spec.py": "4c823c3d67a1417bcc611a91edf3841e04f16f3b96d9c42f8473e9f0377b95af",
+    "profile_cable.py": "9eea673c1e2f2f85247cbd082aa2a66301a8b79caebc129c28e99725bab89187",
+    "isaac_contacts.py": "7a8f8b48e50494f3e64d2284459c0179166836b12113d08d7bcf4c91dcf53364",
+    "insertion_skill.py": "b9eca61c9a5d394daf9ad8f1f0072ffb2ee9ea31428323033d3bf9c354233f2e",
+    "socket_reference.py": "8ce2e06e4beab3e1a5d9afcb2a7edf440ece0cc52a61cff3d74c74b7071ca988",
+    "pinch_skill.py": "8cc6bee196b89b20150bcf9cec64d1362c654f6d306a6d545f51bce733eb3273",
+    "isaac_scene.py": "3451bc6d38d2886ac2063ca36c79989a639b023735d8b0dce202c99ae7784285"
+  },
+  "rerun_bundle": "rerun.tar.gz",
+  "isaac_gui_playback_verified": false,
+  "sha256": {
+    "score.json": "e6097335453dfccb5df143b62188ff5f4607afeb6bacb059c86697a4b508cf7f",
+    "sensor-trace.json": "5a0084c72a1ef3e091afeedbdf748d99df0aed6190ccd7c094ab3bc167585944",
+    "report.json": "468f458badf39eec9bc091f8d914a255a954935ffbf16d417edc33772acbd9a3",
+    "trace.png": "ea0ca7cd3b816c99b7e74f59238de065ed0f586754ba7b281840f53c8ba3d092",
+    "rerun.tar.gz": "0119dbacb60b580c7891fd8cf348089422db354bc7d9362e4ace3f4aec775443",
+    "poster.jpg": "df44e619f3fbc7969a9cf671dc8397e9c6fe6602be96d8c57a73bb59940d6564",
+    "replay.usdc": "c5e4ae49cbdff49aa545e1ed539cc89ffd07f23f2cfebe6dc57fe41e4b3a69a8",
+    "replay.usdz": "52b22d3c8f6c0d34d5595861f403fab443c20da4a4fb6a379769e3aa0e37350b",
+    "video.mp4": "13bb7114cafa873c79e237f4a105db8f253d6dc0f39840a88e7370e573bd30f2",
+    "offline-cable-trace.json": "b47d072d8df52d4571a4ad1e8995ef69aaff0d104df04c59ea9d11ee66c9c7f1"
+  }
+}

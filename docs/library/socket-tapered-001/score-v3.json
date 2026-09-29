@@ -1,0 +1,204 @@
+{
+  "score_revision": 3,
+  "contact_review": {
+    "sampled_contact_poses": 418,
+    "max_downward_deflection_m": 0.0001000027346611046,
+    "max_upward_excursion_m": -6.27163040637993e-05,
+    "configured_travel_m": 0.0001,
+    "scope": "Sampled rigid spring noses; not calibrated contact beam strain or damage"
+  },
+  "fixture": {
+    "gap_m": 0.0004,
+    "width_m": 0.01165,
+    "mouth_y_m": -0.001,
+    "length_m": 0.0025,
+    "center_x_m": 0.0,
+    "center_z_m": 0.055,
+    "lead_in_m": 0.0003,
+    "lead_in_expansion_each_side_m": 0.00015,
+    "contact_count": 22,
+    "contact_depth_m": 0.00115,
+    "status": "Molex-family side-entry reference, not exact Zero 2 production geometry",
+    "contact_shape": "spring-loaded tapered convex noses; assumed bevel dimensions"
+  },
+  "entry_depth_review_threshold_m": 0.002,
+  "post_stop_review": {
+    "observed_s": 0.25,
+    "max_forward_excursion_m": 0.0,
+    "net_displacement_m": 0.0
+  },
+  "scope": "Offline assumed-channel geometry; neither seating nor Pi connector qualification",
+  "case": "open",
+  "controller": {
+    "state": "stopped",
+    "target_m": -0.0,
+    "reason": "persistent_overload"
+  },
+  "tip_entered_assumed_channel": false,
+  "completed_travel_without_entry": false,
+  "peak_10ms_fixture_load_n": 41.26318849806252,
+  "final_geometry": {
+    "time_s": 0.749375,
+    "tip_depth_range_m": [
+      -0.0009325373168042315,
+      -0.0009313546324368166
+    ],
+    "tip_cross_section_fits_channel": true
+  },
+  "geometry_trace": [
+    {
+      "time_s": 0.000125,
+      "tip_depth_range_m": [
+        -0.0009934457490441168,
+        -0.0009934457478824293
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.04175,
+      "tip_depth_range_m": [
+        -0.0009735390932421196,
+        -0.0009622320729502087
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.083375,
+      "tip_depth_range_m": [
+        -0.0009345336460880788,
+        -0.0009306498390525789
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.125,
+      "tip_depth_range_m": [
+        -0.0009371652744520711,
+        -0.0009311245643825975
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.166625,
+      "tip_depth_range_m": [
+        -0.000933936144907728,
+        -0.0009307877784661262
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.20825,
+      "tip_depth_range_m": [
+        -0.0009355537674328041,
+        -0.0009307491036054524
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.249875,
+      "tip_depth_range_m": [
+        -0.0009349356714805968,
+        -0.0009307045489887352
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.2915,
+      "tip_depth_range_m": [
+        -0.0009348947982723921,
+        -0.0009306844882140685
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.333125,
+      "tip_depth_range_m": [
+        -0.0009337243199819337,
+        -0.0009307360711962489
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.37475,
+      "tip_depth_range_m": [
+        -0.0009326161292183585,
+        -0.0009312269678114092
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.416375,
+      "tip_depth_range_m": [
+        -0.0009325853312908039,
+        -0.0009313104158184557
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.458,
+      "tip_depth_range_m": [
+        -0.0009325526157400101,
+        -0.0009313534884919611
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.499625,
+      "tip_depth_range_m": [
+        -0.0009325420572470565,
+        -0.0009313474554007923
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.54125,
+      "tip_depth_range_m": [
+        -0.0009325472767759313,
+        -0.0009313597142077881
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.582875,
+      "tip_depth_range_m": [
+        -0.0009325359560484739,
+        -0.0009313440490905591
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.6245,
+      "tip_depth_range_m": [
+        -0.00093254971005166,
+        -0.0009313571567280867
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.666125,
+      "tip_depth_range_m": [
+        -0.0009325468369787459,
+        -0.0009313595496705641
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.70775,
+      "tip_depth_range_m": [
+        -0.000932533548387587,
+        -0.0009313465228079304
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.749375,
+      "tip_depth_range_m": [
+        -0.0009325373168042315,
+        -0.0009313546324368166
+      ],
+      "tip_cross_section_fits_channel": true
+    }
+  ],
+  "seating_verified": false,
+  "actor_receives_this_report": false
+}

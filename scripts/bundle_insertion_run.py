@@ -29,6 +29,10 @@ def main():
         shutil.copy2(source, target)
     (out / "config/cables").mkdir(parents=True)
     shutil.copy2(a.run / "rpi-camera-standard-mini-200-rev2.json", out / "config/cables")
+    for name in ["zero-reference-contact-v1.json", "pi-socket-evidence-v1.json"]:
+        if (a.run / name).exists():
+            (out / "config/connectors").mkdir(parents=True, exist_ok=True)
+            shutil.copy2(a.run / name, out / "config/connectors" / name)
     asset = "outputs/compact-fingers-002/compact-fingers.usda"
     (out / asset).parent.mkdir(parents=True)
     shutil.copy2(ROOT / asset, out / asset)
@@ -43,6 +47,14 @@ def main():
     options = f"--case {report['case']} --dt {report['physics_dt_s']} --segments {report['segment_count']}"
     if "tool_orientation" in report:
         options += f" --orientation {report['tool_orientation']}"
+    if report.get("socket_reference"):
+        invocation = report["invocation"]
+        options += (
+            f" --socket --socket-offset-mm {invocation['socket_offset_mm']}"
+            f" --socket-height-mm {invocation['socket_height_mm']}"
+        )
+        if invocation["square_entry"]:
+            options += " --square-entry"
     (out / "run.sh").write_text(
         '#!/usr/bin/env bash\nset -euo pipefail\ncd -- "$(dirname -- "$0")"\n'
         'run_name="${1:-rerun-001}"\n'

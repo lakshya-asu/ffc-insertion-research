@@ -1,0 +1,35 @@
+{
+  "revision": "zero-reference-contact-v4",
+  "evidence_profile": "config/connectors/pi-socket-evidence-v1.json",
+  "scope": "Molex-family side-entry reference, not exact Zero 2 production geometry",
+  "assumed_throat_width_m": 0.01165,
+  "assumed_throat_height_m": 0.0004,
+  "assumed_lead_in_length_m": 0.0003,
+  "assumed_lead_in_expansion_each_side_m": 0.00015,
+  "assumed_contact_nose_length_m": 0.0004,
+  "assumed_contact_nose_width_m": 0.0002,
+  "assumed_contact_rest_top_relative_to_cable_center_m": -0.00017,
+  "assumed_contact_spring_N_m": 100.0,
+  "assumed_contact_damping_N_s_m": 0.01,
+  "assumed_contact_mass_kg": 1e-05,
+  "assumed_contact_max_deflection_m": 0.0001,
+  "assumed_friction_static_dynamic": [
+    0.3,
+    0.2
+  ],
+  "contact_offset_m": 5e-06,
+  "rest_offset_m": 0.0,
+  "mouth_y_m": -0.001,
+  "feed_distance_m": 0.00345,
+  "notes": [
+    "All assumed_* values are modelling hypotheses, not supplier measurements.",
+    "Width uses drawing D as a hypothesis for the throat; its free clearance is unconfirmed.",
+    "Contact depth inferred as 2.5 minus 1.35 mm; registration of drawing datums to open mouth is a hypothesis.",
+    "Feed stops nominally 0.05 mm short of the assumed backstop; no seating claim.",
+    "Spring-loaded rigid noses approximate contacts; no beam FEA or latch preload model.",
+    "Revision 2 replaces the artificial square contact front with a tapered convex nose; bevel dimensions remain assumptions.",
+    "PhysX default convex minimum thickness is 1 mm in this runtime; explicitly set 10 micrometres to preserve the 100 micrometre contact nose.",
+    "Revision 4 uses analytic ramp/land boxes: convex cooking still produced adjacent-contact collisions after lowering minimum thickness. No contact-neighbour collision filtering is used."
+  ],
+  "assumed_contact_nose_bevel_length_m": 0.0002
+}

@@ -1,0 +1,82 @@
+{
+  "revision": "pi-socket-evidence-v1",
+  "scope": "Manufacturer reference geometry; not a qualified Pi socket collision model",
+  "runtime_control_input": false,
+  "zero2": {
+    "board_schematic_part": "M00-718-001-022",
+    "board_schematic_url": "https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-reduced-schematics.pdf",
+    "reference_part": "Molex 54548-2272",
+    "identity_status": "family reference only; exact equivalence to M00 part unestablished",
+    "source": "molex",
+    "entry": "parallel to PCB",
+    "positions": 22,
+    "pitch_mm": 0.5,
+    "drawing_dimensions_mm": {
+      "A": 16.2,
+      "B": 10.5,
+      "C": 15.0,
+      "D": 11.65,
+      "mated_height": 1.2,
+      "insertion_depth": 2.5,
+      "length_to_contact_point": 1.35,
+      "closed_length": 3.4,
+      "open_length_reference": 4.55
+    },
+    "mating_FPC_FFC": {
+      "width_mm": 11.5,
+      "width_tolerance_mm": 0.07,
+      "thickness_mm": 0.3,
+      "thickness_tolerance_mm": 0.03,
+      "exposed_length_min_mm": 3,
+      "stiffener_length_min_mm": 5,
+      "FPC_corner_radius_mm": 0.3,
+      "corner_note": "FPC recommendation only; FFC drawing does not specify this rounding. Not confirmed on selected Raspberry Pi cable."
+    },
+    "lead_in": {
+      "presence": "tapered surfaces visible in section J-J",
+      "housing_chamfer_angle_deg": null,
+      "housing_chamfer_length_mm": null,
+      "open_throat_height_mm": null,
+      "note": "D is a front-view dimension, not a certified minimum free throat. 1.35 is the drawing datum-to-contact dimension, not distance from a guessed mouth plane."
+    }
+  },
+  "pi4": {
+    "reference_part": "TE 1-1734248-5",
+    "identity_status": "board connector reference from Arducam mapping; Pi4 production BOM not established",
+    "source": "te",
+    "entry": "normal to PCB",
+    "positions": 15,
+    "pitch_mm": 1,
+    "mating_FPC": {
+      "width_mm": 16,
+      "width_upper_tolerance_mm": 0.1,
+      "width_lower_tolerance_mm": 0.05,
+      "thickness_mm": 0.3,
+      "thickness_tolerance_mm": 0.05,
+      "corner_chamfer_mm": 0.3,
+      "exposed_length_min_mm": 2.7
+    },
+    "lead_in": {
+      "presence": "bevels visible in mouth view and section X-X",
+      "housing_chamfer_angle_deg": null,
+      "housing_chamfer_length_mm": null,
+      "open_throat_height_mm": null,
+      "note": "C0.3 callout is on mating FPC corners, not the socket housing."
+    }
+  },
+  "unresolved_physics": [
+    "open-state clearance",
+    "contact beam force-deflection",
+    "friction",
+    "latch preload",
+    "manufacturing variation",
+    "damage thresholds"
+  ],
+  "model_rules": [
+    "Separate housing, open slider, spring contacts and seating stop.",
+    "Use separate convex pieces or a cavity-preserving static mesh; never a single convex hull across the opening.",
+    "Do not infer cable insertion force from actuator operation or locked retention force.",
+    "Parameterize undimensioned lead-ins; include square-edge and narrower-clearance cases.",
+    "Preserve experiment 043 archives; the optional experiment 045 socket consumes these reference dimensions with separately recorded assumptions."
+  ]
+}

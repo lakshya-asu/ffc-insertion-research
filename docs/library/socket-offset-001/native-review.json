@@ -1,0 +1,81 @@
+{
+  "mode": "Recorded-state start/end review; no physics rerun",
+  "eyes_m": [
+    [
+      0.045,
+      0.012,
+      0.068
+    ],
+    [
+      -0.045,
+      0.012,
+      0.068
+    ],
+    [
+      0.02,
+      0.045,
+      0.075
+    ],
+    [
+      0,
+      0.03,
+      0.0575
+    ]
+  ],
+  "target_m": [
+    0,
+    -0.001,
+    0.055
+  ],
+  "geometry_hidden": false,
+  "views": [
+    {
+      "label": "start",
+      "camera": 0,
+      "pixel_std": 4.163689121346051,
+      "informative_pixels": true
+    },
+    {
+      "label": "start",
+      "camera": 1,
+      "pixel_std": 49.971829081721715,
+      "informative_pixels": true
+    },
+    {
+      "label": "start",
+      "camera": 2,
+      "pixel_std": 55.330178601293646,
+      "informative_pixels": true
+    },
+    {
+      "label": "start",
+      "camera": 3,
+      "pixel_std": 67.76322958993306,
+      "informative_pixels": true
+    },
+    {
+      "label": "end",
+      "camera": 0,
+      "pixel_std": 0.0,
+      "informative_pixels": false
+    },
+    {
+      "label": "end",
+      "camera": 1,
+      "pixel_std": 52.70098017406511,
+      "informative_pixels": true
+    },
+    {
+      "label": "end",
+      "camera": 2,
+      "pixel_std": 54.68962894605115,
+      "informative_pixels": true
+    },
+    {
+      "label": "end",
+      "camera": 3,
+      "pixel_std": 63.82042458579972,
+      "informative_pixels": true
+    }
+  ]
+}

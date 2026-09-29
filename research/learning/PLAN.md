@@ -8,6 +8,8 @@ The local bench (038) and the separate FR3-mounted presented-cable lift (040) no
 
 ## Immediate work
 
+Socket research 044 records supplier reference sections and mating dimensions in [the connector dossier](../connectors/pi-socket-contact.md). Next is registration of the corrected reference into the Zero board assembly with full-tool clearance, followed by the separate Pi4 vertical variant. The profile now drives the separate socket option in the contact bench (045); the 043 archives remain generic-coupon evidence. The paired offset trials show entry with tapered guides and retraction with square entry. Undimensioned bevels do not establish a certified capture range.
+
 | Work | Status | Exit evidence |
 |---|---|---|
 | Archive rendered and native recorded-motion runs | Bench and mounted archives built; positive replays rendered in Isaac | Portable USD timeline, source trace comparisons, video, hashes and launch instructions |
@@ -74,3 +76,5 @@ Docker access was restored and the prepared camera rendered seven samples of the
 The user prioritized progressing toward insertion. We isolated prealigned contact/feed mechanics while the camera-alignment gate remains open. [043](../../experiments/043-insertion-contact-pilot.md) records three completed side-grip cases: approximately 3.07 mm leading-edge entry in an assumed open channel, a 0.5 mm retract at a blocked entrance and a feed stop after pad-signal loss. The initial inline housing orientation fails the bounds audit and is retained as rejected evidence. Side-grip sampled CAD/fixture separation has a 0.75 mm lower bound; this is not swept FR3 clearance.
 
 Next: contact/timestep sensitivity and source-backed Pi socket geometry, plus repeatable held-end camera inspection. Bring the two together only after metric visual alignment, full-tool clearance and sensor guards pass. No seating, latch, exact-product contact or end-to-end insertion claim is added. Three trials are not a reliability estimate. A native worker crash before capture is preserved; its cause is undetermined. Frozen bundles are packaged but not independently rerun.
+
+Experiment 045 corrected contact ramps now reach the backstop; up to 4 micrometres of geometric overrun fails strict containment. The blocked-mouth trial retracts and leaves the tip outside. Next contact gate is timestep/contact convergence of that residual, then board registration and full-tool clearance. Recorded videos and native replays: `docs/library/socket.html`.

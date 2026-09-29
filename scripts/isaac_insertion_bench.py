@@ -6,6 +6,7 @@ and instrumented-fixture load equivalents; cable poses are offline only.
 
 import argparse
 import json
+import math
 import os
 import sys
 from collections import deque
@@ -24,7 +25,17 @@ def main():
     p.add_argument("--segments", type=int, choices=[100, 200], default=100)
     p.add_argument("--live-feed", type=Path)
     p.add_argument("--orientation", choices=["inline", "side"], default="side")
+    p.add_argument(
+        "--socket", action="store_true", help="Use dimensioned family reference with explicit assumptions"
+    )
+    p.add_argument("--socket-offset-mm", type=float, default=0)
+    p.add_argument("--socket-height-mm", type=float, default=0)
+    p.add_argument("--square-entry", action="store_true")
     a = p.parse_args()
+    if any(not math.isfinite(v) or abs(v) > 1 for v in (a.socket_offset_mm, a.socket_height_mm)):
+        p.error("Socket offsets must be finite and within ±1 mm")
+    if not a.socket and (a.socket_offset_mm or a.socket_height_mm or a.square_entry):
+        p.error("Socket geometry options require --socket")
     from ffc.cable_spec import load_spec, provenance_record
     from ffc.profile_cable import create_profile_cable
 
@@ -36,6 +47,9 @@ def main():
     for source in [
         spec_path,
         ROOT / "src/ffc/profile_cable.py",
+        ROOT / "src/ffc/socket_reference.py",
+        ROOT / "config/connectors/zero-reference-contact-v1.json",
+        ROOT / "config/connectors/pi-socket-evidence-v1.json",
         ROOT / "src/ffc/insertion_skill.py",
         ROOT / "src/ffc/cable_spec.py",
         ROOT / "src/ffc/isaac_scene.py",
@@ -148,19 +162,42 @@ def main():
     )
     box(stage, "/World/Ground", (0, 0, -0.006), (0.4, 0.4, 0.012), (0.2, 0.23, 0.26))
     cable_paths, profile = create_profile_cable(stage, spec, z0, a.segments)
-    # An explicitly assumed open-channel coupon, not the Pi CAD socket.
-    # Mouth at Y=-1 mm, 0.6 mm gap for the 0.3 mm terminal; 12 mm inner width.
-    fixture_paths = []
-    for name, center, size in [
-        ("floor", (0, -0.003, z0 - 0.0008), (0.014, 0.004, 0.001)),
-        ("roof", (0, -0.003, z0 + 0.0008), (0.014, 0.004, 0.001)),
-        ("left", (-0.0065, -0.003, z0), (0.001, 0.004, 0.0006)),
-        ("right", (0.0065, -0.003, z0), (0.001, 0.004, 0.0006)),
-    ]:
-        fixture = box(stage, "/World/Slot/" + name, center, size, (0.6, 0.62, 0.65), mass=0.05)
-        UsdPhysics.RigidBodyAPI(fixture).CreateKinematicEnabledAttr(True)
-        PhysxSchema.PhysxRigidBodyAPI(fixture).CreateEnableCCDAttr(False)
-        fixture_paths.append(str(fixture.GetPath()) + "/Shape")
+    socket_settings = json.loads((ROOT / "config/connectors/zero-reference-contact-v1.json").read_text())
+    moving_contact_paths = []
+    fixture_geometry = {
+        "gap_m": 0.0006,
+        "width_m": 0.012,
+        "mouth_y_m": -0.001,
+        "length_m": 0.004,
+        "status": "exploratory geometry; not supplier dimensions",
+    }
+    if a.socket:
+        from ffc.socket_reference import build_socket
+
+        evidence = json.loads((ROOT / "config/connectors/pi-socket-evidence-v1.json").read_text())
+        fixture_paths, moving_contact_paths, fixture_geometry = build_socket(
+            stage,
+            socket_settings,
+            evidence,
+            z0,
+            a.socket_offset_mm / 1000,
+            a.socket_height_mm / 1000,
+            not a.square_entry,
+        )
+    else:
+        # An explicitly assumed open-channel coupon, not the Pi CAD socket.
+        # Mouth at Y=-1 mm, 0.6 mm gap for the 0.3 mm terminal; 12 mm inner width.
+        fixture_paths = []
+        for name, center, size in [
+            ("floor", (0, -0.003, z0 - 0.0008), (0.014, 0.004, 0.001)),
+            ("roof", (0, -0.003, z0 + 0.0008), (0.014, 0.004, 0.001)),
+            ("left", (-0.0065, -0.003, z0), (0.001, 0.004, 0.0006)),
+            ("right", (0.0065, -0.003, z0), (0.001, 0.004, 0.0006)),
+        ]:
+            fixture = box(stage, "/World/Slot/" + name, center, size, (0.6, 0.62, 0.65), mass=0.05)
+            UsdPhysics.RigidBodyAPI(fixture).CreateKinematicEnabledAttr(True)
+            PhysxSchema.PhysxRigidBodyAPI(fixture).CreateEnableCCDAttr(False)
+            fixture_paths.append(str(fixture.GetPath()) + "/Shape")
     if a.case == "blocked":
         block = box(
             stage, "/World/Slot/block", (0, -0.00125, z0), (0.012, 0.0005, 0.0006), (0.8, 0.2, 0.1), mass=0.05
@@ -187,16 +224,26 @@ def main():
     ]
     for handle in cable_handles:
         handle.initialize()
+    contact_handles = {
+        path: SingleRigidPrim(prim_path=path, name="offline_" + path.rsplit("/", 1)[-1])
+        for path in moving_contact_paths
+    }
+    for handle in contact_handles.values():
+        handle.initialize()
     recorder = Recorder(
         stage,
         a.output / "insertion.mp4",
         fps=24,
-        scope_label="Side-entry contact pilot / prealigned channel / NOT Pi or FR3 integration",
+        scope_label=(
+            "Supplier-family reference / assumed throat and springs / NO robot or vision control"
+            if a.socket
+            else "Side-entry contact pilot / prealigned channel / NOT Pi or FR3 integration"
+        ),
     )
     recorder.aim((0, -0.001, z0), eye_offset=(-0.025, -0.04, 0.023))
     controller = PinchSkill()
     controller.closing = initial_closing
-    feed = InsertionFeed()
+    feed = InsertionFeed(distance_m=socket_settings["feed_distance_m"] if a.socket else 0.004)
     feed_command = None
     feed_history = deque(maxlen=round(0.01 / dt))
     history = deque(maxlen=round(0.01 / dt))
@@ -280,6 +327,13 @@ def main():
                             "time_s": now,
                             "positions_m": [pos.tolist() for pos, q in poses],
                             "quaternions_wxyz": [q.tolist() for pos, q in poses],
+                            "contact_poses": {
+                                path: {
+                                    "xyz": handle.get_world_pose()[0].tolist(),
+                                    "quat": handle.get_world_pose()[1].tolist(),
+                                }
+                                for path, handle in contact_handles.items()
+                            },
                             "tool_poses": {
                                 name: {
                                     "xyz": handle.get_world_pose()[0].tolist(),
@@ -341,14 +395,17 @@ def main():
         report = {
             "case": a.case,
             "tool_orientation": a.orientation,
-            "scope": "Prealigned flexible-cable channel pilot; no robot, camera control or Pi connector",
-            "fixture": {
-                "gap_m": 0.0006,
-                "width_m": 0.012,
-                "mouth_y_m": -0.001,
-                "length_m": 0.004,
-                "status": "exploratory geometry; not supplier dimensions",
-            },
+            "scope": "Prealigned flexible-cable channel pilot; "
+            + (
+                "supplier-family socket reference; no robot or camera control"
+                if a.socket
+                else "no robot, camera control or Pi connector"
+            ),
+            "fixture": fixture_geometry,
+            "socket_reference": a.socket,
+            "socket_settings": socket_settings if a.socket else None,
+            "invocation": vars(a)
+            | {"output": str(a.output), "live_feed": str(a.live_feed) if a.live_feed else None},
             "seating_verified": False,
             "offline_tip_depth_m": -0.001 - (final_positions[0][1] - profile[0]["length_m"] / 2),
             "cable_spec": provenance_record(spec),
@@ -391,7 +448,7 @@ def main():
                 "Artificial body drag is not identified material damping",
                 "Closure starts from a presented 1 mm gap, not a camera-guided approach",
                 "Controller update rate 200 Hz is a proposed interface, not verified hardware timing",
-                "No vacuum, robot motion, Pi connector or vision servo",
+                "No vacuum, robot motion, exact Pi production connector or vision servo",
                 "Initial alignment is supplied by bench setup; no alignment policy",
                 "Fixture force is ideal total contact magnitude, not a qualified hardware sensor",
                 "0.25 N exploratory stop setting is not a damage threshold",

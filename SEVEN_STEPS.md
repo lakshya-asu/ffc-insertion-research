@@ -91,3 +91,9 @@ Immediate next milestone: integrate a calibrated held-end inspection view, estim
 Inspection update [041](experiments/041-held-end-inspection-preparation.md): sensor-only appearance diagnostics and a raw camera capture recipe are ready. The colour baseline fails terminal localization on saved views and abstains. Docker access was restored in 042 and seven camera frames are now archived with video and native replay. Focus and framing still need adjustment; no leading-edge, slip or alignment claim has been added.
 
 Insertion update (043): [videos, native replays, sensor traces and frozen rerun bundles](docs/library/insertion.html) are ready. Next is contact sensitivity and socket-specific geometry, while inspection/alignment gates remain open.
+
+Socket geometry research 044: supplier reference drawings and mating dimensions are recorded in `research/connectors/pi-socket-contact.md`. Research 044 alone did not advance Step 5; its implementation follows in experiment 045 below.
+
+Experiment 045 integrates a supplier-family side-entry reference into the local contact bench: separate guides, open slider and spring contacts. A paired 0.15 mm offset comparison entered with tapered guides and retracted with square entry. Full board/FR3 integration, seating and hardware-calibrated contact remain open. See `experiments/045-socket-contact-reference.md`.
+
+Corrected 045 contact ramps reach the backstop, with up to 4 micrometres of penetration flagged by strict scoring. The blocked-mouth run retracts with the tip outside. Step 5 has local entry/retract evidence, but contact convergence and seating remain open.

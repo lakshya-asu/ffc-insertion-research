@@ -1,0 +1,669 @@
+{
+  "case": "open",
+  "tool_orientation": "side",
+  "scope": "Prealigned flexible-cable channel pilot; supplier-family socket reference; no robot or camera control",
+  "fixture": {
+    "gap_m": 0.0004,
+    "width_m": 0.01165,
+    "mouth_y_m": -0.001,
+    "length_m": 0.0025,
+    "center_x_m": 0.0,
+    "center_z_m": 0.055,
+    "lead_in_m": 0.0003,
+    "lead_in_expansion_each_side_m": 0.00015,
+    "contact_count": 22,
+    "contact_depth_m": 0.00115,
+    "status": "Molex-family side-entry reference, not exact Zero 2 production geometry",
+    "contact_shape": "spring-loaded box noses; tapered metal tips not yet represented"
+  },
+  "socket_reference": true,
+  "socket_settings": {
+    "revision": "zero-reference-contact-v1",
+    "evidence_profile": "config/connectors/pi-socket-evidence-v1.json",
+    "scope": "Molex-family side-entry reference, not exact Zero 2 production geometry",
+    "assumed_throat_width_m": 0.01165,
+    "assumed_throat_height_m": 0.0004,
+    "assumed_lead_in_length_m": 0.0003,
+    "assumed_lead_in_expansion_each_side_m": 0.00015,
+    "assumed_contact_nose_length_m": 0.0004,
+    "assumed_contact_nose_width_m": 0.0002,
+    "assumed_contact_rest_top_relative_to_cable_center_m": -0.00017,
+    "assumed_contact_spring_N_m": 100.0,
+    "assumed_contact_damping_N_s_m": 0.01,
+    "assumed_contact_mass_kg": 1e-05,
+    "assumed_contact_max_deflection_m": 0.0001,
+    "assumed_friction_static_dynamic": [
+      0.3,
+      0.2
+    ],
+    "contact_offset_m": 5e-06,
+    "rest_offset_m": 0.0,
+    "mouth_y_m": -0.001,
+    "feed_distance_m": 0.00345,
+    "notes": [
+      "All assumed_* values are modelling hypotheses, not supplier measurements.",
+      "Width uses drawing D as a hypothesis for the throat; its free clearance is unconfirmed.",
+      "Contact depth inferred as 2.5 minus 1.35 mm; registration of drawing datums to open mouth is a hypothesis.",
+      "Feed stops nominally 0.05 mm short of the assumed backstop; no seating claim.",
+      "Spring-loaded rigid noses approximate contacts; no beam FEA or latch preload model."
+    ]
+  },
+  "invocation": {
+    "output": "/workspace/outputs/socket-centered-002",
+    "case": "open",
+    "dt": 0.000125,
+    "segments": 100,
+    "live_feed": "/workspace/outputs/lab-live/feed",
+    "orientation": "side",
+    "socket": true,
+    "socket_offset_mm": 0,
+    "socket_height_mm": 0,
+    "square_entry": false
+  },
+  "seating_verified": false,
+  "offline_tip_depth_m": 0.00045305295498110354,
+  "cable_spec": {
+    "profile_id": "rpi-camera-standard-mini-200-rev2",
+    "profile_sha256": "09e4a5bacf516b39b0c545489d34d050a2c7407df6c3cf7629db69d67aba42c9",
+    "profile_revision": "evidence-v1",
+    "qualification": {
+      "numerical_bending": false,
+      "contact": false,
+      "vacuum": false,
+      "material_identification": false,
+      "task_mechanics": false,
+      "learning_dataset_release": false
+    },
+    "assumed_parameters": [
+      "body_thickness_m",
+      "header_thickness_m",
+      "exposed_length_m",
+      "stiffener_length_m",
+      "wide_end_length_m",
+      "transition_length_m",
+      "equivalent_young_pa",
+      "equivalent_density_kg_m3",
+      "poisson_ratio",
+      "static_friction",
+      "dynamic_friction"
+    ]
+  },
+  "segment_count": 100,
+  "initial_closing_travel_m": 0.0045,
+  "control_period_s": 0.005,
+  "offline_final_positions_m": [
+    [
+      -3.474349341558991e-06,
+      -0.00045305295498110354,
+      0.054974235594272614
+    ],
+    [
+      -1.7362993958158768e-06,
+      0.001546946237795055,
+      0.054975997656583786
+    ],
+    [
+      3.1511262932326645e-08,
+      0.0035469448193907738,
+      0.05497785285115242
+    ],
+    [
+      1.8999220401383354e-06,
+      0.005546944215893745,
+      0.05497971922159195
+    ],
+    [
+      3.73467582903686e-06,
+      0.00754694314673543,
+      0.054980915039777756
+    ],
+    [
+      5.346811576600885e-06,
+      0.009546943008899689,
+      0.054980672895908356
+    ],
+    [
+      6.816286713728914e-06,
+      0.011546943336725235,
+      0.0549800805747509
+    ],
+    [
+      8.185494152712636e-06,
+      0.013546942733228207,
+      0.054978881031274796
+    ],
+    [
+      9.388141734234523e-06,
+      0.015546940267086029,
+      0.05497569963335991
+    ],
+    [
+      1.0441101949254517e-05,
+      0.017546935006976128,
+      0.05497102066874504
+    ],
+    [
+      1.1363083103788085e-05,
+      0.019546926021575928,
+      0.05496533587574959
+    ],
+    [
+      1.2164978215878364e-05,
+      0.02154691517353058,
+      0.05495908111333847
+    ],
+    [
+      1.2854769920522813e-05,
+      0.02354690432548523,
+      0.05495264008641243
+    ],
+    [
+      1.3439856957120355e-05,
+      0.02554689347743988,
+      0.05494633689522743
+    ],
+    [
+      1.392795456922613e-05,
+      0.02754688449203968,
+      0.05494043231010437
+    ],
+    [
+      1.4327304597827606e-05,
+      0.02954687736928463,
+      0.05493513122200966
+    ],
+    [
+      1.4646614545199554e-05,
+      0.03154687210917473,
+      0.05493058264255524
+    ],
+    [
+      1.4894895684847143e-05,
+      0.033546868711709976,
+      0.05492687225341797
+    ],
+    [
+      1.5081360288604628e-05,
+      0.03554686903953552,
+      0.05492403358221054
+    ],
+    [
+      1.5215228813758586e-05,
+      0.03754686936736107,
+      0.054922040551900864
+    ],
+    [
+      1.5306108252843842e-05,
+      0.039546869695186615,
+      0.05492080748081207
+    ],
+    [
+      1.536350100650452e-05,
+      0.04154687002301216,
+      0.054920196533203125
+    ],
+    [
+      1.5396584785776213e-05,
+      0.04354687035083771,
+      0.0549200102686882
+    ],
+    [
+      1.5416171663673595e-05,
+      0.045546870678663254,
+      0.05491999536752701
+    ],
+    [
+      1.5429783161380328e-05,
+      0.0475468710064888,
+      0.05491999536752701
+    ],
+    [
+      1.5441370123880915e-05,
+      0.049546871334314346,
+      0.05491999536752701
+    ],
+    [
+      1.545204759167973e-05,
+      0.05154687166213989,
+      0.05491999536752701
+    ],
+    [
+      1.5462739611393772e-05,
+      0.05354687198996544,
+      0.05491999536752701
+    ],
+    [
+      1.5476629414479248e-05,
+      0.055546872317790985,
+      0.05491999536752701
+    ],
+    [
+      1.5494330000365153e-05,
+      0.05754687264561653,
+      0.05491999536752701
+    ],
+    [
+      1.5515752238570713e-05,
+      0.05954687297344208,
+      0.05491999536752701
+    ],
+    [
+      1.5542920664302073e-05,
+      0.061546873301267624,
+      0.05491999536752701
+    ],
+    [
+      1.5578651073155925e-05,
+      0.06354687362909317,
+      0.05491999536752701
+    ],
+    [
+      1.5624367733835243e-05,
+      0.06554687023162842,
+      0.05491999536752701
+    ],
+    [
+      1.567766594234854e-05,
+      0.06754686683416367,
+      0.05491999536752701
+    ],
+    [
+      1.5738500223960727e-05,
+      0.06954686343669891,
+      0.05491999536752701
+    ],
+    [
+      1.5808725947863422e-05,
+      0.07154686003923416,
+      0.05491999536752701
+    ],
+    [
+      1.588736631674692e-05,
+      0.07354685664176941,
+      0.05491999536752701
+    ],
+    [
+      1.5973650079104118e-05,
+      0.07554685324430466,
+      0.05491999536752701
+    ],
+    [
+      1.6064514056779444e-05,
+      0.0775468498468399,
+      0.05491999536752701
+    ],
+    [
+      1.615956352907233e-05,
+      0.07954684644937515,
+      0.05491999536752701
+    ],
+    [
+      1.6259775293292478e-05,
+      0.0815468430519104,
+      0.05491999536752701
+    ],
+    [
+      1.6363803297281265e-05,
+      0.08354683965444565,
+      0.05491999536752701
+    ],
+    [
+      1.6471714843646623e-05,
+      0.0855468362569809,
+      0.05491999536752701
+    ],
+    [
+      1.658237488300074e-05,
+      0.08754683285951614,
+      0.05491999536752701
+    ],
+    [
+      1.669386438152287e-05,
+      0.08954682946205139,
+      0.05491999536752701
+    ],
+    [
+      1.6808095097076148e-05,
+      0.09154682606458664,
+      0.05491999536752701
+    ],
+    [
+      1.6924874216783792e-05,
+      0.09354682266712189,
+      0.05491999536752701
+    ],
+    [
+      1.7043485058820806e-05,
+      0.09554681926965714,
+      0.05491999536752701
+    ],
+    [
+      1.7163140000775456e-05,
+      0.09754681587219238,
+      0.05491999536752701
+    ],
+    [
+      1.7285570720559917e-05,
+      0.09954681247472763,
+      0.05491999536752701
+    ],
+    [
+      1.7412179659004323e-05,
+      0.10154680907726288,
+      0.05491999536752701
+    ],
+    [
+      1.754190816427581e-05,
+      0.10354680567979813,
+      0.05491999536752701
+    ],
+    [
+      1.7673788534011692e-05,
+      0.10554680228233337,
+      0.05491999536752701
+    ],
+    [
+      1.7805858078645542e-05,
+      0.10754679888486862,
+      0.05491999536752701
+    ],
+    [
+      1.793990122678224e-05,
+      0.10954679548740387,
+      0.05491999536752701
+    ],
+    [
+      1.8076309061143547e-05,
+      0.11154679208993912,
+      0.05491999536752701
+    ],
+    [
+      1.821513615141157e-05,
+      0.11354678869247437,
+      0.05491999536752701
+    ],
+    [
+      1.8355400243308395e-05,
+      0.11554678529500961,
+      0.05491999536752701
+    ],
+    [
+      1.849938962550368e-05,
+      0.11754678189754486,
+      0.05491999536752701
+    ],
+    [
+      1.8647891920409165e-05,
+      0.11954677850008011,
+      0.05491999536752701
+    ],
+    [
+      1.8800321413436905e-05,
+      0.12154677510261536,
+      0.05491999536752701
+    ],
+    [
+      1.8959570297738537e-05,
+      0.1235467717051506,
+      0.05491999536752701
+    ],
+    [
+      1.9126251572743058e-05,
+      0.12554678320884705,
+      0.05491999536752701
+    ],
+    [
+      1.9299182895338163e-05,
+      0.1275467872619629,
+      0.05491999536752701
+    ],
+    [
+      1.9479313777992502e-05,
+      0.12954679131507874,
+      0.05491999536752701
+    ],
+    [
+      1.966810305020772e-05,
+      0.13154679536819458,
+      0.05491999536752701
+    ],
+    [
+      1.9866529328282923e-05,
+      0.13354679942131042,
+      0.05491999536752701
+    ],
+    [
+      2.0073906853212975e-05,
+      0.13554680347442627,
+      0.05491999536752701
+    ],
+    [
+      2.0290666725486517e-05,
+      0.13754680752754211,
+      0.05491999536752701
+    ],
+    [
+      2.0519044483080506e-05,
+      0.13954681158065796,
+      0.05491999536752701
+    ],
+    [
+      2.075888005492743e-05,
+      0.1415468156337738,
+      0.05491999536752701
+    ],
+    [
+      2.100611527566798e-05,
+      0.14354681968688965,
+      0.05491999536752701
+    ],
+    [
+      2.125864557456225e-05,
+      0.1455468237400055,
+      0.05491999536752701
+    ],
+    [
+      2.1517493223655038e-05,
+      0.14754682779312134,
+      0.05491999536752701
+    ],
+    [
+      2.178132490371354e-05,
+      0.14954683184623718,
+      0.05491999536752701
+    ],
+    [
+      2.2048861865187064e-05,
+      0.15154683589935303,
+      0.05491999536752701
+    ],
+    [
+      2.2315030946629122e-05,
+      0.15354683995246887,
+      0.05491999536752701
+    ],
+    [
+      2.2578637072001584e-05,
+      0.15554684400558472,
+      0.05491999536752701
+    ],
+    [
+      2.283972207806073e-05,
+      0.15754684805870056,
+      0.05491999536752701
+    ],
+    [
+      2.3095371943782084e-05,
+      0.1595468521118164,
+      0.05491999536752701
+    ],
+    [
+      2.333896918571554e-05,
+      0.16154685616493225,
+      0.05491999536752701
+    ],
+    [
+      2.356624827370979e-05,
+      0.1635468602180481,
+      0.05491999536752701
+    ],
+    [
+      2.3774575311108492e-05,
+      0.16554686427116394,
+      0.0549200214445591
+    ],
+    [
+      2.396012314420659e-05,
+      0.16754686832427979,
+      0.054920315742492676
+    ],
+    [
+      2.4124308765749447e-05,
+      0.16954687237739563,
+      0.05492124706506729
+    ],
+    [
+      2.4269787900266238e-05,
+      0.17154687643051147,
+      0.05492304265499115
+    ],
+    [
+      2.4399394533247687e-05,
+      0.17354688048362732,
+      0.05492580309510231
+    ],
+    [
+      2.451448017382063e-05,
+      0.17554688453674316,
+      0.054929617792367935
+    ],
+    [
+      2.461553958710283e-05,
+      0.17754685878753662,
+      0.05493456870317459
+    ],
+    [
+      2.470305116730742e-05,
+      0.17954686284065247,
+      0.05494067072868347
+    ],
+    [
+      2.4777453290880658e-05,
+      0.18154683709144592,
+      0.05494788661599159
+    ],
+    [
+      2.4839117031660862e-05,
+      0.18354684114456177,
+      0.0549561083316803
+    ],
+    [
+      2.4888318876037374e-05,
+      0.18554681539535522,
+      0.05496517941355705
+    ],
+    [
+      2.492521161912009e-05,
+      0.18754678964614868,
+      0.05497488006949425
+    ],
+    [
+      2.4950184524641372e-05,
+      0.18954676389694214,
+      0.0549849271774292
+    ],
+    [
+      2.4964137992355973e-05,
+      0.1915467381477356,
+      0.05499499663710594
+    ],
+    [
+      2.496908200555481e-05,
+      0.19354671239852905,
+      0.05500483512878418
+    ],
+    [
+      2.4970551748992875e-05,
+      0.1955466866493225,
+      0.05501450598239899
+    ],
+    [
+      2.4972358005470596e-05,
+      0.19754666090011597,
+      0.0550241619348526
+    ]
+  ],
+  "contact_mechanics_qualified": false,
+  "static_benchmark_settings_inherited_without_qualification": false,
+  "body_drag_per_s": 20,
+  "joint_viscosity_scale": 1e-05,
+  "final": {
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "observation": {
+      "stamp_s": 4.210125,
+      "lower_travel_m": 0.004910554736852646,
+      "upper_travel_m": 0.0049499161541461945,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1481730924672555,
+      "upper_force_n": 0.146979331913608
+    },
+    "time_s": 4.21025,
+    "feed_command": {
+      "state": "retracted",
+      "target_m": 0.0024515810310840607,
+      "reason": "fixture_load_cap"
+    },
+    "feed_observation": {
+      "stamp_s": 4.210125,
+      "travel_m": 0.0024515781551599503,
+      "lower_force_n": 0.1481730924672555,
+      "upper_force_n": 0.146979331913608,
+      "fixture_force_n": 0.0
+    }
+  },
+  "physics_steps": 33682,
+  "physics_dt_s": 0.000125,
+  "physics_elapsed_s": 4.210250199976144,
+  "source_of_control": "Measured tool body displacement as encoder equivalent; 10 ms mean pad and instrumented-fixture contact impulse magnitude / timestep",
+  "camera_control": false,
+  "ros_connected": false,
+  "cable_pose_control": false,
+  "grasp_attachment": false,
+  "dropout_injected": false,
+  "fault_time_s": 3.960125,
+  "post_fault_lift_drift_m": 0.0,
+  "assumptions": {
+    "cable_mass_kg": 0.0006596279999999999,
+    "pad_center_distance_from_tip_m": 0.012,
+    "pad_friction_static_dynamic": [
+      0.5,
+      0.4
+    ],
+    "jaw_drive_force_cap_N": 0.8,
+    "jaw_stiffness_N_m": 10000,
+    "jaw_damping_N_s_m": 2
+  },
+  "limitations": [
+    "Free-articulation full cable and its contact dynamics are not yet qualified",
+    "Source profile uses equivalent material and assumed terminal dimensions",
+    "100/200 rigid sections approximate width by midpoint sampling",
+    "Both contact faces are a visual convention; pads exclude exposed strips on both faces",
+    "Artificial body drag is not identified material damping",
+    "Closure starts from a presented 1 mm gap, not a camera-guided approach",
+    "Controller update rate 200 Hz is a proposed interface, not verified hardware timing",
+    "No vacuum, robot motion, exact Pi production connector or vision servo",
+    "Initial alignment is supplied by bench setup; no alignment policy",
+    "Fixture force is ideal total contact magnitude, not a qualified hardware sensor",
+    "0.25 N exploratory stop setting is not a damage threshold",
+    "Travel completion is not seating success; offline tip depth is approximate",
+    "Only pads collide on the tool",
+    "Pad sensor uses total impulse magnitude, not calibrated normal/shear tactile channels",
+    "Mass, friction and actuator dynamics uncalibrated",
+    "A load hold is not verified object retention or insertion success"
+  ]
+}

@@ -57,6 +57,9 @@ def archive(run, output):
         for i, (xyz, quat) in enumerate(zip(frame["positions_m"], frame["quaternions_wxyz"], strict=True)):
             key(f"/World/Cable/segment_{i:03}", xyz, quat, frame["time_s"])
     for frame in poses:
+        for path, body in frame.get("contact_poses", {}).items():
+            key(path, body["xyz"], body["quat"], frame["time_s"])
+    for frame in poses:
         for name, body in frame["tool_poses"].items():
             key("/World/Tool/" + name, body["xyz"], body["quat"], frame["time_s"])
     stage.GetRootLayer().customLayerData = {
@@ -86,6 +89,15 @@ def archive(run, output):
             )
             if not np.allclose(actual, body["xyz"], atol=1e-9, rtol=0):
                 raise RuntimeError("Replay differs from recorded tool trace")
+    for frame in poses:
+        for path, body in frame.get("contact_poses", {}).items():
+            actual = (
+                UsdGeom.Xformable(replay.GetPrimAtPath(path))
+                .GetLocalTransformation(frame["time_s"] * 24)
+                .ExtractTranslation()
+            )
+            if not np.allclose(actual, body["xyz"], atol=1e-9, rtol=0):
+                raise RuntimeError("Replay differs from recorded contact trace")
     for prim in replay.Traverse():
         if (
             prim.HasAPI(UsdPhysics.RigidBodyAPI)
@@ -101,6 +113,7 @@ def archive(run, output):
         "type": "recorded_state_playback",
         "physics_disabled": True,
         "cable_frames_checked": len(poses),
+        "contact_frames_checked": sum(bool(f.get("contact_poses")) for f in poses),
         "final_state": report["final"]["feed_command"]["state"]
         if report["final"]["feed_command"]
         else report["final"]["command"]["state"],

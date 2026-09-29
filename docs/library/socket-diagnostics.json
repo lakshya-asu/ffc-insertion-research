@@ -1,0 +1,20 @@
+{
+  "scope": "Empty-socket startup contact audit, no cable or robot",
+  "invalid_convex_model": {
+    "steps": 20,
+    "reported_pairs": 861,
+    "peak_contact_magnitude_n": 0.5089189183804546,
+    "example_pair": [
+      "/World/Slot/contact_21/Shape",
+      "/World/Slot/open_slider_roof/Shape"
+    ]
+  },
+  "analytic_ramp_model": {
+    "steps": 200,
+    "physics_dt_s": 0.000125,
+    "reported_pairs": 0,
+    "pass": true,
+    "config_sha256": "d14c1bd46f9b943a56c0d957f64aa2dadaf1b009316a14cb27c8cc75d0e92234"
+  },
+  "limit": "Startup test only; no claim of contact-material calibration"
+}

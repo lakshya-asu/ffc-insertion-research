@@ -8,6 +8,7 @@ from pathlib import Path
 p = argparse.ArgumentParser(description=__doc__)
 p.add_argument("--stage", type=Path, required=True)
 p.add_argument("--output", type=Path, required=True)
+p.add_argument("--socket-macro", action="store_true", help="Add a frontal entrance review camera")
 a = p.parse_args()
 a.output.mkdir(parents=True, exist_ok=False)
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -35,6 +36,8 @@ try:
         ):
             raise ValueError("Expected disabled playback physics")
     poses = [(0.045, 0.012, 0.068), (-0.045, 0.012, 0.068), (0.02, 0.045, 0.075)]
+    if a.socket_macro:
+        poses.append((0, 0.030, 0.0575))
     annotators = []
     for i, eye in enumerate(poses):
         path = f"/World/Cameras/Review{i}"
