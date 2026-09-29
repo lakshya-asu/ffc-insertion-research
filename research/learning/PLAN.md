@@ -78,3 +78,9 @@ The user prioritized progressing toward insertion. We isolated prealigned contac
 Next: contact/timestep sensitivity and source-backed Pi socket geometry, plus repeatable held-end camera inspection. Bring the two together only after metric visual alignment, full-tool clearance and sensor guards pass. No seating, latch, exact-product contact or end-to-end insertion claim is added. Three trials are not a reliability estimate. A native worker crash before capture is preserved; its cause is undetermined. Frozen bundles are packaged but not independently rerun.
 
 Experiment 045 corrected contact ramps now reach the backstop; up to 4 micrometres of geometric overrun fails strict containment. The blocked-mouth trial retracts and leaves the tip outside. Next contact gate is timestep/contact convergence of that residual, then board registration and full-tool clearance. Recorded videos and native replays: `docs/library/socket.html`.
+
+## Zero-cell integration (046)
+
+[046](../../experiments/046-zero-cell-lift-and-stereo.md) registers the socket reference into Zero community CAD and reruns the FR3 presented-cable lift with board collisions. The 10.032 mm lift passes its contact/encoder check. Fresh calibrated RGB inspection then fails: 95.3 µm surface-edge error, including 88.2 µm height error, exceeds the assumed 50 µm vertical clearance per side. Retain this failure alongside the earlier development images. Native replay, raw camera images and a frozen source/asset bundle are archived at `/library/zero-cell.html`.
+
+The immediate work is finite-thickness edge localization and camera calibration checks, independently evaluated entrance-pose perception and visible face verification. Then execute one bounded camera-driven correction and observe again before insertion. Actor inputs remain sensor observations; the geometric scorer cannot supply the missing target pose. No new policy-training dataset is qualified by this single controlled lift.

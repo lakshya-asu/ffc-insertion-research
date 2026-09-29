@@ -1,0 +1,108 @@
+"""Publish the recorded Zero-cell lift and its failed visual-alignment gate."""
+
+import json
+import shutil
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+run = ROOT / "outputs/zero-cell-lift-001"
+archive = ROOT / "docs/library/zero-cell-lift-001"
+report = json.loads((run / "report.json").read_text())
+score = json.loads((ROOT / "outputs/zero-cell-score-001/score.json").read_text())
+for name in [
+    "left.png",
+    "right.png",
+    "entrance.png",
+    "camera-calibration.json",
+    "inspection-observation.json",
+]:
+    shutil.copy2(run / name, archive / name)
+for name in ["score.json", "overlay-0-0.png", "overlay-0-1.png"]:
+    shutil.copy2(ROOT / "outputs/zero-cell-score-001" / name, archive / name)
+shutil.copy2(ROOT / "outputs/zero-cell-top-score-001/score.json", archive / "top-edge-attempt.json")
+shutil.copy2(ROOT / "outputs/zero-integration-review-001/clearance.json", archive / "approach-bounds.json")
+shutil.copy2(ROOT / "outputs/zero-cell-lift-001-bundle.tar.gz", archive / "rerun-bundle.tar.gz")
+for number in [1, 2]:
+    source = ROOT / f"outputs/zero-entrance-capture-{number:03}"
+    destination = archive / f"entrance-layout-{number}"
+    destination.mkdir(exist_ok=True)
+    for name in ["rgb-0-0.png", "rgb-0-1.png", "calibration.json", "manifest.json", "source-hashes.json"]:
+        shutil.copy2(source / name, destination / name)
+for number in [1, 2]:
+    source = ROOT / f"outputs/zero-integration-capture-{number:03}"
+    destination = archive / f"stereo-development-{number}"
+    destination.mkdir(exist_ok=True)
+    for name in ["rgb-2-0.png", "rgb-2-1.png", "calibration.json", "manifest.json"]:
+        shutil.copy2(source / name, destination / name)
+    shutil.copy2(ROOT / f"outputs/zero-integration-score-{number:03}/score.json", destination / "score.json")
+error = score["frames"][0]["error_norm_um"]
+lift = report["final"]["observation"]["lift_m"] * 1000
+page = f"""<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FR3 and Pi Zero · Lift and inspection</title>
+<style>body{{font:17px/1.65 system-ui;max-width:1100px;margin:auto;padding:40px 24px;
+background:#f4f3ed;color:#253c37}}
+h1{{font-size:clamp(34px,5vw,56px);line-height:1.1;letter-spacing:-.04em}}a{{color:#176b57}}
+section{{padding:24px 0;border-top:1px solid #bbc8c0}}video,img{{width:100%}}figure{{margin:24px 0}}
+.pair{{display:grid;grid-template-columns:1fr 1fr;gap:18px}}figcaption{{font-size:14px}}
+@media(max-width:700px){{.pair{{grid-template-columns:1fr}}}}</style>
+<a href="./">← Motion library</a><h1>The arm, the cable and the Zero board.</h1>
+<p>A fresh Isaac physics run closed the mounted PGEA-2-10 candidate on the cable's insulated body,
+lifted it {lift:.3f} mm and held bilateral pad contact. The Pi Zero 2 W CAD and the spring-contact socket
+reference were present, with full external tool collision geometry enabled.</p>
+<p><b>The run stops at inspection. It does not insert the cable.</b> The fresh RGB edge estimate is
+{error:.1f} µm from its independently scored surface position. That exceeds the assumed 50 µm vertical
+clearance per side; a small stereo reprojection error did not establish sufficient geometric accuracy.</p>
+<video controls playsinline preload="metadata" src="zero-cell-lift-001/video.mp4"></video>
+<p><a href="zero-cell-lift-001/replay.usdz">Open the recorded USD timeline</a> ·
+<a href="zero-cell-lift-001/rerun-bundle.tar.gz">Frozen physics rerun bundle</a> ·
+<a href="zero-cell-lift-001/report.json">Run report</a> ·
+<a href="zero-cell-lift-001/episode.json">Pad, encoder and command log</a></p>
+<section><h2>What the cameras measured</h2>
+<p>Two fixed Basler ace 2 / Kowa 35 mm optical references capture native Isaac RGB at 1224 × 1024.
+Classical colour and edge processing finds the blue terminal; calibrated stereo estimates its leading edge.
+The cameras capture after physics stops. These images are not a continuous ROS camera-control loop.</p>
+<div class="pair"><figure><img src="zero-cell-lift-001/left.png"
+alt="Raw left camera at the completed lift">
+<figcaption>Raw RGB. The mini-end contacts are now modelled on the underside.</figcaption></figure>
+<figure><img src="zero-cell-lift-001/overlay-0-0.png"
+alt="Predicted terminal outline and offline true top edge">
+<figcaption>Orange: measured outline. White: offline top-edge reference, unavailable to the estimator.
+</figcaption></figure></div>
+<p>The earlier replay-development frames scored 22–28 µm. The new physics capture scored {error:.1f} µm,
+including an 88.2 µm height error. A near silhouette can include the cable's cut face, so two apparent
+corners need not be the same physical point. An experimental far-top-edge fit also abstains under its
+current consistency check. Neither method authorizes motion.</p>
+<p><a href="zero-cell-lift-001/score.json">Independent geometry score</a> ·
+<a href="zero-cell-lift-001/inspection-observation.json">Actual inspection output</a> ·
+<a href="zero-cell-lift-001/top-edge-attempt.json">Retained far-edge attempt</a> ·
+<a href="zero-cell-lift-001/camera-calibration.json">Camera calibration</a> ·
+<a href="zero-cell-lift-001/stereo-development-2/score.json">Earlier development scores</a></p></section>
+<section><h2>A clear view into the entrance</h2>
+<p>The opposite-side view was blocked by the gripper. Moving both candidate entrance cameras to the
+clear side exposes the opening. These are static, physics-disabled layout checks with the recorded held pose.
+Focus still varies across the socket; visible housing is not yet a verified metric entrance measurement.</p>
+<div class="pair"><figure><img src="zero-cell-lift-001/entrance-layout-2/rgb-0-0.png"
+alt="Clear-side candidate view into the open socket">
+<figcaption>Revised entrance view: opening and contact noses visible.</figcaption></figure>
+<figure><img src="zero-cell-lift-001/entrance-layout-1/rgb-0-1.png"
+alt="Rejected view blocked by gripper surface">
+<figcaption>Retained failure: the other side sees the gripper surface.
+</figcaption></figure></div></section>
+<section><h2>What is connected, and what remains</h2>
+<p>The arm uses its encoders and ideal pad-load channels to grip and lift. Cable body poses are written
+separately for offline scoring and playback. The cable starts on a passive support with underside access;
+this is not pickup from an arbitrary flat desk placement. Vacuum is not active.</p>
+<p>The original board-support overhang obstructed the final approach. The narrower support gives
+1.116 mm minimum sampled tool/board separation over 12.5 mm of translation and ±0.5° yaw.
+This bounds review excludes the full arm sweep, camera bodies and mounting tolerances.</p>
+<p>Next: resolve top-edge measurement bias, verify the contact-facing side and recover the entrance
+plane from RGB. Then test a short camera-driven alignment correction with a fresh observation before
+connecting the existing contact-guarded feed. Seating and latch closure remain separate tests.</p>
+<p>The socket dimensions, contact springs and material parameters retain their documented assumptions.
+One lift does not qualify cable damage, physical hardware or task reliability. Playback uses recorded
+states with physics disabled; the frozen bundle reruns physics and has not yet been independently rerun.</p>
+<p><a href="zero-cell-lift-001/approach-bounds.json">Sampled clearance review</a> ·
+<a href="socket.html">Earlier isolated socket entry and blocked-mouth trials</a> ·
+<a href="../live/">Live lab</a></p></section></html>"""
+(ROOT / "docs/library/zero-cell.html").write_text(page)

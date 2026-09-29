@@ -1,0 +1,27 @@
+{
+  "run_id": "zero-cell-lift-001",
+  "type": "recorded_state_playback",
+  "physics_disabled": true,
+  "robot_source": "Measured arm encoders and vendor joint-frame FK",
+  "tool_cable_source": "Offline sampled physics body poses",
+  "actor_scope": "Arm/jaw encoders, ideal pads and joint commands; no cameras",
+  "max_replay_numeric_error": 8.881784197001252e-16,
+  "cable_frames_checked": 74,
+  "robot_samples_checked": 602,
+  "final_command": {
+    "state": "contact_hold_complete",
+    "closing_travel_m": 0.0049449999999999815,
+    "lift_m": 0.01,
+    "reason": "Bilateral load held; independent camera retention evidence still required"
+  },
+  "rerun_bundle": null,
+  "isaac_playback_render_verified": false,
+  "sha256": {
+    "report.json": "70f789e0c9c68fcbf6464b91980c317442e2f96734a6b256589d0ae02c51714d",
+    "source-hashes.json": "724d753f066a840511d7dec227e43c4cde734a2108a43ae4630e45a03b44ec3a",
+    "episode.json": "c2add260cb2df16bba0edb495702c029cf564fe58c307be43d714a6a1a1f14a8",
+    "replay.usdc": "284016bfc16d1f0692b6b1505f5f386c215d7581503eda6fe818b71cc89ed6eb",
+    "replay.usdz": "2e59d8011f9d550eec0925f66cfb9ee17dba95c38d72ff5640cc3a7983a5e2db",
+    "video.mp4": "daa3a6e0d613ba30766f6324b7ba9f325e138570e5484a6dfb7c05570d20766e"
+  }
+}

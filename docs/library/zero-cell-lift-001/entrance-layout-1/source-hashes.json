@@ -1,0 +1,10 @@
+{
+  "scripts/capture_zero_integration.py": "457de77279b28313cd413f2049fb713026f30e839c2d0c0430ab2562e5e8b0d4",
+  "src/ffc/zero_workstation.py": "8253456059e1eda33834f9d810418174fd804e51a9e7bea44b16e2886465862b",
+  "src/ffc/socket_reference.py": "8ce2e06e4beab3e1a5d9afcb2a7edf440ece0cc52a61cff3d74c74b7071ca988",
+  "src/ffc/camera_optics.py": "4aa02c03936a5f025579b1cea3ca73ac57250d0c381eef370df871f1d145106c",
+  "src/ffc/macro_camera.py": "4074e4466da709bb837e3778445a1e7c63b2a9c67fab0ff213216f5e51b41968",
+  "config/macro-mounted-camera.json": "37b9b5827ae3a7466953ef24f3439395eb9fa0c00631544a3c2bbe56fa4dc1cc",
+  "config/connectors/zero-reference-contact-v1.json": "d14c1bd46f9b943a56c0d957f64aa2dadaf1b009316a14cb27c8cc75d0e92234",
+  "config/connectors/pi-socket-evidence-v1.json": "d1979ff0de7e9135fde9ff363310db65790e60ff34d21c70bfa1e276551bde89"
+}

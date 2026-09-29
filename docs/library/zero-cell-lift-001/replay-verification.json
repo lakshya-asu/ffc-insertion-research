@@ -1,0 +1,17 @@
+{
+  "stage": "/workspace/docs/library/zero-cell-lift-001/replay.usdz",
+  "camera": "/World/Cameras/Action",
+  "mode": "Isaac paused timeline start/end render; not physics rerun",
+  "frames": [
+    {
+      "label": "start",
+      "frame": 0.0,
+      "pixel_std": 56.919491553202214
+    },
+    {
+      "label": "end",
+      "frame": 72.123,
+      "pixel_std": 53.75547661515751
+    }
+  ]
+}

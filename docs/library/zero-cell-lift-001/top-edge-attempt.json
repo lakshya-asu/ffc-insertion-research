@@ -1,0 +1,20 @@
+{
+  "source_capture": "zero-cell-lift-001",
+  "scope": "Single fresh physics lift; same controlled presentation, no randomized reliability evaluation",
+  "estimator_sha256": "cd35548951a747e108ba913fcce742c45889b024b28415fbd9fedb363da0fc07",
+  "ground_truth": "Offline recorded USD first-segment top edge; never estimator input",
+  "surface_warning": "Blue surface measurement is not the terminal midplane",
+  "motion_permitted": false,
+  "frames": [
+    {
+      "sequence": 0,
+      "time_s": 3.0051251427357784,
+      "images": [
+        "left.png",
+        "right.png"
+      ],
+      "abstained": true,
+      "reason": "Inconsistent far-edge surface fit"
+    }
+  ]
+}

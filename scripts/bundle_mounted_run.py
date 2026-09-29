@@ -23,7 +23,10 @@ def bundle(run, out):
         elif name.endswith(".py"):
             target = out / "src/ffc" / name
         else:
-            target = out / ("config/cables" if name.startswith("rpi-camera") else "config") / name
+            directory = "config/cables" if name.startswith("rpi-camera") else "config"
+            if name in ("zero-reference-contact-v1.json", "pi-socket-evidence-v1.json"):
+                directory = "config/connectors"
+            target = out / directory / name
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
     for rel in ["outputs/compact-fingers-002/compact-fingers.usda", "outputs/compact-mount-001/adapter.usda"]:
@@ -43,11 +46,17 @@ def bundle(run, out):
     if (run / "report.json").exists():
         report = json.loads((run / "report.json").read_text())
         case, dt = report["case"], report["dt_s"]
+        if report.get("zero_cell"):
+            dest = out / "third_party/raspberry_pi/zero"
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copytree(ROOT / "third_party/raspberry_pi/zero", dest)
         servo_option = (
             f" --joint-integral-gain {report['joint_integral_gain_per_s']}"
             if "joint_integral_gain_per_s" in report
             else ""
         )
+        if report.get("zero_cell"):
+            servo_option += " --zero-cell"
         for key, rel in [
             ("cad_sha256", "outputs/compact-fingers-002/compact-fingers.usda"),
             ("adapter_sha256", "outputs/compact-mount-001/adapter.usda"),

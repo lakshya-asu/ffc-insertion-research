@@ -30,13 +30,15 @@ Experiment [038](experiments/038-flexible-cable-motion.md) adds an exploratory f
 
 Experiment [040](experiments/040-thin-pad-collision-and-mounted-replay.md) adds the compact tool on the FR3 with a full presented cable. The nominal positive run reaches 10.032 mm and holds contact. Matched empty and feedback-loss trials pass their controller checks; the latter shows 1.65 micrometres of additional measured lift after detection. An offline material-point audit supports retention in this simulated run. This is not desk pickup, camera verification or material/damage qualification. [Videos, native replays and source bundles](https://lakshya-asu.github.io/ffc-insertion-research/library/#mounted).
 
-## 3. Inspect and orient the held end — design remains
+## 3. Inspect and orient the held end — metric inspection pilot, motion gate open
 
 **Built:** inspection-view concept, cable-end labels, camera observation infrastructure and a mechanically deployable finger concept.
 
 **Still needed:** dynamic held-cable scenes; inspection poses and their visibility/clearance; leading-edge and orientation estimation; uncertainty and visible-deformation measurements; slip detection from vision plus tactile/pressure observations; active second-view and regrasp policies. A stable, genuinely simulated grasp is a prerequisite.
 
 **Gate to advance:** estimate a held-end frame with bounded uncertainty, confirm stable retention and refuse the approach if orientation is ambiguous.
+
+Experiment [046](experiments/046-zero-cell-lift-and-stereo.md) combines a fresh FR3 lift with the Zero board/socket and native stereo RGB inspection. The presented cable rises 10.032 mm. Its fresh edge estimate is 95.3 µm from the offline reference, exceeding the assumed vertical clearance despite a small reprojection residual. No orientation correction or insertion is authorized. Earlier 22–28 µm development-frame results did not carry over. Clear-side entrance views are available; metric entrance pose and face verification remain open.
 
 ## 4. Align before contact — offline measurements and motion contracts exist
 

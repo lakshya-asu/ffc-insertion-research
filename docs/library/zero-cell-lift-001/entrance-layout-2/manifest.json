@@ -1,0 +1,14 @@
+{
+  "frames": [
+    {
+      "sequence": 0,
+      "time_s": 3.005125,
+      "images": [
+        "rgb-0-0.png",
+        "rgb-0-1.png"
+      ]
+    }
+  ],
+  "mode": "Composed replay; not a physics trial",
+  "source": "/workspace/docs/library/fr3-flex-008/replay.usdz"
+}

@@ -1,0 +1,1393 @@
+{
+  "scene": "outputs/zero-entrance-capture-001/composed.usda",
+  "scene_sha256": "f8c5145ebcfb2e3426ef06fecd355a7ac6dcff2429d708d934b300a5e66b2e17",
+  "scope": "Offline sampled translated/rotated component AABBs from held pose",
+  "minimum_separation_m": 0.0011164434363172826,
+  "samples": [
+    {
+      "translation_x_m": 0.0,
+      "yaw_deg": -0.5,
+      "separation_m": 0.013616443436317294,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": 0.0,
+      "yaw_deg": 0,
+      "separation_m": 0.013899776763359052,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": 0.0,
+      "yaw_deg": 0.5,
+      "separation_m": 0.014031066639490664,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00025,
+      "yaw_deg": -0.5,
+      "separation_m": 0.013366443436317321,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00025,
+      "yaw_deg": 0,
+      "separation_m": 0.013649776788917328,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00025,
+      "yaw_deg": 0.5,
+      "separation_m": 0.013781066639490691,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0005,
+      "yaw_deg": -0.5,
+      "separation_m": 0.013116443436317293,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0005,
+      "yaw_deg": 0,
+      "separation_m": 0.01339977681542923,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0005,
+      "yaw_deg": 0.5,
+      "separation_m": 0.013531066639490663,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00075,
+      "yaw_deg": -0.5,
+      "separation_m": 0.01286644343631732,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00075,
+      "yaw_deg": 0,
+      "separation_m": 0.013149776842949264,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00075,
+      "yaw_deg": 0.5,
+      "separation_m": 0.01328106663949069,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.001,
+      "yaw_deg": -0.5,
+      "separation_m": 0.012616443436317293,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.001,
+      "yaw_deg": 0,
+      "separation_m": 0.012899776871535927,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.001,
+      "yaw_deg": 0.5,
+      "separation_m": 0.013031066639490663,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00125,
+      "yaw_deg": -0.5,
+      "separation_m": 0.01236644343631732,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00125,
+      "yaw_deg": 0,
+      "separation_m": 0.012649776901252574,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00125,
+      "yaw_deg": 0.5,
+      "separation_m": 0.01278106663949069,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0015,
+      "yaw_deg": -0.5,
+      "separation_m": 0.012116443436317292,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0015,
+      "yaw_deg": 0,
+      "separation_m": 0.012399776932167438,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0015,
+      "yaw_deg": 0.5,
+      "separation_m": 0.012531066639490662,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00175,
+      "yaw_deg": -0.5,
+      "separation_m": 0.01186644343631732,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00175,
+      "yaw_deg": 0,
+      "separation_m": 0.012149776964354599,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00175,
+      "yaw_deg": 0.5,
+      "separation_m": 0.01228106663949069,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.002,
+      "yaw_deg": -0.5,
+      "separation_m": 0.011616443436317292,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.002,
+      "yaw_deg": 0,
+      "separation_m": 0.011899776997894131,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.002,
+      "yaw_deg": 0.5,
+      "separation_m": 0.012031066639490662,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0022500000000000003,
+      "yaw_deg": -0.5,
+      "separation_m": 0.01136644343631732,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0022500000000000003,
+      "yaw_deg": 0,
+      "separation_m": 0.01164977703287321,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0022500000000000003,
+      "yaw_deg": 0.5,
+      "separation_m": 0.01178106663949069,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0025,
+      "yaw_deg": -0.5,
+      "separation_m": 0.011116443436317291,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0025,
+      "yaw_deg": 0,
+      "separation_m": 0.011399777069386434,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0025,
+      "yaw_deg": 0.5,
+      "separation_m": 0.011531066639490661,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00275,
+      "yaw_deg": -0.5,
+      "separation_m": 0.010866443436317319,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00275,
+      "yaw_deg": 0,
+      "separation_m": 0.011149777107537109,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00275,
+      "yaw_deg": 0.5,
+      "separation_m": 0.011281066639490689,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.003,
+      "yaw_deg": -0.5,
+      "separation_m": 0.010616443436317291,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.003,
+      "yaw_deg": 0,
+      "separation_m": 0.010899777147437797,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.003,
+      "yaw_deg": 0.5,
+      "separation_m": 0.011031066639490661,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0032500000000000003,
+      "yaw_deg": -0.5,
+      "separation_m": 0.010366443436317319,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0032500000000000003,
+      "yaw_deg": 0,
+      "separation_m": 0.010649777189211852,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0032500000000000003,
+      "yaw_deg": 0.5,
+      "separation_m": 0.010781066639490688,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0035,
+      "yaw_deg": -0.5,
+      "separation_m": 0.01011644343631729,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0035,
+      "yaw_deg": 0,
+      "separation_m": 0.01039977723299426,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0035,
+      "yaw_deg": 0.5,
+      "separation_m": 0.01053106663949066,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00375,
+      "yaw_deg": -0.5,
+      "separation_m": 0.009866443436317318,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00375,
+      "yaw_deg": 0,
+      "separation_m": 0.010149777278933542,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00375,
+      "yaw_deg": 0.5,
+      "separation_m": 0.010281066639490688,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.004,
+      "yaw_deg": -0.5,
+      "separation_m": 0.00961644343631729,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.004,
+      "yaw_deg": 0,
+      "separation_m": 0.009899777327192983,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.004,
+      "yaw_deg": 0.5,
+      "separation_m": 0.01003106663949066,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00425,
+      "yaw_deg": -0.5,
+      "separation_m": 0.009366443436317318,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00425,
+      "yaw_deg": 0,
+      "separation_m": 0.009649777377953028,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00425,
+      "yaw_deg": 0.5,
+      "separation_m": 0.009781066639490688,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0045000000000000005,
+      "yaw_deg": -0.5,
+      "separation_m": 0.00911644343631729,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0045000000000000005,
+      "yaw_deg": 0,
+      "separation_m": 0.009399777431413084,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0045000000000000005,
+      "yaw_deg": 0.5,
+      "separation_m": 0.00953106663949066,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00475,
+      "yaw_deg": -0.5,
+      "separation_m": 0.008866443436317317,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00475,
+      "yaw_deg": 0,
+      "separation_m": 0.00914977748779458,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00475,
+      "yaw_deg": 0.5,
+      "separation_m": 0.009281066639490687,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.005,
+      "yaw_deg": -0.5,
+      "separation_m": 0.00861644343631729,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.005,
+      "yaw_deg": 0,
+      "separation_m": 0.008899777547343599,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.005,
+      "yaw_deg": 0.5,
+      "separation_m": 0.009031066639490659,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00525,
+      "yaw_deg": -0.5,
+      "separation_m": 0.008366443436317317,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00525,
+      "yaw_deg": 0,
+      "separation_m": 0.008649777610334903,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00525,
+      "yaw_deg": 0.5,
+      "separation_m": 0.008781066639490687,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0055,
+      "yaw_deg": -0.5,
+      "separation_m": 0.008116443436317289,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0055,
+      "yaw_deg": 0,
+      "separation_m": 0.008399777677075731,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0055,
+      "yaw_deg": 0.5,
+      "separation_m": 0.008531066639490659,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00575,
+      "yaw_deg": -0.5,
+      "separation_m": 0.007866443436317316,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00575,
+      "yaw_deg": 0,
+      "separation_m": 0.008149777747911256,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00575,
+      "yaw_deg": 0.5,
+      "separation_m": 0.008281066639490686,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.006,
+      "yaw_deg": -0.5,
+      "separation_m": 0.007616443436317288,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.006,
+      "yaw_deg": 0,
+      "separation_m": 0.007899777823230111,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.006,
+      "yaw_deg": 0.5,
+      "separation_m": 0.008031066639490658,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00625,
+      "yaw_deg": -0.5,
+      "separation_m": 0.007366443436317316,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00625,
+      "yaw_deg": 0,
+      "separation_m": 0.0076497779034719665,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00625,
+      "yaw_deg": 0.5,
+      "separation_m": 0.007781066639490686,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.006500000000000001,
+      "yaw_deg": -0.5,
+      "separation_m": 0.007116443436317288,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.006500000000000001,
+      "yaw_deg": 0,
+      "separation_m": 0.007399777989135672,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.006500000000000001,
+      "yaw_deg": 0.5,
+      "separation_m": 0.007531066639490658,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00675,
+      "yaw_deg": -0.5,
+      "separation_m": 0.0068664434363173155,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00675,
+      "yaw_deg": 0,
+      "separation_m": 0.007149778080790091,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00675,
+      "yaw_deg": 0.5,
+      "separation_m": 0.007281066639490685,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.007,
+      "yaw_deg": -0.5,
+      "separation_m": 0.0066164434363172875,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.007,
+      "yaw_deg": 0,
+      "separation_m": 0.006899778179086288,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.007,
+      "yaw_deg": 0.5,
+      "separation_m": 0.007031066639490657,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00725,
+      "yaw_deg": -0.5,
+      "separation_m": 0.006366443436317315,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00725,
+      "yaw_deg": 0,
+      "separation_m": 0.0066497782847734785,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00725,
+      "yaw_deg": 0.5,
+      "separation_m": 0.006781066639490685,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0075,
+      "yaw_deg": -0.5,
+      "separation_m": 0.006116443436317287,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0075,
+      "yaw_deg": 0,
+      "separation_m": 0.006399778398717708,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0075,
+      "yaw_deg": 0.5,
+      "separation_m": 0.006531066639490657,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00775,
+      "yaw_deg": -0.5,
+      "separation_m": 0.005866443436317315,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00775,
+      "yaw_deg": 0,
+      "separation_m": 0.006149778521926086,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00775,
+      "yaw_deg": 0.5,
+      "separation_m": 0.0062810666394906844,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.008,
+      "yaw_deg": -0.5,
+      "separation_m": 0.005616443436317287,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.008,
+      "yaw_deg": 0,
+      "separation_m": 0.005899778655576182,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.008,
+      "yaw_deg": 0.5,
+      "separation_m": 0.0060310666394906565,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00825,
+      "yaw_deg": -0.5,
+      "separation_m": 0.005366443436317314,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00825,
+      "yaw_deg": 0,
+      "separation_m": 0.00564977880105424,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00825,
+      "yaw_deg": 0.5,
+      "separation_m": 0.005781066639490684,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0085,
+      "yaw_deg": -0.5,
+      "separation_m": 0.005116443436317286,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0085,
+      "yaw_deg": 0,
+      "separation_m": 0.005399778960002976,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0085,
+      "yaw_deg": 0.5,
+      "separation_m": 0.005531066639490656,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00875,
+      "yaw_deg": -0.5,
+      "separation_m": 0.004866443436317314,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00875,
+      "yaw_deg": 0,
+      "separation_m": 0.005149779134384344,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00875,
+      "yaw_deg": 0.5,
+      "separation_m": 0.0052810666394906836,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.009000000000000001,
+      "yaw_deg": -0.5,
+      "separation_m": 0.004616443436317286,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.009000000000000001,
+      "yaw_deg": 0,
+      "separation_m": 0.004899779326560466,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.009000000000000001,
+      "yaw_deg": 0.5,
+      "separation_m": 0.005031066639490656,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00925,
+      "yaw_deg": -0.5,
+      "separation_m": 0.004366443436317313,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00925,
+      "yaw_deg": 0,
+      "separation_m": 0.0046497795394017175,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00925,
+      "yaw_deg": 0.5,
+      "separation_m": 0.004781066639490683,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0095,
+      "yaw_deg": -0.5,
+      "separation_m": 0.004116443436317285,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0095,
+      "yaw_deg": 0,
+      "separation_m": 0.004399779776430616,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0095,
+      "yaw_deg": 0.5,
+      "separation_m": 0.004531066639490655,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00975,
+      "yaw_deg": -0.5,
+      "separation_m": 0.003866443436317313,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00975,
+      "yaw_deg": 0,
+      "separation_m": 0.0041497800420187735,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.00975,
+      "yaw_deg": 0.5,
+      "separation_m": 0.004281066639490683,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01,
+      "yaw_deg": -0.5,
+      "separation_m": 0.003616443436317285,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01,
+      "yaw_deg": 0,
+      "separation_m": 0.003899780341658535,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01,
+      "yaw_deg": 0.5,
+      "separation_m": 0.004031066639490655,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01025,
+      "yaw_deg": -0.5,
+      "separation_m": 0.0033664434363173124,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01025,
+      "yaw_deg": 0,
+      "separation_m": 0.0036497806823473406,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01025,
+      "yaw_deg": 0.5,
+      "separation_m": 0.0037810666394906822,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0105,
+      "yaw_deg": -0.5,
+      "separation_m": 0.0031164434363172844,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0105,
+      "yaw_deg": 0,
+      "separation_m": 0.0033997810731405745,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0105,
+      "yaw_deg": 0.5,
+      "separation_m": 0.0035310666394906542,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.010750000000000001,
+      "yaw_deg": -0.5,
+      "separation_m": 0.002866443436317312,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.010750000000000001,
+      "yaw_deg": 0,
+      "separation_m": 0.003149781525968795,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.010750000000000001,
+      "yaw_deg": 0.5,
+      "separation_m": 0.0032810666394906818,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.011,
+      "yaw_deg": -0.5,
+      "separation_m": 0.002616443436317284,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.011,
+      "yaw_deg": 0,
+      "separation_m": 0.002899782056876584,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.011,
+      "yaw_deg": 0.5,
+      "separation_m": 0.003031066639490654,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01125,
+      "yaw_deg": -0.5,
+      "separation_m": 0.0023664434363173115,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01125,
+      "yaw_deg": 0,
+      "separation_m": 0.002649782687963826,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01125,
+      "yaw_deg": 0.5,
+      "separation_m": 0.0027810666394906813,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0115,
+      "yaw_deg": -0.5,
+      "separation_m": 0.0021164434363172835,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0115,
+      "yaw_deg": 0,
+      "separation_m": 0.002399783450539217,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0115,
+      "yaw_deg": 0.5,
+      "separation_m": 0.0025310666394906534,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01175,
+      "yaw_deg": -0.5,
+      "separation_m": 0.001866443436317311,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01175,
+      "yaw_deg": 0,
+      "separation_m": 0.002149784390475307,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01175,
+      "yaw_deg": 0.5,
+      "separation_m": 0.002281066639490681,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.012,
+      "yaw_deg": -0.5,
+      "separation_m": 0.001616443436317283,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.012,
+      "yaw_deg": 0,
+      "separation_m": 0.0018997855777904064,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.012,
+      "yaw_deg": 0.5,
+      "separation_m": 0.002031066639490653,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01225,
+      "yaw_deg": -0.5,
+      "separation_m": 0.0013664434363173106,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01225,
+      "yaw_deg": 0,
+      "separation_m": 0.0016497871249436333,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.01225,
+      "yaw_deg": 0.5,
+      "separation_m": 0.0017810666394906804,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0125,
+      "yaw_deg": -0.5,
+      "separation_m": 0.0011164434363172826,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0125,
+      "yaw_deg": 0,
+      "separation_m": 0.0013997892247331193,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    },
+    {
+      "translation_x_m": -0.0125,
+      "yaw_deg": 0.5,
+      "separation_m": 0.0015310666394906525,
+      "pair": [
+        "/World/Tool/fixed/Visual/CAD/supplier_01",
+        "/World/Zero2W/Components/Part_0092"
+      ]
+    }
+  ],
+  "motion_authorized": false,
+  "omissions": [
+    "Full robot path",
+    "Camera and mount solids",
+    "Continuous swept geometry",
+    "Cable motion and contact",
+    "Real assembly tolerances"
+  ]
+}

@@ -25,6 +25,11 @@ def main():
     p.add_argument("--live-feed", type=Path)
     p.add_argument("--duration", type=float, default=5.0)
     p.add_argument("--joint-integral-gain", type=float, default=0.0)
+    p.add_argument(
+        "--zero-cell",
+        action="store_true",
+        help="Compose Zero board and inspect lifted end; insertion stays gated",
+    )
     a = p.parse_args()
     if not 0 <= a.joint_integral_gain <= 5:
         p.error("joint-integral-gain must be in [0, 5] per second")
@@ -45,6 +50,21 @@ def main():
         ROOT / "config/fr3-flexible-lift-pose.json",
         ROOT / "config/fr3-isaac-source.json",
     ]
+    if a.zero_cell:
+        sources += [
+            ROOT / name
+            for name in [
+                "src/ffc/zero_workstation.py",
+                "src/ffc/zero_cameras.py",
+                "src/ffc/stereo_terminal.py",
+                "src/ffc/socket_reference.py",
+                "config/connectors/zero-reference-contact-v1.json",
+                "config/connectors/pi-socket-evidence-v1.json",
+                "config/macro-mounted-camera.json",
+                "src/ffc/camera_optics.py",
+                "src/ffc/macro_camera.py",
+            ]
+        ]
     hashes = {}
     for source in sources:
         raw = source.read_bytes()
@@ -124,7 +144,11 @@ def main():
     if np.max(abs(path - home)) > 0.1 or np.max(abs(np.diff(path, axis=0))) / 0.0005 * 0.005 > 0.04:
         raise RuntimeError("Reference joint step or speed bound exceeded")
     spec = load_spec(a.output / "rpi-camera-standard-mini-200-rev2.json")
-    cable_paths, profile = create_profile_cable(stage, spec, 0.28) if a.case != "empty" else ([], [])
+    cable_paths, profile = (
+        create_profile_cable(stage, spec, 0.28, mini_contacts_down=a.zero_cell)
+        if a.case != "empty"
+        else ([], [])
+    )
     ribbon_rotation = Rotation.from_euler("z", -90, degrees=True)
     qxyzw = ribbon_rotation.as_quat()
     for body_path, section in zip(cable_paths, profile, strict=True):
@@ -143,9 +167,23 @@ def main():
     )
     box(stage, "/World/Desk", (0.55, 0.02, 0.14), (0.50, 0.45, 0.04), (0.20, 0.23, 0.26))
     box(stage, "/World/Ground", (0, 0, -0.03), (3, 3, 0.02), (0.18, 0.22, 0.24), collision=False)
+    zero_registration = None
+    if a.zero_cell:
+        from ffc.zero_workstation import add_workstation
+
+        zero_registration = add_workstation(stage, ROOT)
+        (a.output / "registration-offline.json").write_text(json.dumps(zero_registration, indent=2))
     # Per-component conservative bounds for the known fixture, using robot CAD/FK.
     bounds = []
     cache = UsdGeom.BBoxCache(Usd.TimeCode.Default(), ["default", "render"])
+    obstacles = [(support_lo, support_hi)]
+    if a.zero_cell:
+        for prim in stage.Traverse():
+            if str(prim.GetPath()).startswith(("/World/Zero2W/", "/World/ZeroFixture/", "/World/Slot/")) and (
+                prim.IsA(UsdGeom.Mesh) or prim.IsA(UsdGeom.Cube)
+            ):
+                bound = cache.ComputeWorldBound(prim).ComputeAlignedRange()
+                obstacles.append((np.array(bound.GetMin()), np.array(bound.GetMax())))
     for group in ["fixed", "lower", "upper"]:
         body = stage.GetPrimAtPath("/World/Tool/" + group)
         for prim in Usd.PrimRange(body):
@@ -164,8 +202,9 @@ def main():
             offset = jaw_q[0] if group == "lower" else jaw_q[1] if group == "upper" else 0
             pts = (corners + [0, 0, offset]) @ t[:3, :3].T + t[:3, 3]
             lo, hi = pts.min(axis=0), pts.max(axis=0)
-            separation = np.maximum(np.maximum(support_lo - hi, lo - support_hi), 0)
-            minimum = min(minimum, float(np.linalg.norm(separation)))
+            for obstacle_lo, obstacle_hi in obstacles:
+                separation = np.maximum(np.maximum(obstacle_lo - hi, lo - obstacle_hi), 0)
+                minimum = min(minimum, float(np.linalg.norm(separation)))
         return minimum
 
     preflight = min(clearance(q, [gap, -gap]) for q in path for gap in [0.0045, 0.00495, 0.005])
@@ -176,7 +215,7 @@ def main():
             {
                 "sampled_tool_support_clearance_m": preflight,
                 "joint_path_rad": path.tolist(),
-                "scope": "Known fixture and tool component bounds; not global clearance",
+                "scope": "Known fixture/tool bounds, plus Zero board when enabled; not global clearance",
             },
             indent=2,
         )
@@ -250,9 +289,16 @@ def main():
         stage,
         a.output / "lift.mp4",
         fps=24,
-        scope_label="FR3 loaded motion pilot / ideal tool feedback / camera review only / no insertion",
+        scope_label="FR3 + Zero inspection commissioning / no insertion"
+        if a.zero_cell
+        else "FR3 loaded motion pilot / ideal tool feedback / camera review only / no insertion",
     )
     recorder.aim((0.493, 0.0105, 0.282), eye_offset=(-0.045, 0.045, 0.028))
+    measured_cameras = None
+    if a.zero_cell:
+        from ffc.zero_cameras import ZeroCameras
+
+        measured_cameras = ZeroCameras(stage, ROOT, a.output)
     controller = PinchSkill()
     controller.closing = 0.0045
     command = controller.command()
@@ -356,7 +402,19 @@ def main():
                     if pad in pair:
                         forces[idx] += item["sum_contact_force_magnitudes_n"]
                 tool = any(p.startswith("/World/Tool/") for p in pair)
-                env = any(p.startswith(("/World/Support", "/World/Desk", "/World/Cable/")) for p in pair)
+                env = any(
+                    p.startswith(
+                        (
+                            "/World/Support",
+                            "/World/Desk",
+                            "/World/Cable/",
+                            "/World/Zero2W/",
+                            "/World/ZeroFixture/",
+                            "/World/Slot/",
+                        )
+                    )
+                    for p in pair
+                )
                 intended = any(p in pads for p in pair) and any(p.startswith("/World/Cable/") for p in pair)
                 robot_env = any(p.startswith("/World/FR3/") for p in pair) and env
                 if ((tool and env and not intended) or robot_env) and item[
@@ -407,6 +465,12 @@ def main():
                 break
         if not finished or clock["steps"] != step + 1 or abs(clock["time_s"] - (step + 1) * a.dt) > 1e-6:
             raise RuntimeError("Completion or physics clock check failed")
+        inspection = None
+        if measured_cameras is not None:
+            before = clock["steps"]
+            inspection = measured_cameras.capture(clock["time_s"])
+            if clock["steps"] != before:
+                raise RuntimeError("Inspection rendering advanced physics unexpectedly")
         report = {
             "case": a.case,
             "final": trace[-1],
@@ -424,6 +488,11 @@ def main():
             "grasp_attachment": False,
             "ros_connected": False,
             "camera_control": False,
+            "zero_cell": a.zero_cell,
+            "inspection": inspection,
+            "next_stage": "Stopped: entrance pose, face polarity and alignment not qualified"
+            if a.zero_cell
+            else None,
             "contact_mechanics_qualified": False,
             "max_arm_speed_rad_s": max_speed,
             "max_arm_tracking_rad": max_tracking,
@@ -432,7 +501,9 @@ def main():
             if fault_q is None
             else float(np.max(abs(q[indices] - fault_q))),
             "unintended_contacts": unexpected,
-            "scope": "FR3 local loaded-motion pilot with full external tool collision; no Pi insertion",
+            "scope": "FR3 presented-cable lift in Zero cell with fresh RGB inspection; no insertion"
+            if a.zero_cell
+            else "FR3 local loaded-motion pilot with full external tool collision; no Pi insertion",
             "gravity_model": "Robot articulation masses and own joint angles only; jaw feedforward disabled",
             "limitations": [
                 "Full-cable contact/damping remains exploratory",

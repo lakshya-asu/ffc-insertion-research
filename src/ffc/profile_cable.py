@@ -39,7 +39,7 @@ def joint_stiffness_nm_per_degree(left, right):
     return math.pi / (180 * compliance)
 
 
-def create_profile_cable(stage, spec, z0, count=100):
+def create_profile_cable(stage, spec, z0, count=100, *, mini_contacts_down=False):
     """Create a free cable along world +Y, with no attachment to tool or ground."""
     from pxr import PhysxSchema, UsdPhysics, UsdShade
 
@@ -85,7 +85,11 @@ def create_profile_cable(stage, spec, z0, count=100):
                 box(
                     stage,
                     path + f"/Contact{pin:02d}",
-                    ((pin - (pins - 1) / 2) * v[end + "_pitch_m"], 0, h / 2 + 0.000001),
+                    (
+                        (pin - (pins - 1) / 2) * v[end + "_pitch_m"],
+                        0,
+                        (-1 if end == "mini" and mini_contacts_down else 1) * (h / 2 + 0.000001),
+                    ),
                     (0.0003, ds, 0.000002),
                     (0.88, 0.64, 0.2),
                     collision=False,

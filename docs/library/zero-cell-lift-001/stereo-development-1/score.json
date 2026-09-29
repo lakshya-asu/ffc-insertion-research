@@ -1,0 +1,40 @@
+{
+  "source_capture": "zero-integration-capture-001",
+  "scope": "Development capture; adjacent frames of one lift, not held-out trials",
+  "estimator_sha256": "346f96cd331b1300ac4f0e05062710a8e31f2d36065883790d20b02715b6c570",
+  "ground_truth": "Offline recorded USD first-segment top edge; never estimator input",
+  "surface_warning": "Blue surface measurement is not the terminal midplane",
+  "motion_permitted": false,
+  "frames": [
+    {
+      "sequence": 0,
+      "time_s": 2.405125,
+      "images": [
+        "rgb-0-0.png",
+        "rgb-0-1.png"
+      ],
+      "abstained": true,
+      "reason": "No consistent stereo terminal correspondence"
+    },
+    {
+      "sequence": 1,
+      "time_s": 2.7051250000000002,
+      "images": [
+        "rgb-1-0.png",
+        "rgb-1-1.png"
+      ],
+      "abstained": true,
+      "reason": "No consistent stereo terminal correspondence"
+    },
+    {
+      "sequence": 2,
+      "time_s": 3.005125,
+      "images": [
+        "rgb-2-0.png",
+        "rgb-2-1.png"
+      ],
+      "abstained": true,
+      "reason": "No consistent stereo terminal correspondence"
+    }
+  ]
+}
