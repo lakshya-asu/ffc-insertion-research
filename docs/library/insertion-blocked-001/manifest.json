@@ -1,0 +1,33 @@
+{
+  "run_id": "insertion-blocked-001",
+  "type": "recorded_state_playback",
+  "physics_disabled": true,
+  "cable_frames_checked": 79,
+  "final_state": "retracted",
+  "scope": "Prealigned flexible-cable channel pilot; no robot, camera control or Pi connector",
+  "source_hashes": {
+    "source.py": "7fdf23ff476c162349161a4f81f4a1b5464eaae2cc2c980a9b582978fe2f0bb8",
+    "isaac_recording.py": "0324a0505e36505f5bd9b59512c3da927b83560e3219ee2b1815f88ad93924d0",
+    "cable_spec.py": "4c823c3d67a1417bcc611a91edf3841e04f16f3b96d9c42f8473e9f0377b95af",
+    "profile_cable.py": "9eea673c1e2f2f85247cbd082aa2a66301a8b79caebc129c28e99725bab89187",
+    "isaac_contacts.py": "7a8f8b48e50494f3e64d2284459c0179166836b12113d08d7bcf4c91dcf53364",
+    "insertion_skill.py": "b9eca61c9a5d394daf9ad8f1f0072ffb2ee9ea31428323033d3bf9c354233f2e",
+    "pinch_skill.py": "8cc6bee196b89b20150bcf9cec64d1362c654f6d306a6d545f51bce733eb3273",
+    "isaac_scene.py": "3451bc6d38d2886ac2063ca36c79989a639b023735d8b0dce202c99ae7784285"
+  },
+  "rerun_bundle": "rerun.tar.gz",
+  "isaac_gui_playback_verified": false,
+  "sha256": {
+    "score.json": "80c6f97bc0431388b197e351a8e7b478895845753bb50cc9e2fba752a733fd33",
+    "sensor-trace.json": "17078e5109af0f7126b266a4ff699c510569960d9df24512d8336a35f7cdced7",
+    "report.json": "06f244d800cbfd2e4efd58d2ac22a96214f21e9722624b8509ec29d1e12079ce",
+    "trace.png": "6f7b006fcbc78bc73aa116cacd572f89d42b54555e9e6e04bed972f57a3aa79c",
+    "clearance.json": "c701cc43add7b5ec82296b074647231ecf7188ae2b804d792a033312d2f2a609",
+    "rerun.tar.gz": "e5e991e31b96c3597252d60823bee30ea500d9dfb4ea9387e6578d4ee5b7ba8d",
+    "replay.usdc": "4322a9d7aee238f942ad0274395f08557020150e7bb05066a0423f049e769500",
+    "replay.usdz": "26aad2d99ca7a781694577b239586996a8ec774c6cd558e471dab8c88cc23d2f",
+    "video.mp4": "a639864aec5f500a72dd9021447a3a4e86efb0e0aa42ab2bb3c9537095ed267a",
+    "offline-cable-trace.json": "97315fe9c7b834eaa1a789e7e7763fc24fec707c4f911b33504c0eac959a5722"
+  },
+  "rerun_tested": false
+}

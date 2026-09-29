@@ -1,0 +1,20 @@
+{
+  "scope": "Sampled CAD mesh AABBs against fixture/support; not swept or exact collision",
+  "frames_checked": 115,
+  "meshes_checked": 29,
+  "minimum_separation_lower_bound_m": 0.0,
+  "possible_overlap_pairs_first_time_s": {
+    "/World/Tool/fixed/Visual/SupplierAndFinger/supplier_01 | /World/Slot/floor/Shape": 0.000125,
+    "/World/Tool/fixed/Visual/SupplierAndFinger/supplier_01 | /World/Slot/roof/Shape": 0.000125,
+    "/World/Tool/fixed/Visual/SupplierAndFinger/supplier_01 | /World/Slot/left/Shape": 0.000125,
+    "/World/Tool/fixed/Visual/SupplierAndFinger/supplier_01 | /World/Slot/right/Shape": 0.000125,
+    "/World/Tool/lower/Visual/SupplierAndFinger/supplier_11 | /World/Slot/floor/Shape": 0.000125,
+    "/World/Tool/lower/Visual/SupplierAndFinger/supplier_11 | /World/Slot/roof/Shape": 0.000125,
+    "/World/Tool/upper/Visual/SupplierAndFinger/supplier_16 | /World/Slot/floor/Shape": 0.000125,
+    "/World/Tool/upper/Visual/SupplierAndFinger/supplier_16 | /World/Slot/roof/Shape": 0.000125,
+    "/World/Tool/lower/Visual/SupplierAndFinger/lower_finger | /World/Slot/floor/Shape": 1.5402500000000001,
+    "/World/Tool/upper/Visual/SupplierAndFinger/upper_finger | /World/Slot/roof/Shape": 1.5402500000000001
+  },
+  "all_sampled_bounds_separate": false,
+  "full_robot_clearance_qualified": false
+}

@@ -1,0 +1,272 @@
+{
+  "scope": "Offline assumed-channel geometry; neither seating nor Pi connector qualification",
+  "case": "load_dropout",
+  "controller": {
+    "state": "stopped",
+    "target_m": 0.0005000252276659012,
+    "reason": "grasp_feedback_lost_or_overload"
+  },
+  "tip_entered_assumed_channel": false,
+  "completed_travel_without_entry": false,
+  "peak_10ms_fixture_load_n": 0.0,
+  "final_geometry": {
+    "time_s": 1.248875,
+    "tip_depth_range_m": [
+      -0.0004329958918232908,
+      -0.0004322491806461094
+    ],
+    "tip_cross_section_fits_channel": true
+  },
+  "geometry_trace": [
+    {
+      "time_s": 0.000125,
+      "tip_depth_range_m": [
+        -0.0009934457490441168,
+        -0.0009934457478824293
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.04175,
+      "tip_depth_range_m": [
+        -0.0009735390932421196,
+        -0.0009622320729502087
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.083375,
+      "tip_depth_range_m": [
+        -0.0009350731352272042,
+        -0.0009312371146525051
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.125,
+      "tip_depth_range_m": [
+        -0.0009376437501490622,
+        -0.00093185292196029
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.166625,
+      "tip_depth_range_m": [
+        -0.0009344393413337709,
+        -0.0009314740440445437
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.20825,
+      "tip_depth_range_m": [
+        -0.000936075247075726,
+        -0.0009315479440483514
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.249875,
+      "tip_depth_range_m": [
+        -0.0009354460477957491,
+        -0.0009315275499418515
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.2915,
+      "tip_depth_range_m": [
+        -0.0009354146034751987,
+        -0.0009314918582855225
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.333125,
+      "tip_depth_range_m": [
+        -0.0009342444489359751,
+        -0.0009315268004769662
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.37475,
+      "tip_depth_range_m": [
+        -0.0009331494158290317,
+        -0.0009320219870733249
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.416375,
+      "tip_depth_range_m": [
+        -0.000933133151837409,
+        -0.0009321082854240089
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.458,
+      "tip_depth_range_m": [
+        -0.0009330129251311329,
+        -0.0009322643835852397
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.499625,
+      "tip_depth_range_m": [
+        -0.0009330138945892307,
+        -0.0009322653943337517
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.54125,
+      "tip_depth_range_m": [
+        -0.0008955420838787614,
+        -0.0008955084619715744
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.582875,
+      "tip_depth_range_m": [
+        -0.0008516044720424168,
+        -0.0008509615890500584
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.6245,
+      "tip_depth_range_m": [
+        -0.0008124709818451835,
+        -0.000811280978007811
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.666125,
+      "tip_depth_range_m": [
+        -0.0007709951778343978,
+        -0.0007709489327760043
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.70775,
+      "tip_depth_range_m": [
+        -0.0007267302496947899,
+        -0.0007259901331419633
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.749375,
+      "tip_depth_range_m": [
+        -0.0006873394064638547,
+        -0.0006861249688633519
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.791,
+      "tip_depth_range_m": [
+        -0.000646411859941872,
+        -0.0006463132431672172
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.8326250000000001,
+      "tip_depth_range_m": [
+        -0.0006019553493130513,
+        -0.0006011945658833178
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.87425,
+      "tip_depth_range_m": [
+        -0.0005621666748842292,
+        -0.0005610223385713873
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.915875,
+      "tip_depth_range_m": [
+        -0.0005219193878821448,
+        -0.0005216014858884276
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.9575,
+      "tip_depth_range_m": [
+        -0.0004771528266630429,
+        -0.0004763324992093144
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.999125,
+      "tip_depth_range_m": [
+        -0.00043700068964825744,
+        -0.0004359839113001322
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.04075,
+      "tip_depth_range_m": [
+        -0.0004329906454391666,
+        -0.00043224663060549735
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.082375,
+      "tip_depth_range_m": [
+        -0.0004329945663710487,
+        -0.00043225126445786753
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.124,
+      "tip_depth_range_m": [
+        -0.000432984530589829,
+        -0.00043223103239176715
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.1656250000000001,
+      "tip_depth_range_m": [
+        -0.00043299205215813316,
+        -0.00043225098299914423
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.20725,
+      "tip_depth_range_m": [
+        -0.0004329794780731004,
+        -0.00043222397782048
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.248875,
+      "tip_depth_range_m": [
+        -0.0004329958918232908,
+        -0.0004322491806461094
+      ],
+      "tip_cross_section_fits_channel": true
+    }
+  ],
+  "seating_verified": false,
+  "actor_receives_this_report": false
+}

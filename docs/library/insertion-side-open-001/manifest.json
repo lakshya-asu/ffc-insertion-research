@@ -1,0 +1,42 @@
+{
+  "run_id": "insertion-side-open-001",
+  "type": "recorded_state_playback",
+  "physics_disabled": true,
+  "cable_frames_checked": 115,
+  "final_state": "travel_complete_unverified",
+  "scope": "Prealigned flexible-cable channel pilot; no robot, camera control or Pi connector",
+  "source_hashes": {
+    "source.py": "3444ab328d6b047d64f353bf7f93b3ade918eecba0fc5c55fdf6bd7cb0c3559f",
+    "isaac_recording.py": "0324a0505e36505f5bd9b59512c3da927b83560e3219ee2b1815f88ad93924d0",
+    "cable_spec.py": "4c823c3d67a1417bcc611a91edf3841e04f16f3b96d9c42f8473e9f0377b95af",
+    "profile_cable.py": "9eea673c1e2f2f85247cbd082aa2a66301a8b79caebc129c28e99725bab89187",
+    "isaac_contacts.py": "7a8f8b48e50494f3e64d2284459c0179166836b12113d08d7bcf4c91dcf53364",
+    "insertion_skill.py": "b9eca61c9a5d394daf9ad8f1f0072ffb2ee9ea31428323033d3bf9c354233f2e",
+    "pinch_skill.py": "8cc6bee196b89b20150bcf9cec64d1362c654f6d306a6d545f51bce733eb3273",
+    "isaac_scene.py": "3451bc6d38d2886ac2063ca36c79989a639b023735d8b0dce202c99ae7784285"
+  },
+  "rerun_bundle": "rerun.tar.gz",
+  "isaac_gui_playback_verified": false,
+  "sha256": {
+    "score.json": "e82a092e3fb2fea6455d3d9c36ee268e9845a703d908e70e588694431534a667",
+    "sensor-trace.json": "146fa5882f5355d4f447d378518d8315b5fee7a33b9c1a84e5677bd1ae14bbd0",
+    "report.json": "5c29243d42932c355d12e44a0a687fc56a79c665ae915a02b7b2a3d57c2c8e6a",
+    "trace.png": "b8dc842c6eb366f994e6a2262fc04352e28f9a127bc7e7ba2518d700af14a02e",
+    "end-2.png": "12a2a57f73a336f3d3d0fe88db055920a66dd3c5bc7b259916ec512673fd77a7",
+    "clearance.json": "c2642970e47de7a68e10a3387748bc177e2423026c4f88556502fbeca78f8ac7",
+    "rerun.tar.gz": "9e6ae0b041de2107c3d2a3a7afbdb493c448f1b32e15e8727e77b989501f459c",
+    "start-0.png": "a9382c5c6ccd8596c65ca38ba6db63d79e6cf5ce9b1be452f95d96ad6704b2c2",
+    "start-2.png": "cb337b19af540a5bcffdd714f93f77ea3f31dcb44bb0d2a2dc5b3cd84e57a012",
+    "end-1.png": "216295a1c4187cd2a0d058e1646a8bc391cbf4ab790cc7af1e55766aaf34cf76",
+    "poster.jpg": "105530a507905513c91291d777573f50d43385b5e645176f3de07db3197788be",
+    "replay.usdc": "d4c2132b191828bbfc7e5c9125c63502c64fba03de50086e8d5fc390701bad4b",
+    "replay.usdz": "20156494ac4e1a11a2d529f121a1b0366356569c00cad4d4a180ed29a5615a8e",
+    "end-0.png": "79d4f5d8c72f6268d0f6431498f99eda6137f15b25397a32727f7683ae74267c",
+    "video.mp4": "39034c9e34c593a3f506716fb89ba1456fa1e07dec4fc503f4d5adab585be75e",
+    "offline-cable-trace.json": "3fdff342c4d080acbdaf8b8df556f1cd7547ae47af1a8c0d2ef4175c83a0e9bf",
+    "start-1.png": "b4f4407b85a8bfc9d831c0d05f72161dadfcd928af9c1aaadb4c7cf6655005f5",
+    "review.json": "5af390d2c96f9dee534c9be87286e4a2db776d7cf501850a366fdebddea799a6"
+  },
+  "rerun_tested": false,
+  "isaac_paused_render_review": "review.json"
+}

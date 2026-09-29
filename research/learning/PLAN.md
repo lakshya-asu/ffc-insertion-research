@@ -4,7 +4,7 @@ Updated 29 September 2026. This is the maintained execution plan; experiment rec
 
 ## Where we are
 
-The local bench (038) and the separate FR3-mounted presented-cable lift (040) now pass their nominal positive, empty and feedback-dropout checks. The mounted positive run reaches 10.032 mm and holds contact; the empty case commands no lift; feedback loss latches a stop with 1.65 micrometres of measured additional tool travel over the observation window. These are three trials on one frozen configuration, not a reliability estimate or desk pickup. Cameras inspect motion but do not control it. Next is held-end camera inspection and a broader mechanics/stop test matrix.
+The local bench (038) and the separate FR3-mounted presented-cable lift (040) now pass their nominal positive, empty and feedback-dropout checks. The mounted positive run reaches 10.032 mm and holds contact; the empty case commands no lift; feedback loss latches a stop with 1.65 micrometres of measured additional tool travel over the observation window. These are three trials on one frozen configuration, not a reliability estimate or desk pickup. Cameras inspect motion but do not control it. The later side-grip channel pilot (043) now adds entry, blocked retract and signal-loss stop evidence. Next is contact sensitivity and Pi-specific geometry, alongside held-end inspection and metric alignment.
 
 ## Immediate work
 
@@ -13,9 +13,9 @@ The local bench (038) and the separate FR3-mounted presented-cable lift (040) no
 | Archive rendered and native recorded-motion runs | Bench and mounted archives built; positive replays rendered in Isaac | Portable USD timeline, source trace comparisons, video, hashes and launch instructions |
 | Sensor-only episode interface | Implemented; five boundary/timing/channel tests pass | Strict actor field allowlist, timestamps, finite values, explicit missing cameras; offline labels separate |
 | Mounted grasp and 10 mm lift | Nominal three-case commissioning passed | Broaden placement, curvature, timestep and sensor-failure tests; complete collision/clearance review |
-| Held-end inspection | Interface and saved-image failure review ready; fresh Isaac capture blocked by current Docker permissions | Independent image evidence of leading edge and slip; uncertainty triggers abstention |
+| Held-end inspection | Seven Isaac views archived; focus/framing need adjustment; leading edge unverified | Independent image evidence of leading edge and slip; uncertainty triggers abstention |
 | Sensor-guided free-space alignment | First learned motion target | Held-out metric position/angle errors against offline reference, bounded corrections |
-| Contact insertion | Gated | Stable contact mechanics, collision/buckling/slip tests, stop/retract and seating evidence |
+| Contact insertion | Prealigned side-grip channel trials complete (043): entry, blocked retract, feedback stop; Pi/FR3 integration gated | Stable contact mechanics, collision/buckling/slip tests, stop/retract and seating evidence |
 
 Every milestone update should change this table, link fresh evidence, and record failures. A new replay or video alone does not close a control gate.
 
@@ -68,3 +68,9 @@ Frozen commissioning suite: `fr3-flex-008`, `fr3-flex-empty-002`, `fr3-flex-drop
 ## Camera capture completed (042)
 
 Docker access was restored and the prepared camera rendered seven samples of the recorded mounted lift. [Review](../../docs/held-end-review/capture-001/index.html): raw RGB, colour masks, video, synthetic calibration, manifest and physics-disabled camera replay are archived. All seven frames were inspected; focus varies through the lift and the tool reference is cropped. The terminal reaches the top image boundary near the final pose. No leading-edge, slip or alignment gate has passed. All 178 CPU tests pass. Next: set a repeatable inspection pose, qualify framing/focus in simulation, and independently label visible leading edges before training. This capture does not rerun physics or measure ROS transport latency.
+
+## Contact pilot (043)
+
+The user prioritized progressing toward insertion. We isolated prealigned contact/feed mechanics while the camera-alignment gate remains open. [043](../../experiments/043-insertion-contact-pilot.md) records three completed side-grip cases: approximately 3.07 mm leading-edge entry in an assumed open channel, a 0.5 mm retract at a blocked entrance and a feed stop after pad-signal loss. The initial inline housing orientation fails the bounds audit and is retained as rejected evidence. Side-grip sampled CAD/fixture separation has a 0.75 mm lower bound; this is not swept FR3 clearance.
+
+Next: contact/timestep sensitivity and source-backed Pi socket geometry, plus repeatable held-end camera inspection. Bring the two together only after metric visual alignment, full-tool clearance and sensor guards pass. No seating, latch, exact-product contact or end-to-end insertion claim is added. Three trials are not a reliability estimate. A native worker crash before capture is preserved; its cause is undetermined. Frozen bundles are packaged but not independently rerun.

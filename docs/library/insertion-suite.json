@@ -1,0 +1,29 @@
+[
+  {
+    "run": "insertion-side-open-001",
+    "case": "open",
+    "orientation": "side",
+    "sampled_bounds_separate": true,
+    "state": "travel_complete_unverified",
+    "tip_entered_assumed_channel": true,
+    "seating_verified": false
+  },
+  {
+    "run": "insertion-side-blocked-001",
+    "case": "blocked",
+    "orientation": "side",
+    "sampled_bounds_separate": true,
+    "state": "retracted",
+    "tip_entered_assumed_channel": false,
+    "seating_verified": false
+  },
+  {
+    "run": "insertion-side-dropout-002",
+    "case": "load_dropout",
+    "orientation": "side",
+    "sampled_bounds_separate": true,
+    "state": "stopped",
+    "tip_entered_assumed_channel": false,
+    "seating_verified": false
+  }
+]

@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Side-entry contact trials</title>
+<style>body{font:17px/1.65 system-ui;max-width:1100px;margin:auto;padding:40px 24px;background:#f4f3ed;
+color:#253c37}h1{font-size:clamp(34px,5vw,56px);line-height:1.1;letter-spacing:-.04em}a{color:#176b57}
+article{padding:24px 0;border-top:1px solid #bbc8c0}video,img{width:100%}</style>
+<a href="./#mounted">← Motion library</a><h1>Earlier inline setup: rejected.</h1><p><a href="insertion.html">Open the corrected side-grip trials →</a></p>
+<p>The flexible cable is pinched, then pushed toward a small channel in Isaac. The controller uses
+pad loads, a feed encoder equivalent and an ideal instrumented-fixture load proxy. It never reads
+cable pose. The cable has no attachment to the gripper.</p>
+<p>This is an isolated contact pilot with a prealigned starting placement. The channel is an exploratory
+0.6 mm gap, 12 mm width and 4 mm length. It is not the Raspberry Pi connector model. Only the tool pads
+have collision shapes; whole-tool collisions are not enabled. Per-mesh bounds are audited separately.
+No FR3, camera servo, ROS motion or latch
+is involved. The video cameras are for review and the housing can obscure the contact region.</p>
+<p>The first inline setup pointed the cable tip back toward the housing and failed the conservative
+clearance review. It is retained below. The corrected side grip rotates the tool beside the cable
+and grips the insulated body 12 mm behind the tip. The camera view improves, but this does not
+qualify a complete FR3 approach.</p>
+<h2>What counts as evidence</h2><p>A 4 mm commanded feed is not insertion success. An independent
+geometry scorer checks whether the leading-edge corners entered the assumed channel. Even that is
+not seating. A 0.25 N load setting and 0.5 mm bounded retract are exploratory controller settings,
+not damage limits. Missing grasp feedback stops the feed rather than opening the tool.</p>
+<p>These cases test open entry, a blocked mouth and injected pad-signal loss. They are commissioning
+trials, not a reliability estimate. Videos show actual physics; downloaded USDZ files replay recorded
+state with physics disabled.</p><article id="insertion-open-002"><h2>open</h2>
+<p>Tool orientation: inline. 
+Sampled CAD/fixture bounds separate: <b>False</b>. 
+This is not swept robot clearance.</p>
+<p>Controller: <b>travel_complete_unverified</b>. No seating evidence from travel alone</p>
+<p>Offline tip entry into the assumed channel: <b>True</b>.
+This checks the final leading-edge corners; it does not verify seating or latching.</p>
+<video controls playsinline preload="metadata" src="insertion-open-002/video.mp4"></video>
+<img src="insertion-open-002/trace.png" alt="Measured feed and fixture load versus time" loading="lazy">
+<p><a href="insertion-open-002/replay.usdz">Native Isaac replay</a> · <a href="insertion-open-002/score.json">Offline score</a> ·
+<a href="insertion-open-002/sensor-trace.json">Actor observations and commands</a> ·
+<a href="insertion-open-002/clearance.json">Clearance audit</a> ·
+<a href="insertion-open-002/rerun.tar.gz">Frozen rerun bundle</a> ·
+<a href="insertion-open-002/report.json">Run assumptions</a> · <a href="insertion-open-002/manifest.json">Archive hashes</a>
+</p></article><article id="insertion-blocked-001"><h2>blocked</h2>
+<p>Tool orientation: inline. 
+Sampled CAD/fixture bounds separate: <b>False</b>. 
+This is not swept robot clearance.</p>
+<p>Controller: <b>retracted</b>. fixture_load_cap</p>
+<p>Offline tip entry into the assumed channel: <b>False</b>.
+This checks the final leading-edge corners; it does not verify seating or latching.</p>
+<video controls playsinline preload="metadata" src="insertion-blocked-001/video.mp4"></video>
+<img src="insertion-blocked-001/trace.png" alt="Measured feed and fixture load versus time" loading="lazy">
+<p><a href="insertion-blocked-001/replay.usdz">Native Isaac replay</a> · <a href="insertion-blocked-001/score.json">Offline score</a> ·
+<a href="insertion-blocked-001/sensor-trace.json">Actor observations and commands</a> ·
+<a href="insertion-blocked-001/clearance.json">Clearance audit</a> ·
+<a href="insertion-blocked-001/rerun.tar.gz">Frozen rerun bundle</a> ·
+<a href="insertion-blocked-001/report.json">Run assumptions</a> · <a href="insertion-blocked-001/manifest.json">Archive hashes</a>
+</p></article><article id="insertion-dropout-001"><h2>load_dropout</h2>
+<p>Tool orientation: inline. 
+Sampled CAD/fixture bounds separate: <b>False</b>. 
+This is not swept robot clearance.</p>
+<p>Controller: <b>stopped</b>. grasp_feedback_lost_or_overload</p>
+<p>Offline tip entry into the assumed channel: <b>False</b>.
+This checks the final leading-edge corners; it does not verify seating or latching.</p>
+<video controls playsinline preload="metadata" src="insertion-dropout-001/video.mp4"></video>
+<img src="insertion-dropout-001/trace.png" alt="Measured feed and fixture load versus time" loading="lazy">
+<p><a href="insertion-dropout-001/replay.usdz">Native Isaac replay</a> · <a href="insertion-dropout-001/score.json">Offline score</a> ·
+<a href="insertion-dropout-001/sensor-trace.json">Actor observations and commands</a> ·
+<a href="insertion-dropout-001/clearance.json">Clearance audit</a> ·
+<a href="insertion-dropout-001/rerun.tar.gz">Frozen rerun bundle</a> ·
+<a href="insertion-dropout-001/report.json">Run assumptions</a> · <a href="insertion-dropout-001/manifest.json">Archive hashes</a>
+</p></article><h2>Connecting this to the Pi task</h2>
+<p>Next come contact-model convergence and socket-specific collision geometry, with the full tool
+included in swept clearance checks. Then we connect a verified camera alignment estimate to short FR3
+corrections and the tested feed guards. Insertion completion must have independent visual/contact
+seating evidence; latch operation remains its own skill.</p></html>

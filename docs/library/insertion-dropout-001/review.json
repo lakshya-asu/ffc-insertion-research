@@ -1,0 +1,26 @@
+{
+  "mode": "Recorded-state start/end review; no physics rerun",
+  "eyes_m": [
+    [
+      0.045,
+      0.012,
+      0.068
+    ],
+    [
+      -0.045,
+      0.012,
+      0.068
+    ],
+    [
+      0.02,
+      0.045,
+      0.075
+    ]
+  ],
+  "target_m": [
+    0,
+    -0.001,
+    0.055
+  ],
+  "geometry_hidden": false
+}

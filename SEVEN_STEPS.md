@@ -46,9 +46,11 @@ Experiment [040](experiments/040-thin-pad-collision-and-mounted-replay.md) adds 
 
 **Gate to advance:** closed-loop alignment reduces independently scored error to a tolerance derived from the selected cable and opening, while preserving clearance and observation freshness.
 
-## 5. Make contact and insert — current Pi skill not implemented
+## 5. Make contact and insert — channel pilot tested; Pi skill not implemented
 
 **Existing evidence:** historical generic assembly simulations exercised robot motion and contact, but used privileged state and different geometry. They do not validate the current Pi task or the new tool.
+
+Experiment [043](experiments/043-insertion-contact-pilot.md) adds a prealigned, sensor-guarded side-entry channel bench. The sideways tool feeds the cable into the assumed channel, retracts at a blocked mouth and stops after feedback loss. Three sampled CAD/fixture bounds checks pass. Original inline tool arrangements fail that clearance review and remain archived. This is no FR3 approach, camera alignment, exact Pi contact model or seating verification.
 
 **Still needed:** qualify the cable/connector contact model; implement deployable force/tactile/pressure channels; develop bounded contact transitions; test edge hits, skew, buckle, slip, blocked entry and false force signals; establish stop/retract behavior. Choose force thresholds from modeled material/contact studies with sensitivity ranges, then identify them physically later. Do not treat guessed values as damage limits.
 
@@ -87,3 +89,5 @@ Training comes after those observation/action interfaces and resettable task mec
 Immediate next milestone: integrate a calibrated held-end inspection view, estimate the leading edge and detect ambiguity/slip from images. Broaden the mounted mechanics and stop tests alongside it. The maintained [learning and simulation plan](research/learning/PLAN.md) sets the sequence: inspection → sensor-guided alignment → demonstrations → contact RL after its mechanics gates.
 
 Inspection update [041](experiments/041-held-end-inspection-preparation.md): sensor-only appearance diagnostics and a raw camera capture recipe are ready. The colour baseline fails terminal localization on saved views and abstains. Docker access was restored in 042 and seven camera frames are now archived with video and native replay. Focus and framing still need adjustment; no leading-edge, slip or alignment claim has been added.
+
+Insertion update (043): [videos, native replays, sensor traces and frozen rerun bundles](docs/library/insertion.html) are ready. Next is contact sensitivity and socket-specific geometry, while inspection/alignment gates remain open.

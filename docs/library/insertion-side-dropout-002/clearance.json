@@ -1,0 +1,9 @@
+{
+  "scope": "Sampled CAD mesh AABBs against fixture/support; not swept or exact collision",
+  "frames_checked": 31,
+  "meshes_checked": 29,
+  "minimum_separation_lower_bound_m": 0.0007499995756912667,
+  "possible_overlap_pairs_first_time_s": {},
+  "all_sampled_bounds_separate": true,
+  "full_robot_clearance_qualified": false
+}

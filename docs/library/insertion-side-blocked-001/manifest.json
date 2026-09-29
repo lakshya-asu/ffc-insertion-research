@@ -1,0 +1,34 @@
+{
+  "run_id": "insertion-side-blocked-001",
+  "type": "recorded_state_playback",
+  "physics_disabled": true,
+  "cable_frames_checked": 79,
+  "final_state": "retracted",
+  "scope": "Prealigned flexible-cable channel pilot; no robot, camera control or Pi connector",
+  "source_hashes": {
+    "source.py": "3444ab328d6b047d64f353bf7f93b3ade918eecba0fc5c55fdf6bd7cb0c3559f",
+    "isaac_recording.py": "0324a0505e36505f5bd9b59512c3da927b83560e3219ee2b1815f88ad93924d0",
+    "cable_spec.py": "4c823c3d67a1417bcc611a91edf3841e04f16f3b96d9c42f8473e9f0377b95af",
+    "profile_cable.py": "9eea673c1e2f2f85247cbd082aa2a66301a8b79caebc129c28e99725bab89187",
+    "isaac_contacts.py": "7a8f8b48e50494f3e64d2284459c0179166836b12113d08d7bcf4c91dcf53364",
+    "insertion_skill.py": "b9eca61c9a5d394daf9ad8f1f0072ffb2ee9ea31428323033d3bf9c354233f2e",
+    "pinch_skill.py": "8cc6bee196b89b20150bcf9cec64d1362c654f6d306a6d545f51bce733eb3273",
+    "isaac_scene.py": "3451bc6d38d2886ac2063ca36c79989a639b023735d8b0dce202c99ae7784285"
+  },
+  "rerun_bundle": "rerun.tar.gz",
+  "isaac_gui_playback_verified": false,
+  "sha256": {
+    "score.json": "4370a4256893d85c526fcb2fb80e73885acda790604e774815284bd5120d3c81",
+    "sensor-trace.json": "4aaaf60705c7db4c3f93b31f643eb29b497413e4c7aa7eef09ec7c287711e1df",
+    "report.json": "ab64076537e261e3c8a3bf54239f9517e7291c152054752d1b4a89ec77fb6fd6",
+    "trace.png": "0810be96b00b560a8398d011b775899c813d84ce932b4550e3bb8ebc1c748602",
+    "clearance.json": "183fae997fe68a08467d23dce5892bd12e77eac2b6dbc624a1bc2d5cce7a1bac",
+    "rerun.tar.gz": "92d53be503e4ccaca5db666c9d414df706a0876a6dc463b6bc1c14d6104a9c93",
+    "poster.jpg": "ded6eb805a261db6cd6aacdeb516e052a0702beb9de29ac8cb17b38d5dd51c5b",
+    "replay.usdc": "e05083b40bd01457a47c2a2325b35cff48beaef40e6274c17cc8f9a942b1e0a7",
+    "replay.usdz": "9607c5299fb68c391ed79c4d40e58d99b0b593302d42e3b2486aa63d222397d9",
+    "video.mp4": "3ccbb7cc4ef19ef627ef67186a7627f4028d98cc3d1c87a1e8a28f8c1e99ea56",
+    "offline-cable-trace.json": "59af5b45104d6159d7159ea2d0ada2f1f9acf8df4b5a72c410d82e59e215d2e8"
+  },
+  "rerun_tested": false
+}

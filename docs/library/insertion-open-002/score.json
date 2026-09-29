@@ -1,0 +1,944 @@
+{
+  "scope": "Offline assumed-channel geometry; neither seating nor Pi connector qualification",
+  "case": "open",
+  "controller": {
+    "state": "travel_complete_unverified",
+    "target_m": 0.004,
+    "reason": "No seating evidence from travel alone"
+  },
+  "tip_entered_assumed_channel": true,
+  "completed_travel_without_entry": false,
+  "peak_10ms_fixture_load_n": 0.0,
+  "final_geometry": {
+    "time_s": 4.745375,
+    "tip_depth_range_m": [
+      0.0030669204017876907,
+      0.0030677382871962056
+    ],
+    "tip_cross_section_fits_channel": true
+  },
+  "geometry_trace": [
+    {
+      "time_s": 0.000125,
+      "tip_depth_range_m": [
+        -0.0009934457490441168,
+        -0.0009934457478824293
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.04175,
+      "tip_depth_range_m": [
+        -0.0009735390932421196,
+        -0.0009622320729502087
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.083375,
+      "tip_depth_range_m": [
+        -0.0009350731352272042,
+        -0.0009312371146525051
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.125,
+      "tip_depth_range_m": [
+        -0.0009376437501490622,
+        -0.00093185292196029
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.166625,
+      "tip_depth_range_m": [
+        -0.0009344393413337709,
+        -0.0009314740440445437
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.20825,
+      "tip_depth_range_m": [
+        -0.000936075247075726,
+        -0.0009315479440483514
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.249875,
+      "tip_depth_range_m": [
+        -0.0009354460477957491,
+        -0.0009315275499418515
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.2915,
+      "tip_depth_range_m": [
+        -0.0009354146034751987,
+        -0.0009314918582855225
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.333125,
+      "tip_depth_range_m": [
+        -0.0009342444489359751,
+        -0.0009315268004769662
+      ],
+      "tip_cross_section_fits_channel": false
+    },
+    {
+      "time_s": 0.37475,
+      "tip_depth_range_m": [
+        -0.0009331494158290317,
+        -0.0009320219870733249
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.416375,
+      "tip_depth_range_m": [
+        -0.000933133151837409,
+        -0.0009321082854240089
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.458,
+      "tip_depth_range_m": [
+        -0.0009330129251311329,
+        -0.0009322643835852397
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.499625,
+      "tip_depth_range_m": [
+        -0.0009330138945892307,
+        -0.0009322653943337517
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.54125,
+      "tip_depth_range_m": [
+        -0.0008955420838787614,
+        -0.0008955084619715744
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.582875,
+      "tip_depth_range_m": [
+        -0.0008516044720424168,
+        -0.0008509615890500584
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.6245,
+      "tip_depth_range_m": [
+        -0.0008124709818451835,
+        -0.000811280978007811
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.666125,
+      "tip_depth_range_m": [
+        -0.0007709951778343978,
+        -0.0007709489327760043
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.70775,
+      "tip_depth_range_m": [
+        -0.0007267302496947899,
+        -0.0007259901331419633
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.749375,
+      "tip_depth_range_m": [
+        -0.0006873394064638547,
+        -0.0006861249688633519
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.791,
+      "tip_depth_range_m": [
+        -0.000646411859941872,
+        -0.0006463132431672172
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.8326250000000001,
+      "tip_depth_range_m": [
+        -0.0006019553493130513,
+        -0.0006011945658833178
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.87425,
+      "tip_depth_range_m": [
+        -0.0005621666748842292,
+        -0.0005610223385713873
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.915875,
+      "tip_depth_range_m": [
+        -0.0005219193878821448,
+        -0.0005216014858884276
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.9575,
+      "tip_depth_range_m": [
+        -0.0004771528266630429,
+        -0.0004763324992093144
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 0.999125,
+      "tip_depth_range_m": [
+        -0.00043700068964825744,
+        -0.0004359839113001322
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.04075,
+      "tip_depth_range_m": [
+        -0.0003973702696139143,
+        -0.00039685523055837317
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.082375,
+      "tip_depth_range_m": [
+        -0.0003524249561815149,
+        -0.0003516060818423187
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.124,
+      "tip_depth_range_m": [
+        -0.0003117852708882929,
+        -0.0003109168067882428
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.1656250000000001,
+      "tip_depth_range_m": [
+        -0.00027269905188639096,
+        -0.00027203321718627664
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.20725,
+      "tip_depth_range_m": [
+        -0.0002277025592590078,
+        -0.0002268450051753179
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.248875,
+      "tip_depth_range_m": [
+        -0.000186615582426981,
+        -0.00018581808684811304
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.2905,
+      "tip_depth_range_m": [
+        -0.00014792279938465047,
+        -0.0001471450887500455
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.332125,
+      "tip_depth_range_m": [
+        -0.00010298984714307026,
+        -0.00010223006006333866
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.37375,
+      "tip_depth_range_m": [
+        -6.148086474314345e-05,
+        -6.086143082853989e-05
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.415375,
+      "tip_depth_range_m": [
+        -2.2987274610622574e-05,
+        -2.2168663912514085e-05
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.457,
+      "tip_depth_range_m": [
+        2.1711303221432984e-05,
+        2.2383470878514734e-05
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.498625,
+      "tip_depth_range_m": [
+        6.359004537162603e-05,
+        6.416900944869854e-05
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.5402500000000001,
+      "tip_depth_range_m": [
+        0.00010196028051562365,
+        0.00010287366062082417
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.5818750000000001,
+      "tip_depth_range_m": [
+        0.00014637987597167007,
+        0.0001469996502999429
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.6235,
+      "tip_depth_range_m": [
+        0.00018860549576496456,
+        0.0001891656486627839
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.665125,
+      "tip_depth_range_m": [
+        0.00022697908590211808,
+        0.00022787291025569726
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.70675,
+      "tip_depth_range_m": [
+        0.0002710574152360282,
+        0.00027144810676226145
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.748375,
+      "tip_depth_range_m": [
+        0.0003136096045043956,
+        0.00031413736601567494
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.79,
+      "tip_depth_range_m": [
+        0.0003520825771734025,
+        0.0003530712660361037
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.831625,
+      "tip_depth_range_m": [
+        0.0003956667908075939,
+        0.00039594796179710724
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.87325,
+      "tip_depth_range_m": [
+        0.0004386218584644438,
+        0.00043920123314532267
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.914875,
+      "tip_depth_range_m": [
+        0.00047714478448162775,
+        0.000478210263392023
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.9565000000000001,
+      "tip_depth_range_m": [
+        0.0005203187263239926,
+        0.000520467775182843
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 1.9981250000000002,
+      "tip_depth_range_m": [
+        0.0005635560719122548,
+        0.0005641395803880869
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.03975,
+      "tip_depth_range_m": [
+        0.0006022796865553831,
+        0.0006034077089311523
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.081375,
+      "tip_depth_range_m": [
+        0.000644899404440853,
+        0.0006449583736622411
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.123,
+      "tip_depth_range_m": [
+        0.0006885379213096502,
+        0.0006891957276696963
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.164625,
+      "tip_depth_range_m": [
+        0.0007273615182904023,
+        0.0007286196299833578
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.2062500000000003,
+      "tip_depth_range_m": [
+        0.0007694582195966518,
+        0.0007694974969616327
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.247875,
+      "tip_depth_range_m": [
+        0.000813430139287973,
+        0.0008140547717820656
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.2895,
+      "tip_depth_range_m": [
+        0.0008525125826352813,
+        0.0008537445121886706
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.331125,
+      "tip_depth_range_m": [
+        0.0008940115754383412,
+        0.0008940920227153643
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.37275,
+      "tip_depth_range_m": [
+        0.0009382416050879255,
+        0.0009389272779803436
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.414375,
+      "tip_depth_range_m": [
+        0.000977660997506376,
+        0.000978854468417954
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.456,
+      "tip_depth_range_m": [
+        0.0010185529842552847,
+        0.0010186345795471655
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.497625,
+      "tip_depth_range_m": [
+        0.0010630800376844182,
+        0.0010638523313438422
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.53925,
+      "tip_depth_range_m": [
+        0.0011028086731125495,
+        0.0011039692304363837
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.5808750000000003,
+      "tip_depth_range_m": [
+        0.0011430969678595648,
+        0.001143389820051635
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.6225,
+      "tip_depth_range_m": [
+        0.0011878298937376122,
+        0.0011886235830811769
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.664125,
+      "tip_depth_range_m": [
+        0.001228051160014093,
+        0.0012289940777164944
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.70575,
+      "tip_depth_range_m": [
+        0.0012676747729005594,
+        0.0012681272983866027
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.747375,
+      "tip_depth_range_m": [
+        0.0013126001284639519,
+        0.0013133884280452082
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.789,
+      "tip_depth_range_m": [
+        0.0013532261664962715,
+        0.0013540912947996326
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.830625,
+      "tip_depth_range_m": [
+        0.0013923008214328232,
+        0.0013929385390087268
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.87225,
+      "tip_depth_range_m": [
+        0.0014373768618845487,
+        0.001438206608962901
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.913875,
+      "tip_depth_range_m": [
+        0.0014784061681141093,
+        0.0014791325249268517
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.9555000000000002,
+      "tip_depth_range_m": [
+        0.001517111916642445,
+        0.0015178643848085503
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 2.997125,
+      "tip_depth_range_m": [
+        0.0015620127872815808,
+        0.0015627849185125024
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.0387500000000003,
+      "tip_depth_range_m": [
+        0.0016035070229539357,
+        0.0016041753650175797
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.080375,
+      "tip_depth_range_m": [
+        0.0016420032572994382,
+        0.001642811267510585
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.122,
+      "tip_depth_range_m": [
+        0.0016867062433158775,
+        0.0016873429559732841
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.163625,
+      "tip_depth_range_m": [
+        0.0017285655570090765,
+        0.0017291098901065765
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.20525,
+      "tip_depth_range_m": [
+        0.001766964474757167,
+        0.0017678316938724687
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.246875,
+      "tip_depth_range_m": [
+        0.0018113939220527897,
+        0.0018119309841302302
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.2885,
+      "tip_depth_range_m": [
+        0.0018536000052860793,
+        0.0018541457990930198
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.3301250000000002,
+      "tip_depth_range_m": [
+        0.0018920032897442865,
+        0.0018929046800839787
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.37175,
+      "tip_depth_range_m": [
+        0.0019360526443876888,
+        0.0019364266627499337
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.4133750000000003,
+      "tip_depth_range_m": [
+        0.0019786254425145184,
+        0.001979165336077027
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.455,
+      "tip_depth_range_m": [
+        0.0020171073827388065,
+        0.0020180651216234495
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.496625,
+      "tip_depth_range_m": [
+        0.002060683018507652,
+        0.002060986542824518
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.53825,
+      "tip_depth_range_m": [
+        0.002103605579759715,
+        0.0021041600930471437
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.579875,
+      "tip_depth_range_m": [
+        0.002142174922112045,
+        0.0021432327829214413
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.6215,
+      "tip_depth_range_m": [
+        0.002185317740543604,
+        0.002185437771479078
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.663125,
+      "tip_depth_range_m": [
+        0.002228592344414887,
+        0.002229163126377014
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.70475,
+      "tip_depth_range_m": [
+        0.0022672736312891787,
+        0.0022684051254738763
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.746375,
+      "tip_depth_range_m": [
+        0.0023098972730896472,
+        0.0023099725928145635
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.7880000000000003,
+      "tip_depth_range_m": [
+        0.002353494027888415,
+        0.0023540989665254805
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.829625,
+      "tip_depth_range_m": [
+        0.0023923495614569914,
+        0.002393528540697777
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.8712500000000003,
+      "tip_depth_range_m": [
+        0.002434474892080562,
+        0.0024344939596551915
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.912875,
+      "tip_depth_range_m": [
+        0.002478399516173853,
+        0.0024790794329580066
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.9545,
+      "tip_depth_range_m": [
+        0.0025175126250497762,
+        0.002518750151007624
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 3.996125,
+      "tip_depth_range_m": [
+        0.0025590166215261265,
+        0.002559121527484865
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.03775,
+      "tip_depth_range_m": [
+        0.002603256336566851,
+        0.0026039670042890084
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.079375,
+      "tip_depth_range_m": [
+        0.0026426331182218504,
+        0.002643824811479239
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.121,
+      "tip_depth_range_m": [
+        0.0026835609734230342,
+        0.002683710156925883
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.162625,
+      "tip_depth_range_m": [
+        0.0027280776447402098,
+        0.0027288612226353697
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.20425,
+      "tip_depth_range_m": [
+        0.0027678347488949116,
+        0.002768945462163056
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.245875,
+      "tip_depth_range_m": [
+        0.0028080958960946725,
+        0.002808408794444839
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.2875000000000005,
+      "tip_depth_range_m": [
+        0.0028528446083859065,
+        0.002853666818300592
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.329125,
+      "tip_depth_range_m": [
+        0.0028930242748559636,
+        0.002894055864352615
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.37075,
+      "tip_depth_range_m": [
+        0.002932658087715247,
+        0.0029331397667271292
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.412375,
+      "tip_depth_range_m": [
+        0.0029775784796597883,
+        0.002978409122088503
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.454,
+      "tip_depth_range_m": [
+        0.0030181499173437265,
+        0.003019090687042293
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.495625,
+      "tip_depth_range_m": [
+        0.003057224047300555,
+        0.0030579677134754046
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.53725,
+      "tip_depth_range_m": [
+        0.0030669238457223967,
+        0.003067735793431752
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.578875,
+      "tip_depth_range_m": [
+        0.0030669234502859926,
+        0.003067735723482119
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.6205,
+      "tip_depth_range_m": [
+        0.0030669235444897615,
+        0.0030677360933037056
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.6621250000000005,
+      "tip_depth_range_m": [
+        0.003066924791764354,
+        0.0030677348564269362
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.70375,
+      "tip_depth_range_m": [
+        0.00306692445996701,
+        0.0030677351847350166
+      ],
+      "tip_cross_section_fits_channel": true
+    },
+    {
+      "time_s": 4.745375,
+      "tip_depth_range_m": [
+        0.0030669204017876907,
+        0.0030677382871962056
+      ],
+      "tip_cross_section_fits_channel": true
+    }
+  ],
+  "seating_verified": false,
+  "actor_receives_this_report": false
+}

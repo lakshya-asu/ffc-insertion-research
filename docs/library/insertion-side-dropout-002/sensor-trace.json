@@ -1,0 +1,6310 @@
+[
+  {
+    "time_s": 0.000125,
+    "observation": {
+      "stamp_s": 0.000125,
+      "lower_travel_m": 0.004499562084674835,
+      "upper_travel_m": 0.004500437527894974,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0045,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.005125,
+    "observation": {
+      "stamp_s": 0.005125,
+      "lower_travel_m": 0.004469186067581177,
+      "upper_travel_m": 0.004530813544988632,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0045049999999999995,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.010125,
+    "observation": {
+      "stamp_s": 0.010125,
+      "lower_travel_m": 0.004494059830904007,
+      "upper_travel_m": 0.004522375762462616,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004509999999999999,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.015125,
+    "observation": {
+      "stamp_s": 0.015125,
+      "lower_travel_m": 0.0044899508357048035,
+      "upper_travel_m": 0.00453287735581398,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004514999999999999,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.020125,
+    "observation": {
+      "stamp_s": 0.020125,
+      "lower_travel_m": 0.004497487097978592,
+      "upper_travel_m": 0.004536982625722885,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004519999999999999,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.025125,
+    "observation": {
+      "stamp_s": 0.025125,
+      "lower_travel_m": 0.004503380507230759,
+      "upper_travel_m": 0.004540640860795975,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004524999999999999,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.030125,
+    "observation": {
+      "stamp_s": 0.030125,
+      "lower_travel_m": 0.0045061297714710236,
+      "upper_travel_m": 0.004547726362943649,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0045299999999999984,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.035125,
+    "observation": {
+      "stamp_s": 0.035125,
+      "lower_travel_m": 0.004513554275035858,
+      "upper_travel_m": 0.004550714045763016,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004534999999999998,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.040125,
+    "observation": {
+      "stamp_s": 0.040125,
+      "lower_travel_m": 0.004516512155532837,
+      "upper_travel_m": 0.004557304084300995,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004539999999999998,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.045125,
+    "observation": {
+      "stamp_s": 0.045125,
+      "lower_travel_m": 0.004522908478975296,
+      "upper_travel_m": 0.00456121563911438,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0001896726140509558,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004544999999999998,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.050125,
+    "observation": {
+      "stamp_s": 0.050125,
+      "lower_travel_m": 0.0045271217823028564,
+      "upper_travel_m": 0.004566866904497147,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.00019967045086749486,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004549999999999998,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.055125,
+    "observation": {
+      "stamp_s": 0.055125,
+      "lower_travel_m": 0.004532512277364731,
+      "upper_travel_m": 0.004571534693241119,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 9.997836816539073e-06,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004554999999999997,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.060125,
+    "observation": {
+      "stamp_s": 0.060125,
+      "lower_travel_m": 0.004537377506494522,
+      "upper_travel_m": 0.0045766681432724,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004559999999999997,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.065125,
+    "observation": {
+      "stamp_s": 0.065125,
+      "lower_travel_m": 0.0045423731207847595,
+      "upper_travel_m": 0.004581652581691742,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004564999999999997,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.070125,
+    "observation": {
+      "stamp_s": 0.070125,
+      "lower_travel_m": 0.004547439515590668,
+      "upper_travel_m": 0.004586610943078995,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004569999999999997,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.075125,
+    "observation": {
+      "stamp_s": 0.075125,
+      "lower_travel_m": 0.004552353173494339,
+      "upper_travel_m": 0.004591666162014008,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004574999999999997,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.080125,
+    "observation": {
+      "stamp_s": 0.080125,
+      "lower_travel_m": 0.004557430744171143,
+      "upper_travel_m": 0.0045966170728206635,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004579999999999996,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.085125,
+    "observation": {
+      "stamp_s": 0.085125,
+      "lower_travel_m": 0.004562385380268097,
+      "upper_travel_m": 0.0046016499400138855,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004584999999999996,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.090125,
+    "observation": {
+      "stamp_s": 0.090125,
+      "lower_travel_m": 0.004567407071590424,
+      "upper_travel_m": 0.004606638103723526,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004589999999999996,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.095125,
+    "observation": {
+      "stamp_s": 0.095125,
+      "lower_travel_m": 0.0045723989605903625,
+      "upper_travel_m": 0.004611644893884659,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004594999999999996,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.100125,
+    "observation": {
+      "stamp_s": 0.100125,
+      "lower_travel_m": 0.0045773945748806,
+      "upper_travel_m": 0.004616640508174896,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004599999999999996,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.105125,
+    "observation": {
+      "stamp_s": 0.105125,
+      "lower_travel_m": 0.004582405090332031,
+      "upper_travel_m": 0.004621639847755432,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004604999999999995,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.110125,
+    "observation": {
+      "stamp_s": 0.110125,
+      "lower_travel_m": 0.004587400704622269,
+      "upper_travel_m": 0.0046266429126262665,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004609999999999995,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.115125,
+    "observation": {
+      "stamp_s": 0.115125,
+      "lower_travel_m": 0.0045924000442028046,
+      "upper_travel_m": 0.004631638526916504,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004614999999999995,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.120125,
+    "observation": {
+      "stamp_s": 0.120125,
+      "lower_travel_m": 0.004597395658493042,
+      "upper_travel_m": 0.004636641591787338,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004619999999999995,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.12512500000000001,
+    "observation": {
+      "stamp_s": 0.12512500000000001,
+      "lower_travel_m": 0.004602402448654175,
+      "upper_travel_m": 0.004641640931367874,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004624999999999995,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.130125,
+    "observation": {
+      "stamp_s": 0.130125,
+      "lower_travel_m": 0.004607398062944412,
+      "upper_travel_m": 0.0046466439962387085,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004629999999999994,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.135125,
+    "observation": {
+      "stamp_s": 0.135125,
+      "lower_travel_m": 0.004612404853105545,
+      "upper_travel_m": 0.004651639610528946,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004634999999999994,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.140125,
+    "observation": {
+      "stamp_s": 0.140125,
+      "lower_travel_m": 0.0046174004673957825,
+      "upper_travel_m": 0.00465664267539978,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004639999999999994,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.145125,
+    "observation": {
+      "stamp_s": 0.145125,
+      "lower_travel_m": 0.004622399806976318,
+      "upper_travel_m": 0.004661642014980316,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004644999999999994,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.150125,
+    "observation": {
+      "stamp_s": 0.150125,
+      "lower_travel_m": 0.004627402871847153,
+      "upper_travel_m": 0.004666641354560852,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0046499999999999935,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.155125,
+    "observation": {
+      "stamp_s": 0.155125,
+      "lower_travel_m": 0.00463239848613739,
+      "upper_travel_m": 0.004671640694141388,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004654999999999993,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.160125,
+    "observation": {
+      "stamp_s": 0.160125,
+      "lower_travel_m": 0.0046374015510082245,
+      "upper_travel_m": 0.004676640033721924,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004659999999999993,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.165125,
+    "observation": {
+      "stamp_s": 0.165125,
+      "lower_travel_m": 0.00464240089058876,
+      "upper_travel_m": 0.00468163937330246,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004664999999999993,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.170125,
+    "observation": {
+      "stamp_s": 0.170125,
+      "lower_travel_m": 0.004647403955459595,
+      "upper_travel_m": 0.004686638712882996,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004669999999999993,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.175125,
+    "observation": {
+      "stamp_s": 0.175125,
+      "lower_travel_m": 0.004652403295040131,
+      "upper_travel_m": 0.00469164177775383,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0046749999999999925,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.180125,
+    "observation": {
+      "stamp_s": 0.180125,
+      "lower_travel_m": 0.004657398909330368,
+      "upper_travel_m": 0.004696633666753769,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004679999999999992,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.185125,
+    "observation": {
+      "stamp_s": 0.185125,
+      "lower_travel_m": 0.004662401974201202,
+      "upper_travel_m": 0.0047016441822052,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004684999999999992,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.19012500000000002,
+    "observation": {
+      "stamp_s": 0.19012500000000002,
+      "lower_travel_m": 0.004667401313781738,
+      "upper_travel_m": 0.004706639796495438,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004689999999999992,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.195125,
+    "observation": {
+      "stamp_s": 0.195125,
+      "lower_travel_m": 0.004672400653362274,
+      "upper_travel_m": 0.004711642861366272,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004694999999999992,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.200125,
+    "observation": {
+      "stamp_s": 0.200125,
+      "lower_travel_m": 0.0046774037182331085,
+      "upper_travel_m": 0.004716638475656509,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0046999999999999915,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.205125,
+    "observation": {
+      "stamp_s": 0.205125,
+      "lower_travel_m": 0.004682403057813644,
+      "upper_travel_m": 0.004721641540527344,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004704999999999991,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.210125,
+    "observation": {
+      "stamp_s": 0.210125,
+      "lower_travel_m": 0.00468740239739418,
+      "upper_travel_m": 0.00472664088010788,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004709999999999991,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.215125,
+    "observation": {
+      "stamp_s": 0.215125,
+      "lower_travel_m": 0.004692401736974716,
+      "upper_travel_m": 0.0047316402196884155,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004714999999999991,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.22012500000000002,
+    "observation": {
+      "stamp_s": 0.22012500000000002,
+      "lower_travel_m": 0.004697401076555252,
+      "upper_travel_m": 0.004736635833978653,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004719999999999991,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.225125,
+    "observation": {
+      "stamp_s": 0.225125,
+      "lower_travel_m": 0.004702400416135788,
+      "upper_travel_m": 0.004741642624139786,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0047249999999999905,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.230125,
+    "observation": {
+      "stamp_s": 0.230125,
+      "lower_travel_m": 0.004707399755716324,
+      "upper_travel_m": 0.004746638238430023,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.00472999999999999,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.235125,
+    "observation": {
+      "stamp_s": 0.235125,
+      "lower_travel_m": 0.004712395370006561,
+      "upper_travel_m": 0.004751645028591156,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.00473499999999999,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.240125,
+    "observation": {
+      "stamp_s": 0.240125,
+      "lower_travel_m": 0.004717402160167694,
+      "upper_travel_m": 0.004756640642881393,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.00473999999999999,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.245125,
+    "observation": {
+      "stamp_s": 0.245125,
+      "lower_travel_m": 0.00472240149974823,
+      "upper_travel_m": 0.004761639982461929,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.00474499999999999,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.250125,
+    "observation": {
+      "stamp_s": 0.250125,
+      "lower_travel_m": 0.004727400839328766,
+      "upper_travel_m": 0.004766643047332764,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0047499999999999895,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.255125,
+    "observation": {
+      "stamp_s": 0.255125,
+      "lower_travel_m": 0.004732400178909302,
+      "upper_travel_m": 0.0047716423869132996,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004754999999999989,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.260125,
+    "observation": {
+      "stamp_s": 0.260125,
+      "lower_travel_m": 0.004737399518489838,
+      "upper_travel_m": 0.0047766417264938354,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004759999999999989,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.265125,
+    "observation": {
+      "stamp_s": 0.265125,
+      "lower_travel_m": 0.004742395132780075,
+      "upper_travel_m": 0.004781641066074371,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004764999999999989,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.270125,
+    "observation": {
+      "stamp_s": 0.270125,
+      "lower_travel_m": 0.004747401922941208,
+      "upper_travel_m": 0.004786640405654907,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004769999999999989,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.275125,
+    "observation": {
+      "stamp_s": 0.275125,
+      "lower_travel_m": 0.004752401262521744,
+      "upper_travel_m": 0.004791639745235443,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0047749999999999885,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.280125,
+    "observation": {
+      "stamp_s": 0.280125,
+      "lower_travel_m": 0.00475740060210228,
+      "upper_travel_m": 0.0047966353595256805,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004779999999999988,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.285125,
+    "observation": {
+      "stamp_s": 0.285125,
+      "lower_travel_m": 0.0047623999416828156,
+      "upper_travel_m": 0.004801642149686813,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004784999999999988,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.290125,
+    "observation": {
+      "stamp_s": 0.290125,
+      "lower_travel_m": 0.0047673992812633514,
+      "upper_travel_m": 0.004806641489267349,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004789999999999988,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.295125,
+    "observation": {
+      "stamp_s": 0.295125,
+      "lower_travel_m": 0.004772394895553589,
+      "upper_travel_m": 0.004811640828847885,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004794999999999988,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.30012500000000003,
+    "observation": {
+      "stamp_s": 0.30012500000000003,
+      "lower_travel_m": 0.004777394235134125,
+      "upper_travel_m": 0.004816640168428421,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 3.4247948492010125e-05,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0047999999999999874,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.305125,
+    "observation": {
+      "stamp_s": 0.305125,
+      "lower_travel_m": 0.004782389849424362,
+      "upper_travel_m": 0.004821643233299255,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 6.607042705223653e-05,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004804999999999987,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.310125,
+    "observation": {
+      "stamp_s": 0.310125,
+      "lower_travel_m": 0.004787366837263107,
+      "upper_travel_m": 0.004826638847589493,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 9.030633718850096e-05,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004809999999999987,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.315125,
+    "observation": {
+      "stamp_s": 0.315125,
+      "lower_travel_m": 0.004792381078004837,
+      "upper_travel_m": 0.004831641912460327,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.000138571510523955,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004814999999999987,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.320125,
+    "observation": {
+      "stamp_s": 0.320125,
+      "lower_travel_m": 0.004797361791133881,
+      "upper_travel_m": 0.004836641252040863,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.000182377890305335,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004819999999999987,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.325125,
+    "observation": {
+      "stamp_s": 0.325125,
+      "lower_travel_m": 0.0048023611307144165,
+      "upper_travel_m": 0.004841640591621399,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0002269483244002434,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004824999999999986,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.330125,
+    "observation": {
+      "stamp_s": 0.330125,
+      "lower_travel_m": 0.0048073530197143555,
+      "upper_travel_m": 0.004846639931201935,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0002777405319104839,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004829999999999986,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.335125,
+    "observation": {
+      "stamp_s": 0.335125,
+      "lower_travel_m": 0.004812352359294891,
+      "upper_travel_m": 0.004851639270782471,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0003369996770291655,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004834999999999986,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.340125,
+    "observation": {
+      "stamp_s": 0.340125,
+      "lower_travel_m": 0.004817340523004532,
+      "upper_travel_m": 0.004856634885072708,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0003884093347934649,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004839999999999986,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.345125,
+    "observation": {
+      "stamp_s": 0.345125,
+      "lower_travel_m": 0.004822339862585068,
+      "upper_travel_m": 0.004861645400524139,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0004349673592264552,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004844999999999986,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.350125,
+    "observation": {
+      "stamp_s": 0.350125,
+      "lower_travel_m": 0.004827328026294708,
+      "upper_travel_m": 0.004866637289524078,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0004885436560522281,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004849999999999985,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.355125,
+    "observation": {
+      "stamp_s": 0.355125,
+      "lower_travel_m": 0.004832327365875244,
+      "upper_travel_m": 0.004871644079685211,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.000548093950086432,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004854999999999985,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.36012500000000003,
+    "observation": {
+      "stamp_s": 0.36012500000000003,
+      "lower_travel_m": 0.004837308079004288,
+      "upper_travel_m": 0.004876643419265747,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0006133237494517564,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004859999999999985,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.36512500000000003,
+    "observation": {
+      "stamp_s": 0.36512500000000003,
+      "lower_travel_m": 0.0048423223197460175,
+      "upper_travel_m": 0.0048816390335559845,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0006838824724063961,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004864999999999985,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.370125,
+    "observation": {
+      "stamp_s": 0.370125,
+      "lower_travel_m": 0.004847295582294464,
+      "upper_travel_m": 0.004886642098426819,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0007491264091787719,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004869999999999985,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.375125,
+    "observation": {
+      "stamp_s": 0.375125,
+      "lower_travel_m": 0.004852328449487686,
+      "upper_travel_m": 0.004891641438007355,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0007917130587890379,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004874999999999984,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.380125,
+    "observation": {
+      "stamp_s": 0.380125,
+      "lower_travel_m": 0.00485730916261673,
+      "upper_travel_m": 0.004896640777587891,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0008413463819735657,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004879999999999984,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.385125,
+    "observation": {
+      "stamp_s": 0.385125,
+      "lower_travel_m": 0.004862301051616669,
+      "upper_travel_m": 0.004901643842458725,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.000914269841260483,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004884999999999984,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.390125,
+    "observation": {
+      "stamp_s": 0.390125,
+      "lower_travel_m": 0.004867289215326309,
+      "upper_travel_m": 0.004906643182039261,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.000977124558361641,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004889999999999984,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.395125,
+    "observation": {
+      "stamp_s": 0.395125,
+      "lower_travel_m": 0.00487227737903595,
+      "upper_travel_m": 0.004911638796329498,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0010217547201967336,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0048949999999999836,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.400125,
+    "observation": {
+      "stamp_s": 0.400125,
+      "lower_travel_m": 0.0048772841691970825,
+      "upper_travel_m": 0.004916641861200333,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0010549838826885353,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004899999999999983,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.405125,
+    "observation": {
+      "stamp_s": 0.405125,
+      "lower_travel_m": 0.0048822760581970215,
+      "upper_travel_m": 0.00492163747549057,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0010808849495079985,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004904999999999983,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.410125,
+    "observation": {
+      "stamp_s": 0.410125,
+      "lower_travel_m": 0.004887275397777557,
+      "upper_travel_m": 0.004926644265651703,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0011038037796994248,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004909999999999983,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.415125,
+    "observation": {
+      "stamp_s": 0.415125,
+      "lower_travel_m": 0.004892274737358093,
+      "upper_travel_m": 0.00493163987994194,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0011237948115773774,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004914999999999983,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.420125,
+    "observation": {
+      "stamp_s": 0.420125,
+      "lower_travel_m": 0.004897270351648331,
+      "upper_travel_m": 0.004936642944812775,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.001141556040156303,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049199999999999825,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.42512500000000003,
+    "observation": {
+      "stamp_s": 0.42512500000000003,
+      "lower_travel_m": 0.004902273416519165,
+      "upper_travel_m": 0.004941638559103012,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.001157942978898862,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004924999999999982,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.43012500000000004,
+    "observation": {
+      "stamp_s": 0.43012500000000004,
+      "lower_travel_m": 0.0049072690308094025,
+      "upper_travel_m": 0.0049466341733932495,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0011730912229524822,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004929999999999982,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.435125,
+    "observation": {
+      "stamp_s": 0.435125,
+      "lower_travel_m": 0.0049097053706645966,
+      "upper_travel_m": 0.004949066787958145,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.005615742934371643,
+      "upper_force_n": 0.004464591252650868
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004934999999999982,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.440125,
+    "observation": {
+      "stamp_s": 0.440125,
+      "lower_travel_m": 0.0049103498458862305,
+      "upper_travel_m": 0.0049497224390506744,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.029967755615058267,
+      "upper_force_n": 0.02875284983954184
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.004939999999999982,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.445125,
+    "observation": {
+      "stamp_s": 0.445125,
+      "lower_travel_m": 0.0049103982746601105,
+      "upper_travel_m": 0.004949755966663361,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.07482955968753077,
+      "upper_force_n": 0.07354747053838233
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.450125,
+    "observation": {
+      "stamp_s": 0.450125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.12464579081632735,
+      "upper_force_n": 0.12339898780091614
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.455125,
+    "observation": {
+      "stamp_s": 0.455125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494731212562619,
+      "upper_force_n": 0.14822558558003127
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.460125,
+    "observation": {
+      "stamp_s": 0.460125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14944141782566883,
+      "upper_force_n": 0.14819005267114935
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.465125,
+    "observation": {
+      "stamp_s": 0.465125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14943660815953225,
+      "upper_force_n": 0.14818759890775685
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.470125,
+    "observation": {
+      "stamp_s": 0.470125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14942176903256055,
+      "upper_force_n": 0.14816879278474243
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.475125,
+    "observation": {
+      "stamp_s": 0.475125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494740723311147,
+      "upper_force_n": 0.14822266547946988
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.480125,
+    "observation": {
+      "stamp_s": 0.480125,
+      "lower_travel_m": 0.0049104392528533936,
+      "upper_travel_m": 0.004949789494276047,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14950327947891934,
+      "upper_force_n": 0.14825343858044845
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.48512500000000003,
+    "observation": {
+      "stamp_s": 0.48512500000000003,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1495047160847635,
+      "upper_force_n": 0.14825444915047611
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.49012500000000003,
+    "observation": {
+      "stamp_s": 0.49012500000000003,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14942590042777598,
+      "upper_force_n": 0.1481758024239227
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.49512500000000004,
+    "observation": {
+      "stamp_s": 0.49512500000000004,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14941666830590378,
+      "upper_force_n": 0.14816630266731917
+    },
+    "command": {
+      "state": "close",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": null,
+    "feed_command": null
+  },
+  {
+    "time_s": 0.500125,
+    "observation": {
+      "stamp_s": 0.500125,
+      "lower_travel_m": 0.0049104392528533936,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14946972685574605,
+      "upper_force_n": 0.14821770320050445
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.500125,
+      "travel_m": -0.0,
+      "lower_force_n": 0.14946972685574605,
+      "upper_force_n": 0.14821770320050445,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.505125,
+    "observation": {
+      "stamp_s": 0.505125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945052331031233,
+      "upper_force_n": 0.14819957105161094
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.505125,
+      "travel_m": -0.0,
+      "lower_force_n": 0.14945052331031233,
+      "upper_force_n": 0.14819957105161094,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 5.000000000000005e-06,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.510125,
+    "observation": {
+      "stamp_s": 0.510125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14946410803362706,
+      "upper_force_n": 0.14821400601534634
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.510125,
+      "travel_m": 4.905276000499725e-06,
+      "lower_force_n": 0.14946410803362706,
+      "upper_force_n": 0.14821400601534634,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 1.000000000000001e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.515125,
+    "observation": {
+      "stamp_s": 0.515125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14944872790347338,
+      "upper_force_n": 0.1481985215258558
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.515125,
+      "travel_m": 1.0010786354541779e-05,
+      "lower_force_n": 0.14944872790347338,
+      "upper_force_n": 0.1481985215258558,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 1.5000000000000014e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.5201250000000001,
+    "observation": {
+      "stamp_s": 0.5201250000000001,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494633717533442,
+      "upper_force_n": 0.14821276835479463
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.5201250000000001,
+      "travel_m": 1.502595841884613e-05,
+      "lower_force_n": 0.1494633717533442,
+      "upper_force_n": 0.14821276835479463,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 2.000000000000002e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.5251250000000001,
+    "observation": {
+      "stamp_s": 0.5251250000000001,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14948565725952806,
+      "upper_force_n": 0.14823448491825322
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.5251250000000001,
+      "travel_m": 2.0024366676807404e-05,
+      "lower_force_n": 0.14948565725952806,
+      "upper_force_n": 0.14823448491825322,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 2.5000000000000025e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.530125,
+    "observation": {
+      "stamp_s": 0.530125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494497382650705,
+      "upper_force_n": 0.14819733219209094
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.530125,
+      "travel_m": 2.5022774934768677e-05,
+      "lower_force_n": 0.1494497382650705,
+      "upper_force_n": 0.14819733219209094,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 2.999999999999992e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.535125,
+    "observation": {
+      "stamp_s": 0.535125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14943033925123503,
+      "upper_force_n": 0.14817708561054632
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.535125,
+      "travel_m": 3.0023977160453796e-05,
+      "lower_force_n": 0.14943033925123503,
+      "upper_force_n": 0.14817708561054632,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 3.499999999999992e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.540125,
+    "observation": {
+      "stamp_s": 0.540125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945940945486696,
+      "upper_force_n": 0.14820799211245964
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.540125,
+      "travel_m": 3.50242480635643e-05,
+      "lower_force_n": 0.14945940945486696,
+      "upper_force_n": 0.14820799211245964,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 3.999999999999993e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.545125,
+    "observation": {
+      "stamp_s": 0.545125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14946250890974583,
+      "upper_force_n": 0.14821205734632026
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.545125,
+      "travel_m": 4.002358764410019e-05,
+      "lower_force_n": 0.14946250890974583,
+      "upper_force_n": 0.14821205734632026,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 4.4999999999999935e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.550125,
+    "observation": {
+      "stamp_s": 0.550125,
+      "lower_travel_m": 0.0049104392528533936,
+      "upper_travel_m": 0.004949789494276047,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14949003863035878,
+      "upper_force_n": 0.14823877935081833
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.550125,
+      "travel_m": 4.502385854721069e-05,
+      "lower_force_n": 0.14949003863035878,
+      "upper_force_n": 0.14823877935081833,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 4.999999999999994e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.555125,
+    "observation": {
+      "stamp_s": 0.555125,
+      "lower_travel_m": 0.0049104243516922,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14947219478266832,
+      "upper_force_n": 0.14821996320728614
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.555125,
+      "travel_m": 5.00241294503212e-05,
+      "lower_force_n": 0.14947219478266832,
+      "upper_force_n": 0.14821996320728614,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 5.499999999999995e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.560125,
+    "observation": {
+      "stamp_s": 0.560125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494382665639234,
+      "upper_force_n": 0.1481858817627751
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.560125,
+      "travel_m": 5.50244003534317e-05,
+      "lower_force_n": 0.1494382665639234,
+      "upper_force_n": 0.1481858817627751,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 5.9999999999999954e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.565125,
+    "observation": {
+      "stamp_s": 0.565125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14942879142512916,
+      "upper_force_n": 0.14817673297717934
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.565125,
+      "travel_m": 6.002373993396759e-05,
+      "lower_force_n": 0.14942879142512916,
+      "upper_force_n": 0.14817673297717934,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 6.499999999999995e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.570125,
+    "observation": {
+      "stamp_s": 0.570125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494284802196549,
+      "upper_force_n": 0.14817634619028794
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.570125,
+      "travel_m": 6.50240108370781e-05,
+      "lower_force_n": 0.1494284802196549,
+      "upper_force_n": 0.14817634619028794,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 6.999999999999995e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.575125,
+    "observation": {
+      "stamp_s": 0.575125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14944678354430488,
+      "upper_force_n": 0.1481951069049586
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.575125,
+      "travel_m": 7.00242817401886e-05,
+      "lower_force_n": 0.14944678354430488,
+      "upper_force_n": 0.1481951069049586,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 7.499999999999995e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.580125,
+    "observation": {
+      "stamp_s": 0.580125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14950040665394063,
+      "upper_force_n": 0.1482496719197984
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.580125,
+      "travel_m": 7.502268999814987e-05,
+      "lower_force_n": 0.14950040665394063,
+      "upper_force_n": 0.1482496719197984,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 7.999999999999995e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.585125,
+    "observation": {
+      "stamp_s": 0.585125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14951001899026142,
+      "upper_force_n": 0.14825918990297776
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.585125,
+      "travel_m": 8.002389222383499e-05,
+      "lower_force_n": 0.14951001899026142,
+      "upper_force_n": 0.14825918990297776,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 8.499999999999995e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.590125,
+    "observation": {
+      "stamp_s": 0.590125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494213957402252,
+      "upper_force_n": 0.1481695062347526
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.590125,
+      "travel_m": 8.50241631269455e-05,
+      "lower_force_n": 0.1494213957402252,
+      "upper_force_n": 0.1481695062347526,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 8.999999999999995e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.595125,
+    "observation": {
+      "stamp_s": 0.595125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14944270986566038,
+      "upper_force_n": 0.14819011834410528
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.595125,
+      "travel_m": 9.0024434030056e-05,
+      "lower_force_n": 0.14944270986566038,
+      "upper_force_n": 0.14819011834410528,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 9.499999999999995e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.600125,
+    "observation": {
+      "stamp_s": 0.600125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945361247718386,
+      "upper_force_n": 0.14820138616964457
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.600125,
+      "travel_m": 9.502377361059189e-05,
+      "lower_force_n": 0.14945361247718386,
+      "upper_force_n": 0.14820138616964457,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 9.999999999999995e-05,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.605125,
+    "observation": {
+      "stamp_s": 0.605125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945580487146715,
+      "upper_force_n": 0.14820408355456002
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.605125,
+      "travel_m": 0.00010002404451370239,
+      "lower_force_n": 0.14945580487146715,
+      "upper_force_n": 0.14820408355456002,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00010499999999999995,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.610125,
+    "observation": {
+      "stamp_s": 0.610125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494994666777801,
+      "upper_force_n": 0.14824793966223876
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.610125,
+      "travel_m": 0.0001050243154168129,
+      "lower_force_n": 0.1494994666777801,
+      "upper_force_n": 0.14824793966223876,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00010999999999999995,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.615125,
+    "observation": {
+      "stamp_s": 0.615125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494436367961235,
+      "upper_force_n": 0.14819129053536045
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.615125,
+      "travel_m": 0.00011002365499734879,
+      "lower_force_n": 0.1494436367961235,
+      "upper_force_n": 0.14819129053536045,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00011499999999999995,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.620125,
+    "observation": {
+      "stamp_s": 0.620125,
+      "lower_travel_m": 0.0049104243516922,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14940170481043225,
+      "upper_force_n": 0.1481493187267096
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.620125,
+      "travel_m": 0.00011502392590045929,
+      "lower_force_n": 0.14940170481043225,
+      "upper_force_n": 0.1481493187267096,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00011999999999999995,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.625125,
+    "observation": {
+      "stamp_s": 0.625125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945236344034585,
+      "upper_force_n": 0.14820081091604423
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.625125,
+      "travel_m": 0.0001200241968035698,
+      "lower_force_n": 0.14945236344034585,
+      "upper_force_n": 0.14820081091604423,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00012499999999999995,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.630125,
+    "observation": {
+      "stamp_s": 0.630125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.149465371390993,
+      "upper_force_n": 0.1482134178043331
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.630125,
+      "travel_m": 0.0001250244677066803,
+      "lower_force_n": 0.149465371390993,
+      "upper_force_n": 0.1482134178043331,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00012999999999999996,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.635125,
+    "observation": {
+      "stamp_s": 0.635125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14946742448948952,
+      "upper_force_n": 0.1482162054371243
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.635125,
+      "travel_m": 0.0001300238072872162,
+      "lower_force_n": 0.14946742448948952,
+      "upper_force_n": 0.1482162054371243,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00013499999999999997,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.640125,
+    "observation": {
+      "stamp_s": 0.640125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14944905373806455,
+      "upper_force_n": 0.1481979684658134
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.640125,
+      "travel_m": 0.0001350250095129013,
+      "lower_force_n": 0.14944905373806455,
+      "upper_force_n": 0.1481979684658134,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00014,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.6451250000000001,
+    "observation": {
+      "stamp_s": 0.6451250000000001,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494484090867692,
+      "upper_force_n": 0.14819698322923228
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.6451250000000001,
+      "travel_m": 0.00014002341777086258,
+      "lower_force_n": 0.1494484090867692,
+      "upper_force_n": 0.14819698322923228,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.000145,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.6501250000000001,
+    "observation": {
+      "stamp_s": 0.6501250000000001,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14950305450417825,
+      "upper_force_n": 0.1482521096422001
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.6501250000000001,
+      "travel_m": 0.00014502368867397308,
+      "lower_force_n": 0.14950305450417825,
+      "upper_force_n": 0.1482521096422001,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00015000000000000001,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.6551250000000001,
+    "observation": {
+      "stamp_s": 0.6551250000000001,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14947639190590714,
+      "upper_force_n": 0.14822486166195023
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.6551250000000001,
+      "travel_m": 0.0001500239595770836,
+      "lower_force_n": 0.14947639190590714,
+      "upper_force_n": 0.14822486166195023,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00015500000000000003,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.660125,
+    "observation": {
+      "stamp_s": 0.660125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14944754093822815,
+      "upper_force_n": 0.14819462503956654
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.660125,
+      "travel_m": 0.0001550242304801941,
+      "lower_force_n": 0.14944754093822815,
+      "upper_force_n": 0.14819462503956654,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00015999999999999993,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.665125,
+    "observation": {
+      "stamp_s": 0.665125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494202527433968,
+      "upper_force_n": 0.14816721601844707
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.665125,
+      "travel_m": 0.00016002357006072998,
+      "lower_force_n": 0.1494202527433968,
+      "upper_force_n": 0.14816721601844707,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00016499999999999994,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.670125,
+    "observation": {
+      "stamp_s": 0.670125,
+      "lower_travel_m": 0.0049104392528533936,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14942176611482655,
+      "upper_force_n": 0.148171537907627
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.670125,
+      "travel_m": 0.00016502384096384048,
+      "lower_force_n": 0.14942176611482655,
+      "upper_force_n": 0.148171537907627,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00016999999999999996,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.675125,
+    "observation": {
+      "stamp_s": 0.675125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14946539375916693,
+      "upper_force_n": 0.14821446066863914
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.675125,
+      "travel_m": 0.0001700250431895256,
+      "lower_force_n": 0.14946539375916693,
+      "upper_force_n": 0.14821446066863914,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00017499999999999997,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.680125,
+    "observation": {
+      "stamp_s": 0.680125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1495102985785905,
+      "upper_force_n": 0.14825844923653847
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.680125,
+      "travel_m": 0.00017502345144748688,
+      "lower_force_n": 0.1495102985785905,
+      "upper_force_n": 0.14825844923653847,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00017999999999999998,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.685125,
+    "observation": {
+      "stamp_s": 0.685125,
+      "lower_travel_m": 0.0049104392528533936,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1495075294958989,
+      "upper_force_n": 0.1482561026067369
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.685125,
+      "travel_m": 0.00018002372235059738,
+      "lower_force_n": 0.1495075294958989,
+      "upper_force_n": 0.1482561026067369,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.000185,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.690125,
+    "observation": {
+      "stamp_s": 0.690125,
+      "lower_travel_m": 0.0049104243516922,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494238829935771,
+      "upper_force_n": 0.14817124892649908
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.690125,
+      "travel_m": 0.0001850249245762825,
+      "lower_force_n": 0.1494238829935771,
+      "upper_force_n": 0.14817124892649908,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00019,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.695125,
+    "observation": {
+      "stamp_s": 0.695125,
+      "lower_travel_m": 0.0049104392528533936,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14942164357593798,
+      "upper_force_n": 0.14817034263652268
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.695125,
+      "travel_m": 0.00019002333283424377,
+      "lower_force_n": 0.14942164357593798,
+      "upper_force_n": 0.14817034263652268,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00019500000000000002,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.700125,
+    "observation": {
+      "stamp_s": 0.700125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14946103459875212,
+      "upper_force_n": 0.14821028736533617
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.700125,
+      "travel_m": 0.00019502360373735428,
+      "lower_force_n": 0.14946103459875212,
+      "upper_force_n": 0.14821028736533617,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00020000000000000004,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.705125,
+    "observation": {
+      "stamp_s": 0.705125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14947402808089896,
+      "upper_force_n": 0.1482217506542765
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.705125,
+      "travel_m": 0.00020002387464046478,
+      "lower_force_n": 0.14947402808089896,
+      "upper_force_n": 0.1482217506542765,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00020500000000000005,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.710125,
+    "observation": {
+      "stamp_s": 0.710125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14947248930324125,
+      "upper_force_n": 0.14822059892729608
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.710125,
+      "travel_m": 0.00020502321422100067,
+      "lower_force_n": 0.14947248930324125,
+      "upper_force_n": 0.14822059892729608,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00021000000000000006,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.715125,
+    "observation": {
+      "stamp_s": 0.715125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494737449958301,
+      "upper_force_n": 0.1482214902291506
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.715125,
+      "travel_m": 0.0002100244164466858,
+      "lower_force_n": 0.1494737449958301,
+      "upper_force_n": 0.1482214902291506,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00021500000000000008,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.720125,
+    "observation": {
+      "stamp_s": 0.720125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14943254192428265,
+      "upper_force_n": 0.14817990959963329
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.720125,
+      "travel_m": 0.0002150246873497963,
+      "lower_force_n": 0.14943254192428265,
+      "upper_force_n": 0.14817990959963329,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0002200000000000001,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.725125,
+    "observation": {
+      "stamp_s": 0.725125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14943440793521953,
+      "upper_force_n": 0.1481835155708216
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.725125,
+      "travel_m": 0.00022002402693033218,
+      "lower_force_n": 0.14943440793521953,
+      "upper_force_n": 0.1481835155708216,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0002250000000000001,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.730125,
+    "observation": {
+      "stamp_s": 0.730125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14948179200177808,
+      "upper_force_n": 0.148231096506724
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.730125,
+      "travel_m": 0.0002250242978334427,
+      "lower_force_n": 0.14948179200177808,
+      "upper_force_n": 0.148231096506724,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00023000000000000012,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.735125,
+    "observation": {
+      "stamp_s": 0.735125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494607401425107,
+      "upper_force_n": 0.1482090033946287
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.735125,
+      "travel_m": 0.00023002363741397858,
+      "lower_force_n": 0.1494607401425107,
+      "upper_force_n": 0.1482090033946287,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00023500000000000013,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.740125,
+    "observation": {
+      "stamp_s": 0.740125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494344463675842,
+      "upper_force_n": 0.14818176138946587
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.740125,
+      "travel_m": 0.00023502390831708908,
+      "lower_force_n": 0.1494344463675842,
+      "upper_force_n": 0.14818176138946587,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00024000000000000014,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.745125,
+    "observation": {
+      "stamp_s": 0.745125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494603993555883,
+      "upper_force_n": 0.1482084946761169
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.745125,
+      "travel_m": 0.00024002417922019958,
+      "lower_force_n": 0.1494603993555883,
+      "upper_force_n": 0.1482084946761169,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00024500000000000015,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.750125,
+    "observation": {
+      "stamp_s": 0.750125,
+      "lower_travel_m": 0.0049104392528533936,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14949133961242506,
+      "upper_force_n": 0.14824101541766105
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.750125,
+      "travel_m": 0.0002450244501233101,
+      "lower_force_n": 0.14949133961242506,
+      "upper_force_n": 0.14824101541766105,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00025000000000000017,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.755125,
+    "observation": {
+      "stamp_s": 0.755125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945939279859383,
+      "upper_force_n": 0.14820711981147255
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.755125,
+      "travel_m": 0.000250023789703846,
+      "lower_force_n": 0.14945939279859383,
+      "upper_force_n": 0.14820711981147255,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0002550000000000002,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.760125,
+    "observation": {
+      "stamp_s": 0.760125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14943979211475217,
+      "upper_force_n": 0.14818702890622198
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.760125,
+      "travel_m": 0.0002550240606069565,
+      "lower_force_n": 0.14943979211475217,
+      "upper_force_n": 0.14818702890622198,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0002600000000000002,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.765125,
+    "observation": {
+      "stamp_s": 0.765125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494423597021915,
+      "upper_force_n": 0.148192034077344
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.765125,
+      "travel_m": 0.00026002340018749237,
+      "lower_force_n": 0.1494423597021915,
+      "upper_force_n": 0.148192034077344,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0002650000000000002,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.7701250000000001,
+    "observation": {
+      "stamp_s": 0.7701250000000001,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14943652844256158,
+      "upper_force_n": 0.14818470528024144
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.7701250000000001,
+      "travel_m": 0.0002650236710906029,
+      "lower_force_n": 0.14943652844256158,
+      "upper_force_n": 0.14818470528024144,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0002700000000000002,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.7751250000000001,
+    "observation": {
+      "stamp_s": 0.7751250000000001,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945632072760306,
+      "upper_force_n": 0.14820265121562365
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.7751250000000001,
+      "travel_m": 0.0002700239419937134,
+      "lower_force_n": 0.14945632072760306,
+      "upper_force_n": 0.14820265121562365,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00027500000000000023,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.7801250000000001,
+    "observation": {
+      "stamp_s": 0.7801250000000001,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14949545562845207,
+      "upper_force_n": 0.1482434070023691
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.7801250000000001,
+      "travel_m": 0.0002750242128968239,
+      "lower_force_n": 0.14949545562845207,
+      "upper_force_n": 0.1482434070023691,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00028000000000000025,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.785125,
+    "observation": {
+      "stamp_s": 0.785125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14947526192732644,
+      "upper_force_n": 0.1482256166348788
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.785125,
+      "travel_m": 0.00028002355247735977,
+      "lower_force_n": 0.14947526192732644,
+      "upper_force_n": 0.1482256166348788,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00028500000000000015,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.790125,
+    "observation": {
+      "stamp_s": 0.790125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494473143209247,
+      "upper_force_n": 0.14819659717626488
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.790125,
+      "travel_m": 0.0002850238233804703,
+      "lower_force_n": 0.1494473143209247,
+      "upper_force_n": 0.14819659717626488,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00029000000000000016,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.795125,
+    "observation": {
+      "stamp_s": 0.795125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14943707337754475,
+      "upper_force_n": 0.1481846183216456
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.795125,
+      "travel_m": 0.0002900240942835808,
+      "lower_force_n": 0.14943707337754475,
+      "upper_force_n": 0.1481846183216456,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0002950000000000002,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.800125,
+    "observation": {
+      "stamp_s": 0.800125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494441932863471,
+      "upper_force_n": 0.1481918285221267
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.800125,
+      "travel_m": 0.00029502343386411667,
+      "lower_force_n": 0.1494441932863471,
+      "upper_force_n": 0.1481918285221267,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003000000000000002,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.805125,
+    "observation": {
+      "stamp_s": 0.805125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14946625375586411,
+      "upper_force_n": 0.1482144414333591
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.805125,
+      "travel_m": 0.0003000246360898018,
+      "lower_force_n": 0.14946625375586411,
+      "upper_force_n": 0.1482144414333591,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003050000000000002,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.810125,
+    "observation": {
+      "stamp_s": 0.810125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14947711379553524,
+      "upper_force_n": 0.1482257627409394
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.810125,
+      "travel_m": 0.0003050239756703377,
+      "lower_force_n": 0.14947711379553524,
+      "upper_force_n": 0.1482257627409394,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003100000000000002,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.815125,
+    "observation": {
+      "stamp_s": 0.815125,
+      "lower_travel_m": 0.0049104392528533936,
+      "upper_travel_m": 0.004949789494276047,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494465432550554,
+      "upper_force_n": 0.1481946202270828
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.815125,
+      "travel_m": 0.0003100242465734482,
+      "lower_force_n": 0.1494465432550554,
+      "upper_force_n": 0.1481946202270828,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00031500000000000023,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.820125,
+    "observation": {
+      "stamp_s": 0.820125,
+      "lower_travel_m": 0.0049104243516922,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14942590873666262,
+      "upper_force_n": 0.1481743983692945
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.820125,
+      "travel_m": 0.00031502358615398407,
+      "lower_force_n": 0.14942590873666262,
+      "upper_force_n": 0.1481743983692945,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00032000000000000024,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.825125,
+    "observation": {
+      "stamp_s": 0.825125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14947388705056128,
+      "upper_force_n": 0.14822240007914594
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.825125,
+      "travel_m": 0.0003200238570570946,
+      "lower_force_n": 0.14947388705056128,
+      "upper_force_n": 0.14822240007914594,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00032500000000000026,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.830125,
+    "observation": {
+      "stamp_s": 0.830125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14946970817241764,
+      "upper_force_n": 0.1482175365714161
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.830125,
+      "travel_m": 0.0003250241279602051,
+      "lower_force_n": 0.14946970817241764,
+      "upper_force_n": 0.1482175365714161,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00033000000000000027,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.835125,
+    "observation": {
+      "stamp_s": 0.835125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14944909401961312,
+      "upper_force_n": 0.1481970124054493
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.835125,
+      "travel_m": 0.0003300243988633156,
+      "lower_force_n": 0.14944909401961312,
+      "upper_force_n": 0.1481970124054493,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003350000000000003,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.840125,
+    "observation": {
+      "stamp_s": 0.840125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945904051280273,
+      "upper_force_n": 0.14820848149879098
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.840125,
+      "travel_m": 0.00033502373844385147,
+      "lower_force_n": 0.14945904051280273,
+      "upper_force_n": 0.14820848149879098,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003400000000000003,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.845125,
+    "observation": {
+      "stamp_s": 0.845125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.149463640444101,
+      "upper_force_n": 0.14821243353577757
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.845125,
+      "travel_m": 0.000340024009346962,
+      "lower_force_n": 0.149463640444101,
+      "upper_force_n": 0.14821243353577757,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003450000000000003,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.850125,
+    "observation": {
+      "stamp_s": 0.850125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14947911256371785,
+      "upper_force_n": 0.14822585714464648
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.850125,
+      "travel_m": 0.0003450242802500725,
+      "lower_force_n": 0.14947911256371785,
+      "upper_force_n": 0.14822585714464648,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003500000000000003,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.855125,
+    "observation": {
+      "stamp_s": 0.855125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14948106890623786,
+      "upper_force_n": 0.14823007056865617
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.855125,
+      "travel_m": 0.000350024551153183,
+      "lower_force_n": 0.14948106890623786,
+      "upper_force_n": 0.14823007056865617,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00035500000000000033,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.860125,
+    "observation": {
+      "stamp_s": 0.860125,
+      "lower_travel_m": 0.004910442978143692,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945712425847973,
+      "upper_force_n": 0.14820632776111392
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.860125,
+      "travel_m": 0.00035502389073371887,
+      "lower_force_n": 0.14945712425847973,
+      "upper_force_n": 0.14820632776111392,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00036000000000000035,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.865125,
+    "observation": {
+      "stamp_s": 0.865125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14942888262393422,
+      "upper_force_n": 0.1481771194776998
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.865125,
+      "travel_m": 0.0003600241616368294,
+      "lower_force_n": 0.14942888262393422,
+      "upper_force_n": 0.1481771194776998,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00036500000000000036,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.870125,
+    "observation": {
+      "stamp_s": 0.870125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14941599637369385,
+      "upper_force_n": 0.14816379098103788
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.870125,
+      "travel_m": 0.00036502350121736526,
+      "lower_force_n": 0.14941599637369385,
+      "upper_force_n": 0.14816379098103788,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003700000000000004,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.875125,
+    "observation": {
+      "stamp_s": 0.875125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14949142504509216,
+      "upper_force_n": 0.14823979608833465
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.875125,
+      "travel_m": 0.00037002377212047577,
+      "lower_force_n": 0.14949142504509216,
+      "upper_force_n": 0.14823979608833465,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003750000000000004,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.880125,
+    "observation": {
+      "stamp_s": 0.880125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14951873105991734,
+      "upper_force_n": 0.14826802182113016
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.880125,
+      "travel_m": 0.0003750240430235863,
+      "lower_force_n": 0.14951873105991734,
+      "upper_force_n": 0.14826802182113016,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003800000000000004,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.885125,
+    "observation": {
+      "stamp_s": 0.885125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14943654788281488,
+      "upper_force_n": 0.14818442297179818
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.885125,
+      "travel_m": 0.0003800243139266968,
+      "lower_force_n": 0.14943654788281488,
+      "upper_force_n": 0.14818442297179818,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003850000000000004,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.890125,
+    "observation": {
+      "stamp_s": 0.890125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14943328574781123,
+      "upper_force_n": 0.148181123111391
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.890125,
+      "travel_m": 0.00038502365350723267,
+      "lower_force_n": 0.14943328574781123,
+      "upper_force_n": 0.148181123111391,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0003900000000000004,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.8951250000000001,
+    "observation": {
+      "stamp_s": 0.8951250000000001,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945223838541807,
+      "upper_force_n": 0.14820047886248183
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.8951250000000001,
+      "travel_m": 0.0003900248557329178,
+      "lower_force_n": 0.14945223838541807,
+      "upper_force_n": 0.14820047886248183,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00039500000000000044,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.9001250000000001,
+    "observation": {
+      "stamp_s": 0.9001250000000001,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14944127995483453,
+      "upper_force_n": 0.14818941599352758
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.9001250000000001,
+      "travel_m": 0.00039502326399087906,
+      "lower_force_n": 0.14944127995483453,
+      "upper_force_n": 0.14818941599352758,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00040000000000000045,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.9051250000000001,
+    "observation": {
+      "stamp_s": 0.9051250000000001,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14946972938871134,
+      "upper_force_n": 0.14821781894998104
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.9051250000000001,
+      "travel_m": 0.0004000244662165642,
+      "lower_force_n": 0.14946972938871134,
+      "upper_force_n": 0.14821781894998104,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00040500000000000047,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.9101250000000001,
+    "observation": {
+      "stamp_s": 0.9101250000000001,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14949525270287894,
+      "upper_force_n": 0.14824346635620206
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.9101250000000001,
+      "travel_m": 0.00040502380579710007,
+      "lower_force_n": 0.14949525270287894,
+      "upper_force_n": 0.14824346635620206,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0004100000000000005,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.915125,
+    "observation": {
+      "stamp_s": 0.915125,
+      "lower_travel_m": 0.0049104392528533936,
+      "upper_travel_m": 0.004949789494276047,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.149442037596485,
+      "upper_force_n": 0.14819100719918374
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.915125,
+      "travel_m": 0.00041002407670021057,
+      "lower_force_n": 0.149442037596485,
+      "upper_force_n": 0.14819100719918374,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0004150000000000004,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.920125,
+    "observation": {
+      "stamp_s": 0.920125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14943408709451783,
+      "upper_force_n": 0.14818239403062755
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.920125,
+      "travel_m": 0.0004150243476033211,
+      "lower_force_n": 0.14943408709451783,
+      "upper_force_n": 0.14818239403062755,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0004200000000000004,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.925125,
+    "observation": {
+      "stamp_s": 0.925125,
+      "lower_travel_m": 0.004910442978143692,
+      "upper_travel_m": 0.004949789494276047,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14943998106989467,
+      "upper_force_n": 0.14818827206866164
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.925125,
+      "travel_m": 0.00042002368718385696,
+      "lower_force_n": 0.14943998106989467,
+      "upper_force_n": 0.14818827206866164,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0004250000000000004,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.930125,
+    "observation": {
+      "stamp_s": 0.930125,
+      "lower_travel_m": 0.0049104243516922,
+      "upper_travel_m": 0.004949808120727539,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945908625510249,
+      "upper_force_n": 0.14820632488290517
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.930125,
+      "travel_m": 0.00042502395808696747,
+      "lower_force_n": 0.14945908625510249,
+      "upper_force_n": 0.14820632488290517,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0004300000000000004,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.935125,
+    "observation": {
+      "stamp_s": 0.935125,
+      "lower_travel_m": 0.004910442978143692,
+      "upper_travel_m": 0.004949789494276047,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14948823093162883,
+      "upper_force_n": 0.14823597863993285
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.935125,
+      "travel_m": 0.00043002422899007797,
+      "lower_force_n": 0.14948823093162883,
+      "upper_force_n": 0.14823597863993285,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00043500000000000044,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.940125,
+    "observation": {
+      "stamp_s": 0.940125,
+      "lower_travel_m": 0.0049104243516922,
+      "upper_travel_m": 0.004949808120727539,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494716310095848,
+      "upper_force_n": 0.14822183719349674
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.940125,
+      "travel_m": 0.00043502356857061386,
+      "lower_force_n": 0.1494716310095848,
+      "upper_force_n": 0.14822183719349674,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00044000000000000045,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.945125,
+    "observation": {
+      "stamp_s": 0.945125,
+      "lower_travel_m": 0.004910442978143692,
+      "upper_travel_m": 0.004949789494276047,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945585655414576,
+      "upper_force_n": 0.148204031178612
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.945125,
+      "travel_m": 0.00044002383947372437,
+      "lower_force_n": 0.14945585655414576,
+      "upper_force_n": 0.148204031178612,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00044500000000000046,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.950125,
+    "observation": {
+      "stamp_s": 0.950125,
+      "lower_travel_m": 0.0049104243516922,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494370568464571,
+      "upper_force_n": 0.14818465923933707
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.950125,
+      "travel_m": 0.0004450250416994095,
+      "lower_force_n": 0.1494370568464571,
+      "upper_force_n": 0.14818465923933707,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0004500000000000005,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.955125,
+    "observation": {
+      "stamp_s": 0.955125,
+      "lower_travel_m": 0.0049104467034339905,
+      "upper_travel_m": 0.004949785768985748,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14946722575384977,
+      "upper_force_n": 0.1482153569823513
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.955125,
+      "travel_m": 0.00045002344995737076,
+      "lower_force_n": 0.14946722575384977,
+      "upper_force_n": 0.1482153569823513,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0004550000000000005,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.960125,
+    "observation": {
+      "stamp_s": 0.960125,
+      "lower_travel_m": 0.0049104243516922,
+      "upper_travel_m": 0.004949808120727539,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494717183135278,
+      "upper_force_n": 0.14822045576874443
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.960125,
+      "travel_m": 0.00045502372086048126,
+      "lower_force_n": 0.1494717183135278,
+      "upper_force_n": 0.14822045576874443,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0004600000000000005,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.965125,
+    "observation": {
+      "stamp_s": 0.965125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14944451436412914,
+      "upper_force_n": 0.14819369719330014
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.965125,
+      "travel_m": 0.00046002399176359177,
+      "lower_force_n": 0.14944451436412914,
+      "upper_force_n": 0.14819369719330014,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0004650000000000005,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.970125,
+    "observation": {
+      "stamp_s": 0.970125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14945291034190689,
+      "upper_force_n": 0.1482012439508079
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.970125,
+      "travel_m": 0.00046502426266670227,
+      "lower_force_n": 0.14945291034190689,
+      "upper_force_n": 0.1482012439508079,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00047000000000000053,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.975125,
+    "observation": {
+      "stamp_s": 0.975125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494814552554806,
+      "upper_force_n": 0.14822980533422184
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.975125,
+      "travel_m": 0.0004700245335698128,
+      "lower_force_n": 0.1494814552554806,
+      "upper_force_n": 0.14822980533422184,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00047500000000000054,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.980125,
+    "observation": {
+      "stamp_s": 0.980125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494394190978363,
+      "upper_force_n": 0.14818729357877256
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.980125,
+      "travel_m": 0.00047502387315034866,
+      "lower_force_n": 0.1494394190978363,
+      "upper_force_n": 0.14818729357877256,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00048000000000000055,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.985125,
+    "observation": {
+      "stamp_s": 0.985125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.1494627781455618,
+      "upper_force_n": 0.14821153233277648
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.985125,
+      "travel_m": 0.00048002414405345917,
+      "lower_force_n": 0.1494627781455618,
+      "upper_force_n": 0.14821153233277648,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.00048500000000000057,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.990125,
+    "observation": {
+      "stamp_s": 0.990125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14946015771687735,
+      "upper_force_n": 0.1482083686066066
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.990125,
+      "travel_m": 0.00048502348363399506,
+      "lower_force_n": 0.14946015771687735,
+      "upper_force_n": 0.1482083686066066,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0004900000000000005,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 0.995125,
+    "observation": {
+      "stamp_s": 0.995125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14941120138707775,
+      "upper_force_n": 0.148158055972703
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 0.995125,
+      "travel_m": 0.0004900246858596802,
+      "lower_force_n": 0.14941120138707775,
+      "upper_force_n": 0.148158055972703,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0004950000000000005,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 1.000125,
+    "observation": {
+      "stamp_s": 1.000125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.14948365739736683,
+      "upper_force_n": 0.14823254457443427
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.000125,
+      "travel_m": 0.0004950240254402161,
+      "lower_force_n": 0.14948365739736683,
+      "upper_force_n": 0.14823254457443427,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "advance",
+      "target_m": 0.0005000000000000004,
+      "reason": ""
+    }
+  },
+  {
+    "time_s": 1.005125,
+    "observation": {
+      "stamp_s": 1.005125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.005125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.010125,
+    "observation": {
+      "stamp_s": 1.010125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.010125,
+      "travel_m": 0.0005001341924071312,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.015125,
+    "observation": {
+      "stamp_s": 1.015125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.015125,
+      "travel_m": 0.0005000317469239235,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.020125,
+    "observation": {
+      "stamp_s": 1.020125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.020125,
+      "travel_m": 0.000500023365020752,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.025125,
+    "observation": {
+      "stamp_s": 1.025125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.025125,
+      "travel_m": 0.000500023365020752,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.030125,
+    "observation": {
+      "stamp_s": 1.030125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.030125,
+      "travel_m": 0.000500023365020752,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.035125,
+    "observation": {
+      "stamp_s": 1.035125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.035125,
+      "travel_m": 0.000500023365020752,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.040125,
+    "observation": {
+      "stamp_s": 1.040125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.040125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.045125,
+    "observation": {
+      "stamp_s": 1.045125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.045125,
+      "travel_m": 0.0005000252276659012,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.050125,
+    "observation": {
+      "stamp_s": 1.050125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.050125,
+      "travel_m": 0.0005000252276659012,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.055125,
+    "observation": {
+      "stamp_s": 1.055125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.055125,
+      "travel_m": 0.0005000252276659012,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.060125,
+    "observation": {
+      "stamp_s": 1.060125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.060125,
+      "travel_m": 0.0005000252276659012,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.065125,
+    "observation": {
+      "stamp_s": 1.065125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.065125,
+      "travel_m": 0.0005000252276659012,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.070125,
+    "observation": {
+      "stamp_s": 1.070125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.070125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.075125,
+    "observation": {
+      "stamp_s": 1.075125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.075125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.080125,
+    "observation": {
+      "stamp_s": 1.080125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.080125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.0851250000000001,
+    "observation": {
+      "stamp_s": 1.0851250000000001,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.0851250000000001,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.090125,
+    "observation": {
+      "stamp_s": 1.090125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.090125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.0951250000000001,
+    "observation": {
+      "stamp_s": 1.0951250000000001,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.0951250000000001,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.100125,
+    "observation": {
+      "stamp_s": 1.100125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.100125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.105125,
+    "observation": {
+      "stamp_s": 1.105125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.105125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.110125,
+    "observation": {
+      "stamp_s": 1.110125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.110125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.115125,
+    "observation": {
+      "stamp_s": 1.115125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.115125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.120125,
+    "observation": {
+      "stamp_s": 1.120125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.120125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.125125,
+    "observation": {
+      "stamp_s": 1.125125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.125125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.130125,
+    "observation": {
+      "stamp_s": 1.130125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.130125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.135125,
+    "observation": {
+      "stamp_s": 1.135125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.135125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.140125,
+    "observation": {
+      "stamp_s": 1.140125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.140125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.145125,
+    "observation": {
+      "stamp_s": 1.145125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.145125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.150125,
+    "observation": {
+      "stamp_s": 1.150125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.150125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.155125,
+    "observation": {
+      "stamp_s": 1.155125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.155125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.160125,
+    "observation": {
+      "stamp_s": 1.160125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.160125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.165125,
+    "observation": {
+      "stamp_s": 1.165125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.165125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.170125,
+    "observation": {
+      "stamp_s": 1.170125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.170125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.175125,
+    "observation": {
+      "stamp_s": 1.175125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.175125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.180125,
+    "observation": {
+      "stamp_s": 1.180125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.180125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.185125,
+    "observation": {
+      "stamp_s": 1.185125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.185125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.190125,
+    "observation": {
+      "stamp_s": 1.190125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.190125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.195125,
+    "observation": {
+      "stamp_s": 1.195125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.195125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.200125,
+    "observation": {
+      "stamp_s": 1.200125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.200125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.205125,
+    "observation": {
+      "stamp_s": 1.205125,
+      "lower_travel_m": 0.0049104392528533936,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.205125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.2101250000000001,
+    "observation": {
+      "stamp_s": 1.2101250000000001,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.2101250000000001,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.215125,
+    "observation": {
+      "stamp_s": 1.215125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.215125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.2201250000000001,
+    "observation": {
+      "stamp_s": 1.2201250000000001,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.2201250000000001,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.225125,
+    "observation": {
+      "stamp_s": 1.225125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949800670146942,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.225125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.2301250000000001,
+    "observation": {
+      "stamp_s": 1.2301250000000001,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.2301250000000001,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.235125,
+    "observation": {
+      "stamp_s": 1.235125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.235125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.240125,
+    "observation": {
+      "stamp_s": 1.240125,
+      "lower_travel_m": 0.004910431802272797,
+      "upper_travel_m": 0.004949796944856644,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.240125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.245125,
+    "observation": {
+      "stamp_s": 1.245125,
+      "lower_travel_m": 0.0049104392528533936,
+      "upper_travel_m": 0.004949789494276047,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.245125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.250125,
+    "observation": {
+      "stamp_s": 1.250125,
+      "lower_travel_m": 0.004910428076982498,
+      "upper_travel_m": 0.004949804395437241,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.250125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  },
+  {
+    "time_s": 1.255125,
+    "observation": {
+      "stamp_s": 1.255125,
+      "lower_travel_m": 0.004910435527563095,
+      "upper_travel_m": 0.004949793219566345,
+      "lift_m": -2.980232241545089e-10,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0
+    },
+    "command": {
+      "state": "lift",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.0,
+      "reason": ""
+    },
+    "feed_observation": {
+      "stamp_s": 1.255125,
+      "travel_m": 0.0005000242963433266,
+      "lower_force_n": 0.0,
+      "upper_force_n": 0.0,
+      "fixture_force_n": 0.0
+    },
+    "feed_command": {
+      "state": "stopped",
+      "target_m": 0.0005000242963433266,
+      "reason": "grasp_feedback_lost_or_overload"
+    }
+  }
+]
