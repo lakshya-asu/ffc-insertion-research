@@ -10,7 +10,7 @@ from pathlib import Path
 import numpy as np
 from pxr import Gf, PhysxSchema, Usd, UsdGeom, UsdPhysics, UsdShade
 
-from ffc.isaac_scene import drive, joint, pose
+from ffc.isaac_scene import box, drive, joint, pose
 
 
 def mount(stage, project: Path, link_path, local, world_pose, closing=0.0045):
@@ -39,13 +39,34 @@ def mount(stage, project: Path, link_path, local, world_pose, closing=0.0045):
         for mesh in Usd.PrimRange(group):
             if not mesh.IsA(UsdGeom.Mesh) or mesh.GetName().endswith("_envelope"):
                 continue
+            if mesh.GetName().endswith("_pad"):
+                # Pads are rectangular CAD solids. Use the exact local bounds as
+                # analytic boxes, avoiding convex cooking of a submillimetre slab.
+                xf = UsdGeom.XformCache()
+                relative = np.asarray(xf.ComputeRelativeTransform(mesh, body)[0])
+                pts = np.asarray(UsdGeom.Mesh(mesh).GetPointsAttr().Get(), dtype=float)
+                pts = (np.c_[pts, np.ones(len(pts))] @ relative)[:, :3]
+                lo, hi = pts.min(axis=0), pts.max(axis=0)
+                if not np.all(np.isclose(pts, lo, atol=1e-7) | np.isclose(pts, hi, atol=1e-7)):
+                    raise ValueError("Pad CAD is not an axis-aligned rectangular solid")
+                UsdPhysics.CollisionAPI.Apply(mesh).CreateCollisionEnabledAttr(False)
+                collider = box(
+                    stage,
+                    path + "/PadCollision",
+                    ((lo + hi) / 2).tolist(),
+                    (hi - lo).tolist(),
+                    (0.1, 0.1, 0.1),
+                )
+                UsdGeom.Imageable(collider).MakeInvisible()
+                pad_paths.append(str(collider.GetPath()) + "/Shape")
+                continue
             UsdPhysics.CollisionAPI.Apply(mesh)
             UsdPhysics.MeshCollisionAPI.Apply(mesh).CreateApproximationAttr("convexHull")
+            # Default 1 mm hull thickness expands the 0.3 mm pads across the gap.
+            PhysxSchema.PhysxConvexHullCollisionAPI.Apply(mesh).CreateMinThicknessAttr(0.00001)
             contact = PhysxSchema.PhysxCollisionAPI.Apply(mesh)
             contact.CreateContactOffsetAttr(0.00002)
             contact.CreateRestOffsetAttr(0)
-            if mesh.GetName().endswith("_pad"):
-                pad_paths.append(str(mesh.GetPath()))
             if mesh.GetName().startswith("supplier_"):
                 supplier[name].append(mesh)
     # Actuator guide pieces interleave; convex hulls would fill their running
@@ -57,6 +78,27 @@ def mount(stage, project: Path, link_path, local, world_pose, closing=0.0045):
     bracket.GetReferences().AddReference(str(adapter))
     for mesh in Usd.PrimRange(bracket):
         if mesh.IsA(UsdGeom.Mesh):
+            if mesh.GetName().endswith("_pad"):
+                # Pads are rectangular CAD solids. Use the exact local bounds as
+                # analytic boxes, avoiding convex cooking of a submillimetre slab.
+                xf = UsdGeom.XformCache()
+                relative = np.asarray(xf.ComputeRelativeTransform(mesh, body)[0])
+                pts = np.asarray(UsdGeom.Mesh(mesh).GetPointsAttr().Get(), dtype=float)
+                pts = (np.c_[pts, np.ones(len(pts))] @ relative)[:, :3]
+                lo, hi = pts.min(axis=0), pts.max(axis=0)
+                if not np.all(np.isclose(pts, lo, atol=1e-7) | np.isclose(pts, hi, atol=1e-7)):
+                    raise ValueError("Pad CAD is not an axis-aligned rectangular solid")
+                UsdPhysics.CollisionAPI.Apply(mesh).CreateCollisionEnabledAttr(False)
+                collider = box(
+                    stage,
+                    path + "/PadCollision",
+                    ((lo + hi) / 2).tolist(),
+                    (hi - lo).tolist(),
+                    (0.1, 0.1, 0.1),
+                )
+                UsdGeom.Imageable(collider).MakeInvisible()
+                pad_paths.append(str(collider.GetPath()) + "/Shape")
+                continue
             UsdPhysics.CollisionAPI.Apply(mesh)
             UsdPhysics.MeshCollisionAPI.Apply(mesh).CreateApproximationAttr("convexHull")
     attach = joint(
@@ -88,7 +130,8 @@ def mount(stage, project: Path, link_path, local, world_pose, closing=0.0045):
         "cad_sha256": hashlib.sha256(cad.read_bytes()).hexdigest(),
         "adapter_sha256": hashlib.sha256(adapter.read_bytes()).hexdigest(),
         "tool_local_link7": np.asarray(local).tolist(),
+        "convex_hull_min_thickness_m": 0.00001,
         "mass_model": "Assumed 160 g fixed body/adapter and 20 g per jaw; approximate inertia",
-        "external_collision": "Per-component convex hulls; pads included, screw clearance envelopes excluded",
+        "external_collision": "Component hulls; exact analytic CAD pad boxes; screw envelopes excluded",
         "internal_collision_filter": "Connected guide bodies and lower/upper supplier guide pieces only",
     }

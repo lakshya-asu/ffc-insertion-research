@@ -1,0 +1,9 @@
+{
+  "sample_count": 115,
+  "identical_commands": true,
+  "max_joint_difference_rad": 0.0,
+  "max_pad_load_difference_n": 0.0,
+  "final_reason": "contact_lost",
+  "runtime": "existing lab image; isolated mounted source/asset bundle",
+  "fresh_runtime_build_tested": false
+}

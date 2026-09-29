@@ -4,15 +4,15 @@ Updated 29 September 2026. This is the maintained execution plan; experiment rec
 
 ## Where we are
 
-The local presented-cable pinch/lift bench passed its positive, empty and feedback-dropout cases (038). It uses ideal pad signals and measured tool displacement. The mounted FR3 trial is still under commissioning: run 001 lost contact; run 002 timed out without the required bilateral load; its contact audit exposed solid screw-clearance envelopes interfering with the jaws. Run 003 excludes these nonphysical envelopes, established contact, began lifting, then lost contact at about 0.14 mm. Neither is a successful robot pickup or insertion. Cameras currently inspect these motion trials; they do not control them.
+The local bench (038) and the separate FR3-mounted presented-cable lift (040) now pass their nominal positive, empty and feedback-dropout checks. The mounted positive run reaches 10.032 mm and holds contact; the empty case commands no lift; feedback loss latches a stop with 1.65 micrometres of measured additional tool travel over the observation window. These are three trials on one frozen configuration, not a reliability estimate or desk pickup. Cameras inspect motion but do not control it. Next is held-end camera inspection and a broader mechanics/stop test matrix.
 
 ## Immediate work
 
 | Work | Status | Exit evidence |
 |---|---|---|
-| Archive rendered and native recorded-motion runs | Bench archives built; start/end rendered in Isaac | Portable USD timeline, source trace comparisons, video, hashes and launch instructions |
-| Sensor-only episode interface | Implemented; four boundary/timing tests pass | Strict actor field allowlist, timestamps, finite values, explicit missing cameras; offline labels separate |
-| Mounted grasp and 10 mm lift | Commissioning | Positive retention, empty rejection, feedback-loss stop; full tool/robot collision audit |
+| Archive rendered and native recorded-motion runs | Bench and mounted archives built; positive replays rendered in Isaac | Portable USD timeline, source trace comparisons, video, hashes and launch instructions |
+| Sensor-only episode interface | Implemented; five boundary/timing/channel tests pass | Strict actor field allowlist, timestamps, finite values, explicit missing cameras; offline labels separate |
+| Mounted grasp and 10 mm lift | Nominal three-case commissioning passed | Broaden placement, curvature, timestep and sensor-failure tests; complete collision/clearance review |
 | Held-end inspection | Next | Independent image evidence of leading edge and slip; uncertainty triggers abstention |
 | Sensor-guided free-space alignment | First learned motion target | Held-out metric position/angle errors against offline reference, bounded corrections |
 | Contact insertion | Gated | Stable contact mechanics, collision/buckling/slip tests, stop/retract and seating evidence |
@@ -51,6 +51,12 @@ The initial bench export deliberately has no camera observations and no action-a
 
 Every accepted run should retain video, native timeline replay, raw sensor/action logs, offline labels, asset/source hashes, environment identity, command and outcome. Retain failed runs. Replay is sampled state playback; rerun means executing physics again. Do not promise bitwise equality across GPU/driver versions.
 
-Current capture gaps to close: native FR3 replay export, complete initial-stage capture even on failure, action application timestamps, calibrated raw camera streams and portable physics rerun bundles. Historical bending traces contain tip poses only, so full-body motion cannot be reconstructed honestly from those traces.
+Native FR3 replay export is now implemented, using recorded robot encoders and offline tool/cable poses; trial 005 reopens with numerical checks passing. Initial and last scenes are captured on in-trial failure. Remaining capture gaps: action application timestamps, calibrated raw camera streams and fresh-build/positive rerun checks. Frozen physics bundles are implemented; an isolated rerun of failed trial 005 exactly matched recorded commands, angles and loads on the installed runtime. Historical bending traces contain tip poses only, so full-body motion cannot be reconstructed honestly from those traces.
 
-Latest evidence: [039 — mounted lift commissioning and replay library](../../experiments/039-mounted-flexible-lift-and-library.md). Bench replay export and Isaac start/end rendering passed; 172 CPU tests pass. Next motion work is diagnosing grip loss under the mounted load, without reducing acceptance thresholds to obtain a pass.
+Latest evidence: [039 — mounted lift commissioning and replay library](../../experiments/039-mounted-flexible-lift-and-library.md). Bench replay export and Isaac start/end rendering passed; 172 CPU tests pass. This earlier failed milestone is superseded by the nominal mounted-lift result in 040.
+
+## Active follow-up: thin pads and mounted replay
+
+[040 methods](../../experiments/040-thin-pad-collision-and-mounted-replay.md): body-pose audit rules out a gross initial tool-pose error. Lowering the convex cooking thickness floor did not change the failure. Analytic pad boxes derived from CAD remove premature open-jaw contact; run 006 held contact but timed out at 9.58 mm. Disabling sleeping in 007 did not change the plateau. Run 008 adds bounded encoder-error integration while retaining vendor joint friction and passes the lift/hold check. Mounted replay and sensor/action export are implemented. The failed-run bundle passed an isolated rerun check. The positive bundle is packaged; its fresh physics repeat remains pending.
+
+Frozen commissioning suite: `fr3-flex-008`, `fr3-flex-empty-002`, `fr3-flex-dropout-002`; [machine-readable checks](../../docs/library/mounted-suite.json). The next deliverable is a calibrated held-end RGB stream and leading-edge/visibility measurements, with uncertainty causing abstention. Preserve the pad/encoder guard and keep Pi insertion disabled.

@@ -23,7 +23,11 @@ def main():
     p.add_argument("--case", choices=["cable", "empty", "load_dropout"], default="cable")
     p.add_argument("--dt", type=float, choices=[0.000125, 0.0000625], default=0.000125)
     p.add_argument("--live-feed", type=Path)
+    p.add_argument("--duration", type=float, default=5.0)
+    p.add_argument("--joint-integral-gain", type=float, default=0.0)
     a = p.parse_args()
+    if not 0 <= a.joint_integral_gain <= 5:
+        p.error("joint-integral-gain must be in [0, 5] per second")
     a.output.mkdir(parents=True, exist_ok=False)
     sources = [
         Path(__file__),
@@ -31,6 +35,8 @@ def main():
         ROOT / "src/ffc/profile_cable.py",
         ROOT / "src/ffc/pinch_skill.py",
         ROOT / "src/ffc/isaac_kinematics.py",
+        ROOT / "src/ffc/joint_trajectory.py",
+        ROOT / "src/ffc/macro_contract.py",
         ROOT / "src/ffc/isaac_scene.py",
         ROOT / "src/ffc/isaac_contacts.py",
         ROOT / "src/ffc/cable_spec.py",
@@ -68,6 +74,7 @@ def main():
     from ffc.isaac_kinematics import from_stage
     from ffc.isaac_recording import Recorder
     from ffc.isaac_scene import box, camera, drive, pose
+    from ffc.joint_trajectory import bounded_integral
     from ffc.pinch_skill import PinchObservation, PinchSkill
     from ffc.profile_cable import create_profile_cable
 
@@ -81,6 +88,8 @@ def main():
     robot.GetReferences().AddReference(str(ROOT / "third_party/franka_isaac/fr3v2_1/fr3v2_1.usda"))
     api = PhysxSchema.PhysxArticulationAPI.Apply(stage.GetPrimAtPath("/World/FR3/Geometry/base"))
     api.CreateEnabledSelfCollisionsAttr(True)
+    # Millimetre motion must not stop when mass-normalized kinetic energy is low.
+    api.CreateSleepThresholdAttr(0.0)
     api.CreateSolverPositionIterationCountAttr(255)
     api.CreateSolverVelocityIterationCountAttr(8)
     plan = json.loads((a.output / "fr3-flexible-lift-pose.json").read_text())
@@ -207,6 +216,36 @@ def main():
     cable_handles = [SingleRigidPrim(prim_path=p, name=f"offline{i}") for i, p in enumerate(cable_paths)]
     for handle in cable_handles:
         handle.initialize()
+    tool_handles = {
+        name: SingleRigidPrim(prim_path="/World/Tool/" + name, name="audit_" + name)
+        for name in ["fixed", "lower", "upper"]
+    }
+    for handle in tool_handles.values():
+        handle.initialize()
+
+    def audit_bodies():
+        result = {}
+        for name, handle in tool_handles.items():
+            pos, quat = handle.get_world_pose()
+            result[name] = {"position_m": pos.tolist(), "quaternion_wxyz": quat.tolist()}
+        return result
+
+    (a.output / "initial-body-audit.json").write_text(
+        json.dumps(
+            {
+                "tool": audit_bodies(),
+                "expected_tool_matrix": tool_pose.tolist(),
+                "cable": [
+                    {
+                        "position_m": h.get_world_pose()[0].tolist(),
+                        "quaternion_wxyz": h.get_world_pose()[1].tolist(),
+                    }
+                    for h in cable_handles
+                ],
+            },
+            indent=2,
+        )
+    )
     recorder = Recorder(
         stage,
         a.output / "lift.mp4",
@@ -229,13 +268,14 @@ def main():
     world.add_physics_callback("loaded_clock", tick)
     targets = initial.copy()
     previous_q_ref = home.copy()
+    integral = np.zeros(7)
     fault_at = fault_q = None
     max_speed = max_tracking = 0.0
     min_clearance = preflight
     finished = False
     stage.GetRootLayer().Export(str(a.output / "initial-scene.usda"))
     try:
-        for step in range(round(5 / a.dt)):
+        for step in range(round(a.duration / a.dt)):
             now = step * a.dt
             if step % control_stride == 0:
                 q = np.array(arm.get_joint_positions())
@@ -257,10 +297,27 @@ def main():
                 )
                 command = controller.update(now, obs)
                 q_ref = np.array([np.interp(command.lift_m, lift_grid, path[:, j]) for j in range(7)])
+                path_ref = q_ref.copy()
+                if command.state == "fault":
+                    if fault_at is None:
+                        fault_at, fault_q = now, q[indices].copy()
+                    q_ref = fault_q.copy()
+                    integral[:] = 0
+                else:
+                    integral = bounded_integral(
+                        q_ref,
+                        q[indices],
+                        integral,
+                        chain.lower,
+                        chain.upper,
+                        0.003,
+                        a.joint_integral_gain * 0.005,
+                    )
+                    q_ref = np.clip(q_ref + integral, chain.lower, chain.upper)
                 targets[indices] = q_ref
                 targets[jaw_indices] = [command.closing_travel_m, -command.closing_travel_m]
                 velocity = np.zeros(9)
-                velocity[indices] = (q_ref - previous_q_ref) / 0.005
+                velocity[indices] = 0 if command.state == "fault" else (q_ref - previous_q_ref) / 0.005
                 previous_q_ref = q_ref.copy()
                 # Robot-only gravity model: depends on its own joint configuration
                 # and declared link/payload masses, never cable pose/contact truth.
@@ -282,11 +339,11 @@ def main():
                         "command": asdict(command),
                         "arm_q_rad": q[indices].tolist(),
                         "arm_reference_rad": q_ref.tolist(),
+                        "arm_path_reference_rad": path_ref.tolist(),
+                        "joint_integral_rad": integral.tolist(),
                         "gravity_feedforward_nm": gravity[indices].tolist(),
                     }
                 )
-                if command.state == "fault" and fault_at is None:
-                    fault_at, fault_q = now, q[indices].copy()
                 finished = command.state == "contact_hold_complete" or (
                     fault_at is not None and now - fault_at >= 0.25
                 )
@@ -318,6 +375,7 @@ def main():
                         "time_s": (step + 1) * a.dt,
                         "positions_m": [p.tolist() for p, _ in poses],
                         "quaternions_wxyz": [r.tolist() for _, r in poses],
+                        "tool_bodies": audit_bodies(),
                     }
                 )
                 if a.live_feed:
@@ -356,6 +414,10 @@ def main():
             "tool": tool_report,
             "cable_spec": provenance_record(spec),
             "dt_s": a.dt,
+            "robot_sleep_threshold": 0.0,
+            "joint_integral_gain_per_s": a.joint_integral_gain,
+            "joint_integral_limit_rad": 0.003,
+            "fault_stop": "Latch current measured arm angles, zero velocity and integral; hold jaw reference",
             "controller_period_s": 0.005,
             "grasp_material_coordinate_m": 0.012,
             "cable_pose_control": False,

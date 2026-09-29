@@ -1,6 +1,6 @@
 # Seven skills, with evidence and remaining work
 
-Updated 28 September 2026. The immediate objective is a complete **simulation proof of concept**. Real-camera and physical robot tests are deferred. No current result qualifies deployment on a real robot.
+Updated 29 September 2026. The immediate objective is a complete **simulation proof of concept**. Real-camera and physical robot tests are deferred. No current result qualifies deployment on a real robot.
 
 The system has useful components and several successful subsystem experiments. It does not yet perform the seven skills end to end with the new tool and Raspberry Pi connector.
 
@@ -27,6 +27,8 @@ The offline footprint review (034) now excludes the exposed-contact strip on bot
 Side-entry handoff study (035) adds fixture CAD, a rotated-pad check and conservative swept desk/fixture clearances. Four unanchored ribbon-settling runs expose large timestep sensitivity: nominal tip drop changes from 4.689 to 2.508 mm when the timestep halves. The new cable dynamics are therefore unqualified. Isolate and resolve numerical bending/contact error before treating a pickup run as credible material behavior.
 
 Experiment [038](experiments/038-flexible-cable-motion.md) adds an exploratory full-profile flexible-cable contact pilot: a presented end rises 9.973 mm while the tool rises 9.992 mm, using local pad/encoder feedback. Empty and signal-dropout trials refuse or stop the lift. The tail remains supported; contact convergence, whole-tool clearance, camera verification, FR3 mounting and ROS integration remain open. This is partial step-2 evidence, not a completed pickup skill.
+
+Experiment [040](experiments/040-thin-pad-collision-and-mounted-replay.md) adds the compact tool on the FR3 with a full presented cable. The nominal positive run reaches 10.032 mm and holds contact. Matched empty and feedback-loss trials pass their controller checks; the latter shows 1.65 micrometres of additional measured lift after detection. An offline material-point audit supports retention in this simulated run. This is not desk pickup, camera verification or material/damage qualification. [Videos, native replays and source bundles](https://lakshya-asu.github.io/ffc-insertion-research/library/#mounted).
 
 ## 3. Inspect and orient the held end — design remains
 
@@ -81,3 +83,5 @@ Experiment [037](experiments/037-assumed-world-fit.md) extends those checks to 3
 The next complete skill milestone is sensor-verified flexible-cable pickup in simulation. Start from the contact-exclusion review (034), compare integrated suction-to-pinch motion with the passive presentation fixture, and qualify swept clearance and cable deformation. Then connect vacuum/pinch observations and dynamic compact-tool motion to the camera/ROS pipeline. Re-check held-end visibility and approach clearance before enabling the Pi approach. The earlier mounted empty-tool motion (030) and local pinch bench (033) remain separate evidence, not an integrated pickup result.
 
 Training comes after those observation/action interfaces and resettable task mechanics are credible. Begin with scripted bounded controllers and demonstrations; compare imitation/vision-action learning and reinforcement learning using identical observations, actuator limits and independent task scoring. Simulator truth can provide offline labels and evaluation, not hidden task-state input to the deployed policy.
+
+Immediate next milestone: integrate a calibrated held-end inspection view, estimate the leading edge and detect ambiguity/slip from images. Broaden the mounted mechanics and stop tests alongside it. The maintained [learning and simulation plan](research/learning/PLAN.md) sets the sequence: inspection → sensor-guided alignment → demonstrations → contact RL after its mechanics gates.

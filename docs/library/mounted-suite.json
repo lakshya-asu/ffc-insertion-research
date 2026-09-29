@@ -1,0 +1,27 @@
+{
+  "run_ids": [
+    "fr3-flex-008",
+    "fr3-flex-empty-002",
+    "fr3-flex-dropout-002"
+  ],
+  "checks": {
+    "same_frozen_sources": true,
+    "same_timestep": true,
+    "same_servo_gain": true,
+    "same_tool_assets": true,
+    "no_cable_pose_control_or_attachment": true,
+    "no_reported_unintended_contacts": true,
+    "positive_contact_hold_complete": true,
+    "positive_lift_within_existing_0p1mm_tolerance": true,
+    "empty_rejected": true,
+    "empty_never_commanded_lift": true,
+    "dropout_contact_loss_detected": true,
+    "dropout_arm_target_latched_to_fault_measurement": true,
+    "dropout_integral_cleared": true
+  },
+  "controller_checks_passed": true,
+  "positive_measured_lift_m": 0.010031767814284387,
+  "dropout_measured_lift_drift_m": 1.6543624171694304e-06,
+  "dropout_joint_drift_rad": 3.3080577850341797e-06,
+  "scope": "One presented-cable commissioning configuration, three trials; no reliability rate. Independent material-point review is separate. No vision, hardware, damage or insertion validation."
+}

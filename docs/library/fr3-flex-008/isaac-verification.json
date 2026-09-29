@@ -1,0 +1,17 @@
+{
+  "stage": "/workspace/docs/library/fr3-flex-008/replay.usdz",
+  "camera": "/World/Cameras/Action",
+  "mode": "Isaac paused timeline start/end render; not physics rerun",
+  "frames": [
+    {
+      "label": "start",
+      "frame": 0.0,
+      "pixel_std": 47.89219682237067
+    },
+    {
+      "label": "end",
+      "frame": 72.123,
+      "pixel_std": 43.76610285868414
+    }
+  ]
+}

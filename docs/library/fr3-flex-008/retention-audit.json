@@ -1,0 +1,36 @@
+{
+  "run_id": "fr3-flex-008",
+  "final_command": {
+    "state": "contact_hold_complete",
+    "closing_travel_m": 0.0049449999999999815,
+    "lift_m": 0.01,
+    "reason": "Bilateral load held; independent camera retention evidence still required"
+  },
+  "measured_tool_lift_m": 0.010031767814284387,
+  "material_point_definition": "Midpoint of section centers at 11 and 13 mm from mini end",
+  "sample_origin": "First captured frame after lift qualification, when available",
+  "material_point_local_start_m": [
+    -1.5239137382915716e-06,
+    0.010498850614145763,
+    -1.972585101040172e-05
+  ],
+  "material_point_local_end_m": [
+    -1.4874116882323869e-06,
+    0.010498853259475256,
+    -1.967368144548468e-05
+  ],
+  "local_displacement_m": [
+    3.650205005918475e-08,
+    2.6453294936501504e-09,
+    5.216956491704131e-08
+  ],
+  "max_local_displacement_norm_m": 4.587002366591811e-07,
+  "material_point_vertical_displacement_m": 0.01003161072731018,
+  "post_fault_lift_drift_m": null,
+  "source_sha256": {
+    "report.json": "ad19353f99d252a72873c23318a152465cda864fc3b0957b76895194ccc0d14f",
+    "offline-cable-trace.json": "4eb6deeb9fb7170eaa74393f9e9cf59e8daf9e9b7accd85d4948cefb5951969a",
+    "sensor-trace.json": "be7bd89ca7c524b86b704f5b263eaa5cd861e9300b493c956d975d6765dc53ce"
+  },
+  "scope": "Offline simulation geometry audit. Relative motion can include bending, not only slip. No visual retention, material damage or insertion claim."
+}

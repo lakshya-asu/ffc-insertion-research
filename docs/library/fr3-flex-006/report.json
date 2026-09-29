@@ -1,0 +1,135 @@
+{
+  "case": "cable",
+  "final": {
+    "time_s": 4.76,
+    "observation": {
+      "stamp_s": 4.76,
+      "lower_travel_m": 0.004910283721983433,
+      "upper_travel_m": 0.0049498132430016994,
+      "lift_m": 0.00957987592890941,
+      "lower_force_n": 0.1509233113495062,
+      "upper_force_n": 0.14805992332336623
+    },
+    "command": {
+      "state": "fault",
+      "closing_travel_m": 0.0049449999999999815,
+      "lift_m": 0.01,
+      "reason": "lift_tracking_timeout"
+    },
+    "arm_q_rad": [
+      0.1633724421262741,
+      0.4172247350215912,
+      -0.6432046890258789,
+      -2.1005706787109375,
+      1.369565725326538,
+      1.113364338874817,
+      -0.9717751741409302
+    ],
+    "arm_reference_rad": [
+      0.166375633786044,
+      0.4148295367890585,
+      -0.6450307585207362,
+      -2.1018541770541135,
+      1.367328519930904,
+      1.1144942442235162,
+      -0.9713851193314682
+    ],
+    "gravity_feedforward_nm": [
+      6.18866920376604e-07,
+      -32.62804412841797,
+      -5.965054988861084,
+      16.714536666870117,
+      1.257011890411377,
+      -0.8778616189956665,
+      0.09976010769605637
+    ]
+  },
+  "clock": {
+    "steps": 38081,
+    "time_s": 4.760125226093805
+  },
+  "tool": {
+    "cad_sha256": "d1528020b71255129e236dcacddfbadc502632b19ea413d55d2ebdffbda8350e",
+    "adapter_sha256": "d0a5f03b256bf6f2dad3c4caec33a43854552291c146fbf87834b3b70e236e9f",
+    "tool_local_link7": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.220446002069139e-16,
+        -1.0000000000000002,
+        2.6021558442443532e-23
+      ],
+      [
+        0.0,
+        0.9999999999999999,
+        2.220446226157568e-16,
+        0.20200000000000018
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "convex_hull_min_thickness_m": 1e-05,
+    "mass_model": "Assumed 160 g fixed body/adapter and 20 g per jaw; approximate inertia",
+    "external_collision": "Component hulls; exact analytic CAD pad boxes; screw envelopes excluded",
+    "internal_collision_filter": "Connected guide bodies and lower/upper supplier guide pieces only"
+  },
+  "cable_spec": {
+    "profile_id": "rpi-camera-standard-mini-200-rev2",
+    "profile_sha256": "09e4a5bacf516b39b0c545489d34d050a2c7407df6c3cf7629db69d67aba42c9",
+    "profile_revision": "evidence-v1",
+    "qualification": {
+      "numerical_bending": false,
+      "contact": false,
+      "vacuum": false,
+      "material_identification": false,
+      "task_mechanics": false,
+      "learning_dataset_release": false
+    },
+    "assumed_parameters": [
+      "body_thickness_m",
+      "header_thickness_m",
+      "exposed_length_m",
+      "stiffener_length_m",
+      "wide_end_length_m",
+      "transition_length_m",
+      "equivalent_young_pa",
+      "equivalent_density_kg_m3",
+      "poisson_ratio",
+      "static_friction",
+      "dynamic_friction"
+    ]
+  },
+  "dt_s": 0.000125,
+  "controller_period_s": 0.005,
+  "grasp_material_coordinate_m": 0.012,
+  "cable_pose_control": false,
+  "grasp_attachment": false,
+  "ros_connected": false,
+  "camera_control": false,
+  "contact_mechanics_qualified": false,
+  "max_arm_speed_rad_s": 0.011292832903563976,
+  "max_arm_tracking_rad": 0.0030150396144141556,
+  "sampled_tool_support_clearance_m": 0.0025973378153190067,
+  "post_fault_joint_drift_rad": 0.0,
+  "unintended_contacts": [],
+  "scope": "FR3 local loaded-motion pilot with full external tool collision; no Pi insertion",
+  "gravity_model": "Robot articulation masses and own joint angles only; jaw feedforward disabled",
+  "limitations": [
+    "Full-cable contact/damping remains exploratory",
+    "Ideal pad and encoder feedback",
+    "Known presented placement, not camera-guided pickup",
+    "Per-part convex hulls and filtered internal guides",
+    "Inspection cameras only; not calibrated perception or tip-pose verification",
+    "ROS, suction and insertion not connected",
+    "Sampled tool/support bound is not global swept clearance"
+  ]
+}

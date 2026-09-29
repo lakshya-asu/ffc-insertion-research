@@ -1,0 +1,36 @@
+{
+  "run_id": "fr3-flex-006",
+  "final_command": {
+    "state": "fault",
+    "closing_travel_m": 0.0049449999999999815,
+    "lift_m": 0.01,
+    "reason": "lift_tracking_timeout"
+  },
+  "measured_tool_lift_m": 0.00957987592890941,
+  "material_point_definition": "Midpoint of section centers at 11 and 13 mm from mini end",
+  "sample_origin": "First captured frame after lift qualification, when available",
+  "material_point_local_start_m": [
+    -2.4035816918134772e-06,
+    0.010499180768430568,
+    -1.9770756578643836e-05
+  ],
+  "material_point_local_end_m": [
+    -2.2706976707287354e-06,
+    0.010499035448181392,
+    -1.9563640188013643e-05
+  ],
+  "local_displacement_m": [
+    1.3288402108474182e-07,
+    -1.453202491761424e-07,
+    2.07116390630193e-07
+  ],
+  "max_local_displacement_norm_m": 5.122319505795826e-07,
+  "material_point_vertical_displacement_m": 0.009579822421073914,
+  "post_fault_lift_drift_m": 0.0,
+  "source_sha256": {
+    "report.json": "ca865839514f4a9e6f3420b2da467d312b83e342e18f85e5fba527ae9f0554fb",
+    "offline-cable-trace.json": "d48b4a1d44e7824a243ea2b3fee94c8a64f99c0b14a9255d7ba503d37b4cfd44",
+    "sensor-trace.json": "fddc1e2f804df9fbc0e373e31615a4e431a8a256db0e2af9b7a7838b25b69043"
+  },
+  "scope": "Offline simulation geometry audit. Relative motion can include bending, not only slip. No visual retention, material damage or insertion claim."
+}

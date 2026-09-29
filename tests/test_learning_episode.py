@@ -41,3 +41,23 @@ def test_bad_timing_and_values(failure):
         a["observation"]["stamp_s"] = 0.2
     with pytest.raises(ValueError):
         export_episode([a, b], "run")
+
+
+def test_mounted_channels_keep_encoder_and_action_distinct():
+    from ffc.learning_episode import export_mounted_episode
+
+    row = sample() | {
+        "arm_q_rad": [0.1] * 7,
+        "arm_reference_rad": [0.2] * 7,
+        "gravity_feedforward_nm": [0.3] * 7,
+        "tool_bodies": {"truth": 1},
+    }
+    result = export_mounted_episode([row], "mounted")
+    s = result["samples"][0]
+    assert s["observation"]["arm_q_rad"] == [0.1] * 7
+    assert "arm_reference_rad" not in s["observation"]
+    assert "tool_bodies" not in str(result)
+    assert s["action"]["arm_reference_rad"] == [0.2] * 7
+    row["arm_q_rad"] = [0.1] * 6
+    with pytest.raises(ValueError, match="seven-joint"):
+        export_mounted_episode([row], "mounted")

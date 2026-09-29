@@ -46,3 +46,22 @@ def export_episode(trace: list[dict], run_id: str) -> dict:
         "offline_labels_included": False,
         "samples": rows,
     }
+
+
+def export_mounted_episode(trace: list[dict], run_id: str) -> dict:
+    """Add the recorded FR3 encoder/action channels without importing offline poses."""
+    episode = export_episode(trace, run_id)
+    episode["schema"] = "ffc.mounted-pinch-episode.v1"
+    episode["scope"] = "Simulated arm/jaw encoders and ideal pad signals; no camera training"
+    episode["robot_joint_names"] = [f"fr3v2_1_joint{i}" for i in range(1, 8)]
+    for row, sample in zip(trace, episode["samples"], strict=True):
+        for field in ["arm_q_rad", "arm_reference_rad", "gravity_feedforward_nm"]:
+            values = row[field]
+            if len(values) != 7 or any(
+                isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v) for v in values
+            ):
+                raise ValueError("Invalid seven-joint channel: " + field)
+        sample["observation"]["arm_q_rad"] = list(row["arm_q_rad"])
+        sample["action"]["arm_reference_rad"] = list(row["arm_reference_rad"])
+        sample["action"]["gravity_feedforward_nm"] = list(row["gravity_feedforward_nm"])
+    return episode

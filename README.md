@@ -39,7 +39,7 @@ The active scene is **Raspberry Pi Zero 2 W side-entry cable insertion**, with t
 | Mounted-camera dataset | 160 scenes: 128 train / 32 validation; independent 30-scene audit and three matched setback pairs | Broader appearance/geometry variation and physical validation |
 | Perception | Earlier DINOv3 feature study completed; mounted macro model independently tested on 60 fresh scenes | Verified cable-to-entrance pose, calibrated uncertainty and action readiness |
 | Cable/contact mechanics | Numerical benchmarks and historical generic-scene handling tests | Pi cable bending/twist, grip slip, connector resistance and latch mechanics |
-| Robot actions | Unloaded FR3 joint tests; new CAD tool mounted in a separate empty-tool physics scene | Sensor-driven pickup, insertion, latching and verification; the Pi perception cell still has motion disabled |
+| Robot actions | Compact tool on FR3: nominal presented-cable 10 mm lift, empty rejection and feedback-loss stop | Sensor-driven pickup, insertion, latching and verification; the Pi perception cell still has motion disabled |
 
 The larger commercial-actuator CAD tool has a separate mounted dynamics study. It does not inherit the earlier tool’s camera, PCB or approach-clearance results.
 
@@ -48,6 +48,8 @@ The matched mounting audit found that a **6 mm grasp setback hid the leading ban
 Read the [assumed-world bending experiment](experiments/037-assumed-world-fit.md) and [next contact qualification steps](research/cables/contact-qualification.md). The [bending review](https://lakshya-asu.github.io/ffc-insertion-research/hardware/custom-gripper.html#bending-fit) includes reference curves, recorded Isaac runs and individual reserved-case views.
 
 The [first flexible-cable motion pilot](https://lakshya-asu.github.io/ffc-insertion-research/hardware/custom-gripper.html#flexible-motion) now closes on a presented cable end, lifts and holds under local pad/encoder feedback. Empty and load-dropout checks are recorded. This remains separate from FR3 motion, camera verification and ROS integration. [Methods and limits](experiments/038-flexible-cable-motion.md).
+
+The [mounted FR3 commissioning suite](https://lakshya-asu.github.io/ffc-insertion-research/library/#mounted) now passes one positive, empty and feedback-dropout case on a frozen configuration. Measured positive lift is 10.032 mm. This is presented-cable commissioning, not camera-guided pickup or insertion. [Methods](experiments/040-thin-pad-collision-and-mounted-replay.md).
 
 ## Current execution plan and run library
 

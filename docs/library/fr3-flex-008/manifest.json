@@ -1,0 +1,34 @@
+{
+  "run_id": "fr3-flex-008",
+  "type": "recorded_state_playback",
+  "physics_disabled": true,
+  "robot_source": "Measured arm encoders and vendor joint-frame FK",
+  "tool_cable_source": "Offline sampled physics body poses",
+  "actor_scope": "Measured arm/jaw encoders, ideal pad load and issued joint commands; camera streams absent",
+  "max_replay_numeric_error": 8.881784197001252e-16,
+  "cable_frames_checked": 74,
+  "robot_samples_checked": 602,
+  "final_command": {
+    "state": "contact_hold_complete",
+    "closing_travel_m": 0.0049449999999999815,
+    "lift_m": 0.01,
+    "reason": "Bilateral load held; independent camera retention evidence still required"
+  },
+  "rerun_bundle": "rerun-bundle.tar.gz",
+  "isaac_playback_render_verified": true,
+  "sha256": {
+    "report.json": "ad19353f99d252a72873c23318a152465cda864fc3b0957b76895194ccc0d14f",
+    "isaac-start.png": "d8b8c3d83cb27cd2850dfb92bd6bd9e860aadf595b93abb2468c689b0721d664",
+    "isaac-end.png": "79dd6feb5396266c9c95ca7d8929395fba77f495e8605c4afe60fe0ae32baa0a",
+    "source-hashes.json": "bcf286c9cc6c610741effe78c085913713a4b7ffb391940a97444f1c42f8100d",
+    "episode.json": "eaa795f45e6a474d1bcbda00678782312987aa48445ce2b6e327bd0f9dd12230",
+    "retention-audit.json": "c4a1fc7c56332467fed123d520ad5325bf5131aca1b8e1a5e5f9a78646cb6a83",
+    "rerun-bundle.tar.gz": "d5e469406e240e71ce8d07e5781e8b56a6c7c6e39e1255a3ea962935f700d093",
+    "replay.usdc": "3f6ae7c8e2ae58b0e278a56402b56d992631b4af34c5649170075628a6bc11e6",
+    "replay.usdz": "b8ccf32d0cbedae4feab7b0b7336835e51462d6eec03f4dc715992414ac44b6d",
+    "video.mp4": "d85161aaf997c427de40ef15188f25254fdab8f26bd31b9174b80a2cc447a57d",
+    "isaac-verification.json": "870cf288df7ccbc2275edc5172ab83ea1a931b9b4524f981e4897d86838747fd",
+    "traces.png": "0c0ea7249aa30f22feb3df5b4885565f61036bb60cae30dae2a051b20d6a35fd"
+  },
+  "isolated_physics_rerun_tested": false
+}

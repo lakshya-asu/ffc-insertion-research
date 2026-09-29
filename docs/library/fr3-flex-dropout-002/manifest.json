@@ -1,0 +1,29 @@
+{
+  "run_id": "fr3-flex-dropout-002",
+  "type": "recorded_state_playback",
+  "physics_disabled": true,
+  "robot_source": "Measured arm encoders and vendor joint-frame FK",
+  "tool_cable_source": "Offline sampled physics body poses",
+  "actor_scope": "Measured arm/jaw encoders, ideal pad load and issued joint commands; camera streams absent",
+  "max_replay_numeric_error": 8.881784197001252e-16,
+  "cable_frames_checked": 29,
+  "robot_samples_checked": 234,
+  "final_command": {
+    "state": "fault",
+    "closing_travel_m": 0.0049449999999999815,
+    "lift_m": 0.002000000000000002,
+    "reason": "contact_lost"
+  },
+  "rerun_bundle": null,
+  "isaac_playback_render_verified": false,
+  "sha256": {
+    "report.json": "fff24302a38bf390004941cda9b62542b2fb61013f6e434c84531cf3417938f1",
+    "source-hashes.json": "bcf286c9cc6c610741effe78c085913713a4b7ffb391940a97444f1c42f8100d",
+    "episode.json": "d799f2b98035b435b1ad7d83d05566f6a86b9ba2f687ef4d5a417ba3e0a072e4",
+    "retention-audit.json": "4accebc7b0b5635743ce2297eb0fa4c7a75f289842a5fda82fd3a2042187dfa6",
+    "replay.usdc": "b3c82d34ab2be9477d5ca0d812465886db7f03d853072dc298099812998c9b8e",
+    "replay.usdz": "035f731e47830af5b7b09591ab552cfbf73d179eb3ae71da4eb02ed0b540f267",
+    "video.mp4": "426ac2bfafca9554a0043315eaab07ed781af39ca22d65ff015301aba7e47650",
+    "traces.png": "191ce4b8aeb34b62821fff07d083b75af4588ac320803c4579a0d70041b7011a"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "run_id": "fr3-flex-empty-002",
+  "final_command": {
+    "state": "fault",
+    "closing_travel_m": 0.004959999999999981,
+    "lift_m": 0.0,
+    "reason": "empty_or_too_thin"
+  },
+  "measured_tool_lift_m": 2.5068589148968812e-08,
+  "material_point_definition": "Midpoint of section centers at 11 and 13 mm from mini end",
+  "sample_origin": "First captured frame after lift qualification, when available",
+  "material_point_local_start_m": null,
+  "material_point_local_end_m": null,
+  "local_displacement_m": null,
+  "max_local_displacement_norm_m": null,
+  "material_point_vertical_displacement_m": null,
+  "post_fault_lift_drift_m": 0.0,
+  "source_sha256": {
+    "report.json": "7c11bdb350beca422fd7482aadc5ee016eb4f79b21ffeb2bf413ab9253a7506e",
+    "offline-cable-trace.json": "8baed6d5cb014abcf1f525ecf6f1dfcd93e89d1ba407acf71fe59d61c4439574",
+    "sensor-trace.json": "16638c585b99f14ab663c54b665e3691a147761b248b08c221264321d7fcc9b5"
+  },
+  "scope": "Offline simulation geometry audit. Relative motion can include bending, not only slip. No visual retention, material damage or insertion claim."
+}
