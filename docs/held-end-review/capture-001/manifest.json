@@ -1,0 +1,79 @@
+{
+  "frames": [
+    {
+      "sequence": 0,
+      "timestamp_s": 0.05,
+      "clock": "recorded_simulation_seconds",
+      "capture_wall_time_s": 1790701591.69584,
+      "camera_id": "held_end",
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "file": "rgb-0000.png",
+      "sha256": "57788026eb451708d991766e04a9ab522c0e511f216740b90713438a55a517c2"
+    },
+    {
+      "sequence": 1,
+      "timestamp_s": 0.5,
+      "clock": "recorded_simulation_seconds",
+      "capture_wall_time_s": 1790701592.013324,
+      "camera_id": "held_end",
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "file": "rgb-0001.png",
+      "sha256": "bdf3c88bf5a33b4e010023f8cfe06af71a2e07d9c8d4c20453f545f03e8d9bfb"
+    },
+    {
+      "sequence": 2,
+      "timestamp_s": 1.0,
+      "clock": "recorded_simulation_seconds",
+      "capture_wall_time_s": 1790701592.3319702,
+      "camera_id": "held_end",
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "file": "rgb-0002.png",
+      "sha256": "36e6c4c54a55d81d5ba3795c1ca407080159f6f3bfa3d5fe34b51ba854024fd7"
+    },
+    {
+      "sequence": 3,
+      "timestamp_s": 1.5,
+      "clock": "recorded_simulation_seconds",
+      "capture_wall_time_s": 1790701592.6444333,
+      "camera_id": "held_end",
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "file": "rgb-0003.png",
+      "sha256": "451e6dfcd7062fb93a1942dd8c0eff7a78b1fe8ea8b3b1be1da9de4a82d4cbe8"
+    },
+    {
+      "sequence": 4,
+      "timestamp_s": 2.0,
+      "clock": "recorded_simulation_seconds",
+      "capture_wall_time_s": 1790701592.9601147,
+      "camera_id": "held_end",
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "file": "rgb-0004.png",
+      "sha256": "814e857d0c6f64b91cd528a6b76c8773db73a81d7e30b0d0209f475df623dbf9"
+    },
+    {
+      "sequence": 5,
+      "timestamp_s": 2.5,
+      "clock": "recorded_simulation_seconds",
+      "capture_wall_time_s": 1790701593.2791197,
+      "camera_id": "held_end",
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "file": "rgb-0005.png",
+      "sha256": "37c781aab11f6721123672dd9025311940378f15fc747609251250638ba3a994"
+    },
+    {
+      "sequence": 6,
+      "timestamp_s": 3.0,
+      "clock": "recorded_simulation_seconds",
+      "capture_wall_time_s": 1790701593.5924976,
+      "camera_id": "held_end",
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "file": "rgb-0006.png",
+      "sha256": "f56125abd0fec8e5e5e254bd018a972b59ee70d7a11b223e8ecdff4074e03dfd"
+    }
+  ],
+  "expected_frames": 7,
+  "complete": true,
+  "source_replay_sha256": "b8ccf32d0cbedae4feab7b0b7336835e51462d6eec03f4dc715992414ac44b6d",
+  "mode": "Recorded state RGB capture; no physics rerun",
+  "motion_permitted": false
+}

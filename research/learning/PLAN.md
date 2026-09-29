@@ -64,3 +64,7 @@ Frozen commissioning suite: `fr3-flex-008`, `fr3-flex-empty-002`, `fr3-flex-drop
 ## Inspection preparation (041)
 
 [041 record](../../experiments/041-held-end-inspection-preparation.md): RGB-only inspection contracts and a fixed-camera capture recipe are implemented. Saved-image colour-region review correctly abstains but fails to uniquely localize the terminal because adapter/tool surfaces share its colour. This does not close the leading-edge or slip gate. Five new tests pass; the full run has 177 passes and one existing server test blocked by sandbox socket restrictions. No new Isaac render or GPU inference ran. Next: execute the prepared raw-camera capture, review optics/clearance and label visible leading edges before fitting/evaluating a learned estimate.
+
+## Camera capture completed (042)
+
+Docker access was restored and the prepared camera rendered seven samples of the recorded mounted lift. [Review](../../docs/held-end-review/capture-001/index.html): raw RGB, colour masks, video, synthetic calibration, manifest and physics-disabled camera replay are archived. All seven frames were inspected; focus varies through the lift and the tool reference is cropped. The terminal reaches the top image boundary near the final pose. No leading-edge, slip or alignment gate has passed. All 178 CPU tests pass. Next: set a repeatable inspection pose, qualify framing/focus in simulation, and independently label visible leading edges before training. This capture does not rerun physics or measure ROS transport latency.

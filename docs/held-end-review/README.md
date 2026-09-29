@@ -1,6 +1,6 @@
-# Held-end inspection — review preparation
+# Held-end inspection — capture available
 
-This packet is ready for review, but the camera milestone has not passed. New Isaac capture could not run in the current session because Docker socket access is denied. The prepared capture script is syntax-checked, not runtime-verified.
+Docker access is restored. The prepared Isaac capture completed with seven raw frames. [Open the review](capture-001/index.html), video and native replay. Inspection is not qualified: focus varies, the tool reference is cropped and the terminal clips near the final pose.
 
 ## What is ready
 
@@ -14,7 +14,7 @@ This packet is ready for review, but the camera milestone has not passed. New Is
 
 The colour-only baseline confuses the blue adapter/tool surfaces with the terminal in the saved views and rejects them as ambiguous/clipped. The yellow-region reference can also change under occlusion and illumination. This baseline has not localized the leading edge and is not a substitute for the learned feature pipeline. Its image extents are diagnostic only.
 
-## Run the prepared capture when Isaac is available
+## Repeat the capture in Isaac
 
 From the project root, use a fresh output directory:
 
@@ -23,7 +23,7 @@ COMPOSE_IGNORE_ORPHANS=1 docker compose run --rm experiment \
   scripts/capture_held_end_inspection.py \
   --stage /workspace/docs/library/fr3-flex-008/replay.usdz \
   --config /workspace/config/held-end-inspection-v1.json \
-  --output /workspace/outputs/held-end-capture-001
+  --output /workspace/outputs/held-end-capture-NEW
 ```
 
 This renders recorded state; it does not rerun physics. Review `failure.txt` and `manifest.json`, not just container exit status. The output contains synthetic camera calibration, not physical calibration. The camera is proposed at 45° elevation, looking from the free-end side toward the known presented station; its mount and clearance are not qualified.
@@ -42,4 +42,6 @@ uv run python scripts/review_held_end_images.py --output outputs/held-end-review
 4. Estimate relative end pose with uncertainty. A centroid shift may reflect perspective, deformation or occlusion; it is not proof of mechanical slip.
 5. Test timing/calibration failures before connecting inspection to a motion transition. Keep the current pad/encoder guard active. Alignment and insertion remain disabled.
 
-Local validation: 177 tests passed; the existing live-server test cannot open a socket under this session's sandbox. New inspection tests pass, lint passes, and capture syntax compiles. No fresh Isaac images or new robot motion were produced in this step.
+Current validation: all 178 CPU tests pass. Seven Isaac frames were inspected, their file/calibration identities checked, and the camera scene packaged as a physics-disabled USDZ. No new physics or robot control was executed. The earlier failed saved-image baseline remains in historical.html.
+
+Rebuild the camera review in a fresh directory with `.venv/bin/python scripts/review_held_end_capture.py --capture outputs/held-end-capture-001 --output outputs/held-end-review-NEW --ffmpeg /path/to/ffmpeg`. Select `/World/Cameras/HeldEndInspection` in the downloaded USDZ.

@@ -1,0 +1,591 @@
+{
+  "scope": "Seven samples of one recorded lift; no held-out evaluation or new physics",
+  "motion_permitted": false,
+  "calibration_kind": "synthetic camera model; physical calibration pending",
+  "results": [
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 0,
+      "acquisition_s": 0.05,
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "terminal_candidate": {
+        "centroid_px": [
+          512.8451680844175,
+          493.0334389975772
+        ],
+        "oriented_extent_px": [
+          [
+            612.9403911485117,
+            1226.532920161572
+          ],
+          [
+            -182.34915206233813,
+            438.1399091112028
+          ],
+          [
+            373.9200439587627,
+            -122.99529706786876
+          ],
+          [
+            1169.2095871696124,
+            665.3977139825006
+          ]
+        ],
+        "area_px": 281079,
+        "component_share": 0.9783841358353434,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "tool_candidate": {
+        "centroid_px": [
+          931.7038324394933,
+          318.759289036097
+        ],
+        "oriented_extent_px": [
+          [
+            894.5376560033251,
+            -352.14613931983195
+          ],
+          [
+            1684.414819640464,
+            494.685160509574
+          ],
+          [
+            1134.5426612545236,
+            1007.5753440873591
+          ],
+          [
+            344.66549761738463,
+            160.74404425795314
+          ]
+        ],
+        "area_px": 311577,
+        "component_share": 0.8820721733246893,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "relative_image_offset_px": [
+        -418.8586643550758,
+        174.2741499614802
+      ],
+      "reasons": [
+        "terminal_ambiguous_or_clipped",
+        "tool_ambiguous_or_clipped",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "clock": "recorded_simulation_seconds"
+    },
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 1,
+      "acquisition_s": 0.5,
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "terminal_candidate": {
+        "centroid_px": [
+          523.5620438992532,
+          472.069203083738
+        ],
+        "oriented_extent_px": [
+          [
+            685.2544167554099,
+            1195.921341198325
+          ],
+          [
+            -159.5966530235578,
+            498.1300603240093
+          ],
+          [
+            391.2911432520408,
+            -168.85755727485162
+          ],
+          [
+            1236.1422130310084,
+            528.933723599464
+          ]
+        ],
+        "area_px": 281736,
+        "component_share": 0.9853906607954168,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "tool_candidate": {
+        "centroid_px": [
+          929.4609720993835,
+          323.62009601545645
+        ],
+        "oriented_extent_px": [
+          [
+            1150.1802266743625,
+            983.3262646121311
+          ],
+          [
+            347.5456617858745,
+            196.95999982661954
+          ],
+          [
+            874.7701654841915,
+            -341.17169411102765
+          ],
+          [
+            1677.4047303726798,
+            445.194570674484
+          ]
+        ],
+        "area_px": 306409,
+        "component_share": 0.8772313057021223,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "relative_image_offset_px": [
+        -405.8989282001303,
+        148.44910706828153
+      ],
+      "reasons": [
+        "terminal_ambiguous_or_clipped",
+        "tool_ambiguous_or_clipped",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "clock": "recorded_simulation_seconds"
+    },
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 2,
+      "acquisition_s": 1.0,
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "terminal_candidate": {
+        "centroid_px": [
+          559.3496590478363,
+          392.06150386952186
+        ],
+        "oriented_extent_px": [
+          [
+            857.824561575611,
+            1023.761262125209
+          ],
+          [
+            -28.630520390893366,
+            545.2233035261506
+          ],
+          [
+            315.4859938792074,
+            -92.22630184342063
+          ],
+          [
+            1201.9410758457118,
+            386.31165675563784
+          ]
+        ],
+        "area_px": 271739,
+        "component_share": 0.9993343630479553,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "tool_candidate": {
+        "centroid_px": [
+          956.3697150547574,
+          245.87280873367703
+        ],
+        "oriented_extent_px": [
+          [
+            1172.8335865076529,
+            848.5851864228783
+          ],
+          [
+            398.3101649545872,
+            136.76088442043596
+          ],
+          [
+            844.0662169909646,
+            -348.2583845620619
+          ],
+          [
+            1618.58963854403,
+            363.5659174403804
+          ]
+        ],
+        "area_px": 232571,
+        "component_share": 0.7976834797878981,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "relative_image_offset_px": [
+        -397.0200560069211,
+        146.18869513584482
+      ],
+      "reasons": [
+        "terminal_ambiguous_or_clipped",
+        "tool_ambiguous_or_clipped",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "clock": "recorded_simulation_seconds"
+    },
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 3,
+      "acquisition_s": 1.5,
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "terminal_candidate": {
+        "centroid_px": [
+          554.0168126203826,
+          313.39307298205665
+        ],
+        "oriented_extent_px": [
+          [
+            956.1843874300698,
+            807.8229329489499
+          ],
+          [
+            73.79887958945517,
+            536.2316135401899
+          ],
+          [
+            260.81906167413945,
+            -71.38684313392878
+          ],
+          [
+            1143.204569514754,
+            200.20447627483117
+          ]
+        ],
+        "area_px": 256474,
+        "component_share": 0.9990534323788451,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "tool_candidate": {
+        "centroid_px": [
+          1002.6037198291757,
+          219.28557153563398
+        ],
+        "oriented_extent_px": [
+          [
+            1163.3143146326383,
+            751.032273019316
+          ],
+          [
+            453.43660686901046,
+            56.81697644213597
+          ],
+          [
+            858.0364461410201,
+            -356.91116795350524
+          ],
+          [
+            1567.9141539046477,
+            337.3041286236749
+          ]
+        ],
+        "area_px": 168126,
+        "component_share": 0.6791597657038982,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "relative_image_offset_px": [
+        -448.58690720879315,
+        94.10750144642267
+      ],
+      "reasons": [
+        "terminal_ambiguous_or_clipped",
+        "tool_ambiguous_or_clipped",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "clock": "recorded_simulation_seconds"
+    },
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 4,
+      "acquisition_s": 2.0,
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "terminal_candidate": {
+        "centroid_px": [
+          577.0810887874133,
+          225.70629891436184
+        ],
+        "oriented_extent_px": [
+          [
+            1012.5842202352438,
+            568.4824183465364
+          ],
+          [
+            158.1800535139255,
+            446.91123562682697
+          ],
+          [
+            231.31899814009,
+            -67.11040700430695
+          ],
+          [
+            1085.7231648614083,
+            54.460775715402434
+          ]
+        ],
+        "area_px": 234977,
+        "component_share": 0.9994768183751596,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "tool_candidate": {
+        "centroid_px": [
+          1149.32380869522,
+          272.9522608068806
+        ],
+        "oriented_extent_px": [
+          [
+            1222.4342907362598,
+            -7.500059959956957
+          ],
+          [
+            1266.622063503762,
+            578.3325690870336
+          ],
+          [
+            1036.2198559828162,
+            595.7111852416655
+          ],
+          [
+            992.0320832153137,
+            9.8785561946749
+          ]
+        ],
+        "area_px": 80458,
+        "component_share": 0.5119561205920157,
+        "touches_border": true,
+        "ambiguous_components": true
+      },
+      "relative_image_offset_px": [
+        -572.2427199078066,
+        -47.24596189251875
+      ],
+      "reasons": [
+        "terminal_ambiguous_or_clipped",
+        "tool_ambiguous_or_clipped",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "clock": "recorded_simulation_seconds"
+    },
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 5,
+      "acquisition_s": 2.5,
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "terminal_candidate": {
+        "centroid_px": [
+          603.590583322581,
+          141.4818598758988
+        ],
+        "oriented_extent_px": [
+          [
+            1036.8604568593896,
+            335.26174279749085
+          ],
+          [
+            183.73611456145687,
+            332.9393939353846
+          ],
+          [
+            184.64581100053783,
+            -1.2413094658428179
+          ],
+          [
+            1037.7701532984706,
+            1.0810393962634066
+          ]
+        ],
+        "area_px": 170506,
+        "component_share": 0.9975486324411291,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "tool_candidate": {
+        "centroid_px": [
+          1164.6336428741506,
+          241.42927267065957
+        ],
+        "oriented_extent_px": [
+          [
+            1236.7602113435184,
+            0.4075473355893564
+          ],
+          [
+            1222.9114789658183,
+            467.98877708751684
+          ],
+          [
+            1088.6544163573963,
+            464.012376813993
+          ],
+          [
+            1102.5031487350964,
+            -3.56885293793448
+          ]
+        ],
+        "area_px": 54597,
+        "component_share": 0.48522471760324926,
+        "touches_border": true,
+        "ambiguous_components": true
+      },
+      "relative_image_offset_px": [
+        -561.0430595515696,
+        -99.94741279476077
+      ],
+      "reasons": [
+        "terminal_ambiguous_or_clipped",
+        "tool_ambiguous_or_clipped",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "clock": "recorded_simulation_seconds"
+    },
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 6,
+      "acquisition_s": 3.0,
+      "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe",
+      "terminal_candidate": {
+        "centroid_px": [
+          607.1527945689575,
+          134.57297498372546
+        ],
+        "oriented_extent_px": [
+          [
+            1038.7910901384046,
+            326.6537639806303
+          ],
+          [
+            188.48992174339514,
+            321.9361400136046
+          ],
+          [
+            190.295734829933,
+            -3.5423186593555442
+          ],
+          [
+            1040.5969032249425,
+            1.175305307670186
+          ]
+        ],
+        "area_px": 161295,
+        "component_share": 0.9999876005133388,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "tool_candidate": {
+        "centroid_px": [
+          1164.6666298098187,
+          239.53975011057054
+        ],
+        "oriented_extent_px": [
+          [
+            1236.064224327228,
+            0.36972002200599263
+          ],
+          [
+            1222.9223748005745,
+            464.74292155788123
+          ],
+          [
+            1088.95462233518,
+            460.9516087980123
+          ],
+          [
+            1102.0964718618336,
+            -3.4215927378629942
+          ]
+        ],
+        "area_px": 54264,
+        "component_share": 0.48669447060406296,
+        "touches_border": true,
+        "ambiguous_components": true
+      },
+      "relative_image_offset_px": [
+        -557.5138352408612,
+        -104.96677512684508
+      ],
+      "reasons": [
+        "terminal_ambiguous_or_clipped",
+        "tool_ambiguous_or_clipped",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "clock": "recorded_simulation_seconds"
+    }
+  ],
+  "review_findings": [
+    "Free-end contacts visible; full terminal clips near final pose",
+    "Focus varies through lift; mid-stroke appears sharper",
+    "Tool reference is cropped; colour regions cannot verify slip",
+    "Articulated ribbon surface seams remain visible",
+    "Camera mount clearance and physical optics are unqualified"
+  ],
+  "sha256": {
+    "terminal-0005.png": "47e534f9f1d374baaa330414dd71e23f6564dc7788e3b6a829d1b860dad17173",
+    "terminal-0004.png": "0f0683289750d8f8628c30e7f1751767b7cc736bdcb9faa4579179f815edb0f8",
+    "panel-0005.png": "dc2d78dee361b0c37784ae34b08beade2a5afb7244adf25a34f088c53067d270",
+    "overlay-0006.png": "715412219501c7f4422618030e2a3b6185e35b4a28891d3703a3a9fafdf5928f",
+    "capture-source.py": "88633e8b3fc97734d044bcfe2fc1fb69607848fc617c988804fc2d36150431c5",
+    "tool-0006.png": "be845a634c0f8a39aaeb0b4a428699cbc6467b6e6821cc171a7599b3a52e81c2",
+    "panel-0001.png": "fb789399f31e1848e74564c5d3520f2a8809c65a00358fdd0fcf17211d029f53",
+    "tool-0001.png": "80b6e1ec8fd50ce6ff0889f9179e735b02e224f4c77cf567e00bcc7847fbff16",
+    "review-source.py": "b7f29d412374b6cd46475e4e3e6b41b1342585009677187f60b13172fe479817",
+    "rgb-0001.png": "bdf3c88bf5a33b4e010023f8cfe06af71a2e07d9c8d4c20453f545f03e8d9bfb",
+    "overlay-0002.png": "ff012015c9a30e99a5fe4b1366005584b3866da16d9a1a2726b9f79f8e675edd",
+    "panel-0002.png": "05b195ba7f74348c433801b66b031aadbdb6f2caedc33a52c537eaebab3e6428",
+    "tool-0004.png": "fb6b98745e6e0c09819523a804f14a3f9a93453f7b45c2aa5ca594a810e4c55a",
+    "review.mp4": "15ab73d8a60b13cc017f6a6d5a988be71aa6cce935397c110645e277dd7b5834",
+    "rgb-0005.png": "37c781aab11f6721123672dd9025311940378f15fc747609251250638ba3a994",
+    "optics-profile.json": "c87bfcb724b7ea60ba14f2eedf28a5bbee729157928e6c7f82e4b32c05688d34",
+    "overlay-0004.png": "6f594722c0398576ff9ebb1abd4f40e985caac573e8a98a9067cb166bdb9c180",
+    "terminal-0003.png": "77f4f5904a965e340f0f3ce2ea33be755bb82e93d31d39c527853d766e910b74",
+    "terminal-0000.png": "8f657a426dd72910a68deb76302f8e012b0e57654ace7f166c7728121a78a2a9",
+    "capture-config.json": "dfad6977886de871d8debdf250d5376e8120d9a735b03ceac63298dd8806e6ee",
+    "manifest.json": "32b533b8e3c7b95b9589ac4cc4040024075c1d7009363a939a151c98ac0d91e7",
+    "tool-0005.png": "70a9d69836eb752bc458b9b207930284954e7d2469e2337b25afb6570c51e730",
+    "overlay-0001.png": "bb52fe687df78b97bc70cc79a1b06a6582eb32d020f579c843a28ee71ad2b726",
+    "rgb-0006.png": "f56125abd0fec8e5e5e254bd018a972b59ee70d7a11b223e8ecdff4074e03dfd",
+    "terminal-0001.png": "ea5fe6c7833d65e3944c2cda4b0d7ee23c7407c0a9eca6345e39272f937b4d26",
+    "rgb-0002.png": "36e6c4c54a55d81d5ba3795c1ca407080159f6f3bfa3d5fe34b51ba854024fd7",
+    "overlay-0003.png": "03636ebb526c19ffe9d6abb8c89c2ec9d4bee29230568349a0e96e7362ad2629",
+    "panel-0006.png": "78d4c39920dd92d75793eb64ef1ad1f39c2367f0d98d726b698d039f205155d9",
+    "overlay-0005.png": "569b76b5c4087f428fc9a21fcf8f655b4b7c16147b8a6d6616be3e0c7bebd340",
+    "rgb-0003.png": "451e6dfcd7062fb93a1942dd8c0eff7a78b1fe8ea8b3b1be1da9de4a82d4cbe8",
+    "rgb-0000.png": "57788026eb451708d991766e04a9ab522c0e511f216740b90713438a55a517c2",
+    "tool-0003.png": "22dd59037c6e9c92143dce7445e761653a02ed6cccc3558514395b6290ca38ec",
+    "tool-0000.png": "4d003e0cfda2004896b72bde2cb6534bee2b3916bced4bf0932bde22c5844606",
+    "overlay-0000.png": "7bd54d5761d7b3cb462a1a36ea3043f3fe21736a95f5a9ce9b595a0b9fb0c884",
+    "calibration.json": "edf7ea42c1eeb58bf0c4593f68c20508da41483e70e733496117388774f398a4",
+    "terminal-0002.png": "aaaf83e9de8286c1100db1730de2f956e33acaacd3d1c117a8ae3f2535ba453d",
+    "panel-0000.png": "8d5c1386ae6b8c5694f67fb8b87c0774b62230f8e92f1f1b7df670662baca915",
+    "tool-0002.png": "e19c05a7ad6a48d98913db103c62e09ae63d79ff675bd23417d6e6d08a2286b0",
+    "rgb-0004.png": "814e857d0c6f64b91cd528a6b76c8773db73a81d7e30b0d0209f475df623dbf9",
+    "inspection.usdz": "e6c31ad593473c0d3b6ec92444c4ddd04c089cc37dc1bb390a4e85e54ec2d3d7",
+    "panel-0004.png": "5019eec6bee23018555d74133bfdb36c42804048a96eb1ee90c1be1fc5ad6fe8",
+    "terminal-0006.png": "a6f931c8d04405c20ccd8cc4b4359e981d4a133f5d258fa5627933c09ef4816c",
+    "panel-0003.png": "6ba47ea46ee2c8ed0020756de82d191557b70d5677ec0d637da1e2dd4c70d139"
+  }
+}

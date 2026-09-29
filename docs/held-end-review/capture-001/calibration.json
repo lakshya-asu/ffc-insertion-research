@@ -1,0 +1,65 @@
+{
+  "camera_id": "held_end",
+  "frame_id": "held_end_optical",
+  "K": [
+    [
+      8813.868613138686,
+      0,
+      612.0
+    ],
+    [
+      0,
+      8813.868613138686,
+      512.0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "resolution": [
+    1224,
+    1024
+  ],
+  "world_from_optical": [
+    [
+      -1.1580650898676915e-16,
+      -0.7071067811865476,
+      0.7071067811865476,
+      0.3991230064965521
+    ],
+    [
+      -1.0,
+      8.188756781008531e-17,
+      -8.188756781008531e-17,
+      0.010500000000000011
+    ],
+    [
+      0.0,
+      -0.7071067811865476,
+      -0.7071067811865476,
+      0.374876993503448
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "distortion": {
+    "model": "ideal_pinhole",
+    "coefficients": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "focus_distance_m": 0.12710526315789475,
+  "renderer_f_number": 11.04,
+  "calibration_kind": "synthetic camera model; physical calibration pending",
+  "calibration_id": "3ac44617bca07026487c228f8babe44041251441bee21efbccc6660e6dda01fe"
+}
