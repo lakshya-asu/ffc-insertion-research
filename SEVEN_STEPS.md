@@ -30,7 +30,7 @@ Experiment [038](experiments/038-flexible-cable-motion.md) adds an exploratory f
 
 Experiment [040](experiments/040-thin-pad-collision-and-mounted-replay.md) adds the compact tool on the FR3 with a full presented cable. The nominal positive run reaches 10.032 mm and holds contact. Matched empty and feedback-loss trials pass their controller checks; the latter shows 1.65 micrometres of additional measured lift after detection. An offline material-point audit supports retention in this simulated run. This is not desk pickup, camera verification or material/damage qualification. [Videos, native replays and source bundles](https://lakshya-asu.github.io/ffc-insertion-research/library/#mounted).
 
-## 3. Inspect and orient the held end — metric inspection pilot, motion gate open
+## 3. Inspect and orient the held end — metric inspection pilot; alignment blocked
 
 **Built:** inspection-view concept, cable-end labels, camera observation infrastructure and a mechanically deployable finger concept.
 
