@@ -49,6 +49,10 @@ Read the [assumed-world bending experiment](experiments/037-assumed-world-fit.md
 
 The [first flexible-cable motion pilot](https://lakshya-asu.github.io/ffc-insertion-research/hardware/custom-gripper.html#flexible-motion) now closes on a presented cable end, lifts and holds under local pad/encoder feedback. Empty and load-dropout checks are recorded. This remains separate from FR3 motion, camera verification and ROS integration. [Methods and limits](experiments/038-flexible-cable-motion.md).
 
+## Current execution plan and run library
+
+[Maintained learning and simulation plan](research/learning/PLAN.md) · [Rendered runs and native Isaac replays](https://lakshya-asu.github.io/ffc-insertion-research/library/). The library distinguishes recorded-state playback from physics reruns and keeps missing training channels explicit.
+
 ## System overview
 
 ```mermaid

@@ -1,0 +1,17 @@
+{
+  "stage": "/workspace/docs/library/flex-pinch-001/replay.usdz",
+  "camera": "/World/Cameras/Action",
+  "mode": "Isaac paused timeline start/end render; not physics rerun",
+  "frames": [
+    {
+      "label": "start",
+      "frame": 0.003,
+      "pixel_std": 48.75420842584908
+    },
+    {
+      "label": "end",
+      "frame": 72.003,
+      "pixel_std": 47.64078013664152
+    }
+  ]
+}

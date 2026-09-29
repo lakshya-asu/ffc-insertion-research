@@ -1,0 +1,30 @@
+{
+  "run_id": "flex-pinch-001",
+  "type": "recorded_state_playback",
+  "physics_disabled": true,
+  "cable_frames_checked": 73,
+  "final_state": "contact_hold_complete",
+  "scope": "Presented flexible-cable pilot; no robot, camera control or insertion",
+  "source_hashes": {
+    "source.py": "9d29e0135d92cddb0d56af8a231db4321b93098b955f7e3c97f0347e4ba46eaa",
+    "isaac_recording.py": "0324a0505e36505f5bd9b59512c3da927b83560e3219ee2b1815f88ad93924d0",
+    "cable_spec.py": "4c823c3d67a1417bcc611a91edf3841e04f16f3b96d9c42f8473e9f0377b95af",
+    "profile_cable.py": "9eea673c1e2f2f85247cbd082aa2a66301a8b79caebc129c28e99725bab89187",
+    "isaac_contacts.py": "7a8f8b48e50494f3e64d2284459c0179166836b12113d08d7bcf4c91dcf53364",
+    "pinch_skill.py": "8cc6bee196b89b20150bcf9cec64d1362c654f6d306a6d545f51bce733eb3273",
+    "isaac_scene.py": "3451bc6d38d2886ac2063ca36c79989a639b023735d8b0dce202c99ae7784285"
+  },
+  "rerun_bundle": null,
+  "isaac_gui_playback_verified": false,
+  "sha256": {
+    "report.json": "9b83e3f2f5745aaf2426c7393ee03704a00f28acb501c3a66b0f69d254f48772",
+    "isaac-start.png": "401e33aa56b8995bde0d11849d427a995d5923f51b2b7f90ccc73f38c6170450",
+    "isaac-end.png": "8c360eb6896f5210de3664131469a2afc8bea8371a57d79337506e8462bdbb17",
+    "episode.json": "dbe2ae1ee1d67fd717595a8fca5699067139f1d12e9393da416afd6f6a19aebf",
+    "replay.usdc": "b5d49db25ad3f8f1d98277547c998dd86813e469a72cc522d9aae24d6fb8215a",
+    "replay.usdz": "7c57cd4003089f8798be9a004a93a94f7e1cdb612a9fa7ae986aca72c4e34792",
+    "video.mp4": "f85059ac6a049aa271298f88cdc96a47d5e36257637828a7e3bfbc30d0a3e927",
+    "isaac-verification.json": "50a7796144bb0a9a7a39699dcc4ba6da92af78014f5e73656ade18518f354290"
+  },
+  "isaac_headless_timeline_start_end_verified": true
+}
