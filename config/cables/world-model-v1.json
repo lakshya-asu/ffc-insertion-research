@@ -1,0 +1,19 @@
+{
+  "id": "pi-cable-assumed-world-v1",
+  "claim": "Simulation proof of concept within a declared assumed world; not identified real-cable mechanics",
+  "cable_profile": "config/cables/rpi-camera-standard-mini-200-rev2.json",
+  "cable_profile_sha256": "09e4a5bacf516b39b0c545489d34d050a2c7407df6c3cf7629db69d67aba42c9",
+  "reference": "Nonlinear elastic hinge-chain static energy minimization, first entire segment fixed",
+  "segment_length_m": 0.002,
+  "fit_lengths_m": [0.024, 0.032],
+  "validation_lengths_m": [0.028, 0.040],
+  "uniform_load_multipliers": [0.25, 0.5, 1.0, 1.5, 2.0],
+  "equivalent_modulus_multipliers": [0.25, 1.0, 4.0],
+  "load_note": "Static load sweep only: multiplier scales distributed gravity loading, not a dynamic mass identification experiment",
+  "fit_policy": "Fit effective simulator parameters to reference responses at fixed numerical settings; preserve nominal reference material parameters and record fitted values separately",
+  "allowed_current_use": ["static out-of-plane response targets", "numerical surrogate fitting", "assumed-material sensitivity study"],
+  "not_yet_defined": ["directional twist and in-plane constitutive response", "dynamic damping response", "pad and desk contact", "vacuum leakage and seal behavior", "connector and latch contact", "damage"],
+  "real_measurements_required_to_begin_sim_poc": false,
+  "policy_observations": "Deployable sensors only; reference geometry is offline supervision/evaluation",
+  "qualification": "Reference target set only; simulator fit and task mechanics remain to be evaluated"
+}

@@ -1,5 +1,8 @@
 # The cable we are building around
 
+Development direction: [use a declared reference world and fit the fast simulator to it](world-model.md).
+Exact physical material identification is deferred; it does not block an assumption-based simulation proof of concept.
+
 We are targeting the Raspberry Pi Camera Cable Standard–Mini, 200 mm, with the revision-two outline described in PCN 36. The procurement requirement is to match that product and outline. Pin count alone is not enough. All gripper candidates remain open.
 
 The [machine-readable evidence profile](../../config/cables/rpi-camera-standard-mini-200-rev2.json) is the parameter source for the revised fixture experiment. Every value is marked as manufacturer-published or assumed. Each run archives the profile and its SHA-256 identity. Earlier runs retain their original geometry and assumptions.
