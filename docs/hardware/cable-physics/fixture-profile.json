@@ -1,0 +1,52 @@
+{
+  "scope": "Gravity/support sensitivity, no closed-loop skill",
+  "cable_spec": {
+    "profile_id": "rpi-camera-standard-mini-200-rev2",
+    "profile_sha256": "09e4a5bacf516b39b0c545489d34d050a2c7407df6c3cf7629db69d67aba42c9",
+    "profile_revision": "evidence-v1",
+    "qualification": {
+      "numerical_bending": false,
+      "contact": false,
+      "vacuum": false,
+      "material_identification": false,
+      "task_mechanics": false,
+      "learning_dataset_release": false
+    },
+    "assumed_parameters": [
+      "body_thickness_m",
+      "header_thickness_m",
+      "exposed_length_m",
+      "stiffener_length_m",
+      "wide_end_length_m",
+      "transition_length_m",
+      "equivalent_young_pa",
+      "equivalent_density_kg_m3",
+      "poisson_ratio",
+      "static_friction",
+      "dynamic_friction"
+    ]
+  },
+  "outline": "Revision-two width profile with assumed transition and terminal lengths",
+  "stiffness_scale": 1,
+  "assumed_young_pa": 3000000000.0,
+  "assumed_density_kg_m3": 1800,
+  "body_ei_nm2": 7.888999999999997e-06,
+  "segments": 100,
+  "dt_s": 0.000125,
+  "physics_steps": 16000,
+  "tip_center_drop_mm": 2.4919342190027236,
+  "pinch_region_center_drop_mm": 0.7158318978548045,
+  "max_segment_center_spacing_mm": 2.0017520708844097,
+  "offline_scoring_only": true,
+  "anchored_or_attached": false,
+  "limitations": [
+    "Homogeneous equivalent modulus and density are unmeasured hypotheses",
+    "Segmented rigid ribbon is not a calibrated laminate/shell FEA model",
+    "D6 equal swing gains couple torsion and in-plane stiffness assumptions",
+    "Friction 0.5/0.4, angular damping, torque caps and joint limits assumed",
+    "No gripper, vacuum, perception or ROS controller participates",
+    "Width transition is discretized by segment-center sampling",
+    "Far-end contact face is an unverified visual convention",
+    "Final state is at 2 seconds, not a demonstrated equilibrium"
+  ]
+}

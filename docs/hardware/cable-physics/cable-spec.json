@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "id": "rpi-camera-standard-mini-200-rev2",
+  "revision": "evidence-v1",
+  "reviewed_utc": "2026-09-29",
+  "identity": {
+    "manufacturer": "Raspberry Pi Ltd",
+    "product": "Camera Cable Standard\u2013Mini 200 mm",
+    "outline_revision": "Revision Two, PCN 36",
+    "construction": "Shielded FPC; exact laminate not disclosed in reviewed sources",
+    "procurement_requirement": "Match product, length and PCN 36 revision-two outline. Do not substitute by pin count alone.",
+    "excluded_product": "PCN 48 covers separate 38/150 mm Zero camera cables, not this 200 mm product"
+  },
+  "sources": [
+    {
+      "id": "pcn36",
+      "url": "https://pip-assets.raspberrypi.com/categories/1267-pcn/documents/RP-009201-PC-1-15%20to%2022%20pin%20camera%20cables%20Rev%202.pdf",
+      "sha256": "b036e74dff1b2328a365e074620af38b0503e988fae27e24d93779daba311dc6",
+      "bytes": 100185
+    },
+    {
+      "id": "pcn48",
+      "url": "https://pip-assets.raspberrypi.com/categories/1267-pcn/documents/RP-010539-PC-1-PCN%2048_%20Zero%20Camera%20Cable%20form%20factor%20and%20manufacturing%20change.pdf",
+      "sha256": "c6e82adb53cc211fc01c20f988fb0d36b14059107fa096ed2eb753ed9ac09397",
+      "bytes": 311003
+    },
+    {
+      "id": "product",
+      "url": "https://www.raspberrypi.com/products/camera-cable/",
+      "scope": "Shielded camera cable, supported Pi families and lengths"
+    },
+    {
+      "id": "hardware",
+      "url": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html",
+      "scope": "Standard and mini interface pitch, pin counts and nominal widths"
+    },
+    {
+      "id": "declaration",
+      "url": "https://pip-assets.raspberrypi.com/categories/905-approvals/documents/RP-005153-CF-1-Std_-_Mini_EU_DoC_Cam_Only.pdf",
+      "scope": "Manufacturer product identity; not laminate/mechanics data"
+    }
+  ],
+  "parameters": {
+    "length_m": {
+      "value": 0.2,
+      "unit": "m",
+      "status": "manufacturer_published",
+      "sources": [
+        "product"
+      ]
+    },
+    "mini_width_m": {
+      "value": 0.0115,
+      "unit": "m",
+      "status": "manufacturer_published",
+      "sources": [
+        "pcn36"
+      ]
+    },
+    "standard_width_m": {
+      "value": 0.016,
+      "unit": "m",
+      "status": "manufacturer_published",
+      "sources": [
+        "pcn36"
+      ]
+    },
+    "mini_contacts": {
+      "value": 22,
+      "unit": "count",
+      "status": "manufacturer_published",
+      "sources": [
+        "hardware"
+      ]
+    },
+    "standard_contacts": {
+      "value": 15,
+      "unit": "count",
+      "status": "manufacturer_published",
+      "sources": [
+        "hardware"
+      ]
+    },
+    "mini_pitch_m": {
+      "value": 0.0005,
+      "unit": "m",
+      "status": "manufacturer_published",
+      "sources": [
+        "hardware"
+      ]
+    },
+    "standard_pitch_m": {
+      "value": 0.001,
+      "unit": "m",
+      "status": "manufacturer_published",
+      "sources": [
+        "hardware"
+      ]
+    },
+    "body_thickness_m": {
+      "value": 0.00014,
+      "unit": "m",
+      "status": "design_assumption",
+      "exploratory_bounds": [
+        0.0001,
+        0.00025
+      ],
+      "sources": [],
+      "bounds_are_manufacturing_tolerances": false
+    },
+    "header_thickness_m": {
+      "value": 0.0003,
+      "unit": "m",
+      "status": "design_assumption",
+      "exploratory_bounds": [
+        0.00025,
+        0.00035
+      ],
+      "sources": [],
+      "bounds_are_manufacturing_tolerances": false
+    },
+    "exposed_length_m": {
+      "value": 0.004,
+      "unit": "m",
+      "status": "design_assumption",
+      "exploratory_bounds": [
+        0.003,
+        0.005
+      ],
+      "sources": [],
+      "bounds_are_manufacturing_tolerances": false
+    },
+    "stiffener_length_m": {
+      "value": 0.006,
+      "unit": "m",
+      "status": "design_assumption",
+      "exploratory_bounds": [
+        0.005,
+        0.008
+      ],
+      "sources": [],
+      "bounds_are_manufacturing_tolerances": false
+    },
+    "wide_end_length_m": {
+      "value": 0.027,
+      "unit": "m",
+      "status": "design_assumption",
+      "exploratory_bounds": [
+        0.02,
+        0.035
+      ],
+      "sources": [],
+      "bounds_are_manufacturing_tolerances": false
+    },
+    "transition_length_m": {
+      "value": 0.003,
+      "unit": "m",
+      "status": "design_assumption",
+      "exploratory_bounds": [
+        0.001,
+        0.01
+      ],
+      "sources": [],
+      "bounds_are_manufacturing_tolerances": false
+    },
+    "equivalent_young_pa": {
+      "value": 3000000000.0,
+      "unit": "Pa",
+      "status": "design_assumption",
+      "exploratory_bounds": [
+        750000000.0,
+        12000000000.0
+      ],
+      "sources": [],
+      "bounds_are_manufacturing_tolerances": false
+    },
+    "equivalent_density_kg_m3": {
+      "value": 1800,
+      "unit": "kg/m3",
+      "status": "design_assumption",
+      "exploratory_bounds": [
+        1200,
+        3500
+      ],
+      "sources": [],
+      "bounds_are_manufacturing_tolerances": false
+    },
+    "poisson_ratio": {
+      "value": 0.3,
+      "unit": "1",
+      "status": "design_assumption",
+      "exploratory_bounds": [
+        0.2,
+        0.45
+      ],
+      "sources": [],
+      "bounds_are_manufacturing_tolerances": false
+    },
+    "static_friction": {
+      "value": 0.5,
+      "unit": "1",
+      "status": "design_assumption",
+      "exploratory_bounds": [
+        0.2,
+        0.8
+      ],
+      "sources": [],
+      "bounds_are_manufacturing_tolerances": false
+    },
+    "dynamic_friction": {
+      "value": 0.4,
+      "unit": "1",
+      "status": "design_assumption",
+      "exploratory_bounds": [
+        0.15,
+        0.6
+      ],
+      "sources": [],
+      "bounds_are_manufacturing_tolerances": false
+    }
+  },
+  "unknowns": [
+    "Copper trace geometry, thickness and temper",
+    "Shield material, coverage and thickness",
+    "Dielectric and adhesive layer identities and thicknesses",
+    "Directional stiffness, hysteresis, residual curl and damping",
+    "Contact plating and surface friction against selected pad/cup/desk",
+    "Minimum bend radius, permanent-set and delamination limits",
+    "Exact terminal dimensions and tolerances",
+    "Certified cable-to-socket mating drawing and insertion/latch forces",
+    "Verified contact-face relationship and full electrical pin mapping"
+  ],
+  "simulation_model": "Equivalent homogeneous mechanical sensitivity model; shield/trace layers unresolved",
+  "qualification": {
+    "numerical_bending": false,
+    "contact": false,
+    "vacuum": false,
+    "material_identification": false,
+    "task_mechanics": false,
+    "learning_dataset_release": false
+  }
+}

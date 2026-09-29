@@ -68,6 +68,12 @@ Side-entry handoff study (035) adds fixture CAD, a rotated-pad check and conserv
 
 ## What the next milestone should deliver
 
+Experiment [036](experiments/036-cable-evidence-and-thin-bending.md) pins the exact cable product/revision
+and adds a source-aware parameter profile. Three isolated thin-body bending checks fail their independent
+reference comparison. Resolve that numerical error before collecting a qualified pickup dataset.
+The [cable dossier](research/cables/standard-mini-200.md) records assumptions and the staged learning plan;
+real material identification remains deferred and no exact-product physics claim is made.
+
 The next complete skill milestone is sensor-verified flexible-cable pickup in simulation. Start from the contact-exclusion review (034), compare integrated suction-to-pinch motion with the passive presentation fixture, and qualify swept clearance and cable deformation. Then connect vacuum/pinch observations and dynamic compact-tool motion to the camera/ROS pipeline. Re-check held-end visibility and approach clearance before enabling the Pi approach. The earlier mounted empty-tool motion (030) and local pinch bench (033) remain separate evidence, not an integrated pickup result.
 
 Training comes after those observation/action interfaces and resettable task mechanics are credible. Begin with scripted bounded controllers and demonstrations; compare imitation/vision-action learning and reinforcement learning using identical observations, actuator limits and independent task scoring. Simulator truth can provide offline labels and evaluation, not hidden task-state input to the deployed policy.

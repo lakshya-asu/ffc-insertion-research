@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "src"))
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--output", type=Path, required=True)
+    p.add_argument("--spec", type=Path, default=ROOT / "config/cables/rpi-camera-standard-mini-200-rev2.json")
     p.add_argument("--stiffness-scale", type=float, default=1)
     p.add_argument("--segments", type=int, default=100)
     p.add_argument("--dt", type=float, default=0.00025)
@@ -21,7 +22,12 @@ def main():
         raise ValueError("Positive stiffness scale and 100 or 200 segments required")
     if a.dt not in (0.00025, 0.000125):
         raise ValueError("Unreviewed timestep")
+    from ffc.cable_spec import load_spec, provenance_record, values, width_at
+
+    spec = load_spec(a.spec)
+    v = values(spec)
     a.output.mkdir(parents=True, exist_ok=False)
+    (a.output / "cable-spec.json").write_bytes(a.spec.read_bytes())
     (a.output / "source.py").write_bytes(Path(__file__).read_bytes())
     from isaacsim import SimulationApp
 
@@ -55,8 +61,8 @@ def main():
     ]
     material = UsdShade.Material.Define(stage, "/World/Material")
     physics_material = UsdPhysics.MaterialAPI.Apply(material.GetPrim())
-    physics_material.CreateStaticFrictionAttr(0.5)
-    physics_material.CreateDynamicFrictionAttr(0.4)
+    physics_material.CreateStaticFrictionAttr(v["static_friction"])
+    physics_material.CreateDynamicFrictionAttr(v["dynamic_friction"])
     physics_material.CreateRestitutionAttr(0)
     for name, center, size in supports:
         box(
@@ -69,13 +75,16 @@ def main():
         UsdShade.MaterialBindingAPI.Apply(stage.GetPrimAtPath("/World/Fixture/" + name + "/Shape")).Bind(
             material, UsdShade.Tokens.weakerThanDescendants, "physics"
         )
-    length, width, thickness, density = 0.2 / a.segments, 0.0115, 0.00014, 1800
-    young = 3e9 * a.stiffness_scale
+    length = v["length_m"] / a.segments
+    thickness, density = v["body_thickness_m"], v["equivalent_density_kg_m3"]
+    young = v["equivalent_young_pa"] * a.stiffness_scale
     paths, heights, eis = [], [], []
     for i in range(a.segments):
         path = f"/World/Cable/S{i:03}"
-        stiff = i * length < 0.006 - 1e-9
-        h = 0.00030 if stiff else thickness
+        y = (i + 0.5) * length
+        width = width_at(spec, y)
+        stiff = min(y, v["length_m"] - y) < v["stiffener_length_m"]
+        h = v["header_thickness_m"] if stiff else thickness
         body = box(
             stage,
             path,
@@ -91,12 +100,20 @@ def main():
         UsdShade.MaterialBindingAPI.Apply(stage.GetPrimAtPath(path + "/Shape")).Bind(
             material, UsdShade.Tokens.weakerThanDescendants, "physics"
         )
-        if i * length < 0.004 - 1e-9:
-            for k in range(22):
+        mini = y < v["exposed_length_m"]
+        standard = y > v["length_m"] - v["exposed_length_m"]
+        if mini or standard:
+            end = "mini" if mini else "standard"
+            count = int(v[end + "_contacts"])
+            for k in range(count):
                 box(
                     stage,
                     path + f"/Contact{k:02}",
-                    ((k - 10.5) * 0.0005, 0, -h / 2 - 0.000001),
+                    (
+                        (k - (count - 1) / 2) * v[end + "_pitch_m"],
+                        0,
+                        (-1 if mini else 1) * (h / 2 + 0.000001),
+                    ),
                     (0.0003, length, 0.000002),
                     (0.88, 0.64, 0.2),
                     collision=False,
@@ -159,15 +176,17 @@ def main():
         pinch_index = int(0.012 / length)
         report = {
             "scope": "Gravity/support sensitivity, no closed-loop skill",
+            "cable_spec": provenance_record(spec),
+            "outline": "Revision-two width profile with assumed transition and terminal lengths",
             "stiffness_scale": a.stiffness_scale,
             "assumed_young_pa": young,
             "assumed_density_kg_m3": density,
-            "body_ei_nm2": young * width * thickness**3 / 12,
+            "body_ei_nm2": young * v["mini_width_m"] * thickness**3 / 12,
             "segments": a.segments,
             "dt_s": a.dt,
             "physics_steps": round(2 / a.dt),
-            "tip_center_drop_mm": float((0.03015 - final[0, 2]) * 1000),
-            "pinch_region_center_drop_mm": float((0.03007 - final[pinch_index, 2]) * 1000),
+            "tip_center_drop_mm": float((0.03 + v["header_thickness_m"] / 2 - final[0, 2]) * 1000),
+            "pinch_region_center_drop_mm": float((0.03 + thickness / 2 - final[pinch_index, 2]) * 1000),
             "max_segment_center_spacing_mm": float(
                 np.max(np.linalg.norm(np.diff(final, axis=0), axis=1)) * 1000
             ),
@@ -179,7 +198,8 @@ def main():
                 "D6 equal swing gains couple torsion and in-plane stiffness assumptions",
                 "Friction 0.5/0.4, angular damping, torque caps and joint limits assumed",
                 "No gripper, vacuum, perception or ROS controller participates",
-                "Far-end widening and its stiffener omitted",
+                "Width transition is discretized by segment-center sampling",
+                "Far-end contact face is an unverified visual convention",
                 "Final state is at 2 seconds, not a demonstrated equilibrium",
             ],
         }

@@ -137,6 +137,11 @@ Latest executed motion: [Isaac joint probes and cancellation](experiments/027-is
 
 ## Repository map
 
+Latest cable work: [source dossier and learning sequence](research/cables/standard-mini-200.md),
+[thin-body numerical checks](experiments/036-cable-evidence-and-thin-bending.md), and
+[videos and comparison](https://lakshya-asu.github.io/ffc-insertion-research/hardware/custom-gripper.html#cable-physics).
+The bending checks fail; pickup-policy dataset release remains closed.
+
 | Path | Contents |
 |---|---|
 | `src/ffc/` | Geometry, kinematics, simulation, perception and audit utilities |
