@@ -1,0 +1,112 @@
+{
+  "status": "UNQUALIFIED_MATERIAL_MODEL",
+  "runs": [
+    {
+      "name": "nominal",
+      "run": "fixture-settle-001",
+      "scope": "Gravity/support sensitivity, no closed-loop skill",
+      "stiffness_scale": 1,
+      "assumed_young_pa": 3000000000.0,
+      "assumed_density_kg_m3": 1800,
+      "body_ei_nm2": 7.888999999999997e-06,
+      "segments": 100,
+      "dt_s": 0.00025,
+      "physics_steps": 8000,
+      "tip_center_drop_mm": 4.688851529359817,
+      "pinch_region_center_drop_mm": 1.3416285139322275,
+      "max_segment_center_spacing_mm": 2.001894839896685,
+      "offline_scoring_only": true,
+      "anchored_or_attached": false,
+      "limitations": [
+        "Homogeneous equivalent modulus and density are unmeasured hypotheses",
+        "Segmented rigid ribbon is not a calibrated laminate/shell FEA model",
+        "D6 equal swing gains couple torsion and in-plane stiffness assumptions",
+        "Friction 0.5/0.4, angular damping, torque caps and joint limits assumed",
+        "No gripper, vacuum, perception or ROS controller participates",
+        "Far-end widening and its stiffener omitted",
+        "Final state is at 2 seconds, not a demonstrated equilibrium"
+      ]
+    },
+    {
+      "name": "softer",
+      "run": "fixture-settle-002",
+      "scope": "Gravity/support sensitivity, no closed-loop skill",
+      "stiffness_scale": 0.25,
+      "assumed_young_pa": 750000000.0,
+      "assumed_density_kg_m3": 1800,
+      "body_ei_nm2": 1.972249999999999e-06,
+      "segments": 100,
+      "dt_s": 0.00025,
+      "physics_steps": 8000,
+      "tip_center_drop_mm": 4.872281098365783,
+      "pinch_region_center_drop_mm": 1.3749307465553278,
+      "max_segment_center_spacing_mm": 2.001987748395661,
+      "offline_scoring_only": true,
+      "anchored_or_attached": false,
+      "limitations": [
+        "Homogeneous equivalent modulus and density are unmeasured hypotheses",
+        "Segmented rigid ribbon is not a calibrated laminate/shell FEA model",
+        "D6 equal swing gains couple torsion and in-plane stiffness assumptions",
+        "Friction 0.5/0.4, angular damping, torque caps and joint limits assumed",
+        "No gripper, vacuum, perception or ROS controller participates",
+        "Far-end widening and its stiffener omitted",
+        "Final state is at 2 seconds, not a demonstrated equilibrium"
+      ]
+    },
+    {
+      "name": "smaller-timestep",
+      "run": "fixture-settle-003",
+      "scope": "Gravity/support sensitivity, no closed-loop skill",
+      "stiffness_scale": 1,
+      "assumed_young_pa": 3000000000.0,
+      "assumed_density_kg_m3": 1800,
+      "body_ei_nm2": 7.888999999999997e-06,
+      "segments": 100,
+      "dt_s": 0.000125,
+      "physics_steps": 16000,
+      "tip_center_drop_mm": 2.5081094294786452,
+      "pinch_region_center_drop_mm": 0.7237835299968715,
+      "max_segment_center_spacing_mm": 2.001751612271187,
+      "offline_scoring_only": true,
+      "anchored_or_attached": false,
+      "limitations": [
+        "Homogeneous equivalent modulus and density are unmeasured hypotheses",
+        "Segmented rigid ribbon is not a calibrated laminate/shell FEA model",
+        "D6 equal swing gains couple torsion and in-plane stiffness assumptions",
+        "Friction 0.5/0.4, angular damping, torque caps and joint limits assumed",
+        "No gripper, vacuum, perception or ROS controller participates",
+        "Far-end widening and its stiffener omitted",
+        "Final state is at 2 seconds, not a demonstrated equilibrium"
+      ]
+    },
+    {
+      "name": "stiffer",
+      "run": "fixture-settle-004",
+      "scope": "Gravity/support sensitivity, no closed-loop skill",
+      "stiffness_scale": 4.0,
+      "assumed_young_pa": 12000000000.0,
+      "assumed_density_kg_m3": 1800,
+      "body_ei_nm2": 3.155599999999999e-05,
+      "segments": 100,
+      "dt_s": 0.00025,
+      "physics_steps": 8000,
+      "tip_center_drop_mm": 4.576997825503349,
+      "pinch_region_center_drop_mm": 1.3037292730808252,
+      "max_segment_center_spacing_mm": 2.0018975369035745,
+      "offline_scoring_only": true,
+      "anchored_or_attached": false,
+      "limitations": [
+        "Homogeneous equivalent modulus and density are unmeasured hypotheses",
+        "Segmented rigid ribbon is not a calibrated laminate/shell FEA model",
+        "D6 equal swing gains couple torsion and in-plane stiffness assumptions",
+        "Friction 0.5/0.4, angular damping, torque caps and joint limits assumed",
+        "No gripper, vacuum, perception or ROS controller participates",
+        "Far-end widening and its stiffener omitted",
+        "Final state is at 2 seconds, not a demonstrated equilibrium"
+      ]
+    }
+  ],
+  "timestep_halving_tip_difference_mm": 2.1807420998811717,
+  "all_four_trials_included": true,
+  "pickup_demonstrated": false
+}

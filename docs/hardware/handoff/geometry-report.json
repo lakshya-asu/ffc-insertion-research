@@ -1,0 +1,3094 @@
+{
+  "scope": "Offline geometry only; prescribed tool movement; fixed reference cable",
+  "source_usd_sha256": "d1528020b71255129e236dcacddfbadc502632b19ea413d55d2ebdffbda8350e",
+  "inline_housing_tail_possible_collisions": [
+    "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+    "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+    "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03"
+  ],
+  "side_entry_housing_tail_aabb_clearance_mm": 9.249993073307706,
+  "fixture_valid_connected_solid": true,
+  "fixture_support_height_mm": 30,
+  "unsupported_leading_length_mm": 20,
+  "pinch_center_setback_mm": 12,
+  "pad_across_along_cable_mm": [
+    3,
+    6
+  ],
+  "rotated_pad_review": {
+    "offline_only": true,
+    "footprint_clear_under_assumptions": true,
+    "bounds_y_mm": [
+      8.28510447446298,
+      15.71489552553702
+    ],
+    "wholly_on_stiffener": false,
+    "wholly_on_body": true,
+    "contact_margin_mm": 3.2851044744629796,
+    "side_margin_mm": 2.251843837480897,
+    "reviewed_end_margin_mm": 13.28510447446298
+  },
+  "cup_center_setback_mm": 26,
+  "integrated_required_relative_cup_travel_mm": 30,
+  "minimum_swept_aabb_separation_mm": 3.0000004951990924,
+  "possible_obstacle_collisions": [],
+  "checks": [
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 40.57000082757154
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 69.41444360081556
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 72.36176372490654
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 79.66319513034331
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.170000086797568
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.169999880043957
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 9.4999931142859
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 30.611430783301145
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.070000140255484
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 18.242672521491706
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 27.00000622730775
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 39.623227599534
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 16.470000090336594
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 80.47205494217977
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 92.00000384312193
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 96.7383531615528
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 16.470054165253583
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 78.5398791405318
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 90.74448315381403
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 99.14920172629513
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.67005451049486
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 85.31472825348969
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 90.5188927942395
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 95.48650699565158
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 45.070000633856445
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 70.25485397354856
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 71.1150777398115
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 77.18389798414576
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 67.35155912293988
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 70.5858294539949
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 76.69680052837083
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 79.73802863778113
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 85.48252937230374
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 94.8011739511088
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 67.46965022162429
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 71.7723022794999
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 82.65145569874448
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 79.63763682269555
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 84.48824065345339
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 89.65635858545362
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.070000130755991
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.06999992400238
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.706361885074048
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 33.12947890678027
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.212688677227067
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 17.148434019430542
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 36.456518356994096
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 10.269999886004419
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 11.718214414225303
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 34.239239046054195
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 33.069999455547126
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 13.685718930558561
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 34.96142797220909
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 33.374762086809596
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 18.548501670651966
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 37.13551829916788
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.320000113526524
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.319999906772912
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 3.0000004951990924
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 32.99999712753666
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 24.770000067612322
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 20.76999986085871
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.00000035736335
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 34.99999698970092
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 17.070000109335574
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 13.069999902581962
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.250000398341545
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 35.24999703067911
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.751572986439035
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.766295531054652
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 9.794791507663954
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 39.63891165011306
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 20.069999921580944
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 16.069999714827333
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.706361885074048
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 33.12947890678027
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 42.069999802371655
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 38.34239284223839
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 23.016428084281355
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 44.88613196278736
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 42.069999802371655
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 38.077389605311026
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 19.31330426151596
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 43.10467030751721
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 19.270000116413627
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 15.28840959380246
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 15.076959531409779
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 41.380154896857725
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 19.270000116413627
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 15.936915630532173
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 19.59750075314652
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 43.23264748147731
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 35.37000000800768
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 31.369999801254068
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 6.151170537077996
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 33.43406505979267
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 35.07000051762739
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 31.07000031087378
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 7.12073767031072
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 35.36530348625361
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 37.56999999608675
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 33.56999978933314
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 9.212350317397217
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 36.05367089286122
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 41.908426511546764
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 37.90842630479315
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 12.699129154171148
+    },
+    {
+      "branch": "Fixture",
+      "phase": "side_approach",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 36.016135835618385
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 40.57000082757154
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 69.41444360081556
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 72.36176372490654
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 79.66319513034331
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.170000086797568
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.169999880043957
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 9.4999931142859
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 30.611430783301145
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.070000140255484
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 18.242672521491706
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 27.00000622730775
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 39.623227599534
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 16.470000090336594
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 80.47205494217977
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 92.00000384312193
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 96.7383531615528
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 16.470054165253583
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 78.5398791405318
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 90.74448315381403
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 99.14920172629513
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.67005451049486
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 85.31472825348969
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 90.5188927942395
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 95.48650699565158
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 45.070000633856445
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 70.25485397354856
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 71.1150777398115
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 77.18389798414576
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 67.35155912293988
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 70.5858294539949
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 76.69680052837083
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 79.73802863778113
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 85.48252937230374
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 94.8011739511088
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 67.46965022162429
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 71.7723022794999
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 82.65145569874448
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 79.63763682269555
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 84.48824065345339
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 89.65635858545362
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.070000130755991
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.06999992400238
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.706361885074048
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 33.12947890678027
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.212688677227067
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 17.148434019430542
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 36.456518356994096
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 10.269999886004419
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 11.718214414225303
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 34.239239046054195
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 33.069999455547126
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 13.685718930558561
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 34.96142797220909
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 33.374762086809596
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 18.548501670651966
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 37.13551829916788
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.320000113526524
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.319999906772912
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 3.0000004951990924
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 32.99999712753666
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 24.770000067612322
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 20.76999986085871
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.00000035736335
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 34.99999698970092
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 17.070000109335574
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 13.069999902581962
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.250000398341545
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 35.24999703067911
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.751572986439035
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.766295531054652
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 9.794791507663954
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 39.63891165011306
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.139999921580944
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.139999714827333
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.706361885074048
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 33.12947890678027
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 37.139999802371655
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 33.452560333339804
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 20.857868238487605
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 43.81848409377001
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 37.139999802371655
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 33.1484887007214
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 16.68227883693067
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 41.99175285713815
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 14.340000116413627
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 10.367167829191507
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 15.076959531409779
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 41.380154896857725
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 14.340000116413627
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.301680437238215
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 19.59750075314652
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 43.23264748147731
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 30.44000000800768
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 26.439999801254068
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 3.032095421298551
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 33.00293032580732
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 30.140000517627392
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 26.14000031087378
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.001959977066492
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 35.000276989155594
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 32.63999999608675
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 28.63999978933314
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.876402143797872
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 35.348718345025354
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 36.978426511546765
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 32.97842630479315
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 8.255646529319645
+    },
+    {
+      "branch": "Fixture",
+      "phase": "close_on_body",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 34.69942159276524
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 40.57000082757154
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 69.41444360081556
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 72.36176372490654
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 79.66319513034331
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.170000086797568
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.169999880043957
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 9.4999931142859
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 30.611430783301145
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.070000140255484
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 18.242672521491706
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 27.00000622730775
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 39.623227599534
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 16.470000090336594
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 80.47205494217977
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 92.00000384312193
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 96.7383531615528
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 16.470054165253583
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 78.5398791405318
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 90.74448315381403
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 99.14920172629513
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.67005451049486
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 85.31472825348969
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 90.5188927942395
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 95.48650699565158
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 45.070000633856445
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 70.25485397354856
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 71.1150777398115
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 77.18389798414576
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 67.35155912293988
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 70.5858294539949
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 76.69680052837083
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 79.73802863778113
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 85.48252937230374
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 94.8011739511088
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 67.46965022162429
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 71.7723022794999
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 82.65145569874448
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 79.63763682269555
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 84.48824065345339
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 89.65635858545362
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.070000130755991
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.06999992400238
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.706361885074048
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 33.12947890678027
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.212688677227067
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 17.148434019430542
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 36.456518356994096
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 10.269999886004419
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 11.718214414225303
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 34.239239046054195
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 33.069999455547126
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 13.685718930558561
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 34.96142797220909
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 33.374762086809596
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 18.548501670651966
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 37.13551829916788
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.320000113526524
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.319999906772912
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 3.0000004951990924
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 32.99999712753666
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 24.770000067612322
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 20.76999986085871
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.00000035736335
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 34.99999698970092
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 17.070000109335574
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 13.069999902581962
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.250000398341545
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 35.24999703067911
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.751572986439035
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.766295531054652
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 9.794791507663954
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 39.63891165011306
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 15.139999921580944
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.139999714827333
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.706361885074048
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 33.12947890678027
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 37.139999802371655
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 33.452560333339804
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 20.857868238487605
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 43.81848409377001
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 37.139999802371655
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 33.1484887007214
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 16.68227883693067
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 41.99175285713815
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 14.340000116413627
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 10.367167829191507
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 15.076959531409779
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 41.380154896857725
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 14.340000116413627
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 11.301680437238215
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 19.59750075314652
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 43.23264748147731
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 30.44000000800768
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 26.439999801254068
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 3.032095421298551
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 33.00293032580732
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 30.140000517627392
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 26.14000031087378
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.001959977066492
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 35.000276989155594
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 32.63999999608675
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 28.63999978933314
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 5.876402143797872
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 35.348718345025354
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Desk",
+      "swept_aabb_separation_mm": 36.978426511546765
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/Base",
+      "swept_aabb_separation_mm": 32.97842630479315
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/FrontSupport",
+      "swept_aabb_separation_mm": 8.255646529319645
+    },
+    {
+      "branch": "Fixture",
+      "phase": "reopen",
+      "mesh": "/World/Fixture/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Fixture/Fixture/TailSupport",
+      "swept_aabb_separation_mm": 34.69942159276524
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 40.57000082757154
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.170000086797568
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.070000140255484
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 16.470000090336594
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 16.470054165253583
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.67005451049486
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 45.070000633856445
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.070000130755991
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.320000113526524
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 24.770000067612322
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 17.070000109335574
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.751572986439035
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 20.069999921580944
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 42.069999802371655
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 42.069999802371655
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 19.270000116413627
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 19.270000116413627
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 35.37000000800768
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 35.07000051762739
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 37.56999999608675
+    },
+    {
+      "branch": "Integrated",
+      "phase": "side_approach",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 41.908426511546764
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 40.57000082757154
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.170000086797568
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.070000140255484
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 16.470000090336594
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 16.470054165253583
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.67005451049486
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 45.070000633856445
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.070000130755991
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.320000113526524
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 24.770000067612322
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 17.070000109335574
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.751572986439035
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.139999921580944
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 37.139999802371655
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 37.139999802371655
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 14.340000116413627
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 14.340000116413627
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 30.44000000800768
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 30.140000517627392
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 32.63999999608675
+    },
+    {
+      "branch": "Integrated",
+      "phase": "close_on_body",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 36.978426511546765
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_00",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 40.57000082757154
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_01",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.170000086797568
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_02",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.070000140255484
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_03",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 16.470000090336594
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_04",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 16.470054165253583
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_05",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.67005451049486
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_06",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 45.070000633856445
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_07",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_08",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_09",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/fixed/supplier_10",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 39.069999650379806
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_11",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.070000130755991
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_12",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_13",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 14.27000009275803
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_14",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/supplier_15",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 37.06999966230074
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_finger",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.320000113526524
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_pad",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 24.770000067612322
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_screw_envelope",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 17.070000109335574
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/lower/lower_locating_pin",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.751572986439035
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_16",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 15.139999921580944
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_17",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 37.139999802371655
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_18",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 37.139999802371655
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_19",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 14.340000116413627
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/supplier_20",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 14.340000116413627
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_finger",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 30.44000000800768
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_pad",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 30.140000517627392
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_screw_envelope",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 32.63999999608675
+    },
+    {
+      "branch": "Integrated",
+      "phase": "reopen",
+      "mesh": "/World/Integrated/ToolPlacement/Tool/upper/upper_locating_pin",
+      "obstacle": "/World/Integrated/Desk",
+      "swept_aabb_separation_mm": 36.978426511546765
+    }
+  ],
+  "limitations": [
+    "No arm/flange, bracket, nozzle mount, actuator or hose envelope",
+    "Swept AABBs only qualify listed translation/jaw phases against desk/fixture",
+    "Cable deformation, stability, vacuum handoff and delivery not simulated",
+    "Full-width uniform tail proxy omits standard-end widening",
+    "Contacts/stiffener dimensions and 30 mm support height are assumptions",
+    "Fixture fastening, radii, ESD/contact material and release unqualified",
+    "Cup is a cylindrical 7x19 mm clearance envelope, not supplier CAD",
+    "Integrated axis has no selected actuator or mount; travel alone is not feasibility"
+  ],
+  "physics_steps": 0,
+  "runtime_motion_enabled": false
+}

@@ -1,0 +1,100 @@
+{
+  "scope": "Rigid terminal sample on a support; not full cable pickup or insertion",
+  "cases": {
+    "hold": {
+      "run": "outputs/pinch-bench-005",
+      "final": {
+        "command": {
+          "state": "contact_hold_complete",
+          "closing_travel_m": 0.004861999999999335,
+          "lift_m": 0.01,
+          "reason": "Bilateral load held; independent camera retention evidence still required"
+        },
+        "observation": {
+          "stamp_s": 7.4135,
+          "lower_travel_m": 0.004830442368984222,
+          "upper_travel_m": 0.004869882017374039,
+          "lift_m": 0.009992144703865051,
+          "lower_force_n": 0.11933910610682694,
+          "upper_force_n": 0.11737710499927637
+        },
+        "time_s": 7.4135
+      },
+      "physics_steps": 14827,
+      "dt_s": 0.0005,
+      "post_fault_lift_drift_m": null,
+      "offline_coupon_lift_mm": 9.972333908081055
+    },
+    "empty": {
+      "run": "outputs/pinch-bench-003",
+      "final": {
+        "command": {
+          "state": "fault",
+          "closing_travel_m": 0.004960499999999316,
+          "lift_m": 0.0,
+          "reason": "empty_or_too_thin"
+        },
+        "observation": {
+          "stamp_s": 5.2115,
+          "lower_travel_m": 0.004940878599882126,
+          "upper_travel_m": 0.004980120807886124,
+          "lift_m": -2.980232241545089e-10,
+          "lower_force_n": 0.0,
+          "upper_force_n": 0.0
+        },
+        "time_s": 5.2115
+      },
+      "physics_steps": 10423,
+      "dt_s": 0.0005,
+      "post_fault_lift_drift_m": 0.0
+    },
+    "load-dropout": {
+      "run": "outputs/pinch-bench-004",
+      "final": {
+        "command": {
+          "state": "fault",
+          "closing_travel_m": 0.004861999999999335,
+          "lift_m": 0.0020000000000000035,
+          "reason": "contact_lost"
+        },
+        "observation": {
+          "stamp_s": 5.564,
+          "lower_travel_m": 0.004830449819564819,
+          "upper_travel_m": 0.00486987829208374,
+          "lift_m": 0.0019921396672725675,
+          "lower_force_n": 0.0,
+          "upper_force_n": 0.0
+        },
+        "time_s": 5.564
+      },
+      "physics_steps": 11128,
+      "dt_s": 0.0005,
+      "post_fault_lift_drift_m": 2.4996697902679443e-06,
+      "offline_coupon_lift_mm": 1.9723325967788696
+    },
+    "tipped-sample": {
+      "run": "outputs/pinch-bench-001",
+      "final": {
+        "command": {
+          "state": "fault",
+          "closing_travel_m": 0.005,
+          "lift_m": 0.0,
+          "reason": "no_bilateral_contact"
+        },
+        "observation": {
+          "stamp_s": 7.001,
+          "lower_travel_m": 0.0049803778529167175,
+          "upper_travel_m": 0.004999998956918716,
+          "lift_m": -2.980232241545089e-10,
+          "lower_force_n": 0.0,
+          "upper_force_n": 0.0
+        },
+        "time_s": 7.001
+      },
+      "physics_steps": 14002,
+      "dt_s": 0.0005,
+      "post_fault_lift_drift_m": null,
+      "offline_coupon_lift_mm": -42.72894933819771
+    }
+  }
+}

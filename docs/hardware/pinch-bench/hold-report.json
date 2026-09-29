@@ -1,0 +1,55 @@
+{
+  "case": "coupon",
+  "scope": "Presented rigid coupon contact bench; not full FFC or desk pickup",
+  "final": {
+    "command": {
+      "state": "contact_hold_complete",
+      "closing_travel_m": 0.004861999999999335,
+      "lift_m": 0.01,
+      "reason": "Bilateral load held; independent camera retention evidence still required"
+    },
+    "observation": {
+      "stamp_s": 7.4135,
+      "lower_travel_m": 0.004830442368984222,
+      "upper_travel_m": 0.004869882017374039,
+      "lift_m": 0.009992144703865051,
+      "lower_force_n": 0.11933910610682694,
+      "upper_force_n": 0.11737710499927637
+    },
+    "time_s": 7.4135
+  },
+  "physics_steps": 14827,
+  "physics_dt_s": 0.0005,
+  "physics_elapsed_s": 7.413500352122355,
+  "source_of_control": "Measured tool body displacement as encoder equivalent; 10 ms mean pad contact impulse magnitude / timestep",
+  "camera_control": false,
+  "ros_connected": false,
+  "coupon_pose_control": false,
+  "grasp_attachment": false,
+  "dropout_injected": false,
+  "fault_time_s": null,
+  "post_fault_lift_drift_m": null,
+  "assumptions": {
+    "coupon_mass_kg": 0.0002,
+    "coupon_dimensions_m": [
+      0.0115,
+      0.03,
+      0.0003
+    ],
+    "pad_friction_static_dynamic": [
+      0.5,
+      0.4
+    ],
+    "jaw_drive_force_cap_N": 0.8,
+    "jaw_stiffness_N_m": 10000,
+    "jaw_damping_N_s_m": 2
+  },
+  "limitations": [
+    "Rigid coupon on a support; not the 200 mm compliant cable",
+    "No vacuum, robot motion, Pi connector or vision servo",
+    "Only pads collide on the tool",
+    "Pad sensor uses total impulse magnitude, not calibrated normal/shear tactile channels",
+    "Mass, friction and actuator dynamics uncalibrated",
+    "A load hold is not verified object retention or insertion success"
+  ]
+}

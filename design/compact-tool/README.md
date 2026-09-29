@@ -1,5 +1,7 @@
 # Compact commercial tool evaluation
 
+All gripper candidates remain open; see the [options register](options.md). The [contact-exclusion review](../../experiments/034-grasp-footprints.md) now separates footprint clearance from the earlier uniform-coupon fit tests. No tool is purchase released.
+
 We are evaluating a DH Robotics PGEA-2-10 instead of continuing the large two-PQ12 mechanism. The existing hybrid CAD and its motion evidence remain unchanged for comparison. This is a candidate study, not a purchasing decision or a qualified replacement.
 
 ## Verified starting point

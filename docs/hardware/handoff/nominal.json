@@ -1,0 +1,24 @@
+{
+  "scope": "Gravity/support sensitivity, no closed-loop skill",
+  "stiffness_scale": 1,
+  "assumed_young_pa": 3000000000.0,
+  "assumed_density_kg_m3": 1800,
+  "body_ei_nm2": 7.888999999999997e-06,
+  "segments": 100,
+  "dt_s": 0.00025,
+  "physics_steps": 8000,
+  "tip_center_drop_mm": 4.688851529359817,
+  "pinch_region_center_drop_mm": 1.3416285139322275,
+  "max_segment_center_spacing_mm": 2.001894839896685,
+  "offline_scoring_only": true,
+  "anchored_or_attached": false,
+  "limitations": [
+    "Homogeneous equivalent modulus and density are unmeasured hypotheses",
+    "Segmented rigid ribbon is not a calibrated laminate/shell FEA model",
+    "D6 equal swing gains couple torsion and in-plane stiffness assumptions",
+    "Friction 0.5/0.4, angular damping, torque caps and joint limits assumed",
+    "No gripper, vacuum, perception or ROS controller participates",
+    "Far-end widening and its stiffener omitted",
+    "Final state is at 2 seconds, not a demonstrated equilibrium"
+  ]
+}

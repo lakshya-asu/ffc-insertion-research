@@ -8,17 +8,23 @@ The system has useful components and several successful subsystem experiments. I
 
 **Built and tested:** Pi 4 and Pi Zero 2 W scene variants; camera-cable geometry and labelled entrance features; macro-camera optics and mounting studies; separate upper/lower entrance rims, cable leading edge and slider labels; classical image preprocessing; a frozen DINOv3 feature model with a trained task head; held-out synthetic evaluation; native ROS 2 RGB and acquisition identity; stale-frame checks; matched RGB/prediction review on the live site. Image-space alignment measurements are available on a retrospective evaluation set.
 
-**Still needed:** re-run visibility tests with the larger mounted CAD tool progressively approaching; fresh independent scenes covering glare, exposure, pose and partial occlusion; calibrate confidence/abstention; establish camera-to-robot and tool-to-camera transforms in the composed dynamic scene; test metric pose/depth estimates against offline references. A rim mask and a pixel centroid are not a verified insertion frame. The static renderer currently averages roughly 1.2 fps, so the 500 ms freshness contract correctly rejects stale intervals.
+**Still needed:** re-run visibility tests with the compact mounted candidate progressively approaching; fresh independent scenes covering glare, exposure, pose and partial occlusion; calibrate confidence/abstention; establish camera-to-robot and tool-to-camera transforms in the composed dynamic scene; test metric pose/depth estimates against offline references. A rim mask and a pixel centroid are not a verified insertion frame. The static renderer currently averages roughly 1.2 fps, so the 500 ms freshness contract correctly rejects stale intervals.
 
 **Gate to advance:** entrance boundaries and the cable leading edge remain observable throughout the intended approach, or the system detects ambiguity and requests another view. Accuracy must be evaluated against task clearances, not only IoU.
 
 ## 2. Pick up without damage — tool mechanics under commissioning
 
-**Built and tested:** the new concept uses authentic PQ12 actuator surfaces, custom printed clevises/carriage/shoe, metal frame and finger, and vacuum-cup envelopes. The CAD has 47 components. A bounded 19-pose solid check informed an above-plane stow position. The new Isaac integration adds a provisional flange adapter, three rigid bodies, two physical prismatic axes, explicit payload assumptions and a mounted empty-tool commissioning sequence. See the mounted-motion evidence for current results.
+**Built and tested:** the earlier concept uses authentic PQ12 actuator surfaces, custom printed clevises/carriage/shoe, metal frame and finger, and vacuum-cup envelopes. The CAD has 47 components. A bounded 19-pose solid check informed an above-plane stow position. The new Isaac integration adds a provisional flange adapter, three rigid bodies, two physical prismatic axes, explicit payload assumptions and a mounted empty-tool commissioning sequence. See the mounted-motion evidence for current results.
 
 **Still needed:** complete the compliance and load-cell force path; choose guide/bearing fits and retention hardware; qualify the flange adapter and inertia; represent actual pad/cup compliance; simulate pressure, seal/leak and loss-of-vacuum observations; calibrate or bound cable bending/torsion and contact; represent actuator backlash, friction, electronics and duty cycle. Compare direct pickup with a passive presentation fixture. Test randomized placement, curvature, front/back facing, slip, exposed tip and damage proxies.
 
 **Gate to advance:** a pickup is detected from deployable observations, remains stable during lifting and preserves an inspectable cable end. No simulator attachment flag may stand in for grasp verification.
+
+The compact PGEA candidate now has a separate mounted geometry study (032) and a sensor-driven rigid-sample pinch bench (033). The latter tests bilateral load gating, a 10 mm lift, empty-grasp rejection and injected load-signal loss. It is not full cable pickup, camera-guided motion or a validated PGEA actuator model.
+
+The offline footprint review (034) now excludes the exposed-contact strip on both faces. It rejects the near-tip stiffener placement for the current pads and identifies farther-back insulated-body placements for subsequent mechanics tests. This is flat geometry only, not a damage or buckling result. All commercial and custom tool candidates remain open in `design/compact-tool/options.md`.
+
+Side-entry handoff study (035) adds fixture CAD, a rotated-pad check and conservative swept desk/fixture clearances. Four unanchored ribbon-settling runs expose large timestep sensitivity: nominal tip drop changes from 4.689 to 2.508 mm when the timestep halves. The new cable dynamics are therefore unqualified. Isolate and resolve numerical bending/contact error before treating a pickup run as credible material behavior.
 
 ## 3. Inspect and orient the held end — design remains
 
@@ -62,6 +68,6 @@ The system has useful components and several successful subsystem experiments. I
 
 ## What the next milestone should deliver
 
-The mounted empty-tool milestone is documented with videos and reports in [Experiment 030](experiments/030-mounted-tool-motion.md). Next, recompose that tool with the Pi Zero and macro camera. Re-check visibility and collision geometry before enabling an approach. Next, build and evaluate vacuum/pinch sensing and compliant cable pickup. This ordering keeps the new mechanical design, perception and motion evidence consistent.
+The next complete skill milestone is sensor-verified flexible-cable pickup in simulation. Start from the contact-exclusion review (034), compare integrated suction-to-pinch motion with the passive presentation fixture, and qualify swept clearance and cable deformation. Then connect vacuum/pinch observations and dynamic compact-tool motion to the camera/ROS pipeline. Re-check held-end visibility and approach clearance before enabling the Pi approach. The earlier mounted empty-tool motion (030) and local pinch bench (033) remain separate evidence, not an integrated pickup result.
 
 Training comes after those observation/action interfaces and resettable task mechanics are credible. Begin with scripted bounded controllers and demonstrations; compare imitation/vision-action learning and reinforcement learning using identical observations, actuator limits and independent task scoring. Simulator truth can provide offline labels and evaluation, not hidden task-state input to the deployed policy.
