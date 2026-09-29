@@ -26,6 +26,8 @@ The offline footprint review (034) now excludes the exposed-contact strip on bot
 
 Side-entry handoff study (035) adds fixture CAD, a rotated-pad check and conservative swept desk/fixture clearances. Four unanchored ribbon-settling runs expose large timestep sensitivity: nominal tip drop changes from 4.689 to 2.508 mm when the timestep halves. The new cable dynamics are therefore unqualified. Isolate and resolve numerical bending/contact error before treating a pickup run as credible material behavior.
 
+Experiment [038](experiments/038-flexible-cable-motion.md) adds an exploratory full-profile flexible-cable contact pilot: a presented end rises 9.973 mm while the tool rises 9.992 mm, using local pad/encoder feedback. Empty and signal-dropout trials refuse or stop the lift. The tail remains supported; contact convergence, whole-tool clearance, camera verification, FR3 mounting and ROS integration remain open. This is partial step-2 evidence, not a completed pickup skill.
+
 ## 3. Inspect and orient the held end — design remains
 
 **Built:** inspection-view concept, cable-end labels, camera observation infrastructure and a mechanically deployable finger concept.

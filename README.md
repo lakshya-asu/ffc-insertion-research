@@ -47,6 +47,8 @@ The matched mounting audit found that a **6 mm grasp setback hid the leading ban
 
 Read the [assumed-world bending experiment](experiments/037-assumed-world-fit.md) and [next contact qualification steps](research/cables/contact-qualification.md). The [bending review](https://lakshya-asu.github.io/ffc-insertion-research/hardware/custom-gripper.html#bending-fit) includes reference curves, recorded Isaac runs and individual reserved-case views.
 
+The [first flexible-cable motion pilot](https://lakshya-asu.github.io/ffc-insertion-research/hardware/custom-gripper.html#flexible-motion) now closes on a presented cable end, lifts and holds under local pad/encoder feedback. Empty and load-dropout checks are recorded. This remains separate from FR3 motion, camera verification and ROS integration. [Methods and limits](experiments/038-flexible-cable-motion.md).
+
 ## System overview
 
 ```mermaid

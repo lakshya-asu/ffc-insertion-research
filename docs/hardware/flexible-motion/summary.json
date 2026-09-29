@@ -1,0 +1,40 @@
+{
+  "scope": "Exploratory contact motion, not task success",
+  "cases": [
+    {
+      "case": "lift",
+      "run": "flex-pinch-001",
+      "final_state": "contact_hold_complete",
+      "reason": "Bilateral load held; independent camera retention evidence still required",
+      "tool_lift_mm": 9.992137253284454,
+      "commanded_lift_mm": 10.0,
+      "post_fault_lift_drift_mm": null,
+      "report_sha256": "9b83e3f2f5745aaf2426c7393ee03704a00f28acb501c3a66b0f69d254f48772",
+      "cable_material_point_lift_mm": 9.973214939236641,
+      "material_point_note": "Offline interpolation at the original 10.5 mm material coordinate"
+    },
+    {
+      "case": "empty",
+      "run": "flex-empty-001",
+      "final_state": "fault",
+      "reason": "empty_or_too_thin",
+      "tool_lift_mm": -2.980232241545089e-07,
+      "commanded_lift_mm": 0.0,
+      "post_fault_lift_drift_mm": 0.0,
+      "report_sha256": "5f2202daae61dab6932321d2bb4e6e79064886d409ee7ce7641acbc060821b95",
+      "cable_material_point_lift_mm": null
+    },
+    {
+      "case": "dropout",
+      "run": "flex-dropout-001",
+      "final_state": "fault",
+      "reason": "contact_lost",
+      "tool_lift_mm": 1.9921396672725675,
+      "commanded_lift_mm": 2.000000000000002,
+      "post_fault_lift_drift_mm": 0.00036135315895080566,
+      "report_sha256": "43f484bb89a306c131afb6c304561998d3f7b7bfc8b6fc21a3b12882856b336e",
+      "cable_material_point_lift_mm": 1.9733114168047905,
+      "material_point_note": "Offline interpolation at the original 10.5 mm material coordinate"
+    }
+  ]
+}
