@@ -1,0 +1,400 @@
+{
+  "scope": "Six diagnostic inputs from two saved human-view frames. No new Isaac run, macro-camera validation, learned inference or independent held-out dataset.",
+  "config": {
+    "calibration_id": "legacy-action-unqualified-v1",
+    "min_pixels": 24,
+    "min_component_share": 0.65
+  },
+  "results": [
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 0,
+      "acquisition_s": 0.0,
+      "calibration_id": "legacy-action-unqualified-v1",
+      "terminal_candidate": {
+        "centroid_px": [
+          576.9828577347351,
+          150.78393495261278
+        ],
+        "oriented_extent_px": [
+          [
+            711.2115492284637,
+            33.42451460632739
+          ],
+          [
+            598.9975860125711,
+            339.3210078887362
+          ],
+          [
+            441.44110359116485,
+            281.5235577344495
+          ],
+          [
+            553.6550668070573,
+            -24.37293554795926
+          ]
+        ],
+        "area_px": 19309,
+        "component_share": 0.6934707656945841,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "tool_candidate": {
+        "centroid_px": [
+          322.4458781362007,
+          198.8293906810036
+        ],
+        "oriented_extent_px": [
+          [
+            390.8990175177846,
+            187.34505151251338
+          ],
+          [
+            309.15874902775965,
+            273.73046021875325
+          ],
+          [
+            242.52729876640203,
+            210.68193482756993
+          ],
+          [
+            324.267567256427,
+            124.29652612133003
+          ]
+        ],
+        "area_px": 4185,
+        "component_share": 0.8116757176105508,
+        "touches_border": false,
+        "ambiguous_components": false
+      },
+      "relative_image_offset_px": [
+        254.53697959853446,
+        -48.045455728390806
+      ],
+      "reasons": [
+        "terminal_ambiguous_or_clipped",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "case": "saved-start",
+      "note": "Saved human-view RGB, initial pose",
+      "clock": "review_index_seconds; not sensor acquisition time"
+    },
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 1,
+      "acquisition_s": 1.0,
+      "calibration_id": "legacy-action-unqualified-v1",
+      "terminal_candidate": {
+        "centroid_px": [
+          580.6795101737894,
+          123.57616426495144
+        ],
+        "oriented_extent_px": [
+          [
+            704.7128805438049,
+            26.50576150098574
+          ],
+          [
+            602.0752352270154,
+            294.964829898209
+          ],
+          [
+            437.9214932122909,
+            232.205342387057
+          ],
+          [
+            540.5591385290804,
+            -36.25372601016633
+          ]
+        ],
+        "area_px": 16169,
+        "component_share": 0.721701481878236,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "tool_candidate": {
+        "centroid_px": [
+          324.71858944418494,
+          132.0754320411023
+        ],
+        "oriented_extent_px": [
+          [
+            396.50717861332225,
+            123.22040361945275
+          ],
+          [
+            303.8624960046701,
+            211.2268829884464
+          ],
+          [
+            238.0513805435321,
+            141.94732598611736
+          ],
+          [
+            330.69606315218425,
+            53.94084661712374
+          ]
+        ],
+        "area_px": 4282,
+        "component_share": 0.7524160955895274,
+        "touches_border": false,
+        "ambiguous_components": false
+      },
+      "relative_image_offset_px": [
+        255.96092072960442,
+        -8.499267776150845
+      ],
+      "reasons": [
+        "terminal_ambiguous_or_clipped",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "case": "saved-end",
+      "note": "Saved human-view RGB, lifted pose",
+      "clock": "review_index_seconds; not sensor acquisition time"
+    },
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 2,
+      "acquisition_s": 2.0,
+      "calibration_id": "legacy-action-unqualified-v1",
+      "terminal_candidate": {
+        "centroid_px": [
+          298.8719512195122,
+          185.65243902439025
+        ],
+        "oriented_extent_px": [
+          [
+            314.9118470426784,
+            185.4886410265999
+          ],
+          [
+            283.49023436217647,
+            193.70149651400624
+          ],
+          [
+            281.7693215278925,
+            187.11744586089375
+          ],
+          [
+            313.1909342083944,
+            178.90459037348745
+          ]
+        ],
+        "area_px": 164,
+        "component_share": 0.8541666666666666,
+        "touches_border": false,
+        "ambiguous_components": false
+      },
+      "tool_candidate": null,
+      "relative_image_offset_px": null,
+      "reasons": [
+        "tool_not_resolved",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "case": "dark-edit",
+      "note": "Image multiplied by 0.2; not a physical exposure simulation",
+      "clock": "review_index_seconds; not sensor acquisition time"
+    },
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 3,
+      "acquisition_s": 3.0,
+      "calibration_id": "legacy-action-unqualified-v1",
+      "terminal_candidate": {
+        "centroid_px": [
+          582.382065421732,
+          122.15772653214688
+        ],
+        "oriented_extent_px": [
+          [
+            696.8651132015673,
+            20.16128125850416
+          ],
+          [
+            609.5428499705274,
+            288.4228260250306
+          ],
+          [
+            454.7772271767607,
+            238.04480980777868
+          ],
+          [
+            542.0994904078005,
+            -30.216734958747764
+          ]
+        ],
+        "area_px": 15958,
+        "component_share": 0.8195778337014021,
+        "touches_border": true,
+        "ambiguous_components": false
+      },
+      "tool_candidate": {
+        "centroid_px": [
+          339.07254814151366,
+          110.0371697268249
+        ],
+        "oriented_extent_px": [
+          [
+            339.93619045528374,
+            166.49595152120295
+          ],
+          [
+            277.8379443313856,
+            105.53982806435751
+          ],
+          [
+            328.3878217843928,
+            54.042807689824265
+          ],
+          [
+            390.486067908291,
+            114.9989311466697
+          ]
+        ],
+        "area_px": 2233,
+        "component_share": 0.9933274021352313,
+        "touches_border": false,
+        "ambiguous_components": false
+      },
+      "relative_image_offset_px": [
+        243.30951728021836,
+        12.120556805321982
+      ],
+      "reasons": [
+        "terminal_ambiguous_or_clipped",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "case": "occlusion-edit",
+      "note": "Added rectangular obstruction; not a new scene",
+      "clock": "review_index_seconds; not sensor acquisition time"
+    },
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 4,
+      "acquisition_s": 4.0,
+      "calibration_id": "legacy-action-unqualified-v1",
+      "terminal_candidate": {
+        "centroid_px": [
+          580.6795101737894,
+          123.57616426495144
+        ],
+        "oriented_extent_px": [
+          [
+            704.7128805438049,
+            26.50576150098574
+          ],
+          [
+            602.0752352270154,
+            294.964829898209
+          ],
+          [
+            437.9214932122909,
+            232.205342387057
+          ],
+          [
+            540.5591385290804,
+            -36.25372601016633
+          ]
+        ],
+        "area_px": 16169,
+        "component_share": 0.6499055428272841,
+        "touches_border": true,
+        "ambiguous_components": true
+      },
+      "tool_candidate": {
+        "centroid_px": [
+          324.71858944418494,
+          132.0754320411023
+        ],
+        "oriented_extent_px": [
+          [
+            396.50717861332225,
+            123.22040361945275
+          ],
+          [
+            303.8624960046701,
+            211.2268829884464
+          ],
+          [
+            238.0513805435321,
+            141.94732598611736
+          ],
+          [
+            330.69606315218425,
+            53.94084661712374
+          ]
+        ],
+        "area_px": 4282,
+        "component_share": 0.7524160955895274,
+        "touches_border": false,
+        "ambiguous_components": false
+      },
+      "relative_image_offset_px": [
+        255.96092072960442,
+        -8.499267776150845
+      ],
+      "reasons": [
+        "terminal_ambiguous_or_clipped",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "case": "blue-decoy-edit",
+      "note": "Added blue region exposes colour-only ambiguity",
+      "clock": "review_index_seconds; not sensor acquisition time"
+    },
+    {
+      "schema": "ffc.held-end-review.v1",
+      "sequence": 5,
+      "acquisition_s": 5.0,
+      "calibration_id": "legacy-action-unqualified-v1",
+      "terminal_candidate": null,
+      "tool_candidate": null,
+      "relative_image_offset_px": null,
+      "reasons": [
+        "terminal_not_resolved",
+        "tool_not_resolved",
+        "leading_edge_unverified"
+      ],
+      "leading_edge": null,
+      "slip_state": "unverified",
+      "motion_permitted": false,
+      "scope": "Appearance-only component measurements. Extents are not grasp/insertion targets.",
+      "case": "empty-image",
+      "note": "Synthetic absent-input negative",
+      "clock": "review_index_seconds; not sensor acquisition time"
+    }
+  ],
+  "start_end_comparison": {
+    "relative_image_shift_px": null,
+    "slip_state": "unverified",
+    "motion_permitted": false,
+    "reason": "Perspective, rotation, deformation and occlusion can also change this image measurement"
+  },
+  "sources": {
+    "isaac-start.png": "d8b8c3d83cb27cd2850dfb92bd6bd9e860aadf595b93abb2468c689b0721d664",
+    "isaac-end.png": "79dd6feb5396266c9c95ca7d8929395fba77f495e8605c4afe60fe0ae32baa0a"
+  },
+  "code_sha256": {
+    "src/ffc/held_end_inspection.py": "ff72ff9e5fe601d38ebbc2ac9c0913acf75de497de3ffb27fd6f83f28a222bda",
+    "scripts/review_held_end_images.py": "b4c849ea668285ccbd07872f84591cd245b0e60f990078aa590b797b7e7e7b94"
+  }
+}

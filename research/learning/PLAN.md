@@ -13,7 +13,7 @@ The local bench (038) and the separate FR3-mounted presented-cable lift (040) no
 | Archive rendered and native recorded-motion runs | Bench and mounted archives built; positive replays rendered in Isaac | Portable USD timeline, source trace comparisons, video, hashes and launch instructions |
 | Sensor-only episode interface | Implemented; five boundary/timing/channel tests pass | Strict actor field allowlist, timestamps, finite values, explicit missing cameras; offline labels separate |
 | Mounted grasp and 10 mm lift | Nominal three-case commissioning passed | Broaden placement, curvature, timestep and sensor-failure tests; complete collision/clearance review |
-| Held-end inspection | Next | Independent image evidence of leading edge and slip; uncertainty triggers abstention |
+| Held-end inspection | Interface and saved-image failure review ready; fresh Isaac capture blocked by current Docker permissions | Independent image evidence of leading edge and slip; uncertainty triggers abstention |
 | Sensor-guided free-space alignment | First learned motion target | Held-out metric position/angle errors against offline reference, bounded corrections |
 | Contact insertion | Gated | Stable contact mechanics, collision/buckling/slip tests, stop/retract and seating evidence |
 
@@ -60,3 +60,7 @@ Latest evidence: [039 — mounted lift commissioning and replay library](../../e
 [040 methods](../../experiments/040-thin-pad-collision-and-mounted-replay.md): body-pose audit rules out a gross initial tool-pose error. Lowering the convex cooking thickness floor did not change the failure. Analytic pad boxes derived from CAD remove premature open-jaw contact; run 006 held contact but timed out at 9.58 mm. Disabling sleeping in 007 did not change the plateau. Run 008 adds bounded encoder-error integration while retaining vendor joint friction and passes the lift/hold check. Mounted replay and sensor/action export are implemented. The failed-run bundle passed an isolated rerun check. The positive bundle is packaged; its fresh physics repeat remains pending.
 
 Frozen commissioning suite: `fr3-flex-008`, `fr3-flex-empty-002`, `fr3-flex-dropout-002`; [machine-readable checks](../../docs/library/mounted-suite.json). The next deliverable is a calibrated held-end RGB stream and leading-edge/visibility measurements, with uncertainty causing abstention. Preserve the pad/encoder guard and keep Pi insertion disabled.
+
+## Inspection preparation (041)
+
+[041 record](../../experiments/041-held-end-inspection-preparation.md): RGB-only inspection contracts and a fixed-camera capture recipe are implemented. Saved-image colour-region review correctly abstains but fails to uniquely localize the terminal because adapter/tool surfaces share its colour. This does not close the leading-edge or slip gate. Five new tests pass; the full run has 177 passes and one existing server test blocked by sandbox socket restrictions. No new Isaac render or GPU inference ran. Next: execute the prepared raw-camera capture, review optics/clearance and label visible leading edges before fitting/evaluating a learned estimate.
