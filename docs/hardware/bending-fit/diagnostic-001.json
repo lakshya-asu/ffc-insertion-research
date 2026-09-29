@@ -1,0 +1,91 @@
+{
+  "scope": "Homogeneous thin-body numerical bending; not material calibration",
+  "cable_spec": {
+    "profile_id": "rpi-camera-standard-mini-200-rev2",
+    "profile_sha256": "09e4a5bacf516b39b0c545489d34d050a2c7407df6c3cf7629db69d67aba42c9",
+    "profile_revision": "evidence-v1",
+    "qualification": {
+      "numerical_bending": false,
+      "contact": false,
+      "vacuum": false,
+      "material_identification": false,
+      "task_mechanics": false,
+      "learning_dataset_release": false
+    },
+    "assumed_parameters": [
+      "body_thickness_m",
+      "header_thickness_m",
+      "exposed_length_m",
+      "stiffener_length_m",
+      "wide_end_length_m",
+      "transition_length_m",
+      "equivalent_young_pa",
+      "equivalent_density_kg_m3",
+      "poisson_ratio",
+      "static_friction",
+      "dynamic_friction"
+    ]
+  },
+  "cable": {
+    "length_m": 0.032,
+    "width_m": 0.0115,
+    "thickness_m": 0.00014,
+    "segments": 16,
+    "mass_kg": 9.273599999999999e-05,
+    "start_xyz_m": [
+      0,
+      0,
+      0.15
+    ],
+    "stiffener_segments": 0,
+    "stiffener_gain_multiplier": 1,
+    "bend_stiffness_nm_per_degree": 6.884451234491631e-05,
+    "swing_stiffness_nm_per_degree": 0.0006884451234491631,
+    "damping_nm_s_per_degree": 6.884451234491631e-07,
+    "solver_iterations": 255,
+    "benchmark_drag_per_s": 20,
+    "angular_drive_gain_scale": 16.0
+  },
+  "reference": {
+    "linear_hinge_chain_prediction_m": 0.0004151431836734694,
+    "nonlinear_hinge_chain_prediction_m": 0.00041508330598536336,
+    "reference_maximum_gradient_residual_rad": 3.8641837993291794e-11,
+    "reference_joint_angles_rad": [
+      0.003243056793772093,
+      0.0028250328698576476,
+      0.0024358433014847803,
+      0.002075488986516169,
+      0.0017439695833024297,
+      0.001441284000497215,
+      0.0011674307657689924,
+      0.000922408292699587,
+      0.0007062150634852632,
+      0.0005188497433788662,
+      0.0003603112411329778,
+      0.0002305987280251923,
+      0.00012971162636799116,
+      5.7649576727519646e-05,
+      1.441239139785202e-05
+    ]
+  },
+  "physics_steps": 8000,
+  "dt_s": 0.000125,
+  "solver": "PGS",
+  "effective_gain": 16.0,
+  "load_scale": 1.0,
+  "modulus_scale": 1.0,
+  "observed_tip_sag_m": 0.004505660859397936,
+  "relative_error": 9.854835148578138,
+  "final_50ms_tip_excursion_m": 0.0,
+  "declared_numerical_reference_tolerance": 0.05,
+  "single_case_reference_agreement": false,
+  "full_cable_physics_qualified": false,
+  "learning_dataset_release": false,
+  "limitations": [
+    "Body properties are assumptions from the evidence profile",
+    "First full segment fixed; compare discrete boundary, not ideal continuum clamp",
+    "20/s artificial body drag assists settling and is not material damping",
+    "No end stiffener, width transition, contact, vacuum or insertion",
+    "Single-case agreement cannot establish timestep/mesh convergence"
+  ]
+}

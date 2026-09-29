@@ -1,0 +1,14 @@
+{
+  "selected_gain": 1.0,
+  "candidates": [
+    {
+      "gain": 1.0,
+      "relative_rmse": 0.011368875279899777,
+      "max_relative_error": 0.060988399067541166,
+      "all_fit_cases_passed": false
+    }
+  ],
+  "fit_passed": false,
+  "selection_used_validation": false,
+  "scope": "Static bending only; not full cable or contact qualification"
+}

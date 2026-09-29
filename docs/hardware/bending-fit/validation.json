@@ -1,0 +1,1267 @@
+{
+  "settings": {
+    "formulation": "articulated",
+    "dt_s": 3.125e-05,
+    "gains": [
+      1.0
+    ],
+    "split": "validation",
+    "position_iterations": 255,
+    "velocity_iterations": 8,
+    "solver": "PGS",
+    "external_forces_every_iteration": false,
+    "duration_s": 1.0,
+    "body_drag_per_s": 20,
+    "joint_viscosity_scale": 1e-05,
+    "awake_articulation": true,
+    "relative_error_limit": 0.05,
+    "target_sha256": "a85046c93ab3bb71af16eda77af48639f59a69b6c42883f1cab10eb9ffe525f8",
+    "source_hashes": {
+      "/workspace/scripts/isaac_fit_bending.py": "dabf31adc99b01e123ccd5025cbd9e5f7a84732983841a9547e0e6e33a7cdba5",
+      "/workspace/src/ffc/isaac_scene.py": "3451bc6d38d2886ac2063ca36c79989a639b023735d8b0dce202c99ae7784285",
+      "/workspace/src/ffc/bending_fit.py": "302569165e4028b0f8d14eb591c8d19a843c2eb016ea35b00952a0361f5e6b2b",
+      "/workspace/src/ffc/isaac_recording.py": "0324a0505e36505f5bd9b59512c3da927b83560e3219ee2b1815f88ad93924d0",
+      "/workspace/config/cables/rpi-camera-standard-mini-200-rev2.json": "09e4a5bacf516b39b0c545489d34d050a2c7407df6c3cf7629db69d67aba42c9",
+      "/workspace/outputs/world-model-targets-001/targets.json": "a85046c93ab3bb71af16eda77af48639f59a69b6c42883f1cab10eb9ffe525f8"
+    },
+    "selection_sha256": "336b335731350956a47e682a45906bbab5303c1c2682b096ecffae2df5c8e0d6"
+  },
+  "physics_clock": {
+    "steps": 32000,
+    "time_s": 1.0000000474974513
+  },
+  "cases": [
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 0.25,
+      "uniform_load_multiplier": 0.25,
+      "ei_nm2": 1.972249999999999e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.00023873616000000004,
+        "nonlinear_hinge_chain_prediction_m": 0.00023872112098221882,
+        "reference_maximum_gradient_residual_rad": 7.1968594278493114e-12,
+        "reference_joint_angles_rad": [
+          0.002436000710274732,
+          0.002075634432634742,
+          0.0017440998478903305,
+          0.0014413972000266494,
+          0.001167526130068357,
+          0.0009224859631696659,
+          0.0007062759115082646,
+          0.0005188952089179825,
+          0.000360343191518326,
+          0.00023061933692149767,
+          0.00012972327291975195,
+          5.7654764878244e-05,
+          1.4413689380968688e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.15
+      ],
+      "tip_path": "/World/Cable000/segment_013",
+      "observed_sag_m": 0.000238557128191208,
+      "relative_error": 0.0006869638946737089,
+      "tail_excursion_m": 1.5575380069021705e-08,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 0.25,
+      "uniform_load_multiplier": 0.5,
+      "ei_nm2": 1.972249999999999e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0004774723200000001,
+        "nonlinear_hinge_chain_prediction_m": 0.0004773520560126712,
+        "reference_maximum_gradient_residual_rad": 1.5499754257852771e-15,
+        "reference_joint_angles_rad": [
+          0.004871506339114524,
+          0.004150780197304166,
+          0.0034877312664914773,
+          0.0028823614970722457,
+          0.0023346680173623115,
+          0.001844645429967434,
+          0.0014122874344744784,
+          0.0010375879040358852,
+          0.0007205415300008598,
+          0.00046114413529095837,
+          0.00025939274375686924,
+          0.00011528547930230747,
+          2.8821355124746298e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.065,
+        0.0,
+        0.15
+      ],
+      "tip_path": "/World/Cable001/segment_013",
+      "observed_sag_m": 0.0004770413559985476,
+      "relative_error": 0.0006508823209412373,
+      "tail_excursion_m": 3.174438539810254e-08,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 0.25,
+      "uniform_load_multiplier": 1.0,
+      "ei_nm2": 1.972249999999999e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0009549446400000002,
+        "nonlinear_hinge_chain_prediction_m": 0.0009539838213608577,
+        "reference_maximum_gradient_residual_rad": 1.946030142585542e-13,
+        "reference_joint_angles_rad": [
+          0.009739057635663996,
+          0.008297656608476088,
+          0.006971720479700862,
+          0.005761264815236132,
+          0.00466626664314215,
+          0.003686682816844607,
+          0.0028224629857366255,
+          0.002073558196125384,
+          0.0014399260381113843,
+          0.000921533145443222,
+          0.0005183557466821304,
+          0.00023037885762273687,
+          5.759459699707883e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.13,
+        0.0,
+        0.15
+      ],
+      "tip_path": "/World/Cable002/segment_013",
+      "observed_sag_m": 0.000953345617123208,
+      "relative_error": 0.0006689885335156021,
+      "tail_excursion_m": 1.4034072975954714e-07,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 0.25,
+      "uniform_load_multiplier": 1.5,
+      "ei_nm2": 1.972249999999999e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0014324169600000002,
+        "nonlinear_hinge_chain_prediction_m": 0.0014291814402328728,
+        "reference_maximum_gradient_residual_rad": 1.0023232244193991e-14,
+        "reference_joint_angles_rad": [
+          0.014598729239132332,
+          0.012436755561003062,
+          0.010448254742245372,
+          0.008633279108816186,
+          0.006991751138916406,
+          0.0055235253953830245,
+          0.004228432240202136,
+          0.003106306796941345,
+          0.0021570062644666816,
+          0.001380418313897939,
+          0.00077646292813124,
+          0.00034508967307598235,
+          8.627202312423516e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.195,
+        0.0,
+        0.15
+      ],
+      "tip_path": "/World/Cable003/segment_013",
+      "observed_sag_m": 0.0014282943773349654,
+      "relative_error": 0.0006206789935383483,
+      "tail_excursion_m": 1.5684520826564352e-07,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 0.25,
+      "uniform_load_multiplier": 2.0,
+      "ei_nm2": 1.972249999999999e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0019098892800000003,
+        "nonlinear_hinge_chain_prediction_m": 0.0019022437810830818,
+        "reference_maximum_gradient_residual_rad": 1.3177653412910217e-13,
+        "reference_joint_angles_rad": [
+          0.01944665664597209,
+          0.01656426297727714,
+          0.013913678853494555,
+          0.011495027617928422,
+          0.009308125544454085,
+          0.00735262849631087,
+          0.00562813534317119,
+          0.004134256395826243,
+          0.0028706542582478153,
+          0.0018370635996175842,
+          0.0010332954467653617,
+          0.00045923070562692,
+          0.00011480674342203423
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.26,
+        0.0,
+        0.15
+      ],
+      "tip_path": "/World/Cable004/segment_013",
+      "observed_sag_m": 0.0019010161840717632,
+      "relative_error": 0.0006453415821496833,
+      "tail_excursion_m": 1.8826102926583488e-07,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 1.0,
+      "uniform_load_multiplier": 0.25,
+      "ei_nm2": 7.888999999999997e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 5.968404000000001e-05,
+        "nonlinear_hinge_chain_prediction_m": 5.968380500462599e-05,
+        "reference_maximum_gradient_residual_rad": 7.126569299964469e-15,
+        "reference_joint_angles_rad": [
+          0.000609019526392733,
+          0.000518927706365856,
+          0.00043604326929568774,
+          0.00036036621899462786,
+          0.00029189654985378944,
+          0.00023063425132873055,
+          0.0001765793111096639,
+          0.0001297317172251161,
+          9.009145930180055e-05,
+          5.765852917726042e-05,
+          3.243292103563119e-05,
+          1.4414631210663095e-05,
+          3.603657773937098e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.325,
+        0.0,
+        0.15
+      ],
+      "tip_path": "/World/Cable005/segment_013",
+      "observed_sag_m": 5.9642518413782764e-05,
+      "relative_error": 0.0006917553403310572,
+      "tail_excursion_m": 1.0942996508944702e-11,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 1.0,
+      "uniform_load_multiplier": 0.5,
+      "ei_nm2": 7.888999999999997e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.00011936808000000002,
+        "nonlinear_hinge_chain_prediction_m": 0.00011936620005382845,
+        "reference_maximum_gradient_residual_rad": 2.2804848287538704e-13,
+        "reference_joint_angles_rad": [
+          0.0012180313131984607,
+          0.0010378477733915953,
+          0.0008720792156056251,
+          0.0007207256703395507,
+          0.0005837870927221089,
+          0.0004612633983977107,
+          0.00035315448888813776,
+          0.0002594602684217813,
+          0.00018018065401257107,
+          0.00011531558036106916,
+          6.486500094053457e-05,
+          2.8828886421088385e-05,
+          7.207221375443687e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.39,
+        0.0,
+        0.15
+      ],
+      "tip_path": "/World/Cable006/segment_013",
+      "observed_sag_m": 0.00011927601981706615,
+      "relative_error": 0.0007554922308127265,
+      "tail_excursion_m": 1.0674816586231373e-10,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 1.0,
+      "uniform_load_multiplier": 1.0,
+      "ei_nm2": 7.888999999999997e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.00023873616000000004,
+        "nonlinear_hinge_chain_prediction_m": 0.00023872112098221882,
+        "reference_maximum_gradient_residual_rad": 7.1968594278493114e-12,
+        "reference_joint_angles_rad": [
+          0.002436000710274732,
+          0.002075634432634742,
+          0.0017440998478903305,
+          0.0014413972000266494,
+          0.001167526130068357,
+          0.0009224859631696659,
+          0.0007062759115082646,
+          0.0005188952089179825,
+          0.000360343191518326,
+          0.00023061933692149767,
+          0.00012972327291975195,
+          5.7654764878244e-05,
+          1.4413689380968688e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.455,
+        0.0,
+        0.15
+      ],
+      "tip_path": "/World/Cable007/segment_013",
+      "observed_sag_m": 0.00023855711142886649,
+      "relative_error": 0.0006870341119273871,
+      "tail_excursion_m": 6.956374087874195e-10,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 1.0,
+      "uniform_load_multiplier": 1.5,
+      "ei_nm2": 7.888999999999997e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.00035810424000000006,
+        "nonlinear_hinge_chain_prediction_m": 0.0003580534936660398,
+        "reference_maximum_gradient_residual_rad": 2.0729945537922845e-16,
+        "reference_joint_angles_rad": [
+          0.0036538463326293417,
+          0.00311329892055547,
+          0.002616003368636775,
+          0.002161960499983758,
+          0.0017511691030931077,
+          0.0013836269006883496,
+          0.0010593312343768065,
+          0.0007782795189240362,
+          0.0005404695142859989,
+          0.0003458994578695126,
+          0.00019456809382060872,
+          8.647463047183999e-05,
+          2.1618651414520705e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.52,
+        0.0,
+        0.15
+      ],
+      "tip_path": "/World/Cable008/segment_013",
+      "observed_sag_m": 0.000357807657127146,
+      "relative_error": 0.0006865916496909819,
+      "tail_excursion_m": 1.57280137247362e-08,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 1.0,
+      "uniform_load_multiplier": 2.0,
+      "ei_nm2": 7.888999999999997e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0004774723200000001,
+        "nonlinear_hinge_chain_prediction_m": 0.0004773520560126712,
+        "reference_maximum_gradient_residual_rad": 1.5499754257852771e-15,
+        "reference_joint_angles_rad": [
+          0.004871506339114524,
+          0.004150780197304166,
+          0.0034877312664914773,
+          0.0028823614970722457,
+          0.0023346680173623115,
+          0.001844645429967434,
+          0.0014122874344744784,
+          0.0010375879040358852,
+          0.0007205415300008598,
+          0.00046114413529095837,
+          0.00025939274375686924,
+          0.00011528547930230747,
+          2.8821355124746298e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.585,
+        0.0,
+        0.15
+      ],
+      "tip_path": "/World/Cable009/segment_013",
+      "observed_sag_m": 0.00047704141372045816,
+      "relative_error": 0.00065076139989384,
+      "tail_excursion_m": 3.151722174909999e-08,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 4.0,
+      "uniform_load_multiplier": 0.25,
+      "ei_nm2": 3.155599999999999e-05,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 1.4921010000000002e-05,
+        "nonlinear_hinge_chain_prediction_m": 1.492100632818702e-05,
+        "reference_maximum_gradient_residual_rad": 6.938893903907228e-18,
+        "reference_joint_angles_rad": [
+          0.00015225518392640745,
+          0.00012973222500379364,
+          0.00010901110337865396,
+          9.009181911055732e-05,
+          7.297437211186494e-05,
+          5.765876221781997e-05,
+          4.414498923608191e-05,
+          3.243305297959638e-05,
+          2.2522953286280655e-05,
+          1.441469002859621e-05,
+          8.108263115670057e-06,
+          3.6036724902169673e-06,
+          9.009181221053556e-07
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.0,
+        0.025,
+        0.15
+      ],
+      "tip_path": "/World/Cable010/segment_013",
+      "observed_sag_m": 1.4887533748869641e-05,
+      "relative_error": 0.0022433191556353593,
+      "tail_excursion_m": 7.567002580088911e-13,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 4.0,
+      "uniform_load_multiplier": 0.5,
+      "ei_nm2": 3.155599999999999e-05,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 2.9842020000000005e-05,
+        "nonlinear_hinge_chain_prediction_m": 2.984199062551255e-05,
+        "reference_maximum_gradient_residual_rad": 2.2280354644577116e-16,
+        "reference_joint_angles_rad": [
+          0.000304510246921479,
+          0.00025946433064260926,
+          0.0002180220923353693,
+          0.00018018353247631003,
+          0.00014594865036432115,
+          0.0001153174446813476,
+          8.828991388866572e-05,
+          6.486605648984061e-05,
+          4.504587118821056e-05,
+          2.8829356963467643e-05,
+          1.621651308862811e-05,
+          7.207339105410264e-06,
+          1.8018347727614777e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.065,
+        0.025,
+        0.15
+      ],
+      "tip_path": "/World/Cable011/segment_013",
+      "observed_sag_m": 2.9810827240822624e-05,
+      "relative_error": 0.0010442796890125505,
+      "tail_excursion_m": 8.149037000748649e-13,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 4.0,
+      "uniform_load_multiplier": 1.0,
+      "ei_nm2": 3.155599999999999e-05,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 5.968404000000001e-05,
+        "nonlinear_hinge_chain_prediction_m": 5.968380500462599e-05,
+        "reference_maximum_gradient_residual_rad": 7.126569299964469e-15,
+        "reference_joint_angles_rad": [
+          0.000609019526392733,
+          0.000518927706365856,
+          0.00043604326929568774,
+          0.00036036621899462786,
+          0.00029189654985378944,
+          0.00023063425132873055,
+          0.0001765793111096639,
+          0.0001297317172251161,
+          9.009145930180055e-05,
+          5.765852917726042e-05,
+          3.243292103563119e-05,
+          1.4414631210663095e-05,
+          3.603657773937098e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.13,
+        0.025,
+        0.15
+      ],
+      "tip_path": "/World/Cable012/segment_013",
+      "observed_sag_m": 5.9642508867779886e-05,
+      "relative_error": 0.0006919152832649544,
+      "tail_excursion_m": 1.7927853646071412e-11,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 4.0,
+      "uniform_load_multiplier": 1.5,
+      "ei_nm2": 3.155599999999999e-05,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 8.952606000000001e-05,
+        "nonlinear_hinge_chain_prediction_m": 8.952526689356943e-05,
+        "reference_maximum_gradient_residual_rad": 5.411730091831046e-14,
+        "reference_joint_angles_rad": [
+          0.0009135268709660027,
+          0.0007783891722528414,
+          0.0006540626155083469,
+          0.0005405472135993333,
+          0.0004378429475957774,
+          0.0003459497819101786,
+          0.0002648676749970187,
+          0.0001945965864526064,
+          0.00013513648126713847,
+          8.648733189236132e-05,
+          4.8649118699762945e-05,
+          2.1621829315771334e-05,
+          5.405457231983727e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.195,
+        0.025,
+        0.15
+      ],
+      "tip_path": "/World/Cable013/segment_013",
+      "observed_sag_m": 8.947416987437062e-05,
+      "relative_error": 0.0005707552847572517,
+      "tail_excursion_m": 5.07564545948469e-11,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.028,
+      "modulus_multiplier": 4.0,
+      "uniform_load_multiplier": 2.0,
+      "ei_nm2": 3.155599999999999e-05,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.00011936808000000002,
+        "nonlinear_hinge_chain_prediction_m": 0.00011936620005382845,
+        "reference_maximum_gradient_residual_rad": 2.2804848287538704e-13,
+        "reference_joint_angles_rad": [
+          0.0012180313131984607,
+          0.0010378477733915953,
+          0.0008720792156056251,
+          0.0007207256703395507,
+          0.0005837870927221089,
+          0.0004612633983977107,
+          0.00035315448888813776,
+          0.0002594602684217813,
+          0.00018018065401257107,
+          0.00011531558036106916,
+          6.486500094053457e-05,
+          2.8828886421088385e-05,
+          7.207221375443687e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.26,
+        0.025,
+        0.15
+      ],
+      "tip_path": "/World/Cable014/segment_013",
+      "observed_sag_m": 0.00011927601422925815,
+      "relative_error": 0.0007555390431263076,
+      "tail_excursion_m": 1.263055215972031e-10,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 0.25,
+      "uniform_load_multiplier": 0.25,
+      "ei_nm2": 1.972249999999999e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0010407408979591839,
+        "nonlinear_hinge_chain_prediction_m": 0.001040146550453694,
+        "reference_maximum_gradient_residual_rad": 1.877664690397296e-14,
+        "reference_joint_angles_rad": [
+          0.005202140900027794,
+          0.004668804443286158,
+          0.004164314736185302,
+          0.003688676689684879,
+          0.0032418913647704424,
+          0.002823957113974219,
+          0.002434870507781991,
+          0.0020746270719179793,
+          0.0017432218598614493,
+          0.0014406498832844514,
+          0.0011669064214205748,
+          0.0009219872286871071,
+          0.0007058886581928319,
+          0.0005186077170738647,
+          0.0003601420679123106,
+          0.0002304899888078248,
+          0.00012965030299050512,
+          5.7622287184611946e-05,
+          1.4405566255874959e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.325,
+        0.025,
+        0.15
+      ],
+      "tip_path": "/World/Cable015/segment_019",
+      "observed_sag_m": 0.0010394580709617296,
+      "relative_error": 0.0006619062397159592,
+      "tail_excursion_m": 1.5300780720206575e-07,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 0.25,
+      "uniform_load_multiplier": 0.5,
+      "ei_nm2": 1.972249999999999e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0020814817959183677,
+        "nonlinear_hinge_chain_prediction_m": 0.0020767414751687993,
+        "reference_maximum_gradient_residual_rad": 7.225123277443402e-15,
+        "reference_joint_angles_rad": [
+          0.010394932978745879,
+          0.00932830326154187,
+          0.00831947094285821,
+          0.007368475197900872,
+          0.006475324454228081,
+          0.005640005520346788,
+          0.0048624909911604945,
+          0.004142745138070396,
+          0.003480728479358089,
+          0.0028764012134730025,
+          0.0023297256843529575,
+          0.0018406680341625551,
+          0.0014091991850028716,
+          0.0010352952773281978,
+          0.0007189376790574345,
+          0.00046011266571353144,
+          0.0002588108583670398,
+          0.0001150264926892126,
+          2.8756579019238047e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.39,
+        0.025,
+        0.15
+      ],
+      "tip_path": "/World/Cable016/segment_019",
+      "observed_sag_m": 0.002075511803977498,
+      "relative_error": 0.0005921156802637384,
+      "tail_excursion_m": 1.7033823299095197e-07,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 0.25,
+      "uniform_load_multiplier": 1.0,
+      "ei_nm2": 1.972249999999999e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.004162963591836735,
+        "nonlinear_hinge_chain_prediction_m": 0.004125495350617017,
+        "reference_maximum_gradient_residual_rad": 3.5220888705556064e-12,
+        "reference_joint_angles_rad": [
+          0.020716039255031366,
+          0.018583122317995446,
+          0.016566623341971093,
+          0.014666852188700664,
+          0.012883874384633676,
+          0.011217584035459067,
+          0.009667762884687464,
+          0.008234127175083861,
+          0.00691636390353994,
+          0.005714157965386238,
+          0.004627211574122708,
+          0.0036552572247620335,
+          0.0027980653485414637,
+          0.0020554476868280274,
+          0.0014272572943550973,
+          0.0009133859672192598,
+          0.0005137597794048113,
+          0.00022833330265596582,
+          5.7082977746129584e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.455,
+        0.025,
+        0.15
+      ],
+      "tip_path": "/World/Cable017/segment_019",
+      "observed_sag_m": 0.004123130759326132,
+      "relative_error": 0.0005731654237668415,
+      "tail_excursion_m": 4.16083635823572e-07,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 0.25,
+      "uniform_load_multiplier": 1.5,
+      "ei_nm2": 1.972249999999999e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.006244445387755103,
+        "nonlinear_hinge_chain_prediction_m": 0.006120449729951807,
+        "reference_maximum_gradient_residual_rad": 1.24870492418383e-10,
+        "reference_joint_angles_rad": [
+          0.030894436041987893,
+          0.02769590104700874,
+          0.02467400955493185,
+          0.021829788117215768,
+          0.01916344764943158,
+          0.016674628875277774,
+          0.014362600618639448,
+          0.012226416529120956,
+          0.010265035752951065,
+          0.008477412790184546,
+          0.006862561393869925,
+          0.005419596925136326,
+          0.004147761118007046,
+          0.0030464327523537136,
+          0.002115127295217998,
+          0.0013534881547989314,
+          0.000761271797970597,
+          0.00033832860864173954,
+          8.458100657092116e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.52,
+        0.025,
+        0.15
+      ],
+      "tip_path": "/World/Cable018/segment_019",
+      "observed_sag_m": 0.006116939797906645,
+      "relative_error": 0.0005734761659728083,
+      "tail_excursion_m": 3.7036863609341e-07,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 0.25,
+      "uniform_load_multiplier": 2.0,
+      "ei_nm2": 1.972249999999999e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.00832592718367347,
+        "nonlinear_hinge_chain_prediction_m": 0.008039732104435078,
+        "reference_maximum_gradient_residual_rad": 8.229493475564453e-12,
+        "reference_joint_angles_rad": [
+          0.04087025408563452,
+          0.03660706774287751,
+          0.03258306126058572,
+          0.0288006072512129,
+          0.025260173563155547,
+          0.021960902974614862,
+          0.018901079865235492,
+          0.016078497098396618,
+          0.01349073665817241,
+          0.011135377079756986,
+          0.009010139741614047,
+          0.007112984893000342,
+          0.005442167027852056,
+          0.0039962579783238365,
+          0.0027741449369771383,
+          0.0017750095441577169,
+          0.0009982931959145603,
+          0.00044365282641850947,
+          0.00011091058061503184
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.585,
+        0.025,
+        0.15
+      ],
+      "tip_path": "/World/Cable019/segment_019",
+      "observed_sag_m": 0.008035433641925438,
+      "relative_error": 0.0005346524553061505,
+      "tail_excursion_m": 3.8622664993992473e-07,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 1.0,
+      "uniform_load_multiplier": 0.25,
+      "ei_nm2": 7.888999999999997e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.00026018522448979596,
+        "nonlinear_hinge_chain_prediction_m": 0.00026017592860365054,
+        "reference_maximum_gradient_residual_rad": 1.2191417580326158e-12,
+        "reference_joint_angles_rad": [
+          0.0013009016700800836,
+          0.0011675658645421377,
+          0.0010414376774001105,
+          0.0009225171854608914,
+          0.0008108044053413369,
+          0.0007062993113070155,
+          0.0006090018497512226,
+          0.0005189119507204561,
+          0.00043602953686636153,
+          0.0003603545301779629,
+          0.00029188685682178533,
+          0.00023062645039127546,
+          0.00017657325384070645,
+          0.00012972722035254825,
+          9.008831336106768e-05,
+          5.765650592871578e-05,
+          3.2431779645647875e-05,
+          1.4414123196514352e-05,
+          3.6035307124522202e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.0,
+        0.05,
+        0.15
+      ],
+      "tip_path": "/World/Cable020/segment_019",
+      "observed_sag_m": 0.00026003350369574463,
+      "relative_error": 0.000547417697979613,
+      "tail_excursion_m": 1.5552123505679916e-08,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 1.0,
+      "uniform_load_multiplier": 0.5,
+      "ei_nm2": 7.888999999999997e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0005203704489795919,
+        "nonlinear_hinge_chain_prediction_m": 0.000520296098798845,
+        "reference_maximum_gradient_residual_rad": 1.48318857196017e-16,
+        "reference_joint_angles_rad": [
+          0.002601656667822249,
+          0.0023349857335868557,
+          0.0020827316645319984,
+          0.0018448950749687697,
+          0.0016214760977570017,
+          0.0014124745270093846,
+          0.001217889933915084,
+          0.0010377217589323908,
+          0.0008719693833915018,
+          0.0007206321833392862,
+          0.0005837095682481445,
+          0.0004612010070011091,
+          0.0003531060433552571,
+          0.0002594243028754598,
+          0.00018015549312051224,
+          0.00011529939865378947,
+          6.485587224078354e-05,
+          2.8824823386161147e-05,
+          7.206205153341586e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.065,
+        0.05,
+        0.15
+      ],
+      "tip_path": "/World/Cable021/segment_019",
+      "observed_sag_m": 0.0005199658440426524,
+      "relative_error": 0.0006347438640323944,
+      "tail_excursion_m": 3.1343485307200325e-08,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 1.0,
+      "uniform_load_multiplier": 1.0,
+      "ei_nm2": 7.888999999999997e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0010407408979591839,
+        "nonlinear_hinge_chain_prediction_m": 0.001040146550453694,
+        "reference_maximum_gradient_residual_rad": 1.877664690397296e-14,
+        "reference_joint_angles_rad": [
+          0.005202140900027794,
+          0.004668804443286158,
+          0.004164314736185302,
+          0.003688676689684879,
+          0.0032418913647704424,
+          0.002823957113974219,
+          0.002434870507781991,
+          0.0020746270719179793,
+          0.0017432218598614493,
+          0.0014406498832844514,
+          0.0011669064214205748,
+          0.0009219872286871071,
+          0.0007058886581928319,
+          0.0005186077170738647,
+          0.0003601420679123106,
+          0.0002304899888078248,
+          0.00012965030299050512,
+          5.7622287184611946e-05,
+          1.4405566255874959e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.13,
+        0.05,
+        0.15
+      ],
+      "tip_path": "/World/Cable022/segment_019",
+      "observed_sag_m": 0.0010394581619019572,
+      "relative_error": 0.0006618188095095512,
+      "tail_excursion_m": 1.5311203288570496e-07,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 1.0,
+      "uniform_load_multiplier": 1.5,
+      "ei_nm2": 7.888999999999997e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0015611113469387757,
+        "nonlinear_hinge_chain_prediction_m": 0.001559107971240667,
+        "reference_maximum_gradient_residual_rad": 3.152408889484093e-13,
+        "reference_joint_angles_rad": [
+          0.007800285382110796,
+          0.007000294210015479,
+          0.00624360566797038,
+          0.005530236310659814,
+          0.004860189708296034,
+          0.004233460298616721,
+          0.003650036512482386,
+          0.0031099032607718154,
+          0.0026130438649089,
+          0.002159441507791999,
+          0.0017490802762184787,
+          0.0013819458601591831,
+          0.0010580259684788576,
+          0.0007773105149427871,
+          0.0005397916226106939,
+          0.00034546348900196805,
+          0.0001943221487223617,
+          8.636516456896741e-05,
+          2.1591272473593662e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.195,
+        0.05,
+        0.15
+      ],
+      "tip_path": "/World/Cable023/segment_019",
+      "observed_sag_m": 0.0015581750311121079,
+      "relative_error": 0.0005983807059987134,
+      "tail_excursion_m": 1.400566099762912e-07,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 1.0,
+      "uniform_load_multiplier": 2.0,
+      "ei_nm2": 7.888999999999997e-06,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0020814817959183677,
+        "nonlinear_hinge_chain_prediction_m": 0.0020767414751687993,
+        "reference_maximum_gradient_residual_rad": 7.225123277443402e-15,
+        "reference_joint_angles_rad": [
+          0.010394932978745879,
+          0.00932830326154187,
+          0.00831947094285821,
+          0.007368475197900872,
+          0.006475324454228081,
+          0.005640005520346788,
+          0.0048624909911604945,
+          0.004142745138070396,
+          0.003480728479358089,
+          0.0028764012134730025,
+          0.0023297256843529575,
+          0.0018406680341625551,
+          0.0014091991850028716,
+          0.0010352952773281978,
+          0.0007189376790574345,
+          0.00046011266571353144,
+          0.0002588108583670398,
+          0.0001150264926892126,
+          2.8756579019238047e-05
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.26,
+        0.05,
+        0.15
+      ],
+      "tip_path": "/World/Cable024/segment_019",
+      "observed_sag_m": 0.002075511662862628,
+      "relative_error": 0.0005921836304016992,
+      "tail_excursion_m": 1.3997145092981e-07,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 4.0,
+      "uniform_load_multiplier": 0.25,
+      "ei_nm2": 3.155599999999999e-05,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 6.504630612244899e-05,
+        "nonlinear_hinge_chain_prediction_m": 6.504616087051083e-05,
+        "reference_maximum_gradient_residual_rad": 1.1969591984239969e-15,
+        "reference_joint_angles_rad": [
+          0.0003252311485422204,
+          0.0002918971707133437,
+          0.0002603650338606822,
+          0.0002306347391843495,
+          0.00020270628694399128,
+          0.00017657967673751363,
+          0.00015225490772731602,
+          0.00012973197882037583,
+          0.00010901088880812263,
+          9.009163647162965e-05,
+          7.297422065724165e-05,
+          5.765864032734815e-05,
+          4.4144894590601456e-05,
+          3.2432982715470194e-05,
+          2.252290413060843e-05,
+          1.4414658415112034e-05,
+          8.108245281323689e-06,
+          3.603664552438849e-06,
+          9.009161367553768e-07
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.325,
+        0.05,
+        0.15
+      ],
+      "tip_path": "/World/Cable025/segment_019",
+      "observed_sag_m": 6.501141407391775e-05,
+      "relative_error": 0.0005341867395102229,
+      "tail_excursion_m": 1.2572831664670048e-11,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 4.0,
+      "uniform_load_multiplier": 0.5,
+      "ei_nm2": 3.155599999999999e-05,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.00013009261224489798,
+        "nonlinear_hinge_chain_prediction_m": 0.0001300914502352954,
+        "reference_maximum_gradient_residual_rad": 3.8300742785657427e-14,
+        "reference_joint_angles_rad": [
+          0.0006504600046669496,
+          0.0005837920595869556,
+          0.0005207278219085161,
+          0.00046126730123253074,
+          0.0004054104996361535,
+          0.00035315741390262267,
+          0.0003045080373311267,
+          0.00025946236117748323,
+          0.000218020375773132,
+          0.00018018207136666678,
+          0.00014594743872885688,
+          0.00011531646955883053,
+          8.828915672581915e-05,
+          6.48654943775831e-05,
+          4.50454779433649e-05,
+          2.882910405593912e-05,
+          1.621637041405262e-05,
+          7.207275603272515e-06,
+          1.8018188899834718e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.39,
+        0.05,
+        0.15
+      ],
+      "tip_path": "/World/Cable026/segment_019",
+      "observed_sag_m": 0.00012996913590673786,
+      "relative_error": 0.0009402180415108985,
+      "tail_excursion_m": 1.1827649970541643e-10,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 4.0,
+      "uniform_load_multiplier": 1.0,
+      "ei_nm2": 3.155599999999999e-05,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.00026018522448979596,
+        "nonlinear_hinge_chain_prediction_m": 0.00026017592860365054,
+        "reference_maximum_gradient_residual_rad": 1.2191417580326158e-12,
+        "reference_joint_angles_rad": [
+          0.0013009016700800836,
+          0.0011675658645421377,
+          0.0010414376774001105,
+          0.0009225171854608914,
+          0.0008108044053413369,
+          0.0007062993113070155,
+          0.0006090018497512226,
+          0.0005189119507204561,
+          0.00043602953686636153,
+          0.0003603545301779629,
+          0.00029188685682178533,
+          0.00023062645039127546,
+          0.00017657325384070645,
+          0.00012972722035254825,
+          9.008831336106768e-05,
+          5.765650592871578e-05,
+          3.2431779645647875e-05,
+          1.4414123196514352e-05,
+          3.6035307124522202e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.455,
+        0.05,
+        0.15
+      ],
+      "tip_path": "/World/Cable027/segment_019",
+      "observed_sag_m": 0.0002600334915891511,
+      "relative_error": 0.0005474642303147093,
+      "tail_excursion_m": 1.5529772856570645e-08,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 4.0,
+      "uniform_load_multiplier": 1.5,
+      "ei_nm2": 3.155599999999999e-05,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0003902778367346939,
+        "nonlinear_hinge_chain_prediction_m": 0.00039024646675749335,
+        "reference_maximum_gradient_residual_rad": 1.951563910473908e-17,
+        "reference_joint_angles_rad": [
+          0.001951306666690131,
+          0.001751303169906141,
+          0.0015621116096144715,
+          0.0013837322450047814,
+          0.001216165132141892,
+          0.001059410184169946,
+          0.0009134672201768941,
+          0.0007783360040902424,
+          0.0006540162748868265,
+          0.000540507769311039,
+          0.0004378102382074556,
+          0.00034592345748529107,
+          0.0002648472346435627,
+          0.0001945814116972997,
+          0.00013512586525660884,
+          8.648050442190068e-05,
+          4.864526707009968e-05,
+          2.162011501819774e-05,
+          5.405028462065333e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.52,
+        0.05,
+        0.15
+      ],
+      "tip_path": "/World/Cable028/segment_019",
+      "observed_sag_m": 0.00039000785447596,
+      "relative_error": 0.0006114399536168991,
+      "tail_excursion_m": 3.1032462544100525e-08,
+      "passed": true
+    },
+    {
+      "split": "validation",
+      "length_m": 0.04,
+      "modulus_multiplier": 4.0,
+      "uniform_load_multiplier": 2.0,
+      "ei_nm2": 3.155599999999999e-05,
+      "reference": {
+        "linear_hinge_chain_prediction_m": 0.0005203704489795919,
+        "nonlinear_hinge_chain_prediction_m": 0.000520296098798845,
+        "reference_maximum_gradient_residual_rad": 1.48318857196017e-16,
+        "reference_joint_angles_rad": [
+          0.002601656667822249,
+          0.0023349857335868557,
+          0.0020827316645319984,
+          0.0018448950749687697,
+          0.0016214760977570017,
+          0.0014124745270093846,
+          0.001217889933915084,
+          0.0010377217589323908,
+          0.0008719693833915018,
+          0.0007206321833392862,
+          0.0005837095682481445,
+          0.0004612010070011091,
+          0.0003531060433552571,
+          0.0002594243028754598,
+          0.00018015549312051224,
+          0.00011529939865378947,
+          6.485587224078354e-05,
+          2.8824823386161147e-05,
+          7.206205153341586e-06
+        ]
+      },
+      "gain": 1.0,
+      "origin_m": [
+        0.585,
+        0.05,
+        0.15
+      ],
+      "tip_path": "/World/Cable029/segment_019",
+      "observed_sag_m": 0.0005199657695515725,
+      "relative_error": 0.0006348870345850299,
+      "tail_excursion_m": 1.6408803121814586e-08,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "scope": "Static bending approximation only; dynamic and contact behavior unqualified"
+}

@@ -1,0 +1,252 @@
+{
+  "scope": "Independent SciPy quaternion rescore of archived physics measurements",
+  "sources": {
+    "report.json": "befccb2911204bc98cbdfa53e2c47a68c2d0d11806c3d9f46feb925557b8087e",
+    "measured-poses.npz": "a5d293e23f7da0c0fd5896dd1a9536189741b50f30ae94f9c664d7bb0a091900",
+    "settings.json": "72b545810c1adc53bff2f6f182e8123510280da12979ac231b0af318336fa2e8"
+  },
+  "tail_samples": 1601,
+  "cases": [
+    {
+      "tip_path": "/World/Cable000/segment_011",
+      "observed_sag_m": 0.00012550893642135352,
+      "relative_error": 0.0005482798222722352,
+      "tail_excursion_m": 1.9743384704895561e-10,
+      "tail_excursion_over_reference_sag": 1.5722035711619098e-06,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable001/segment_011",
+      "observed_sag_m": 0.0002509627339128129,
+      "relative_error": 0.0006956228789432028,
+      "tail_excursion_m": 3.074748922138326e-08,
+      "tail_excursion_over_reference_sag": 0.00012243292095744137,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable002/segment_011",
+      "observed_sag_m": 0.0005018188695642689,
+      "relative_error": 0.0006192027761767749,
+      "tail_excursion_m": 3.163990205945488e-08,
+      "tail_excursion_over_reference_sag": 6.301140204575754e-05,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable003/segment_011",
+      "observed_sag_m": 0.0007524028093827961,
+      "relative_error": 0.0005707675740390661,
+      "tail_excursion_m": 1.0853537257826673e-07,
+      "tail_excursion_over_reference_sag": 0.00014416935018616518,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable004/segment_011",
+      "observed_sag_m": 0.0010025106421649443,
+      "relative_error": 0.0005895112762476229,
+      "tail_excursion_m": 6.4641463654036e-08,
+      "tail_excursion_over_reference_sag": 6.444156706684568e-05,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable005/segment_011",
+      "observed_sag_m": 3.135046171981459e-05,
+      "relative_error": 0.0014236043627219308,
+      "tail_excursion_m": 1.3969936318858345e-12,
+      "tail_excursion_over_reference_sag": 4.449710751070358e-08,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable006/segment_011",
+      "observed_sag_m": 6.275155400142785e-05,
+      "relative_error": 0.0006127472135998291,
+      "tail_excursion_m": 2.4912683027622506e-11,
+      "tail_excursion_over_reference_sag": 3.96761773420743e-07,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable007/segment_011",
+      "observed_sag_m": 0.00012550892757409726,
+      "relative_error": 0.0005483502746698177,
+      "tail_excursion_m": 1.867239973751822e-10,
+      "tail_excursion_over_reference_sag": 1.486918985183404e-06,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable008/segment_011",
+      "observed_sag_m": 0.0001882361277005251,
+      "relative_error": 0.0006630004139626111,
+      "tail_excursion_m": 1.5336987568836946e-08,
+      "tail_excursion_over_reference_sag": 8.142336610384443e-05,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable009/segment_011",
+      "observed_sag_m": 0.00025096267804089467,
+      "relative_error": 0.0006958453544141374,
+      "tail_excursion_m": 3.0772631581799104e-08,
+      "tail_excursion_over_reference_sag": 0.00012253303490831758,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable010/segment_011",
+      "observed_sag_m": 7.82569440160863e-06,
+      "relative_error": 0.002943848229175039,
+      "tail_excursion_m": 9.604261830276073e-13,
+      "tail_excursion_over_reference_sag": 1.223659888779463e-07,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable011/segment_011",
+      "observed_sag_m": 1.5687149519633126e-05,
+      "relative_error": 0.0006654652816342477,
+      "tail_excursion_m": 7.567002580088911e-13,
+      "tail_excursion_over_reference_sag": 4.820485068445166e-08,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable012/segment_011",
+      "observed_sag_m": 3.135046253471829e-05,
+      "relative_error": 0.0014235784063706403,
+      "tail_excursion_m": 1.862621168413625e-12,
+      "tail_excursion_over_reference_sag": 5.932829791838782e-08,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable013/segment_011",
+      "observed_sag_m": 4.707335817316638e-05,
+      "relative_error": 0.0004095588043063758,
+      "tail_excursion_m": 3.958083860666761e-12,
+      "tail_excursion_over_reference_sag": 8.404887490752206e-08,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable014/segment_011",
+      "observed_sag_m": 6.275155376861408e-05,
+      "relative_error": 0.0006127509214142179,
+      "tail_excursion_m": 2.44470277355191e-11,
+      "tail_excursion_over_reference_sag": 3.89345702687099e-07,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable015/segment_015",
+      "observed_sag_m": 0.0004148363202299832,
+      "relative_error": 0.0005950269543938402,
+      "tail_excursion_m": 3.114502178380718e-08,
+      "tail_excursion_over_reference_sag": 7.503318330249932e-05,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable016/segment_015",
+      "observed_sag_m": 0.0008293188181902611,
+      "relative_error": 0.0005892337942671189,
+      "tail_excursion_m": 4.7536170222350904e-08,
+      "tail_excursion_over_reference_sag": 5.728576183533148e-05,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable017/segment_015",
+      "observed_sag_m": 0.00165566945750395,
+      "relative_error": 0.0006556436625768658,
+      "tail_excursion_m": 2.0353452195864818e-07,
+      "tail_excursion_over_reference_sag": 0.000122851258092212,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable018/segment_015",
+      "observed_sag_m": 0.0024765838458765954,
+      "relative_error": 0.0005884530256046183,
+      "tail_excursion_m": 2.330349223589323e-07,
+      "tail_excursion_over_reference_sag": 9.403993837784389e-05,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable019/segment_015",
+      "observed_sag_m": 0.003289118982005318,
+      "relative_error": 0.0005649913996982336,
+      "tail_excursion_m": 3.115830992939106e-07,
+      "tail_excursion_over_reference_sag": 9.467795456054278e-05,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable020/segment_015",
+      "observed_sag_m": 0.00010370147609850555,
+      "relative_error": 0.0008034322401396787,
+      "tail_excursion_m": 6.705438981846612e-11,
+      "tail_excursion_over_reference_sag": 6.46090284155643e-07,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable021/segment_015",
+      "observed_sag_m": 0.00020742342642024458,
+      "relative_error": 0.0006777670363713462,
+      "tail_excursion_m": 4.702944422785293e-10,
+      "tail_excursion_over_reference_sag": 2.2657792339038065e-06,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable022/segment_015",
+      "observed_sag_m": 0.0004148362978826925,
+      "relative_error": 0.0005950807924797186,
+      "tail_excursion_m": 3.098672851642448e-08,
+      "tail_excursion_over_reference_sag": 7.46518302943196e-05,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable023/segment_015",
+      "observed_sag_m": 0.0006221099147415976,
+      "relative_error": 0.000647153497569275,
+      "tail_excursion_m": 7.704717627787794e-08,
+      "tail_excursion_over_reference_sag": 0.00012376802411235291,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable024/segment_015",
+      "observed_sag_m": 0.0008293190362120006,
+      "relative_error": 0.000588971056621479,
+      "tail_excursion_m": 6.299567983925058e-08,
+      "tail_excursion_over_reference_sag": 7.591599186569116e-05,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable025/segment_015",
+      "observed_sag_m": 2.592091555181364e-05,
+      "relative_error": 0.0009835188431391861,
+      "tail_excursion_m": 1.5134005160177821e-12,
+      "tail_excursion_over_reference_sag": 5.832788024292129e-08,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable026/segment_015",
+      "observed_sag_m": 5.1847786454256584e-05,
+      "relative_error": 0.0008670674190838223,
+      "tail_excursion_m": 5.587919016392107e-12,
+      "tail_excursion_over_reference_sag": 1.0768201104975344e-07,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable027/segment_015",
+      "observed_sag_m": 0.00010370147609850555,
+      "relative_error": 0.0008034322401396787,
+      "tail_excursion_m": 6.891701098687975e-11,
+      "tail_excursion_over_reference_sag": 6.640372290645841e-07,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable028/segment_015",
+      "observed_sag_m": 0.0001555700908545954,
+      "relative_error": 0.0006773383114169196,
+      "tail_excursion_m": 2.253737196866723e-10,
+      "tail_excursion_over_reference_sag": 1.447714430162841e-06,
+      "passed": true
+    },
+    {
+      "tip_path": "/World/Cable029/segment_015",
+      "observed_sag_m": 0.00020742339143070554,
+      "relative_error": 0.0006779356085759858,
+      "tail_excursion_m": 1.5379438167428816e-08,
+      "tail_excursion_over_reference_sag": 7.409488289940331e-05,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

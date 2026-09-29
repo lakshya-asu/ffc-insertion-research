@@ -20,7 +20,7 @@ This qualifies the earlier warning against changing stiffness to hide numerical 
 - Fixed 2 mm segments, with the first whole segment clamped.
 - Total: 30 fitting and 30 validation cases. These are synthetic reference responses, not observed physical measurements or policy-training episodes.
 
-The load multiplier changes static distributed loading. It is not evidence for dynamic mass or damping. The initial targets omit stiffeners, contact and twist so the first fit has an interpretable scope. Run `outputs/world-model-targets-001` generated all 60 responses successfully. Isaac parameters have not yet been fitted to them.
+The load multiplier changes static distributed loading. It is not evidence for dynamic mass or damping. The initial targets omit stiffeners, contact and twist so the first fit has an interpretable scope. Run `outputs/world-model-targets-001` generated all 60 responses successfully. Experiment [037](../../experiments/037-assumed-world-fit.md) fits the Isaac numerical response and records the independent evaluation. It also documents a small-angle scoring correction and complete repeat runs. The reference and simulator use the same discrete elastic constitutive model but separate solvers; this tests numerical agreement, not continuum FEA or real material identification.
 
 ## Building the rest of the world
 

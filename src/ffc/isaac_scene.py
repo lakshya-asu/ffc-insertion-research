@@ -117,7 +117,7 @@ def camera(stage, path, eye, target, focal=35.0):
     return c
 
 
-def make_cable(stage, cfg):
+def make_cable(stage, cfg, root_path="/World/Cable"):
     """Discrete ribbon: soft out-of-plane bend and equal stiffer swing axes.
 
     Joint X maps to world Y, across the ribbon. PhysX D6 swing drive gains
@@ -133,7 +133,7 @@ def make_cable(stage, cfg):
     mat.CreateDynamicFrictionAttr(0.4)
     mat.CreateRestitutionAttr(0.0)
     for i in range(n):
-        p = f"/World/Cable/segment_{i:03d}"
+        p = f"{root_path}/segment_{i:03d}"
         stiff = i >= n - c["stiffener_segments"]
         box(
             stage,
@@ -169,7 +169,7 @@ def make_cable(stage, cfg):
             continue
         j = joint(
             stage,
-            f"/World/Cable/Joints/joint_{i:03d}",
+            f"{root_path}/Joints/joint_{i:03d}",
             UsdPhysics.Joint,
             paths[i - 1],
             p,

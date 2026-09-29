@@ -1,0 +1,39 @@
+{
+  "selection": {
+    "selected_gain": 1.0,
+    "selection_used_validation": false,
+    "selection_basis": "Numerical profile pre-registered from fitting-only diagnostics before reserved evaluation; broad fit batch still running at registration",
+    "diagnostic_sha256": "1388de19b7937b617ce4256fe09f8fb293d3ee26f49d0c5ad1bc8e895dd55515",
+    "numerical_settings": {
+      "formulation": "articulated",
+      "dt_s": 3.125e-05,
+      "position_iterations": 255,
+      "velocity_iterations": 8,
+      "solver": "PGS",
+      "external_forces_every_iteration": false,
+      "duration_s": 1.0,
+      "body_drag_per_s": 20,
+      "joint_viscosity_scale": 1e-05,
+      "awake_articulation": true,
+      "relative_error_limit": 0.05,
+      "target_sha256": "a85046c93ab3bb71af16eda77af48639f59a69b6c42883f1cab10eb9ffe525f8"
+    },
+    "scope": "Static bending only; no full-cable or contact qualification"
+  },
+  "stats": [
+    {
+      "split": "fit",
+      "passed": 30,
+      "count": 30,
+      "max_error_percent": 0.2943848229175039,
+      "max_error_um": 1.8593744680003335
+    },
+    {
+      "split": "validation",
+      "passed": 30,
+      "count": 30,
+      "max_error_percent": 0.22433191556353593,
+      "max_error_um": 4.298462509639764
+    }
+  ]
+}

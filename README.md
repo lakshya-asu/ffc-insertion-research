@@ -45,6 +45,8 @@ The larger commercial-actuator CAD tool has a separate mounted dynamics study. I
 
 The matched mounting audit found that a **6 mm grasp setback hid the leading band in all three tested pairs**, while a **10 mm setback exposed it**. That supports a visibility choice, not a claim of grasp stability. [Inspect the RGB, offline labels and video](https://lakshya-asu.github.io/ffc-insertion-research/live/#macro-data).
 
+Read the [assumed-world bending experiment](experiments/037-assumed-world-fit.md) and [next contact qualification steps](research/cables/contact-qualification.md). The [bending review](https://lakshya-asu.github.io/ffc-insertion-research/hardware/custom-gripper.html#bending-fit) includes reference curves, recorded Isaac runs and individual reserved-case views.
+
 ## System overview
 
 ```mermaid
