@@ -1,0 +1,1745 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary ffc_twin_spec = {
+            dictionary cable = {
+                dictionary body_thickness = {
+                    string source = "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: conductor 0.027 + two insulation layers 0.055 (derived)"
+                    string unit = "m"
+                    double value = 0.000137
+                }
+                dictionary exposed_contact_length = {
+                    string source = "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: strip length 5.000 +-0.50"
+                    string unit = "m"
+                    double value = 0.005
+                }
+                dictionary header_thickness = {
+                    string source = "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: contact header thickness 0.309 +-0.05"
+                    string unit = "m"
+                    double value = 0.000309
+                }
+                dictionary mass_per_length = {
+                    string source = "computed: 15 x 0.7 x 0.027 mm copper + 16 x 0.11 mm PET film"
+                    string unit = "kg/m"
+                    double value = 0.00497
+                }
+                dictionary modulus = {
+                    string source = "PLACEHOLDER: homogeneous laminate modulus; fit from cantilever tests"
+                    string unit = "Pa"
+                    double value = 3000000000
+                }
+                dictionary support_tape_length = {
+                    string source = "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: support length 6.300 +-0.50"
+                    string unit = "m"
+                    double value = 0.0063
+                }
+                dictionary tail_link_length = {
+                    string source = "modelling choice: 12 x 6 mm of tail; the rest hangs free and is dropped"
+                    string unit = "m"
+                    double value = 0.006
+                }
+                int tail_links = 12
+                dictionary width = {
+                    string source = "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: width 16.000 +-0.10"
+                    string unit = "m"
+                    double value = 0.016
+                }
+            }
+            dictionary connector = {
+                dictionary cable_thickness_spec = {
+                    string source = "TE customer drawing C-1734248 rev E1, 15 positions (likely Pi 4 CSI/DSI part 1-1734248-5): applicable FPC thickness 0.3 +-0.05"
+                    string unit = "m"
+                    double value = 0.0003
+                }
+                dictionary opening_width = {
+                    string source = "TE customer drawing C-1734248 rev E1, 15 positions (likely Pi 4 CSI/DSI part 1-1734248-5): DIM C = 16.40 +-0.1 (read as the FPC opening)"
+                    string unit = "m"
+                    double value = 0.0164
+                }
+                dictionary seat_depth = {
+                    string source = "TE customer drawing C-1734248 rev E1, 15 positions (likely Pi 4 CSI/DSI part 1-1734248-5): section X-X, 3.45 from the top face to the stop"
+                    string unit = "m"
+                    double value = 0.00345
+                }
+                dictionary side_leadin_half_length = {
+                    string source = "PLACEHOLDER: drawing shows corner chamfers at the pocket ends, undimensioned; 0 = straight walls"
+                    string unit = "m"
+                    double value = 0
+                }
+                dictionary slot_height = {
+                    string source = "PLACEHOLDER: header 0.309 + 0.1 above and below; open-slot height is not on the drawing"
+                    string unit = "m"
+                    double value = 0.000509
+                }
+                dictionary top_leadin_angle = {
+                    string source = "PLACEHOLDER: lead-in angle"
+                    string unit = "rad"
+                    double value = 0.4363323129985824
+                }
+                dictionary top_leadin_half_length = {
+                    string source = "PLACEHOLDER: funnel above and below the slot, 25 deg; typical ZIF housing"
+                    string unit = "m"
+                    double value = 0.0006
+                }
+                dictionary wall_thickness = {
+                    string source = "modelling choice: rigid housing thickness"
+                    string unit = "m"
+                    double value = 0.0015
+                }
+            }
+            dictionary levels = {
+                dictionary L0 = {
+                    double grasp_offset = 0.0003
+                    double grasp_yaw = 0.03490658503988659
+                    double height = 0.0003
+                    double lateral = 0.0003
+                    string name = "L0"
+                    double pitch = 0.03490658503988659
+                    double roll = 0.03490658503988659
+                    double yaw = 0.03490658503988659
+                }
+                dictionary L1 = {
+                    double grasp_offset = 0.0005
+                    double grasp_yaw = 0.05235987755982989
+                    double height = 0.0015
+                    double lateral = 0.0015
+                    string name = "L1"
+                    double pitch = 0.10471975511965978
+                    double roll = 0.10471975511965978
+                    double yaw = 0.10471975511965978
+                }
+            }
+            dictionary physics = {
+                dictionary contact_margin = {
+                    string source = "rule: margin below the clearance"
+                    string unit = "m"
+                    double value = 0.00002
+                }
+                dictionary control_hz = {
+                    string source = "design target from Lakshya's architecture guide"
+                    string unit = "Hz"
+                    double value = 20
+                }
+                dictionary friction = {
+                    string source = "PLACEHOLDER: randomize 0.2 to 0.6 until the pull test"
+                    string unit = ""
+                    double value = 0.4
+                }
+                double[] gravity_in_C = [9.81, 0, 0]
+                string gravity_source = "D: Pi 4 CSI socket is vertical (Lakshya's hardware review); for the Pi Zero side-entry case gravity is along -z"
+                string solimp = "0.95 0.99 0.0005 0.5 2"
+                string solref = "0.0005 1"
+                dictionary timestep = {
+                    string source = "measured on this Mac: <= 1 ms keeps a 0.3 mm tip from penetrating a 0.5 mm slot"
+                    string unit = "s"
+                    double value = 0.001
+                }
+            }
+            string[] placeholders = ["cable.modulus = 3000000000.0 Pa: homogeneous laminate modulus; fit from cantilever tests", "connector.slot_height = 0.000509 m: header 0.309 + 0.1 above and below; open-slot height is not on the drawing", "connector.top_leadin_half_length = 0.0006 m: funnel above and below the slot, 25 deg; typical ZIF housing", "connector.top_leadin_angle = 0.4363323129985824 rad: lead-in angle", "connector.side_leadin_half_length = 0.0 m: drawing shows corner chamfers at the pocket ends, undimensioned; 0 = straight walls", "tool.pad_friction = 0.4 : pad-on-film friction until the pull test", "tool.position_kp = 2000.0 N/m: stand-in for a Cartesian impedance controller", "tool.position_kv = 40.0 N s/m: PLACEHOLDER", "tool.rotation_kp = 2.0 N m/rad: PLACEHOLDER", "tool.rotation_kv = 0.05 N m s/rad: PLACEHOLDER", "physics.friction = 0.4 : randomize 0.2 to 0.6 until the pull test", "success.peak_force_limit = 3.0 N: until the insertion-force curves exist", "success.max_jaw_slip = 0.0003 m: PLACEHOLDER"]
+            dictionary success = {
+                dictionary corner_depth_tolerance = {
+                    string source = "Lakshya seating.py: all four tip corners deeper than seat depth minus this"
+                    string unit = "m"
+                    double value = 0.0003
+                }
+                dictionary max_jaw_slip = {
+                    string source = "PLACEHOLDER"
+                    string unit = "m"
+                    double value = 0.0003
+                }
+                dictionary over_insertion_tolerance = {
+                    string source = "M: Lakshya used 0.05 mm; the twin's soft backstop contact penetrates about 0.1 mm per newton, so 0.25 mm covers the 1.5 N ceiling. A hard stop cannot be over-inserted physically"
+                    string unit = "m"
+                    double value = 0.00025
+                }
+                dictionary peak_force_limit = {
+                    string source = "PLACEHOLDER: until the insertion-force curves exist"
+                    string unit = "N"
+                    double value = 3
+                }
+                dictionary start_gap = {
+                    string source = "modelling choice: tip starts this far before the mouth"
+                    string unit = "m"
+                    double value = 0.0015
+                }
+            }
+            dictionary tool = {
+                dictionary clamp_force = {
+                    string source = "I: derived requirement: >= force ceiling x 1.5 margin / (2 x mu); replaces Lakshya's 0.36 N simulation preload, which slips"
+                    string unit = "N"
+                    double value = 3
+                }
+                dictionary free_film_length = {
+                    string source = "design choice: 0 for the tape grip; 3e-3 for the film grip (fails: tip pitches)"
+                    string unit = "m"
+                    double value = 0
+                }
+                string grasp_model = "friction joint: the header may slide along the cable axis in the jaws once tangential load exceeds 2 x mu x clamp"
+                string grasp_on = "tape"
+                dictionary jaw_length = {
+                    string source = "design choice: thin jaws so they fit on the 2.85 mm of tape outside the seated slot"
+                    string unit = "m"
+                    double value = 0.0015
+                }
+                dictionary pad_friction = {
+                    string source = "PLACEHOLDER: pad-on-film friction until the pull test"
+                    string unit = ""
+                    double value = 0.4
+                }
+                dictionary position_kp = {
+                    string source = "PLACEHOLDER: stand-in for a Cartesian impedance controller"
+                    string unit = "N/m"
+                    double value = 2000
+                }
+                dictionary position_kv = {
+                    string source = "PLACEHOLDER"
+                    string unit = "N s/m"
+                    double value = 40
+                }
+                dictionary rotation_kp = {
+                    string source = "PLACEHOLDER"
+                    string unit = "N m/rad"
+                    double value = 2
+                }
+                dictionary rotation_kv = {
+                    string source = "PLACEHOLDER"
+                    string unit = "N m s/rad"
+                    double value = 0.05
+                }
+            }
+            string version = "0.1.0"
+        }
+    }
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def PhysicsScene "PhysicsScene" (
+        prepend apiSchemas = ["PhysxSceneAPI"]
+    )
+    {
+        vector3f physics:gravityDirection = (1, 0, 0)
+        float physics:gravityMagnitude = 9.81
+        custom bool physxScene:enableCCD = 1
+        custom token physxScene:solverType = "TGS"
+        custom uint physxScene:timeStepsPerSecond = 120
+    }
+
+    def "Connector"
+    {
+        def Xform "WallL"
+        {
+            double3 xformOp:translate = (0.001725, 0.008950000000000001, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.86, 0.84, 0.78)]
+                double size = 1
+                float3 xformOp:scale = (0.00345, 0.0015, 0.003509)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def Xform "WallR"
+        {
+            double3 xformOp:translate = (0.001725, -0.008950000000000001, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.86, 0.84, 0.78)]
+                double size = 1
+                float3 xformOp:scale = (0.00345, 0.0015, 0.003509)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def Xform "Roof"
+        {
+            double3 xformOp:translate = (0.001725, 0, 0.0010045)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.86, 0.84, 0.78)]
+                double size = 1
+                float3 xformOp:scale = (0.00345, 0.0194, 0.0015)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def Xform "Floor"
+        {
+            double3 xformOp:translate = (0.001725, 0, -0.0010045)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.86, 0.84, 0.78)]
+                double size = 1
+                float3 xformOp:scale = (0.00345, 0.0194, 0.0015)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def Xform "Backstop"
+        {
+            double3 xformOp:translate = (0.0042, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.45, 0.43, 0.38)]
+                double size = 1
+                float3 xformOp:scale = (0.0015, 0.0194, 0.003509)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def Xform "LeadInTop"
+        {
+            float3 xformOp:rotateXYZ = (0, 25, 0)
+            double3 xformOp:translate = (-0.000522653759134955, 0, 0.0005533863463962522)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.86, 0.84, 0.78)]
+                double size = 1
+                float3 xformOp:scale = (0.0012, 0.0194, 0.0001)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def Xform "LeadInBottom"
+        {
+            float3 xformOp:rotateXYZ = (0, -25, 0)
+            double3 xformOp:translate = (-0.000522653759134955, 0, -0.0005533863463962522)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.86, 0.84, 0.78)]
+                double size = 1
+                float3 xformOp:scale = (0.0012, 0.0194, 0.0001)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+    }
+
+    def Xform "Tool" (
+        prepend apiSchemas = ["PhysicsArticulationRootAPI", "PhysxArticulationAPI"]
+    )
+    {
+        custom int physxArticulation:solverPositionIterationCount = 192
+        custom int physxArticulation:solverVelocityIterationCount = 1
+
+        def Xform "Anchor" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.6666668e-9, 6.6666668e-9, 6.6666668e-9)
+            float physics:mass = 0.01
+            double3 xformOp:translate = (-0.007050000000000001, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.3, 0.3, 0.3)]
+                double size = 1
+                float3 xformOp:scale = (0.002, 0.002, 0.002)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsFixedJoint "fixed_base"
+        {
+            rel physics:body1 = </World/Tool/Anchor>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def Xform "Link_tx" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (3.3333334e-9, 3.3333334e-9, 3.3333334e-9)
+            float physics:mass = 0.005
+            double3 xformOp:translate = (-0.007050000000000001, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.3, 0.32, 0.36)]
+                double size = 1
+                float3 xformOp:scale = (0.002, 0.002, 0.002)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsPrismaticJoint "tx" (
+            prepend apiSchemas = ["PhysicsDriveAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 40
+            float drive:linear:physics:maxForce = 50
+            float drive:linear:physics:stiffness = 2000
+            float drive:linear:physics:targetPosition = 0
+            uniform token drive:linear:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Tool/Anchor>
+            rel physics:body1 = </World/Tool/Link_tx>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -0.02
+            float physics:upperLimit = 0.02
+        }
+
+        def Xform "Link_ty" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (3.3333334e-9, 3.3333334e-9, 3.3333334e-9)
+            float physics:mass = 0.005
+            double3 xformOp:translate = (-0.007050000000000001, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.3, 0.32, 0.36)]
+                double size = 1
+                float3 xformOp:scale = (0.002, 0.002, 0.002)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsPrismaticJoint "ty" (
+            prepend apiSchemas = ["PhysicsDriveAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 40
+            float drive:linear:physics:maxForce = 50
+            float drive:linear:physics:stiffness = 2000
+            float drive:linear:physics:targetPosition = 0
+            uniform token drive:linear:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Tool/Link_tx>
+            rel physics:body1 = </World/Tool/Link_ty>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -0.02
+            float physics:upperLimit = 0.02
+        }
+
+        def Xform "Link_tz" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (3.3333334e-9, 3.3333334e-9, 3.3333334e-9)
+            float physics:mass = 0.005
+            double3 xformOp:translate = (-0.007050000000000001, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.3, 0.32, 0.36)]
+                double size = 1
+                float3 xformOp:scale = (0.002, 0.002, 0.002)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsPrismaticJoint "tz" (
+            prepend apiSchemas = ["PhysicsDriveAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 40
+            float drive:linear:physics:maxForce = 50
+            float drive:linear:physics:stiffness = 2000
+            float drive:linear:physics:targetPosition = 0
+            uniform token drive:linear:physics:type = "force"
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </World/Tool/Link_ty>
+            rel physics:body1 = </World/Tool/Link_tz>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -0.02
+            float physics:upperLimit = 0.02
+        }
+
+        def Xform "Link_rx" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (3.3333334e-9, 3.3333334e-9, 3.3333334e-9)
+            float physics:mass = 0.005
+            double3 xformOp:translate = (-0.007050000000000001, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.3, 0.32, 0.36)]
+                double size = 1
+                float3 xformOp:scale = (0.002, 0.002, 0.002)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "rx" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 2.864789
+            float drive:angular:physics:maxForce = 1
+            float drive:angular:physics:stiffness = 114.59156
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Tool/Link_tz>
+            rel physics:body1 = </World/Tool/Link_rx>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -30
+            float physics:upperLimit = 30
+        }
+
+        def Xform "Link_ry" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (3.3333334e-9, 3.3333334e-9, 3.3333334e-9)
+            float physics:mass = 0.005
+            double3 xformOp:translate = (-0.007050000000000001, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.3, 0.32, 0.36)]
+                double size = 1
+                float3 xformOp:scale = (0.002, 0.002, 0.002)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "ry" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 2.864789
+            float drive:angular:physics:maxForce = 1
+            float drive:angular:physics:stiffness = 114.59156
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Tool/Link_rx>
+            rel physics:body1 = </World/Tool/Link_ry>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -30
+            float physics:upperLimit = 30
+        }
+
+        def Xform "Link_rz" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (3.3333334e-9, 3.3333334e-9, 3.3333334e-9)
+            float physics:mass = 0.005
+            double3 xformOp:translate = (-0.007050000000000001, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.3, 0.32, 0.36)]
+                double size = 1
+                float3 xformOp:scale = (0.002, 0.002, 0.002)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "rz" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 2.864789
+            float drive:angular:physics:maxForce = 1
+            float drive:angular:physics:stiffness = 114.59156
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Z"
+            rel physics:body0 = </World/Tool/Link_ry>
+            rel physics:body1 = </World/Tool/Link_rz>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -30
+            float physics:upperLimit = 30
+        }
+
+        def Xform "JawTop" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (3.0208332e-7, 6.7708332e-9, 3.046875e-7)
+            float physics:mass = 0.025
+            double3 xformOp:translate = (-0.007050000000000001, 0, 0.0006684999999999999)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.3, 0.32, 0.36)]
+                double size = 1
+                float3 xformOp:scale = (0.0015, 0.012, 0.001)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsFixedJoint "JawTop_fixed"
+        {
+            rel physics:body0 = </World/Tool/Link_rz>
+            rel physics:body1 = </World/Tool/JawTop>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0.0006685)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def Xform "JawBottom" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (3.0208332e-7, 6.7708332e-9, 3.046875e-7)
+            float physics:mass = 0.025
+            double3 xformOp:translate = (-0.007050000000000001, 0, -0.0006684999999999999)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.3, 0.32, 0.36)]
+                double size = 1
+                float3 xformOp:scale = (0.0015, 0.012, 0.001)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsFixedJoint "JawBottom_fixed"
+        {
+            rel physics:body0 = </World/Tool/Link_rz>
+            rel physics:body1 = </World/Tool/JawBottom>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, -0.0006685)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+    }
+
+    def "Cable"
+    {
+        def Xform "Gripped" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (1.5905166e-10, 1.4094727e-12, 1.6043782e-10)
+            float physics:mass = 0.000007455
+            double3 xformOp:translate = (-0.007050000000000001, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.0015, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsPrismaticJoint "grip_slip" (
+            prepend apiSchemas = ["PhysxJointAPI"]
+        )
+        {
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Tool/Link_rz>
+            rel physics:body1 = </World/Cable/Gripped>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -0.01
+            float physics:upperLimit = 0.01
+            custom float physxJoint:jointFriction = 2.4
+        }
+
+        def Xform "Header" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (1.3364343e-9, 2.0762053e-10, 1.5430582e-9)
+            float physics:mass = 0.000062622
+            double3 xformOp:translate = (-0.0046500000000000005, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.18, 0.42, 0.85)]
+                double size = 1
+                float3 xformOp:scale = (0.0063, 0.016, 0.000309)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsFixedJoint "tape_fixed"
+        {
+            rel physics:body0 = </World/Cable/Gripped>
+            rel physics:body1 = </World/Cable/Header>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0.0024, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+
+        def Xform "Pivot_00" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.0078000000000000005, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_00" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Gripped>
+            rel physics:body1 = </World/Cable/Pivot_00>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.00075, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_00" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.0108, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_00" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_00>
+            rel physics:body1 = </World/Cable/Tail_00>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Pivot_01" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.0138, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_01" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Tail_00>
+            rel physics:body1 = </World/Cable/Pivot_01>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.003, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_01" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.0168, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_01" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_01>
+            rel physics:body1 = </World/Cable/Tail_01>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Pivot_02" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.019799999999999998, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_02" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Tail_01>
+            rel physics:body1 = </World/Cable/Pivot_02>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.003, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_02" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.022799999999999997, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_02" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_02>
+            rel physics:body1 = </World/Cable/Tail_02>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Pivot_03" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.025799999999999997, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_03" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Tail_02>
+            rel physics:body1 = </World/Cable/Pivot_03>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.003, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_03" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.028799999999999996, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_03" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_03>
+            rel physics:body1 = </World/Cable/Tail_03>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Pivot_04" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.031799999999999995, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_04" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Tail_03>
+            rel physics:body1 = </World/Cable/Pivot_04>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.003, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_04" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.0348, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_04" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_04>
+            rel physics:body1 = </World/Cable/Tail_04>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Pivot_05" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.0378, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_05" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Tail_04>
+            rel physics:body1 = </World/Cable/Pivot_05>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.003, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_05" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.0408, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_05" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_05>
+            rel physics:body1 = </World/Cable/Tail_05>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Pivot_06" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.043800000000000006, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_06" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Tail_05>
+            rel physics:body1 = </World/Cable/Pivot_06>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.003, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_06" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.04680000000000001, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_06" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_06>
+            rel physics:body1 = </World/Cable/Tail_06>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Pivot_07" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.04980000000000001, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_07" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Tail_06>
+            rel physics:body1 = </World/Cable/Pivot_07>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.003, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_07" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.052800000000000014, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_07" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_07>
+            rel physics:body1 = </World/Cable/Tail_07>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Pivot_08" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.055800000000000016, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_08" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Tail_07>
+            rel physics:body1 = </World/Cable/Pivot_08>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.003, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_08" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.05880000000000002, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_08" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_08>
+            rel physics:body1 = </World/Cable/Tail_08>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Pivot_09" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.06180000000000002, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_09" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Tail_08>
+            rel physics:body1 = </World/Cable/Pivot_09>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.003, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_09" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.06480000000000002, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_09" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_09>
+            rel physics:body1 = </World/Cable/Tail_09>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Pivot_10" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.06780000000000003, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_10" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Tail_09>
+            rel physics:body1 = </World/Cable/Pivot_10>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.003, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_10" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.07080000000000003, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_10" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_10>
+            rel physics:body1 = </World/Cable/Tail_10>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Pivot_11" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (4.1666665e-14, 4.1666665e-14, 4.1666665e-14)
+            float physics:mass = 0.000001
+            double3 xformOp:translate = (-0.07380000000000003, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape"
+            {
+                color3f[] primvars:displayColor = [(0.5, 0.5, 0.5)]
+                double size = 1
+                float3 xformOp:scale = (0.0005, 0.0005, 0.0005)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "bend_11" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.001964369
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.09821845
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Y"
+            rel physics:body0 = </World/Cable/Tail_10>
+            rel physics:body1 = </World/Cable/Pivot_11>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (-0.003, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+
+        def Xform "Tail_11" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (6.3620664e-10, 8.950664e-11, 7.2562e-10)
+            float physics:mass = 0.00002982
+            double3 xformOp:translate = (-0.07680000000000003, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI"]
+            )
+            {
+                custom float physxCollision:contactOffset = 0.00002
+                custom float physxCollision:restOffset = 0
+                color3f[] primvars:displayColor = [(0.16, 0.17, 0.19)]
+                double size = 1
+                float3 xformOp:scale = (0.006, 0.016, 0.000137)
+                uniform token[] xformOpOrder = ["xformOp:scale"]
+            }
+        }
+
+        def PhysicsRevoluteJoint "twist_11" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0030221061
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.15110531
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "X"
+            rel physics:body0 = </World/Cable/Pivot_11>
+            rel physics:body1 = </World/Cable/Tail_11>
+            bool physics:collisionEnabled = 0
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0.003, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -60
+            float physics:upperLimit = 60
+        }
+    }
+}
+

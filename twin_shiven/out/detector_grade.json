@@ -1,0 +1,72 @@
+[
+  {
+    "estimator": "good",
+    "episodes": 120,
+    "truth_positive": 59,
+    "truth_negative": 61,
+    "false_positive": 1,
+    "false_negative": 0,
+    "fp_rate": [
+      0.01639344262295082,
+      0.002899656114363977,
+      0.08719065627768062
+    ],
+    "fn_rate": [
+      0.0,
+      0.0,
+      0.061131479784092065
+    ],
+    "by_kind": {
+      "expert": [
+        60,
+        59,
+        60
+      ],
+      "partial": [
+        0,
+        0,
+        40
+      ],
+      "jam": [
+        0,
+        0,
+        20
+      ]
+    }
+  },
+  {
+    "estimator": "poor",
+    "episodes": 120,
+    "truth_positive": 59,
+    "truth_negative": 61,
+    "false_positive": 0,
+    "false_negative": 0,
+    "fp_rate": [
+      0.0,
+      0.0,
+      0.05924591620194442
+    ],
+    "fn_rate": [
+      0.0,
+      0.0,
+      0.061131479784092065
+    ],
+    "by_kind": {
+      "expert": [
+        59,
+        59,
+        60
+      ],
+      "partial": [
+        0,
+        0,
+        40
+      ],
+      "jam": [
+        0,
+        0,
+        20
+      ]
+    }
+  }
+]

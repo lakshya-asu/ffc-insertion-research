@@ -1,0 +1,226 @@
+{
+  "cable": {
+    "width": {
+      "value": 0.016,
+      "source": "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: width 16.000 +-0.10",
+      "unit": "m"
+    },
+    "header_thickness": {
+      "value": 0.000309,
+      "source": "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: contact header thickness 0.309 +-0.05",
+      "unit": "m"
+    },
+    "body_thickness": {
+      "value": 0.000137,
+      "source": "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: conductor 0.027 + two insulation layers 0.055 (derived)",
+      "unit": "m"
+    },
+    "exposed_contact_length": {
+      "value": 0.005,
+      "source": "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: strip length 5.000 +-0.50",
+      "unit": "m"
+    },
+    "support_tape_length": {
+      "value": 0.0063,
+      "source": "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: support length 6.300 +-0.50",
+      "unit": "m"
+    },
+    "mass_per_length": {
+      "value": 0.00497,
+      "source": "computed: 15 x 0.7 x 0.027 mm copper + 16 x 0.11 mm PET film",
+      "unit": "kg/m"
+    },
+    "modulus": {
+      "value": 3000000000.0,
+      "source": "PLACEHOLDER: homogeneous laminate modulus; fit from cantilever tests",
+      "unit": "Pa"
+    },
+    "tail_links": 12,
+    "tail_link_length": {
+      "value": 0.006,
+      "source": "modelling choice: 12 x 6 mm of tail; the rest hangs free and is dropped",
+      "unit": "m"
+    }
+  },
+  "connector": {
+    "opening_width": {
+      "value": 0.0164,
+      "source": "TE customer drawing C-1734248 rev E1, 15 positions (likely Pi 4 CSI/DSI part 1-1734248-5): DIM C = 16.40 +-0.1 (read as the FPC opening)",
+      "unit": "m"
+    },
+    "seat_depth": {
+      "value": 0.00345,
+      "source": "TE customer drawing C-1734248 rev E1, 15 positions (likely Pi 4 CSI/DSI part 1-1734248-5): section X-X, 3.45 from the top face to the stop",
+      "unit": "m"
+    },
+    "slot_height": {
+      "value": 0.000509,
+      "source": "PLACEHOLDER: header 0.309 + 0.1 above and below; open-slot height is not on the drawing",
+      "unit": "m"
+    },
+    "top_leadin_half_length": {
+      "value": 0.0006,
+      "source": "PLACEHOLDER: funnel above and below the slot, 25 deg; typical ZIF housing",
+      "unit": "m"
+    },
+    "top_leadin_angle": {
+      "value": 0.4363323129985824,
+      "source": "PLACEHOLDER: lead-in angle",
+      "unit": "rad"
+    },
+    "side_leadin_half_length": {
+      "value": 0.0,
+      "source": "PLACEHOLDER: drawing shows corner chamfers at the pocket ends, undimensioned; 0 = straight walls",
+      "unit": "m"
+    },
+    "wall_thickness": {
+      "value": 0.0015,
+      "source": "modelling choice: rigid housing thickness",
+      "unit": "m"
+    },
+    "cable_thickness_spec": {
+      "value": 0.0003,
+      "source": "TE customer drawing C-1734248 rev E1, 15 positions (likely Pi 4 CSI/DSI part 1-1734248-5): applicable FPC thickness 0.3 +-0.05",
+      "unit": "m"
+    }
+  },
+  "tool": {
+    "grasp_on": "tape",
+    "jaw_length": {
+      "value": 0.0015,
+      "source": "design choice: thin jaws so they fit on the 2.85 mm of tape outside the seated slot",
+      "unit": "m"
+    },
+    "free_film_length": {
+      "value": 0.0,
+      "source": "design choice: 0 for the tape grip; 3e-3 for the film grip (fails: tip pitches)",
+      "unit": "m"
+    },
+    "clamp_force": {
+      "value": 3.0,
+      "source": "I: derived requirement: >= force ceiling x 1.5 margin / (2 x mu); replaces Lakshya's 0.36 N simulation preload, which slips",
+      "unit": "N"
+    },
+    "pad_friction": {
+      "value": 0.4,
+      "source": "PLACEHOLDER: pad-on-film friction until the pull test",
+      "unit": ""
+    },
+    "grasp_model": "friction joint: the header may slide along the cable axis in the jaws once tangential load exceeds 2 x mu x clamp",
+    "position_kp": {
+      "value": 2000.0,
+      "source": "PLACEHOLDER: stand-in for a Cartesian impedance controller",
+      "unit": "N/m"
+    },
+    "position_kv": {
+      "value": 40.0,
+      "source": "PLACEHOLDER",
+      "unit": "N s/m"
+    },
+    "rotation_kp": {
+      "value": 2.0,
+      "source": "PLACEHOLDER",
+      "unit": "N m/rad"
+    },
+    "rotation_kv": {
+      "value": 0.05,
+      "source": "PLACEHOLDER",
+      "unit": "N m s/rad"
+    }
+  },
+  "physics": {
+    "gravity_in_C": [
+      9.81,
+      0.0,
+      0.0
+    ],
+    "gravity_source": "D: Pi 4 CSI socket is vertical (Lakshya's hardware review); for the Pi Zero side-entry case gravity is along -z",
+    "timestep": {
+      "value": 0.001,
+      "source": "measured on this Mac: <= 1 ms keeps a 0.3 mm tip from penetrating a 0.5 mm slot",
+      "unit": "s"
+    },
+    "control_hz": {
+      "value": 20.0,
+      "source": "design target from Lakshya's architecture guide",
+      "unit": "Hz"
+    },
+    "contact_margin": {
+      "value": 2e-05,
+      "source": "rule: margin below the clearance",
+      "unit": "m"
+    },
+    "friction": {
+      "value": 0.4,
+      "source": "PLACEHOLDER: randomize 0.2 to 0.6 until the pull test",
+      "unit": ""
+    },
+    "solref": "0.0005 1",
+    "solimp": "0.95 0.99 0.0005 0.5 2"
+  },
+  "success": {
+    "corner_depth_tolerance": {
+      "value": 0.0003,
+      "source": "Lakshya seating.py: all four tip corners deeper than seat depth minus this",
+      "unit": "m"
+    },
+    "over_insertion_tolerance": {
+      "value": 0.00025,
+      "source": "M: Lakshya used 0.05 mm; the twin's soft backstop contact penetrates about 0.1 mm per newton, so 0.25 mm covers the 1.5 N ceiling. A hard stop cannot be over-inserted physically",
+      "unit": "m"
+    },
+    "peak_force_limit": {
+      "value": 3.0,
+      "source": "PLACEHOLDER: until the insertion-force curves exist",
+      "unit": "N"
+    },
+    "max_jaw_slip": {
+      "value": 0.0003,
+      "source": "PLACEHOLDER",
+      "unit": "m"
+    },
+    "start_gap": {
+      "value": 0.0015,
+      "source": "modelling choice: tip starts this far before the mouth",
+      "unit": "m"
+    }
+  },
+  "version": "0.1.0",
+  "placeholders": [
+    "cable.modulus = 3000000000.0 Pa: homogeneous laminate modulus; fit from cantilever tests",
+    "connector.slot_height = 0.000509 m: header 0.309 + 0.1 above and below; open-slot height is not on the drawing",
+    "connector.top_leadin_half_length = 0.0006 m: funnel above and below the slot, 25 deg; typical ZIF housing",
+    "connector.top_leadin_angle = 0.4363323129985824 rad: lead-in angle",
+    "connector.side_leadin_half_length = 0.0 m: drawing shows corner chamfers at the pocket ends, undimensioned; 0 = straight walls",
+    "tool.pad_friction = 0.4 : pad-on-film friction until the pull test",
+    "tool.position_kp = 2000.0 N/m: stand-in for a Cartesian impedance controller",
+    "tool.position_kv = 40.0 N s/m: PLACEHOLDER",
+    "tool.rotation_kp = 2.0 N m/rad: PLACEHOLDER",
+    "tool.rotation_kv = 0.05 N m s/rad: PLACEHOLDER",
+    "physics.friction = 0.4 : randomize 0.2 to 0.6 until the pull test",
+    "success.peak_force_limit = 3.0 N: until the insertion-force curves exist",
+    "success.max_jaw_slip = 0.0003 m: PLACEHOLDER"
+  ],
+  "levels": {
+    "L0": {
+      "name": "L0",
+      "lateral": 0.0003,
+      "height": 0.0003,
+      "yaw": 0.03490658503988659,
+      "pitch": 0.03490658503988659,
+      "roll": 0.03490658503988659,
+      "grasp_offset": 0.0003,
+      "grasp_yaw": 0.03490658503988659
+    },
+    "L1": {
+      "name": "L1",
+      "lateral": 0.0015,
+      "height": 0.0015,
+      "yaw": 0.10471975511965978,
+      "pitch": 0.10471975511965978,
+      "roll": 0.10471975511965978,
+      "grasp_offset": 0.0005,
+      "grasp_yaw": 0.05235987755982989
+    }
+  }
+}
