@@ -37,3 +37,7 @@ For the fixture branch, check cable placement and release, repeatable presentati
 Nothing is required to continue the simulation geometry and physics studies. We keep uncertain dimensions explicit and run sensitivity studies. Later, an exact cable/connector part or specimen measurements will replace those assumptions before a purchase decision. Physical hardware testing remains deferred.
 
 See [market research and primary sources](suction-pinch-market-review.md) and [the grasp footprint experiment](../../experiments/034-grasp-footprints.md).
+
+## Compact voice-coil candidate
+
+The [micro-flexure design](../micro-flexure/README.md) replaces the two-PQ12 mechanism with a bare H2W NCC01-04-001-1X actuator, steel flexure guidance, a sensing upper finger and a fixed offset suction tip. Complete nominal head: 30 × 28 × 24.7 mm, excluding adapter and leads. It uses the passive-fixture handoff branch. CAD and preliminary analytical screening are available; manufacturing details and physics remain unqualified. All earlier options remain available.

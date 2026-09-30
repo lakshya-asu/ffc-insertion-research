@@ -6,3 +6,5 @@
 #bending-fit video{aspect-ratio:1280/480}
 
 #flexible-motion video{aspect-ratio:1280/480}
+
+#micro-flexure{border-top:0;padding-top:40px}#micro-flexure h1{font-size:clamp(32px,4vw,54px);max-width:24ch}#micro-flexure .lede{max-width:65ch;font-size:21px}.flexure-figure{margin:32px 0}.flexure-figure img{display:block;width:100%;height:auto}.flexure-figure figcaption{max-width:95ch;margin-top:14px}#flexure-animation{max-width:850px}#flexure-animation[hidden]{display:none}#flexure-play{padding:12px 18px;color:var(--ink);background:var(--surface);border:1px solid var(--line);font:inherit;cursor:pointer}#flexure-play:focus-visible{outline:3px solid var(--accent);outline-offset:4px}#micro-flexure a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}#flexure-motion{scroll-margin-top:100px}

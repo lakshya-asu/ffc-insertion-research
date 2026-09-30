@@ -1,0 +1,17 @@
+{
+  "static_checks": {
+    "asset_links_checked": 17,
+    "unique_ids": true,
+    "published_asset_hashes": "pass",
+    "javascript_syntax": "pass",
+    "diff_whitespace": "pass"
+  },
+  "browser_review": {
+    "status": "blocked",
+    "reason": "Chromium launch denied by session sandbox; desktop and mobile layout not browser-verified"
+  },
+  "publication": {
+    "status": "pending",
+    "reason": "github.com DNS resolution failed in this session"
+  }
+}

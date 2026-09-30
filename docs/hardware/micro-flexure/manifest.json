@@ -1,0 +1,27 @@
+{
+  "files_sha256": {
+    "README.md": "9595a1162b42706e61c16c38dc8167293388556043d9ef3736a73c964d0c72b1",
+    "board-scale.png": "b7cc17aae6824d6e91448532609507debcdec67c33ca11023c05f438052137a5",
+    "build.py": "14e56c50e34450bf2b96e5028f9c2b011a1d16a0fc1681df42be4aaf1539f5e5",
+    "clearance.json": "dbffb6e1acedded53fb597114ff24adc71480d656c50075bca78019081192014",
+    "closed.step": "ad6175a7fa1c52039c3bb49a0306450140d15ceda05cf360e71b1dc099b58398",
+    "concept.png": "6e76ffcf27474dbba57e96e4aeb671e6ef4bb61f02b9438b5cf37853ab7e1774",
+    "design-review.pdf": "0803709f177b40d45e58f15a5ff11122734524f6d9b447231b8339f629e0f23b",
+    "dimensions.png": "9f67529c8a50dff898e2741b97265b51493f3380eae21a6a8e6eee953ce8e32b",
+    "jaw-preview.gif": "251541e68a47b2aaa87676b50c2146a0bb03434fac842288574b65f094b2b22a",
+    "micro-flexure.usda": "20b5c6e995e504093f6f3e040a83bc9b513cd4ba349ee2cafb3cff9212d42a8a",
+    "micro-flexure.usdz": "faaee7959e1c01135aabcf26e982ebde7261e6cd40ed2471a406e7879c6be851",
+    "open-closed.png": "2361bcce95ac7497662264b8d16b83747ee7d5a37f70e49f04d31cf267006d42",
+    "open.step": "df72b1882aaffd1d212d28a4a0f910e6074efae393fd23c00ff4bb0c96df6384",
+    "package_review.py": "3f6ab73e61a8ed6ebe6f5740c2848731c7f6f1c54aaa55f3152147dfb26bdd9f",
+    "parameters.json": "2d19dcc0d6c120167c165c39b55f6280b40e375bacafa109098c1f7d79970811",
+    "raster.cpp": "c4c41dc9fe3e58c2842d7b0148e7f9265cf526ad60811056fd9ae807a7c2c467",
+    "render-scope.json": "5ff5b00297f616b4c84b6bfdfa63494375363751c031ff5c4f29d050674affba",
+    "render.py": "6efe25b9d16be28cfc632bb811b82a4805e241209e0333ce81efe00c30959d12",
+    "report.json": "59054c8c049ae3c1fe9a2acc52b4e25a86c3c536ad12ce6c3b78026486613314",
+    "review.py": "3e106e21e31b59feca64a657fbcded3b0560c788a942577039ea933e5c527e18"
+  },
+  "board_asset_sha256": "dfb82c3b4885433b2057e73f46f7774b2303a06c1e92cf96fa3af1ba758d71f6",
+  "physics": false,
+  "scope": "Design review; prescribed animation only"
+}

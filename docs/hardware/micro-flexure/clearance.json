@@ -1,0 +1,118 @@
+{
+  "status": "Geometry screening only; no full-cell collision or perception qualification",
+  "overall_head_bounds_mm": [
+    [
+      8.0,
+      -10.0,
+      -4.0
+    ],
+    [
+      38.0,
+      18.0,
+      20.7
+    ]
+  ],
+  "overall_head_size_mm": [
+    30.0,
+    28.0,
+    24.7
+  ],
+  "sampled_tool_to_board_and_socket_aabb_separation_mm": 5.5,
+  "translation_samples": 51,
+  "path": "10 mm standoff through 2.5 mm nominal depth; cable/tool rigid translation only",
+  "grasp_patch_nominal_mm": [
+    8.5,
+    10.5
+  ],
+  "stiffener_end_mm": 6,
+  "exposed_contact_end_mm": 4,
+  "inspection_tool_occlusion": [
+    [
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "entrance_tool_occlusion": [
+    {
+      "standoff_mm": 10,
+      "blocking_parts_per_view": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "rim_samples_visible_in_any_view": 6
+    },
+    {
+      "standoff_mm": 3,
+      "blocking_parts_per_view": [
+        [
+          "vacuum_bracket",
+          "vacuum_bracket",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "rim_samples_visible_in_any_view": 6
+    },
+    {
+      "standoff_mm": 0,
+      "blocking_parts_per_view": [
+        [
+          "upper_nose",
+          "vacuum_bracket",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "upper_nose",
+          null
+        ]
+      ],
+      "rim_samples_visible_in_any_view": 6
+    }
+  ],
+  "ray_scope": "Tool AABBs only. Cable, board self-occlusion, optics and camera mounts excluded",
+  "limits": [
+    "No FR3 adapter or arm sweep",
+    "No force-loaded deformed finger",
+    "No physical tolerance stack",
+    "No sensor-driven execution"
+  ]
+}

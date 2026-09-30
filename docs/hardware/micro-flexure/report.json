@@ -1,0 +1,804 @@
+{
+  "status": "Concept CAD; not manufacturing released or physics qualified",
+  "analytical": {
+    "method": "Small-deflection beam equations; not FEA or measured force capability",
+    "guide_stiffness_N_mm": 0.04444444444444445,
+    "sensing_compliance_mm_N": 1.2109374999999996,
+    "sensing_deflection_at_target_mm": 0.18164062499999992,
+    "required_motion_mm": 1.241640625,
+    "guide_restoring_force_N": 0.05518402777777779,
+    "gravity_allowance_N": 0.02943,
+    "required_coil_force_N": 0.2346140277777778,
+    "estimated_current_A": 0.5213645061728395,
+    "estimated_copper_power_W": 0.40773142244527316,
+    "continuous_force_margin_N": 0.03538597222222223,
+    "guide_bending_stress_MPa": 206.94010416666666,
+    "sensing_bending_stress_MPa": 70.31249999999997,
+    "estimated_parasitic_axis_shift_mm": 0.07708357208251954,
+    "exclusions": [
+      "Coil lead forces",
+      "Thermal derating",
+      "Gauge bond and pad compliance",
+      "Fatigue",
+      "Assembly tolerances",
+      "Large-deflection stiffness",
+      "Dynamics"
+    ]
+  },
+  "checks": [
+    {
+      "gap_mm": 0.14,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    },
+    {
+      "gap_mm": 0.2363636363636364,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    },
+    {
+      "gap_mm": 0.33272727272727276,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    },
+    {
+      "gap_mm": 0.42909090909090913,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    },
+    {
+      "gap_mm": 0.5254545454545455,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    },
+    {
+      "gap_mm": 0.6218181818181818,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    },
+    {
+      "gap_mm": 0.7181818181818183,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    },
+    {
+      "gap_mm": 0.8145454545454546,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    },
+    {
+      "gap_mm": 0.910909090909091,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    },
+    {
+      "gap_mm": 1.0072727272727273,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    },
+    {
+      "gap_mm": 1.1036363636363637,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    },
+    {
+      "gap_mm": 1.2,
+      "moving_selected_fixed_overlap_mm3": 0.0
+    }
+  ],
+  "parts": [
+    {
+      "name": "base",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 571.9999999999999,
+      "bounds_mm": [
+        [
+          15.999999899999997,
+          -10.000000100000003,
+          -2.300000100000003
+        ],
+        [
+          38.0000001,
+          10.000000100000003,
+          -0.9999998999999963
+        ]
+      ]
+    },
+    {
+      "name": "rear_post_0",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 299.99999999999994,
+      "bounds_mm": [
+        [
+          32.9999999,
+          -10.0000001,
+          -1.0000001
+        ],
+        [
+          38.0000001,
+          -6.9999999,
+          19.0000001
+        ]
+      ]
+    },
+    {
+      "name": "roof_rail_0",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 92.3999999999999,
+      "bounds_mm": [
+        [
+          15.999999899999997,
+          -10.000000100000003,
+          19.299999899999996
+        ],
+        [
+          38.0000001,
+          -6.999999899999996,
+          20.700000100000004
+        ]
+      ]
+    },
+    {
+      "name": "rear_post_1",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 299.99999999999994,
+      "bounds_mm": [
+        [
+          32.9999999,
+          6.9999999,
+          -1.0000001
+        ],
+        [
+          38.0000001,
+          10.0000001,
+          19.0000001
+        ]
+      ]
+    },
+    {
+      "name": "roof_rail_1",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 92.3999999999999,
+      "bounds_mm": [
+        [
+          15.999999899999997,
+          6.999999899999996,
+          19.299999899999996
+        ],
+        [
+          38.0000001,
+          10.000000100000003,
+          20.700000100000004
+        ]
+      ]
+    },
+    {
+      "name": "actuator_mount",
+      "group": "fixed",
+      "note": "4-40 fastener clearance concept; supplier interface unresolved",
+      "volume_mm3": 103.37946975854949,
+      "bounds_mm": [
+        [
+          23.999999899999995,
+          -10.000000100000005,
+          19.29734456023186
+        ],
+        [
+          28.000000100000005,
+          10.000000100000005,
+          20.70265543976814
+        ]
+      ]
+    },
+    {
+      "name": "magnet_envelope",
+      "group": "fixed",
+      "note": "H2W outer envelope; bore/core are provisional, not supplier CAD",
+      "volume_mm3": 285.57077221131215,
+      "bounds_mm": [
+        [
+          20.449999899999995,
+          -5.55789436991859,
+          9.489473374490592
+        ],
+        [
+          31.56052662550941,
+          5.55789436991859,
+          18.51052662550941
+        ]
+      ]
+    },
+    {
+      "name": "core_envelope",
+      "group": "fixed",
+      "note": "Provisional internal core, excluded from manufacturing definition",
+      "volume_mm3": 292.0110371511713,
+      "bounds_mm": [
+        [
+          22.7499999,
+          -3.2546228706730487,
+          9.69383571839539
+        ],
+        [
+          29.256164281604608,
+          3.2546228706730487,
+          18.506164281604608
+        ]
+      ]
+    },
+    {
+      "name": "mount_spacer",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 17.693449825017726,
+      "bounds_mm": [
+        [
+          22.9999999,
+          -3.0042672729289674,
+          18.49430988621113
+        ],
+        [
+          29.00569011378887,
+          3.0042672729289674,
+          19.30569011378887
+        ]
+      ]
+    },
+    {
+      "name": "coil_envelope",
+      "group": "upper",
+      "note": "Moving coil/bobbin envelope; flexible leads still to route",
+      "volume_mm3": 72.53309118608117,
+      "bounds_mm": [
+        [
+          21.699999899999998,
+          -4.306116381198186,
+          6.8518442135692865
+        ],
+        [
+          30.308155786430714,
+          4.306116381198186,
+          10.568155786430713
+        ]
+      ]
+    },
+    {
+      "name": "coil_adapter",
+      "group": "upper",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 34.852828898925154,
+      "bounds_mm": [
+        [
+          21.699999899999998,
+          -4.306116381198186,
+          6.251844213569287
+        ],
+        [
+          30.308155786430714,
+          4.306116381198186,
+          6.868155786430712
+        ]
+      ]
+    },
+    {
+      "name": "moving_bridge",
+      "group": "upper",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 63.999999999999986,
+      "bounds_mm": [
+        [
+          20.9999999,
+          -4.000000100000001,
+          5.259999899999999
+        ],
+        [
+          29.0000001,
+          4.000000100000001,
+          6.260000100000001
+        ]
+      ]
+    },
+    {
+      "name": "moving_crosshead",
+      "group": "upper",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 224.96000000000004,
+      "bounds_mm": [
+        [
+          20.9999999,
+          -8.000000100000001,
+          1.4299998999999992
+        ],
+        [
+          23.0000001,
+          8.000000100000001,
+          8.460000100000002
+        ]
+      ]
+    },
+    {
+      "name": "lower_root",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 17.519999999999996,
+      "bounds_mm": [
+        [
+          17.9999999,
+          -3.0000001000000003,
+          -1.0000001
+        ],
+        [
+          22.0000001,
+          3.0000001000000003,
+          -0.2699998999999999
+        ]
+      ]
+    },
+    {
+      "name": "lower_blade",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 50.39999999999999,
+      "bounds_mm": [
+        [
+          7.999999899999996,
+          -3.0000001000000034,
+          -0.8700001000000034
+        ],
+        [
+          22.000000100000005,
+          3.0000001000000034,
+          -0.2699998999999964
+        ]
+      ]
+    },
+    {
+      "name": "lower_pad",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 2.4000000000000004,
+      "bounds_mm": [
+        [
+          8.4999999,
+          -3.0000001,
+          -0.2700001
+        ],
+        [
+          10.5000001,
+          3.0000001,
+          -0.0699999
+        ]
+      ]
+    },
+    {
+      "name": "sensing_leaf",
+      "group": "upper",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 7.999999999999998,
+      "bounds_mm": [
+        [
+          11.9999999,
+          -2.0000001000000003,
+          1.3299998999999998
+        ],
+        [
+          22.0000001,
+          2.0000001000000003,
+          1.5300001000000003
+        ]
+      ]
+    },
+    {
+      "name": "upper_nose",
+      "group": "upper",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 14.399999999999997,
+      "bounds_mm": [
+        [
+          7.9999999,
+          -3.0000001000000003,
+          1.3299998999999998
+        ],
+        [
+          12.0000001,
+          3.0000001000000003,
+          1.9300001000000002
+        ]
+      ]
+    },
+    {
+      "name": "upper_pad",
+      "group": "upper",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 2.3999999999999995,
+      "bounds_mm": [
+        [
+          8.4999999,
+          -3.0000001000000003,
+          1.1299998999999998
+        ],
+        [
+          10.5000001,
+          3.0000001000000003,
+          1.3300001000000004
+        ]
+      ]
+    },
+    {
+      "name": "gauge_0",
+      "group": "upper",
+      "note": "Bonded strain-gauge reserve; actual gauge and amplifier unselected",
+      "volume_mm3": 0.039000000000000035,
+      "bounds_mm": [
+        [
+          18.9999999,
+          -1.2250001000000004,
+          1.5299998999999997
+        ],
+        [
+          21.0000001,
+          -0.5749998999999997,
+          1.5600001000000003
+        ]
+      ]
+    },
+    {
+      "name": "gauge_1",
+      "group": "upper",
+      "note": "Bonded strain-gauge reserve; actual gauge and amplifier unselected",
+      "volume_mm3": 0.039000000000000035,
+      "bounds_mm": [
+        [
+          18.9999999,
+          0.5749998999999997,
+          1.5299998999999997
+        ],
+        [
+          21.0000001,
+          1.2250001000000004,
+          1.5600001000000003
+        ]
+      ]
+    },
+    {
+      "name": "overtravel_rail_0",
+      "group": "upper",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 4.800000000000001,
+      "bounds_mm": [
+        [
+          12.999999899999999,
+          -4.3000001,
+          2.0599998999999993
+        ],
+        [
+          21.0000001,
+          -3.299999899999999,
+          2.660000100000001
+        ]
+      ]
+    },
+    {
+      "name": "overtravel_rail_1",
+      "group": "upper",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 4.800000000000001,
+      "bounds_mm": [
+        [
+          12.999999899999999,
+          3.299999899999999,
+          2.0599998999999993
+        ],
+        [
+          21.0000001,
+          4.3000001,
+          2.660000100000001
+        ]
+      ]
+    },
+    {
+      "name": "sensing_stop",
+      "group": "upper",
+      "note": "Protects beam overtravel only; NOT a force limiter",
+      "volume_mm3": 3.4400000000000004,
+      "bounds_mm": [
+        [
+          12.9999999,
+          -4.3000001,
+          1.7799998999999997
+        ],
+        [
+          14.0000001,
+          4.3000001,
+          2.1800001000000004
+        ]
+      ]
+    },
+    {
+      "name": "guide_leaf_0",
+      "group": "guide",
+      "note": "40 \u00b5m steel foil; prescribed cubic shape, not FEA",
+      "volume_mm3": 0.7199999999999848,
+      "bounds_mm": [
+        [
+          21.9999999,
+          -8.050000100000002,
+          4.039999899999999
+        ],
+        [
+          34.0000001,
+          -6.549999899999999,
+          4.080000100000002
+        ]
+      ]
+    },
+    {
+      "name": "guide_rear_clamp_0",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 3.499999999999997,
+      "bounds_mm": [
+        [
+          32.9999999,
+          -8.550000100000002,
+          4.0799999
+        ],
+        [
+          35.0000001,
+          -6.049999899999999,
+          4.780000100000001
+        ]
+      ]
+    },
+    {
+      "name": "guide_leaf_1",
+      "group": "guide",
+      "note": "40 \u00b5m steel foil; prescribed cubic shape, not FEA",
+      "volume_mm3": 0.7199999999999847,
+      "bounds_mm": [
+        [
+          21.999999899999988,
+          6.54999989999999,
+          4.03999989999999
+        ],
+        [
+          34.00000010000001,
+          8.05000010000001,
+          4.080000100000011
+        ]
+      ]
+    },
+    {
+      "name": "guide_rear_clamp_1",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 3.4999999999999964,
+      "bounds_mm": [
+        [
+          32.9999999,
+          6.049999899999999,
+          4.0799999
+        ],
+        [
+          35.0000001,
+          8.550000100000002,
+          4.780000100000001
+        ]
+      ]
+    },
+    {
+      "name": "guide_leaf_2",
+      "group": "guide",
+      "note": "40 \u00b5m steel foil; prescribed cubic shape, not FEA",
+      "volume_mm3": 0.7199999999999848,
+      "bounds_mm": [
+        [
+          21.9999999,
+          -8.050000100000004,
+          8.039999899999998
+        ],
+        [
+          34.0000001,
+          -6.549999899999998,
+          8.080000100000003
+        ]
+      ]
+    },
+    {
+      "name": "guide_rear_clamp_2",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 3.4999999999999964,
+      "bounds_mm": [
+        [
+          32.9999999,
+          -8.550000100000002,
+          8.079999899999999
+        ],
+        [
+          35.0000001,
+          -6.049999899999999,
+          8.7800001
+        ]
+      ]
+    },
+    {
+      "name": "guide_leaf_3",
+      "group": "guide",
+      "note": "40 \u00b5m steel foil; prescribed cubic shape, not FEA",
+      "volume_mm3": 0.7199999999999847,
+      "bounds_mm": [
+        [
+          21.999999899999988,
+          6.54999989999999,
+          8.03999989999999
+        ],
+        [
+          34.00000010000001,
+          8.05000010000001,
+          8.08000010000001
+        ]
+      ]
+    },
+    {
+      "name": "guide_rear_clamp_3",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 3.499999999999996,
+      "bounds_mm": [
+        [
+          32.9999999,
+          6.049999899999999,
+          8.079999899999999
+        ],
+        [
+          35.0000001,
+          8.550000100000002,
+          8.7800001
+        ]
+      ]
+    },
+    {
+      "name": "vacuum_bracket",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 62.89402800120358,
+      "bounds_mm": [
+        [
+          28.49999989999999,
+          9.999999899999992,
+          1.9968703924161162
+        ],
+        [
+          33.50000010000001,
+          18.00000010000001,
+          4.003129607583884
+        ]
+      ]
+    },
+    {
+      "name": "vacuum_stem",
+      "group": "fixed",
+      "note": "M3 fitting / tube envelope; no threads or pneumatic qualification",
+      "volume_mm3": 32.65685563406588,
+      "bounds_mm": [
+        [
+          29.499999899999995,
+          12.497866313535512,
+          -1.5028451068944384
+        ],
+        [
+          32.50284510689444,
+          15.502133686464488,
+          4.002845106894439
+        ]
+      ]
+    },
+    {
+      "name": "vacuum_lip",
+      "group": "fixed",
+      "note": "SUF 3 cup lip envelope, seal geometry not reproduced",
+      "volume_mm3": 5.843362335677014,
+      "bounds_mm": [
+        [
+          29.149999899999997,
+          12.147368476693801,
+          -4.003508941836471
+        ],
+        [
+          32.853508941836466,
+          15.852631523306199,
+          -2.996491058163529
+        ]
+      ]
+    },
+    {
+      "name": "vacuum_neck",
+      "group": "fixed",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 6.267477343911637,
+      "bounds_mm": [
+        [
+          29.699999899999998,
+          12.698150791730779,
+          -3.0024657726418447
+        ],
+        [
+          32.30246577264184,
+          15.301849208269221,
+          -1.4975342273581556
+        ]
+      ]
+    },
+    {
+      "name": "position_sensor_reserve",
+      "group": "fixed",
+      "note": "Optical displacement sensor reserve; model and resolution not selected",
+      "volume_mm3": 24.0,
+      "bounds_mm": [
+        [
+          27.9999999,
+          -6.5000001,
+          5.4999999
+        ],
+        [
+          32.0000001,
+          -4.4999999,
+          8.5000001
+        ]
+      ]
+    },
+    {
+      "name": "position_target",
+      "group": "upper",
+      "note": "Custom nominal geometry",
+      "volume_mm3": 3.0,
+      "bounds_mm": [
+        [
+          28.4999999,
+          -3.5000001000000007,
+          5.559999899999999
+        ],
+        [
+          29.5000001,
+          -2.4999998999999993,
+          8.560000100000002
+        ]
+      ]
+    },
+    {
+      "name": "mount_ear_0",
+      "group": "fixed",
+      "note": "Nominal M2 clear holes; FR3 adapter not designed",
+      "volume_mm3": 60.59601866746906,
+      "bounds_mm": [
+        [
+          34.997913561610744,
+          -8.000000100000001,
+          8.999999899999999
+        ],
+        [
+          38.002086438389256,
+          -3.999999899999998,
+          15.000000100000001
+        ]
+      ]
+    },
+    {
+      "name": "mount_ear_1",
+      "group": "fixed",
+      "note": "Nominal M2 clear holes; FR3 adapter not designed",
+      "volume_mm3": 60.59601866746906,
+      "bounds_mm": [
+        [
+          34.997913561610744,
+          3.999999899999998,
+          8.999999899999999
+        ],
+        [
+          38.002086438389256,
+          8.000000100000001,
+          15.000000100000001
+        ]
+      ]
+    }
+  ],
+  "source_sha256": {
+    "build.py": "14e56c50e34450bf2b96e5028f9c2b011a1d16a0fc1681df42be4aaf1539f5e5",
+    "parameters.json": "2d19dcc0d6c120167c165c39b55f6280b40e375bacafa109098c1f7d79970811"
+  }
+}
