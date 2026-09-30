@@ -1,17 +1,60 @@
 {
-  "static_checks": {
-    "asset_links_checked": 17,
-    "unique_ids": true,
-    "published_asset_hashes": "pass",
-    "javascript_syntax": "pass",
-    "diff_whitespace": "pass"
-  },
-  "browser_review": {
-    "status": "blocked",
-    "reason": "Chromium launch denied by session sandbox; desktop and mobile layout not browser-verified"
-  },
-  "publication": {
-    "status": "pending",
-    "reason": "github.com DNS resolution failed in this session"
-  }
+  "report": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "images": [
+        {
+          "src": "micro-flexure/rtx-assembly.png",
+          "ok": true
+        },
+        {
+          "src": "micro-flexure/rtx-board.png",
+          "ok": true
+        },
+        {
+          "src": "micro-flexure/rtx-fingers.png",
+          "ok": true
+        },
+        {
+          "src": "micro-flexure/rtx-pickup.png",
+          "ok": false
+        },
+        {
+          "src": "micro-flexure/open-closed.png",
+          "ok": false
+        }
+      ],
+      "stopped": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "images": [
+        {
+          "src": "micro-flexure/rtx-assembly.png",
+          "ok": true
+        },
+        {
+          "src": "micro-flexure/rtx-board.png",
+          "ok": true
+        },
+        {
+          "src": "micro-flexure/rtx-fingers.png",
+          "ok": true
+        },
+        {
+          "src": "micro-flexure/rtx-pickup.png",
+          "ok": true
+        },
+        {
+          "src": "micro-flexure/open-closed.png",
+          "ok": true
+        }
+      ],
+      "stopped": true
+    }
+  ],
+  "errors": [],
+  "publication": "Prepared for GitHub Pages"
 }

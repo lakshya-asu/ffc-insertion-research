@@ -101,3 +101,5 @@ Experiment 045 integrates a supplier-family side-entry reference into the local 
 Corrected 045 contact ramps reach the backstop, with up to 4 micrometres of penetration flagged by strict scoring. The blocked-mouth run retracts with the tip outside. Step 5 has local entry/retract evidence, but contact convergence and seating remain open.
 
 Compact-tool design update: the [micro-flexure candidate](design/micro-flexure/README.md) provides a 30 × 28 × 24.7 mm suction/pinch head concept. This is geometry and analytical screening, with prescribed jaw playback. Steps 2–5 still require tool-specific mechanics, handoff, inspection and insertion qualification; no seven-step gate is closed by the new CAD.
+
+Visual review update: the compact gripper now has a reproducible Isaac RTX path-traced presentation workflow with fine meshes and declared edge-finishing/material proposals. Static rendering does not advance any mechanics or control gate.

@@ -39,3 +39,17 @@ Use a fresh output directory. Rendering also needs `third_party/raspberry_pi/zer
 ## Before adopting it
 
 Confirm actuator attachment details and coil travel against supplier CAD. Select position sensing, gauges and driver. Check force range across temperature, wire routing, tolerances and flexure fatigue. Finish the adapter and fixture. Then qualify actuator dynamics, finger compliance, suction retention, cable handoff and camera visibility in simulation before integrating with the existing sensor-driven robot controller. Existing commercial and PQ12 alternatives remain in the shortlist.
+
+## Isaac presentation pass
+
+`prepare_presentation.py` produces fine render meshes with proposed edge finishing, keeping the original mechanical STEP assemblies unchanged. `scripts/render_micro_flexure.py` renders those meshes in Isaac RTX PathTracing with uncalibrated PBR materials, area lights and fixed presentation cameras. Physics remains disabled. These images improve visual review; they do not qualify material appearance, fabrication or contact mechanics.
+
+```bash
+python design/micro-flexure/prepare_presentation.py --output outputs/micro-flexure-finished-001
+docker compose run --rm \
+  -v /usr/share/nvidia/nvoptix.bin:/usr/share/nvidia/nvoptix.bin:ro \
+  experiment scripts/render_micro_flexure.py \
+  --output /workspace/outputs/micro-flexure-rtx-new
+```
+
+The OptiX file must match the installed NVIDIA driver. Run 001 lacked this mounted denoiser data and is retained; run 002 fixes it, and run 003 improves fill lighting and adds the suction-side view. The presentation-only scene download excludes the separately sourced community board CAD. Earlier annotated views and jaw playback remain technical diagrams.

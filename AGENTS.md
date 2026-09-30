@@ -7,3 +7,7 @@
 - Do not spawn sub-agents unless the user explicitly asks for delegation or parallel agent work.
 
 - Keep `research/learning/PLAN.md` and `SEVEN_STEPS.md` current at milestone boundaries. Archive motion with original videos, native physics-disabled USD replay, source/config/asset identities and rerun instructions. Label playback separately from physics reruns and preserve failed evidence.
+
+## Visual review standard
+
+The user requests realistic rendering for all scene and hardware reviews. Use actual CAD in Isaac RTX with fine tessellation, appropriate PBR materials, metric scale, physically plausible lighting and checked camera framing. Inspect every published image. Flat debug renders remain diagnostic evidence, not the main presentation. Geometry detail, appearance realism and validated mechanics are separate claims: label provisional interfaces, uncalibrated materials and prescribed playback explicitly. Do not use generated imagery to imply completed engineering, or add fictitious fasteners and sensors to disguise unresolved assembly details.

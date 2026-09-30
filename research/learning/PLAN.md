@@ -88,3 +88,5 @@ The immediate work is finite-thickness edge localization and camera calibration 
 ## Compact gripper design review
 
 The [micro-flexure candidate](../../design/micro-flexure/README.md) is modeled and rendered with prescribed USD jaw playback. It has a voice-coil pinch axis and separate suction pickup using fixture-assisted handoff. Nominal CAD clearance and beam estimates are design screens only. Qualify actuator dynamics, compliance, handoff and visibility before replacing the current tool or collecting demonstrations. No learning, perception or insertion gate advances from this CAD work.
+
+Visual review update: the compact gripper now has a reproducible Isaac RTX path-traced presentation workflow with fine meshes and declared edge-finishing/material proposals. Static rendering does not advance any mechanics or control gate.

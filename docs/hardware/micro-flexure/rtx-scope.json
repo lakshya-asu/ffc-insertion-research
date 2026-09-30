@@ -1,0 +1,25 @@
+{
+  "renderer": "Isaac Sim RTX PathTracing",
+  "resolution": [
+    1920,
+    1440
+  ],
+  "physics": false,
+  "samples_per_pixel_requested": 512,
+  "geometry": "Concept with proposed edge finishing; supplier internals provisional",
+  "materials": "Uncalibrated PBR appearance choices",
+  "cameras": "Presentation cameras, not calibrated task observations",
+  "board": "Existing community CAD, not qualified mating geometry",
+  "native_download": "Board-free flattened static scene; no physics or motion",
+  "source_sha256": {
+    "scripts/render_micro_flexure.py": "e02ec152e9f2efaea0d0e210d36da51fc1284c884c211aed2d35b35dd78d6306",
+    "design/micro-flexure/prepare_presentation.py": "909a48ba2f3f5872d3515bb3fb55c58903407b77ebfece5be4f30ae64f1f3ac1",
+    "design/micro-flexure/build.py": "14e56c50e34450bf2b96e5028f9c2b011a1d16a0fc1681df42be4aaf1539f5e5"
+  },
+  "asset_sha256": {
+    "rtx-fingers.png": "6dee06c6fe10158ebb29d94bb1dc30970d71d465b7897ec98e51773f3d0509a4",
+    "rtx-board.png": "65911d6f68351946a4300fe85b6aca18760b47ce41a95610348393dd12b72535",
+    "rtx-pickup.png": "11a4bed3ab3101f9056648d2246326cd9458b7814aecded9eb18bd2005af0bb9",
+    "rtx-assembly.png": "16fd3bc1d573f7b9a579c3b4dee308b954ce2ec581f9a099854fd6283846f4ef"
+  }
+}
