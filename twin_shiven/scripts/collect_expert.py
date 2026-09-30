@@ -51,9 +51,10 @@ def _episode(env, ex, rng, corrective: bool):
 
 
 def _shard(args):
-    idx, n, seed, est_name, level, corrective_frac, out_dir = args
-    est = {"good": EstimatorConfig.good(), "poor": EstimatorConfig.poor()}[est_name]
-    env = TwinEnv(estimator=est, log=False); env.level = __import__("ffc_twin.spec", fromlist=["LEVELS"]).LEVELS[level]
+    idx, n, seed, est_name, level, corrective_frac, out_dir, board, grip, dof = args
+    from ffc_twin.spec import LEVELS, make_spec
+
+    env = TwinEnv(spec=make_spec(board, grip, dof), estimator=EstimatorConfig.named(est_name), log=False); env.level = LEVELS[level]
     ex = Expert(env.spec); rng = np.random.default_rng(seed)
     eps = [_episode(env, ex, rng, rng.random() < corrective_frac) for _ in range(n)]
     lens = np.array([e["meta"]["ticks"] for e in eps]); offsets = np.r_[0, np.cumsum(lens)]
@@ -70,14 +71,15 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--episodes", type=int, default=20000); ap.add_argument("--shard", type=int, default=1000); ap.add_argument("--procs", type=int, default=8)
     ap.add_argument("--estimator", default="good"); ap.add_argument("--level", default="L1"); ap.add_argument("--corrective", type=float, default=0.3); ap.add_argument("--out", default="")
+    ap.add_argument("--board", default="pi4", choices=["pi4", "zero"]); ap.add_argument("--grip", default="tape", choices=["tape", "body"]); ap.add_argument("--dof", type=int, default=6, choices=[4, 6])
     a = ap.parse_args()
-    out = Path(a.out) if a.out else Path(__file__).resolve().parents[1] / "out" / f"dataset_expert_{a.estimator}_{a.level}"
+    out = Path(a.out) if a.out else Path(__file__).resolve().parents[1] / "out" / f"dataset_expert_{a.board}_{a.grip}_{a.dof}dof_{a.estimator}_{a.level}"
     out.mkdir(parents=True, exist_ok=True)
     nshards = (a.episodes + a.shard - 1) // a.shard
-    jobs = [(i, min(a.shard, a.episodes - i * a.shard), 7000 + i, a.estimator, a.level, a.corrective, str(out)) for i in range(nshards)]
+    jobs = [(i, min(a.shard, a.episodes - i * a.shard), 7000 + i, a.estimator, a.level, a.corrective, str(out), a.board, a.grip, a.dof) for i in range(nshards)]
     with Pool(a.procs) as pool:
         stats = pool.map(_shard, jobs)
-    manifest = dict(episodes=a.episodes, estimator=a.estimator, level=a.level, corrective_fraction=a.corrective, shards=stats,
+    manifest = dict(episodes=a.episodes, board=a.board, grip=a.grip, dof=a.dof, estimator=a.estimator, level=a.level, corrective_fraction=a.corrective, shards=stats,
                     obs_layout="tip_estimate(6) tip_visible(1) tip_sigma_scale(1) fixture_wrench_n_nm(6) tactile(4) robot_q_rad(6) last_action(6) t(1)",
                     truth_layout="depth_m seated force tip_pose(6)", target="1 where the recorded action is the expert's own move (training target), 0 during the perturbation")
     (out / "manifest.json").write_text(json.dumps(manifest, indent=1))

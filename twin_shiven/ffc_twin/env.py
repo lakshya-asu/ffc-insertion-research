@@ -41,6 +41,7 @@ class EstimatorConfig:
 
     camera_quality: float = 1.0
     cross_skin_tactile: bool = False
+    bias_axes_m: tuple | None = None
 
     @classmethod
     def good(cls):
@@ -49,6 +50,16 @@ class EstimatorConfig:
     @classmethod
     def poor(cls):
         return cls(camera_quality=4.0, cross_skin_tactile=True)
+
+    @classmethod
+    def lakshya(cls):
+        """His estimator as measured in experiment 046: a stereo edge fit 95 um off, 88 um of it in height, with a
+        small reprojection residual, i.e. a bias rather than noise. Per-axis bias std (x depth, y lateral, z height)."""
+        return cls(camera_quality=1.0, bias_axes_m=(0.03e-3, 0.03e-3, 0.088e-3))
+
+    @classmethod
+    def named(cls, name: str):
+        return {"good": cls.good(), "poor": cls.poor(), "lakshya": cls.lakshya(), "none": cls.good()}[name]
 
 
 @dataclass
@@ -65,8 +76,9 @@ def _rpy(R):
 
 class TwinEnv:
     def __init__(self, spec: Spec = DEFAULT, estimator: EstimatorConfig | None = None, randomization: Randomization | None = None,
-                 sensors: SensorSuite | None = None, log: bool = True):
+                 sensors: SensorSuite | None = None, log: bool = True, log_geoms: bool = False):
         self.spec = spec
+        self.log_geoms = log_geoms
         self.est_cfg = estimator or EstimatorConfig.good()
         self.rand = randomization or Randomization()
         self.sensors = sensors or SensorSuite()
@@ -74,6 +86,7 @@ class TwinEnv:
         self.data = mujoco.MjData(self.model)
         self.tip = self.model.site("tip").id
         self.slip_adr = self.model.joint("grip_slip").qposadr[0]
+        assert self.model.joint("tx").qposadr[0] == 0 and self.model.joint("rz").qposadr[0] == 5, "tool joints must be the first six dofs"
         self.dt_phys = spec.physics.timestep.value
         self.dt_tick = 1 / spec.physics.control_hz.value
         self.sub = int(round(self.dt_tick / self.dt_phys))
@@ -109,7 +122,7 @@ class TwinEnv:
             self.draws = dict(friction=float(f), stiffness_scale=float(ks), tool_kp_scale=float(kp))
         mujoco.mj_forward(self.model, d)
         ss = self.sensors
-        self.cam = Camera(ss.camera, self.dt_tick, self.rng, quality=self.est_cfg.camera_quality)
+        self.cam = Camera(ss.camera, self.dt_tick, self.rng, quality=self.est_cfg.camera_quality, bias_axes_m=self.est_cfg.bias_axes_m)
         self.ft = ForceSensor(ss.force, self.dt_phys, self.rng)
         self.prop = Proprio(ss.proprio, self.rng)
         self.tac = Tactile(ss.tactile, self.rng, cross_skin=self.est_cfg.cross_skin_tactile)
@@ -130,6 +143,8 @@ class TwinEnv:
 
     def step(self, action):
         a = np.clip(np.asarray(action, dtype=float), -1, 1)
+        if self.spec.tool.dof == 4:
+            a[3] = a[4] = 0.0      # SCARA: roll and pitch are not commandable
         d = self.data
         prev_desired = self.desired.copy()
         new_desired = self.desired + np.r_[a[:3] * ACTION_POS, a[3:6] * ACTION_ROT]
@@ -217,11 +232,22 @@ class TwinEnv:
 
     def _record(self):
         if self.log_enabled:
-            self.records.append(dict(tick=self.tick, obs={k: v.tolist() for k, v in self._obs.items()}, truth=self.truth()))
+            rec = dict(tick=self.tick, obs={k: v.tolist() for k, v in self._obs.items()}, truth=self.truth())
+            if self.log_geoms:
+                # world pose of every geom this tick: what a renderer needs to replay the run without physics
+                d = self.data
+                rec["geoms"] = np.concatenate([d.geom_xpos, d.geom_xmat.reshape(-1, 9)], axis=1).round(7).tolist()
+            self.records.append(rec)
+
+    def geom_catalogue(self) -> list[dict]:
+        """Static description of every geom (name, type, size, colour) for the replay exporter."""
+        m = self.model
+        return [dict(name=m.geom(i).name, type=int(m.geom_type[i]), size=m.geom_size[i].tolist(), rgba=m.geom_rgba[i].tolist()) for i in range(m.ngeom)]
 
     def episode_record(self, extra: dict | None = None) -> dict:
-        return dict(spec_version=self.spec.version, placeholders=self.spec.placeholders(), sensor_register=self.sensors.register(), level=self.level.name,
+        return dict(spec_version=self.spec.version, board=self.spec.board, placeholders=self.spec.placeholders(), sensor_register=self.sensors.register(), level=self.level.name,
                     start=self.start, draws=self.draws, estimator=asdict(self.est_cfg), ticks=self.tick, peak_force=self.peak_force,
+                    control_hz=self.spec.physics.control_hz.value, geom_catalogue=self.geom_catalogue() if self.log_geoms else None,
                     truth_final=self.truth(), records=self.records, **(extra or {}))
 
     def write_episode(self, path, extra=None):

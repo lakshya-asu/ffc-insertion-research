@@ -120,14 +120,20 @@ class Camera:
     occlusion and proprioceptive correction. `quality` scales the pixel noise and outlier rate: 1.0 is a
     well-lit, focused setup; 4.0 is the low-light figure."""
 
-    def __init__(self, m: CameraModel, control_dt: float, rng: np.random.Generator, quality: float = 1.0):
-        self.m, self.dt, self.rng, self.quality = m, control_dt, rng, quality
+    def __init__(self, m: CameraModel, control_dt: float, rng: np.random.Generator, quality: float = 1.0, bias_axes_m: tuple | None = None):
+        """bias_axes_m: optional per-axis (x, y, z) standard deviation of the per-episode position bias, replacing the
+        model's own figure; used to reproduce a measured estimator such as Lakshya's."""
+        self.m, self.dt, self.rng, self.quality, self.bias_axes_m = m, control_dt, rng, quality, bias_axes_m
         self.reset()
 
     def reset(self):
         m = self.m
-        self.bias = np.r_[self.rng.normal(0, m.bias_episode_m.value, 3), self.rng.normal(0, m.bias_session_rot_rad.value, 3)]
-        self.bias[0] *= m.depth_axis_factor.value
+        if self.bias_axes_m is None:
+            pos_bias = self.rng.normal(0, m.bias_episode_m.value, 3)
+            pos_bias[0] *= m.depth_axis_factor.value
+        else:
+            pos_bias = self.rng.normal(0, 1, 3) * np.asarray(self.bias_axes_m, float)
+        self.bias = np.r_[pos_bias, self.rng.normal(0, m.bias_session_rot_rad.value, 3)]
         self.period = 1.0 / m.frame_hz.value
         self.next_frame = self.rng.uniform(0, self.period)
         self.t = 0.0

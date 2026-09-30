@@ -40,6 +40,45 @@ def test_mjcf_loads_and_geometry_matches_spec():
     assert model.nv == 6 + 1 + 2 * DEFAULT.cable.tail_links  # tool, grip slip, tail (tape grip: no free film)
 
 
+def _push(spec, ticks=120):
+    model = mujoco.MjModel.from_xml_string(build_mjcf(spec))
+    data = mujoco.MjData(model)
+    tip = model.site("tip").id
+    sub = int(round(1 / spec.physics.control_hz.value / spec.physics.timestep.value))
+    peak = 0.0
+    for _ in range(ticks):
+        data.ctrl[0] += 0.2e-3
+        for _ in range(sub):
+            mujoco.mj_step(model, data)
+        peak = max(peak, float(np.linalg.norm(data.sensordata[:3])))
+        if data.site_xpos[tip][0] > spec.connector.seat_depth.value - 0.05e-3:
+            break
+    return model, data, float(data.site_xpos[tip][0]), peak
+
+
+def test_zero_board_matches_lakshyas_socket_and_seats_from_zero_error():
+    from ffc_twin.spec import ZERO, make_spec
+
+    model = mujoco.MjModel.from_xml_string(build_mjcf(ZERO))
+    assert model.nv == 6 + 1 + 2 * ZERO.cable.tail_links + ZERO.connector.contact_count
+    wl, wr = model.geom("wall_l"), model.geom("wall_r")
+    assert (wl.pos[1] - wl.size[1]) - (wr.pos[1] + wr.size[1]) == pytest.approx(11.65e-3, abs=1e-9)
+    assert model.geom("backstop").pos[0] - model.geom("backstop").size[0] == pytest.approx(2.5e-3, abs=1e-9)
+    assert model.opt.gravity[2] == pytest.approx(-9.81)
+    # the ramp of a contact nose must rise toward the back of the slot (deeper x), from floor level up to the nose top
+    data = mujoco.MjData(model); mujoco.mj_forward(model, data)
+    g = model.geom("contact0_ramp"); R = data.geom_xmat[g.id].reshape(3, 3); cpos = data.geom_xpos[g.id]
+    end_deep = cpos + R[:, 0] * g.size[0]; end_mouth = cpos - R[:, 0] * g.size[0]
+    assert end_deep[2] > end_mouth[2] and end_deep[0] > end_mouth[0]
+    assert end_deep[2] == pytest.approx(ZERO.connector.contact_rest_top_rel_center.value, abs=0.03e-3)
+    _, data, depth, peak = _push(ZERO)
+    assert depth > ZERO.connector.seat_depth.value - ZERO.success.corner_depth_tolerance.value
+    assert peak < ZERO.success.peak_force_limit.value
+    body = make_spec("zero", "body", 6)
+    assert body.tool.grasp_on == "film" and body.tool.free_film_length.value == pytest.approx(3.0e-3)
+    assert make_spec("zero", "tape", 4).tool.dof == 4
+
+
 def test_mjcf_scripted_push_seats_from_zero_error():
     model = mujoco.MjModel.from_xml_string(build_mjcf())
     data = mujoco.MjData(model)

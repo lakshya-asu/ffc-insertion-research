@@ -2,12 +2,19 @@
 (
     customLayerData = {
         dictionary ffc_twin_spec = {
+            string board = "pi4"
             dictionary cable = {
                 dictionary body_thickness = {
                     string source = "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: conductor 0.027 + two insulation layers 0.055 (derived)"
                     string unit = "m"
                     double value = 0.000137
                 }
+                dictionary contact_pitch = {
+                    string source = "Raspberry Pi documentation: standard camera interface, 15 positions at 1 mm"
+                    string unit = "m"
+                    double value = 0.001
+                }
+                int contacts = 15
                 dictionary exposed_contact_length = {
                     string source = "Raspberry Pi RP-008146-DS-1, standard-standard 200 mm camera cable: strip length 5.000 +-0.50"
                     string unit = "m"
@@ -51,6 +58,67 @@
                     string unit = "m"
                     double value = 0.0003
                 }
+                dictionary contact_bevel_length = {
+                    string source = "not modelled for this board"
+                    string unit = "m"
+                    double value = 0.0002
+                }
+                int contact_count = 0
+                dictionary contact_damping = {
+                    string source = "not modelled for this board"
+                    string unit = "N s/m"
+                    double value = 0.01
+                }
+                dictionary contact_depth_from_mouth = {
+                    string source = "not modelled for this board"
+                    string unit = "m"
+                    double value = 0
+                }
+                dictionary contact_mass = {
+                    string source = "not modelled for this board"
+                    string unit = "kg"
+                    double value = 0.00001
+                }
+                dictionary contact_max_deflection = {
+                    string source = "not modelled for this board"
+                    string unit = "m"
+                    double value = 0.0001
+                }
+                dictionary contact_nose_height = {
+                    string source = "not modelled for this board"
+                    string unit = "m"
+                    double value = 0.0001
+                }
+                dictionary contact_nose_length = {
+                    string source = "not modelled for this board"
+                    string unit = "m"
+                    double value = 0.0004
+                }
+                dictionary contact_nose_width = {
+                    string source = "not modelled for this board"
+                    string unit = "m"
+                    double value = 0.0002
+                }
+                dictionary contact_pitch = {
+                    string source = "not modelled for this board"
+                    string unit = "m"
+                    double value = 0.001
+                }
+                dictionary contact_rest_top_rel_center = {
+                    string source = "not modelled for this board"
+                    string unit = "m"
+                    double value = -0.00017
+                }
+                dictionary contact_spring = {
+                    string source = "not modelled for this board"
+                    string unit = "N/m"
+                    double value = 100
+                }
+                dictionary housing_friction = {
+                    string source = "PLACEHOLDER: housing-on-cable friction; the per-episode randomization overrides it"
+                    string unit = ""
+                    double value = 0.4
+                }
                 dictionary opening_width = {
                     string source = "TE customer drawing C-1734248 rev E1, 15 positions (likely Pi 4 CSI/DSI part 1-1734248-5): DIM C = 16.40 +-0.1 (read as the FPC opening)"
                     string unit = "m"
@@ -60,6 +128,11 @@
                     string source = "TE customer drawing C-1734248 rev E1, 15 positions (likely Pi 4 CSI/DSI part 1-1734248-5): section X-X, 3.45 from the top face to the stop"
                     string unit = "m"
                     double value = 0.00345
+                }
+                dictionary side_leadin_angle = {
+                    string source = "PLACEHOLDER: corner chamfer angle"
+                    string unit = "rad"
+                    double value = 0.7853981633974483
                 }
                 dictionary side_leadin_half_length = {
                     string source = "PLACEHOLDER: drawing shows corner chamfers at the pocket ends, undimensioned; 0 = straight walls"
@@ -135,7 +208,7 @@
                     double value = 0.001
                 }
             }
-            string[] placeholders = ["cable.modulus = 3000000000.0 Pa: homogeneous laminate modulus; fit from cantilever tests", "connector.slot_height = 0.000509 m: header 0.309 + 0.1 above and below; open-slot height is not on the drawing", "connector.top_leadin_half_length = 0.0006 m: funnel above and below the slot, 25 deg; typical ZIF housing", "connector.top_leadin_angle = 0.4363323129985824 rad: lead-in angle", "connector.side_leadin_half_length = 0.0 m: drawing shows corner chamfers at the pocket ends, undimensioned; 0 = straight walls", "tool.pad_friction = 0.4 : pad-on-film friction until the pull test", "tool.position_kp = 2000.0 N/m: stand-in for a Cartesian impedance controller", "tool.position_kv = 40.0 N s/m: PLACEHOLDER", "tool.rotation_kp = 2.0 N m/rad: PLACEHOLDER", "tool.rotation_kv = 0.05 N m s/rad: PLACEHOLDER", "physics.friction = 0.4 : randomize 0.2 to 0.6 until the pull test", "success.peak_force_limit = 3.0 N: until the insertion-force curves exist", "success.max_jaw_slip = 0.0003 m: PLACEHOLDER"]
+            string[] placeholders = ["cable.modulus = 3000000000.0 Pa: homogeneous laminate modulus; fit from cantilever tests", "connector.slot_height = 0.000509 m: header 0.309 + 0.1 above and below; open-slot height is not on the drawing", "connector.top_leadin_half_length = 0.0006 m: funnel above and below the slot, 25 deg; typical ZIF housing", "connector.top_leadin_angle = 0.4363323129985824 rad: lead-in angle", "connector.side_leadin_half_length = 0.0 m: drawing shows corner chamfers at the pocket ends, undimensioned; 0 = straight walls", "connector.side_leadin_angle = 0.7853981633974483 rad: corner chamfer angle", "connector.housing_friction = 0.4 : housing-on-cable friction; the per-episode randomization overrides it", "tool.pad_friction = 0.4 : pad-on-film friction until the pull test", "tool.position_kp = 2000.0 N/m: stand-in for a Cartesian impedance controller", "tool.position_kv = 40.0 N s/m: PLACEHOLDER", "tool.rotation_kp = 2.0 N m/rad: PLACEHOLDER", "tool.rotation_kv = 0.05 N m s/rad: PLACEHOLDER", "physics.friction = 0.4 : randomize 0.2 to 0.6 until the pull test", "success.peak_force_limit = 3.0 N: until the insertion-force curves exist", "success.max_jaw_slip = 0.0003 m: PLACEHOLDER"]
             dictionary success = {
                 dictionary corner_depth_tolerance = {
                     string source = "Lakshya seating.py: all four tip corners deeper than seat depth minus this"
@@ -169,6 +242,7 @@
                     string unit = "N"
                     double value = 3
                 }
+                int dof = 6
                 dictionary free_film_length = {
                     string source = "design choice: 0 for the tape grip; 3e-3 for the film grip (fails: tip pitches)"
                     string unit = "m"
@@ -207,7 +281,7 @@
                     double value = 0.05
                 }
             }
-            string version = "0.1.0"
+            string version = "0.2.0"
         }
     }
     defaultPrim = "World"

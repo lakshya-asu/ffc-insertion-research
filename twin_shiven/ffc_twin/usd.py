@@ -113,11 +113,27 @@ def build_usd(path: str | Path, spec: Spec = DEFAULT) -> str:
     _box(stage, "/World/Connector/LeadInBottom", (-ch_cx, 0, -ch_cz), (2 * ch, slot_w + 2 * wall, 2 * ch_t), housing, rot_deg=(0, -math.degrees(a), 0))
     side = k.side_leadin_half_length.value
     if side > 0:
-        s_a = math.radians(45.0)
+        s_a = k.side_leadin_angle.value
         cx = side * math.cos(s_a) - ch_t * math.sin(s_a)
         cy = slot_w / 2 + side * math.sin(s_a) + ch_t * math.cos(s_a)
-        _box(stage, "/World/Connector/LeadInSideL", (-cx, cy, 0), (2 * side, 2 * ch_t, slot_h + 2 * wall), housing, rot_deg=(0, 0, 45))
-        _box(stage, "/World/Connector/LeadInSideR", (-cx, -cy, 0), (2 * side, 2 * ch_t, slot_h + 2 * wall), housing, rot_deg=(0, 0, -45))
+        _box(stage, "/World/Connector/LeadInSideL", (-cx, cy, 0), (2 * side, 2 * ch_t, slot_h + 2 * wall), housing, rot_deg=(0, 0, math.degrees(s_a)))
+        _box(stage, "/World/Connector/LeadInSideR", (-cx, -cy, 0), (2 * side, 2 * ch_t, slot_h + 2 * wall), housing, rot_deg=(0, 0, -math.degrees(s_a)))
+    # spring-supported contact noses, same layout as the MJCF: land + ramp fixed together, on a Z prismatic joint to the world
+    if k.contact_count:
+        n_l, n_w, n_h, bev = k.contact_nose_length.value, k.contact_nose_width.value, k.contact_nose_height.value, k.contact_bevel_length.value
+        top = k.contact_rest_top_rel_center.value
+        slope = math.atan2(n_h, bev); ramp_len = math.hypot(bev, n_h); r_t = n_h / 2
+        r_cx = -n_l / 2 + bev / 2 - (r_t / 2) * math.sin(slope)
+        r_cz = top - n_h / 2 - (r_t / 2) * math.cos(slope)
+        gold = (0.75, 0.57, 0.16)
+        for i in range(k.contact_count):
+            y = (i - (k.contact_count - 1) / 2) * k.contact_pitch.value
+            x0 = k.contact_depth_from_mouth.value
+            land = _box(stage, f"/World/Connector/Contact_{i:02d}", (x0 + bev / 2, y, top - n_h / 2), (n_l - bev, n_w, n_h), gold, mass=k.contact_mass.value)
+            ramp = _box(stage, f"/World/Connector/ContactRamp_{i:02d}", (x0 + r_cx, y, r_cz), (ramp_len, n_w, r_t), gold, rot_deg=(0, -math.degrees(slope), 0), mass=1e-9)
+            _joint(stage, f"/World/Connector/contact_{i:02d}_z", UsdPhysics.PrismaticJoint, None, str(land.GetPath()), (x0 + bev / 2, y, top - n_h / 2), (0, 0, 0),
+                   "Z", -k.contact_max_deflection.value, 0.0, k.contact_spring.value, k.contact_damping.value, 1.0)
+            _joint(stage, f"/World/Connector/contact_{i:02d}_ramp", UsdPhysics.FixedJoint, str(land.GetPath()), str(ramp.GetPath()), (r_cx - bev / 2, 0, r_cz - (top - n_h / 2)), (0, 0, 0))
 
     # tool articulation: a fixed base, then six single-axis links (x, y, z slides; rx, ry, rz hinges), then the header
     film = t.free_film_length.value if t.grasp_on == "film" else 0.0

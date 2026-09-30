@@ -45,22 +45,27 @@ def run_jam(env, seed):
 
 
 if __name__ == "__main__":
+    from ffc_twin.spec import make_spec
+
     n = int(sys.argv[1]) if len(sys.argv) > 1 else 60
+    board = sys.argv[2] if len(sys.argv) > 2 else "pi4"
+    presets = sys.argv[3].split(",") if len(sys.argv) > 3 else ["good", "poor"]
     results = []
-    for cfg_name, cfg in (("good", EstimatorConfig.good()), ("poor", EstimatorConfig.poor())):
-        env = TwinEnv(estimator=cfg, log=False)
+    for cfg_name in presets:
+        env = TwinEnv(spec=make_spec(board), estimator=EstimatorConfig.named(cfg_name), log=False)
+        seat = env.spec.connector.seat_depth.value
         rows = []
         for s in range(n):
             rows.append(("expert", *run_expert(env, s)))
         for s in range(n // 3):
-            rows.append(("partial", *run_partial(env, 1000 + s, 1.5e-3)))
-            rows.append(("partial", *run_partial(env, 2000 + s, 2.8e-3)))
+            rows.append(("partial", *run_partial(env, 1000 + s, 0.43 * seat)))   # stop well short
+            rows.append(("partial", *run_partial(env, 2000 + s, 0.81 * seat)))   # stop just short of the tolerance band
             rows.append(("jam", *run_jam(env, 3000 + s)))
         fp = sum(1 for _, d, t in rows if d and not t); fn = sum(1 for _, d, t in rows if t and not d)
         pos = sum(1 for _, d, t in rows if t); neg = len(rows) - pos
-        r = dict(estimator=cfg_name, episodes=len(rows), truth_positive=pos, truth_negative=neg, false_positive=fp, false_negative=fn,
+        r = dict(board=board, estimator=cfg_name, episodes=len(rows), truth_positive=pos, truth_negative=neg, false_positive=fp, false_negative=fn,
                  fp_rate=wilson(fp, neg), fn_rate=wilson(fn, pos), by_kind={k: [sum(1 for kk, d, t in rows if kk == k and d), sum(1 for kk, d, t in rows if kk == k and t), sum(1 for kk, *_ in rows if kk == k)] for k in ("expert", "partial", "jam")})
         results.append(r)
         print(json.dumps(r))
     out = Path(__file__).resolve().parents[1] / "out"; out.mkdir(exist_ok=True)
-    (out / "detector_grade.json").write_text(json.dumps(results, indent=2))
+    (out / ("detector_grade.json" if board == "pi4" else f"detector_grade_{board}.json")).write_text(json.dumps(results, indent=2))

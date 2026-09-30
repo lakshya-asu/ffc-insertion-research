@@ -48,7 +48,8 @@ class Expert:
             a[1:3] = np.clip(-0.4 * err[1:3] / ACTION_POS, -1, 1)
             a[3:6] = np.clip(-0.4 * err[3:6] / ACTION_ROT, -1, 1)
             self.align_ticks += 1
-            settled = np.all(np.abs(err[1:3]) < 0.06e-3) and np.all(np.abs(err[3:6]) < math.radians(0.3))
+            rot = err[5:6] if self.spec.tool.dof == 4 else err[3:6]   # a SCARA cannot settle roll and pitch
+            settled = np.all(np.abs(err[1:3]) < 0.06e-3) and np.all(np.abs(rot) < math.radians(0.3))
             self.settled_ticks = self.settled_ticks + 1 if settled else 0
             if self.settled_ticks >= 3 or self.align_ticks > 40:
                 self.phase = "approach"

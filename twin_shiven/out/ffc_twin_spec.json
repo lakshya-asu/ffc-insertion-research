@@ -40,6 +40,12 @@
       "value": 0.006,
       "source": "modelling choice: 12 x 6 mm of tail; the rest hangs free and is dropped",
       "unit": "m"
+    },
+    "contacts": 15,
+    "contact_pitch": {
+      "value": 0.001,
+      "source": "Raspberry Pi documentation: standard camera interface, 15 positions at 1 mm",
+      "unit": "m"
     }
   },
   "connector": {
@@ -73,6 +79,11 @@
       "source": "PLACEHOLDER: drawing shows corner chamfers at the pocket ends, undimensioned; 0 = straight walls",
       "unit": "m"
     },
+    "side_leadin_angle": {
+      "value": 0.7853981633974483,
+      "source": "PLACEHOLDER: corner chamfer angle",
+      "unit": "rad"
+    },
     "wall_thickness": {
       "value": 0.0015,
       "source": "modelling choice: rigid housing thickness",
@@ -82,10 +93,72 @@
       "value": 0.0003,
       "source": "TE customer drawing C-1734248 rev E1, 15 positions (likely Pi 4 CSI/DSI part 1-1734248-5): applicable FPC thickness 0.3 +-0.05",
       "unit": "m"
+    },
+    "housing_friction": {
+      "value": 0.4,
+      "source": "PLACEHOLDER: housing-on-cable friction; the per-episode randomization overrides it",
+      "unit": ""
+    },
+    "contact_count": 0,
+    "contact_pitch": {
+      "value": 0.001,
+      "source": "not modelled for this board",
+      "unit": "m"
+    },
+    "contact_depth_from_mouth": {
+      "value": 0.0,
+      "source": "not modelled for this board",
+      "unit": "m"
+    },
+    "contact_nose_length": {
+      "value": 0.0004,
+      "source": "not modelled for this board",
+      "unit": "m"
+    },
+    "contact_nose_width": {
+      "value": 0.0002,
+      "source": "not modelled for this board",
+      "unit": "m"
+    },
+    "contact_nose_height": {
+      "value": 0.0001,
+      "source": "not modelled for this board",
+      "unit": "m"
+    },
+    "contact_bevel_length": {
+      "value": 0.0002,
+      "source": "not modelled for this board",
+      "unit": "m"
+    },
+    "contact_rest_top_rel_center": {
+      "value": -0.00017,
+      "source": "not modelled for this board",
+      "unit": "m"
+    },
+    "contact_spring": {
+      "value": 100.0,
+      "source": "not modelled for this board",
+      "unit": "N/m"
+    },
+    "contact_damping": {
+      "value": 0.01,
+      "source": "not modelled for this board",
+      "unit": "N s/m"
+    },
+    "contact_mass": {
+      "value": 1e-05,
+      "source": "not modelled for this board",
+      "unit": "kg"
+    },
+    "contact_max_deflection": {
+      "value": 0.0001,
+      "source": "not modelled for this board",
+      "unit": "m"
     }
   },
   "tool": {
     "grasp_on": "tape",
+    "dof": 6,
     "jaw_length": {
       "value": 0.0015,
       "source": "design choice: thin jaws so they fit on the 2.85 mm of tape outside the seated slot",
@@ -185,13 +258,16 @@
       "unit": "m"
     }
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "board": "pi4",
   "placeholders": [
     "cable.modulus = 3000000000.0 Pa: homogeneous laminate modulus; fit from cantilever tests",
     "connector.slot_height = 0.000509 m: header 0.309 + 0.1 above and below; open-slot height is not on the drawing",
     "connector.top_leadin_half_length = 0.0006 m: funnel above and below the slot, 25 deg; typical ZIF housing",
     "connector.top_leadin_angle = 0.4363323129985824 rad: lead-in angle",
     "connector.side_leadin_half_length = 0.0 m: drawing shows corner chamfers at the pocket ends, undimensioned; 0 = straight walls",
+    "connector.side_leadin_angle = 0.7853981633974483 rad: corner chamfer angle",
+    "connector.housing_friction = 0.4 : housing-on-cable friction; the per-episode randomization overrides it",
     "tool.pad_friction = 0.4 : pad-on-film friction until the pull test",
     "tool.position_kp = 2000.0 N/m: stand-in for a Cartesian impedance controller",
     "tool.position_kv = 40.0 N s/m: PLACEHOLDER",
