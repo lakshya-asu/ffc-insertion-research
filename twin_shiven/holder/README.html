@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connector holder, Form 4</title>
+<style>
+:root{--bg:#fdf9f2;--ink:#2a2a2a;--mute:#6b6b6b;--rule:#d8d2c4;--sheet:#f3eee4;--warn:#8a2a2a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.5 Inter,system-ui,-apple-system,sans-serif}
+main{max-width:960px;margin:0 auto;padding:40px 28px 60px}
+h1{font-size:26px;margin:0 0 4px}
+.sub{color:var(--mute);margin:0 0 22px}
+h2{font-size:19px;margin:26px 0 8px}
+p{max-width:72ch;margin:0 0 8px}
+table{border-collapse:collapse;width:100%;margin:8px 0 14px;font-size:14.5px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{background:var(--sheet);font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+figure{margin:0 0 14px}
+figure img{width:100%;display:block;background:#fff}
+figcaption{font-size:13px;color:var(--mute);margin-top:4px}
+.sheet{background:var(--sheet);padding:12px 16px;margin:10px 0}
+.warn{color:var(--warn)}
+code{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:var(--sheet);padding:1px 5px}
+ol,ul{max-width:72ch;padding-left:20px}
+li{margin:4px 0}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+<h1>Two holders for the two 5-pin housings</h1>
+<p class="sub">Parametric CadQuery model for Form 4 resin printing. Files in this folder: <code>holder_pins.stl</code>, <code>holder_sockets.stl</code> (and .step for each), <code>coupon.stl</code>, <code>connector_holder.py</code>. One base per part, each 84 by 60 by 15 mm, low and wide so an arm bump cannot tip it, with three ways to fix it to the bench.</p>
+
+<div class="sheet">Naming. The team's notes call the right arm's part "the male", but the recorded wrist-camera frames show the <b>left</b> arm holding the housing with five protruding <b>pins</b> and the <b>right</b> arm holding the housing with five <b>socket</b> openings, which the right arm pushes onto the pins. The holders are therefore named by what the part looks like: <code>holder_pins</code> (label P, left arm's side) and <code>holder_sockets</code> (label S, right arm's side).</div>
+
+<div class="two">
+<figure><img src="holder_pins_preview.png" alt="Pins holder preview"><figcaption>The pins holder: one pocket, two end trenches for the finger pads, four counterbored screw holes, two dowel holes, label P. The sockets holder is the same without the pin slot.</figcaption></figure>
+<figure><img src="holder_pins_sections.png" alt="Sections"><figcaption>Sections through the pins holder: the pocket with its lead-in, the blind pin slot under the floor, the end trenches, the screw counterbores and dowels.</figcaption></figure>
+</div>
+
+<h2>What it does</h2>
+<ul>
+<li><b>The part sits mating face down, wires up.</b> In every connect recording the fingers pinch the housing's two end faces, the mating face points out past the fingertips and the wires run back toward the palm. A gripper coming straight down onto this pocket and closing on the end faces produces exactly that grasp; the pose move to the handover pose then turns the wrist, so nothing about the part's orientation in the room matters, only where it sits between the fingers. The earlier design had the part the other way up and would have put the mating face against the palm.</li>
+<li>The pins part rests on its shoulders either side of a blind slot in the pocket floor, so its 6 mm pins hang free and never carry weight. The sockets part has a flat face and rests on the floor directly. The wires point up out of the pocket and sit in the gap between the finger pads, so they need no room in the holder.</li>
+<li>The pocket is 6 mm deep, so 8.5 mm of the housing stands proud; two 2 mm deep trenches at the ends let the finger pads close 2 mm below the top surface. The pad tips then sit 4 mm behind the mating face, which is what the recordings show (4 to 6 mm), and the pads cover about 10 mm of the 14.5 mm housing.</li>
+<li>A 1.2 mm chamfer at the mouth self-centres a housing dropped in slightly off.</li>
+<li>Pocket clearance 0.25 mm per side (loose drop-in). Form 4 Grey resin holds about 0.1 mm, so the fit is set by the number, not the printer.</li>
+<li>Fixing to the bench, three ways that can be combined: four counterbored screw holes in the corners (M5 machine screws into inserts, or #10 wood screws straight into the bench; the head sits 5 mm below the surface so nothing protrudes); two 3 mm dowel holes on the long axis, so with two pins in the bench the holder always returns to the identical spot after removal; four 20 by 20 mm recesses underneath for 3M VHB pads if screws are not allowed on that bench.</li>
+<li>Footprint 84 by 60 mm, 15 mm tall, 1 mm chamfer on the top edges so fingers and arms slide off it. Solid resin, about 75 cm³; on Grey V5 that is roughly 85 g per holder.</li>
+</ul>
+
+<h2>The grasp the holder reproduces</h2>
+<figure><img src="demo-grasp-closeups.png" alt="Wrist camera close-ups from a connect recording"><figcaption>Wrist cameras from connect episode c3e3cb5e (24 Sep), start and end. Top row: left wrist, its own gripper holding the pins part, wires toward the palm, pins out past the fingertips. Bottom row: right wrist, its own gripper holding the sockets part the same way. Fingers on the end faces, 4 to 6 mm of housing proud of the pad tips.</figcaption></figure>
+
+<h2 class="warn">Measure before printing</h2>
+<p>The defaults are a standard 1x5 2.54 mm crimp housing (14.6 by 2.6 by 14.5 mm), which is what the camera frames show. Put calipers on both real housings and set these in the <code>PARTS</code> table at the top of <code>connector_holder.py</code>, then rerun it:</p>
+<table>
+<tr><th>Parameter</th><th>Default</th><th>Measure</th></tr>
+<tr><td><code>L</code></td><td>14.6 mm</td><td>length along the five contacts</td></tr>
+<tr><td><code>W</code></td><td>2.6 mm</td><td>thickness of the single-row housing</td></tr>
+<tr><td><code>H</code></td><td>14.5 mm</td><td>height of the plastic body, mating face to wire end, without pins</td></tr>
+<tr><td><code>pin_len</code>, <code>pin_row</code>, <code>pin_t</code></td><td>6.0, 11.0, 0.64 mm</td><td>pins part only: how far the pins stick out, end-to-end span of the five, pin thickness; the slot is 0.8 mm wider each way and 1 mm deeper</td></tr>
+</table>
+<p>Also check whether either housing has a latch bump or ramp on a broad face. If so, tell me its height; the pocket needs a groove for it or the part will not drop in.</p>
+
+<h2>The coupon</h2>
+<p><code>coupon.stl</code> is a strip with five pockets at 0.10, 0.175, 0.25, 0.325 and 0.40 mm clearance per side, labelled. Print it first (it is small), drop a housing into each, and pick the tightest one that still drops in freely and comes out without tilting. Set <code>CLEARANCE</code> to that value and print the holder.</p>
+
+<h2>Form 4 settings</h2>
+<table>
+<tr><th>Item</th><th>Choice</th><th>Why</th></tr>
+<tr><td>Resin</td><td>Grey V5 or Tough 2000</td><td>Grey for accuracy and a matte, camera-friendly surface; Tough if it will be clamped and knocked</td></tr>
+<tr><td>Layer height</td><td>50 µm</td><td>Pocket walls and chamfer come out clean; 100 µm is fine for the coupon</td></tr>
+<tr><td>Orientation</td><td>Flat on the build platform, pocket up, or tilted 15 to 20 degrees with supports on the underside only</td><td>No supports inside the pocket, the trenches or the pin slot. The pin slot is a 1.4 mm wide blind slot; after washing, run a pin or a 1 mm drill through it to clear uncured resin</td></tr>
+<tr><td>Supports</td><td>Auto, touchpoint 0.4 mm, underside only</td><td>Keep the top surface and pocket walls support-free</td></tr>
+<tr><td>Post-process</td><td>Wash 10 min, cure 30 min at 60 °C for Grey; Tough per Formlabs table</td><td>Uncured resin in the pockets changes the fit; run a pin or the housing through each pocket after curing</td></tr>
+<tr><td>Colour</td><td>Grey, not blue, not black</td><td>The bench mat is blue and the housings are black; the holder must contrast with both for the cameras</td></tr>
+</table>
+
+<h2>Placing it in the cell</h2>
+<ol>
+<li>Inside all three cameras' view, reachable by both arms with the wrist cameras looking down at the pockets.</li>
+<li>Pins holder on the left arm's side, sockets holder on the right's, so each arm picks its own part without crossing. Turn each holder so its pocket's long axis lines up with the direction that arm's fingers close in when the wrist points straight down. Being separate, their spacing and angle are free; fix them once and never move them after recording starts.</li>
+<li>Screw it down (wood screws through the counterbores are enough on a wooden bench), or VHB pads in the underside recesses on a mat. Drill the two dowel holes into the bench through the holder the first time; after that the holder can come off and go back without recalibrating anything. Then save a pose <code>home_pickup</code> with both grippers open above the two holders.</li>
+<li>Drop each part in ten times and photograph from the scene camera; that spread is the pickup's start error.</li>
+</ol>
+
+<div class="sheet">Regenerate after any parameter change: <code>cadenv/bin/python connector_holder.py .</code> in this folder (the CadQuery environment lives in the session scratch folder; <code>pip install cadquery numpy-stl matplotlib trimesh networkx</code> recreates it anywhere).</div>
+</main>
+</body>
+</html>
