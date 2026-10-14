@@ -1,0 +1,28 @@
+{
+  "name": "pickup-start-left-close-8",
+  "description": "Measured pickup capture: precision return enabled. Original measured joints and gripper opening are preserved; the original hold command was not recorded by the earlier pickup saver.",
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "arms": {
+    "left": {
+      "q": [
+        0.18024719615472584,
+        2.0311665522240023,
+        1.5413519493400472,
+        -1.0698481727321276,
+        0.017738612954909527,
+        0.1539253833829246
+      ],
+      "g": 0.35116523504041114,
+      "reference_q": [
+        0.18024719615472584,
+        2.0311665522240023,
+        1.5413519493400472,
+        -1.0698481727321276,
+        0.017738612954909527,
+        0.1539253833829246
+      ]
+    }
+  },
+  "id": "b6a4086b-4fcd-4231-9247-2d172b2ebcb8",
+  "saved_at": 1791160729.2740967
+}

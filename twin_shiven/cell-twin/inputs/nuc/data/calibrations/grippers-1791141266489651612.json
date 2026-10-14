@@ -1,0 +1,45 @@
+{
+  "time": 1791141267.883213,
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "version": 5,
+  "status": "stopped",
+  "message": "Home + calibrate stopped.",
+  "max_speed_rad_s": 0.6,
+  "max_torque_nm": 0.2,
+  "acceleration_rad_s2": 0.6,
+  "arms": {
+    "left": {
+      "previous_limits": [
+        -0.04024567025254022,
+        -5.243190661478598
+      ],
+      "limits": null,
+      "nominal_transmission_stroke": 6.57,
+      "endpoints": [],
+      "last_feedback": null,
+      "samples": []
+    },
+    "right": {
+      "previous_limits": [
+        -0.03604943923094517,
+        -5.161173418783859
+      ],
+      "limits": null,
+      "nominal_transmission_stroke": 6.57,
+      "endpoints": [],
+      "last_feedback": null,
+      "samples": []
+    },
+    "leader": {
+      "previous_limits": [
+        0.052071412222476354,
+        -5.046349279011215
+      ],
+      "limits": null,
+      "nominal_transmission_stroke": 6.57,
+      "endpoints": [],
+      "last_feedback": null,
+      "samples": []
+    }
+  }
+}

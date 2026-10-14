@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "configured": true,
+  "open": {
+    "left": 0.12,
+    "right": 0.12
+  },
+  "close": {
+    "left": 0.08,
+    "right": 0.08
+  },
+  "open_on_enter": true
+}

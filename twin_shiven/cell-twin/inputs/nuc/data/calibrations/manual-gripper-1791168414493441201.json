@@ -1,0 +1,19 @@
+{
+  "time": 1791168414.493445,
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "arm": "left",
+  "source": "operator marked empty gripper",
+  "previous_limits": [
+    6.304643306721815,
+    1.033414192508035
+  ],
+  "limits": [
+    6.1902960113834435,
+    1.0998863066455211
+  ],
+  "marks": {
+    "closed": 6.1902960113834435,
+    "open": 1.0998863066455211
+  },
+  "status": "applied"
+}

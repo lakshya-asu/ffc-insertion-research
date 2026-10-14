@@ -1,0 +1,5 @@
+inputs/nuc/data/camera-setup/
+inputs/nuc/episodes/objects/
+.venv/
+out/
+__pycache__/

@@ -1,0 +1,627 @@
+{
+ "decisions": [
+  {
+   "date": "2026-10-14",
+   "text": "Real connector and cable: the opened FX505 laptop we already have is the source of truth; Shiven measures from the sheet in item 1."
+  },
+  {
+   "date": "2026-10-14",
+   "text": "Leader device: decided later."
+  },
+  {
+   "date": "2026-10-14",
+   "text": "Deployment arm: no Staubli work now; the Meca500 and LR Mate are the cell."
+  },
+  {
+   "date": "2026-10-14",
+   "text": "Force guards 4 / 12 / 10 N stay provisional until measured on the real connector."
+  },
+  {
+   "date": "2026-10-14",
+   "text": "Gripper open and close are chain steps; policies output arm motion plus one phase-done bit (FORGE style). Same interface for ACT and for PPO with SGS."
+  },
+  {
+   "date": "2026-10-14",
+   "text": "A small test suite locks the twin's fixed defaults and the nine-variant pass."
+  },
+  {
+   "date": "2026-10-14",
+   "text": "Approved: Nano25 SI-125-3; twin fixes (weld-off, zeroed guards, pinch loop, mesh interference, horn check, figures); Isaac items 1 to 5 plus RoboSimStudio A, B, C; commit to shiven/ffc-twin; use janus GPU; privileged critic allowed; truth-labelled success head allowed."
+  }
+ ],
+ "items": [
+  {
+   "id": 1,
+   "group": "Foundations",
+   "title": "Connector modelled from photos",
+   "status": "open",
+   "issue": "Slot height, floor, depth to the seat, roof, housing depth, the lid and the contact preload are marked ESTIMATE in the twin. The CON3104 maker and part are unverified. Every pass in the twin rests on this geometry.",
+   "evidence": [
+    {
+     "kind": "table",
+     "rows": [
+      [
+       "what to measure on the opened FX505",
+       "tool",
+       "twin's estimate today"
+      ],
+      [
+       "slot opening width",
+       "callipers",
+       "28.6 mm"
+      ],
+      [
+       "slot height (open lid)",
+       "feeler gauges or macro photo with scale",
+       "0.40 mm"
+      ],
+      [
+       "depth from the mouth to the seat",
+       "callipers on a scrap cable, insert to the stop",
+       "3.5 mm"
+      ],
+      [
+       "housing depth (front to back) and height",
+       "callipers",
+       "6.0 mm, roof 1.5 mm"
+      ],
+      [
+       "lid: thickness, hinge position from the back, open angle at the stop",
+       "macro photo with a ruler in frame",
+       "1.35 mm bar hinged 0.3 mm below its top, 100 deg"
+      ],
+      [
+       "lid front-edge overhang over the slot (what the lip hooks)",
+       "macro photo, side view",
+       "0.5 mm assumed"
+      ],
+      [
+       "connector markings (maker, part)",
+       "macro photo",
+       "CON3104 on the board, maker unknown"
+      ],
+      [
+       "cable: width, stiffener thickness and length, body thickness, mass",
+       "callipers, scale",
+       "28.0, 0.30, 13, 0.14 mm; 0.2 g stiffener"
+      ],
+      [
+       "cable rest angle out of the deck slot and height of the tip above the board",
+       "photo from the side",
+       "40 deg, 11.7 mm"
+      ],
+      [
+       "distance deck slot to connector mouth",
+       "callipers",
+       "31 mm"
+      ],
+      [
+       "parts standing beside the connector within 25 mm (SO-DIMM, rail)",
+       "photo from above with a ruler",
+       "SO-DIMM 25 mm behind, rail 40 mm"
+      ]
+     ]
+    }
+   ],
+   "fix": "Measure the opened FX505 with callipers and macro photos (sheet below), identify the connector part from its markings, put the measured numbers into the twin, re-run all variants.",
+   "research": "",
+   "verification": "",
+   "hero": [
+    {
+     "kind": "image",
+     "src": "FFC-camera-views/meca500-megp_nano25-laptop/16_phase_2:_tip_to_the_mouth_macro_w.png",
+     "text": "The twin's connector as the west bench camera sees it at the moment the tip reaches the mouth. Every dimension of this housing, slot and lid is an estimate from photos."
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "group": "Foundations",
+   "title": "Cable from a photo",
+   "status": "open",
+   "issue": "28 mm width, 0.3 mm stiffener, 13 mm stiffener length, 0.14 mm body, bend memory and mass are estimates read off a photo scaled against the SO-DIMM slot.",
+   "evidence": [],
+   "fix": "Measure width, stiffener thickness and length, body thickness; weigh the cable; cantilever sag test for bending stiffness; update the twin.",
+   "research": "",
+   "verification": "",
+   "hero": [
+    {
+     "kind": "image",
+     "src": "FFC-camera-views/meca500-megp_nano25-laptop/16_phase_2:_tip_to_the_mouth_macro_w.png",
+     "text": "The twin's connector as the west bench camera sees it at the moment the tip reaches the mouth. Every dimension of this housing, slot and lid is an estimate from photos."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "group": "Foundations",
+   "title": "Force numbers are design choices",
+   "status": "open",
+   "issue": "The 1 to 3 N seat rise, the 4 N slide guard, the 7 N push and the 10 N press come from the twin's contact springs (0.05 mm proud, soft). The sensor spec and the guards were sized against them.",
+   "evidence": [],
+   "fix": "Hand-fixture force trace on the real connector with a kitchen-scale load cell: insertion force vs depth, lid push and press. Keep the guards provisional (decision 4).",
+   "research": "",
+   "verification": "",
+   "hero": [
+    {
+     "kind": "video",
+     "src": "FFC-twin-variants/meca500-megp_nano25-laptop.mp4",
+     "text": "The run whose contact forces set the 1 to 3 N seat rise and the 4, 12 and 10 N guards. Those forces come from the twin's soft contact springs, not from a measured connector."
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "group": "Foundations",
+   "title": "Precision budget partly assumed",
+   "status": "open",
+   "issue": "Hand-eye 20 to 40 um and the camera term in the 0.06 to 0.1 mm budget are assumptions.",
+   "evidence": [],
+   "fix": "Camera calibration in the hardware phase (Isaac item 9). Until then the budget is labelled as assumed on the final page.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 5,
+   "group": "Twin fidelity",
+   "title": "Cable held by a weld during the slide",
+   "status": "fixing",
+   "issue": "The expert welds the stiffener to the tool once grasped (FFC_WELD defaults on). Friction grip was never tested. Servo tool pinch 4.1 N against about 4.9 N friction capacity at the 4 N guard.",
+   "evidence": [
+    {
+     "kind": "text",
+     "text": "scripts/ffc_zif_demo.py line 264: USE_WELD = os.environ.get(\"FFC_WELD\", \"1\") == \"1\"."
+    }
+   ],
+   "fix": "Run all nine variants with the weld off; raise the servo tool pinch toward 8 N if it slips; keep weld-off as the default.",
+   "research": "",
+   "verification": "",
+   "hero": [
+    {
+     "kind": "video",
+     "src": "FFC-twin-variants/meca500-servo_v1-laptop.mp4",
+     "text": "Servo tool run as validated today: during the slide the stiffener is welded to the tool (FFC_WELD=1). The weld-off re-run is in progress; its video will sit beside this one."
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "group": "Twin fidelity",
+   "title": "Pinch loop not simulated",
+   "status": "open",
+   "issue": "Cell P is geometry only; the pad is a 20 N/mm position spring. The pages claim a closed loop on cell P.",
+   "evidence": [],
+   "fix": "Add a pinch force sensor between pad and carrier, a servo-like position stage with the pad's compliance, and a close-until-5 N loop in the expert; re-run the servo variants.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 7,
+   "group": "Twin fidelity",
+   "title": "Force guards never zeroed",
+   "status": "fixing",
+   "issue": "guarded() stops on the raw wrist force magnitude. The bought stacks pass partly because the stack weight points along the flange axis.",
+   "evidence": [],
+   "fix": "Bias the reading at the start of each guarded move (what the real controller does); re-run all nine variants and compare stop depths.",
+   "research": "",
+   "verification": "",
+   "fix_evidence": [
+    {
+     "kind": "text",
+     "text": "guarded() now reads the wrist force relative to its value at the start of the move (FFC_ZERO_GUARD=1 default); all nine variants are re-running with the weld off."
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "group": "Twin fidelity",
+   "title": "Printed parts excluded from the interference check",
+   "status": "open",
+   "issue": "The schematic's zero-overlap claim covers boxes and cylinders only; body, carriers, rocker and cover meshes were skipped.",
+   "evidence": [],
+   "fix": "cadquery boolean intersections of every STEP part pair at open, closed and the hard stop; report volumes.",
+   "research": "",
+   "verification": "",
+   "hero": [
+    {
+     "kind": "iframe",
+     "src": "FFC-servo-tool-3d.html",
+     "height": 560,
+     "text": "The schematic's interference panel (right) checks boxes and cylinders only; the grey printed meshes are not in that check yet."
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "group": "Twin fidelity",
+   "title": "The expert is privileged",
+   "status": "open",
+   "issue": "The expert reads the true tip pose before the slide. The camera-based tip estimator built for the Pi cable (September, ffc-twin env.py) was never ported to this cell, so no sensor-only episodes exist.",
+   "evidence": [],
+   "fix": "Port the estimator (bench-camera edge estimate with latency and noise, dead reckoning when occluded); run the expert on it; report the capture region.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 10,
+   "group": "Twin fidelity",
+   "title": "No latency, noise or controller model in the twin",
+   "status": "open",
+   "issue": "The arm is driven kinematically; no 8 ms Stream Motion cycle, no Meca500 command cycle, no F/T noise.",
+   "evidence": [],
+   "fix": "Covered by the Isaac cell (controller and sensor models). Twin numbers are labelled geometry checks on every page.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 11,
+   "group": "Twin fidelity",
+   "title": "Yaw correction lightly tested",
+   "status": "open",
+   "issue": "The expert's yaw measurement and J6 turn were tested at 0.8 and 2 degrees only.",
+   "evidence": [],
+   "fix": "Sweep yaw -3 to +3 degrees in the weld-off re-run; report pass per angle.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 12,
+   "group": "Hardware",
+   "title": "Nano25 calibration does not exist",
+   "status": "fixing",
+   "issue": "SI-62.5-1.5 is on every page, in review.py, parts.json and the submitted ATI RFQ. ATI lists SI-125-3 and SI-250-6 for the Nano25.",
+   "evidence": [
+    {
+     "kind": "table",
+     "rows": [
+      [
+       "Nano25 calibration (ATI page, 2026-10-14)",
+       "Fx, Fy",
+       "Fz",
+       "Tx, Ty",
+       "Tz",
+       "res. F",
+       "res. T"
+      ],
+      [
+       "SI-125-3 (the one we need)",
+       "125 N",
+       "500 N",
+       "3 N m",
+       "3 N m",
+       "1/48 N, 1/16 N (Fz)",
+       "1/1320, 1/2640 N m"
+      ],
+      [
+       "SI-250-6",
+       "250 N",
+       "1000 N",
+       "6 N m",
+       "3.4 N m",
+       "1/24 N, 1/8 N",
+       "1/660, 1/1320 N m"
+      ],
+      [
+       "SI-62.5-1.5 (what we wrote)",
+       "not offered",
+       "",
+       "",
+       "",
+       "",
+       ""
+      ]
+     ]
+    },
+    {
+     "kind": "link",
+     "text": "ATI Nano25 calibrations",
+     "url": "https://www.ati-ia.com/products/ft/ft_models.aspx?id=Nano25"
+    }
+   ],
+   "fix": "SI-125-3 everywhere: 125 N / 500 N / 3 N m, resolution 1/48 N, 1/16 N, 1/1320 N m; correction in the ATI follow-up; re-run the review.",
+   "research": "ATI's Nano25 page lists only SI-125-3 and SI-250-6 (checked 2026-10-14). The 12 N push at the 65 mm lever is 0.78 N m: 26 percent of SI-125-3's 3 N m. Resolution 1/48 N is 5 times finer than the 0.1 N the guards need.",
+   "verification": "review.py SENSORS, parts.json, the final page, the blueprint and the quote pack now say SI-125-3; the final page has zero mentions of 62.5. Compliance row: 0.78 of 3 N m at the push guard. The ATI follow-up carries the correction.",
+   "verification_evidence": [
+    {
+     "kind": "number",
+     "value": "0.78 of 3 N m",
+     "text": "torque at the sensor at the 12 N push guard: 26 percent of range (was written as 52 percent of a 1.5 N m range that does not exist)"
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "group": "Hardware",
+   "title": "MEGP finger mass at the limit",
+   "status": "open",
+   "issue": "Mecademic allows 20 g per finger; the printed fingers weigh 19 and 20 g by volume.",
+   "evidence": [],
+   "fix": "Trim (thinner plate or lighter infill) or confirm the limit's basis with Mecademic.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 14,
+   "group": "Hardware",
+   "title": "Meca500 centre of mass on the 50 percent curve",
+   "status": "open",
+   "issue": "348 g at 45 mm below the flange (bought stack) and 335 g at 46 mm (servo tool) sit on the manual's 50 percent acceleration curve.",
+   "evidence": [
+    {
+     "kind": "table",
+     "rows": [
+      [
+       "Meca500 Fig. 19, 0.5 kg payload, 30 mm off axis",
+       "allowed COM below the flange"
+      ],
+      [
+       "75 percent acceleration",
+       "40 mm"
+      ],
+      [
+       "50 percent acceleration",
+       "60 mm"
+      ],
+      [
+       "25 percent acceleration",
+       "110 mm"
+      ],
+      [
+       "our bought stack",
+       "348 g at 45 mm below, 11 mm off axis"
+      ],
+      [
+       "our servo tool",
+       "335 g at 46 mm below, 27 mm off axis"
+      ]
+     ]
+    }
+   ],
+   "fix": "Expert and real controller run at 50 percent acceleration with these stacks; stated on the final page and in the review row.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 15,
+   "group": "Hardware",
+   "title": "Basler dart production status",
+   "status": "open",
+   "issue": "The daA1920-160um page said not in series production.",
+   "evidence": [],
+   "fix": "Confirm stock with Basler or Graftek; fallback daA1920-30um or ace 2 a2A1920-160umBAS listed.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 16,
+   "group": "Hardware",
+   "title": "Lens working distance and back focus",
+   "status": "open",
+   "issue": "Edmund #37-182 is specified for 150 mm and beyond; we sit at 160 mm. The dart's S-mount back focus against the lens's 10.05 to 10.79 mm BFL is marked CHECK.",
+   "evidence": [],
+   "fix": "Bench check at 160 mm; if soft, 170 mm placement is one line in the twin.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 17,
+   "group": "Hardware",
+   "title": "CCS light has no strobe input",
+   "status": "open",
+   "issue": "Exposure must be short or the light continuous; no trigger sync.",
+   "evidence": [],
+   "fix": "Continuous 24 V bar, exposure set by the camera; or a bar with a strobe input.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 18,
+   "group": "Hardware",
+   "title": "Servo tool unverified assumptions",
+   "status": "open",
+   "issue": "XL330 horn orientation (decides the belt layout), TAL220B overload, printed-slot repeatability, belt backlash, cell crosstalk, USB over 3 m.",
+   "evidence": [],
+   "fix": "Horn axis from the ROBOTIS drawing now; TAL220B datasheet; the rest on the bench.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 19,
+   "group": "Hardware",
+   "title": "D405 range margin",
+   "status": "open",
+   "issue": "81 mm from the tips against a 70 mm minimum on the servo tool.",
+   "evidence": [],
+   "fix": "Accept; verify focus on the bench; 10 mm further back is one line in the twin.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 20,
+   "group": "Hardware",
+   "title": "Cable loom and ESD",
+   "status": "open",
+   "issue": "About 250 g of cable along the bought stacks' arms and the ESD path are listed, not designed.",
+   "evidence": [],
+   "fix": "Loom routing per arm with service loops; ground path through the shoe and bracket; ESD mat.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 21,
+   "group": "Procurement",
+   "title": "One Meca500 source only",
+   "status": "open",
+   "issue": "Electromate declined; Mecademic direct opened 2026-10-14 (form filled, voicemail).",
+   "evidence": [],
+   "fix": "Submit the form; email info@mecademic.com; chase.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 22,
+   "group": "Procurement",
+   "title": "FANUC quote",
+   "status": "open",
+   "issue": "No written quote; meeting Friday 2026-10-16.",
+   "evidence": [],
+   "fix": "Run fanuc-meeting-2026-10-16.txt; get the written quote and the EE connector 24 V budget.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 23,
+   "group": "Procurement",
+   "title": "ATI and SMC silent",
+   "status": "open",
+   "issue": "No replies since 2026-10-13.",
+   "evidence": [],
+   "fix": "Send followup-ati-smc.txt Thursday (ATI with the SI-125-3 correction).",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 24,
+   "group": "Procurement",
+   "title": "Leader device undecided",
+   "status": "deferred",
+   "issue": "SpaceMouse first, GELLO Meca500 twin second was the recommendation.",
+   "evidence": [],
+   "fix": "Decision later (Shiven).",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 25,
+   "group": "Procurement",
+   "title": "Machine shop RFQ not started",
+   "status": "open",
+   "issue": "STEP files ready in FFC-custom-parts.",
+   "evidence": [],
+   "fix": "After the arm ship dates; the SI-125-3 change does not alter the plates.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 26,
+   "group": "Procurement",
+   "title": "Real connector and cable",
+   "status": "open",
+   "issue": "Needed for items 1, 2, 3 and the electrical gate.",
+   "evidence": [],
+   "fix": "Decision 1: the opened FX505 laptop we have is the source; measurement sheet in item 1.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 27,
+   "group": "Strategy",
+   "title": "Deployment arm",
+   "status": "closed",
+   "issue": "The STIWA line uses a Staubli of unknown model.",
+   "evidence": [],
+   "fix": "Decision 3: no Staubli work now; the compliance controller layer is still written arm-agnostic at no extra cost.",
+   "research": "",
+   "verification": "Closed by decision 2026-10-14."
+  },
+  {
+   "id": 28,
+   "group": "Strategy",
+   "title": "Gripper in the skill chain",
+   "status": "closed",
+   "issue": "Office-cell ACT never predicts the gripper; the chain carries gripper modes.",
+   "evidence": [],
+   "fix": "Decision 5: gripper as chain steps; policies output arm motion plus a phase-done bit.",
+   "research": "",
+   "verification": "Closed by decision 2026-10-14."
+  },
+  {
+   "id": 29,
+   "group": "Software",
+   "title": "Twin uncommitted",
+   "status": "fixing",
+   "issue": "Cells, cover, tongue, weld move, expert flags, render kit: all uncommitted.",
+   "evidence": [],
+   "fix": "Commit to shiven/ffc-twin.",
+   "research": "",
+   "verification": "cell-twin commit a59aad1 on branch ffc-zif (2026-10-14); mirror to shiven/ffc-twin in progress."
+  },
+  {
+   "id": 30,
+   "group": "Software",
+   "title": "Variant list duplicated in four scripts",
+   "status": "open",
+   "issue": "matrix, camera check, self-check and blueprint each carry their own VARIANTS.",
+   "evidence": [],
+   "fix": "One list in cell_twin/ffc_zif.py (VARIANTS), imported everywhere.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 31,
+   "group": "Software",
+   "title": "No tests for the ZIF twin",
+   "status": "open",
+   "issue": "The degrees flag and the actuator bias type each cost a night.",
+   "evidence": [],
+   "fix": "pytest: compiler.degree False, actuator biastype AFFINE, segment masses, nine variants build and self-check with 0 overlaps, matrix pass regression from matrix.json.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 32,
+   "group": "Software",
+   "title": "Chain script in a scratchpad",
+   "status": "open",
+   "issue": "servo_chain.sh lives in the session scratchpad.",
+   "evidence": [],
+   "fix": "scripts/ffc_zif_chain.sh in the repo, with the variant filter.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 33,
+   "group": "Software",
+   "title": "Isaac image unpinned; cross-checks never ran",
+   "status": "open",
+   "issue": "FROM nvcr isaac-sim:6.1.0 without the digest; the MJCF conversion showed no rigid bodies in my count and the playback rendered no frames.",
+   "evidence": [
+    {
+     "kind": "table",
+     "rows": [
+      [
+       "check",
+       "result"
+      ],
+      [
+       "MJCF conversion of meca500-megp_nano25-laptop",
+       "USD written; 17 joints and masses in physics.usda; my count found no RigidBodyAPI prims (unexplained)"
+      ],
+      [
+       "playback render of the recorded run",
+       "0 frames rendered"
+      ],
+      [
+       "Dockerfile base",
+       "nvcr.io/nvidia/isaac-sim:6.1.0 without a digest"
+      ]
+     ]
+    }
+   ],
+   "fix": "Pin by digest; run the playback check once or drop it from the plan.",
+   "research": "",
+   "verification": ""
+  },
+  {
+   "id": 34,
+   "group": "Software",
+   "title": "3.7 GB of runs on the laptop",
+   "status": "open",
+   "issue": "The laptop has crashed twice under sim load.",
+   "evidence": [],
+   "fix": "Archive out/ffc_zif to janus; keep only matrix.json, review.json and traj.npz locally.",
+   "research": "",
+   "verification": ""
+  }
+ ]
+}

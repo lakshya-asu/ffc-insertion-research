@@ -1,0 +1,28 @@
+{
+  "name": "pickup-start-right-4",
+  "description": "Pickup pose with captured joint reference and hold commands. Return uses bounded precision correction; finger opening is the measured capture.",
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "arms": {
+    "right": {
+      "q": [
+        -0.049782558937968346,
+        2.1208133058670935,
+        1.743533989471274,
+        -1.1915388723582776,
+        0.042153047989623715,
+        -0.014686808575566701
+      ],
+      "g": 0.3067846076241258,
+      "reference_q": [
+        -0.049782558937968346,
+        2.1208133058670935,
+        1.743533989471274,
+        -1.1915388723582776,
+        0.041771572442206306,
+        -0.014686808575566701
+      ]
+    }
+  },
+  "id": "00182846-5db7-4b1d-91cc-3b440c62631a",
+  "saved_at": 1791165792.7811975
+}

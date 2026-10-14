@@ -1,0 +1,84 @@
+{
+  "time": 1791058265.1130586,
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "version": 5,
+  "status": "stopped",
+  "message": "Home + calibrate stopped: Left gripper encoder travel exceeded the calibration speed; stopped at its current opening.",
+  "max_speed_rad_s": 0.6,
+  "max_torque_nm": 0.2,
+  "acceleration_rad_s2": 0.6,
+  "arms": {
+    "left": {
+      "previous_limits": [
+        6.316945893126027,
+        1.0338910369423093
+      ],
+      "limits": null,
+      "nominal_transmission_stroke": 6.57,
+      "endpoints": [],
+      "last_feedback": {
+        "at": 1188304.309294763,
+        "position": 5.78059127345715,
+        "reported_velocity": -2.791208791208792,
+        "travel_velocity": -1.9662182366597938
+      },
+      "samples": [
+        [
+          1188304.273863076,
+          5.892363608850447,
+          -3.7875457875457887,
+          0.019287695456296206,
+          0
+        ]
+      ]
+    },
+    "right": {
+      "previous_limits": [
+        6.408500024506205,
+        1.0907308935074997
+      ],
+      "limits": null,
+      "nominal_transmission_stroke": 6.57,
+      "endpoints": [],
+      "last_feedback": {
+        "at": 1188304.273863076,
+        "position": 5.891600657755616,
+        "reported_velocity": -3.5531135531135547,
+        "travel_velocity": null
+      },
+      "samples": [
+        [
+          1188304.273863076,
+          5.891600657755616,
+          -3.5531135531135547,
+          0.019287695456296206,
+          0
+        ]
+      ]
+    },
+    "leader": {
+      "previous_limits": [
+        6.473067826352331,
+        1.2254901960784306
+      ],
+      "limits": null,
+      "nominal_transmission_stroke": 6.57,
+      "endpoints": [],
+      "last_feedback": {
+        "at": 1188304.273863076,
+        "position": 1.229686427100022,
+        "reported_velocity": -0.0073260073260073,
+        "travel_velocity": null
+      },
+      "samples": [
+        [
+          1188304.273863076,
+          1.229686427100022,
+          -0.0073260073260073,
+          0.019287695456296206,
+          0
+        ]
+      ]
+    }
+  }
+}

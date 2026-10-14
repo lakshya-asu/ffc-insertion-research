@@ -1,0 +1,636 @@
+{
+  "id": "007dbf4d-efa2-5807-801c-6a54cdb0eb41",
+  "version": 1,
+  "title": "Aug 2 \u00b7 Right grip + lift 2026-10-04 19:34:55",
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "task": "right_pickup",
+  "task_prompt": "Approach the part, grasp it with the right gripper, and lift it slightly.",
+  "created_at": 1791167719.8964825,
+  "starting_pose": "00182846-5db7-4b1d-91cc-3b440c62631a",
+  "gripper_commands": {
+    "left": 0.9985345201910554,
+    "right": 0.30678460762412585
+  },
+  "gripper_force_limits_n": {
+    "left": 35.0,
+    "right": 35.0
+  },
+  "twin_layout": {
+    "revision": 29,
+    "table": {
+      "width": 1.8,
+      "depth": 1.0,
+      "height": 0.75
+    },
+    "vr_offset": [
+      0.0591281969087,
+      -1.29452395439,
+      -0.239215336745
+    ],
+    "vr_yaw": -2.94979477798,
+    "vr_scale": 0.632021463417,
+    "arms": {
+      "left": [
+        -0.6192,
+        0.0,
+        0.045,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "right": [
+        0.6192,
+        0.0,
+        0.045,
+        0.0,
+        0.0,
+        180.0
+      ]
+    }
+  },
+  "action_semantics": "Commanded absolute joint positions and gripper openings; left then right.",
+  "recording_mode": "leader_teleop",
+  "start_event": "hold_then_countdown",
+  "initial_joint_targets": {
+    "left": [
+      0.05321583886472858,
+      0.0024795910582131597,
+      0.0017166399633783413,
+      -0.06809338521400399,
+      0.03376058594644071,
+      0.21725032425421453
+    ],
+    "right": [
+      -0.0516899366750625,
+      2.122339208056763,
+      1.7442969405661088,
+      -1.1953536278324552,
+      0.041771572442206306,
+      -0.015068284122991216
+    ]
+  },
+  "hold_handoff_version": 1,
+  "operator": "local",
+  "free_drive_recorded": false,
+  "right_joint_position_gains": "position control",
+  "capture_profile": "right_pickup_v1",
+  "follower_arm": "right",
+  "camera_order": [
+    "right_external",
+    "right_wrist"
+  ],
+  "camera_setup": {
+    "device": {
+      "id": "pci-0000:00:14.0-usb-0:7.3:1.0-video-index0",
+      "device": "/dev/v4l/by-path/pci-0000:00:14.0-usb-0:7.3:1.0-video-index0",
+      "node": "/dev/video18",
+      "model": "Arducam B0497 (USB3 8.3MP)",
+      "serial": "",
+      "usb_port": "3-7.3",
+      "usb_mbps": 480.0,
+      "vendor": "04b4",
+      "product": "0497"
+    },
+    "mode": {
+      "width": 1280,
+      "height": 720,
+      "fps": 10.0,
+      "fourcc": "YUYV"
+    },
+    "controls": {
+      "9963776": {
+        "id": 9963776,
+        "name": "Brightness",
+        "type": 1,
+        "min": -64,
+        "max": 64,
+        "step": 1,
+        "default": 0,
+        "value": 4,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963777": {
+        "id": 9963777,
+        "name": "Contrast",
+        "type": 1,
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "default": 10,
+        "value": 10,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963778": {
+        "id": 9963778,
+        "name": "Saturation",
+        "type": 1,
+        "min": 0,
+        "max": 15,
+        "step": 1,
+        "default": 10,
+        "value": 10,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963788": {
+        "id": 9963788,
+        "name": "White Balance, Automatic",
+        "type": 2,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "default": 1,
+        "value": 0,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963795": {
+        "id": 9963795,
+        "name": "Gain",
+        "type": 1,
+        "min": 100,
+        "max": 20000,
+        "step": 1,
+        "default": 100,
+        "value": 600,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963800": {
+        "id": 9963800,
+        "name": "Power Line Frequency",
+        "type": 3,
+        "min": 0,
+        "max": 2,
+        "step": 1,
+        "default": 0,
+        "value": 0,
+        "inactive": false,
+        "menu": {
+          "0": "Disabled",
+          "1": "50 Hz",
+          "2": "60 Hz"
+        }
+      },
+      "9963802": {
+        "id": 9963802,
+        "name": "White Balance Temperature",
+        "type": 1,
+        "min": 2300,
+        "max": 6500,
+        "step": 1,
+        "default": 4500,
+        "value": 4000,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963804": {
+        "id": 9963804,
+        "name": "Backlight Compensation",
+        "type": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "default": 0,
+        "value": 0,
+        "inactive": false,
+        "menu": {}
+      },
+      "10094849": {
+        "id": 10094849,
+        "name": "Auto Exposure",
+        "type": 3,
+        "min": 0,
+        "max": 3,
+        "step": 1,
+        "default": 0,
+        "value": 1,
+        "inactive": false,
+        "menu": {
+          "0": "Auto Mode",
+          "1": "Manual Mode"
+        }
+      },
+      "10094850": {
+        "id": 10094850,
+        "name": "Exposure Time, Absolute",
+        "type": 1,
+        "min": 5,
+        "max": 10000,
+        "step": 1,
+        "default": 5,
+        "value": 80,
+        "inactive": false,
+        "menu": {}
+      }
+    },
+    "reference_profile": "20261001T231652Z-98bcb0c1",
+    "placement_notes": "",
+    "timestamp_domains": {
+      "right_external": "v4l2_monotonic",
+      "right_wrist": "global_time"
+    },
+    "image_transform": "PIL.ImageOps.fit RGB 640x480 BILINEAR",
+    "timestamp_source": "start_of_exposure"
+  },
+  "fps": 10,
+  "kind": "demonstration",
+  "policy_action_names": [
+    "right_joint_0.pos",
+    "right_joint_1.pos",
+    "right_joint_2.pos",
+    "right_joint_3.pos",
+    "right_joint_4.pos",
+    "right_joint_5.pos",
+    "right_gripper.pos"
+  ],
+  "leader": {
+    "serial": "206C37AB45465006",
+    "free_gripper": true
+  },
+  "synchronization": {
+    "version": 1,
+    "method": "buffered_causal_host_monotonic",
+    "hardware_synchronized": false,
+    "camera_order": [
+      "right_external",
+      "right_wrist"
+    ],
+    "arm_order": [
+      "left",
+      "right"
+    ],
+    "policy": {
+      "max_age_s": 0.15,
+      "max_skew_s": 0.15,
+      "max_gap_s": 0.15,
+      "delivery_timeout_s": 0.25,
+      "max_feedback_age_s": 0.05
+    },
+    "frames": 122,
+    "max_camera_age_ms": 75.20431518554688,
+    "max_camera_skew_ms": 64.75650658831,
+    "max_delivery_ms": 45.865211486816406,
+    "reused_frames": {
+      "right_external": 0,
+      "right_wrist": 0
+    },
+    "max_feedback_age_ms": 23.73081212863326,
+    "max_feedback_span_ms": 27.01866696588695,
+    "feedback_timing_available": true,
+    "timestamp_precision": "UVC kernel timestamps and SDK clock estimates mapped to host monotonic time; not hardware synchronization.",
+    "feedback_semantics": "Host interval for each arm CAN feedback batch; joints are not simultaneously latched.",
+    "unavailable_value": -1,
+    "quality_mode": "flag_and_continue",
+    "warning_frames": 3,
+    "warnings": [
+      {
+        "code": "camera_gap",
+        "camera": "right_wrist",
+        "message": "right_wrist capture gap 66.7 ms.",
+        "count": 3,
+        "first_frame": 2,
+        "last_frame": 25
+      }
+    ],
+    "quality_flags": {
+      "camera_gap": 1,
+      "camera_age": 2,
+      "camera_skew": 4,
+      "camera_missing": 8,
+      "camera_restart": 16,
+      "camera_clock": 32,
+      "robot_gap": 64,
+      "robot_feedback": 128,
+      "reused_image": 256,
+      "camera_delivery": 512
+    },
+    "last_warnings": [],
+    "missing_image_semantics": "Repeat the last real image with its original timestamp; if none exists, use a labelled placeholder with frame ID/timestamps -1.",
+    "timestamp_domains": {
+      "right_external": "v4l2_monotonic",
+      "right_wrist": "global_time"
+    }
+  },
+  "quality_version": 1,
+  "leader_handoff": {
+    "version": 1,
+    "mapping": "held_pose_plus_leader_delta",
+    "follower": "right",
+    "leader_q": [
+      -0.028801403830017946,
+      2.100976577401388,
+      1.7244602121004036,
+      -1.0656519417105361,
+      0.14286259250781974,
+      -0.0810635538261959
+    ],
+    "follower_target": [
+      -0.0516899366750625,
+      2.122339208056763,
+      1.7442969405661088,
+      -1.1953536278324552,
+      0.041771572442206306,
+      -0.015068284122991216
+    ],
+    "follower_q": [
+      -0.0516899366750625,
+      2.1227206836041805,
+      1.7442969405661088,
+      -1.1957351033798762,
+      0.04100862134737149,
+      -0.015068284122991216
+    ],
+    "home_offset_rad": [
+      -0.013542381933318026,
+      0.000953688868543523,
+      0.000953688868543523,
+      -0.08525978484779095,
+      -0.11806668192568814,
+      0.07991912718394723
+    ]
+  },
+  "frames": 122,
+  "duration_s": 12.2,
+  "recorded_span_s": 12.103092569857836,
+  "writer": {
+    "version": 1,
+    "encoder_workers": 2,
+    "queue_capacity": 60,
+    "queue_high_water": 1,
+    "rows": 122,
+    "dropped_rows": 0,
+    "mean_sync_ms": 71.9499373083293,
+    "mean_encode_ms": 27.492672981709607,
+    "max_row_ms": 144.17714695446193
+  },
+  "features": {
+    "action": {
+      "dtype": "float32",
+      "shape": [
+        14
+      ],
+      "names": [
+        "left_joint_0.pos",
+        "left_joint_1.pos",
+        "left_joint_2.pos",
+        "left_joint_3.pos",
+        "left_joint_4.pos",
+        "left_joint_5.pos",
+        "left_gripper.pos",
+        "right_joint_0.pos",
+        "right_joint_1.pos",
+        "right_joint_2.pos",
+        "right_joint_3.pos",
+        "right_joint_4.pos",
+        "right_joint_5.pos",
+        "right_gripper.pos"
+      ]
+    },
+    "observation.state": {
+      "dtype": "float32",
+      "shape": [
+        14
+      ],
+      "names": [
+        "left_joint_0.pos",
+        "left_joint_1.pos",
+        "left_joint_2.pos",
+        "left_joint_3.pos",
+        "left_joint_4.pos",
+        "left_joint_5.pos",
+        "left_gripper.pos",
+        "right_joint_0.pos",
+        "right_joint_1.pos",
+        "right_joint_2.pos",
+        "right_joint_3.pos",
+        "right_joint_4.pos",
+        "right_joint_5.pos",
+        "right_gripper.pos"
+      ]
+    },
+    "observation.effort": {
+      "dtype": "float32",
+      "shape": [
+        14
+      ],
+      "names": [
+        "left_joint_0.pos",
+        "left_joint_1.pos",
+        "left_joint_2.pos",
+        "left_joint_3.pos",
+        "left_joint_4.pos",
+        "left_joint_5.pos",
+        "left_gripper.pos",
+        "right_joint_0.pos",
+        "right_joint_1.pos",
+        "right_joint_2.pos",
+        "right_joint_3.pos",
+        "right_joint_4.pos",
+        "right_joint_5.pos",
+        "right_gripper.pos"
+      ]
+    },
+    "extra.ee_target": {
+      "dtype": "float32",
+      "shape": [
+        7
+      ],
+      "names": null
+    },
+    "extra.frame_age_ms": {
+      "dtype": "float32",
+      "shape": [
+        2
+      ],
+      "names": null
+    },
+    "observation.images.right_external": {
+      "dtype": "video",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ]
+    },
+    "observation.images.right_wrist": {
+      "dtype": "video",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ]
+    }
+  },
+  "robot_type": "bi_yam_follower",
+  "errors": [],
+  "quality": {
+    "status": "flagged",
+    "warnings": [
+      {
+        "code": "camera_gap",
+        "camera": "right_wrist",
+        "message": "right_wrist capture gap 66.7 ms.",
+        "count": 3,
+        "first_frame": 2,
+        "last_frame": 25
+      }
+    ],
+    "warning_frames": 3,
+    "dropped_rows": 0,
+    "policy": "flag_and_continue"
+  },
+  "completed_at": 1791167735.3925765,
+  "media": {
+    "right_external": "objects/007dbf4d-efa2-5807-801c-6a54cdb0eb41/right_external.mp4",
+    "right_wrist": "objects/007dbf4d-efa2-5807-801c-6a54cdb0eb41/right_wrist.mp4"
+  },
+  "numeric": "objects/007dbf4d-efa2-5807-801c-6a54cdb0eb41/frames.npz",
+  "image_processing": "Existing center-fit JPEG \u2192 decoded RGB \u2192 H.264; native side strips are not retained.; fixed photometric augmentation, no geometry or retiming",
+  "synchronization_arrays": {
+    "sync.camera_at": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64"
+    },
+    "sync.received_at": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64"
+    },
+    "sync.frame_id": {
+      "shape": [
+        2
+      ],
+      "dtype": "int64"
+    },
+    "sync.epoch": {
+      "shape": [
+        2
+      ],
+      "dtype": "int64"
+    },
+    "sync.sdk_timestamp_ms": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64"
+    },
+    "sync.sensor_timestamp_us": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64"
+    },
+    "sync.exposure_us": {
+      "shape": [
+        2
+      ],
+      "dtype": "float32"
+    },
+    "sync.delivery_ms": {
+      "shape": [
+        2
+      ],
+      "dtype": "float32"
+    },
+    "sync.reused": {
+      "shape": [
+        2
+      ],
+      "dtype": "uint8"
+    },
+    "sync.skew_ms": {
+      "shape": [
+        1
+      ],
+      "dtype": "float32"
+    },
+    "sync.feedback_at": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64"
+    },
+    "sync.feedback_age_ms": {
+      "shape": [
+        2
+      ],
+      "dtype": "float32"
+    },
+    "sync.feedback_span_ms": {
+      "shape": [
+        2
+      ],
+      "dtype": "float32"
+    },
+    "sync.camera_to_feedback_ms": {
+      "shape": [
+        2,
+        2
+      ],
+      "dtype": "float32"
+    },
+    "quality.flags": {
+      "shape": [
+        1
+      ],
+      "dtype": "uint32"
+    },
+    "quality.camera_missing": {
+      "shape": [
+        2
+      ],
+      "dtype": "uint8"
+    }
+  },
+  "synthetic_visual_variant": true,
+  "augmentation": {
+    "episode_id": "0784e199-59b9-4138-a384-b27f4245e74b",
+    "revision": 1,
+    "source_id": "0784e199-59b9-4138-a384-b27f4245e74b",
+    "variant": 2,
+    "transforms": {
+      "right_external": {
+        "brightness": 1.0520934705082226,
+        "contrast": 0.9560528682147299,
+        "saturation": 1.0648847875737324,
+        "rgb_gain": [
+          1.0028104036038445,
+          1.00220583551404,
+          1.0166101291430578
+        ]
+      },
+      "right_wrist": {
+        "brightness": 1.0470848866310405,
+        "contrast": 0.9671836371039821,
+        "saturation": 0.9743027464864737,
+        "rgb_gain": [
+          0.9942452419197254,
+          1.0195004377345231,
+          0.9881860413763409
+        ]
+      }
+    }
+  },
+  "augmentation_created_at": 1791168959.3229287,
+  "augmentation_sha256": {
+    "frames.npz": "01e65a17dc3dc4c0e31519a5ce04b8c70ba81792c6ed8844fa1a923f1743f608",
+    "right_wrist.mp4": "161ab73a5ea452fdeaf8088618bb6d71c2a187e864937e5e2cf7f03bb7f6d577",
+    "right_external.mp4": "2d4107823ba81957734abe4f119c3a6b52fc6251e957f60e875487d251cfd284"
+  }
+}

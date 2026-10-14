@@ -1,0 +1,1 @@
+{"episode_id": "44af191d6dca4910bc986111f2bde119", "checkpoint_id": "ckpt_975b0fb1462649a6b05dafe0234e47b0", "judgment": "uncertain", "reason": "timeout without judgment", "frames": 300, "duration_s": 9.965444898989517, "started_at": 1790279785.0962934, "intervention_frame": null, "quality_flags": ["camera age >60 ms"], "pose_name": "preinsertion2", "full_run": null}

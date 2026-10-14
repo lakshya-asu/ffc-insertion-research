@@ -1,0 +1,579 @@
+{
+  "id": "005ff8b4-c674-493d-a722-f4e119ad6472",
+  "version": 1,
+  "kind": "evaluation",
+  "task": "right_pickup",
+  "title": "Pickup evaluation 2026-10-06 14:58:40",
+  "created_at": 1791323920.1173298,
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "fps": 10,
+  "camera_order": [
+    "right_external",
+    "right_wrist"
+  ],
+  "task_prompt": "Approach the part, grasp it, and lift slightly.",
+  "camera_setup": {
+    "device": {
+      "id": "pci-0000:00:14.0-usb-0:7.3:1.0-video-index0",
+      "device": "/dev/v4l/by-path/pci-0000:00:14.0-usb-0:7.3:1.0-video-index0",
+      "node": "/dev/video18",
+      "model": "Arducam B0497 (USB3 8.3MP)",
+      "serial": "",
+      "usb_port": "3-7.3",
+      "usb_mbps": 480.0,
+      "vendor": "04b4",
+      "product": "0497"
+    },
+    "mode": {
+      "width": 1280,
+      "height": 720,
+      "fps": 10.0,
+      "fourcc": "YUYV"
+    },
+    "controls": {
+      "9963776": {
+        "id": 9963776,
+        "name": "Brightness",
+        "type": 1,
+        "min": -64,
+        "max": 64,
+        "step": 1,
+        "default": 0,
+        "value": 4,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963777": {
+        "id": 9963777,
+        "name": "Contrast",
+        "type": 1,
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "default": 10,
+        "value": 10,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963778": {
+        "id": 9963778,
+        "name": "Saturation",
+        "type": 1,
+        "min": 0,
+        "max": 15,
+        "step": 1,
+        "default": 10,
+        "value": 10,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963788": {
+        "id": 9963788,
+        "name": "White Balance, Automatic",
+        "type": 2,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "default": 1,
+        "value": 0,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963795": {
+        "id": 9963795,
+        "name": "Gain",
+        "type": 1,
+        "min": 100,
+        "max": 20000,
+        "step": 1,
+        "default": 100,
+        "value": 600,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963800": {
+        "id": 9963800,
+        "name": "Power Line Frequency",
+        "type": 3,
+        "min": 0,
+        "max": 2,
+        "step": 1,
+        "default": 0,
+        "value": 0,
+        "inactive": false,
+        "menu": {
+          "0": "Disabled",
+          "1": "50 Hz",
+          "2": "60 Hz"
+        }
+      },
+      "9963802": {
+        "id": 9963802,
+        "name": "White Balance Temperature",
+        "type": 1,
+        "min": 2300,
+        "max": 6500,
+        "step": 1,
+        "default": 4500,
+        "value": 4000,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963804": {
+        "id": 9963804,
+        "name": "Backlight Compensation",
+        "type": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "default": 0,
+        "value": 0,
+        "inactive": false,
+        "menu": {}
+      },
+      "10094849": {
+        "id": 10094849,
+        "name": "Auto Exposure",
+        "type": 3,
+        "min": 0,
+        "max": 3,
+        "step": 1,
+        "default": 0,
+        "value": 1,
+        "inactive": false,
+        "menu": {
+          "0": "Auto Mode",
+          "1": "Manual Mode"
+        }
+      },
+      "10094850": {
+        "id": 10094850,
+        "name": "Exposure Time, Absolute",
+        "type": 1,
+        "min": 5,
+        "max": 10000,
+        "step": 1,
+        "default": 5,
+        "value": 80,
+        "inactive": false,
+        "menu": {}
+      }
+    },
+    "reference_profile": "20261001T231652Z-98bcb0c1",
+    "placement_notes": "",
+    "timestamp_domains": {
+      "right_external": "v4l2_monotonic",
+      "right_wrist": "global_time"
+    },
+    "image_transform": "PIL.ImageOps.fit RGB 640x480 BILINEAR",
+    "timestamp_source": "start_of_exposure"
+  },
+  "checkpoint_id": "ckpt_e04a161905775ff8bc365b22e640c064",
+  "evaluation_id": "64eb4eab-5b90-49ea-9b57-e31de6b768d5",
+  "model_contract": {
+    "version": 2,
+    "cameras": [
+      "right_external",
+      "right_wrist"
+    ],
+    "predicted_arms": "right",
+    "action_indices": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "action_names": [
+      "right_joint_0.pos",
+      "right_joint_1.pos",
+      "right_joint_2.pos",
+      "right_joint_3.pos",
+      "right_joint_4.pos",
+      "right_joint_5.pos",
+      "right_gripper.pos"
+    ],
+    "state_names": [
+      "right_joint_0.pos",
+      "right_joint_1.pos",
+      "right_joint_2.pos",
+      "right_joint_3.pos",
+      "right_joint_4.pos",
+      "right_joint_5.pos",
+      "right_gripper.pos",
+      "right_joint_0.torque",
+      "right_joint_1.torque",
+      "right_joint_2.torque",
+      "right_joint_3.torque",
+      "right_joint_4.torque",
+      "right_joint_5.torque",
+      "right_gripper.torque"
+    ],
+    "action_shape": [
+      7
+    ],
+    "state_shape": [
+      14
+    ],
+    "image_shape": [
+      3,
+      480,
+      640
+    ],
+    "n_obs_steps": 1,
+    "chunk_size": 20,
+    "grippers": "right_policy_left_hold",
+    "fps": 10
+  },
+  "hold_targets_preserved": true,
+  "start_hold_targets": {
+    "left": [
+      0.04825665674830226,
+      0.002861066605630569,
+      0.0013351644159609322,
+      -0.07152666514076778,
+      0.037575341420614805,
+      0.022697795071335847
+    ],
+    "right": [
+      -0.052772811793771635,
+      2.1290550572966533,
+      1.7620960551058906,
+      -1.2077040887325805,
+      0.049871305704993645,
+      -0.016095713000162958
+    ]
+  },
+  "inference_timing": {
+    "reply_timeout_s": 0.35,
+    "observation_age_s": 0.7333333333333333,
+    "camera_age_s": 0.2,
+    "request_fps": 10
+  },
+  "act_playback": {
+    "version": 1,
+    "id": "current",
+    "title": "Current playback",
+    "pickup_joint_interpolation": false,
+    "pickup_gripper_interpolation": false,
+    "insertion_history_s": null,
+    "ensemble_decay": 0.01,
+    "history_reference": "newest_accepted_observation",
+    "freshness_limits": "unchanged"
+  },
+  "gripper_control": {
+    "method": "driver_force_limiter_contact_hold",
+    "calibrated_limits": [
+      6.384753171679472,
+      1.0892049913178319
+    ],
+    "calibrated_limits_units": "motor_radians_closed_open",
+    "force_limit_n": 35.0,
+    "close_target": 0.08,
+    "adjustment_version": 3,
+    "preserve_tighter": false,
+    "adjustment": "terminal_close_target",
+    "adjustment_units": "fraction_of_calibrated_travel",
+    "near_closed_max": 0.12,
+    "policy_opening_min": 0.14
+  },
+  "full_run": {
+    "run_id": "ecc134fa-772b-465e-aa92-e3c3e0856ec7",
+    "stage": "right_pickup"
+  },
+  "synchronization": {
+    "version": 1,
+    "method": "buffered_causal_host_monotonic",
+    "hardware_synchronized": false,
+    "camera_order": [
+      "right_external",
+      "right_wrist"
+    ],
+    "arm_order": [
+      "left",
+      "right"
+    ],
+    "policy": {
+      "max_age_s": 0.15,
+      "max_skew_s": 0.15,
+      "max_gap_s": 0.15,
+      "delivery_timeout_s": 0.25,
+      "max_feedback_age_s": 0.05
+    },
+    "frames": 52,
+    "max_camera_age_ms": 62.96761703491211,
+    "max_camera_skew_ms": 32.445692690089345,
+    "max_delivery_ms": 44.30971908569336,
+    "reused_frames": {
+      "right_external": 0,
+      "right_wrist": 0
+    },
+    "max_feedback_age_ms": 28.507885057479143,
+    "max_feedback_span_ms": 18.687416799366474,
+    "feedback_timing_available": true,
+    "timestamp_precision": "UVC kernel timestamps and SDK clock estimates mapped to host monotonic time; not hardware synchronization.",
+    "feedback_semantics": "Host interval for each arm CAN feedback batch; joints are not simultaneously latched.",
+    "unavailable_value": -1,
+    "quality_mode": "flag_and_continue",
+    "warning_frames": 0,
+    "warnings": [],
+    "quality_flags": {
+      "camera_gap": 1,
+      "camera_age": 2,
+      "camera_skew": 4,
+      "camera_missing": 8,
+      "camera_restart": 16,
+      "camera_clock": 32,
+      "robot_gap": 64,
+      "robot_feedback": 128,
+      "reused_image": 256,
+      "camera_delivery": 512
+    },
+    "last_warnings": [],
+    "missing_image_semantics": "Repeat the last real image with its original timestamp; if none exists, use a labelled placeholder with frame ID/timestamps -1.",
+    "timestamp_domains": {
+      "right_external": "v4l2_monotonic",
+      "right_wrist": "global_time"
+    }
+  },
+  "quality_version": 1,
+  "frames": 52,
+  "duration_s": 5.2,
+  "recorded_span_s": 5.1001704121008515,
+  "writer": {
+    "version": 1,
+    "encoder_workers": 2,
+    "queue_capacity": 60,
+    "queue_high_water": 1,
+    "rows": 52,
+    "dropped_rows": 0,
+    "mean_sync_ms": 74.3969479539933,
+    "mean_encode_ms": 25.72950072891007,
+    "max_row_ms": 130.5309000890702
+  },
+  "features": {
+    "action": {
+      "dtype": "float32",
+      "shape": [
+        14
+      ],
+      "names": [
+        "left_joint_0.pos",
+        "left_joint_1.pos",
+        "left_joint_2.pos",
+        "left_joint_3.pos",
+        "left_joint_4.pos",
+        "left_joint_5.pos",
+        "left_gripper.pos",
+        "right_joint_0.pos",
+        "right_joint_1.pos",
+        "right_joint_2.pos",
+        "right_joint_3.pos",
+        "right_joint_4.pos",
+        "right_joint_5.pos",
+        "right_gripper.pos"
+      ]
+    },
+    "observation.state": {
+      "dtype": "float32",
+      "shape": [
+        14
+      ],
+      "names": [
+        "left_joint_0.pos",
+        "left_joint_1.pos",
+        "left_joint_2.pos",
+        "left_joint_3.pos",
+        "left_joint_4.pos",
+        "left_joint_5.pos",
+        "left_gripper.pos",
+        "right_joint_0.pos",
+        "right_joint_1.pos",
+        "right_joint_2.pos",
+        "right_joint_3.pos",
+        "right_joint_4.pos",
+        "right_joint_5.pos",
+        "right_gripper.pos"
+      ]
+    },
+    "observation.effort": {
+      "dtype": "float32",
+      "shape": [
+        14
+      ],
+      "names": [
+        "left_joint_0.pos",
+        "left_joint_1.pos",
+        "left_joint_2.pos",
+        "left_joint_3.pos",
+        "left_joint_4.pos",
+        "left_joint_5.pos",
+        "left_gripper.pos",
+        "right_joint_0.pos",
+        "right_joint_1.pos",
+        "right_joint_2.pos",
+        "right_joint_3.pos",
+        "right_joint_4.pos",
+        "right_joint_5.pos",
+        "right_gripper.pos"
+      ]
+    },
+    "extra.ee_target": {
+      "dtype": "float32",
+      "shape": [
+        7
+      ],
+      "names": null
+    },
+    "extra.frame_age_ms": {
+      "dtype": "float32",
+      "shape": [
+        2
+      ],
+      "names": null
+    },
+    "observation.images.right_external": {
+      "dtype": "video",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ]
+    },
+    "observation.images.right_wrist": {
+      "dtype": "video",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ]
+    }
+  },
+  "robot_type": "bi_yam_follower",
+  "errors": [],
+  "quality": {
+    "status": "ok",
+    "warnings": [],
+    "warning_frames": 0,
+    "dropped_rows": 0,
+    "policy": "flag_and_continue"
+  },
+  "completed_at": 1791323925.5558708,
+  "media": {
+    "right_external": "objects/005ff8b4-c674-493d-a722-f4e119ad6472/right_external.mp4",
+    "right_wrist": "objects/005ff8b4-c674-493d-a722-f4e119ad6472/right_wrist.mp4"
+  },
+  "numeric": "objects/005ff8b4-c674-493d-a722-f4e119ad6472/frames.npz",
+  "image_processing": "Existing center-fit JPEG \u2192 decoded RGB \u2192 H.264; native side strips are not retained.",
+  "synchronization_arrays": {
+    "sync.camera_at": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64"
+    },
+    "sync.received_at": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64"
+    },
+    "sync.frame_id": {
+      "shape": [
+        2
+      ],
+      "dtype": "int64"
+    },
+    "sync.epoch": {
+      "shape": [
+        2
+      ],
+      "dtype": "int64"
+    },
+    "sync.sdk_timestamp_ms": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64"
+    },
+    "sync.sensor_timestamp_us": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64"
+    },
+    "sync.exposure_us": {
+      "shape": [
+        2
+      ],
+      "dtype": "float32"
+    },
+    "sync.delivery_ms": {
+      "shape": [
+        2
+      ],
+      "dtype": "float32"
+    },
+    "sync.reused": {
+      "shape": [
+        2
+      ],
+      "dtype": "uint8"
+    },
+    "sync.skew_ms": {
+      "shape": [
+        1
+      ],
+      "dtype": "float32"
+    },
+    "sync.feedback_at": {
+      "shape": [
+        2
+      ],
+      "dtype": "float64"
+    },
+    "sync.feedback_age_ms": {
+      "shape": [
+        2
+      ],
+      "dtype": "float32"
+    },
+    "sync.feedback_span_ms": {
+      "shape": [
+        2
+      ],
+      "dtype": "float32"
+    },
+    "sync.camera_to_feedback_ms": {
+      "shape": [
+        2,
+        2
+      ],
+      "dtype": "float32"
+    },
+    "quality.flags": {
+      "shape": [
+        1
+      ],
+      "dtype": "uint32"
+    },
+    "quality.camera_missing": {
+      "shape": [
+        2
+      ],
+      "dtype": "uint8"
+    }
+  }
+}

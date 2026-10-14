@@ -1,0 +1,47 @@
+{
+  "name": "preinsertion9",
+  "description": "Candidate derived from the 40.0 s alignment in insertion recording 67a778bd-c263-4bd9-a19b-7ac92ab97acb. Right tool orientation changes 16.0 degrees from the recorded start. Uses the later height/lateral alignment and backs off 3.38 mm along the tool approach axis to restore the original forward reach. Both arms have encoder-reference targets; right target is calculated with the existing YAM IK. Original gripper values retained; use Move to pose \u00b7 keep grips. Not yet physically tested; the reference recording was incomplete/rejected and does not prove successful insertion. Provenance: full-runs/reviews/preinsertion-last-attempt-20261003/pose-provenance.json.",
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "arms": {
+    "left": {
+      "q": [
+        0.1836804747581482,
+        2.127298355102539,
+        1.6329060792922974,
+        0.5975814461708069,
+        0.15392538905143738,
+        1.0709925889968872
+      ],
+      "g": 0.03503802088023191,
+      "reference_q": [
+        0.17872129380702972,
+        2.1139466762542725,
+        1.6004806756973267,
+        0.5903334021568298,
+        0.1508735716342926,
+        1.0706111192703247
+      ]
+    },
+    "right": {
+      "q": [
+        -0.10160140722842406,
+        1.7031671722885362,
+        1.355571726212589,
+        0.3155448623027751,
+        -0.10770271159731025,
+        -1.0113560048531465
+      ],
+      "g": 0.08323100602094069,
+      "reference_q": [
+        -0.10522542923541259,
+        1.727772327279686,
+        1.3439367803431432,
+        0.3119208402957866,
+        -0.10255278833232993,
+        -1.0302391139458589
+      ]
+    }
+  },
+  "id": "0ec6d029-4ca5-4829-bc3d-3e456ebd750c",
+  "saved_at": 1791074400.20112
+}

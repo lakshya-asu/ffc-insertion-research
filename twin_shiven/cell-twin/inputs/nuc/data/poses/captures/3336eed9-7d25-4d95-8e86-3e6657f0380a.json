@@ -1,0 +1,344 @@
+{
+  "saved_at": 1791066533.0940127,
+  "pose_id": "3336eed9-7d25-4d95-8e86-3e6657f0380a",
+  "source_pose": {
+    "name": "preinsertion7",
+    "description": "Captured right arm holds from preinsertion6. Other arm entries are retained from the source pose. Stores the settled hold commands; measured joints and source pose are preserved in poses/captures. Verify by returning to this pose before running a policy.",
+    "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+    "arms": {
+      "left": {
+        "q": [
+          0.18368047608148252,
+          2.1272983901731894,
+          1.6329060807202254,
+          0.5975814450293733,
+          0.1539253833829246,
+          1.0709925993743799
+        ],
+        "g": 0.03503802088023191
+      },
+      "right": {
+        "q": [
+          -0.09098191805904854,
+          1.7446784161135263,
+          1.2853818570229656,
+          0.445372701609827,
+          -0.10051880674449087,
+          -0.9035248340581408
+        ],
+        "g": 0.08
+      }
+    },
+    "id": "f52a9540-1700-47f2-9315-69311df57d95",
+    "saved_at": 1791065722.3696933
+  },
+  "measured_arms": {
+    "left": {
+      "q": [
+        0.17757686732280398,
+        2.11394674601358,
+        1.6004806591897456,
+        0.5792706187533376,
+        0.15049210345616792,
+        1.0706111238269624
+      ],
+      "g": 0.0649355339665569,
+      "torque": [
+        -0.03418803418803407,
+        -12.177777777777777,
+        7.295726495726498,
+        1.8730158730158735,
+        -0.0219780219780219,
+        -0.017094017094017033
+      ],
+      "v": [
+        -0.0024420024420024333,
+        -0.0024420024420024333,
+        -0.0024420024420024333,
+        -0.0073260073260073,
+        -0.0073260073260073,
+        -0.0073260073260073
+      ],
+      "temperature_c": [
+        33.0,
+        38.0,
+        39.0,
+        41.0,
+        36.0,
+        36.0,
+        35.0
+      ],
+      "temperature_mos_c": [
+        33.0,
+        38.0,
+        39.0,
+        41.0,
+        36.0,
+        36.0,
+        35.0
+      ],
+      "temperature_rotor_c": [
+        32.0,
+        62.0,
+        57.0,
+        47.0,
+        35.0,
+        33.0,
+        34.0
+      ],
+      "feedback_at": 1196572.134762692,
+      "feedback_started_at": 1196572.129433495,
+      "watchdog_latched": false,
+      "gripper_torque": 0.8864468864468869,
+      "gripper_force_limit_n": 40.0,
+      "gripper_force_limited": true,
+      "gripper_calibration_limits": [
+        6.317327368673444,
+        1.0359891524531042
+      ]
+    },
+    "right": {
+      "q": [
+        -0.06313420309758477,
+        1.7408636606393522,
+        1.2724116884107737,
+        0.46787975890745415,
+        0.007820248722056888,
+        -0.7509346150911735
+      ],
+      "g": 0.08603249757882261,
+      "torque": [
+        -0.07521367521367495,
+        -9.05982905982906,
+        7.364102564102566,
+        1.8778998778998783,
+        -0.0024420024420024333,
+        0.03174603174603163
+      ],
+      "v": [
+        -0.0024420024420024333,
+        0.0024420024420024333,
+        -0.0024420024420024333,
+        -0.0219780219780219,
+        -0.0073260073260073,
+        -0.0073260073260073
+      ],
+      "temperature_c": [
+        32.0,
+        35.0,
+        37.0,
+        39.0,
+        35.0,
+        33.0,
+        33.0
+      ],
+      "temperature_mos_c": [
+        32.0,
+        35.0,
+        37.0,
+        39.0,
+        35.0,
+        33.0,
+        33.0
+      ],
+      "temperature_rotor_c": [
+        31.0,
+        50.0,
+        42.0,
+        46.0,
+        33.0,
+        32.0,
+        31.0
+      ],
+      "feedback_at": 1196572.132913327,
+      "feedback_started_at": 1196572.129061622,
+      "watchdog_latched": false,
+      "gripper_torque": 0.7155067155067147,
+      "gripper_force_limit_n": 40.0,
+      "gripper_force_limited": true,
+      "gripper_calibration_limits": [
+        6.40859539339306,
+        1.0910170001680655
+      ]
+    }
+  },
+  "hold_targets": {
+    "left": [
+      0.17757686732280398,
+      2.11394674601358,
+      1.6004806591897456,
+      0.5830853742275117,
+      0.15049210345616792,
+      1.0706111238269624
+    ],
+    "right": [
+      -0.06313420309758477,
+      1.7404821850919348,
+      1.2724116884107737,
+      0.46864271000228896,
+      0.009346150911726525,
+      -0.7459754329747437
+    ]
+  },
+  "gripper_targets": {
+    "left": 0.03,
+    "right": 0.08323100602094069
+  },
+  "leader": {
+    "version": 7,
+    "follower": "right",
+    "following": false,
+    "active": false,
+    "connected": true,
+    "initialized": true,
+    "phase": "stopped",
+    "message": "Stopped by operator. Leader and right arm held.",
+    "studio_ready": true,
+    "studio_blocker": null,
+    "run_id": "ade265b5-a3c7-4058-9b6f-ae171d123ee8",
+    "owner": null,
+    "settings": {
+      "serial": "206C37AB45465006",
+      "gripper": "linear_4310",
+      "speed": 0.5,
+      "mirror_gripper": false
+    },
+    "adjustment_settings": null,
+    "device": {
+      "channel": "can1",
+      "serial": "206C37AB45465006",
+      "product": "CANable 2.5 Candlelight",
+      "usb_port": "3-2",
+      "state": "up",
+      "can": {
+        "state": "ERROR-ACTIVE",
+        "bitrate": 1000000,
+        "rx_packets": 80895647,
+        "tx_packets": 40447897
+      }
+    },
+    "joint_positions": [
+      -0.04749370565346389,
+      1.7011902037079416,
+      1.29797055008774,
+      0.5647745479514761,
+      0.14019226367589788,
+      -0.805485618371863
+    ],
+    "joint_offset_rad": [
+      -0.013542381933318026,
+      0.000953688868543523,
+      0.000953688868543523,
+      -0.08525978484779095,
+      -0.11806668192568814,
+      0.07991912718394723
+    ],
+    "joint_torques": [
+      -0.02051282051282044,
+      -8.663247863247864,
+      7.350427350427353,
+      1.7899877899877907,
+      -0.026862026862026767,
+      -0.017094017094017033
+    ],
+    "gripper": 0.0831549757123452,
+    "gripper_target": 0.08323100602094069,
+    "feedback_age_ms": 6.844341056421399,
+    "temperatures": [
+      31.0,
+      34.0,
+      36.0,
+      36.0,
+      33.0,
+      33.0,
+      33.0
+    ],
+    "follow_error_rad": 0.03871976806286703,
+    "limited": false,
+    "loop_ms": 32.3187920730561,
+    "progress": null,
+    "events": [
+      {
+        "at": 1791066352.1401472,
+        "phase": "connecting",
+        "message": "Connecting the new YAM. The driver holds its joints and runs its normal gripper startup."
+      },
+      {
+        "at": 1791066352.1679058,
+        "phase": "connecting",
+        "message": "Leader startup 1/3 \u00b7 can1 \u00b7 ERROR-ACTIVE"
+      },
+      {
+        "at": 1791066356.5024254,
+        "phase": "held",
+        "message": "Leader connected and held. Home and align both arms before teleop."
+      },
+      {
+        "at": 1791066426.8661094,
+        "phase": "following",
+        "message": "Pose held. New arm follows the existing right arm."
+      },
+      {
+        "at": 1791066427.7308428,
+        "phase": "held",
+        "message": "Gripper adjustment complete."
+      },
+      {
+        "at": 1791066431.050857,
+        "phase": "following",
+        "message": "New arm follows the existing right arm during pickup. Alignment reference unchanged."
+      },
+      {
+        "at": 1791066448.3487923,
+        "phase": "stopped",
+        "message": "Stopped by operator. Leader and right arm held."
+      },
+      {
+        "at": 1791066459.2142715,
+        "phase": "following",
+        "message": "Pose held. New arm follows the existing right arm."
+      },
+      {
+        "at": 1791066478.313035,
+        "phase": "following",
+        "message": "Pose held. New arm follows the existing right arm."
+      },
+      {
+        "at": 1791066482.616624,
+        "phase": "stopped",
+        "message": "Stopped by operator. Leader and right arm held."
+      },
+      {
+        "at": 1791066485.4795818,
+        "phase": "following",
+        "message": "Pose held. New arm follows the existing right arm."
+      },
+      {
+        "at": 1791066488.5459697,
+        "phase": "stopped",
+        "message": "Stopped by operator. Leader and right arm held."
+      },
+      {
+        "at": 1791066488.5479693,
+        "phase": "teleop",
+        "message": "Studio recording: guide the new arm; right arm follows."
+      },
+      {
+        "at": 1791066525.5869706,
+        "phase": "stopped",
+        "message": "Stopped by operator. Leader and right arm held."
+      }
+    ],
+    "busy": false
+  },
+  "published_at": 1196572.138395034,
+  "captured_arms": [
+    "right"
+  ],
+  "preserved_arms": [
+    "left"
+  ],
+  "full_run_id": "10511d52-e6ef-4e97-8b28-a5a04b7d1e37",
+  "capture_kind": "settled_hold_targets",
+  "inference_started": false
+}

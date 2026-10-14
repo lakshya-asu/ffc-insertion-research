@@ -1,0 +1,31 @@
+{
+  "name": "preinsertion4",
+  "description": "Captured in Pickup \u2192 Insert / Pose setup, from preinsertion3. Stores the settled hold commands; measured joints and source pose are preserved in poses/captures. Verify by returning to this pose before running a policy.",
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "arms": {
+    "left": {
+      "q": [
+        0.19855802243076148,
+        2.15667200732433,
+        1.66609445334554,
+        0.6414511329823753,
+        0.18329900053406512,
+        1.076714732585641
+      ],
+      "g": 1.0
+    },
+    "right": {
+      "q": [
+        -0.140764476997024,
+        1.7326619363698779,
+        1.3843747615777833,
+        0.3543907835507749,
+        -0.20714122224765674,
+        -1.1223010605020178
+      ],
+      "g": 1.0
+    }
+  },
+  "id": "ef8c4246-1196-4f2f-b61c-335e0213f2fd",
+  "saved_at": 1791057101.671015
+}

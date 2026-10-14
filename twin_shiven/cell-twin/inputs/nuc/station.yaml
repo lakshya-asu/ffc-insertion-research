@@ -1,0 +1,43 @@
+station_id: sc-cell-01
+arms:
+  right: {channel: can_right, gripper: linear_4310, role: learned}
+  left: {channel: can_left, gripper: linear_4310, role: fixture}
+cameras:
+  scene: {serial: '254522075844', width: 640, height: 480, fps: 30}
+  right_wrist: {serial: '323622270888', width: 640, height: 480, fps: 30}
+  left_wrist: {serial: '427622270507', width: 640, height: 480, fps: 30}
+# Capture these on the real station. Null deliberately prevents Stage.
+staging_pose:
+  right_rad: null
+  left_rad: null
+  retract_rad: null
+  right_gripper: 0.0
+  left_gripper: 0.0
+limits:
+  right_joint_box_rad: 0.35
+  right_max_step_rad: 0.02
+  gripper_max_step: 0.05
+  right_torque_guard_nm: null
+  left_torque_guard_nm: null
+  left_gripper_torque_guard_nm: null
+  guard_duration_s: 0.1
+teleop:
+  scale_fine: 0.3
+  scale_coarse: 1.0
+  quest_to_robot: null
+  approach_axis_ee: null
+task:
+  name: plug_5pin
+  prompt: plug the male 5-pin connector into the female 5-pin connector
+  episode_max_s: 15
+  infer_timeout_s: 10
+commissioning:
+  envelope_verified: false
+  motor_watchdog_verified: false
+geometry:
+  # Measured bases in one common world frame: xyz metres, quaternion wxyz.
+  right_base_pose: null
+  left_base_pose: null
+  minimum_clearance_m: 0.002
+camera_drift: {ssim_threshold: 0.85}
+policy: {endpoint: 'tcp://127.0.0.1:5555'}

@@ -1,0 +1,308 @@
+{
+  "id": "002167ed-df17-4cb7-ae93-9dae6c9b1d77",
+  "version": 1,
+  "kind": "evaluation",
+  "task": "right_pickup",
+  "title": "Pickup evaluation 2026-10-04 14:20:48",
+  "created_at": 1791148848.7480931,
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "fps": 10,
+  "camera_order": [
+    "right_external",
+    "right_wrist"
+  ],
+  "task_prompt": "Approach the part, grasp it, and lift slightly.",
+  "camera_setup": {
+    "device": {
+      "id": "pci-0000:00:14.0-usb-0:7.3:1.0-video-index0",
+      "device": "/dev/v4l/by-path/pci-0000:00:14.0-usb-0:7.3:1.0-video-index0",
+      "node": "/dev/video18",
+      "model": "Arducam B0497 (USB3 8.3MP)",
+      "serial": "",
+      "usb_port": "3-7.3",
+      "usb_mbps": 480.0,
+      "vendor": "04b4",
+      "product": "0497"
+    },
+    "mode": {
+      "width": 1280,
+      "height": 720,
+      "fps": 10.0,
+      "fourcc": "YUYV"
+    },
+    "controls": {
+      "9963776": {
+        "id": 9963776,
+        "name": "Brightness",
+        "type": 1,
+        "min": -64,
+        "max": 64,
+        "step": 1,
+        "default": 0,
+        "value": 4,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963777": {
+        "id": 9963777,
+        "name": "Contrast",
+        "type": 1,
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "default": 10,
+        "value": 10,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963778": {
+        "id": 9963778,
+        "name": "Saturation",
+        "type": 1,
+        "min": 0,
+        "max": 15,
+        "step": 1,
+        "default": 10,
+        "value": 10,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963788": {
+        "id": 9963788,
+        "name": "White Balance, Automatic",
+        "type": 2,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "default": 1,
+        "value": 0,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963795": {
+        "id": 9963795,
+        "name": "Gain",
+        "type": 1,
+        "min": 100,
+        "max": 20000,
+        "step": 1,
+        "default": 100,
+        "value": 600,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963800": {
+        "id": 9963800,
+        "name": "Power Line Frequency",
+        "type": 3,
+        "min": 0,
+        "max": 2,
+        "step": 1,
+        "default": 0,
+        "value": 0,
+        "inactive": false,
+        "menu": {
+          "0": "Disabled",
+          "1": "50 Hz",
+          "2": "60 Hz"
+        }
+      },
+      "9963802": {
+        "id": 9963802,
+        "name": "White Balance Temperature",
+        "type": 1,
+        "min": 2300,
+        "max": 6500,
+        "step": 1,
+        "default": 4500,
+        "value": 4000,
+        "inactive": false,
+        "menu": {}
+      },
+      "9963804": {
+        "id": 9963804,
+        "name": "Backlight Compensation",
+        "type": 1,
+        "min": 0,
+        "max": 1,
+        "step": 1,
+        "default": 0,
+        "value": 0,
+        "inactive": false,
+        "menu": {}
+      },
+      "10094849": {
+        "id": 10094849,
+        "name": "Auto Exposure",
+        "type": 3,
+        "min": 0,
+        "max": 3,
+        "step": 1,
+        "default": 0,
+        "value": 1,
+        "inactive": false,
+        "menu": {
+          "0": "Auto Mode",
+          "1": "Manual Mode"
+        }
+      },
+      "10094850": {
+        "id": 10094850,
+        "name": "Exposure Time, Absolute",
+        "type": 1,
+        "min": 5,
+        "max": 10000,
+        "step": 1,
+        "default": 5,
+        "value": 80,
+        "inactive": false,
+        "menu": {}
+      }
+    },
+    "reference_profile": "20261001T231652Z-98bcb0c1",
+    "placement_notes": "",
+    "timestamp_domains": {
+      "right_external": "v4l2_monotonic",
+      "right_wrist": "global_time"
+    },
+    "image_transform": "PIL.ImageOps.fit RGB 640x480 BILINEAR",
+    "timestamp_source": "start_of_exposure"
+  },
+  "checkpoint_id": "ckpt_a0d37a4a3fd1579daae8d97fad17cafd",
+  "evaluation_id": "6cfbafb4-bb82-4546-8a35-8341a655c15c",
+  "model_contract": {
+    "version": 2,
+    "cameras": [
+      "right_external",
+      "right_wrist"
+    ],
+    "predicted_arms": "right",
+    "action_indices": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "action_names": [
+      "right_joint_0.pos",
+      "right_joint_1.pos",
+      "right_joint_2.pos",
+      "right_joint_3.pos",
+      "right_joint_4.pos",
+      "right_joint_5.pos",
+      "right_gripper.pos"
+    ],
+    "state_names": [
+      "right_joint_0.pos",
+      "right_joint_1.pos",
+      "right_joint_2.pos",
+      "right_joint_3.pos",
+      "right_joint_4.pos",
+      "right_joint_5.pos",
+      "right_gripper.pos",
+      "right_joint_0.torque",
+      "right_joint_1.torque",
+      "right_joint_2.torque",
+      "right_joint_3.torque",
+      "right_joint_4.torque",
+      "right_joint_5.torque",
+      "right_gripper.torque"
+    ],
+    "action_shape": [
+      7
+    ],
+    "state_shape": [
+      14
+    ],
+    "image_shape": [
+      3,
+      480,
+      640
+    ],
+    "n_obs_steps": 1,
+    "chunk_size": 20,
+    "grippers": "right_policy_left_hold",
+    "fps": 10
+  },
+  "inference_timing": {
+    "reply_timeout_s": 0.35,
+    "observation_age_s": 0.7333333333333333,
+    "camera_age_s": 0.2,
+    "request_fps": 10
+  },
+  "gripper_control": {
+    "method": "driver_force_limiter_contact_hold",
+    "calibrated_limits": [
+      6.397341864744247,
+      1.089967942412665
+    ],
+    "calibrated_limits_units": "motor_radians_closed_open",
+    "force_limit_n": 35.0,
+    "close_target": 0.08,
+    "adjustment_version": 3,
+    "preserve_tighter": false,
+    "adjustment": "terminal_close_target",
+    "adjustment_units": "fraction_of_calibrated_travel",
+    "near_closed_max": 0.12,
+    "policy_opening_min": 0.14
+  },
+  "synchronization": {
+    "version": 1,
+    "method": "buffered_causal_host_monotonic",
+    "hardware_synchronized": false,
+    "camera_order": [
+      "right_external",
+      "right_wrist"
+    ],
+    "arm_order": [
+      "left",
+      "right"
+    ],
+    "policy": {
+      "max_age_s": 0.15,
+      "max_skew_s": 0.15,
+      "max_gap_s": 0.15,
+      "delivery_timeout_s": 0.25,
+      "max_feedback_age_s": 0.05
+    },
+    "frames": 0,
+    "max_camera_age_ms": 0.0,
+    "max_camera_skew_ms": 0.0,
+    "max_delivery_ms": 0.0,
+    "reused_frames": {
+      "right_external": 0,
+      "right_wrist": 0
+    },
+    "max_feedback_age_ms": 0.0,
+    "max_feedback_span_ms": 0.0,
+    "feedback_timing_available": true,
+    "timestamp_precision": "UVC kernel timestamps and SDK clock estimates mapped to host monotonic time; not hardware synchronization.",
+    "feedback_semantics": "Host interval for each arm CAN feedback batch; joints are not simultaneously latched.",
+    "unavailable_value": -1,
+    "quality_mode": "flag_and_continue",
+    "warning_frames": 0,
+    "warnings": [],
+    "quality_flags": {
+      "camera_gap": 1,
+      "camera_age": 2,
+      "camera_skew": 4,
+      "camera_missing": 8,
+      "camera_restart": 16,
+      "camera_clock": 32,
+      "robot_gap": 64,
+      "robot_feedback": 128,
+      "reused_image": 256,
+      "camera_delivery": 512
+    },
+    "last_warnings": [],
+    "missing_image_semantics": "Repeat the last real image with its original timestamp; if none exists, use a labelled placeholder with frame ID/timestamps -1.",
+    "timestamp_domains": {
+      "right_external": "v4l2_monotonic",
+      "right_wrist": "global_time"
+    }
+  },
+  "quality_version": 1
+}

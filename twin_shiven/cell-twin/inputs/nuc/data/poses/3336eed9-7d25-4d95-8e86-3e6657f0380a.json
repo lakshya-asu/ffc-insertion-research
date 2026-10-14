@@ -1,0 +1,31 @@
+{
+  "name": "preinsertion8",
+  "description": "Captured right arm holds from preinsertion7. Other arm entries are retained from the source pose. Stores the settled hold commands; measured joints and source pose are preserved in poses/captures. Verify by returning to this pose before running a policy.",
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "arms": {
+    "left": {
+      "q": [
+        0.18368047608148252,
+        2.1272983901731894,
+        1.6329060807202254,
+        0.5975814450293733,
+        0.1539253833829246,
+        1.0709925993743799
+      ],
+      "g": 0.03503802088023191
+    },
+    "right": {
+      "q": [
+        -0.06313420309758477,
+        1.7404821850919348,
+        1.2724116884107737,
+        0.46864271000228896,
+        0.009346150911726525,
+        -0.7459754329747437
+      ],
+      "g": 0.08323100602094069
+    }
+  },
+  "id": "3336eed9-7d25-4d95-8e86-3e6657f0380a",
+  "saved_at": 1791066533.111542
+}

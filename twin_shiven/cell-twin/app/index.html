@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cell Twin</title>
+<style>
+  :root{--bg:#FDF9F2;--ink:#1f1d1a;--muted:#6b655c;--sheet:#f3ece0;--sheet2:#e9e0cf;--blue:#2563EB;--mint:#00B894;--crimson:#B91C1C;--gold:#F59E0B}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif}
+  header{display:flex;gap:18px;align-items:center;padding:14px 20px;border-bottom:1px solid var(--sheet2)}
+  header h1{font:700 20px/1 "Plus Jakarta Sans",Inter,sans-serif;margin:0 18px 0 0}
+  header button{background:none;border:none;font:600 14px Inter,sans-serif;color:var(--muted);padding:8px 10px;border-radius:8px;cursor:pointer}
+  header button.on{background:var(--sheet2);color:var(--ink)}
+  main{padding:18px 20px;max-width:1400px;margin:0 auto}
+  .row{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+  .sheet{background:var(--sheet);border-radius:14px;padding:14px 16px}
+  .eyebrow{font:600 11px/1 Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  img.live{width:100%;border-radius:10px;background:#111;display:block}
+  label{display:block;font-size:13px;color:var(--muted);margin-top:8px}
+  input[type=number],select{width:100%;padding:6px 8px;border:1px solid var(--sheet2);border-radius:8px;background:#fff;font:14px Inter,sans-serif}
+  .btns{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+  .btn{padding:8px 14px;border-radius:999px;border:none;font:600 13px Inter,sans-serif;cursor:pointer;background:var(--sheet2);color:var(--ink)}
+  .btn.go{background:var(--blue);color:#fff} .btn.stop{background:var(--crimson);color:#fff}
+  .kv{display:flex;justify-content:space-between;font-size:13px;padding:3px 0;border-bottom:1px dashed var(--sheet2)}
+  .log{font:12px/1.5 ui-monospace,Menlo,monospace;color:var(--muted);max-height:220px;overflow:auto;white-space:pre-wrap;margin-top:8px}
+  canvas{width:100%;height:160px;background:#fff;border-radius:10px}
+  table{border-collapse:collapse;width:100%;font-size:13.5px} th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--sheet2)} th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+  .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:600;background:var(--sheet2)}
+  .pill.S{background:#d9f5ea;color:#00795f} .pill.F{background:#fde4e4;color:var(--crimson)}
+  .hidden{display:none}
+  .cams{display:grid;grid-template-columns:1fr;gap:10px}
+  .note{color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Cell Twin</h1>
+  <button class="on" data-tab="live">Cell</button>
+  <button data-tab="exp">Experiments</button>
+  <button data-tab="cams">Cameras</button>
+  <span class="note" id="status" style="margin-left:auto"></span>
+</header>
+<main>
+<section id="tab-live">
+  <div class="row">
+    <div>
+      <div class="sheet"><div class="eyebrow">Live bench</div><img class="live" id="frame" src="/frame.jpg">
+        <div class="btns">
+          <button class="btn" onclick="orbit(-20,0)">◀ orbit</button><button class="btn" onclick="orbit(20,0)">orbit ▶</button>
+          <button class="btn" onclick="orbit(0,-10)">▲</button><button class="btn" onclick="orbit(0,10)">▼</button>
+          <button class="btn" onclick="zoom(0.8)">zoom in</button><button class="btn" onclick="zoom(1.25)">zoom out</button>
+        </div>
+      </div>
+      <div class="sheet" style="margin-top:14px"><div class="eyebrow">Cell cameras (scene · right wrist · left wrist)</div><img class="live" id="cams" src="/cams.jpg"></div>
+    </div>
+    <div>
+      <div class="sheet">
+        <div class="eyebrow">Episode</div>
+        <label>Header pick tilt (deg, about the pinch axis) <input type="number" id="tilt" value="4" step="0.5"></label>
+        <label>Header slip across the row (mm) <input type="number" id="slip" value="1.0" step="0.1"></label>
+        <label>Female pick tilt (deg) <input type="number" id="ftilt" value="0" step="0.5"></label>
+        <label>Controller <select id="ctrl"><option value="align">align by contact (spiral on jam)</option><option value="push">straight push</option></select></label>
+        <label>Slow-motion factor <input type="number" id="slow" value="2" step="0.5" min="0"></label>
+        <div class="btns"><button class="btn go" onclick="cmd('start')">Run</button><button class="btn stop" onclick="cmd('stop')">Stop</button><button class="btn" onclick="cmd('reset')">New pick</button><button class="btn" onclick="applyCfg()">Apply settings</button></div>
+      </div>
+      <div class="sheet" style="margin-top:14px">
+        <div class="eyebrow">State</div>
+        <div class="kv"><span>Episode</span><b id="ep">–</b></div>
+        <div class="kv"><span>Pick error</span><b id="pick">–</b></div>
+        <div class="kv"><span>Tick</span><b id="tick">–</b></div>
+        <div class="kv"><span>Depth (mm)</span><b id="depth">–</b></div>
+        <div class="kv"><span>Outcome</span><b id="outcome">–</b></div>
+        <div class="eyebrow" style="margin-top:12px">Torque rise, right joints 1–6 (Nm)</div><canvas id="tq" width="600" height="160"></canvas>
+        <div class="log" id="log"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tab-exp" class="hidden">
+  <div class="row">
+    <div class="sheet">
+      <div class="eyebrow">Capture-region sweeps</div>
+      <table id="exptable"><thead><tr><th>Run</th><th>Kind</th><th>When</th><th>Results (seats / n, Wilson 95%)</th></tr></thead><tbody></tbody></table>
+    </div>
+    <div class="sheet">
+      <div class="eyebrow">New sweep</div>
+      <label>Kind <select id="xkind"><option value="lateral">lateral slip (mm)</option><option value="skew">header tilt (deg)</option></select></label>
+      <label>Values <input type="text" id="xvals" value="0,0.5,1,1.5,2,3" style="width:100%;padding:6px 8px;border:1px solid var(--sheet2);border-radius:8px"></label>
+      <label>Trials per value <input type="number" id="xn" value="10"></label>
+      <label>Controllers <select id="xctrl"><option>push,align</option><option>align</option><option>push</option></select></label>
+      <div class="btns"><button class="btn go" onclick="launch()">Launch</button></div>
+      <p class="note">Each trial samples the pick error, runs the controller from the aligned pre-contact pose, and grades by truth (seated, partial, jam, miss). Intervals are Wilson 95 %.</p>
+      <pre class="log" id="explog"></pre>
+    </div>
+  </div>
+</section>
+
+<section id="tab-cams" class="hidden">
+  <div class="sheet">
+    <div class="eyebrow">Twin cameras against the real frames (same joint state)</div>
+    <p class="note">Top row: twin. Bottom row: real. Left to right: scene camera, right wrist, left wrist. Second image: wrist overlays, red = opposite arm as the twin renders it, yellow = own fingers.</p>
+    <div class="btns"><button class="btn" onclick="rerender()">Re-render</button></div>
+    <div class="eyebrow">Twin blended over the real frame, same joint state: preinsertion2 pose (top) and seated (bottom)</div>
+    <img class="live" id="bb" src="/out/blend_both.png">
+    <div class="eyebrow" style="margin-top:14px">Per-camera check at the preinsertion2 pose: twin, real, twin silhouette edges on real (red right arm, yellow left arm, cyan parts), blend</div>
+    <img class="live" id="v1" src="/out/verify_scene_0.png"><img class="live" id="v2" src="/out/verify_right_wrist_0.png"><img class="live" id="v3" src="/out/verify_left_wrist_0.png">
+    <div class="cams" style="margin-top:14px"><img class="live" id="rc" src="/out/render_check.png"><img class="live" id="wc" src="/out/wrist_cam_check.png"></div>
+    <div class="eyebrow" style="margin-top:14px">Where the wrist camera sits (right gripper, seated pose; the D405 body is the dark box on the bracket)</div>
+    <img class="live" id="mc" src="/out/mount_check.png">
+  </div>
+</section>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+document.querySelectorAll('header button').forEach(b=>b.onclick=()=>{document.querySelectorAll('header button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  ['live','exp','cams'].forEach(t=>$('#tab-'+t).classList.toggle('hidden',t!==b.dataset.tab)); if(b.dataset.tab==='exp') loadExp();});
+let cam={az:120,el:-15,dist:0.09};
+async function post(url,body){await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})}
+function cfg(){return {tilt_deg:+$('#tilt').value,slip_mm:+$('#slip').value,female_tilt_deg:+$('#ftilt').value,controller:$('#ctrl').value,slow:+$('#slow').value,cam}}
+function cmd(a){post('/api/command',{action:a,cfg:cfg()})}
+function applyCfg(){post('/api/command',{cfg:cfg()})}
+function orbit(da,de){cam.az+=da;cam.el=Math.max(-89,Math.min(89,cam.el+de));post('/api/command',{cfg:{cam}})}
+function zoom(f){cam.dist=Math.max(0.02,Math.min(2,cam.dist*f));post('/api/command',{cfg:{cam}})}
+function wilson(k,n){if(!n)return'';const z=1.96,p=k/n,d=1+z*z/n,c=(p+z*z/(2*n))/d,h=z*Math.sqrt(p*(1-p)/n+z*z/(4*n*n))/d;return `${Math.round(100*(c-h))}–${Math.round(100*(c+h))}%`}
+function drawTq(t){const c=$('#tq'),g=c.getContext('2d');g.clearRect(0,0,c.width,c.height);if(!t.length)return;const cols=['#2563EB','#F59E0B','#DC2626','#00B894','#6C5CE7','#0891B2'];const n=t.length;let m=1;t.forEach(r=>r.forEach(v=>m=Math.max(m,Math.abs(v))));
+  g.strokeStyle='#ddd';g.beginPath();g.moveTo(0,c.height/2);g.lineTo(c.width,c.height/2);g.stroke();
+  for(let j=0;j<6;j++){g.strokeStyle=cols[j];g.beginPath();t.forEach((r,i)=>{const x=i/(n-1||1)*c.width,y=c.height/2-r[j]/m*(c.height/2-6);i?g.lineTo(x,y):g.moveTo(x,y)});g.stroke()}
+  g.fillStyle='#6b655c';g.font='11px Inter';g.fillText(`±${m.toFixed(1)} Nm`,4,12)}
+async function poll(){try{const s=await (await fetch('/api/state')).json();$('#status').textContent=s.running?'running':'idle';$('#ep').textContent=s.episode??'–';
+  $('#pick').textContent=s.pick?`${s.pick.header_tilt.toFixed(1)}°, ${s.pick.header_slip.toFixed(1)} mm, female ${s.pick.female_tilt.toFixed(1)}°`:'–';$('#tick').textContent=s.tick??'–';
+  const d=s.depth||[];$('#depth').textContent=d.length?d[d.length-1].toFixed(2):'–';const o=s.outcome||'–';$('#outcome').innerHTML=o==='–'?'–':`<span class="pill ${o[0]}">${o}</span>`;
+  drawTq(s.torques||[]);$('#log').textContent=(s.log||[]).slice(-12).join('\n');
+  if(!$('#tab-live').classList.contains('hidden')){$('#frame').src='/frame.jpg?'+Date.now();$('#cams').src='/cams.jpg?'+Date.now()}}catch(e){}}
+setInterval(poll,250);
+async function loadExp(){const rows=await (await fetch('/api/experiments')).json();const tb=$('#exptable tbody');tb.innerHTML='';for(const r of rows){const res=r.results.map(x=>`${x.controller} ${x.x}: <b>${x.seats}/${x.n}</b> <span class="note">${wilson(x.seats,x.n)}</span>`).join('<br>');
+  tb.innerHTML+=`<tr><td>${r.name}${r.running?' <span class="pill">running</span>':''}</td><td>${r.kind}</td><td>${r.mtime}</td><td>${res||'<span class=note>no results yet</span>'}</td></tr>`}}
+async function launch(){await post('/api/experiments',{kind:$('#xkind').value,values:$('#xvals').value,n:+$('#xn').value,controllers:$('#xctrl').value});$('#explog').textContent='launched';setTimeout(loadExp,1000)}
+setInterval(()=>{if(!$('#tab-exp').classList.contains('hidden'))loadExp()},5000);
+async function rerender(){$('#status').textContent='rendering…';await post('/api/cameras/render',{});$('#rc').src='/out/render_check.png?'+Date.now();$('#wc').src='/out/wrist_cam_check.png?'+Date.now();$('#mc').src='/out/mount_check.png?'+Date.now();$('#bb').src='/out/blend_both.png?'+Date.now();for(const k of ['v1','v2','v3']){const e=$('#'+k);e.src=e.src.split('?')[0]+'?'+Date.now()}$('#status').textContent='idle'}
+</script>
+</body>
+</html>

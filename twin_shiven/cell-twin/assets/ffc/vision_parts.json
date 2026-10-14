@@ -1,0 +1,582 @@
+{
+ "_meta": {
+  "date": "2026-10-13",
+  "note": "Numbers marked ESTIMATE are unverified. Optics computed with thin lens model, see ffc_vision_parts.md for formulas. dof_mm_f8 for fixed-aperture lenses is hypothetical (lens is not sold at f/8).",
+  "coordinate_note": "outline_mm w,h = face dimensions seen from the lens axis, d = depth along the optical axis. mount_holes positions are from the face named in each entry, origin at the optical axis, x right, y up when viewed from the front (lens side), unless noted."
+ },
+ "cameras": {
+  "basler_daA1920_160um_smount": {
+   "name": "Basler dart daA1920-160um (S-mount, mono, USB 3.0)",
+   "vendor": "Basler",
+   "part_number": "daA1920-160um S-Mount (Basler product no. 108230 per Pyramid Imaging)",
+   "buy_url": "https://www.baslerweb.com/en/shop/daa1920-160um-s-mount",
+   "buy_url_alt": [
+    "https://pyramidimaging.com/Basler-Dart-daA1920-160um__p-73811.aspx",
+    "https://www.mouser.com/c/optoelectronics/cameras-accessories/cameras-camera-modules/?m=Basler (no-mount version only)"
+   ],
+   "source_url": "https://docs.baslerweb.com/daa1920-160um",
+   "datasheet_url": "https://pyramidimaging.com/uploads/Media/11410.pdf",
+   "drawing_urls": [
+    "https://docs.baslerweb.com/images/drawing-dart-classic-usb-s-mount-dimensions.svg",
+    "https://docs.baslerweb.com/images/drawing-dart-r-usb-bare-board-dimensions.svg",
+    "https://www.baslerweb.com/en/downloads/documents/?downloadCategory.data=cad&series=Basler+dart&products=daA1920-160um+(S-Mount)"
+   ],
+   "mass_g": 15,
+   "mass_note": "under 15 g (Basler); bare board under 5 g",
+   "outline_mm": {
+    "w": 29.0,
+    "h": 29.0,
+    "d": 19.9,
+    "note": "housing 29 x 29 x 14.9 deep, lens barrel dia 16 protrudes 6 mm in front, 19.9 max overall incl. USB; Pyramid lists 19.9 x 29.3 x 29"
+   },
+   "mount_holes": [
+    {
+     "face": "front (lens side)",
+     "count": 4,
+     "pattern": "square 22.4 x 22.4 centred on axis",
+     "x": [
+      -11.2,
+      11.2
+     ],
+     "y": [
+      -11.2,
+      11.2
+     ],
+     "dia_mm": 2.2,
+     "depth_mm": 3.2,
+     "max_screw": "M2"
+    },
+    {
+     "face": "rear (board side)",
+     "count": 4,
+     "pattern": "square 22.4 x 22.4",
+     "dia_mm": 2.08,
+     "note": "through PCB holes, drawing dia 2.08"
+    }
+   ],
+   "bare_board_holes": {
+    "count": 4,
+    "dia_mm": 3.0,
+    "pattern_mm": 22.4,
+    "edge_offset_mm": 2.3,
+    "board_mm": [
+     27,
+     27
+    ],
+    "with_usb_mm": [
+     28.3,
+     27
+    ],
+    "thickness_note": "max 1.1 mm component height on rear, 8 mm total length incl. sensor side"
+   },
+   "lens_mount": "S-mount (M12 x 0.5), lens barrel dia 16 mm protrusion 6 mm",
+   "usb_connector": {
+    "type": "Micro-B USB 3.0 (no screw lock)",
+    "position": "rear face, on the right board edge viewed from the rear, vertically centred on the optical axis, opening facing sideways (in the board plane); 1.3 mm overhang beyond the 27 mm board",
+    "io_connector": "6-pin 1.27 mm dual-row socket on the rear top edge, centre 19.9 mm from the left board edge (rear view)"
+   },
+   "sensor_mm": {
+    "w": 6.624,
+    "h": 4.14
+   },
+   "pixels": {
+    "w": 1920,
+    "h": 1200
+   },
+   "pixel_um": 3.45,
+   "fps": 67,
+   "fps_note": "67 fps at default throughput limit, about 164 fps with Device Link Throughput Limit disabled (Basler docs)",
+   "sensor_model": "Sony IMX392LLR-C global shutter, 1/2.3 inch, 7.9 mm diagonal, mono",
+   "interface": "USB 3.0 (USB3 Vision), 1.9 W typ at 5 V, not USB 2.0 compatible",
+   "price_usd": null,
+   "price_note": "EUR 259.00 net list on Basler shop (about USD 300 ESTIMATE); Pyramid Imaging price on request",
+   "availability_warning": "Basler docs page carries \"not in series production yet\"; Pyramid shows a Notify-me form. Confirm stock before ordering. Fallback in parts.json family: daA1920-30um (30 fps)."
+  },
+  "alvium_1800_u500m_open_housing_c_mount": {
+   "name": "Allied Vision Alvium 1800 U-500m, open housing, C-mount (mono, USB 3.1 Gen 1)",
+   "vendor": "Allied Vision",
+   "part_number": "Alvium 1800 U-500m Open Housing C-Mount Standard (Edmund Optics #42335 partial housing; Vitalvision code V212907 ESTIMATE that this is the same SKU)",
+   "buy_url": "https://www.edmundoptics.com/p/allied-vision-alvium-1800-u-500m-125-50mp-c-mount-usb-31-monochrome-camera-partial-housing/42335/",
+   "source_url": "https://cdn.graftek.com/system/files/15444/original/AVT_Alvium_13622_1800_U-500c_Data_Sheet.pdf",
+   "datasheet_url": "https://edmundoptics.eu/document/download/493542",
+   "drawing_urls": [
+    "https://www.edmundoptics.eu/document/download/521059 (Open Housing C-Mount Standard drawing, U-1620 sheet, same housing)"
+   ],
+   "mass_g": 45,
+   "mass_note": "45 g open housing C-mount (Allied Vision datasheet); bare board 15 g; closed housing 60 g",
+   "outline_mm": {
+    "w": 29.4,
+    "h": 29.4,
+    "d": 30.0,
+    "note": "body 30 x 29 x 29 per datasheet; drawing 29.4 x 29.4 face, 29.9 to 30.3 long incl. C-mount flange"
+   },
+   "mount_holes": [
+    {
+     "face": "front",
+     "count": 4,
+     "thread": "M2",
+     "depth_mm": 2,
+     "pattern": "square 24 x 24 centred on axis"
+    },
+    {
+     "face": "top",
+     "count": 2,
+     "thread": "M3",
+     "depth_mm": 2.5,
+     "spacing_mm": 20,
+     "note": "13 mm from front face per drawing, centred on 20 mm span"
+    },
+    {
+     "face": "bottom",
+     "count": 2,
+     "thread": "M3",
+     "depth_mm": 2.5,
+     "spacing_mm": 20
+    },
+    {
+     "face": "rear",
+     "count": 2,
+     "thread": "M2",
+     "depth_mm": 3.3,
+     "note": "rear-corner holes on the board plate, drawing shows 18 mm board height"
+    }
+   ],
+   "lens_mount": "C-mount (17.526 mm flange distance), open housing",
+   "usb_connector": {
+    "type": "Micro-B USB 3.1 Gen 1 with M2 screw lock",
+    "position": "rear panel (USB 180 degree standard), 4 GPIO connector beside it"
+   },
+   "sensor_mm": {
+    "w": 5.702,
+    "h": 4.277
+   },
+   "pixels": {
+    "w": 2592,
+    "h": 1944
+   },
+   "pixel_um": 2.2,
+   "fps": 67,
+   "fps_note": "67 fps full res Mono8 at >= 350 MB/s",
+   "sensor_model": "ON Semi AR0521, 1/2.5 inch, ROLLING shutter, 5.1 MP",
+   "interface": "USB3 Vision over Micro-B USB 3.1 Gen 1, 2.2 W typ over USB",
+   "price_usd": 334,
+   "price_note": "Edmund Optics US list USD 334.00 per search snippet, stock Contact Us (verify)",
+   "pick_reason": "Bare board has no lens mount and needs an S-mount holder; open housing C-mount gives a fixed sensor-to-flange alignment and the C-mount lens market for 45 g, no tight mass budget on LR Mate. Closed housing adds 15 g and heat-sinking but not needed.",
+   "caution": "Rolling shutter: image skew if the wrist moves during exposure; use short strobed exposure with the arm stopped or the blue strobe."
+  }
+ },
+ "lenses": {
+  "eo_37182_16mm_f4_m12": {
+   "name": "Edmund Optics TECHSPEC 16mm FL f/4.0 Blue Series M12 lens #37-182",
+   "vendor": "Edmund Optics",
+   "part_number": "#37-182",
+   "buy_url": "https://www.edmundoptics.com/p/16mm-fl-f40-blue-series-m12-lens/46302/",
+   "source_url": "https://www.1stvision.com/lens/edmund-optics/dataman/spec_37182.pdf",
+   "focal_mm": 16.0,
+   "f_number": 4.0,
+   "mount": "S-mount M12 x 0.5",
+   "max_sensor_format": "1/1.8 inch",
+   "image_circle_mm": 9.0,
+   "distortion_pct": 0.039,
+   "outline_mm": {
+    "dia": 16,
+    "length": 22.5
+   },
+   "mass_g": 8,
+   "mass_note": "ESTIMATE, not listed by Edmund; similar 16 mm M12 lens (Commonlands CIL160) lists 6 g",
+   "lens_spec_wd_mm": "150 to infinity",
+   "object_principal_plane_mm": 7.21,
+   "back_focal_mm": "10.79 to 10.05",
+   "price_usd": 115,
+   "price_note": "USD 115 qty 1-49, 91 qty 50+ (Edmund US, search snippet); GBP 63-66 UK",
+   "pair": "basler_daA1920_160um_smount",
+   "magnification": 0.1613,
+   "fov_mm": {
+    "w": 41.1,
+    "h": 25.7
+   },
+   "res_um_px": 21.39,
+   "dof_mm_f4": 2.46,
+   "dof_mm_f8": 4.93,
+   "working_distance_mm": 108,
+   "object_to_front_principal_plane_mm": 115.21,
+   "image_distance_mm": 18.58,
+   "extension_beyond_infinity_mm": 2.58,
+   "airy_disc_um_f4": 5.3,
+   "airy_disc_um_f8": 10.7,
+   "infocus_strip_on_surface_mm_f4_35deg": 3.0,
+   "infocus_strip_on_surface_mm_f8_35deg": 6.0,
+   "caveat": "Spec working distance is 150 mm to infinity; our 108 mm needs 2.58 mm extension vs 1.81 mm at 150 mm: unscrew 0.8 mm beyond the specified near limit. Image quality at this conjugate is ESTIMATE, bench test required. Fixed apertures offered f/2.5, f/4, f/5.6 only; f/8 numbers are hypothetical."
+  },
+  "commonlands_cil160_16mm_f4_m12": {
+   "name": "Commonlands CIL160-F4.0-M12ANIR 16mm f/4.0 M12 lens",
+   "vendor": "Commonlands",
+   "part_number": "CIL160-F4.0-M12ANIR (no IR-cut filter; M12A no ingress protection)",
+   "buy_url": "https://commonlands.com/products/16mm-m12-lens",
+   "buy_url_alt": [
+    "https://azcus.digikey.com/en/products/detail/commonlands/CIL160-F5-6-M12ANIR/25583752 (f/5.6 variant listing)"
+   ],
+   "source_url": "https://commonlands.com/products/16mm-m12-lens",
+   "focal_mm": 16.0,
+   "f_number": 4.0,
+   "mount": "S-mount M12 x 0.5",
+   "image_circle_mm": 8.8,
+   "max_image_circle_mm": 11.5,
+   "distortion_pct": 0.5,
+   "distortion_note": "-0.5 percent TV at 8.9 mm",
+   "outline_mm": {
+    "dia": 14,
+    "length": 22.4
+   },
+   "outline_note": "length 22.4 mm per DigiKey listing of the f/5.6 variant; diameter ESTIMATE (M12 barrel with 14 mm hex/cap), drawing only at https://docsend.com/view/s/cktui553pc994z68",
+   "mass_g": 6,
+   "lens_spec_wd_mm": "not stated (ESTIMATE: similar to M12 16 mm lenses, 300 mm class)",
+   "object_principal_plane_mm": 7.0,
+   "price_usd": 39,
+   "price_note": "USD 39.00 listed on the product page",
+   "pair": "basler_daA1920_160um_smount",
+   "magnification": 0.1616,
+   "fov_mm": {
+    "w": 41.0,
+    "h": 25.6
+   },
+   "res_um_px": 21.35,
+   "dof_mm_f4": 2.45,
+   "dof_mm_f8": 4.91,
+   "working_distance_mm": 108,
+   "object_to_front_principal_plane_mm": 115.0,
+   "image_distance_mm": 18.59,
+   "extension_beyond_infinity_mm": 2.59,
+   "airy_disc_um_f4": 5.3,
+   "airy_disc_um_f8": 10.7,
+   "infocus_strip_on_surface_mm_f4_35deg": 3.0,
+   "infocus_strip_on_surface_mm_f8_35deg": 6.0,
+   "caveat": "MOD not published; our 108 mm needs 2.59 mm extension. Principal plane 7 mm is ESTIMATE. Cheapest and lightest; the -0.5 percent distortion is 13x worse than the EO lens datasheet figure (EO measures differently, compare on the bench)."
+  },
+  "eo_33303_12mm_uc_c_mount": {
+   "name": "Edmund Optics TECHSPEC UC Series 12mm f/1.8 C-mount lens #33-303",
+   "vendor": "Edmund Optics (LUCID SKU EOUC120)",
+   "part_number": "#33-303",
+   "buy_url": "https://thinklucid.com/product/edmund-optics-c-mount-1-1-8-12mm-f-1-8/",
+   "buy_url_alt": [
+    "https://www.edmundoptics.com/ (search #33-303)"
+   ],
+   "source_url": "https://www.1stvision.com/lens/edmund-optics/dataman/spec_33303.pdf",
+   "focal_mm": 12.0,
+   "f_number": "1.8 to 11 adjustable, locking",
+   "mount": "C-mount",
+   "max_sensor_format": "1/1.8 inch",
+   "optimized_format": "1/2.5 inch",
+   "distortion_pct": 3.03,
+   "distortion_note": "-3.03 percent max; under 2.5 percent on 1/2.5 inch",
+   "outline_mm": {
+    "dia": 30,
+    "length": 35.2
+   },
+   "mass_g": 49,
+   "lens_spec_wd_mm": "100 to infinity",
+   "object_principal_plane_mm": 23.04,
+   "price_usd": 299,
+   "price_note": "USD 299.00 on LUCID",
+   "pair": "alvium_1800_u500m_open_housing_c_mount",
+   "magnification": 0.1081,
+   "fov_mm": {
+    "w": 52.8,
+    "h": 39.6
+   },
+   "res_um_px": 20.36,
+   "dof_mm_f4": 3.34,
+   "dof_mm_f8": 6.68,
+   "working_distance_mm": 100,
+   "object_to_front_principal_plane_mm": 123.04,
+   "image_distance_mm": 13.3,
+   "extension_beyond_infinity_mm": 1.3,
+   "airy_disc_um_f4": 5.1,
+   "airy_disc_um_f8": 10.2,
+   "infocus_strip_on_surface_mm_f4_35deg": 4.1,
+   "infocus_strip_on_surface_mm_f8_35deg": 8.2,
+   "caveat": "Designed for pixels <= 2.2 um (over 200 lp/mm). Used at its 100 mm near limit, so no out-of-spec focus. Distortion -3 percent is correctable in calibration."
+  },
+  "kowa_lm12jc10m_12mm_c_mount": {
+   "name": "Kowa LM12JC10M 12mm f/1.8 C-mount 10MP lens",
+   "vendor": "Kowa",
+   "part_number": "LM12JC10M",
+   "buy_url": "https://machinevisionstore.com/Catalog/details/152",
+   "buy_url_alt": [
+    "https://en.ids-imaging.com/store/lens-kowa-lm12jc10m-12-mm-2-3.html"
+   ],
+   "source_url": "https://media.baumer.com/Baumer_ZVL-LM12JC10M_EN_20260331_DS.pdf",
+   "focal_mm": 12.0,
+   "f_number": "1.8 to 11 adjustable",
+   "mount": "C-mount",
+   "max_sensor_format": "2/3 inch (image circle 11 mm)",
+   "outline_mm": {
+    "dia": 33,
+    "length": 52.5
+   },
+   "mass_g": 105,
+   "mass_note": "at most 105 g (Baumer)",
+   "lens_spec_wd_mm": "100 (MOD 0.1 m)",
+   "object_principal_plane_mm": 25.0,
+   "principal_plane_note": "ESTIMATE",
+   "price_usd": 1011,
+   "price_note": "USD 1,011.00 at Machine Vision Store; IDS and Seesense quote on request",
+   "pair": "alvium_1800_u500m_open_housing_c_mount",
+   "magnification": 0.1062,
+   "fov_mm": {
+    "w": 53.7,
+    "h": 40.3
+   },
+   "res_um_px": 20.72,
+   "dof_mm_f4": 3.45,
+   "dof_mm_f8": 6.91,
+   "working_distance_mm": 100,
+   "object_to_front_principal_plane_mm": 125.0,
+   "image_distance_mm": 13.27,
+   "extension_beyond_infinity_mm": 1.27,
+   "airy_disc_um_f4": 5.1,
+   "airy_disc_um_f8": 10.1,
+   "infocus_strip_on_surface_mm_f4_35deg": 4.2,
+   "infocus_strip_on_surface_mm_f8_35deg": 8.4,
+   "caveat": "Principal plane position unpublished here (ESTIMATE 25 mm). Overkill but the better corrected 10 MP lens if the EO UC shows blur at 2.2 um pixels."
+  }
+ },
+ "depth": {
+  "d405": {
+   "name": "Intel RealSense Depth Camera D405",
+   "vendor": "Intel RealSense",
+   "part_number": "82635DSD405 (with USB cap); 82635DSD405MP multi-pack bulk",
+   "buy_url": "https://realsenseai.com/stereo-depth-cameras/stereo-depth-camera-d405/",
+   "buy_url_alt": [
+    "https://www.bluedogink.com/intel-realsense-depth-camera-d405-82635dsd405.html",
+    "https://dasenic.com/product/intel-corporation-82635dsd405"
+   ],
+   "source_url": "https://realsenseai.com/wp-content/uploads/2025/09/Intel-RealSense-D400-Series-Datasheet-October-2025.pdf",
+   "mass_g": 58,
+   "mass_note": "58 g +/-10 percent; bulk units lack the 2.3 g USB cap",
+   "outline_mm": {
+    "w": 42,
+    "h": 42,
+    "d": 23
+   },
+   "mount_holes": [
+    {
+     "face": "back",
+     "count": 2,
+     "thread": "M3 x 0.5",
+     "depth_mm": 4.0,
+     "spacing_mm": 20
+    },
+    {
+     "face": "bottom",
+     "count": 1,
+     "thread": "1/4-20",
+     "depth_mm": 5.0,
+     "note": "8.35 mm from the front"
+    },
+    {
+     "face": "side",
+     "count": 2,
+     "thread": "M2 x 0.4",
+     "depth_mm": 3,
+     "spacing_mm": 18
+    }
+   ],
+   "baseline_mm": 18,
+   "resolution_depth": {
+    "w": 1280,
+    "h": 720
+   },
+   "min_z_mm": {
+    "1280x720": 100,
+    "848x480": 70,
+    "640x360": 55,
+    "480x270": 45,
+    "424x240": 40
+   },
+   "min_z_note": "Min-Z is measured from the depth start point, 3.7 mm behind the front glass",
+   "spec_range": "7 cm to 1 m (datasheet) ; Intel marketing 7 to 50 cm ideal",
+   "depth_fov_deg": {
+    "h": "84 (datasheet module table, D401 same imager) to 87 (Intel product page, +/-3)",
+    "v": 58
+   },
+   "accuracy": "+/-2 percent absolute and 1 percent RMS at <= 0.5 m, 80 percent ROI HD (passive, textured target)",
+   "interface": "USB 3.1 Gen1 Micro-B, 5 V",
+   "price_usd": 267,
+   "price_note": "USD 259.88 (Dasenic), 267.31 (Bluedogink); verify stock",
+   "recommended_standoff_mm": 120,
+   "recommended_standoff_note": "from the depth origin, mode 1280x720 or 848x480: FOV 216 x 133 mm so a 100 x 100 mm area fits with 16 mm margin each side in the short axis (needs Z >= 90 mm); 1280x720 min-Z 100 mm",
+   "fov_at_mm": {
+    "100": {
+     "w": 180.1,
+     "h": 110.9
+    },
+    "120": {
+     "w": 216.1,
+     "h": 133.0
+    },
+    "130": {
+     "w": 234.1,
+     "h": 144.1
+    },
+    "150": {
+     "w": 270.1,
+     "h": 166.3
+    }
+   },
+   "depth_mm_per_px_at_120": 0.169
+  }
+ },
+ "lights": {
+  "ccs_ldl2_33x8bl": {
+   "name": "CCS LDL2-33X8BL(2) compact bar light, blue 470 nm",
+   "vendor": "CCS Inc.",
+   "part_number": "LDL2-33X8BL (Graftek: LDL2-33X8BL2, CS1001593 ESTIMATE)",
+   "buy_url": "https://graftek.com/product/ccs-america-ldl2-33x8bl2-blue-470-nm-led-bar-light-44-x-10-4-x-13-l-x-w-x-h-mm-fcb/",
+   "buy_url_alt": [
+    "https://www.stemmer-imaging.com/de/ccs-ldl2338bl2"
+   ],
+   "source_url": "https://cdn.graftek.com/system/files/10578/original/CCS_America_LDL2-33X8_Data_Sheet_062016.pdf",
+   "mass_g": 20,
+   "outline_mm": {
+    "w": 44,
+    "h": 13,
+    "d": 10.4,
+    "note": "L x H x W 44 x 13 x 10.4; lit surface 33 x 8"
+   },
+   "mount_holes": [
+    {
+     "count": 2,
+     "dia_mm": 2.2,
+     "spacing_mm": 40,
+     "note": "on the 44 mm body ends per datasheet drawing"
+    }
+   ],
+   "voltage_v": 24,
+   "power_w": 0.8,
+   "power_note": "0.8 W datasheet (Stemmer says 1.5 W)",
+   "led_count": 14,
+   "wavelength_nm": 470,
+   "trigger": "none built in: constant 24 V, 3-pin SMR-03V-B (1 anode brown, 2 NC, 3 cathode blue), 0.3 m lead. Strobe by switching the 24 V with an external low-side MOSFET / CCS controller (ESTIMATE of feasibility, not CCS-documented)",
+   "price_usd": 414,
+   "price_note": "USD 414.00 Graftek, quote required",
+   "working_distance_note": "no WD spec; 14 LEDs 0.8 W is low output, mount 60 to 80 mm from the target (ESTIMATE)"
+  },
+  "svl_lm75_470": {
+   "name": "Smart Vision Lights LM75-470 mini bar light, blue 470 nm",
+   "vendor": "Smart Vision Lights",
+   "part_number": "LM75-470 (Stemmer SKU 36648)",
+   "buy_url": "https://www.stemmer-imaging.com/en/svl-bar-light-mini-lm75470",
+   "source_url": "https://www.stemmer-imaging.com/en/svl-bar-light-mini-lm75470",
+   "mass_g": 128,
+   "outline_mm": {
+    "w": 80,
+    "h": 34,
+    "d": 26,
+    "note": "lit surface 71 x 24"
+   },
+   "mount_holes": [],
+   "mount_holes_note": "not read (SVL drawing not fetched)",
+   "voltage_v": 24,
+   "power_w": 6.6,
+   "wavelength_nm": 470,
+   "trigger": "PNP and NPN strobe inputs, built-in driver, over-current protection (Stemmer text)",
+   "beam_deg": 50,
+   "ip": "IP65",
+   "price_usd": null,
+   "price_note": "request price (Stemmer), ESTIMATE USD 250-350",
+   "over_budget_note": "128 g is over the 60 g Meca500 target; fits LR Mate"
+  },
+  "ai_sl2420_15in_470_strobed": {
+   "name": "Advanced Illumination 1.5 inch spot light SL2420-470100L-IS (strobed), blue 470 nm",
+   "vendor": "Advanced Illumination via Edmund Optics",
+   "part_number": "SL2420-470100L-IS (Edmund #26419; constant version #21313 SL2420-470100L-24)",
+   "buy_url": "https://www.edmundoptics.com/p/15-led-spot-light-470nm/21313/",
+   "source_url": "https://www.psirep.com/products/advanced-illumination-sl2420-medium-aimed-spot-light",
+   "mass_g": 90.7,
+   "mass_note": "SL2420 family figure (PSI), not confirmed for the -IS variant",
+   "outline_mm": {
+    "dia": 38,
+    "length": 54
+   },
+   "voltage_v": 24,
+   "current_a": 0.08,
+   "wavelength_nm": 470,
+   "working_distance_mm": 100,
+   "field_mm": 43,
+   "trigger": "strobed version (suffix IS, ESTIMATE meaning)",
+   "price_usd": null,
+   "price_note": "not read; ESTIMATE USD 300-450"
+  }
+ },
+ "cables": {
+  "usb3_high_flex_2m": {
+   "name": "L-com CAU3HFAMBV-BLK-2M high-flex drag-chain USB 3.0 A to Micro-B vision thumbscrews, 2 m",
+   "vendor": "L-com",
+   "part_number": "CAU3HFAMBV-BLK-2M",
+   "buy_url": "https://www.l-com.com/high-flex-drag-chain-usb-cable-assembly-type-a-male-plug-to-micro-type-b-male-plug-vision-thumbscrews-28-26-22awg-vw-1-pvc-black-20m",
+   "source_url": "same",
+   "flex_cycles": 5000000,
+   "bend_radius_note": "tested at 8 x cable OD",
+   "length_m": 2.0,
+   "price_usd": 143.99,
+   "price_note": "1-24 units, 52 in stock",
+   "mass_g": null,
+   "caution": "L-com notes Micro-B high-flex assemblies are for video transfer; USB 3 SuperSpeed rating not confirmed on the page: bench test for dropped frames"
+  },
+  "usb3_high_flex_angled_2m": {
+   "name": "L-com CAU3HFA-90DMBV-2M, right-angle-down Micro-B",
+   "vendor": "L-com",
+   "part_number": "CAU3HFA-90DMBV-2M",
+   "buy_url": "https://www.l-com.com/usb-high-flex-drag-chain-cable-type-a-male-plug-right-angle-down-micro-type-b-male-plug-vision-thumbscrews-vw-1-pvc-black-2.0m-cau3hfa-90dmbv-2m",
+   "source_url": "same",
+   "flex_cycles": 5000000,
+   "length_m": 2.0,
+   "price_usd": 136.99,
+   "price_note": "1-24 units; backorder status seen in search"
+  },
+  "usb3_high_flex_nassau": {
+   "name": "Nassau National Cable PCM-CLC-70 USB 3.0 A to Micro-B M2 screw lock, high flex",
+   "vendor": "Nassau National Cable",
+   "part_number": "PCM-CLC-70 (custom length)",
+   "buy_url": "https://nassaunationalcable.com/en-ca/products/usb-3-0-a-male-to-micro-b-male-with-screw-lock-cables-pcm-clc-70",
+   "source_url": "same",
+   "flex_cycles": 10000000,
+   "price_usd": null,
+   "price_note": "quote",
+   "note": "states robotic-arm and drag-chain use; Basler own 3 m cables are fixed-install only (docs.baslerweb.com/basler-cable-usb3-microb-sl-a-p)"
+  },
+  "light_24v_cable": {
+   "name": "igus chainflex CF10.02.04 4 x 0.25 mm2 flexible control cable (ESTIMATE spec from part-number scheme) + JST SMR-03V-B pigtail",
+   "vendor": "igus",
+   "part_number": "CF10.02.04",
+   "buy_url": "https://www.igus.com/chainflex",
+   "source_url": "same",
+   "price_usd": null,
+   "price_note": "per metre, not USD: reseller listing RM 29.90 per metre; ESTIMATE; verify core count and cross section on igus.com",
+   "note": "CCS LDL2 ships a 0.3 m lead on an SMR-03V-B plug; no CCS extension cable found. Splice the CF10 to a mating SMR-03V-B / use 2 cores for 24 V and 0 V. For the SVL LM75 use its own M8/M12 cordset (not read)."
+  }
+ },
+ "choice": {
+  "meca500": {
+   "camera": "basler_daA1920_160um_smount",
+   "lens": "eo_37182_16mm_f4_m12",
+   "light": "ccs_ldl2_33x8bl",
+   "depth": "d405",
+   "usb_cable": "usb3_high_flex_2m",
+   "light_cable": "light_24v_cable",
+   "stack_mass_g_per_camera": 23,
+   "note": "15 g camera + about 8 g lens ESTIMATE; alt lens commonlands_cil160_16mm_f4_m12 (6 g, USD 39)"
+  },
+  "lrmate200id": {
+   "camera": "alvium_1800_u500m_open_housing_c_mount",
+   "lens": "eo_33303_12mm_uc_c_mount",
+   "light": "svl_lm75_470",
+   "depth": "d405",
+   "usb_cable": "usb3_high_flex_2m",
+   "light_cable": "light_24v_cable",
+   "stack_mass_g_per_camera": 94,
+   "note": "45 g camera + 49 g lens; alt lens kowa_lm12jc10m_12mm_c_mount (105 g); alt light ai_sl2420_15in_470_strobed"
+  }
+ }
+}

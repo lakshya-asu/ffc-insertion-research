@@ -1,0 +1,20 @@
+{
+  "name": "new right pickup - right arm only",
+  "description": "Right-arm-only copy of saved pose \"new right pickup\" (b4ea950e-9584-427b-bec4-d5c8f3717456). Uses its saved joint positions and gripper opening.",
+  "station_hash": "sha256:4eff93b5fd7eeddcf90a659c13f97da75f91215bf847505da034ea80527f30bc",
+  "arms": {
+    "right": {
+      "q": [
+        -0.08983749141680342,
+        2.0628290226596473,
+        1.8877317463950565,
+        -1.3448920424200832,
+        -0.047875181200888406,
+        -0.02117189288166621
+      ],
+      "g": 0.9993540515323327
+    }
+  },
+  "id": "42e2d9ef-6a7a-473c-acf1-1f0c3db5935d",
+  "saved_at": 1790909981.458889
+}

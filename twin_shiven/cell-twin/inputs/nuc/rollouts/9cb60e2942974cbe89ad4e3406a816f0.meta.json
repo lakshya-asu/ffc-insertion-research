@@ -1,0 +1,1 @@
+{"episode_id": "9cb60e2942974cbe89ad4e3406a816f0", "checkpoint_id": "ckpt_68a6e156bebc541582ab97cb71434ff0", "judgment": "uncertain", "reason": "operator pause", "frames": 161, "duration_s": 5.301142758922651, "started_at": 1791143851.57401, "intervention_frame": null, "quality_flags": ["camera age >60 ms"], "pose_name": "preinsertion2", "full_run": null}

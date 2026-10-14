@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "profile_id": "20261001T231652Z-98bcb0c1",
+  "created_at": "2026-10-01T23:16:52.480142+00:00",
+  "purpose": "camera_commissioning_only",
+  "activated": false,
+  "cameras": [
+    {
+      "device": {
+        "id": "pci-0000:00:14.0-usb-0:7.2.3:1.0-video-index0",
+        "device": "/dev/v4l/by-path/pci-0000:00:14.0-usb-0:7.2.3:1.0-video-index0",
+        "node": "/dev/video20",
+        "model": "Arducam B0497 (USB3 8.3MP)",
+        "serial": "",
+        "usb_port": "3-7.2.3",
+        "usb_mbps": 480.0,
+        "vendor": "04b4",
+        "product": "0497"
+      },
+      "mode": {
+        "width": 1280,
+        "height": 720,
+        "fps": 10.0,
+        "fourcc": "YUYV"
+      },
+      "controls": {
+        "9963776": {
+          "id": 9963776,
+          "name": "Brightness",
+          "type": 1,
+          "min": -64,
+          "max": 64,
+          "step": 1,
+          "default": 0,
+          "value": 0,
+          "inactive": false,
+          "menu": {}
+        },
+        "9963777": {
+          "id": 9963777,
+          "name": "Contrast",
+          "type": 1,
+          "min": 0,
+          "max": 20,
+          "step": 1,
+          "default": 10,
+          "value": 10,
+          "inactive": false,
+          "menu": {}
+        },
+        "9963778": {
+          "id": 9963778,
+          "name": "Saturation",
+          "type": 1,
+          "min": 0,
+          "max": 15,
+          "step": 1,
+          "default": 10,
+          "value": 10,
+          "inactive": fa

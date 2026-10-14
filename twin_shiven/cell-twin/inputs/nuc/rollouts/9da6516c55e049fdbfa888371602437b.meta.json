@@ -1,0 +1,1 @@
+{"episode_id": "9da6516c55e049fdbfa888371602437b", "checkpoint_id": "ckpt_8349e235d2344d41b4b280c56a95f98b", "judgment": "failed", "reason": "operator fail", "frames": 174, "duration_s": 6.393955559004098, "started_at": 1790287833.5504272, "intervention_frame": null, "quality_flags": ["camera age >60 ms", "timestamp gap >50 ms"], "pose_name": "preinsertion2", "full_run": null}
